@@ -1,0 +1,30 @@
+USERS/topic_w_laura_GERMAN.txt
+jul2116 Nov21'18-15:22:26 Nov21'18-15:22:37 0 |
+1 2 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 ClpOi ia 0 0 0 
+~personal + 1 3y5EP ia 2 0 0 
+#`end topics
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=w: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=w
+$cs_bot=Laura
+$cs_randindex=1564
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ :rest
+ asd
+#`end user
+ Hallo!
+ Ich glaube das hab ich nicht ganz verstanden.
+ Prima. Was möchstest du denn wissen?
+#`end chatbot

@@ -1,0 +1,8 @@
+﻿  ChatScriptIDE.cpp
+c:\chatscript\chatscriptide\chatscriptide.cpp(549): warning C4018: '>': signed/unsigned mismatch
+c:\chatscript\chatscriptide\chatscriptide.cpp(1085): warning C4018: '>': signed/unsigned mismatch
+c:\chatscript\chatscriptide\chatscriptide.cpp(1392): warning C4018: '<=': signed/unsigned mismatch
+c:\chatscript\chatscriptide\chatscriptide.cpp(1585): warning C4018: '>': signed/unsigned mismatch
+c:\chatscript\chatscriptide\chatscriptide.cpp(3330): warning C4018: '<': signed/unsigned mismatch
+  ChatScriptIDE.vcxproj -> C:\ChatScript\VS2015\..\BINARIES\ChatScriptIDE.exe
+  ChatScriptIDE.vcxproj -> C:\ChatScript\VS2015\..\BINARIES\ChatScriptIDE.pdb (Full PDB)

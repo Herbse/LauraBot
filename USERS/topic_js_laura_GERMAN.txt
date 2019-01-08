@@ -1,0 +1,27 @@
+USERS/topic_js_laura_GERMAN.txt
+jul2116 Jun16'18-18:14:48 Jun16'18-18:14:50 0 |
+1 1 ~introduction ~Mb ClpOi  DY 0 14 14 0 # start, input#, rejoindertopic,rejoinderid (a: USER_NAME ( [ sein bin ] _*1 > ) $name = '_0 Freut mich dich kennenzulernen, _0 . Ich heiße Laura. ...   ),checksum
+~introduction #pending
+~introduction + 1 ClpOi ia 1 0 0 
+#`end topics
+$cs_randindex=2146
+$cs_bot=Laura
+$cs_login=js
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=js: >
+$botprompt=LAURA: 
+$singleresponse=1
+$cs_token=1180415
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ hey
+#`end user
+ Hallo!
+ Wie heißt du?
+#`end chatbot

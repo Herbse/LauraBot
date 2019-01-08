@@ -1,0 +1,4 @@
+﻿No such bot  Peter:Test -  -  status: harry   in topic_peter_test.txt at 4: ^test
+    No such bot  Peter:build mine -  -  status: harry   in topic_peter_build mine.txt at 4: ^build mine
+    
+Respond: user:peter bot:harry ip: (~introductions) 1   Chatscript language=german ==> Have you been here before?  When:May02'18-17:53:53 Why:~introductions.2.0.~control.9.0   F:53 

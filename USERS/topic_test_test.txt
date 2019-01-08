@@ -1,0 +1,50 @@
+USERS/topic_test_test.txt
+jul2116 May03'18-15:48:14 May03'18-16:15:25 0 |
+1 11 0 DY 0 16 16 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~courses_of_studies ~biography #pending
+~courses_of_studies + 1 ?#m#&Is*Ok3 ea 5 0 0 
+~introductions + 1 rGy$g ia 2 0 0 
+#`end topics
+$cs_randindex=2149
+$cs_bot=Test
+$cs_login=test
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=test: >
+$botprompt=TEST: 
+$cs_token=1184511
+$name=Hans
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Hey
+ Hans
+ wo wohnst du
+ wie alt bist du
+ wie heißt dein Onkel?
+ wie heißt onkel
+ wie heißt tante
+ tante heißt
+ eltern heißt
+ wie heißt eltern
+ wie bruder heißt
+#`end user
+ Hallo!
+ Hallo!
+ Hallo!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, Hans. Stelle mir eine Frage zu meiner Biographie!
+ Ich wohne im ChatScript Verzeichnis.
+ Ich bin 14 Jahre alt. Sagt zumindest das Skript.
+ Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?
+ Er heißt Achim.
+ Er heißt Achim.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Er heißt Achim.
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot

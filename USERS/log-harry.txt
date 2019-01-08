@@ -1,0 +1,2 @@
+﻿No such bot  Harry -  -  status: harry   in pG28YXAWtNd0hZMzOplnaoHgDUZgGe38J5X0veQuVTHxwPu.txt at 4: ^23aKFM1jjqchEilQS1LHZu/efTi\nDmaB+qA4MaEfMH0ySgmj8tDLl5zgePfw5/1vTQ6W+O1PWO7u8EoZN+rxXWMwhogP\nlyprjCwgNQuH1D+eiQvbz6k4z9mYZCj73MootsxQ477y4zEcdnjeLFQoNkrZpgNW\ngXP6DB+/pG28YXAWtNd0hZMzOplnaoHgDUZgGe38J5X0veQuVTHxwPu
+    Start: user:harry bot:harry ip: rand:2411 (~introductions) 0 ==> Welcome to ChatScript.  When:Apr24'18-17:00:49 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Apr24'18-16:42:37 0:Apr24'18-17:00:49 F:0 P:0 Why:~introductions.1.0.~control.0.0 

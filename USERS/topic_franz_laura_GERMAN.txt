@@ -1,0 +1,42 @@
+USERS/topic_franz_laura_GERMAN.txt
+jul2116 Jun05'18-16:34:00 Jun06'18-13:35:49 1528211435-5.5.0.2.1.0 |
+1 8 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~mother_info ~personal #pending
+~introduction + 1 ClpOi ia 2 0 0 
+~personal + 1 DGTWKIs*Ok3 ia 6 0 0 
+#`end topics
+$name=Franz
+$cs_token=1184511
+$botprompt=LAURA: 
+$userprompt=franz: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=franz
+$cs_bot=Laura
+$cs_randindex=518
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Hallo
+ Franz
+ Was ist der Name deiner Mutter?
+ Wie heißt deine Mutter
+ Kannst du mir ein bisschen mehr über deine Mutter erzählen?
+ Ja warum das denn?
+ Warum?
+ und dann?
+#`end user
+ Hallo!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, Franz. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Meine Mama heißt Charlotte.
+ Meine Mama heißt Charlotte.
+ Mama ist manchmal ganz lange im Krankenhaus.
+ Prima. Was möchstest du denn wissen?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+#`end chatbot

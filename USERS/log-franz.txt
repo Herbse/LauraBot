@@ -1,0 +1,220 @@
+﻿Start: user:franz bot:test ip: rand:518 (~introductions) 0 ==> Use :prepare to see your input data German tagging IF YOU HAVE INSTALLED TREETAGGER + German data.  When:Jun05'18-16:33:42 Version:8.2 Build0:Jun05'18-16:09:29 Build1:Jun05'18-16:10:38 0:Jun05'18-16:33:42 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:519 (~introduction) 0 ==> Hallo!  When:Jun05'18-16:34:00 Version:8.2 Build0:Jun05'18-16:09:29 Build1:Jun05'18-16:33:49 0:Jun05'18-16:34:00 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :concepts Geschwister
+Geschwister: ~family_children_generic ~unknownsexhuman ~family_children ~family_members ~role_family ~age_gender ~role ~styles ~beings ~attributes ~tool ~animate_thing ~nounlist ~objects 
+Command: :concepts Bruder
+Bruder: ~family_children_male ~brother ~religious_leaders ~goodness ~family_children ~he ~family_adult_male ~age_gender ~family_members ~gender ~family_adult ~adult ~role_family ~aged_adults ~role ~agenoun ~styles ~beings ~age_reference ~attributes ~tool ~animate_thing ~nounlist ~objects 
+Command: :conceptlist ~family_childre_generic
+Command: :conceptlist ~family_children_generic
+~family_children_generic
+Command: :concepts hast
+hast: 
+Command: :concepts haben
+haben: ~causal_to_infinitive_verbs ~auxverblist ~mental_states ~own ~misc_parsedata ~static_verbs ~possess ~possession_verbs ~do_with_titles ~social_verbs ~active_verbs ~animate_verbs ~use_intentionverbs ~verblist 
+Command: :concepts hast
+hast: 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:519 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-16:43:54 Version:8.2 Build0:Jun05'18-16:09:29 Build1:Jun05'18-16:43:43 0:Jun05'18-16:34:00 F:0 P:0 Why:~personal.0.0.~control.1.0 
+Command: :concepts hast
+hast: 
+Command: :build 0
+Start: user:franz bot:laura ip: rand:519 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-16:44:24 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-16:43:43 0:Jun05'18-16:34:00 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Command: :concepts hast
+hast: ~own ~possess ~possession_verbs ~static_verbs ~do_with_titles ~social_verbs ~active_verbs ~animate_verbs ~use_intentionverbs ~verblist 
+Command: :concepts Geschwister
+Geschwister: ~family_children_generic ~unknownsexhuman ~family_children ~family_members ~role_family ~age_gender ~role ~styles ~beings ~attributes ~tool ~animate_thing ~nounlist ~objects 
+Command: :build laura
+No such bot  franz -  -  status: defaultbot word not found   in topic_franz_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+Start: user:franz bot:laura ip: rand:519 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-16:54:58 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-16:54:48 0:Jun05'18-16:34:00 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+entering null word to dictionary in sentence1 Tue Jun 05 16:56:30 2018 in sentence: hast du geschwister 
+    entering null word to dictionary in sentence1 Tue Jun 05 16:56:30 2018 in sentence: hast du geschwister 
+    entering null word to dictionary in sentence1 Tue Jun 05 16:56:30 2018 in sentence: hast du geschwister 
+    
+Respond: user:franz bot:laura ip: (~brother_info) 1   hast du geschwister ==> Ich habe einen Bruder, das ist der Leon.  When:Jun05'18-16:56:30 Why:~brother_info.0.0.~control.1.0   F:1112 
+Respond: user:franz bot:laura ip: (~brother_info) 2   hast du einen bruder ==> Ja das ist der Leon.  When:Jun05'18-16:56:42 Why:~brother_info.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~brother_info) 3   besitzt du eine schwester ==> Nein. Ich habe einen Bruder, das ist der Leon.  When:Jun05'18-16:56:53 Why:~brother_info.2.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~brother_info) 4   und wie heißt dein bruder ==> Meine Bruder ist der Leon.  When:Jun05'18-16:57:59 Why:~brother_info.3.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~brother_info) 5   und wie ist der name deines bruders? ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-16:58:06 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~brother_info) 6   und wie ist der Name deines bruder ==> Meine Bruder ist der Leon.  When:Jun05'18-16:58:25 Why:~brother_info.3.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~brother_info) 7   und wie ist der Name deines bruders ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-16:58:32 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:526 (~brother_info) 7 ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-16:59:40 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-16:59:29 0:Jun05'18-16:34:00 F:0 P:Jun05'18-16:58:32 Why:~keywordless.1.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~brother_info) 8   und wie ist der Name deines bruders ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-16:59:43 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~brother_info) 9   und wie ist der Name deines bruder ==> Meine Bruder ist der Leon.  When:Jun05'18-16:59:46 Why:~brother_info.3.0.~control.1.0   F:0 
+Command: :build Laura
+Start: user:franz bot:laura ip: rand:528 (~brother_info) 9 ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:00:40 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:00:29 0:Jun05'18-16:34:00 F:0 P:Jun05'18-16:59:46 Why:~keywordless.1.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~brother_info) 10   und wie ist der Name deines Bruders ==> Meine Bruder ist der Leon.  When:Jun05'18-17:00:54 Why:~brother_info.3.0.~control.1.0   F:0 
+Command: :concepts meinung
+Command: :concepts Meinung
+Meinung: ~opinion ~opinionset 
+Command: :concepts Verhätnis
+Command: :concepts Verhältnis
+Verhältnis: ~relationship 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:529 (~brother_info) 10 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:06:12 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:06:01 0:Jun05'18-16:34:00 F:0 P:Jun05'18-17:00:54 Why:~keywordless.2.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~brother_info) 11   und wie ist der Name deines Bruders ==> Er heißt Leon.  When:Jun05'18-17:06:19 Why:~brother_info.3.0.~control.1.0   F:16 
+Respond: user:franz bot:laura ip: (~brother_info) 12   wie ist das Verhältnis zwischen euch ==> Ich mag Leon richtig gerne.  When:Jun05'18-17:06:37 Why:~brother_info.4.0.~control.1.0   F:16 
+Respond: user:franz bot:laura ip: (~brother_info) 13   wie ist das Verhältnis zwischen dir und leon ==> Ich mag Leon richtig gerne.  When:Jun05'18-17:06:51 Why:~brother_info.4.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~brother_info) 14   wie findest du den leon ==> Ich mag Leon richtig gerne.  When:Jun05'18-17:06:57 Why:~brother_info.4.0.~control.1.0   F:0 
+Command: :concepts erzählen
+erzählen: ~quotableverbs ~tell ~speak_verbs ~communicate_verbs ~social_verbs ~animate_verbs ~verblist 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:533 (~brother_info) 14 ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:09:52 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:09:42 0:Jun05'18-16:34:00 F:0 P:Jun05'18-17:06:57 Why:~keywordless.1.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~brother_info) 15   kannst du mir noch mehr von leon erzählen? ==> Wenn der Leon fifa spielt darf ich immer zugucken.  When:Jun05'18-17:10:35 Why:~brother_info.5.0.~control.1.0   F:15 
+Respond: user:franz bot:laura ip: (~brother_info) 16   kannst du mir noch etwas über leon sagen ==> Wenn der Leon fifa spielt darf ich immer zugucken.  When:Jun05'18-17:10:58 Why:~brother_info.5.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~brother_info) 17   was sagt leon so ==> Wenn der Leon fifa spielt darf ich immer zugucken.  When:Jun05'18-17:11:02 Why:~brother_info.5.0.~control.1.0   F:0 
+Command: :concepts unternehmen
+unternehmen: 
+Command: :concepts Hobbies
+Hobbies: 
+Command: :concepts hobbys
+Command: :concepts Hobbys
+Hobbys: 
+Command: :concepts Holz
+Holz: ~moving_slow_land ~slow ~musical_instruments_woodwind ~wood ~lumberyard ~flammable ~burnable ~building_substances ~animate_move_verbs ~tool ~musical_instrument ~material ~store_type ~functions ~substances ~use_movement ~animate_verbs ~active_verbs ~noisy ~objects ~verblist ~use_intentionverbs ~artifacts ~nounlist ~human_data 
+Command: :concepts unternimmst
+unternimmst: 
+Command: :concepts wie_geht_es_dir
+Command: :concepts Stimmung
+Stimmung: ~emotions ~sensations ~attributes ~nounlist 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:536 (~personal) 17 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:34:40 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:34:29 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:11:02 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 18   wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:35:11 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 19   stimmung dir ==> Naja, es geht so.  When:Jun05'18-17:35:32 Why:~personal.3.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:538 (~personal) 19 ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:36:31 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:36:21 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:35:32 Why:~keywordless.1.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 20   wie geht es dir ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:36:49 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 21   wie geht's dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:37:01 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 22   geht's dir ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:37:07 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 23   stimmung dir ==> Naja, es geht so.  When:Jun05'18-17:37:12 Why:~personal.3.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:541 (~personal) 23 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:38:20 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:38:10 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:37:12 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 24   wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:39:08 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 25   stimmung dir ==> Naja, es geht so.  When:Jun05'18-17:39:16 Why:~personal.3.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 26   dir stimmung ==> Naja, es geht so.  When:Jun05'18-17:39:18 Why:~personal.3.0.~control.1.0   F:0 
+Command: :build laura
+No such bot  franz -  -  status: defaultbot word not found   in topic_franz_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+Start: user:franz bot:laura ip: rand:544 (~personal) 26 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:41:12 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:41:02 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:39:18 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 27   geht's dir ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:41:21 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 28   wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:41:25 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:546 (~personal) 28 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:42:15 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:42:05 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:41:25 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 29   dir stimmung ==> Naja, es geht so.  When:Jun05'18-17:42:27 Why:~personal.3.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 30   wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:42:29 Why:~keywordless.2.0.~control.1.0   F:16 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:548 (~personal) 30 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:49:09 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:48:58 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:42:29 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 31   wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:49:11 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 32   geht es dir ==> Naja, es geht so.  When:Jun05'18-17:49:16 Why:~personal.3.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 33   wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:49:24 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 34   dir geht es ==> Naja, es geht so.  When:Jun05'18-17:49:38 Why:~personal.3.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:552 (~personal) 34 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:50:32 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:50:21 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:49:38 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 35   wie geht es dir ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:50:34 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 36   geht es dir ==> Naja, es geht so.  When:Jun05'18-17:50:39 Why:~personal.3.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:554 (~personal) 36 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:51:37 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:51:26 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:50:39 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 37   wie geht es dir ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:51:51 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :why
+~keywordless.1.0.2.1.0  r:  Kann ich Sonst noch was für dich tun? ^keep ( ) ^repeat ( ) 
+ via ~control.2.1.0  u:  ( ) $$currenttopic = %topic $$response = %response ^if 00v( %response  $$response ) 00I{...   
+Command: :concetpts "geht es"
+Respond: user:franz bot:laura ip: (~personal) 38   :concetpts "geht es" ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:53:55 Why:~keywordless.2.0.~control.1.0   F:16 
+Command: :concepts "geht es"
+"geht es": 
+Command: :concepts stimmung
+stimmung: ~mood 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:557 (~personal) 38 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:54:45 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:54:34 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:53:55 Why:~keywordless.2.0.~control.1.0 
+Command: :concepts "geht es"
+"geht es": ~mood 
+Command: :concepts "geht es"
+"geht es": ~mood 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:556 (~personal) 38 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:56:55 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:56:44 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:53:55 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 39   wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:57:06 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 40   wie stimmung dir ==> Naja, es geht so.  When:Jun05'18-17:57:33 Why:~personal.3.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:558 (~personal) 40 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-17:58:02 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-17:57:52 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-17:57:33 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 41   wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-17:58:10 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :pattern wie geht es dir
+Respond: user:franz bot:laura ip: (~personal) 42   :pattern wie geht es dir ==> Naja, es geht so.  When:Jun05'18-17:58:36 Why:~personal.3.0.~control.1.0   F:0 
+Command: :pattern wie geht es dir
+Respond: user:franz bot:laura ip: (~personal) 43   :pattern wie geht es dir ==> Naja, es geht so.  When:Jun05'18-17:58:47 Why:~personal.3.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 44   wie geht es dir ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-17:58:50 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 45   why ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-18:00:59 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :why
+~keywordless.2.0.2.1.0  r:  Ich glaube das hab ich nicht ganz verstanden. ^keep ( ) ^repeat ( ) 
+ via ~control.2.1.0  u:  ( ) $$currenttopic = %topic $$response = %response ^if 00v( %response  $$response ) 00I{...   
+Respond: user:franz bot:laura ip: (~personal) 46   wie geht es dir? ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-18:01:21 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :why
+~keywordless.1.0.2.1.0  r:  Kann ich Sonst noch was für dich tun? ^keep ( ) ^repeat ( ) 
+ via ~control.2.1.0  u:  ( ) $$currenttopic = %topic $$response = %response ^if 00v( %response  $$response ) 00I{...   
+Respond: user:franz bot:laura ip: (~personal) 47   wo wohnst du ==> Ich wohne im ChatScript Verzeichnis.  When:Jun05'18-18:01:30 Why:~personal.2.0.~control.1.0   F:0 
+Command: :why
+~personal.2.0.2.1.0  u:  ( ~residence ) Ich wohne im ChatScript Verzeichnis. 
+ via ~control.2.1.0  u:  ( ) $$currenttopic = %topic $$response = %response ^if 00v( %response  $$response ) 00I{...   
+Respond: user:franz bot:laura ip: (~personal) 48   wie stimmung dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-18:01:54 Why:~keywordless.2.0.~control.1.0   F:15 
+Respond: user:franz bot:laura ip: (~personal) 49   "wie geht es dir" ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-18:02:02 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :pattern wie geht es dir
+Respond: user:franz bot:laura ip: (~personal) 50   :pattern wie geht es dir ==> Naja, es geht so.  When:Jun05'18-18:02:08 Why:~personal.3.0.~control.1.0   F:0 
+Command: :pattern wie
+Respond: user:franz bot:laura ip: (~personal) 51   :pattern wie ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-18:02:17 Why:~keywordless.2.0.~control.1.0   F:16 
+Command: :prepare wie geht es dir
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: wie geht es dir
+Tokenized into: wie  geht  es  dir  
+Substituted (interjections ) into: ~emohowzit  
+Actual used input: ~emohowzit(wie geht es dir) 
+
+
+Concepts: 
+
+1: ~emohowzit (raw):
+       +~interjections
+   +~emohowzit
+ // 
+1: ~emohowzit (canonical):  //  
+
+Sequences:
+
+After parse TokenFlags: DO_INTERJECTIONS USERINPUT 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:569 (~personal) 51 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-18:06:17 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun05'18-18:06:06 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-18:02:17 Why:~personal.0.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 52   wie geht es dir ==> Naja, es geht so.  When:Jun05'18-18:06:24 Why:~personal.3.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 53   wie ist deine stimmung ==> Naja, es geht so.  When:Jun05'18-18:06:28 Why:~personal.3.0.~control.1.0   F:16 
+Respond: user:franz bot:laura ip: (~personal) 54   was geh ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-18:06:29 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 55   was geht ==> Naja, es geht so.  When:Jun05'18-18:06:32 Why:~personal.3.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 56   was get ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-18:06:34 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:575 (~personal) 56 ==> Kann ich Sonst noch was für dich tun?  When:Jun06'18-11:39:36 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun06'18-11:39:25 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun05'18-18:06:34 Why:~keywordless.1.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 57   [ping] ==> Kann ich Sonst noch was für dich tun?  When:Jun06'18-11:39:41 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 58   [ping\] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun06'18-11:39:55 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:577 (~personal) 58 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun06'18-11:40:36 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun06'18-11:40:25 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun06'18-11:39:55 Why:~keywordless.2.0.~control.1.0 
+Command: :build laura
+Start: user:franz bot:laura ip: rand:577 (~personal) 58 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun06'18-11:41:47 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun06'18-11:41:36 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun06'18-11:39:55 Why:~keywordless.2.0.~control.1.0 
+Respond: user:franz bot:laura ip: (~personal) 59   [ping] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun06'18-11:41:53 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :reset
+Start: user:franz bot:laura ip: rand:519 (~introduction) 0 ==> Hallo!  When:Jun06'18-11:42:07 Version:8.2 Build0:Jun05'18-16:44:09 Build1:Jun06'18-11:41:36 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun06'18-11:41:53 Why:~introduction.0.0.~control.0.0 
+Respond: user:franz bot:laura ip: (~personal) 1   [ping] ==> Prima. Was möchstest du denn wissen?  When:Jun06'18-11:42:10 Why:~personal.0.0.~control.1.0   F:0 
+No such bot  Franz -  -  status: defaultbot word not found   in topic_franz_anonymous_GERMAN.txt at 3: ^anonymous
+    No such bot  franz -  - Bruno status: defaultbot word not found   in topic_franz_anonymous_GERMAN.txt at 1: ^anonymous
+    Command: :build 0
+No such bot  franz -  -  status: defaultbot word not found   in topic_franz_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build Laura
+Start: user:franz bot:laura ip: rand:520 (~personal) 1 ==> Kann ich Sonst noch was für dich tun?  When:Jun06'18-13:34:03 Version:8.2 Build0:Jun06'18-13:32:39 Build1:Jun06'18-13:33:52 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun06'18-11:42:10 Why:~keywordless.1.0.~control.1.0 
+Command: :reset
+Start: user:franz bot:laura ip: rand:519 (~introduction) 0 ==> Hallo!  When:Jun06'18-13:34:08 Version:8.2 Build0:Jun06'18-13:32:39 Build1:Jun06'18-13:33:52 0:Jun05'18-16:34:00 F:1528211435-5.5.0.2.1.0 P:Jun06'18-11:42:10 Why:~introduction.0.0.~control.0.0 
+Respond: user:franz bot:laura ip: (~introduction) 1   Hallo ==> Wie heißt du?  When:Jun06'18-13:34:10 Why:~introduction.1.0.~control.1.0   F:15 
+Respond: user:franz bot:laura ip: (~introduction) 2   Franz ==> Freut mich dich kennenzulernen, Franz. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:Jun06'18-13:34:13 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Respond: user:franz bot:laura ip: (~mother_info) 3   Was ist der Name deiner Mutter? ==> Meine Mama heißt Charlotte.  When:Jun06'18-13:34:56 Why:~mother_info.0.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~mother_info) 4   Wie heißt deine Mutter ==> Meine Mama heißt Charlotte.  When:Jun06'18-13:35:05 Why:~mother_info.0.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~mother_info) 5   Kannst du mir ein bisschen mehr über deine Mutter erzählen? ==> Mama ist manchmal ganz lange im Krankenhaus.  When:Jun06'18-13:35:17 Why:~mother_info.1.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 6   Ja warum das denn? ==> Prima. Was möchstest du denn wissen?  When:Jun06'18-13:35:32 Why:~personal.0.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 7   Warum? ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun06'18-13:35:45 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:franz bot:laura ip: (~personal) 8   und dann? ==> Kann ich Sonst noch was für dich tun?  When:Jun06'18-13:35:49 Why:~keywordless.1.0.~control.1.0   F:0 

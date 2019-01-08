@@ -1,0 +1,36 @@
+USERS/topic_guest127001_harry.txt
+jul2116 May09'18-11:41:51 0 0 |
+1 0 0 DY 0 22 22 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~childhood ~introductions #pending
+~childhood + 2 BX!F!Is*Ok3 piaa 0 0 0 
+~introductions + 1 Uk?Kk ca 0 0 0 
+#`end topics
+$singleresponse=1
+$botprompt=HARRY: 
+$userprompt=guest127001: >
+$cs_control_main=~control
+$cs_token=67337983
+$cs_login=guest
+$cs_bot=Harry
+$cs_randindex=632
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~childhood 0 RUNAWAY ~childhood 0 SCARE 
+#`end user
+ I don't know what to say.
+ Welcome to ChatScript.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+#`end chatbot

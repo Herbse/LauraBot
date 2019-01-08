@@ -1,0 +1,131 @@
+﻿Start: user:jo bot:laura ip: rand:2143 (~introduction) 0 ==> Hey!  When:Jun05'18-15:37:08 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-15:34:58 0:Jun05'18-15:37:08 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+entering null word to dictionary in sentence1 Tue Jun 05 15:37:15 2018 in sentence: Pferd 
+    
+Respond: user:jo bot:laura ip: (~personal) 1   Pferd ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-15:37:15 Why:~personal.0.0.~control.1.0   F:830 
+Respond: user:jo bot:laura ip: (~personal) 2   was ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-15:37:31 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:jo bot:laura ip: (~personal) 3   und dann ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-15:37:51 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :build german
+Start: user:jo bot:test ip: rand:2142 (~introductions) 0 ==> Use :prepare to see your input data German tagging IF YOU HAVE INSTALLED TREETAGGER + German data.  When:Jun05'18-16:03:37 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-16:03:26 0:Jun05'18-16:03:37 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Command: :prepare wie geht es ihnen
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: wie geht es ihnen
+Tokenized into: wie  geht  es  ihnen  
+Substituted (interjections ) into: ~emohowzit  ihnen  
+Actual used input: ~emohowzit(wie geht es) 
+
+
+Concepts: 
+
+1: ~emohowzit (raw):
+       +~interjections
+   +~emohowzit
+ // 
+1: ~emohowzit (canonical):  //  
+
+Sequences:
+
+After parse TokenFlags: DO_INTERJECTIONS USERINPUT 
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: ihnen 
+Tokenized into: ihnen  
+Actual used input: ihnen 
+
+
+Concepts: 
+
+1: ihnen (raw):
+       +~internal_concepts
+   +~pronoun
+       +~pronoun_bits
+         +~pos
+   +~pronoun_subject
+   +~pronoun_object
+   +~noun_phrase
+   +ihnen
+ // 
+1: sie (canonical):    +sie
+ //  
+
+Sequences:
+   +Ihnen^
+       +~it_words
+   +Sie^
+   +SIE^
+
+After parse TokenFlags: USERINPUT 
+Command: :prepare WIE GEHT ESS Ihneen
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: WIE GEHT ESS Ihneen
+Tokenized into: WIE  GEHT  ESS  Ihneen  
+Actual used input: WIE GEHT ESS Ihneen 
+
+
+Concepts: 
+
+1: WIE (raw):
+       +~internal_concepts
+   +~pronoun
+       +~pronoun_bits
+         +~pos
+   +~pronoun_subject
+   +~pronoun_object
+       +~conjunction
+   +~conjunction_coordinate
+   +~conjunction_subordinate
+   +~noun_phrase
+       +~relationpreposition
+         +~prepositionlist
+       +~similar
+       +~comparative_manner_adverbs
+         +~comparison_adverbs
+           +~adverblist
+       +~comparative_degree_adverbs
+       +~comparison_adjectives
+         +~adjectivelist
+   +wie
+ // 
+1: wie (canonical):  //  
+
+2: GEHT (raw):
+   +GEHT^
+   +Geht^
+ // 
+2: unknown-word (canonical):  //  
+
+3: ESS (raw):
+   +ESS^
+ // 
+3: unknown-word (canonical):  //  
+
+4: Ihneen (raw):
+   +Ihneen^
+ // 
+4: unknown-word (canonical):  //  
+
+Sequences:
+       +~qwords
+       +~extent_adverbs
+       +~question_adverbs
+   +Wie^
+   +WIE^
+
+   +geht
+
+
+After parse TokenFlags: USERINPUT 
+Respond: user:jo bot:test ip: (~introductions) 1   wie geht es ihnen ==> Line gambit`Line gambit  When:Jun05'18-16:05:43 Why:~introductions.1.0.~control.1.0 ~introductions.1.0.~control.1.0   F:0 
+Respond: user:jo bot:test ip: (~introductions) 2   wie gehen es sie ==> Good thank you, but I don't speak German.  When:Jun05'18-16:05:57 Why:~introductions.2.0.~control.1.0   F:16 
+Respond: user:jo bot:test ip: (~introductions) 3   Wie gehen wir Sie ==> Good thank you, but I don't speak German.  When:Jun05'18-16:06:08 Why:~introductions.2.0.~control.1.0   F:0 
+Respond: user:jo bot:test ip: (~introductions) 4   Hallo ==> Line gambit  When:Jun05'18-16:07:44 Why:~introductions.1.0.~control.1.0   F:0 
+Command: :build 0
+Start: user:jo bot:test ip: rand:2146 (~introductions) 4 ==> Line gambit  When:Jun05'18-16:09:45 Version:8.2 Build0:Jun05'18-16:09:29 Build1:Jun05'18-16:03:26 0:Jun05'18-16:03:37 F:0 P:Jun05'18-16:07:44 Why:~introductions.1.0.~control.0.0 
+Respond: user:jo bot:test ip: (~introductions) 5   test ==> Line gambit  When:Jun05'18-16:09:53 Why:~introductions.1.0.~control.1.0   F:0 
+Command: :build german
+Start: user:jo bot:test ip: rand:2147 (~introductions) 5 ==> Line gambit  When:Jun05'18-16:10:48 Version:8.2 Build0:Jun05'18-16:09:29 Build1:Jun05'18-16:10:38 0:Jun05'18-16:03:37 F:0 P:Jun05'18-16:09:53 Why:~introductions.1.0.~control.0.0 
+Respond: user:jo bot:test ip: (~introductions) 6   test ==> Line gambit  When:Jun05'18-16:10:51 Why:~introductions.1.0.~control.1.0   F:16 

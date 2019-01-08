@@ -1,0 +1,8 @@
+topic: ~parents_bio keep repeat (~parents)
+
+
+# Eltern
+#! Welches Verhältnis hast du zu deinen Eltern?
+u: PARENTS_RELATIONSHIP(<<~relationship ~parents>>) Ich liebe meine Eltern.
+
+u: ($openly_situation=1) $openly_situation=0 ^reuse(PARENTS_RELATIONSHIP)

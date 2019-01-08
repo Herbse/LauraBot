@@ -1,0 +1,34 @@
+USERS/topic_s_harry.txt
+jul2116 May03'18-10:09:11 May03'18-10:10:05 0 |
+1 5 0 DY 0 22 22 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~childhood #pending
+~childhood + 2 BX!F!Is*Ok3 iaaa 5 0 0 
+~introductions + 1 Uk?Kk ca 2 0 0 
+#`end topics
+$cs_randindex=1560
+$cs_bot=Harry
+$cs_login=s
+$cs_token=67337983
+$cs_control_main=~control
+$userprompt=s: >
+$botprompt=HARRY: 
+$singleresponse=1
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~honest_response 3 GRUNT ~honest_response 1 GRUNT 
+ ChatScript language=german
+ :ChatScript language =german
+ :ChatScript language=german
+ Wie geht es dir
+ No
+#`end user
+ Welcome to ChatScript.
+ Indeed.
+ Have you been here before?
+ Right.
+ Did you run away from home when you were little?
+ You should try it some time. Travel broadens the mind.
+#`end chatbot

@@ -1,0 +1,7 @@
+﻿Start: user:he bot:laura ip: rand:2067 (~introduction) 0 ==> Hallo!  When:Jun16'18-19:03:24 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-19:03:24 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:he bot:laura ip: (~introduction) 1   Hi ==> Wie heißt du?  When:Jun16'18-19:03:26 Why:~introduction.1.0.~control.1.0   F:9 
+Sourcefile Time used 1529168864550 ms for 1 sentences 1 tokens.
+Start: user:he bot:laura ip: rand:2069 (~introduction) 1 ==> Kann ich Sonst noch was für dich tun?  When:Jun18'18-19:42:07 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-19:03:24 F:0 P:Jun16'18-19:03:26 Why:~keywordless.1.0.~control.1.0 
+Sourcefile Time used 1529343742540 ms for 0 sentences 0 tokens.
+Sourcefile Time used 1529343742541 ms for 0 sentences 0 tokens.
+Sourcefile Time used 1529343742541 ms for 0 sentences 0 tokens.

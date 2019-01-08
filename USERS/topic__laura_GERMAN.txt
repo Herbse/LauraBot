@@ -1,0 +1,69 @@
+USERS/topic__laura_GERMAN.txt
+jul2116 Jun19'18-13:11:26 Jun19'18-13:13:24 1529406686-11.1.0.2.1.0 |
+1372 1372 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 ClpOi ia 1 0 0 
+~personal + 1 3y5EP ia 2 0 0 
+#`end topics
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_bot=Laura
+$cs_randindex=1285
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+#`end user
+ Kann ich Sonst noch was für dich tun?
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot

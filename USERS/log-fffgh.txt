@@ -1,0 +1,4 @@
+﻿c:/chatscript/rawdata/harry/childhood.top
+c:/chatscript/rawdata/harry/introductions.top
+c:/chatscript/rawdata/harry/keywordless.top
+c:/chatscript/rawdata/harry/simplecontrol.top

@@ -1,0 +1,54 @@
+USERS/topic_klio_oob_GERMAN.txt
+jul2116 Nov28'18-12:10:32 Nov28'18-14:45:30 1543404474-5.2.0.4.2.0 |
+21 24 0 DY 0 5 5 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 1 m&4E!Is*Ok3 ia o 0 0 
+#`end topics
+$cs_token=1184511
+$botprompt=OOB: 
+$userprompt=klio: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=klio
+$cs_bot=Oob
+$cs_randindex=1396
+$closed=1
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ frage
+ frage
+ 
+ 
+ 
+ 
+ frage
+ frage
+ frage
+ frage
+ frage
+ 
+ test]frage
+ test] [D [D [D [A [C [B [C [B [D [C [A [D [C [B [D [C [A [D [C [B [D [C [B [C [D
+ 
+ frage
+ 
+ frage
+ frage
+ frage
+ 
+ 
+ frage
+ frage
+#`end user
+ Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+ Das ist der Test.
+ Kann ich dir noch irgendwie weiterhelfen?
+ Kann ich dir noch irgendwie weiterhelfen?
+ Das ist die Frage.
+ Das ist die Frage.
+#`end chatbot

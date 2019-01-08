@@ -1,0 +1,26 @@
+topic: ~father_bio keep repeat (~father)
+
+
+#! Erzähl mal etwas über deinen Vater?
+u: PAPA_HELP_MUM (<<~speak_verbs ~father>>) Mein Papa hilft meiner Mama zu Hause.
+  #! Wie hilft er ihr?
+  a: (helfen) Er geht einkaufen und kocht ihr immer was zu essen.
+
+u: (<<~activity ~father>>) ^reuse(PAPA_HELP_MUM)
+
+#! Erzähl mir mehr über deinen Papa!
+u: PAPA_HELP_NEIGHBOURS (<<sonst ~father>>) Manchmal hilft Papa auch den Nachbarn.
+
+  a: (![~help ~why]) $closed_question=1 ^respond(~answer_roulette)
+  #! Wobei hilft er ihnen?
+  a: (<<[~help ~why]>>) Er hilft den Nachbarn beim Autos reparieren. Oder einmal, da haben sie eine Waschmaschine wieder ganz gemacht.
+
+#! Was machst du denn gern mit deinem Papa?
+u: PAPA_REPAIR (<<~action ~father>>) Manchmal darf ich meinem Papa beim Reparieren helfen.
+
+  a: (!~facilitator) $closed_question=1 ^respond(~answer_roulette)
+  #! Und was machst du da dann dabei?
+  a: (~facilitator) Dann gehen wir zusammen in die Garage und ich hole dem Papa das Werkzeug.
+
+  u: ($openly_situation_home=1) $openly_situation_home=0 ^reuse(PAPA_HELP_MUM)
+  u: ($openly_situation=1) $openly_situation=0 ^reuse(PAPA_HELP_MUM)

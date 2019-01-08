@@ -1,0 +1,18 @@
+﻿Start: user:herfried bot:laura ip: rand:2031 (~introductions) 0 ==> Grüß Gott!  When:May23'18-12:13:57 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May15'18-17:29:25 0:May23'18-12:13:57 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+entering null word to dictionary in sentence1 Wed May 23 12:14:05 2018 in sentence: Hallo 
+    
+Respond: user:herfried bot:laura ip: (~introductions) 1   Hallo ==> Wie heißt du?  When:May23'18-12:14:05 Why:~introductions.1.0.~control.1.0   F:1000 
+Respond: user:herfried bot:laura ip: (~introductions) 2   Heinz ==> Freut mich dich kennenzulernen, Heinz .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May23'18-12:14:12 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:herfried bot:laura ip: (~introductions) 3   Hast du eine beste Freundin? ==> Kann ich Sonst noch was für dich tun?  When:May23'18-12:14:26 Why:~keywordless.1.0.~control.1.0   F:15 
+Respond: user:herfried bot:laura ip: (~introductions) 4   freundin ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-12:14:43 Why:~keywordless.2.0.~control.1.0   F:15 
+Respond: user:herfried bot:laura ip: (~biography) 5   wie alt bist du? ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May23'18-12:14:55 Why:~biography.1.0.~control.1.0   F:0 
+Command: :build laura
+Start: user:herfried bot:laura ip: rand:2036 (~introductions) 5 ==> Kann ich Sonst noch was für dich tun?  When:May23'18-12:15:36 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-12:15:34 0:May23'18-12:13:57 F:0 P:May23'18-12:14:55 Why:~keywordless.1.0.~control.1.0 
+Command: :reset
+Start: user:herfried bot:laura ip: rand:2031 (~introductions) 0 ==> Grüß Gott!  When:May23'18-12:15:41 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-12:15:34 0:May23'18-12:13:57 F:0 P:May23'18-12:14:55 Why:~introductions.0.0.~control.0.0 
+Respond: user:herfried bot:laura ip: (~introductions) 1   Hey ==> Wie heißt du?  When:May23'18-12:15:43 Why:~introductions.1.0.~control.1.0   F:0 
+Respond: user:herfried bot:laura ip: (~introductions) 2   Zander ==> Freut mich dich kennenzulernen, Zander .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May23'18-12:15:48 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:herfried bot:laura ip: (~introductions) 3   Wie heißt deine mama ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-12:15:58 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:herfried bot:laura ip: (~introductions) 4   wie alt bist du? ==> Kann ich Sonst noch was für dich tun?  When:May23'18-12:16:08 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:herfried bot:laura ip: (~introductions) 5   alter ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-12:16:11 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:herfried bot:laura ip: (~introductions) 6   wo wohnst du ==> Kann ich Sonst noch was für dich tun?  When:May23'18-12:16:14 Why:~keywordless.1.0.~control.1.0   F:0 

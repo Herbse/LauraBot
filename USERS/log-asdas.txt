@@ -1,0 +1,1 @@
+﻿Start: user:asdas bot:laura ip: rand:3826 (~introduction) 0 ==> Hallo!  When:Nov29'18-14:05:44 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Nov29'18-13:53:31 0:Nov29'18-14:05:44 F:0 P:0 Why:~introduction.0.0.~control.0.0 

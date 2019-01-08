@@ -1,0 +1,34 @@
+topic: ~names_bio keep repeat [~names]
+
+
+#! Wie heißt dein Bruder?
+u: BROTHER_NAME (<<~names  dein ~brother>>) Er heißt Leon.
+
+#! Wie heißt deine Mama?
+u: MOTHER_NAME (<<~names deine ~mother>>) Meine Mama ist die Charlotte.
+
+#! Wie heißt dein Papa?
+u: FATHER_NAME (<<~names dein ~father>>) Mein Papa heißt Stefan.
+
+#! Wie heißt deine beste Freundin?
+u: FRIEND_NAME (<<~names deine freundin>>) Meine beste Freundin ist die Mira.
+
+#! Wie heißt dein Onkel?
+u: UNCLE_NAME (<<~names dein [onkel onkels]>>) Der heißt Dirk.
+
+#! Wie heißt du?
+u: BOT_NAME(<<~names [du dein]>>) Laura.
+
+u: (<<~names>>) Wessen Name nochmal?
+  #! Bruder
+  a:(<<~brother>>) ^reuse(BROTHER_NAME)
+  #! Mutter
+  a:(<<~mother>>) ^reuse(MOTHER_NAME)
+  #! Vater
+  a:(<<~father>>) ^reuse(FATHER_NAME)
+  #! Freundin
+  a:(<< freundin >>) ^reuse(FRIEND_NAME)
+  #! Onkel
+  a:(<< [onkel onkels] >>) ^reuse(UNCLE_NAME)
+  #! Du
+  a:(<< [dein du] >>) ^reuse(BOT_NAME)

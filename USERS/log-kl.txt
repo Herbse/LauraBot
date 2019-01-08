@@ -1,0 +1,5 @@
+﻿Start: user:kl bot:laura ip: rand:2173 (~introduction) 0 ==> Grüß Gott!  When:Jun19'18-13:05:03 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun19'18-13:05:03 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:kl bot:laura ip: (~introduction) 1   hallo ==> Wie heißt du?  When:Jun19'18-13:05:09 Why:~introduction.1.0.~control.1.0   F:277 
+Respond: user:kl bot:laura ip: (~introduction) 2   Heinz ==> Freut mich dich kennenzulernen, Heinz. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:Jun19'18-13:05:17 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:5 
+Respond: user:kl bot:laura ip: (~personal) 3   Wie geht es dir ==> Prima. Was möchstest du denn wissen?  When:Jun19'18-13:05:32 Why:~personal.0.0.~control.1.0   F:6 
+Respond: user:kl bot:laura ip: (~personal) 4   Wie geht es dir ==> Naja, es geht so.  When:Jun19'18-13:05:34 Why:~personal.3.0.~control.1.0   F:6 

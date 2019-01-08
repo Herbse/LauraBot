@@ -1,0 +1,7 @@
+﻿ChatScript Version 8.2  compiled Jun 19 2018 14:20:20
+Buffer allocation underflowNo errors or warnings
+
+
+
+Finished compile
+

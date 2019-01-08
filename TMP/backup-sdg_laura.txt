@@ -1,0 +1,42 @@
+﻿USERS/topic_sdg_laura_GERMAN.txt
+jul2116 Jun19'18-15:57:43 Dec04'18-16:08:14 1543923360-10.2.8.10.6.0 |
+1 8 0 DY 0 18 18 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~event_uncle #pending
+~introduction + 1 s1Q@# ia 0 0 0 
+#`end topics
+$event_state=2
+$cs_token=1180160
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=sdg: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=sdg
+$cs_bot=Laura
+$cs_randindex=2403
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~event_uncle 7 ONKEL_EVENT_1 
+ onkel
+ immer
+ oft 
+ wann
+ wann
+ wann
+ dann
+ immer
+#`end user
+ Hallo!
+ Mein Onkel schläft jetzt immer bei uns.
+ Fast jeden Tag.
+ Fast jeden Tag.
+ Fast jeden Tag.
+ Fast jeden Tag.
+ Kann ich noch was für dich tun?
+ Der kommt in mein Zimmer, obwohl ich das nicht will.
+ Kann ich noch was für dich tun?
+#`end chatbot

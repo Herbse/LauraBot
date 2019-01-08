@@ -1,0 +1,25 @@
+USERS/topic_ks_laura_GERMAN.txt
+jul2116 Jun16'18-18:33:54 0 0 |
+1 0 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 1 ClpOi ia 0 0 0 
+#`end topics
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=ks: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=ks
+$cs_bot=Laura
+$cs_randindex=2179
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+#`end user
+ Grüß Gott!
+#`end chatbot

@@ -1,0 +1,36 @@
+USERS/topic_test_harry.txt
+jul2116 May02'18-18:02:29 May03'18-15:49:27 0 |
+1 6 0 DY 0 22 22 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~childhood #pending
+~childhood + 2 BX!F!Is*Ok3 iaaa 4 0 0 
+~introductions + 1 Uk?Kk ca 2 0 0 
+#`end topics
+$singleresponse=1
+$botprompt=HARRY: 
+$userprompt=test: >
+$cs_control_main=~control
+$cs_token=67337983
+$cs_login=test
+$cs_bot=Harry
+$cs_randindex=2149
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ ChatScript language=english
+ no
+ okay
+ yup
+ why
+ who is ghandi
+#`end user
+ Welcome to ChatScript.
+ Have you been here before?
+ Then welcome to your first time.
+ Are you sure?
+ Did you run away from home when you were little?
+ Nevermind why.
+ Mohandas Karamchand Gandhi (; Hindustani: [ˈmoːɦənd̪aːs ˈkərəmtʃənd̪ ˈɡaːnd̪ʱi] ( listen); 2 October 1869 – 30 January 1948) was an Indian activist who was the leader of the Indian
+#`end chatbot

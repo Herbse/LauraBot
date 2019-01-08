@@ -1,0 +1,199 @@
+﻿Start: user:klio bot:laura ip: rand:1397 (~introduction) 0 ==> Hallo!  When:Nov28'18-12:03:21 Version:8.2 Build0:Nov21'18-15:28:28 Build1:Nov21'18-15:28:46 0:Nov28'18-12:03:21 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :build oob
+No such bot  klio -  -  status: test   in topic_klio_test_GERMAN.txt at 0: ^test
+    Command: :build OOB
+No such bot  klio -  -  status: test   in topic_klio_test_GERMAN.txt at 0: ^test
+    Command: :build 0
+No such bot  klio -  -  status: test   in topic_klio_test_GERMAN.txt at 0: ^test
+    Command: :build OOB
+No such bot  klio -  -  status: test   in topic_klio_test_GERMAN.txt at 0: ^test
+    Command: :build oob
+No such bot  klio -  -  status: test   in topic_klio_test_GERMAN.txt at 0: ^test
+    Command: :build Harry
+Start: user:klio bot:harry ip: rand:1396 (~introductions) 0 ==> Welcome to ChatScript.  When:Nov28'18-12:04:46 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:04:44 0:Nov28'18-12:04:46 F:0 P:0 Why:~introductions.1.0.~control.1.0 
+Command: :build oob
+No such bot  klio -  -  status: test   in topic_klio_test_GERMAN.txt at 0: ^test
+    Command: :build oob
+No such bot  klio -  -  status: test   in topic_klio_test_GERMAN.txt at 0: ^test
+    No such bot  klio -  - hallo status: test   in topic_klio_test_GERMAN.txt at 1: ^test
+    Command: :build oob
+Start: user:klio bot:oob ip: rand:1397 (~introduction) 0 ==> Hallo!  When:Nov28'18-12:10:32 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:10:30 0:Nov28'18-12:10:32 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:klio bot:oob ip: (~introduction) 1   hey ==> Wie heißt du?  When:Nov28'18-12:10:36 Why:~introduction.1.0.~control.1.0   F:32 
+Respond: user:klio bot:oob ip: (~introduction) 2   hans ==> Freut mich dich kennenzulernen, unknown-word. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:Nov28'18-12:10:41 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:2 
+Respond: user:klio bot:oob ip: (~introduction) 3   [ping] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-12:21:52 Why:~keywordless.1.0.~control.1.0   F:4 
+Respond: user:klio bot:oob ip: (~introduction) 4   [ ping ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-12:22:09 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1401 (~introduction) 4 ==> Hallo!  When:Nov28'18-12:22:46 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:22:44 0:Nov28'18-12:10:32 F:0 P:Nov28'18-12:22:09 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 5   hey ==> Wie heißt du?  When:Nov28'18-12:22:54 Why:~introduction.1.0.~control.2.0   F:0 
+Respond: user:klio bot:oob ip: (~introduction) 6   ja ==> Hallo, yes. Ich heiße OOB. Sende mir über die App eine OOB-Nachricht, um zu schauen, ob das funktioniert  When:Nov28'18-12:22:55 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Respond: user:klio bot:oob ip: (~introduction) 7   [ping] ==> Pong.  When:Nov28'18-12:23:04 Why:~control.0.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 8   [ping ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-12:23:15 Why:~keywordless.2.0.~control.2.0   F:1 
+Command: :build laura
+Start: user:klio bot:laura ip: rand:1397 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:Nov28'18-12:24:08 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:24:06 0:Nov28'18-12:03:21 F:0 P:0 Why:~personal.0.0.~control.1.0 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1405 (~introduction) 8 ==> Grüß Gott!  When:Nov28'18-12:24:13 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:24:11 0:Nov28'18-12:10:32 F:0 P:Nov28'18-12:23:15 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 9   hi ==> Wie heißt du?  When:Nov28'18-12:24:17 Why:~introduction.1.0.~control.2.0   F:0 
+Respond: user:klio bot:oob ip: (~introduction) 10   ij ==> Hallo, unknown-word. Ich heiße OOB. Sende mir über die App eine OOB-Nachricht, um zu schauen, ob das funktioniert  When:Nov28'18-12:24:18 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 11   [ping] ==> Pongo.  When:Nov28'18-12:24:26 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 12   [ping] ==> Pongo.  When:Nov28'18-12:24:34 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 13   sdf ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-12:24:36 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 14   [ping] ==> Pongo.  When:Nov28'18-12:24:49 Why:~introduction.2.0.~control.2.0   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1411 (~introduction) 14 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-12:27:27 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:27:25 0:Nov28'18-12:10:32 F:0 P:Nov28'18-12:24:49 Why:~keywordless.2.0.~control.2.0 
+Respond: user:klio bot:oob ip: (~introduction) 15   [question-style:closed]Frage ==> Ich glaube das hab ich nicht ganz verstanden.`Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-12:27:54 Why:~keywordless.2.0.~control.2.0 ~keywordless.2.0.~control.2.0   F:2 
+Respond: user:klio bot:oob ip: (~introduction) 16   [question-style:closed] Frage ==> Ich glaube das hab ich nicht ganz verstanden.`Kann ich Sonst noch was für dich tun?  When:Nov28'18-12:28:14 Why:~keywordless.2.0.~control.2.0 ~keywordless.1.0.~control.2.0   F:2 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1413 (~introduction) 16 ==> Hey!  When:Nov28'18-12:28:33 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:28:31 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-12:28:14 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 17   asf ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-12:28:35 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 18   [question-style:closed]Frage ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-12:28:40 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 19   [question-style:closed] Frage ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-12:28:49 Why:~keywordless.1.0.~control.2.0   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1416 (~introduction) 19 ==> Hey!  When:Nov28'18-12:29:47 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:29:46 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-12:28:49 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 20   af ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-12:29:50 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 21   [question-style:closed] ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Nov28'18-12:30:04 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 22   [question-style:open] ==> Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.  When:Nov28'18-12:30:16 Why:~introduction.3.0.~control.2.0   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1419 (~introduction) 22 ==> Hallo!  When:Nov28'18-12:35:35 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:35:33 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-12:30:16 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 23   hey ==> Wie heißt du?  When:Nov28'18-12:35:38 Why:~introduction.1.0.~control.2.0   F:0 
+Respond: user:klio bot:oob ip: (~introduction) 24   asd ==> Hallo, unknown-word. Ich heiße OOB. Sende mir über die App eine OOB-Nachricht, um zu schauen, ob das funktioniert  When:Nov28'18-12:35:39 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1421 (~introduction) 24 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht, um zu schauen, ob das funktioniert  When:Nov28'18-12:36:15 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:36:13 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-12:35:39 Why:~introduction.0.0.~control.1.0 
+Command: :build oob
+not ptr start of responder 2 ~introduction 00005 - killing data
+Start: user:klio bot:oob ip: rand:1421 (~introduction) 24 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht ("[question-style:closed]" oder "[question-style:open]")  When:Nov28'18-12:37:53 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:37:51 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-12:35:39 Why:~introduction.0.0.~control.1.0 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1421 (~introduction) 24 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-12:39:05 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-12:39:03 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-12:35:39 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 25   [question-style:closed] Frage ==> Ich glaube das hab ich nicht ganz verstanden.`Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-12:39:50 Why:~keywordless.2.0.~control.2.0 ~keywordless.0.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 26   [question-style:closed]Frage ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-12:40:06 Why:~keywordless.0.0.~control.2.0   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1423 (~introduction) 26 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:20:08 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:20:06 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-12:40:06 Why:~keywordless.2.0.~control.2.0 
+Respond: user:klio bot:oob ip: (~introduction) 27   [question-style:closed] frage ==> Ich glaube das hab ich nicht ganz verstanden.`Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:20:38 Why:~keywordless.2.0.~control.2.0 ~keywordless.1.0.~control.2.0   F:2 
+Respond: user:klio bot:oob ip: (~introduction) 28   [question-style:closed]frage ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:20:43 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 29   [question-style:closed] ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-14:20:45 Why:~keywordless.0.0.~control.2.0   F:1 
+Command: :build oob
+No such bot  klio -  -  status: defaultbot word not found   in topic_klio_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build oob
+No such bot  klio -  -  status: defaultbot word not found   in topic_klio_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build oob
+No such bot  klio -  -  status: defaultbot word not found   in topic_klio_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build oob
+Start: user:klio bot:oob ip: rand:1426 (~introduction) 29 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:23:50 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:23:48 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-14:20:45 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 30   test ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-14:23:59 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 31   [test] ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Nov28'18-14:24:11 Why:~introduction.1.0.~control.2.0   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1428 (~introduction) 31 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:24:25 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:24:23 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-14:24:11 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 32   [test]frage ==> Ich glaube das hab ich nicht ganz verstanden.`Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-14:24:35 Why:~keywordless.2.0.~control.2.0 ~keywordless.0.0.~control.2.0   F:1 
+Command: :reset
+Start: user:klio bot:oob ip: rand:1397 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:24:45 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:24:23 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-14:24:35 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 1   [test]frage ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-14:24:52 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 2   [test] frage ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-14:25:03 Why:~keywordless.0.0.~control.2.0   F:1 
+Command: :why
+~keywordless.0.0.4.2.0  r:  Kann ich dir noch irgendwie weiterhelfen? ^keep ( ) ^repeat ( ) 
+ via ~control.4.2.0  u:  ( ) $$currenttopic = %topic $$response = %response ^if 00v( %response  $$response ) 00I{...   
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1399 (~introduction) 2 ==> Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:25:54 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:25:52 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-14:25:03 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 3   [test] ==> Das ist der Test.  When:Nov28'18-14:26:14 Why:~introduction.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 4   [test] ==> Das ist der Test.  When:Nov28'18-14:26:17 Why:~introduction.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 5   [test] ==> Das ist der Test.  When:Nov28'18-14:26:18 Why:~introduction.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 6   [test] ==> Das ist der Test.  When:Nov28'18-14:26:20 Why:~introduction.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 7   [test]frage ==> Das ist der Test.`Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:26:28 Why:~introduction.1.0.~control.2.0 ~keywordless.2.0.~control.2.0   F:2 
+Respond: user:klio bot:oob ip: (~introduction) 8   [test] frage ==> Das ist der Test.`Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:26:32 Why:~introduction.1.0.~control.2.0 ~keywordless.2.0.~control.2.0   F:2 
+Respond: user:klio bot:oob ip: (~introduction) 9   frage ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:26:47 Why:~keywordless.2.0.~control.2.0   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1406 (~introduction) 9 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:32:45 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:32:43 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-14:26:47 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 10   frage ==> Das ist die Frage.  When:Nov28'18-14:32:47 Why:~introduction.2.0.~control.2.0   F:0 
+Respond: user:klio bot:oob ip: (~introduction) 11   frage ==> Das ist die Frage.  When:Nov28'18-14:32:49 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 12   [test] ==> Das ist der Test.  When:Nov28'18-14:33:14 Why:~introduction.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 13   test]frage ==> Das ist die Frage.  When:Nov28'18-14:33:26 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 14   test] [D [D [D [A [C [B [C [B [D [C [A [D [C [B [D [C [A [D [C [B [D [C [B [C [D ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-14:33:35 Why:~keywordless.0.0.~control.2.0   F:3 
+Respond: user:klio bot:oob ip: (~introduction) 15    [A ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:33:36 Why:~keywordless.2.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 16   [test]frage ==> Das ist der Test.`Das ist die Frage.  When:Nov28'18-14:33:45 Why:~introduction.1.0.~control.2.0 ~introduction.2.0.~control.2.0   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1413 (~introduction) 16 ==> Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:43:04 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:43:02 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-14:33:45 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 17   [test] ==> Das ist der Test.  When:Nov28'18-14:43:18 Why:~introduction.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 18   [question-style:closed]frage ==> Kann ich dir noch irgendwie weiterhelfen?`Das ist die Frage.  When:Nov28'18-14:43:43 Why:~keywordless.0.0.~control.2.0 ~introduction.2.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 19   [question-style:closed]frage ==> Kann ich Sonst noch was für dich tun?`Das ist die Frage.  When:Nov28'18-14:43:59 Why:~keywordless.1.0.~control.2.0 ~introduction.2.0.~control.2.0   F:2 
+Respond: user:klio bot:oob ip: (~introduction) 20   [question-style:closed] frage ==> Kann ich Sonst noch was für dich tun?`Das ist die Frage.  When:Nov28'18-14:44:12 Why:~keywordless.1.0.~control.2.0 ~introduction.2.0.~control.2.0   F:1 
+Command: :build oob
+Start: user:klio bot:oob ip: rand:1417 (~introduction) 20 ==> Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:44:46 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:44:44 0:Nov28'18-12:10:32 F:1543404474-5.2.0.4.2.0 P:Nov28'18-14:44:12 Why:~introduction.0.0.~control.1.0 
+Respond: user:klio bot:oob ip: (~introduction) 21   [test] ==> Das ist der Test.  When:Nov28'18-14:44:58 Why:~introduction.1.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 22   [testc] ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-14:45:09 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 23   [testc] frage ==> Kann ich dir noch irgendwie weiterhelfen?`Das ist die Frage.  When:Nov28'18-14:45:26 Why:~keywordless.0.0.~control.2.0 ~introduction.2.0.~control.2.0   F:1 
+Respond: user:klio bot:oob ip: (~introduction) 24   frage ==> Das ist die Frage.  When:Nov28'18-14:45:30 Why:~introduction.2.0.~control.2.0   F:1 
+Command: :build harry
+Start: user:klio bot:harry ip: rand:1396 (~introductions) 0 ==> Have you been here before?  When:Nov28'18-14:48:54 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:48:52 0:Nov28'18-12:04:46 F:0 P:0 Why:~introductions.2.0.~control.1.0 
+Respond: user:klio bot:harry ip: (~childhood) 1   shut uo ==> Did you run away from home when you were little?  When:Nov28'18-14:48:58 Why:~childhood.0.0.~control.10.0   F:4 
+Respond: user:klio bot:harry ip: (~childhood) 2   shut up ==> I ran away once, but my parents found me and dragged me back.  When:Nov28'18-14:49:02 Why:~childhood.1.0=RUNAWAY.~control.10.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 3   talk ==> Right.  When:Nov28'18-14:49:07 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 4   talk ==> Cool.  When:Nov28'18-14:49:09 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 5   shut up ==> What scared you as a kid?  When:Nov28'18-14:49:14 Why:~childhood.2.0.~control.10.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 6   talk ==> I was scared of machines. I had vivid dreams of the Terminator robots.  When:Nov28'18-14:49:17 Why:~childhood.3.0=SCARE.~control.10.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 7   talk ==> Did you have a happy childhood?  When:Nov28'18-14:49:19 Why:~childhood.4.0.~control.10.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 8   [callback] ==> Callback seen.  When:Nov28'18-14:49:35 Why:~control.4.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 9   loopback test ==> [loopback=1000 ] Loopback requested.  When:Nov28'18-14:49:54 Why:~control.7.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 10   [ loopback ] ==> Loopback seen.  When:Nov28'18-14:49:55 Why:~control.5.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 11   [ loopback ] ==> Indeed.  When:Nov28'18-14:49:56 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 12   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:49:57 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 13   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:49:58 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 14   [ loopback ] ==> Fine.  When:Nov28'18-14:49:59 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 15   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:00 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 16   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:01 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 17   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:02 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 18   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:03 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 19   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:04 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 20   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:05 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 21   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:06 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 22   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:07 Why:~control.10.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 23   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:08 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 24   [ loopback ] ==> OK.  When:Nov28'18-14:50:09 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 25   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:10 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 26   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:11 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 27   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:12 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 28   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:13 Why:~control.10.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 29   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:14 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 30   [ loopback ] ==> Loopback seen.  When:Nov28'18-14:50:15 Why:~control.5.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 31   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:16 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 32   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:17 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 33   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:18 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 34   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:19 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 35   shut up ==> Cool.  When:Nov28'18-14:50:25 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 36   [ loopback ] ==> Right.  When:Nov28'18-14:50:26 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 37   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:27 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 38   [ loopback ] ==> Indeed.  When:Nov28'18-14:50:28 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 39   [alarm] ==> Alarm seen.  When:Nov28'18-14:50:41 Why:~control.6.0   F:1 
+Respond: user:klio bot:harry ip: (~childhood) 40   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:42 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 41   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:43 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 42   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:44 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 43   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:45 Why:~control.10.0   F:0 
+Respond: user:klio bot:harry ip: (~childhood) 44   [ loopback ] ==> I don't know what to say.  When:Nov28'18-14:50:46 Why:~control.10.0   F:0 
+Command: :build laura
+Start: user:klio bot:laura ip: rand:1397 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:50:54 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:50:50 0:Nov28'18-12:03:21 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Respond: user:klio bot:laura ip: (~personal) 1   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:50:55 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 2   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:50:56 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 3   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:50:57 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 4   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:50:58 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 5   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:50:59 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 6   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:00 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 7   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:01 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 8   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:02 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 9   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:03 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 10   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:04 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 11   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:05 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 12   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:06 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 13   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:07 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 14   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:08 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 15   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:09 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 16   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:10 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:klio bot:laura ip: (~personal) 17   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:11 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 18   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:12 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 19   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:13 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 20   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:14 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 21   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:15 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 22   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:16 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 23   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:17 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 24   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:18 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 25   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:19 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 26   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:20 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 27   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:21 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 28   [ loopback ] ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov28'18-14:51:22 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:klio bot:laura ip: (~personal) 29   [ loopback ] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:51:23 Why:~keywordless.1.0.~control.1.0   F:0 

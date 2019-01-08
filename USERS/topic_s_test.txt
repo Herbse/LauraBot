@@ -1,0 +1,63 @@
+USERS/topic_s_test.txt
+jul2116 May03'18-09:59:56 May03'18-10:35:08 1525335374-4.0.0.2.1.0 |
+14 17 0 DY 0 16 16 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~courses_of_studies ~informatics #pending
+~courses_of_studies + 1 ?#m#&Is*Ok3 ea 7 0 0 
+~introductions + 1 $aL$D ia 5 0 0 
+#`end topics
+$name=her
+$cs_randindex=1560
+$cs_bot=Test
+$cs_login=s
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=s: >
+$botprompt=TEST: 
+$cs_token=1184511
+$used_introduction_informatics=true
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ hoi
+ Hallo
+ Weiß ich nicht
+ Hallo
+ her
+ i dont know
+ advice
+ no
+ yes
+ why
+ what is your name
+ Wie bitte
+ Hallo
+ Hallo
+ Beratung
+ Informatik
+ Wirtschaft
+#`end user
+ Hallo!
+ Kann ich Sonst noch was für dich tun?
+ Wie heißt du?
+ Kann ich Sonst noch was für dich tun?
+ Wie heißt du?
+ Freut mich dich kennenzulernen, she. Wie kann ich dir helfen?
+ Kann ich Sonst noch was für dich tun?
+ Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Im Studiengang Informatik lerst du wie man programmiert, Rechnernetzte aufbaut, Algorithmen entwickelt und dabei auch noch agil vorgeht.
+ Kann ich Sonst noch was für dich tun?
+#`end chatbot

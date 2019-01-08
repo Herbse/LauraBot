@@ -1,0 +1,7 @@
+
+# underlying vocabulary organization
+RAWDATA/ONTOLOGY/GERMAN/
+
+RAWDATA/WORLDDATA/
+
+

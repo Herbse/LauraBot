@@ -1,0 +1,24 @@
+topic: ~brother_bio keep repeat (~brother Leon)
+
+
+#! Hast du noch Geschwister?
+u: (<<~own du geschwister>>) Ich habe einen Bruder.
+
+#! Hast du einen Bruder?
+u: (<<~own du ~brother>>) Ja.
+
+#! Hast du eine Schwester?
+u: (<<~own du schwester>>) Nein. Ich habe einen Bruder.
+
+#! Und wie findest du den Leon?
+#! Wie ist euer Verhältnis?
+u: (<<~relationship [Leon ~brother ihm eure]>>) Ich mag Leon richtig gerne.
+
+#! Was machst du denn gerne mit Leon
+u: LEON_FIFA (<<~action [Leon ~brother]>>) Wenn der Leon FIFA spielt darf ich immer zugucken.
+
+#! Erzähl mir doch mehr über Leon.
+u: (<<~speak_verbs Leon>>) Wenn Leons Freunde kommen, muss ich immer alleine spielen.
+
+u: ($openly_situation_home=1) $openly_situation_home=0 ^reuse(LEON_FIFA)
+u: ($openly_situation=1) $openly_situation=0 ^reuse(LEON_FIFA)

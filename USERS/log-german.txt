@@ -1,0 +1,2 @@
+﻿Start: user:german bot:harry ip: rand:2111 (~introductions) 0 ==> Welcome to ChatScript.  When:May02'18-17:38:36 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Apr24'18-16:42:37 0:May02'18-17:38:36 F:0 P:0 Why:~introductions.1.0.~control.0.0 
+Respond: user:german bot:harry ip: (~introductions) 1   Hallo ==> Have you been here before?  When:May02'18-17:38:39 Why:~introductions.2.0.~control.9.0   F:0 

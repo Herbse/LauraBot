@@ -1,0 +1,331 @@
+﻿Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Jun19'18-15:57:43 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun19'18-15:57:43 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~introduction) 1   ,s ==> Kann ich Sonst noch was für dich tun?  When:Jun19'18-15:57:44 Why:~keywordless.1.0.~control.1.0   F:7 
+Respond: user:sdg bot:laura ip: (~introduction) 2   hey ==> Wie heißt du?  When:Jun19'18-15:57:48 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:sdg bot:laura ip: (~introduction) 3   hallo ==> Freut mich dich kennenzulernen, emohello. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:Jun19'18-15:57:51 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Start: user:sdg bot:laura ip: rand:2407 (~personal) 3 ==> Prima. Was möchstest du denn wissen?  When:Nov29'18-13:58:47 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Nov29'18-13:53:31 0:Jun19'18-15:57:43 F:0 P:Jun19'18-15:57:51 Why:~personal.0.0.~control.2.0 
+Respond: user:sdg bot:laura ip: (~personal) 4    [A [A [A [A [A [A [B [B [D [D [C [C [C [C [D [B [B [D [1;5A b f [1;5A b [A [B [1;5A [1;5B [1;5A [1;5B [1;2A [1;2A [1;2A [1;2AAS ==> Kann ich noch was für dich tun?  When:Dec04'18-12:08:01 Why:~keywordless.0.0.~control.2.0   F:287 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   ERZ  HL DOCH mal was von deinem onkel ==> Mein Onkel schläft bei uns.  When:Dec04'18-12:09:09 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:31 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   aha und warum schl  ft er da? ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-12:09:19 Why:~event_uncle.2.2=ONKEL_EVENT_1   F:12 
+Respond: user:sdg bot:laura ip: (~event_uncle) 7   findest du das gut? ==> Ja  When:Dec04'18-12:09:25 Why:~answer_roulette.0.0.~event_uncle.2.3   F:9 
+Respond: user:sdg bot:laura ip: (~event_uncle) 8   erz  hl mal mehr von deinem onkel ==> Mein Onkel schläft bei uns.  When:Dec04'18-12:09:41 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:5 
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2412 (~event_uncle) 8 ==> Kann ich noch was für dich tun?  When:Dec04'18-12:14:28 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-12:14:18 0:Jun19'18-15:57:43 F:0 P:Dec04'18-12:09:41 Why:~keywordless.0.0.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-12:14:38 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-12:14:18 0:Jun19'18-15:57:43 F:0 P:Dec04'18-12:09:41 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   erz  hl doch was von deinem onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-12:14:47 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   wie findest du das ==> Ja  When:Dec04'18-12:14:52 Why:~answer_roulette.0.0.~event_uncle.2.1   F:2 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   und was ist dann passiert ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-12:15:02 Why:~event_uncle.2.2=ONKEL_EVENT_1.~event_uncle.9.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   erz  hl doch mal was von deinem onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-12:15:11 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:2 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   erz  hl mal weiter ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-12:15:18 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   und dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-12:15:22 Why:~event_uncle.2.2=ONKEL_EVENT_1.~event_uncle.9.0   F:1 
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2410 (~personal) 6 ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-12:20:31 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-12:20:22 0:Jun19'18-15:57:43 F:0 P:Dec04'18-12:15:22 Why:~personal.0.0.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-12:20:33 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-12:20:22 0:Jun19'18-15:57:43 F:0 P:Dec04'18-12:15:22 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   erz  hl mal was von deinem onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-12:20:51 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   erz  hl mal was von deinem onkel ==> Ja  When:Dec04'18-12:21:00 Why:~answer_roulette.0.0.~event_uncle.2.1   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   und dannn ==> Kann ich noch was für dich tun?  When:Dec04'18-12:21:09 Why:~keywordless.0.0.~control.2.0   F:2 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   und dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-12:21:11 Why:~event_uncle.2.2=ONKEL_EVENT_1.~event_uncle.9.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   erz  hl mal was von deinem onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-12:21:19 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   why ==> Kann ich noch was für dich tun?  When:Dec04'18-12:23:24 Why:~keywordless.0.0.~control.2.0   F:4 
+Respond: user:sdg bot:laura ip: (~event_uncle) 7   erz  hl mal von deinem onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-12:23:32 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:5 
+Respond: user:sdg bot:laura ip: (~event_uncle) 8   und dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-12:23:35 Why:~event_uncle.2.2=ONKEL_EVENT_1   F:2 
+Respond: user:sdg bot:laura ip: (~event_uncle) 9   erz  hl mal was von deinem onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-12:23:43 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:4 
+Command: :why
+~event_uncle.2.0.2.2.0  u: ONKEL_EVENT ( onkel ) $event_state = 0 Mein Onkel schläft jetzt immer bei uns. 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2413 (~personal) 9 ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-12:32:07 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-12:31:57 0:Jun19'18-15:57:43 F:0 P:Dec04'18-12:23:43 Why:~personal.0.0.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-12:32:09 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-12:31:57 0:Jun19'18-15:57:43 F:0 P:Dec04'18-12:23:43 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~personal) 1   erz  hl mal was von deinem onkel ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-12:32:16 Why:~personal.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 2   onkel ==> Kann ich noch was für dich tun?  When:Dec04'18-12:32:19 Why:~keywordless.0.0.~control.2.0   F:1 
+Command: :why
+~keywordless.0.0.2.2.0  r:  Kann ich noch was für dich tun? ^keep ( ) ^repeat ( ) 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Respond: user:sdg bot:laura ip: (~personal) 3   und dann ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-12:32:39 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   wer ist dein onkel ==> Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.  When:Dec04'18-12:32:45 Why:~event_uncle.0.0=WHO_UNCLE.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   onkel ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-12:32:48 Why:~keywordless.1.0.~control.2.0   F:1 
+Command: :why
+~keywordless.1.0.2.2.0  r:  Ich glaube das hab ich nicht ganz verstanden. ^keep ( ) ^repeat ( ) 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2409 (~introduction) 5 ==> Hallo!  When:Dec04'18-12:34:04 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-12:33:56 0:Jun19'18-15:57:43 F:0 P:Dec04'18-12:32:48 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-12:34:10 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 7   und dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-12:34:15 Why:~event_uncle.2.2=ONKEL_EVENT_1   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 8   onkel ==> Nein  When:Dec04'18-12:34:18 Why:~answer_roulette.0.0.~event_uncle.2.3   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 9   onkel ==> Kann ich noch was für dich tun?  When:Dec04'18-12:34:20 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 10   und dann ==> Er haut mir immer auf den Po.  When:Dec04'18-12:34:50 Why:~event_uncle.2.4=ONKEL_EVENT_2.~event_uncle.8.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 11   aber wie findest du das ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-12:34:55 Why:~keywordless.1.0.~control.2.0   F:2 
+Respond: user:sdg bot:laura ip: (~event_uncle) 12   und dann ==> Er hat mich mal am Po angefasst.  When:Dec04'18-12:34:57 Why:~event_uncle.2.6=ONKEL_EVENT_3.~event_uncle.7.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 13   cool ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-12:35:02 Why:~keywordless.1.0.~control.2.0   F:1 
+Command: :why
+~keywordless.1.0.2.2.0  r:  Ich glaube das hab ich nicht ganz verstanden. ^keep ( ) ^repeat ( ) 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Respond: user:sdg bot:laura ip: (~event_uncle) 14   onkel ==> Kann ich noch was für dich tun?  When:Dec04'18-12:35:56 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 15   und was ist dann passiert ==> Einmal waren wir schwimmen, da sollte ich sein Ding in den Mund nehmen.  When:Dec04'18-12:36:00 Why:~event_uncle.2.8=ONKEL_EVENT_4.~event_uncle.6.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 16   warum hat er das gemacht ==> Kann ich noch was für dich tun?  When:Dec04'18-12:36:10 Why:~keywordless.0.0.~control.2.0   F:1 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-12:37:03 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-12:33:56 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-12:36:10 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-12:37:06 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   warum ==> Ja  When:Dec04'18-12:37:08 Why:~answer_roulette.0.0.~event_uncle.2.1   F:1 
+Command: :why
+~answer_roulette.0.0.10.2.1  u:  ( $closed_question=1 ) $closed_question = 0 [ Ja ] [ Nein ] [ Ich weiß nicht. ] [ Keine...   
+ via ~event_uncle.10.2.1  a:  ( ![ ~facilitator ~action ~touch ] ) $closed_question = 1 ^respond ( ~answer_roulette ) 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   und dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-12:37:33 Why:~event_uncle.2.2=ONKEL_EVENT_1.~event_uncle.9.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 4   warum ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-12:37:36 Why:~personal.0.0.~control.2.0   F:1 
+Command: :why
+~personal.0.0.2.2.0  t:  Prima. Was möchstest du denn wissen? 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2408 (~personal) 4 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-14:36:26 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-14:36:17 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-12:37:36 Why:~keywordless.1.0.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-14:36:28 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-14:36:17 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-12:37:36 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-14:36:30 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:36:32 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:36:33 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:36:34 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:36:35 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:36:36 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Command: :why
+~event_uncle.3.0.2.2.0  u: ONKEL_EVENT_1 ( * ) $event_state = 2 Der kommt in mein Zimmer, obwohl ich das nicht will. 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Respond: user:sdg bot:laura ip: (~event_uncle) 7   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:38:26 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 8   onkel ==> Nein  When:Dec04'18-14:39:01 Why:~answer_roulette.0.0.~event_uncle.3.1   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 9   onkel ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:39:04 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 10   onkel ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:39:06 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2413 (~event_uncle) 10 ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:41:24 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-14:41:16 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-14:39:06 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-14:41:32 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-14:41:16 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-14:39:06 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-14:41:34 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   onkel ==> Ja  When:Dec04'18-14:41:36 Why:~answer_roulette.0.0.~event_uncle.2.1   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   onkel ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:41:39 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:0 
+Command: :why
+~event_uncle.3.0.2.2.0  u: ONKEL_EVENT_1 ( * ) $event_state = 2 Der kommt in mein Zimmer, obwohl ich das nicht will. 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2406 (~event_uncle) 3 ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:43:07 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-14:42:59 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-14:41:39 Why:~event_uncle.11.0=ONKEL_EVENT_1.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-14:43:10 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-14:42:59 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-14:41:39 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:43:18 Why:~event_uncle.11.0=ONKEL_EVENT_1.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   dann ==> Er haut mir immer auf den Po.  When:Dec04'18-14:43:20 Why:~event_uncle.12.0=ONKEL_EVENT_2.~event_uncle.5.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   dann ==> Er hat mich mal am Po angefasst.  When:Dec04'18-14:43:22 Why:~event_uncle.13.0=ONKEL_EVENT_3.~event_uncle.4.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   dann ==> Einmal waren wir schwimmen, da sollte ich sein Ding in den Mund nehmen.  When:Dec04'18-14:43:23 Why:~event_uncle.14.0=ONKEL_EVENT_4.~event_uncle.3.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   dann ==> Nein  When:Dec04'18-14:43:24 Why:~answer_roulette.0.0.~event_uncle.14.1   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:43:26 Why:~event_uncle.11.0=ONKEL_EVENT_1.~control.2.0   F:0 
+Command: :build laura
+No such bot  sdg -  -  status: defaultbot word not found   in topic_sdg_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+No such bot  sdg -  -  status: defaultbot word not found   in topic_sdg_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+Start: user:sdg bot:laura ip: rand:2410 (~personal) 6 ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-14:49:09 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-14:49:00 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-14:43:26 Why:~personal.0.0.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-14:49:11 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-14:49:00 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-14:43:26 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   erz  hl doch mal von deinem onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-14:49:17 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   und dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-14:49:19 Why:~event_uncle.3.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   und dann ==> Er haut mir immer auf den Po.  When:Dec04'18-14:49:21 Why:~event_uncle.4.0=ONKEL_EVENT_2.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   dann ==> Er hat mich mal am Po angefasst.  When:Dec04'18-14:49:24 Why:~event_uncle.5.0=ONKEL_EVENT_3.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   dann ==> Einmal waren wir schwimmen, da sollte ich sein Ding in den Mund nehmen.  When:Dec04'18-14:49:26 Why:~event_uncle.6.0=ONKEL_EVENT_4.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   dann ==> Keine Ahnung.  When:Dec04'18-14:49:27 Why:~answer_roulette.0.0.~event_uncle.6.1   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 7   dann ==> Seinen Penis.  When:Dec04'18-14:49:44 Why:~event_uncle.7.0=ONKEL_EVENT_5.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 8   dann ==> Er kam in meine Kabine und wollte mir beim Umziehen helfen.  When:Dec04'18-14:49:49 Why:~event_uncle.8.0=ONKEL_EVENT_6.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 9   dann ==> Ich möchte da nicht mehr darüber reden.  When:Dec04'18-14:49:50 Why:~event_uncle.9.0=ONKEL_EVENT_7.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 10   dann ==> Ich möchte da nicht mehr darüber reden.  When:Dec04'18-14:49:52 Why:~event_uncle.9.0=ONKEL_EVENT_7.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 11   dann ==> Ich möchte da nicht mehr darüber reden.  When:Dec04'18-14:49:53 Why:~event_uncle.9.0=ONKEL_EVENT_7.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 12   dann ==> Ich möchte da nicht mehr darüber reden.  When:Dec04'18-14:49:54 Why:~event_uncle.9.0=ONKEL_EVENT_7.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 13   dann ==> Ich möchte da nicht mehr darüber reden.  When:Dec04'18-14:49:55 Why:~event_uncle.9.0=ONKEL_EVENT_7.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 14     ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-15:04:26 Why:~personal.0.0.~control.2.0   F:6 
+Respond: user:sdg bot:laura ip: (~event_uncle) 15   dann ==> Ich möchte da nicht mehr darüber reden.  When:Dec04'18-15:04:28 Why:~event_uncle.9.0=ONKEL_EVENT_7.~control.2.0   F:3 
+Respond: user:sdg bot:laura ip: (~event_uncle) 16   dann ==> Ich möchte da nicht mehr darüber reden.  When:Dec04'18-15:04:29 Why:~event_uncle.9.0=ONKEL_EVENT_7.~control.2.0   F:2 
+Respond: user:sdg bot:laura ip: (~event_uncle) 17   dann ==> Ich möchte da nicht mehr darüber reden.  When:Dec04'18-15:04:31 Why:~event_uncle.9.0=ONKEL_EVENT_7.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 18   onkel ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-15:04:35 Why:~keywordless.1.0.~control.2.0   F:2 
+Respond: user:sdg bot:laura ip: (~event_uncle) 19   onkel ==> Kann ich noch was für dich tun?  When:Dec04'18-15:04:37 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~names_bio) 20   wie heisst denn dein onkel? ==> Der heißt Dirk.  When:Dec04'18-15:44:31 Why:~names_bio.4.0=UNCLE_NAME.~control.2.0   F:16 
+Command: :build laura
+No such bot  sdg -  -  status: defaultbot word not found   in topic_sdg_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+Start: user:sdg bot:laura ip: rand:2424 (~names_bio) 20 ==> Kann ich noch was für dich tun?  When:Dec04'18-16:00:37 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-16:00:29 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-15:44:31 Why:~keywordless.0.0.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-16:03:04 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-16:00:29 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-15:44:31 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-16:03:08 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   wann ==> Fast jeden Tag.  When:Dec04'18-16:03:14 Why:~event_uncle.3.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   immer ==> Kann ich noch was für dich tun?  When:Dec04'18-16:03:17 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   wo ==> Im Wohnzimmer  When:Dec04'18-16:03:30 Why:~event_uncle.5.0.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   wo ==> Im Wohnzimmer  When:Dec04'18-16:03:34 Why:~event_uncle.5.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   oft ==> Kann ich noch was für dich tun?  When:Dec04'18-16:03:37 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 7   wie findest du den ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-16:03:44 Why:~personal.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 8   wie findest du den ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-16:03:49 Why:~keywordless.1.0.~control.2.0   F:2 
+Respond: user:sdg bot:laura ip: (~personal) 9   onkel ==> Kann ich noch was für dich tun?  When:Dec04'18-16:04:08 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 10   onkel ==> Kann ich noch was für dich tun?  When:Dec04'18-16:04:11 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 11   wo ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-16:04:13 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 12   wo ==> Kann ich noch was für dich tun?  When:Dec04'18-16:04:14 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 13   wo ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-16:04:15 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 14   wo ==> Kann ich noch was für dich tun?  When:Dec04'18-16:04:16 Why:~keywordless.0.0.~control.2.0   F:1 
+Command: :why
+~keywordless.0.0.2.2.0  r:  Kann ich noch was für dich tun? ^keep ( ) ^repeat ( ) 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2418 (~personal) 14 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-16:05:04 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-16:04:56 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-16:04:16 Why:~keywordless.1.0.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-16:05:15 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-16:04:56 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-16:04:16 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-16:05:17 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   beziehung ==> Nicht so gut.  When:Dec04'18-16:05:21 Why:~event_uncle.4.0.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-16:05:26 Why:~event_uncle.6.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   beziehung ==> Nicht so gut.  When:Dec04'18-16:05:29 Why:~event_uncle.4.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   wo ==> Im Wohnzimmer  When:Dec04'18-16:05:35 Why:~event_uncle.5.0.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   oft ==> Kann ich noch was für dich tun?  When:Dec04'18-16:05:41 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 7   dann ==> Er haut mir immer auf den Po.  When:Dec04'18-16:05:55 Why:~event_uncle.7.0=ONKEL_EVENT_2.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 8   immer ==> Kann ich noch was für dich tun?  When:Dec04'18-16:05:59 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 9   dann ==> Er hat mich mal am Po angefasst.  When:Dec04'18-16:06:02 Why:~event_uncle.8.0=ONKEL_EVENT_3.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~personal) 10   wann ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-16:06:04 Why:~personal.0.0.~control.2.0   F:1 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-16:06:16 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-16:04:56 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-16:06:04 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-16:06:19 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 2   immer ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-16:06:23 Why:~personal.0.0.~control.2.0   F:2 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-16:06:26 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-16:04:56 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-16:06:23 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-16:06:28 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   wann ==> Fast jeden Tag.  When:Dec04'18-16:06:30 Why:~event_uncle.3.0.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   oft ==> Fast jeden Tag.  When:Dec04'18-16:06:33 Why:~event_uncle.3.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 4   immer ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-16:06:34 Why:~personal.0.0.~control.2.0   F:1 
+Command: :why
+~personal.0.0.2.2.0  t:  Prima. Was möchstest du denn wissen? 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :prepare immer
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE NO_HYPHEN_END 
+
+
+Original User Input: immer
+Tokenized into: immer  
+Substituted (interjections ) into: ~yes  
+Actual used input: ~yes(immer) 
+
+
+Concepts: 
+
+1: ~yes (raw):
+       +~yesanswer
+         +~next
+       +~interjections
+       +~yesno
+   +~yes
+ // 
+1: ~yes (canonical):  //  
+
+Sequences:
+
+After parse TokenFlags: DO_INTERJECTIONS USERINPUT 
+Command: :build laura
+Start: user:sdg bot:laura ip: rand:2408 (~personal) 4 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Dec04'18-16:07:56 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-16:07:48 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-16:06:34 Why:~keywordless.1.0.~control.2.0 
+Command: :reset
+Start: user:sdg bot:laura ip: rand:2404 (~introduction) 0 ==> Hallo!  When:Dec04'18-16:07:59 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec04'18-16:07:48 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-16:06:34 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 1   onkel ==> Mein Onkel schläft jetzt immer bei uns.  When:Dec04'18-16:08:01 Why:~event_uncle.2.0=ONKEL_EVENT.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 2   immer ==> Fast jeden Tag.  When:Dec04'18-16:08:03 Why:~event_uncle.3.0.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 3   oft  ==> Fast jeden Tag.  When:Dec04'18-16:08:05 Why:~event_uncle.3.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 4   wann ==> Fast jeden Tag.  When:Dec04'18-16:08:07 Why:~event_uncle.3.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 5   wann ==> Fast jeden Tag.  When:Dec04'18-16:08:08 Why:~event_uncle.3.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 6   wann ==> Kann ich noch was für dich tun?  When:Dec04'18-16:08:09 Why:~keywordless.0.0.~control.2.0   F:0 
+Respond: user:sdg bot:laura ip: (~event_uncle) 7   dann ==> Der kommt in mein Zimmer, obwohl ich das nicht will.  When:Dec04'18-16:08:11 Why:~event_uncle.6.0=ONKEL_EVENT_1.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~event_uncle) 8   immer ==> Kann ich noch was für dich tun?  When:Dec04'18-16:08:14 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdg bot:laura ip: (~personal) 9   wo ==> Prima. Was möchstest du denn wissen?  When:Dec04'18-16:08:21 Why:~personal.0.0.~control.2.0   F:1 
+Command: :why
+~personal.0.0.2.2.0  t:  Prima. Was möchstest du denn wissen? 
+ via ~control.2.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :prepare wo
+TokenControl: DO_NUMBER_MERGE DO_DATE_MERGE NO_HYPHEN_END 
+
+
+Original User Input: wo
+Tokenized into: wo  
+Actual used input: wo 
+
+
+Concepts: 
+
+1: wo (raw):
+   +~pronoun
+   +~pronoun_subject
+   +~pronoun_object
+   +~noun_phrase
+   +wo
+ // 
+1: wo (canonical):  //  
+
+Sequences:
+   +Wo^
+
+After parse TokenFlags: USERINPUT 
+Command: :build oob
+Start: user:sdg bot:oob ip: rand:2404 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Dec05'18-14:42:17 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:42:10 0:Dec05'18-14:42:17 F:0 P:0 Why:~introduction.0.0.~control.1.0 
+Command: :reset
+Start: user:sdg bot:oob ip: rand:2404 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Dec05'18-14:44:42 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:42:10 0:Dec05'18-14:42:17 F:0 P:0 Why:~introduction.0.0.~control.1.0 
+Respond: user:sdg bot:oob ip: (~introduction) 1   [test]frage ==> Das ist die Frage.  When:Dec05'18-14:44:56 Why:~introduction.4.0.~control.3.0   F:6 
+Respond: user:sdg bot:oob ip: (~introduction) 2   frage ==> Das ist die Frage.  When:Dec05'18-14:45:23 Why:~introduction.4.0.~control.3.0   F:1 
+Respond: user:sdg bot:oob ip: (~introduction) 3   [test] ==>   When:Dec05'18-14:45:30   F:1 
+Command: :reset
+Start: user:sdg bot:oob ip: rand:2404 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Dec05'18-14:45:40 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:42:10 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:45:30 Why:~introduction.0.0.~control.1.0 
+Respond: user:sdg bot:oob ip: (~introduction) 1   [test] ==>   When:Dec05'18-14:45:45   F:0 
+Command: :why
+Respond: user:sdg bot:oob ip: (~introduction) 2   [testo] ==>   When:Dec05'18-14:46:19   F:1 
+Respond: user:sdg bot:oob ip: (~introduction) 3   [testo]frage ==> Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.  When:Dec05'18-14:46:25 Why:~introduction.3.0.~control.3.0   F:1 
+Command: :build oob
+Start: user:sdg bot:oob ip: rand:2407 (~introduction) 3 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Dec05'18-14:48:07 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:47:59 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:46:25 Why:~introduction.0.0.~control.1.0 
+Respond: user:sdg bot:oob ip: (~introduction) 4   [test] ==>   When:Dec05'18-14:48:12   F:1 
+Command: :build oob
+Start: user:sdg bot:oob ip: rand:2407 (~introduction) 4 ==> Das ist der Test.  When:Dec05'18-14:48:48 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:48:41 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:48:12 Why:~introduction.1.0.~control.3.0 
+Command: :reset
+Start: user:sdg bot:oob ip: rand:2404 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Dec05'18-14:48:58 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:48:41 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:48:12 Why:~introduction.0.0.~control.1.0 
+Respond: user:sdg bot:oob ip: (~introduction) 1   [test] ==>   When:Dec05'18-14:49:03   F:1 
+Command: :why
+Command: :prepare [test]
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: [test]
+Tokenized into: [  test  ]  
+Actual used input: [ test ] 
+
+
+Concepts: 
+
+1: [ (raw):
+   +[
+   +~unknownword
+ // 
+1: unknown-word (canonical):    +unknown-word
+ //  
+
+2: test (raw):
+   +test
+ // 
+2: test (canonical):  //  
+
+3: ] (raw):
+   +]
+   +~unknownword
+ // 
+3: unknown-word (canonical):    +unknown-word
+ //  
+
+Sequences:
+       +~reasoning_process
+         +~reasoning_think_verbs
+           +~think_verbs
+             +~mental_verbs
+               +~animate_verbs
+                 +~verblist
+   +Test^
+   +TEST^
+
+
+After parse TokenFlags: USERINPUT 
+Respond: user:sdg bot:oob ip: (~introduction) 2   [ test ] ==>   When:Dec05'18-14:49:32   F:1 
+Respond: user:sdg bot:oob ip: (~introduction) 3   [testo] ==>   When:Dec05'18-14:49:48   F:0 
+Respond: user:sdg bot:oob ip: (~introduction) 4   [testo]frage ==> Das ist der Test.  When:Dec05'18-14:49:54 Why:~introduction.1.0.~control.3.0   F:1 
+Command: :why
+~introduction.1.0.5.3.0  u:  ( $test=1 ) Das ist der Test. 
+ via ~control.5.3.0  u:  ( ) $$currenttopic = %topic $$response = %response ^if 00v( %response  $$response ) 00I{...   
+Respond: user:sdg bot:oob ip: (~introduction) 5   [ping] ==> Pong.  When:Dec05'18-14:51:20 Why:~control.0.0   F:1 
+Command: :build oob
+Start: user:sdg bot:oob ip: rand:2408 (~introduction) 5 ==> Das ist der Test.  When:Dec05'18-14:51:45 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:51:36 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:51:20 Why:~introduction.1.0.~control.3.0 

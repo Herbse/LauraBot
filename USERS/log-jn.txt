@@ -1,0 +1,46 @@
+﻿Start: user:jn bot:laura ip: rand:2142 (~introduction) 0 ==> Hallo!  When:Nov28'18-14:51:32 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:50:50 0:Nov28'18-14:51:32 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :build oob
+Start: user:jn bot:oob ip: rand:2142 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:51:42 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:51:40 0:Nov28'18-14:51:42 F:0 P:0 Why:~introduction.0.0.~control.1.0 
+Command: :build oob
+Start: user:jn bot:oob ip: rand:2142 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:56:56 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:56:54 0:Nov28'18-14:51:42 F:0 P:0 Why:~introduction.0.0.~control.1.0 
+Respond: user:jn bot:oob ip: (~introduction) 1   [test] ==> Das ist der Test.  When:Nov28'18-14:57:04 Why:~introduction.1.0.~control.3.0   F:21 
+Respond: user:jn bot:oob ip: (~introduction) 2   [testc] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-14:57:11 Why:~keywordless.1.0.~control.3.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 3   [testc] frage ==> Kann ich Sonst noch was für dich tun?`Das ist die Frage.  When:Nov28'18-14:57:20 Why:~keywordless.1.0.~control.3.0 ~introduction.2.0.~control.3.0   F:1 
+Command: :build oob
+Start: user:jn bot:oob ip: rand:2145 (~introduction) 3 ==> Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:58:17 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:58:15 0:Nov28'18-14:51:42 F:0 P:Nov28'18-14:57:20 Why:~introduction.0.0.~control.1.0 
+Command: :reset
+Start: user:jn bot:oob ip: rand:2142 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:58:20 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:58:15 0:Nov28'18-14:51:42 F:0 P:Nov28'18-14:57:20 Why:~introduction.0.0.~control.1.0 
+Respond: user:jn bot:oob ip: (~introduction) 1   [testc]frage ==> Kann ich dir noch irgendwie weiterhelfen?`Das ist die Frage.  When:Nov28'18-14:58:32 Why:~keywordless.0.0.~control.3.0 ~introduction.4.0.~control.3.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 2   [testc] frage ==> Kann ich Sonst noch was für dich tun?`Das ist die Frage.  When:Nov28'18-14:58:43 Why:~keywordless.1.0.~control.3.0 ~introduction.4.0.~control.3.0   F:2 
+Command: :build oob
+Start: user:jn bot:oob ip: rand:2144 (~introduction) 2 ==> Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-14:59:38 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-14:59:36 0:Nov28'18-14:51:42 F:0 P:Nov28'18-14:58:43 Why:~introduction.0.0.~control.1.0 
+Respond: user:jn bot:oob ip: (~introduction) 3   [testc] ==> Das ist der Testc.  When:Nov28'18-14:59:52 Why:~introduction.2.0.~control.3.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 4   [testc]frage ==> Das ist der Testc.`Das ist die Frage.  When:Nov28'18-15:00:06 Why:~introduction.2.0.~control.3.0 ~introduction.6.0.~control.3.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 5   frage ==> Das ist die Frage.  When:Nov28'18-15:00:31 Why:~introduction.6.0.~control.3.0   F:1 
+Command: :build oob
+Start: user:jn bot:oob ip: rand:2147 (~introduction) 5 ==> Kann ich dir noch irgendwie weiterhelfen?  When:Nov28'18-15:01:45 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-15:01:43 0:Nov28'18-14:51:42 F:0 P:Nov28'18-15:00:31 Why:~keywordless.0.0.~control.3.0 
+Command: :reset
+Start: user:jn bot:oob ip: rand:2142 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-15:01:48 Version:8.2 Build0:Nov28'18-12:03:59 Build1:Nov28'18-15:01:43 0:Nov28'18-14:51:42 F:0 P:Nov28'18-15:00:31 Why:~introduction.0.0.~control.1.0 
+Respond: user:jn bot:oob ip: (~introduction) 1   [testc] ==> Das ist der Testc.  When:Nov28'18-15:01:54 Why:~introduction.2.0.~control.3.0   F:1 
+Command: :build 0
+Start: user:jn bot:oob ip: rand:2143 (~introduction) 1 ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-15:02:25 Version:8.2 Build0:Nov28'18-15:02:13 Build1:Nov28'18-15:01:43 0:Nov28'18-14:51:42 F:0 P:Nov28'18-15:01:54 Why:~keywordless.1.0.~control.3.0 
+Command: :build oob
+Start: user:jn bot:oob ip: rand:2143 (~introduction) 1 ==> Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-15:02:32 Version:8.2 Build0:Nov28'18-15:02:13 Build1:Nov28'18-15:02:29 0:Nov28'18-14:51:42 F:0 P:Nov28'18-15:01:54 Why:~introduction.0.0.~control.1.0 
+Respond: user:jn bot:oob ip: (~introduction) 2   [testc] ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-15:02:46 Why:~keywordless.1.0.~control.3.0   F:1 
+Command: :build oob
+Start: user:jn bot:oob ip: rand:2144 (~introduction) 2 ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-15:05:32 Version:8.2 Build0:Nov28'18-15:02:13 Build1:Nov28'18-15:05:30 0:Nov28'18-14:51:42 F:0 P:Nov28'18-15:02:46 Why:~keywordless.1.0.~control.3.0 
+Command: :reset
+Start: user:jn bot:oob ip: rand:2142 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-15:05:35 Version:8.2 Build0:Nov28'18-15:02:13 Build1:Nov28'18-15:05:30 0:Nov28'18-14:51:42 F:0 P:Nov28'18-15:02:46 Why:~introduction.0.0.~control.1.0 
+Respond: user:jn bot:oob ip: (~introduction) 1   [testc] ==> Handle oob funktioniert  When:Nov28'18-15:05:40 Why:~handle_oob.0.0.~control.2.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 2   [testc]frage ==> Handle oob funktioniert`Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Nov28'18-15:06:05 Why:~handle_oob.0.0.~control.2.0 ~introduction.2.0.~control.3.0   F:1 
+Command: :build oob
+Start: user:jn bot:oob ip: rand:2144 (~introduction) 2 ==> Kann ich Sonst noch was für dich tun?  When:Nov28'18-15:06:31 Version:8.2 Build0:Nov28'18-15:02:13 Build1:Nov28'18-15:06:29 0:Nov28'18-14:51:42 F:0 P:Nov28'18-15:06:05 Why:~keywordless.1.0.~control.3.0 
+Command: :reset
+Start: user:jn bot:oob ip: rand:2142 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov28'18-15:06:36 Version:8.2 Build0:Nov28'18-15:02:13 Build1:Nov28'18-15:06:29 0:Nov28'18-14:51:42 F:0 P:Nov28'18-15:06:05 Why:~introduction.0.0.~control.1.0 
+Respond: user:jn bot:oob ip: (~introduction) 1   [testc]frage ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Nov28'18-15:06:46 Why:~introduction.2.0.~control.3.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 2   frage ==> Das ist die Frage.  When:Nov28'18-15:06:49 Why:~introduction.4.0.~control.3.0   F:0 
+Respond: user:jn bot:oob ip: (~introduction) 3   frage ==> Das ist die Frage.  When:Nov28'18-15:06:52 Why:~introduction.4.0.~control.3.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 4   [testo]frage ==> Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.  When:Nov28'18-15:07:02 Why:~introduction.3.0.~control.3.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 5   [testc]frage ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Nov28'18-15:33:21 Why:~introduction.2.0.~control.3.0   F:4 
+Respond: user:jn bot:oob ip: (~introduction) 6   [testo]frage ==> Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.  When:Nov28'18-15:33:33 Why:~introduction.3.0.~control.3.0   F:1 
+Respond: user:jn bot:oob ip: (~introduction) 7   [testo] frage ==> Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.  When:Nov28'18-15:33:50 Why:~introduction.3.0.~control.3.0   F:1 

@@ -1,0 +1,4 @@
+﻿Start: user:rer bot:laura ip: rand:1359 (~introduction) 0 ==> Hey!  When:Jun19'18-08:55:33 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun19'18-08:55:33 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:rer bot:laura ip: (~introduction) 1   hi ==> Wie heißt du?  When:Jun19'18-08:55:35 Why:~introduction.1.0.~control.1.0   F:16 
+Sourcefile Time used 1529391377309 ms for 1 sentences 1 tokens.
+Sourcefile Time used 1529391377309 ms for 1 sentences 1 tokens.

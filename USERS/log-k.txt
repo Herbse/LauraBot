@@ -1,0 +1,17 @@
+﻿No such bot  k -  -  status: defaultbot word not found   in topic_k_anonymous_GERMAN.txt at 3: ^anonymous
+    Command: :build laura
+No such bot  k -  -  status: defaultbot word not found   in topic_k_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build Laura
+No such bot  k -  -  status: defaultbot word not found   in topic_k_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+No such bot  k -  -  status: defaultbot word not found   in topic_k_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Nov29'18-11:50:14 Version:8.2 Build0:Nov29'18-11:43:21 Build1:Nov29'18-11:50:12 0:Nov29'18-11:50:14 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :build laura
+Start: user:k bot:laura ip: rand:1554 (~introduction) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-11:50:56 Version:8.2 Build0:Nov29'18-11:43:21 Build1:Nov29'18-11:50:53 0:Nov29'18-11:50:14 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build laura
+Start: user:k bot:laura ip: rand:1554 (~introduction) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-11:52:43 Version:8.2 Build0:Nov29'18-11:43:21 Build1:Nov29'18-11:52:41 0:Nov29'18-11:50:14 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build 0
+Start: user:k bot:laura ip: rand:1554 (~introduction) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-11:56:22 Version:8.2 Build0:Nov29'18-11:56:04 Build1:Nov29'18-11:52:41 0:Nov29'18-11:50:14 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build 0
+Start: user:k bot:laura ip: rand:1554 (~introduction) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-11:57:31 Version:8.2 Build0:Nov29'18-11:57:18 Build1:Nov29'18-11:52:41 0:Nov29'18-11:50:14 F:0 P:0 Why:~keywordless.0.0.~control.2.0 

@@ -1,0 +1,14 @@
+﻿Start: user:khg bot:oob ip: rand:2016 (~introduction) 0 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov29'18-10:05:49 Version:8.2 Build0:Nov28'18-15:02:13 Build1:Nov28'18-15:06:29 0:Nov29'18-10:05:49 F:0 P:0 Why:~introduction.0.0.~control.1.0 
+Command: :build laura
+No such bot  khg -  -  status: defaultbot word not found   in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build 0
+No such bot  khg -  -  status: defaultbot word not found   in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+No such bot  khg -  -  status: defaultbot word not found   in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+No such bot  khg -  -  status: defaultbot word not found   in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build oob
+Start: user:khg bot:oob ip: rand:2016 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov29'18-11:46:03 Version:8.2 Build0:Nov29'18-11:43:21 Build1:Nov29'18-11:46:00 0:Nov29'18-10:05:49 F:0 P:0 Why:~keywordless.2.0.~control.3.0 
+Command: :build laura
+No such bot  khg -  -  status: defaultbot word not found   in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous
+    

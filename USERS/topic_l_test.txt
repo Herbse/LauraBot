@@ -1,0 +1,40 @@
+USERS/topic_l_test.txt
+jul2116 May03'18-08:50:06 May03'18-08:50:58 0 |
+1 7 0 DY 0 16 16 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~courses_of_studies #pending
+~courses_of_studies + 1 ?#m#&Is*Ok3 ea 3 0 0 
+~introductions + 1 $aL$D ia 2 0 0 
+#`end topics
+$cs_randindex=1553
+$cs_bot=Test
+$cs_login=l
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=l: >
+$botprompt=TEST: 
+$cs_token=1184511
+$name=Peter
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Hallo
+ Peter
+ Wie dein name ist
+ Wie ist dein name?
+ Beratung
+ Studienberatung
+ Ja
+#`end user
+ Hallo!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, peter. Wie kann ich dir helfen?
+ Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot

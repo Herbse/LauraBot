@@ -1,0 +1,37 @@
+USERS/topic_herfried_laura.txt
+jul2116 May23'18-12:13:57 May23'18-12:16:14 0 |
+1 6 0 DY 0 6 6 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions #pending
+~introductions + 1 sE=FyIs*Ok3 ia 2 0 0 
+#`end topics
+$name=Zander
+$cs_token=1184511
+$botprompt=LAURA: 
+$userprompt=herfried: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=herfried
+$cs_bot=Laura
+$cs_randindex=2030
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~introductions 2 USER_NAME 
+ Hey
+ Zander
+ Wie heißt deine mama
+ wie alt bist du?
+ alter
+ wo wohnst du
+#`end user
+ Grüß Gott!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, Zander .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+#`end chatbot

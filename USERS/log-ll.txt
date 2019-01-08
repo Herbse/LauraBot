@@ -1,0 +1,7 @@
+﻿Respond: user:ll bot:harry ip: (~introductions) 1  ll ==> Have you been here before?  When:May03'18-08:49:11 Why:~introductions.2.0.~control.9.0   F:1 
+Respond: user:ll bot:harry ip: (~introductions) 2  Yes ==> Welcome back!  When:May03'18-08:49:15 Why:~introductions.2.1   F:0 
+Sourcefile Time used -2143616627 ms for 0 sentences 0 tokens.
+c:/users/admin/documents/chatscript-8.2/rawdata/harry/childhood.top
+c:/users/admin/documents/chatscript-8.2/rawdata/harry/introductions.top
+c:/users/admin/documents/chatscript-8.2/rawdata/harry/keywordless.top
+c:/users/admin/documents/chatscript-8.2/rawdata/harry/simplecontrol.top

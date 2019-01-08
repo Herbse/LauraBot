@@ -1,0 +1,329 @@
+﻿Start: user:test bot:harry ip: rand:2149 (~introductions) 0 ==> Welcome to ChatScript.  When:May02'18-17:32:20 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Apr24'18-16:42:37 0:May02'18-17:32:20 F:0 P:0 Why:~introductions.1.0.~control.0.0 
+Respond: user:test bot:harry ip: (~introductions) 1   ChatScript language=german ==> Have you been here before?  When:May02'18-17:32:33 Why:~introductions.2.0.~control.9.0   F:62 
+Start: user:test bot:harry ip: rand:2151 (~introductions) 1 ==> Hello, again.  When:May02'18-17:49:02 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Apr24'18-16:42:37 0:May02'18-17:32:20 F:0 P:May02'18-17:32:33 Why:~introductions.0.0.~control.0.0 
+Respond: user:test bot:harry ip: (~childhood) 2   Test ==> Did you run away from home when you were little?  When:May02'18-17:49:07 Why:~childhood.0.0.~control.9.0   F:0 
+Command: :test
+Respond: user:test bot:harry ip: (~childhood) 3   :test ==>   When:May02'18-17:49:10   F:47 
+Command: :German
+Respond: user:test bot:harry ip: (~childhood) 4   :German ==>   When:May02'18-17:49:18   F:84 
+Respond: user:test bot:harry ip: (~childhood) 5   Who are you ==> The pronoun you is the second-person personal pronoun, both singular and plural, and both nominative and oblique case in Modern English. The oblique (objective) form, you, functioned previously in the roles of both accusative and dative, as well as all instances following a preposition.  When:May02'18-17:49:23 Why:~keywordless.4.0.~control.9.0   F:1552 
+Start: user:test bot:harry ip: rand:2155 (~introductions) 5 ==> Hi, again.  When:May02'18-17:51:33 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Apr24'18-16:42:37 0:May02'18-17:32:20 F:0 P:May02'18-17:49:23 Why:~introductions.0.0.~control.0.0 
+No such bot  test:test -  -  status: harry   in topic_test_test.txt at 4: ^test
+    
+Respond: user:test bot:harry ip: (~introductions) 1     ==> Have you been here before?  When:May02'18-17:52:51 Why:~introductions.2.0.~control.9.0   F:0 
+No such bot  Test:ChatScript language=german -  -  status: harry   in topic_test_chatscript language=german.txt at 4: ^chatscript language=german
+    No such bot  Test:TEST -  -  status: harry   in topic_test_test.txt at 3: ^test
+    No such bot  test:test -  -  status: harry   in topic_test_test.txt at 4: ^test
+    No such bot  test:TEST -  -  status: harry   in topic_test_test.txt at 4: ^test
+    Start: user:test bot:harry ip: rand:2149 (~introductions) 0 ==> Welcome to ChatScript.  When:May02'18-18:02:29 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Apr24'18-16:42:37 0:May02'18-18:02:29 F:0 P:0 Why:~introductions.1.0.~control.0.0 
+Start: user:test bot:test ip: rand:2149 (~introductions) 0 ==> Hallo!  When:May03'18-15:48:14 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-11:17:42 0:May03'18-15:48:14 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Command: :build harry
+Start: user:test bot:harry ip: rand:2149 (~introductions) 0 ==> Have you been here before?  When:May03'18-15:48:23 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-15:48:20 0:May02'18-18:02:29 F:0 P:0 Why:~introductions.2.0.~control.0.0 
+Respond: user:test bot:harry ip: (~introductions) 1   yes ==> Welcome back!  When:May03'18-15:48:26 Why:~introductions.2.1   F:2 
+Respond: user:test bot:harry ip: (~childhood) 2   hi ==> Did you run away from home when you were little?  When:May03'18-15:48:27 Why:~childhood.0.0.~control.9.0   F:1 
+Respond: user:test bot:harry ip: (~childhood) 3   no ==> You should try it some time. Travel broadens the mind.  When:May03'18-15:48:32 Why:~childhood.0.2   F:1 
+Respond: user:test bot:harry ip: (~childhood) 4   how old are you? ==> I ran away once, but my parents found me and dragged me back.  When:May03'18-15:48:38 Why:~childhood.1.0=RUNAWAY.~control.9.0   F:4 
+Command: :reset
+Start: user:test bot:harry ip: rand:2149 (~introductions) 0 ==> Welcome to ChatScript.  When:May03'18-15:48:48 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-15:48:20 0:May02'18-18:02:29 F:0 P:May03'18-15:48:38 Why:~introductions.1.0.~control.0.0 
+Respond: user:test bot:harry ip: (~introductions) 1   ChatScript language=english ==> Have you been here before?  When:May03'18-15:48:58 Why:~introductions.2.0.~control.9.0   F:61 
+Respond: user:test bot:harry ip: (~introductions) 2   no ==> Then welcome to your first time.  When:May03'18-15:49:03 Why:~introductions.2.2   F:1 
+Respond: user:test bot:harry ip: (~introductions) 3   okay ==> Are you sure?  When:May03'18-15:49:09 Why:~honest_response.2.0.~quibble_all.12.0   F:1 
+Respond: user:test bot:harry ip: (~childhood) 4   yup ==> Did you run away from home when you were little?  When:May03'18-15:49:14 Why:~childhood.0.0.~control.9.0   F:1 
+Respond: user:test bot:harry ip: (~childhood) 5   why ==> Nevermind why.  When:May03'18-15:49:18 Why:~quibble_why.103.0.~quibble_all.5.0   F:1 
+Respond: user:test bot:harry ip: (~childhood) 6   who is ghandi ==> Mohandas Karamchand Gandhi (; Hindustani: [ˈmoːɦənd̪aːs ˈkərəmtʃənd̪ ˈɡaːnd̪ʱi] ( listen); 2 October 1869 – 30 January 1948) was an Indian activist who was the leader of the Indian independence movement against British rule. Employing nonviolent civil disobedience, Gandhi led India to independence and inspired movements for civil rights and freedom across the world.  When:May03'18-15:49:27 Why:~keywordless.4.0.~control.9.0   F:852 
+Start: user:test bot:test ip: rand:2149 (~introductions) 0 ==> Hallo!  When:May03'18-16:13:40 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-16:03:49 0:May03'18-15:48:14 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Command: :build mine
+Start: user:test bot:test ip: rand:2149 (~introductions) 0 ==> Hallo!  When:May03'18-16:13:49 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-16:13:46 0:May03'18-15:48:14 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+entering null word to dictionary in sentence1 Thu May 03 16:13:53 2018 in sentence: Hey 
+    
+Respond: user:test bot:test ip: (~introductions) 1   Hey ==> Wie heißt du?  When:May03'18-16:13:53 Why:~introductions.1.0.~control.1.0   F:988 
+Respond: user:test bot:test ip: (~introductions) 2   Hans ==> Freut mich dich kennenzulernen, Hans. Stelle mir eine Frage zu meiner Biographie!  When:May03'18-16:13:56 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:1 
+Respond: user:test bot:test ip: (~biography) 3   wo wohnst du ==> Ich wohne im ChatScript Verzeichnis.  When:May03'18-16:14:02 Why:~biography.1.0.~control.1.0   F:2 
+Respond: user:test bot:test ip: (~biography) 4   wie alt bist du ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May03'18-16:14:08 Why:~biography.0.0.~control.1.0   F:2 
+Respond: user:test bot:test ip: (~courses_of_studies) 5   wie heißt dein Onkel? ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-16:14:35 Why:~courses_of_studies.1.0.~control.1.0   F:2 
+Respond: user:test bot:test ip: (~biography) 6   wie heißt onkel ==> Er heißt Achim.  When:May03'18-16:14:46 Why:~biography.2.0.~control.1.0   F:1 
+Respond: user:test bot:test ip: (~biography) 7   wie heißt tante ==> Er heißt Achim.  When:May03'18-16:14:56 Why:~biography.2.0.~control.1.0   F:1 
+Respond: user:test bot:test ip: (~biography) 8   tante heißt ==> Kann ich Sonst noch was für dich tun?  When:May03'18-16:15:04 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:test bot:test ip: (~biography) 9   eltern heißt ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-16:15:11 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:test bot:test ip: (~biography) 10   wie heißt eltern ==> Er heißt Achim.  When:May03'18-16:15:17 Why:~biography.2.0.~control.1.0   F:1 
+Respond: user:test bot:test ip: (~biography) 11   wie bruder heißt ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-16:15:25 Why:~keywordless.2.0.~control.1.0   F:2 
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May23'18-14:00:18 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-13:58:50 0:May23'18-14:00:18 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :build laura
+Start: user:test bot:laura ip: rand:2150 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:May23'18-14:00:33 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:00:22 0:May23'18-14:00:18 F:0 P:0 Why:~personal.0.0.~control.1.0 
+Command: :known sein
+entering null word to dictionary in sentence1 Wed May 23 14:00:39 2018 in sentence: :known sein 
+    entering null word to dictionary in sentence1 Wed May 23 14:00:39 2018 in sentence: :known sein 
+    
+Respond: user:test bot:laura ip: (~personal) 1   :known sein ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:00:39 Why:~keywordless.2.0.~control.1.0   F:922 
+Command: :word sein
+
+sein (853743): 
+  Properties: PRONOUN_SUBJECT PRONOUN_OBJECT VERB 
+  SystemFlags: 
+  ParseBits:   
+  InternalBits: 0x0 
+  Other:     canonical: sein 
+  Direct Sets: 
+  Facts:
+
+Command: :word bin
+
+bin (160067): 
+  Properties: VERB 
+  SystemFlags: pattern_word 
+  ParseBits:   
+  InternalBits: 0x0 
+  Other:     canonical: sein 
+  MultiWordHeader length: 2
+  Direct Sets: ~tool ~solid_containers 
+  Facts:
+    ( bin use_to hold_trash )
+    ( bin member ~tool x10 )
+    ( bin member ~solid_containers x10 )
+    ( get_rid_of_things why bin )
+    ( disposal activity bin )
+    ( trash object bin )
+    ( hold use bin )
+    ( contain functionality bin )
+
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May23'18-14:02:16 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:00:22 0:May23'18-14:00:18 F:0 P:May23'18-14:00:39 Why:~introduction.0.0.~control.0.0 
+Respond: user:test bot:laura ip: (~introduction) 1   Hallo ==> Wie heißt du?  When:May23'18-14:02:19 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~introduction) 2   Alofns ==> Freut mich dich kennenzulernen, unknown-word .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May23'18-14:02:21 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 3   Wie heißt dein Bruder ==> Meine Bruder ist der Leon.  When:May23'18-14:02:39 Why:~brother_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~mother_info) 4   Wie heißt deine Mama ==> Meine Mama heißt Charlotte.  When:May23'18-14:02:44 Why:~mother_info.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~mother_info) 5   wie heißt deine mama ==> Meine Mama heißt Charlotte.  When:May23'18-14:02:52 Why:~mother_info.0.0.~control.1.0   F:16 
+Respond: user:test bot:laura ip: (~personal) 6   wie heißt mama ==> Prima. Was möchstest du denn wissen?  When:May23'18-14:02:56 Why:~personal.0.0.~control.1.0   F:2 
+Respond: user:test bot:laura ip: (~personal) 7   Wie heisst dein bruder ==> Kann ich Sonst noch was für dich tun?  When:May23'18-14:03:32 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 8   Hast du noch Geschwister? ==> Ich habe einen Bruder, das ist der Leon  When:May23'18-14:03:41 Why:~brother_info.0.0.~control.1.0   F:16 
+Respond: user:test bot:laura ip: (~brother_info) 9   erzähl mir mehr über leon ==> Wenn der Leon fifa spielt darf ich immer zugucken.  When:May23'18-14:03:51 Why:~brother_info.3.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 10   und wie findest du den leon? ==> Ich mag Leon richtig gerne.  When:May23'18-14:04:00 Why:~brother_info.2.0.~control.1.0   F:16 
+Respond: user:test bot:laura ip: (~brother_info) 11   das heißt du internimmst viel mit ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:04:12 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 12   das heißt du internimmst viel mit leon ==> Kann ich Sonst noch was für dich tun?  When:May23'18-14:04:17 Why:~keywordless.1.0.~control.1.0   F:15 
+Respond: user:test bot:laura ip: (~brother_info) 13   bruder ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:04:25 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 14   das heißt du internimmst viel mit leon? ==> Kann ich Sonst noch was für dich tun?  When:May23'18-14:04:36 Why:~keywordless.1.0.~control.1.0   F:16 
+Respond: user:test bot:laura ip: (~brother_info) 15   wie heißt dein bruder ==> Meine Bruder ist der Leon.  When:May23'18-14:04:44 Why:~brother_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 16   das heißt du internimmst viel mit leon? ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:04:49 Why:~keywordless.2.0.~control.1.0   F:15 
+Respond: user:test bot:laura ip: (~brother_info) 17   das heißt du unternimmst viel mit leon? ==> Wenn Leons Freunde kommen, muss ich immer alleine spielen.  When:May23'18-14:04:57 Why:~brother_info.4.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 18   was tanzt ihr so ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:05:15 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 19   hast du hobbies ==> Kann ich Sonst noch was für dich tun?  When:May23'18-14:05:25 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 20   sport ==> Kann ich Sonst noch was für dich tun?  When:May23'18-14:05:31 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:test bot:laura ip: (~brother_info) 21   hast du hobbies? ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:05:39 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 22   wie heißt dein vater ==> Kann ich Sonst noch was für dich tun?  When:May23'18-14:05:51 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 23   wie heißt deine papa ==> Meine Papa heißt Stefan.  When:May23'18-14:06:00 Why:~father_info.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 24   cool ==> Manchmal darf ich einem Papa beim Reparieren helfen.  When:May23'18-14:06:04 Why:~father_info.3.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 25   und was machst du dabei ==> Dann gehen wir zusammen in die Garage und ich hole dem Papa das Werkzeug.  When:May23'18-14:06:18 Why:~father_info.4.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 26   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:29 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 27   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:33 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 28   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:34 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 29   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:35 Why:~father_info.1.0.~control.1.0   F:15 
+Respond: user:test bot:laura ip: (~father_info) 30   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:36 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 31   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:36 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 32   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:37 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 33   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:38 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 34   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:38 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 35     ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:06:38 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 36   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:39 Why:~father_info.1.0.~control.1.0   F:15 
+Respond: user:test bot:laura ip: (~father_info) 37   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:41 Why:~father_info.1.0.~control.1.0   F:3 
+Respond: user:test bot:laura ip: (~father_info) 38   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:42 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 39   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:42 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 40   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:43 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 41   erzähl mir mehr über deinen papa ==> Manchmal hilft Papa auch den Nachbarn.  When:May23'18-14:06:44 Why:~father_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 42   wobei hilft er ihnen ==> Er hilft den Nachbarn beim Autos reparieren. Oder einmal, da haben sie eine Waschmaschine wieder ganz gemacht.  When:May23'18-14:06:49 Why:~father_info.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 43   hast du hobbies ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:07:49 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 44   ist mira cool ==> Manchmal darf ich einem Papa beim Reparieren helfen.  When:May23'18-14:07:53 Why:~father_info.3.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~father_info) 45   aber das ist sicher schwierig oder ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:08:06 Why:~keywordless.2.0.~control.1.0   F:3 
+Command: :build laura
+Start: user:test bot:laura ip: rand:2195 (~father_info) 45 ==> Kann ich Sonst noch was für dich tun?  When:May23'18-14:08:48 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May23'18-14:08:06 Why:~keywordless.1.0.~control.1.0 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May23'18-14:08:51 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May23'18-14:08:06 Why:~introduction.0.0.~control.0.0 
+Respond: user:test bot:laura ip: (~introduction) 1   hallo ==> Wie heißt du?  When:May23'18-14:08:53 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~introduction) 2   Ulrich ==> Freut mich dich kennenzulernen, Ulrich .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May23'18-14:08:58 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Respond: user:test bot:laura ip: (~hobbies) 3   hast du hobbies ==> Ich gehe immer am Dienstaga Hiphop tanzen.  When:May23'18-14:09:16 Why:~hobbies.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~hobbies) 4   gehst du da alleine hin? ==> Meine Freundinnen sind da auch.  When:May23'18-14:09:25 Why:~hobbies.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~hobbies) 5   wie alt bist du? ==> Ich glaube das hab ich nicht ganz verstanden.  When:May23'18-14:09:29 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 6   alter ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May23'18-14:09:53 Why:~personal.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 7   und wo wohnst du ==> Ich wohne im ChatScript Verzeichnis.  When:May23'18-14:10:00 Why:~personal.2.0.~control.1.0   F:0 
+Start: user:test bot:laura ip: rand:2157 (~introduction) 7 ==> Hey!  When:May30'18-10:29:13 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:17:10 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May23'18-14:10:00 Why:~introduction.0.0.~control.0.0 
+Command: :build Laura
+Start: user:test bot:laura ip: rand:2158 (~introduction) 7 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-10:29:33 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:29:22 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May23'18-14:10:00 Why:~keywordless.2.0.~control.1.0 
+entering null word to dictionary in sentence8 Wed May 30 10:29:38 2018 in sentence: Franz 
+    
+Respond: user:test bot:laura ip: (~introduction) 8   Franz ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-10:29:38 Why:~keywordless.2.0.~control.1.0   F:846 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May30'18-10:29:41 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:29:22 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:29:38 Why:~introduction.0.0.~control.0.0 
+Respond: user:test bot:laura ip: (~introduction) 1   Hallo ==> Wie heißt du?  When:May30'18-10:29:44 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~introduction) 2   Franz ==> Freut mich dich kennenzulernen, Franz. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May30'18-10:29:45 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Respond: user:test bot:laura ip: (~personal) 3   Wie heisst dein Onkel? ==> Prima. Was möchstest du denn wissen?  When:May30'18-10:30:00 Why:~personal.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 4   Wie heisst dein Onkel? ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-10:30:08 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~event_uncle) 5   wie heißt dein Onkel? ==> Der heißt Dirk.  When:May30'18-10:30:22 Why:~event_uncle.0.0.~control.1.0   F:2 
+Respond: user:test bot:laura ip: (~event_uncle) 6   wie heißt dein Onkel? ==> Der heißt Dirk.  When:May30'18-10:31:44 Why:~event_uncle.0.0.~control.1.0   F:0 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May30'18-10:31:50 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:29:22 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:31:44 Why:~introduction.0.0.~control.0.0 
+Respond: user:test bot:laura ip: (~introduction) 1   Hallo ==> Wie heißt du?  When:May30'18-10:31:51 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~introduction) 2   Dirk ==> Freut mich dich kennenzulernen, Dirk. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May30'18-10:31:54 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Respond: user:test bot:laura ip: (~personal) 3   onkel ==> Prima. Was möchstest du denn wissen?  When:May30'18-10:31:57 Why:~personal.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~event_uncle) 4   Wie heißt dein onkel ==> Der heißt Dirk.  When:May30'18-10:32:02 Why:~event_uncle.0.0.~control.1.0   F:0 
+Command: :find name
+Respond: user:test bot:laura ip: (~event_uncle) 5   :find name ==> Kann ich Sonst noch was für dich tun?  When:May30'18-10:35:17 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :find ~name
+Respond: user:test bot:laura ip: (~event_uncle) 6   :find ~name ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-10:35:26 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :concepts name
+name: ~names ~causal_to_infinitive_verbs ~list ~classify ~name ~identity ~misc_parsedata ~count ~judgement_verbs ~societal_data ~mental_verbs ~human_data ~animate_verbs ~verblist 
+Command: :concepts heißt
+heißt: ~names 
+Command: :concepts heisst
+heisst: 
+Command: :build laura
+Start: user:test bot:laura ip: rand:2156 (~event_uncle) 6 ==> Kann ich Sonst noch was für dich tun?  When:May30'18-10:47:48 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:47:37 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:35:26 Why:~keywordless.1.0.~control.1.0 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May30'18-10:47:51 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:47:37 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:35:26 Why:~introduction.0.0.~control.0.0 
+Respond: user:test bot:laura ip: (~personal) 1   Grüss dich ==> Prima. Was möchstest du denn wissen?  When:May30'18-10:48:15 Why:~personal.0.0.~control.1.0   F:0 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May30'18-10:48:20 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:47:37 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:48:15 Why:~introduction.0.0.~control.0.0 
+Respond: user:test bot:laura ip: (~introduction) 1   hallo ==> Wie heißt du?  When:May30'18-10:48:22 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~introduction) 2   jens ==> Freut mich dich kennenzulernen, unknown-word. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May30'18-10:48:25 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Respond: user:test bot:laura ip: (~personal) 3   Was ist passiert? ==> Prima. Was möchstest du denn wissen?  When:May30'18-10:48:36 Why:~personal.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~event_uncle) 4   wie heisst dein Onkel? ==> Der heißt Dirk.  When:May30'18-10:48:44 Why:~event_uncle.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~event_uncle) 5   wie heißt dein onkel? ==> Der heißt Dirk.  When:May30'18-10:48:51 Why:~event_uncle.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~event_uncle) 6   wie ist der Name deines Onkels? ==> Der heißt Dirk.  When:May30'18-10:49:00 Why:~event_uncle.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~event_uncle) 7   Wie nennt sich dein Onkel? ==> Der heißt Dirk.  When:May30'18-10:49:08 Why:~event_uncle.0.0.~control.1.0   F:16 
+Respond: user:test bot:laura ip: (~event_uncle) 8   Hat dein Onkel einen Namen? ==> Der heißt Dirk.  When:May30'18-10:49:16 Why:~event_uncle.0.0.~control.1.0   F:3 
+Command: :build Laura
+Start: user:test bot:laura ip: rand:2158 (~personal) 8 ==> Prima. Was möchstest du denn wissen?  When:May30'18-10:52:29 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:52:18 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:49:16 Why:~personal.0.0.~control.1.0 
+Respond: user:test bot:laura ip: (~brother_info) 9   Wie ist der Name deines Bruders? ==> Meine Bruder ist der Leon.  When:May30'18-10:52:35 Why:~brother_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 10   Wie alt bist du? ==> Kann ich Sonst noch was für dich tun?  When:May30'18-10:53:02 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 11   alter ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-10:53:06 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 12   Wie alt bist du? ==> Kann ich Sonst noch was für dich tun?  When:May30'18-10:53:10 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :build Laura
+Start: user:test bot:laura ip: rand:2162 (~brother_info) 12 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-10:53:51 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:53:40 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:53:10 Why:~keywordless.2.0.~control.1.0 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May30'18-10:53:56 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:53:40 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:53:10 Why:~introduction.0.0.~control.0.0 
+Respond: user:test bot:laura ip: (~introduction) 1   Hi ==> Wie heißt du?  When:May30'18-10:54:00 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~introduction) 2   M"chte ich nicht sagen ==> Ok, dann nicht. Du kannst mir aber trotzdem eine Frage zu meiner Biographie stellen. Ansonsten kommen wir hier nicht weiter.  When:May30'18-10:54:05 Why:~introduction.1.5=NO_NAME   F:0 
+Respond: user:test bot:laura ip: (~personal) 3   Wo wohnst du? ==> Ich wohne im ChatScript Verzeichnis.  When:May30'18-10:54:11 Why:~personal.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 4   Wie alt bist du? ==> Prima. Was möchstest du denn wissen?  When:May30'18-10:54:15 Why:~personal.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 5   Wie alt bist du? ==> Kann ich Sonst noch was für dich tun?  When:May30'18-10:54:19 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :concepts alt
+alt: 
+Command: :concepts alter
+alter: ~generic_effect ~alter ~affect_object_verbs ~goodness T~personal ~animate_verbs ~active_verbs ~verblist ~use_intentionverbs 
+Command: :concepts Jahre
+Jahre: 
+Command: :build Laura
+Start: user:test bot:laura ip: rand:2154 (~personal) 5 ==> Prima. Was möchstest du denn wissen?  When:May30'18-10:56:24 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:56:13 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:54:19 Why:~personal.0.0.~control.1.0 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May30'18-10:56:27 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:56:13 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-10:54:19 Why:~introduction.0.0.~control.0.0 
+Respond: user:test bot:laura ip: (~personal) 1   Huhu ==> Prima. Was möchstest du denn wissen?  When:May30'18-10:56:29 Why:~personal.0.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 2   Wie alt bist du? ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May30'18-10:56:34 Why:~personal.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 3   Wieviel Jahre bist du alt ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May30'18-10:56:42 Why:~personal.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 4   Wie alt bist du denn? ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May30'18-10:56:54 Why:~personal.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 5   Ksnnst du mir sagen wie alt du bist? ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May30'18-10:57:05 Why:~personal.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~personal) 6   wie alt ist dein bruder ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-10:57:18 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~parents) 7   welches verhältnis hast du zu deinen eltern? ==> Ich liebe meine Eltern.  When:May30'18-11:04:29 Why:~parents.0.0.~control.1.0   F:16 
+Respond: user:test bot:laura ip: (~parents) 8   was machen deine eltern? ==> Kann ich Sonst noch was für dich tun?  When:May30'18-11:04:42 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~parents) 9   was machen deine eltern so? ==> Meine Mama ist immer zu Hause. Sie ist schlimm krank.  When:May30'18-11:04:49 Why:~parents.1.0.~control.1.0   F:0 
+Command: :concepts Verhältnis
+Verhältnis: 
+Command: :concepts Verhaeltnis
+Command: :concept findest
+Respond: user:test bot:laura ip: (~parents) 10   :concept findest ==> Kann ich Sonst noch was für dich tun?  When:May30'18-11:06:44 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :concepts findest
+findest: 
+Command: :concept meinung
+Respond: user:test bot:laura ip: (~parents) 11   :concept meinung ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-11:09:40 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :concepts meinung
+Command: :concepts nennen
+nennen: ~names 
+Command: :concepts heißen
+heißen: ~names 
+Command: :concepts erzählen
+erzählen: 
+Command: :concepts heissen
+heissen: 
+Command: :concepts alter
+alter: ~age ~generic_effect ~alter ~affect_object_verbs ~goodness T~personal ~animate_verbs ~active_verbs ~verblist ~use_intentionverbs 
+Command: :concepts
+Respond: user:test bot:laura ip: (~brother_info) 12   wie heisst dein Bruder ==> Meine Bruder ist der Leon.  When:May30'18-12:00:58 Why:~brother_info.1.0.~control.1.0   F:0 
+Respond: user:test bot:laura ip: (~brother_info) 13   Wie ist der name deines Bruders ==> Meine Bruder ist der Leon.  When:May30'18-12:01:22 Why:~brother_info.1.0.~control.1.0   F:0 
+Start: user:test bot:laura ip: rand:2163 (~brother_info) 13 ==> Kann ich Sonst noch was für dich tun?  When:May30'18-15:44:39 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:56:13 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-12:01:22 Why:~keywordless.1.0.~control.1.0 
+Command: :concepts Alkohol
+Alkohol: 
+Start: user:test bot:laura ip: rand:2163 (~brother_info) 13 ==> Kann ich Sonst noch was für dich tun?  When:May30'18-15:45:56 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:56:13 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-12:01:22 Why:~keywordless.1.0.~control.1.0 
+Command: :concepts Trinker
+Trinker: 
+Command: :concepts alter
+alter: ~age ~generic_effect ~alter ~affect_object_verbs ~goodness T~personal ~animate_verbs ~active_verbs ~verblist ~use_intentionverbs 
+Command: :concepts AIDS
+AIDS: ~social_issues ~diseaselist ~aids_words ~styles ~sicknesses ~attributes ~nounlist 
+Command: :concepts Kino
+Kino: 
+Command: :rebuild laura
+entering null word to dictionary in sentence14 Wed May 30 16:10:37 2018 in sentence: :rebuild laura 
+    entering null word to dictionary in sentence14 Wed May 30 16:10:37 2018 in sentence: :rebuild laura 
+    
+Respond: user:test bot:laura ip: (~brother_info) 14   :rebuild laura ==> Kann ich Sonst noch was für dich tun?  When:May30'18-16:10:37 Why:~keywordless.1.0.~control.1.0   F:860 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:May30'18-16:10:45 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:56:13 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-16:10:37 Why:~introduction.0.0.~control.0.0 
+Command: :build laura
+Start: user:test bot:laura ip: rand:2150 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:May30'18-16:11:03 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-16:10:53 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-16:10:37 Why:~personal.0.0.~control.1.0 
+Command: :concepts pferd
+Respond: user:test bot:laura ip: (~personal) 1     ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-16:11:13 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :concepts alter
+alter: ~age ~generic_effect ~alter ~affect_object_verbs ~goodness T~personal ~animate_verbs ~active_verbs ~verblist ~use_intentionverbs 
+Command: :concepts AIDS
+AIDS: ~social_issues ~diseaselist ~aids_words ~styles ~sicknesses ~attributes ~nounlist 
+Command: :build laura
+Start: user:test bot:laura ip: rand:2151 (~personal) 1 ==> Kann ich Sonst noch was für dich tun?  When:May30'18-16:16:48 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-16:16:38 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-16:11:13 Why:~keywordless.1.0.~control.1.0 
+Command: :concepts alter
+alter: ~age ~generic_effect ~alter ~affect_object_verbs ~goodness T~personal ~animate_verbs ~active_verbs ~verblist ~use_intentionverbs 
+Command: :concepts eingesperrt
+eingesperrt: 
+Start: user:test bot:laura ip: rand:2151 (~personal) 1 ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-13:59:47 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-16:16:38 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-16:11:13 Why:~keywordless.1.0.~control.1.0 
+Command: :build laura
+No such bot  test -  -  status: defaultbot word not found   in topic_test_anonymous_GERMAN.txt at 3: ^anonymous
+    Command: :build laura
+Start: user:test bot:laura ip: rand:2151 (~personal) 1 ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-14:04:28 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Jun05'18-14:04:17 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-16:11:13 Why:~keywordless.1.0.~control.1.0 
+Command: :reset
+Start: user:test bot:laura ip: rand:2150 (~introduction) 0 ==> Hey!  When:Jun05'18-14:04:32 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Jun05'18-14:04:17 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-16:11:13 Why:~introduction.0.0.~control.0.0 
+Command: :concepts Holz
+Holz: 
+Command: :build 0
+Start: user:test bot:laura ip: rand:2150 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-14:06:13 Version:8.2 Build0:Jun05'18-14:06:00 Build1:Jun05'18-14:04:17 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-16:11:13 Why:~personal.0.0.~control.1.0 
+Command: :concepts Holz
+Holz: 
+Command: :build laura
+Start: user:test bot:laura ip: rand:2150 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-14:07:32 Version:8.2 Build0:Jun05'18-14:06:00 Build1:Jun05'18-14:07:22 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:May30'18-16:11:13 Why:~keywordless.2.0.~control.1.0 
+Command: :concepts alter
+alter: ~age 
+Command: :concepts Holz
+Holz: 
+Command: :tür
+entering null word to dictionary in sentence1 Tue Jun 05 14:07:54 2018 in sentence: :tür 
+    
+Respond: user:test bot:laura ip: (~personal) 1   :tür ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-14:07:54 Why:~keywordless.2.0.~control.1.0   F:1330 
+Command: :concepts Tür
+Tür: 
+Command: :build0
+Respond: user:test bot:laura ip: (~personal) 2   :build0 ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-14:09:48 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :build 0
+Start: user:test bot:laura ip: rand:2152 (~personal) 2 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-14:10:24 Version:8.2 Build0: Build1:Jun05'18-14:07:22 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:Jun05'18-14:09:48 Why:~keywordless.2.0.~control.1.0 
+Command: :build laura
+Start: user:test bot:laura ip: rand:2152 (~personal) 2 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-14:10:40 Version:8.2 Build0: Build1:Jun05'18-14:10:31 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:Jun05'18-14:09:48 Why:~keywordless.2.0.~control.1.0 
+Command: :concepts Holz
+Holz: 
+Command: :build 0
+Start: user:test bot:laura ip: rand:2152 (~personal) 2 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-14:14:50 Version:8.2 Build0: Build1:Jun05'18-14:10:31 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:Jun05'18-14:09:48 Why:~keywordless.2.0.~control.1.0 
+Command: :build 0
+Start: user:test bot:laura ip: rand:2152 (~personal) 2 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-14:15:16 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-14:10:31 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:Jun05'18-14:09:48 Why:~keywordless.2.0.~control.1.0 
+Command: :build laura
+Start: user:test bot:laura ip: rand:2152 (~personal) 2 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-14:15:43 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-14:15:32 0:May23'18-14:00:18 F:1527077084-5.1.0.2.1.0 P:Jun05'18-14:09:48 Why:~keywordless.2.0.~control.1.0 
+Command: :concepts Holz
+Holz: ~moving_slow_land ~slow ~musical_instruments_woodwind ~wood ~lumberyard ~flammable ~burnable ~building_substances ~animate_move_verbs ~tool ~musical_instrument ~material ~store_type ~functions ~substances ~use_movement ~animate_verbs ~active_verbs ~noisy ~objects ~verblist ~use_intentionverbs ~artifacts ~nounlist ~human_data 
+Command: :concepts wasser
+wasser: 
+Command: :concepts Wasser
+Wasser: ~make_wetter ~material ~liquids ~water_drinks ~beverage ~alter_moisture_verbs ~substances ~tool ~foodbeverage ~nutrient ~affect_object_verbs ~objects ~grocery ~supermarket ~use_fooddrink ~throwable ~eatable ~carryable ~animate_verbs ~active_verbs ~nounlist ~store_type ~functions ~verblist ~use_intentionverbs 
+Command: :concepts hund
+Command: :concepts Hund
+Hund: ~moving_generic ~dog_breeds ~carnivore ~pet_animals ~mammals ~badness ~animate_move_verbs ~pet_store ~animals ~beings ~use_movement ~animate_verbs ~active_verbs ~store_type ~rideable ~eatable ~burnable ~animals_generic ~animal_kingdoms ~tool ~animate_thing ~verblist ~use_intentionverbs ~functions ~objects ~nounlist 

@@ -1,0 +1,91 @@
+﻿ChatScript Version 8.2  compiled Jun 19 2018 14:20:20
+
+>>Reading folder RAWDATA/LAURA/
+
+----Reading file z_simplecontrol.top
+Rename @9 as @chatoutput
+Reading outputmacro: ^laura
+Reading topic ~xrejoinder
+Reading table ^tbl:defaultbot
+Reading topic ~control
+
+----Reading file father_bio.top
+Reading topic ~father_bio
+
+----Reading file parents_bio.top
+Reading topic ~parents_bio
+
+----Reading file personal.top
+Reading topic ~personal
+
+----Reading file introduction.top
+Reading topic ~introduction
+
+----Reading file friends_bio.top
+Reading topic ~friends_bio
+
+----Reading file brother_bio.top
+Reading topic ~brother_bio
+
+----Reading file z_simpletopic.top
+Reading outputmacro: ^myfunc
+Reading topic ~xpostagsentence
+
+----Reading file event_uncle.top
+Reading topic ~event_uncle
+
+----Reading file b_answer_roulette.top
+Reading topic ~answer_roulette
+
+----Reading file a_concepts.top
+Reading topic ~own_concepts
+Reading concept ~action
+Reading concept ~activity
+Reading concept ~age
+Reading concept ~bot
+Reading concept ~emohow_closed
+Reading concept ~emohow_open
+Reading concept ~facilitator
+Reading concept ~happening
+Reading concept ~like_strong
+Reading concept ~like_ok
+Reading concept ~like_a_bit
+Reading concept ~like_not
+Reading concept ~mood
+Reading concept ~names
+Reading concept ~parents
+Reading concept ~people
+Reading concept ~places
+Reading concept ~problems
+Reading concept ~residence
+Reading concept ~relationship
+Reading concept ~why
+*** Warning- line 23 of a_concepts.top: CONCEPT-3 Concept/topic already defined ~why
+
+----Reading file handle_oob.top
+Reading topic ~handle_oob
+
+----Reading file hobbies_bio.top
+Reading topic ~hobbies_bio
+
+----Reading file mother_bio.top
+Reading topic ~mother_bio
+
+----Reading file names_bio.top
+Reading topic ~names_bio
+
+----Reading file b_topic_roulette.top
+Reading topic ~topic_roulette
+
+----Reading file keywordless.top
+Reading topic ~keywordless
+
+<<end folder RAWDATA/LAURA
+
+WARNING SUMMARY: 
+  line 23 of a_concepts.top: CONCEPT-3 Concept/topic already defined ~why
+1 serious warnings, 0 function warnings, 0 spelling warnings, 0 case warnings, 0 substitution warnings
+    
+
+Finished compile
+

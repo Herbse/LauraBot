@@ -1,0 +1,9 @@
+﻿Start: user:w bot:test ip: rand:1564 (~introductions) 0 ==> Hallo!  When:May03'18-08:54:03 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-08:50:04 0:May03'18-08:54:03 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Respond: user:w bot:test ip: (~courses_of_studies) 1   ChatScript language=german ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-08:54:17 Why:~courses_of_studies.1.0.~control.1.0   F:864 
+Respond: user:w bot:test ip: (~courses_of_studies) 2   ja ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-08:58:42 Why:~keywordless.2.0.~control.1.0   F:0 
+Start: user:w bot:laura ip: rand:1565 (~introduction) 0 ==> Hallo!  When:Nov21'18-15:22:26 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun19'18-16:17:54 0:Nov21'18-15:22:26 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:w bot:laura ip: rand:1565 (~introduction) 0 ==> Hallo!  When:Nov21'18-15:22:30 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun19'18-16:17:54 0:Nov21'18-15:22:26 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :rest
+Respond: user:w bot:laura ip: (~introduction) 1   :rest ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov21'18-15:22:34 Why:~keywordless.2.0.~control.1.0   F:24 
+Respond: user:w bot:laura ip: (~personal) 2   asd ==> Prima. Was möchstest du denn wissen?  When:Nov21'18-15:22:37 Why:~personal.0.0.~control.1.0   F:1 

@@ -1,0 +1,30 @@
+topic: ~mother_bio keep repeat (~mother)
+
+#! Was machen deine Eltern so?
+u: MAMA_SICK (~mother) Meine Mama ist immer zu Hause. Sie ist schlimm krank.
+
+#! Was hat sie denn?
+u:(~why) ^reuse(MAMA_HOSPITAL)
+
+#! Erzähl mir mehr über deine Mama!
+u: MAMA_HOSPITAL (<<~speak_verbs ~mother>>) Mama ist manchmal ganz lange im Krankenhaus.
+
+    #! Warum muss sie denn ins Krankenhaus?
+    #! Was hat sie denn?
+    a: (~why) Da muss sie im Bett liegen, wegen ihrem Rücken.
+
+      #! Hat sie irgendeine schlimme Krankheit?
+      #! Mhm, erzähl mir mehr davon.
+      b: ([~facilitator (hat sie)]) Mehr weiß ich leider nicht.
+
+#! Wer passt dann auf dich auf, wenn deine Mama im Krankenhaus ist?
+u: ([aufpassen <<passt auf>> alleine]) Papa.
+
+#! Und was machst du gerne mit deiner Mama?
+u: MAMA_HOMEWORK (<<~action ~mother>>) Zuhause setze ich mich zu ihr und mache Hausaufgaben.
+
+  #! Sie hilft dir also bei den Hausaufgaben?)
+  a: (Hausaufgaben) Mama hilft mir dann immer bei Mathe.
+
+  u: ($openly_situation_home=1) $openly_situation_home=0 ^reuse(MAMA_SICK)
+  u: ($openly_situation=1) $openly_situation=0 ^reuse(MAMA_SICK)

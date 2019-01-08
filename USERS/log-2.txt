@@ -1,0 +1,5 @@
+﻿Start: user:2 bot:laura ip:127.0.0.1 rand:1496 (~introduction) 0 ==> Grüß Gott!  When:May24'18-11:03:16 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:03:16 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Start: user:2 bot:laura ip:127.0.0.1 rand:1496 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:May24'18-11:03:30 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:03:16 F:0 P:0 Why:~personal.0.0.~control.1.0 
+Start: user:2 bot:laura ip:127.0.0.1 rand:1496 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:03:41 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:03:16 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:2 bot:laura ip:127.0.0.1 rand:1496 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:05:28 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:03:16 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 11:05:33 2018

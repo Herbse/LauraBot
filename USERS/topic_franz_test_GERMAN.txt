@@ -1,0 +1,24 @@
+USERS/topic_franz_test_GERMAN.txt
+jul2116 Jun05'18-16:33:42 0 0 |
+1 0 0 DY 0 4 4 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions #pending
+~introductions + 1 -+6Z%Is*Ok3 ia 0 0 0 
+#`end topics
+$cs_token=1184511
+$botprompt=TEST: 
+$userprompt=franz: >
+$cs_externaltag=~xpostagsentence
+$cs_language=english
+$cs_control_main=~control
+$cs_login=franz
+$cs_bot=Test
+$cs_randindex=518
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+#`end user
+ Use :prepare to see your input data German tagging IF YOU HAVE INSTALLED TREETAGGER + German data.
+#`end chatbot

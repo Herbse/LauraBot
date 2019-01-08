@@ -1,0 +1,3 @@
+﻿$cs_trace=0
+#`end variables
+( oob defaultbot defaultbot x100000 )

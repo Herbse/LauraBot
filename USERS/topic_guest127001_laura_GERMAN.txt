@@ -1,0 +1,60 @@
+USERS/topic_guest127001_laura_GERMAN.txt
+jul2116 May24'18-14:30:14 Jun06'18-11:49:41 1527167399-11.1.0.2.1.0 |
+1 17 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~event_uncle ~personal #pending
+~introduction + 1 ClpOi ia 8 0 0 
+~personal + 1 DGTWKIs*Ok3 ia g 0 0 
+#`end topics
+$cs_randindex=632
+$cs_bot=Laura
+$cs_login=guest
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=guest127001: >
+$botprompt=LAURA: 
+$cs_token=1184511
+$name=Renate
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ hey
+ Franz
+ Hallo
+ Günni
+ Wie alt bist du?
+ Wie alt bist du?
+ Hallo
+ Renate
+ Wie alt bist du?
+ Wie alt du bist
+ Und wo wohnst du?
+ Erzähl mir was über deine Mama
+ Erzähl mir mehr über deinen Onkel
+ Erzähl mir mehr über deinen Onkel
+ Magst du deinen Onkel?
+ 
+ 
+#`end user
+ Hallo!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, Franz .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Wie heißt du?
+ Freut mich dich kennenzulernen, unknown-word. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Grüß Gott!
+ Ich glaube das hab ich nicht ganz verstanden.
+ Wie heißt du?
+ Freut mich dich kennenzulernen, Renate. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Prima. Was möchstest du denn wissen?
+ Ich bin 14 Jahre alt. Sagt zumindest das Skript.
+ Ich wohne im ChatScript Verzeichnis.
+ Kann ich Sonst noch was für dich tun?
+ Mein Onkel schläft bei uns.
+ Mein Onkel schläft bei uns.
+ Kann ich Sonst noch was für dich tun?
+ Prima. Was möchstest du denn wissen?
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot

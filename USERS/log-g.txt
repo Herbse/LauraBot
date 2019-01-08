@@ -1,0 +1,2 @@
+﻿Start: user:g bot:test ip: rand:1548 (~introductions) 0 ==> Hallo!  When:May03'18-10:04:02 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-08:50:04 0:May03'18-10:04:02 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Respond: user:g bot:test ip: (~introductions) 1   f ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:04:04 Why:~keywordless.1.0.~control.1.0   F:849 

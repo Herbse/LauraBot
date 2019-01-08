@@ -1,0 +1,74 @@
+﻿BUG in topic_heinz_anonymous_GERMAN.txt at 3: ^anonymous No such bot  heinz -  -  status: defaultbot word not found
+BUG in topic_heinz_anonymous_GERMAN.txt at 0: ^anonymous No such bot  heinz -  -  status: defaultbot word not found
+BUG in topic_klio_test_GERMAN.txt at 0: ^test No such bot  klio -  -  status: test
+BUG in topic_klio_test_GERMAN.txt at 0: ^test No such bot  klio -  -  status: test
+BUG in topic_klio_test_GERMAN.txt at 0: ^test No such bot  klio -  -  status: test
+BUG in topic_klio_test_GERMAN.txt at 0: ^test No such bot  klio -  -  status: test
+BUG in topic_klio_test_GERMAN.txt at 0: ^test No such bot  klio -  -  status: test
+BUG in topic_klio_test_GERMAN.txt at 0: ^test No such bot  klio -  -  status: test
+BUG in topic_klio_test_GERMAN.txt at 0: ^test No such bot  klio -  -  status: test
+BUG in topic_klio_test_GERMAN.txt at 1: ^test No such bot  klio -  - hallo status: test
+BUG in script1.txt at 4: TOPIC: ~introduction 0x3 -2049018342 3 1 475 introduction.top Bad layout bug1  The rule just before here may be faulty t:  [ Hallo! ] [ Hey! ] [ Grüß Gott! ] Ich heiße OOB. Sende mir über die App eine OOB-Nachricht ( "[question-style:closed]" oder "[question-style:open]" ) `00W zu  mit "Frage" , um zu schauen, ob das funktioniert `01G u: ( < \[ **question-style:closed * \] Frage ) Das war eine geschlossene Frage. Die Antwort darauf ist trivial. `01L u: ( < \[ **question-style:open * \] Frage ) Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig. `000 
+not ptr start of responder 2 ~introduction 00005 - killing data
+MinReleaseStackGap 90MB MinHeapAvailable 96MB
+MaxBuffers used 10 of 80
+
+Finished 5: heapusedOnEntry: 3784548 heapUsedNow: 3784684 buffers:2 stackused: 96214740 stackusedNow:744 ~introduction.0.0{}  - t:! [ Hallo! ] [ Hey! ] [ Grüß Gott! ] Ich heiß
+BugDepth 4: heapusedOnEntry: 3784548 buffers:2 stackused: 96214868 ~introduction  - u:!( =8%input<%userfirstline ) ^gambit ( ~introduc
+BugDepth 3: heapusedOnEntry: 3784548 buffers:2 stackused: 96214996 ^gambit{}  - u:!( =8%input<%userfirstline ) ^gambit ( ~introduc
+BugDepth 2: heapusedOnEntry: 3784548 buffers:1 stackused: 96215124 ~control.1.0{}  - 
+BUG in introduction.top at 5: u: (< \[test\] frage ) Das war eine geschlossene Frage. Die Antwort darauf ist trivial. 
+PATTERN-34 ] is not closing corresponding [
+
+BUG in topic_klio_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Wed Nov 28 14:22:17 2018: input:0 No such bot  klio -  -  status: defaultbot word not found caller:klio callee: at  in sentence: [question-style:closed]
+No such bot  klio -  -  status: defaultbot word not found
+BUG in introduction.top at 5: u: (< \[test\]) Das war eine geschlossene Frage. Die Antwort darauf ist trivial. 
+PATTERN-34 ] is not closing corresponding [
+
+BUG in topic_klio_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Wed Nov 28 14:22:48 2018: input:0 No such bot  klio -  -  status: defaultbot word not found caller:klio callee: at  in sentence: [question-style:closed]
+No such bot  klio -  -  status: defaultbot word not found
+BUG in introduction.top at 5: u: (\[test\]) Das war eine geschlossene Frage. Die Antwort darauf ist trivial. 
+PATTERN-34 ] is not closing corresponding [
+
+BUG in topic_klio_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Wed Nov 28 14:23:45 2018: input:0 No such bot  klio -  -  status: defaultbot word not found caller:klio callee: at  in sentence: [question-style:closed]
+No such bot  klio -  -  status: defaultbot word not found
+BUG in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous No such bot  khg -  -  status: defaultbot word not found
+BUG in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous No such bot  khg -  -  status: defaultbot word not found
+BUG in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous No such bot  khg -  -  status: defaultbot word not found
+BUG in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous No such bot  khg -  -  status: defaultbot word not found
+Buffer allocation underflow
+BUG in topic_khg_anonymous_GERMAN.txt at 0: ^anonymous No such bot  khg -  -  status: defaultbot word not found
+BUG in topic_k_anonymous_GERMAN.txt at 3: ^anonymous No such bot  k -  -  status: defaultbot word not found
+Buffer allocation underflow
+BUG in topic_k_anonymous_GERMAN.txt at 0: ^anonymous No such bot  k -  -  status: defaultbot word not found
+Buffer allocation underflow
+BUG in topic_k_anonymous_GERMAN.txt at 0: ^anonymous No such bot  k -  -  status: defaultbot word not found
+BUG in topic_k_anonymous_GERMAN.txt at 0: ^anonymous No such bot  k -  -  status: defaultbot word not found
+No such directory No such file or directory
+
+No such directory No such file or directory
+
+BUG in event_uncle.top at 37: u: ONKEL_EVENT_6 ($event_state=6 [~facilitator ~action ~touch]) $event_state=7  Er kam in meine Kabine und wollte mir beim Umziehen helfen. 
+PATTERN-69 Failed to balance ( or [ or { or << properly, still at ( for ( =e$event_state=5 [ ~facilitator ~action ~touch ] =e$event_state=6 Seinen Penis. a: ( ![ ~facilitator ~action ~touch ] ) =i$closed_question=1 ^respond ( ~answer_roulette ) #! wie ist das =apassiert? 
+
+BUG in topic_sdg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Dec 04 14:48:32 2018: input:0 No such bot  sdg -  -  status: defaultbot word not found caller:sdg callee: at  in sentence: dann
+No such bot  sdg -  -  status: defaultbot word not found
+BUG in event_uncle.top at 37: u: ONKEL_EVENT_6 ($event_state=6 [~facilitator ~action ~touch]) $event_state=7  Er kam in meine Kabine und wollte mir beim Umziehen helfen. 
+PATTERN-69 Failed to balance ( or [ or { or << properly, still at ( for ( =e$event_state=5 [ ~facilitator ~action ~touch ] =e$event_state=6 Seinen Penis. a: ( ![ ~facilitator ~action ~touch ] ) =i$closed_question=1 ^respond ( ~answer_roulette ) #! wie ist das =apassiert? 
+
+BUG in topic_sdg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Dec 04 14:48:57 2018: input:0 No such bot  sdg -  -  status: defaultbot word not found caller:sdg callee: at  in sentence: dann
+No such bot  sdg -  -  status: defaultbot word not found
+BUG in event_uncle.top at 23: u: (~relationship ^incontext(ONKEL_EVENT) Nicht so gut. 
+PATTERN-69 Failed to balance ( or [ or { or << properly, still at ( for ( [ wann immer oft ] ^incontext ( ONKEL_EVENT ) Fast jeden Tag. #! Wie findest du =5das? #! Wie findest du =5den? #! Wie verstehtst du dich mit =5dem? 
+
+BUG in event_uncle.top at 31: u: ONKEL_EVENT_1 ($event_state=1 [~facilitator ~action ~touch]) $event_state=2 Der kommt in mein Zimmer, obwohl ich das nicht will. 
+PATTERN-69 Failed to balance ( or [ or { or << properly, still at ( for ( wo ^incontext ( ONKEL_EVENT ) Im Wohnzimmer #! Und was ist mit deinem =7Onkel? 
+
+BUG in topic_sdg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Dec 04 16:00:25 2018: input:0 No such bot  sdg -  -  status: defaultbot word not found caller:sdg callee: at  in sentence: wie heisst denn dein onkel?
+No such bot  sdg -  -  status: defaultbot word not found

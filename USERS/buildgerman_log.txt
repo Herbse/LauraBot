@@ -1,0 +1,22 @@
+﻿ChatScript Version 8.2  compiled Apr  1 2018 07:33:29
+
+----Reading file simplecontrol.top
+Rename @9 as @chatoutput
+Reading outputmacro: ^test
+Reading topic ~xrejoinder
+Reading table ^tbl:defaultbot
+Reading topic ~control
+
+----Reading file simpletopic.top
+Reading outputmacro: ^myfunc
+Reading topic ~xpostagsentence
+Reading topic ~introductions
+*** Warning-  Undefined set or topic ~keywordless line 56 in simplecontrol.top
+
+WARNING SUMMARY: 
+  line 4 of : Undefined set or topic ~keywordless line 56 in simplecontrol.top
+1 serious warnings, 0 function warnings, 0 spelling warnings, 0 case warnings, 0 substitution warnings
+    
+
+Finished compile
+

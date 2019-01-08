@@ -1,0 +1,29 @@
+USERS/topic_3_laura.txt
+jul2116 May24'18-11:05:42 May24'18-11:05:57 0 |
+2 1 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 sE=FyIs*Ok3 ia 0 0 0 
+~personal + 1 E2y?F ia 0 0 0 
+#`end topics
+$cs_randindex=1496
+$cs_bot=Laura
+$cs_login=3
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=3: >
+$botprompt=LAURA: 
+$cs_token=1184511
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Hey
+#`end user
+ Hallo!
+ Prima. Was möchstest du denn wissen?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+#`end chatbot

@@ -1,0 +1,26 @@
+USERS/topic_g_test.txt
+jul2116 May03'18-10:04:02 May03'18-10:04:04 0 |
+1 1 0 DY 0 16 16 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions #pending
+~introductions + 1 $aL$D ia 0 0 0 
+#`end topics
+$cs_randindex=1548
+$cs_bot=Test
+$cs_login=g
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=g: >
+$botprompt=TEST: 
+$cs_token=1184511
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ f
+#`end user
+ Hallo!
+ Kann ich Sonst noch was für dich tun?
+#`end chatbot

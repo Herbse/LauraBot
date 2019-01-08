@@ -1,0 +1,68 @@
+topic: ~event_uncle keep repeat (onkel Dirk familie Hause ~facilitator ~action ~touch)
+
+
+#! Erzähl mir von deinem Onkel 
+u: UNCLE_EVENT ($event_state=0 onkel) $event_state=1  Mein Onkel schläft jetzt immer bei uns.
+
+#! Wann? 
+#! Was heißt immer?
+#! Wie oft?
+u: ([wann immer oft] ^incontext(UNCLE_EVENT)) Fast jeden Tag.
+
+#! Wie findest du das?
+#! Wie findest du den?
+#! Wie verstehtst du dich mit dem?
+u: (~relationship ^incontext(UNCLE_EVENT)) Nicht so gut.
+
+#! Wo?
+u: (wo ^incontext(UNCLE_EVENT)) Im Wohnzimmer
+
+#---------------------------------------------------------------------------------------------
+
+#!Und dann?
+u: UNCLE_EVENT_1 ($event_state=1 [~facilitator ~action ~touch]) $event_state=2 Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+
+#! Wer ist denn dein Onkel?
+u: (<<wer onkel>> ^incontext(UNCLE_EVENT_1)) ^reuse (UNCLE_EVENT_1)
+
+#!Ist das der Bruder von deiner Mama/Papa?
+u: (<< bruder [~father ~mother]>> ^incontext(UNCLE_EVENT_1))  ^reuse (UNCLE_EVENT_1)
+
+#---------------------------------------------------------------------------------------------
+#! Und was ist mit deinem Onkel?
+u: UNCLE_EVENT_2 ($event_state=2 [~facilitator ~action ~touch]) $event_state=3 Der kommt in mein Zimmer, obwohl ich das nicht will.
+ 
+#---------------------------------------------------------------------------------------------    
+
+#! Warum willst du denn nicht, dass er in dein Zimmer kommt?
+#! Und was macht
+u: UNCLE_EVENT_2 ($event_state=2 [~facilitator ~action ~touch]) $event_state=3 Er haut mir immer auf den Po.
+
+#---------------------------------------------------------------------------------------------
+
+#! Was hat dein Onkel denn gemacht?
+u: UNCLE_EVENT_3 ($event_state=3 [~facilitator ~action ~touch]) $event_state=4 Er hat mich mal am Po angefasst.
+
+#---------------------------------------------------------------------------------------------
+
+#! Ist noch mehr passiert?
+u: UNCLE_EVENT_4 ($event_state=4 [~facilitator ~action ~touch]) $event_state=5 Einmal waren wir schwimmen, da sollte ich sein Ding in den Mund nehmen.
+
+#---------------------------------------------------------------------------------------------
+
+#! Was meinst du mit "sein Ding"?
+u: UNCLE_EVENT_5  ($event_state=5 [~facilitator ~action ~touch]) $event_state=6 Seinen Penis.
+
+#---------------------------------------------------------------------------------------------
+
+#! wie ist das passiert?
+u: UNCLE_EVENT_6 ($event_state=6 [~facilitator ~action ~touch]) $event_state=7  Er kam in meine Kabine und wollte mir beim Umziehen helfen.
+
+#---------------------------------------------------------------------------------------------
+
+#! Ist noch mehr passiert?
+u: UNCLE_EVENT_7 ($event_state=7 [~facilitator ~action ~touch]) Ich möchte da nicht mehr darüber reden.
+
+#---------------------------------------------------------------------------------------------
+
+u: ($openly_situation=1) $openly_situation=0 ^reuse(ONKEL_EVENT)

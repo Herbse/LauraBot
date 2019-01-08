@@ -1,0 +1,28 @@
+USERS/topic_we_laura_GERMAN.txt
+jul2116 Jun19'18-12:44:49 Jun19'18-12:44:51 0 |
+1 1 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 ClpOi ia 0 0 0 
+~personal + 1 3y5EP ia 1 0 0 
+#`end topics
+$cs_randindex=2561
+$cs_bot=Laura
+$cs_login=we
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=we: >
+$botprompt=LAURA: 
+$singleresponse=1
+$cs_token=1180415
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ hu
+#`end user
+ Hey!
+ Prima. Was möchstest du denn wissen?
+#`end chatbot

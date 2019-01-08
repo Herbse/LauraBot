@@ -1,0 +1,375 @@
+﻿Start: user:karl bot:laura ip: rand:2000 (~introduction) 0 ==> Grüß Gott!  When:Jun05'18-14:18:02 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-14:15:32 0:Jun05'18-14:18:02 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :concepts Wasser
+Wasser: ~make_wetter ~material ~liquids ~water_drinks ~beverage ~alter_moisture_verbs ~substances ~tool ~foodbeverage ~nutrient ~affect_object_verbs ~objects ~grocery ~supermarket ~use_fooddrink ~throwable ~eatable ~carryable ~animate_verbs ~active_verbs ~nounlist ~store_type ~functions ~verblist ~use_intentionverbs 
+Command: :concepts wasser
+wasser: 
+Command: :concepts hallo
+hallo: ~emohello ~interjections 
+Command: :concepts Hallo
+Hallo: ~emohello ~interjections 
+entering null word to dictionary in sentence1 Tue Jun 05 14:19:01 2018 in sentence: Hey 
+    
+Respond: user:karl bot:laura ip: (~introduction) 1   Hey ==> Wie heißt du?  When:Jun05'18-14:19:01 Why:~introduction.1.0.~control.1.0   F:877 
+Command: :concepts wasser
+wasser: 
+Command: :concepts wasser IGNORESPELLING
+wasser: 
+Command: :reset
+Start: user:karl bot:laura ip: rand:2000 (~introduction) 0 ==> Grüß Gott!  When:Jun05'18-14:19:47 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-14:15:32 0:Jun05'18-14:18:02 F:0 P:Jun05'18-14:19:01 Why:~introduction.0.0.~control.0.0 
+Respond: user:karl bot:laura ip: (~introduction) 1   Hey ==> Wie heißt du?  When:Jun05'18-14:19:50 Why:~introduction.1.0.~control.1.0   F:0 
+Command: :concepts Armee
+Armee: ~people_groups ~military_groups ~armed_services 
+Command: :concepts armee
+Command: :prepare ich trinke gerne wasser
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: ich trinke gerne wasser
+Tokenized into: ich  trinke  gerne  wasser  
+Actual used input: ich trinke gerne wasser 
+
+
+Concepts: 
+
+1: ich (raw):
+       +~internal_concepts
+   +~pronoun
+       +~pronoun_bits
+         +~pos
+   +~pronoun_subject
+   +~pronoun_object
+   +~noun_phrase
+   +ich
+ // 
+1: ich (canonical):  //  
+
+2: trinke (raw):
+   +trinke
+ // 
+2: trinken (canonical):        +~drink
+         +~swallow_drink_verbs
+           +~swallowing_verbs
+             +~ingesting_verbs
+               +~use_fooddrink
+               +~bodily_function_verbs
+                 +~body_verbs
+                   +~animate_verbs
+                     +~verblist
+                   +~active_verbs
+                     +~use_intentionverbs
+                 +~usefulfactverb
+   +trinken
+ //  
+
+3: gerne (raw):
+       +~internal_concepts
+       +~pos
+   +~adverb
+   +gerne
+ // 
+3: gerne (canonical):  //  
+
+4: wasser (raw):
+   +wasser
+ // 
+4: wassern (canonical):    +wassern
+ //  
+
+Sequences:
+       +~omnivore
+       +~letters
+   +ICH^
+   +Ich^
+
+       +~social_issues
+         +~styles
+           +~attributes
+             +~nounlist
+   +Trinken^
+
+   +Gerne^
+
+       +~make_wetter
+         +~alter_moisture_verbs
+           +~affect_object_verbs
+             +~animate_verbs
+               +~verblist
+             +~active_verbs
+               +~use_intentionverbs
+       +~material
+         +~substances
+           +~objects
+             +~nounlist
+       +~liquids
+       +~water_drinks
+         +~beverage
+           +~tool
+           +~foodbeverage
+             +~grocery
+               +~store_type
+             +~supermarket
+           +~nutrient
+             +~use_fooddrink
+             +~throwable
+               +~functions
+             +~eatable
+             +~carryable
+   +Wasser^
+   +Wassern^
+
+After parse TokenFlags: USERINPUT 
+Command: :show pos
+ Pos set to 1
+Respond: user:karl bot:laura ip: (~introduction) 2   Hallo ==> Freut mich dich kennenzulernen, emohello. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:Jun05'18-14:30:45 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:0 
+Tagged POS 1 words: ~emohello ()  
+
+Respond: user:karl bot:laura ip: (~introduction) 3   wie geht es dir? ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-14:30:54 Why:~keywordless.2.0.~control.1.0   F:0 
+Tagged POS 1 words: ~emohowzit ()  
+
+Respond: user:karl bot:laura ip: (~personal) 4   Wie heißt du ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-14:30:58 Why:~personal.0.0.~control.1.0   F:0 
+Tagged POS 3 words: wie (Pronoun_object Pronoun_subject Conjunction_coordinate Conjunction_subordinate)  heißt/heißen ()  du (Pronoun_object Pronoun_subject)  
+
+Respond: user:karl bot:laura ip: (~personal) 5   Wo wohnst du ==> Ich wohne im ChatScript Verzeichnis.  When:Jun05'18-14:31:02 Why:~personal.2.0.~control.1.0   F:0 
+Tagged POS 3 words: wo (Pronoun_object Pronoun_subject)  wohnst/wohnen ()  du (Pronoun_object Pronoun_subject)  
+
+Respond: user:karl bot:laura ip: (~personal) 6   Wie alt ist dein bruder ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:Jun05'18-14:45:53 Why:~personal.1.0.~control.1.0   F:0 
+Tagged POS 5 words: wie (Pronoun_object Pronoun_subject Conjunction_coordinate Conjunction_subordinate)  alt ()  ist/sein ()  dein (Pronoun_object Pronoun_subject)  bruder ()  
+
+Respond: user:karl bot:laura ip: (~personal) 7   Wie alt ist dein Bruder ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:Jun05'18-14:46:57 Why:~personal.1.0.~control.1.0   F:0 
+Tagged POS 5 words: wie (Pronoun_object Pronoun_subject Conjunction_coordinate Conjunction_subordinate)  alt ()  ist/sein ()  dein (Pronoun_object Pronoun_subject)  Bruder (Noun_plural Noun_singular Noun_proper_singular)  
+
+Command: :concepts Waser
+Command: :concepts Verhältnis
+Verhältnis: ~relationship 
+Command: :concepts Beziehung
+Beziehung: ~relationship ~goodness 
+Command: :list goodness
+Command: :prepare ich habe hunger
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: ich habe hunger
+Tokenized into: ich  habe  hunger  
+Actual used input: ich habe hunger 
+
+
+Concepts: 
+
+1: ich (raw):
+       +~internal_concepts
+   +~pronoun
+       +~pronoun_bits
+         +~pos
+   +~pronoun_subject
+   +~pronoun_object
+   +~noun_phrase
+   +ich
+ // 
+1: ich (canonical):  //  
+
+2: habe (raw):
+   +habe
+ // 
+2: haben (canonical):        +~causal_to_infinitive_verbs
+         +~misc_parsedata
+       +~auxverblist
+       +~mental_states
+         +~static_verbs
+       +~own
+         +~possess
+         +~possession_verbs
+           +~social_verbs
+             +~animate_verbs
+               +~verblist
+           +~active_verbs
+             +~use_intentionverbs
+         +~do_with_titles
+   +haben
+ //  
+
+3: hunger (raw):
+       +~use_fooddrink
+   +hunger
+ // 
+3: hunger (canonical):  //  
+   +~repeatinput1
+
+Sequences:
+       +~omnivore
+       +~letters
+   +ICH^
+   +Ich^
+
+   +Habe^
+   +Haben^
+   +HABEN^
+
+       +~bodily_states
+         +~sensations
+         +~attributes
+           +~nounlist
+       +~strongbadness
+         +~badness
+   +Hunger^
+
+After parse TokenFlags: USERINPUT 
+Command: :prepare ich habe hungr
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: ich habe hungr
+Tokenized into: ich  habe  hungr  
+Actual used input: ich habe hungr 
+
+
+Concepts: 
+
+1: ich (raw):
+       +~internal_concepts
+   +~pronoun
+       +~pronoun_bits
+         +~pos
+   +~pronoun_subject
+   +~pronoun_object
+   +~noun_phrase
+   +ich
+ // 
+1: ich (canonical):  //  
+
+2: habe (raw):
+   +habe
+ // 
+2: haben (canonical):        +~causal_to_infinitive_verbs
+         +~misc_parsedata
+       +~auxverblist
+       +~mental_states
+         +~static_verbs
+       +~own
+         +~possess
+         +~possession_verbs
+           +~social_verbs
+             +~animate_verbs
+               +~verblist
+           +~active_verbs
+             +~use_intentionverbs
+         +~do_with_titles
+   +haben
+ //  
+
+3: hungr (raw):
+   +hungr
+       +~internal_concepts
+   +~unknownword
+ // 
+3: unknown-word (canonical):    +unknown-word
+ //  
+   +~repeatinput1
+
+Sequences:
+       +~omnivore
+       +~letters
+   +ICH^
+   +Ich^
+
+   +Habe^
+   +Haben^
+   +HABEN^
+
+
+After parse TokenFlags: USERINPUT 
+Respond: user:karl bot:laura ip: (~personal) 8   Ich Habe Hunger ==> Kann ich Sonst noch was für dich tun?  When:Jun05'18-15:21:50 Why:~keywordless.1.0.~control.1.0   F:0 
+Tagged POS 3 words: ich (Pronoun_object Pronoun_subject)  Habe (Noun_plural Noun_singular)  Hunger (Noun_plural Noun_singular Noun_proper_singular)  
+
+Command: :prepare Ich Habe Hunger
+TokenControl: DO_SUBSTITUTE_SYSTEM DO_NUMBER_MERGE DO_DATE_MERGE DO_INTERJECTION_SPLITTING NO_HYPHEN_END 
+
+
+Original User Input: Ich Habe Hunger
+Tokenized into: Ich  Habe  Hunger  
+Actual used input: Ich Habe Hunger 
+
+
+Concepts: 
+
+1: Ich (raw):
+       +~internal_concepts
+   +~pronoun
+       +~pronoun_bits
+         +~pos
+   +~pronoun_subject
+   +~pronoun_object
+   +ich
+ // 
+1: ich (canonical):  //  
+
+2: Habe (raw):
+       +~internal_concepts
+       +~pos
+   +~noun
+       +~singular
+       +~normal_noun_bits
+       +~noun_bits
+   +~noun_singular
+       +~plural
+   +~noun_plural
+ //    +Habe^
+
+2: Habe (canonical):  //  
+
+3: Hunger (raw):
+       +~internal_concepts
+       +~pos
+   +~noun
+       +~singular
+       +~normal_noun_bits
+       +~noun_bits
+   +~noun_singular
+       +~plural
+   +~noun_plural
+   +~noun_proper_singular
+   +~noun_phrase(2-3)
+ //        +~bodily_states
+         +~sensations
+         +~attributes
+           +~nounlist
+       +~strongbadness
+         +~badness
+   +Hunger^
+
+3: Hunger (canonical):  //  
+
+Sequences:
+       +~omnivore
+       +~letters
+   +ICH^
+   +Ich^
+
+   +habe
+
+       +~use_fooddrink
+   +hunger
+
+After parse TokenFlags: USERINPUT 
+Respond: user:karl bot:laura ip: (~personal) 9   hey ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-15:34:33 Why:~keywordless.2.0.~control.1.0   F:0 
+Tagged POS 1 words: ~emohello ()  
+
+Respond: user:karl bot:laura ip: (~personal) 10   Wie geht es dir ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-15:34:38 Why:~keywordless.2.0.~control.1.0   F:16 
+Tagged POS 1 words: ~emohowzit ()  
+
+Respond: user:karl bot:laura ip: (~personal) 11   Wo wohnst du ==> Ich wohne im ChatScript Verzeichnis.  When:Jun05'18-15:34:43 Why:~personal.2.0.~control.1.0   F:15 
+Tagged POS 3 words: wo (Pronoun_object Pronoun_subject)  wohnst/wohnen ()  du (Pronoun_object Pronoun_subject)  
+
+Command: :reset
+Start: user:karl bot:laura ip: rand:2000 (~introduction) 0 ==> Grüß Gott!  When:Jun05'18-15:34:50 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-14:15:32 0:Jun05'18-14:18:02 F:0 P:Jun05'18-15:34:43 Why:~introduction.0.0.~control.0.0 
+Tagged POS 0 words: 
+
+Respond: user:karl bot:laura ip: (~introduction) 1   Nein ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-15:34:52 Why:~keywordless.2.0.~control.1.0   F:16 
+Tagged POS 1 words: ~no ()  
+
+Command: :build laura
+Start: user:karl bot:laura ip: rand:2001 (~personal) 1 ==> Prima. Was möchstest du denn wissen?  When:Jun05'18-15:35:08 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-15:34:58 0:Jun05'18-14:18:02 F:0 P:Jun05'18-15:34:52 Why:~personal.0.0.~control.1.0 
+Tagged POS 0 words: 
+
+Respond: user:karl bot:laura ip: (~personal) 2   nein ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-15:35:11 Why:~keywordless.2.0.~control.1.0   F:0 
+Tagged POS 1 words: ~no ()  
+

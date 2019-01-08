@@ -1,0 +1,54 @@
+USERS/topic_klio_harry_GERMAN.txt
+jul2116 Nov28'18-12:04:46 Nov28'18-14:50:46 1543413000-3.10.0 |
+1 44 0 DY 0 22 22 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~childhood #pending
+~childhood + 2 BX!F!Is*Ok3 piaa 7 0 0 
+~introductions + 1 Uk?Kk ca 0 0 0 
+#`end topics
+$cs_randindex=1396
+$cs_bot=Harry
+$cs_login=klio
+$cs_token=67337983
+$cs_control_main=~control
+$userprompt=klio: >
+$botprompt=HARRY: 
+$singleresponse=1
+$shutup=1
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ 
+ 
+ 
+ 
+ shut up
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+#`end user
+ I don't know what to say.
+ Loopback seen.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ Cool.
+ Right.
+ I don't know what to say.
+ Indeed.
+ Alarm seen.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+ I don't know what to say.
+#`end chatbot

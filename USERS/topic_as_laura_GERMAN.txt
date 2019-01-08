@@ -1,0 +1,30 @@
+USERS/topic_as_laura_GERMAN.txt
+jul2116 Nov29'18-11:57:56 Nov29'18-13:54:13 0 |
+1 2 0 DY 0 18 18 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~personal + 1 ZkwsA ia 2 0 0 
+~introduction + 1 ClpOi ia 0 0 0 
+#`end topics
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=as: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=as
+$cs_bot=Laura
+$cs_randindex=1849
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ asd
+ wie geht es dir?
+#`end user
+ Grüß Gott!
+ Prima. Was möchstest du denn wissen?
+ Naja, es geht so.
+#`end chatbot

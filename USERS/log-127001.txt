@@ -1,0 +1,135 @@
+﻿Command: :build mine
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  k ==> Hallo!  When:May03'18-10:56:40 Why:~introductions.0.0.~control.1.0   F:886 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 2  Hallo ==> Wie heißt du?  When:May03'18-10:56:44 Why:~introductions.1.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 3  Test ==> Freut mich dich kennenzulernen, test. Wie kann ich dir helfen?  When:May03'18-10:56:48 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 4  Ich weiß nicht was ich studieren soll ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-10:56:58 Why:~courses_of_studies.0.0.~control.1.0   F:16 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 5  Ja ==> In welcher Fachrichtung möchtest du studieren?  When:May03'18-10:57:03 Why:~questions_interests.8.0=SUBJECT.~courses_of_studies.0.1   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 6  Ich interessiere mich sehr für Informatik ==> Wie sehr interessierst du dich für Technik? (Sehr, geht so, wenig, gar nicht)  When:May03'18-10:57:37 Why:~questions_informatics.8.0=TECH.~questions_interests.1.0   F:6 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 7  gar nicht ==> Und wie stehts mit Wirtschaft? Wie sehr interessierst du dich dafür?  When:May03'18-10:57:58 Why:~questions_informatics.9.0=ECONOMICS.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 8  gar nicht ==> Wie sehr macht es dir Spaß, Sachen zu gestalten?  When:May03'18-10:58:01 Why:~questions_informatics.10.0=DESIGN.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 9  sehr ==> Bist du sehr kreativ?  When:May03'18-10:58:04 Why:~questions_informatics.11.0=CREATIVE.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 10  sehr ==> Mal sehen... Ich denke zu deinen Interessen passt Interaktive Medien am ehesten. Möchtest du mehr über Interaktive Medien erfahren?  When:May03'18-10:58:07 Why:~questions_informatics.13.0.~control.1.0   F:5 
+Respond: user:127001 bot:test ip:127.0.0.1 (~interactive_media) 11  Erzähl mir mehr über Interaktive Medien ==> Interaktive Medien ist ein Studiengang, in dem du die Grundlagen von Gestaltung und Informatik kennen lernen kannst.  When:May03'18-10:58:24 Why:~interactive_media.4.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~interactive_media) 12  Nach dem Interaktive Medien Abschluss, wo kann ich dann arbeiten? ==> Du kannst in vielen Themenfeldern arbeiten, zum Beispiel 2D-Animation, 3D-Animation, Computerspiele, Navigationssysteme, Datenmanagement, Softwareentwicklung und Internet- und Mobilanwendungen.  When:May03'18-10:58:42 Why:~interactive_media.0.0.~control.1.0   F:16 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 13  Und wie lange dauert der Studiengang? ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-10:59:00 Why:~courses_of_studies.0.0.~control.1.0   F:16 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 14  Bis wann ist die Bewerbungsfrist für IAM? ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-10:59:18 Why:~courses_of_studies.1.0.~control.1.0   F:22 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 15  Ja ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:59:25 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 16  Erzähl mir mehr über interaktive Medien ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:59:37 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 17  Ich brauche eine Studienberatung ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:59:51 Why:~keywordless.2.0.~control.1.0   F:0 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-10:59:57 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-10:56:18 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-10:59:51 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  Hallo ==> Wie heißt du?  When:May03'18-11:00:01 Why:~introductions.1.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 2  zumbu ==> Freut mich dich kennenzulernen, unknown-word. Wie kann ich dir helfen?  When:May03'18-11:00:06 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 3  Ich brauche eine studienberatung ==> Kann ich Sonst noch was für dich tun?  When:May03'18-11:00:14 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 4  Ich weiß nicht was ich studieren soll ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-11:00:23 Why:~courses_of_studies.0.0.~control.1.0   F:16 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 5  ja ==> In welcher Fachrichtung möchtest du studieren?  When:May03'18-11:00:29 Why:~questions_interests.8.0=SUBJECT.~courses_of_studies.0.1   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 6  Kreatives ==> Das hab ich nicht ganz verstanden. `In welcher Fachrichtung möchtest du studieren?  When:May03'18-11:00:39 Why:~questions_interests.7.0.~control.1.0 ~questions_interests.8.0=SUBJECT.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_design) 7  Ich würde gerne in Richtung Gestaltung und Kreatives studieren ==> Wie sehr interessierst du dich für Technik? (Sehr, geht so, wenig, gar nicht)  When:May03'18-11:01:51 Why:~questions_design.9.0=TECH.~questions_interests.2.0   F:16 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_design) 8  gar nicht ==> Ist dein räumliches Vorstellungsvermögen gut?  When:May03'18-11:01:57 Why:~questions_design.10.0=SPATIAL_THINKING.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_design) 9  sehr gut ==> Wie sehr liegt dir logisches Denken?  When:May03'18-11:02:02 Why:~questions_design.11.0=LOGICAL_THINKING.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_design) 10  wenig ==> Wie sehr macht es dir Spaß, Konzepte zu entwickeln?  When:May03'18-11:02:08 Why:~questions_design.12.0=CONCEPTS.~control.1.0   F:4 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_design) 11  Sehr viel ==> Mal sehen... Kommunikationsdesign könnte zu dir passen. Alternativ habe ich noch Architektur im Angebot. Über welchen Studiengang würdest du gerne mehr wissen?  When:May03'18-11:02:14 Why:~questions_design.15.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 12  Erzähl mir mehr über Kommunikationsdesign ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-11:02:28 Why:~courses_of_studies.1.0.~control.1.0   F:11 
+Respond: user:127001 bot:test ip:127.0.0.1 (~university_of_applied_sciences) 13  Wie sieht der Campus der Hochschule aus ==> Schick, oder? <img src="pictures/campus.jpg">  When:May03'18-11:03:01 Why:~university_of_applied_sciences.0.0.~control.1.0   F:15 
+Respond: user:127001 bot:test ip:127.0.0.1 (~university_of_applied_sciences) 14  Das sieht prima aus ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-11:03:12 Why:~keywordless.2.0.~control.1.0   F:7 
+Respond: user:127001 bot:test ip:127.0.0.1 (~university_of_applied_sciences) 15  was gibt es heute in der Mensa zu essen ==> Bitte schön: <a href="http://www.max-manager.de/daten-extern/augsburg/pdf/wochenplaene/fh-friedbergerstr/aktuell.pdf">Der Speiseplan</a>.  When:May03'18-11:03:49 Why:~university_of_applied_sciences.1.0.~control.1.0   F:32 
+Respond: user:127001 bot:test ip:127.0.0.1 (~university_of_applied_sciences) 16  j ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-11:07:21 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~university_of_applied_sciences) 17  Hallo ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-11:07:25 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 18  ich weiß nicht was ich studieren soll ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-11:07:34 Why:~courses_of_studies.0.0.~control.1.0   F:15 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 19  ja ==> Gibt es noch eine andere Fachrichtung, in der du dir vorstellen kannst, zu studieren?  When:May03'18-11:07:38 Why:~questions_interests.6.0=SECOND_SUBJECT.~courses_of_studies.0.1   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 20  Kommunikationsdesign ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:07:52 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 21  weiß nicht ==> Du musst mir schon eine grobe Richtung nennen, zum Beispiel Wirtschaft oder Informatik!  When:May03'18-11:09:37 Why:~questions_interests.4.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 22  keine ahnung ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:09:44 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:6 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 23  keine ahnung ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:09:50 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 24  design ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:10:04 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:6 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 25  Design ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:10:07 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:16 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 26  Informatik ==> Und wie stehts mit Wirtschaft? Wie sehr interessierst du dich dafür?  When:May03'18-11:10:12 Why:~questions_informatics.9.0=ECONOMICS.~questions_interests.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 27  nein ==> Das hab ich nicht ganz verstanden. ` `Und wie stehts mit Wirtschaft? Wie sehr interessierst du dich dafür?  When:May03'18-11:10:25 Why:~questions_informatics.9.5 ~questions_informatics.9.5 ~questions_informatics.9.0=ECONOMICS.~questions_informatics.9.5   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 28  weiß nicht ==> Bist du sehr kreativ?  When:May03'18-11:10:31 Why:~questions_informatics.11.0=CREATIVE.~control.1.0   F:6 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 29  ja ==> Das hab ich nicht ganz verstanden. ` `Bist du sehr kreativ?  When:May03'18-11:10:39 Why:~questions_informatics.11.5 ~questions_informatics.11.5 ~questions_informatics.11.0=CREATIVE.~questions_informatics.11.5   F:2 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 30  sehr ==> Mal sehen... Interaktive Medien könnte zu dir passen. Alternativ habe ich noch Architektur im Angebot. Über welchen Studiengang würdest du gerne mehr wissen?  When:May03'18-11:10:42 Why:~questions_informatics.14.0.~control.1.0   F:6 
+Respond: user:127001 bot:test ip:127.0.0.1 (~not_offered_courses) 31  medizin ==> Diesen Studiengang gibt es an der Hochschule Augsburg leider nicht, aber der Hochschulekompass kann dir sicher weiterhelfen. Dort sind fast alle in Deutschland studierbaren Fächer aufgelistet. Schau doch mal beim <a href="https://www.hochschulkompass.de">Hochschulkompass</a> vorbei.  When:May03'18-11:11:26 Why:~not_offered_courses.0.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~not_offered_courses) 32  gestaltung ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-11:12:11 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 33  fachrichtung ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-11:12:58 Why:~courses_of_studies.0.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 34  cool ==> Kann ich dir noch irgendwie weiterhelfen?  When:May03'18-11:13:03 Why:~keywordless.0.0.~control.1.0   F:7 
+Command: :build mine
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 35  Hallo ==> Kann ich Sonst noch was für dich tun?  When:May03'18-11:17:51 Why:~keywordless.1.0.~control.1.0   F:38 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 36  fachrichtung ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-11:17:59 Why:~courses_of_studies.0.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 37  Ja ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:18:04 Why:~questions_interests.5.0.~courses_of_studies.0.1 ~questions_interests.5.0.~courses_of_studies.0.1   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 38  Studienrichtung ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:18:13 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 39  Wie sieht der Campus aus? ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:18:21 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 40  Wie sieht der Campus aus? ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:18:37 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:7 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 41  Fachrichtung ==> Das hab ich nicht ganz verstanden. `   When:May03'18-11:18:42 Why:~questions_interests.5.0.~control.1.0 ~questions_interests.5.0.~control.1.0   F:0 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-11:18:46 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-11:17:42 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-11:18:42 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  Hallo ==> Wie heißt du?  When:May03'18-11:18:49 Why:~introductions.1.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 2  tim ==> Freut mich dich kennenzulernen, unknown-word. Wie kann ich dir helfen?  When:May03'18-11:18:53 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-11:18:59 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-11:17:42 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-11:18:53 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  Grüß dich ==> Kann ich Sonst noch was für dich tun?  When:May03'18-11:19:03 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-11:19:09 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-11:17:42 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-11:19:03 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  Hi ==> Wie heißt du?  When:May03'18-11:19:12 Why:~introductions.1.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 2  Franz ==> Freut mich dich kennenzulernen, Franz. Wie kann ich dir helfen?  When:May03'18-11:19:19 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 3  fachrichtung ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-11:19:26 Why:~courses_of_studies.0.0.~control.1.0   F:7 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 4  ja ==> In welcher Fachrichtung möchtest du studieren?  When:May03'18-11:19:28 Why:~questions_interests.8.0=SUBJECT.~courses_of_studies.0.1   F:0 
+User data file CONTEXT inconsistent
+User data file inconsistent
+Command: :build mine
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 5     ==> Das hab ich nicht ganz verstanden. `In welcher Fachrichtung möchtest du studieren?  When:May03'18-16:03:59 Why:~questions_interests.7.0.~control.1.0 ~questions_interests.8.0=SUBJECT.~control.1.0   F:6 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_interests) 6  Hallo ==> Das hab ich nicht ganz verstanden. `In welcher Fachrichtung möchtest du studieren?  When:May03'18-16:04:06 Why:~questions_interests.7.0.~control.1.0 ~questions_interests.8.0=SUBJECT.~control.1.0   F:948 
+Respond: user:127001 bot:test ip:127.0.0.1 (~questions_informatics) 7  Informatik ==> Wie sehr interessierst du dich für Technik? (Sehr, geht so, wenig, gar nicht)  When:May03'18-16:04:17 Why:~questions_informatics.8.0=TECH.~questions_interests.1.0   F:4 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-16:05:17 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-16:03:49 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-16:04:17 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  hey ==> Wie heißt du?  When:May03'18-16:05:21 Why:~introductions.1.0.~control.1.0   F:1 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 2  Tim ==> Freut mich dich kennenzulernen, Tim. Worüber würdest du gerne reden?  When:May03'18-16:05:25 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:4 
+Respond: user:127001 bot:test ip:127.0.0.1 (~biography) 3  alter ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May03'18-16:06:24 Why:~biography.0.0.~control.1.0   F:6 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 4  wo wohnst du ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-16:06:32 Why:~courses_of_studies.1.0.~control.1.0   F:7 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 5  wie alt is onkel ==> Kann ich Sonst noch was für dich tun?  When:May03'18-16:06:48 Why:~keywordless.1.0.~control.1.0   F:15 
+Respond: user:127001 bot:test ip:127.0.0.1 (~biography) 6  alter ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May03'18-16:06:53 Why:~biography.0.0.~control.1.0   F:5 
+Respond: user:127001 bot:test ip:127.0.0.1 (~biography) 7  onkel ==> Kann ich Sonst noch was für dich tun?  When:May03'18-16:06:58 Why:~keywordless.1.0.~control.1.0   F:5 
+Respond: user:127001 bot:test ip:127.0.0.1 (~biography) 8  eltern ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-16:07:03 Why:~keywordless.2.0.~control.1.0   F:5 
+Respond: user:127001 bot:test ip:127.0.0.1 (~biography) 9  hallo ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-16:08:02 Why:~keywordless.2.0.~control.1.0   F:3 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-16:08:20 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-16:03:49 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-16:08:02 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  Hallo ==> Wie heißt du?  When:May03'18-16:08:24 Why:~introductions.1.0.~control.1.0   F:2 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 2  sage ich nicht ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-16:08:29 Why:~courses_of_studies.1.0.~control.1.0   F:19 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 3  hallo ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-16:09:06 Why:~keywordless.2.0.~control.1.0   F:3 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-16:09:11 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-16:03:49 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-16:09:06 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  Hey ==> Wie heißt du?  When:May03'18-16:09:14 Why:~introductions.1.0.~control.1.0   F:1 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 2  Rest ==> Freut mich dich kennenzulernen, rest. Worüber würdest du gerne reden?  When:May03'18-16:09:20 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:16 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 3     ==> Kann ich Sonst noch was für dich tun?  When:May03'18-16:10:28 Why:~keywordless.1.0.~control.1.0   F:7 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-16:10:33 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-16:03:49 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-16:10:28 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~conclusion) 1  Ciao ==> Hoffentlich sieht man sich mal wieder!  When:May03'18-16:10:38 Why:~conclusion.2.0.~control.1.0   F:931 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May03'18-16:10:46 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-16:03:49 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May03'18-16:10:38 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 1  Hey ==> Wie heißt du?  When:May03'18-16:10:48 Why:~introductions.1.0.~control.1.0   F:1 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 2  Pferd ==> Freut mich dich kennenzulernen, unknown-word. Worüber würdest du gerne reden?  When:May03'18-16:10:53 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:2 
+Command: :build mine
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 3  hallo ==> Wie heißt du?  When:May08'18-18:33:39 Why:~introductions.1.0.~control.1.0   F:1134 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 4  hans ==> Freut mich dich kennenzulernen, unknown-word. Stelle mir eine Frage zu meiner Biographie!  When:May08'18-18:33:53 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~biography) 5  Wo wohnst du ==> Ich wohne im ChatScript Verzeichnis.  When:May08'18-18:34:02 Why:~biography.1.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~biography) 6  und wie alt bist du ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May08'18-18:34:07 Why:~biography.0.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 7  Hey ==> Hallo!  When:May08'18-18:36:07 Why:~introductions.0.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 8  Wie gehts ==> Ich glaube das hab ich nicht ganz verstanden.  When:May08'18-18:36:13 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:127001 bot:test ip:127.0.0.1 (~introductions) 9  How are yozu ==> Kann ich Sonst noch was für dich tun?  When:May08'18-18:36:18 Why:~keywordless.1.0.~control.1.0   F:3 
+Respond: user:127001 bot:test ip:127.0.0.1 (~courses_of_studies) 10  Leider nein ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May08'18-18:36:22 Why:~courses_of_studies.1.0.~control.1.0   F:0 
+Command: :reset
+Start: user:127001 bot:test ip:127.0.0.1 rand:48 (~introductions) 0 ==> Hallo!  When:May08'18-18:36:30 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May08'18-18:33:24 0:May03'18-10:56:40 F:1525337965-9.1.0.2.1.0 P:May08'18-18:36:22 Why:~introductions.0.0.~control.0.0 
+Command: :build harry
+Respond: user:127001 bot:harry ip:127.0.0.1 (~introductions) 1  Hello ==> Have you been here before?  When:May08'18-18:36:43 Why:~introductions.2.0.~control.9.0   F:5 
+Respond: user:127001 bot:harry ip:127.0.0.1 (~introductions) 2  No ==> Then welcome to your first time.  When:May08'18-18:36:48 Why:~introductions.2.2   F:0 
+Start: user:127001 bot:harry ip:127.0.0.1 rand:51 (~introductions) 2 ==> Glad you came back.  When:May09'18-11:07:55 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May08'18-18:36:35 0:May08'18-18:36:43 F:0 P:May08'18-18:36:48 Why:~introductions.0.0.~control.0.0 
+Respond: user:127001 bot:harry ip:127.0.0.1 (~childhood) 3  hello ==> Did you run away from home when you were little?  When:May09'18-11:08:13 Why:~childhood.0.0.~control.9.0   F:0 
+Command: :build mine
+No such bot  127.0.0.1 - laura -  status: test   in topic_127001_laura.txt at 0: ^laura
+    Command: :build laura
+No such bot  127.0.0.1 - laura -  status: test   in topic_127001_laura.txt at 0: ^laura
+    Command: :build Laura
+No such bot  127.0.0.1 - laura -  status: test   in topic_127001_laura.txt at 0: ^laura
+    No such bot  127.0.0.1 - laura - Hallo status: test   in topic_127001_laura.txt at 0: ^laura
+    Command: :build Harry
+No such bot  127.0.0.1 - laura -  status: harry   in topic_127001_laura.txt at 0: ^laura
+    

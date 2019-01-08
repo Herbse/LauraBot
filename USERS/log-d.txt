@@ -1,0 +1,6 @@
+﻿Start: user:d bot:test ip: rand:1545 (~introductions) 0 ==> Hallo!  When:May03'18-10:35:54 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-10:11:06 0:May03'18-10:35:54 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+entering null word to dictionary in sentence1 Thu May 03 10:35:57 2018 in sentence: Hallo 
+    
+Respond: user:d bot:test ip: (~introductions) 1   Hallo ==> Wie heißt du?  When:May03'18-10:35:57 Why:~introductions.1.0.~control.1.0   F:855 
+Respond: user:d bot:test ip: (~introductions) 2   S ==> Freut mich dich kennenzulernen, S. Wie kann ich dir helfen?  When:May03'18-10:36:00 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:d bot:test ip: (~introductions) 3   Studienberatung ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:36:04 Why:~keywordless.2.0.~control.1.0   F:0 

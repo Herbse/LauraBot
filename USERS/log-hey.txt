@@ -1,0 +1,29 @@
+﻿Start: user:hey bot:laura ip: rand:2764 (~introduction) 0 ==> Hey!  When:Jun16'18-18:15:45 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:hey bot:laura ip: (~introduction) 1   hi ==> Wie heißt du?  When:Jun16'18-18:15:47 Why:~introduction.1.0.~control.1.0   F:12 
+Respond: user:hey bot:laura ip: (~introduction) 2   peter ==> Freut mich dich kennenzulernen, peter. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:Jun16'18-18:15:51 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+Respond: user:hey bot:laura ip: (~introduction) 3    [A [A [A [A [A [A [A ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun16'18-18:16:02 Why:~keywordless.2.0.~control.1.0   F:2 
+Respond: user:hey bot:laura ip: (~event_uncle) 4   wie heißt dein onkel ==> Der heißt Dirk.  When:Jun16'18-18:16:10 Why:~event_uncle.0.0.~control.1.0   F:2 
+Command: :reset
+Start: user:hey bot:laura ip: rand:2764 (~introduction) 0 ==> Hey!  When:Jun16'18-18:16:27 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:Jun16'18-18:16:10 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:hey bot:laura ip: rand:2764 (~introduction) 0 ==> Hey!  When:Jun16'18-18:16:32 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:Jun16'18-18:16:10 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:hey bot:laura ip: rand:2764 (~introduction) 0 ==> Hey!  When:Jun16'18-18:16:35 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:Jun16'18-18:16:10 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:hey bot:laura ip: rand:2764 (~introduction) 0 ==> Hey!  When:Jun16'18-18:16:37 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:Jun16'18-18:16:10 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:hey bot:laura ip: rand:2764 (~introduction) 0 ==> Hey!  When:Jun16'18-18:16:40 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:Jun16'18-18:16:10 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:hey bot:laura ip: rand:2764 (~introduction) 0 ==> Hey!  When:Jun16'18-18:16:43 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:Jun16'18-18:16:10 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:hey bot:laura ip: rand:2764 (~introduction) 0 ==> Hey!  When:Jun16'18-18:16:45 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:Jun16'18-18:16:10 Why:~introduction.0.0.~control.0.0 
+Respond: user:hey bot:laura ip: (~introduction) 1   hi ==> Wie heißt du?  When:Jun16'18-18:16:47 Why:~introduction.1.0.~control.1.0   F:4 
+Sourcefile Time used 1529165835352 ms for 5 sentences 21 tokens.
+Sourcefile Time used 1529165835352 ms for 5 sentences 21 tokens.
+Start: user:hey bot:laura ip: rand:2765 (~personal) 1 ==> Prima. Was möchstest du denn wissen?  When:Jun16'18-18:19:46 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:15:45 F:0 P:Jun16'18-18:16:47 Why:~personal.0.0.~control.1.0 
+Respond: user:hey bot:laura ip: (~personal) 2   wie heisst du ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun16'18-18:19:52 Why:~keywordless.2.0.~control.1.0   F:16 
+Respond: user:hey bot:laura ip: (~personal) 3   wie geht es dir ==> Naja, es geht so.  When:Jun16'18-18:19:59 Why:~personal.3.0.~control.1.0   F:2 
+Respond: user:hey bot:laura ip: (~mother_info) 4   wie heisst deine mama ==> Meine Mama heißt Charlotte.  When:Jun16'18-18:20:07 Why:~mother_info.0.0.~control.1.0   F:2 
+Respond: user:hey bot:laura ip: (~mother_info) 5   wie heisst deine mama ==> Meine Mama heißt Charlotte.  When:Jun16'18-18:20:29 Why:~mother_info.0.0.~control.1.0   F:2 
+Sourcefile Time used 1529166033773 ms for 4 sentences 15 tokens.
+Sourcefile Time used 1529166033773 ms for 4 sentences 15 tokens.

@@ -1,0 +1,23 @@
+﻿Start: user:asd bot:laura ip: rand:3774 (~introduction) 0 ==> Grüß Gott!  When:May30'18-14:45:26 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-10:56:13 0:May30'18-14:45:26 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :concepts guten tag
+guten: ~germanwords 
+Command: :concepts guten_tag
+Command: :concepts anscheinend
+anscheinend: ~yes ~yesanswer ~interjections ~yesno ~next 
+Command: :concepts no_way
+Command: :concepts horse
+horse: ~soundmaker ~vehicles_land ~tool ~hobbies_animals ~herbivore ~mammals ~vehicle ~hobby ~beings ~animals ~rideable ~enterable ~auto_dealer ~artifacts ~entertainment_stuff ~animate_thing ~eatable ~burnable ~animals_generic ~animal_kingdoms ~functions ~store_type ~objects ~human_data ~nounlist 
+entering null word to dictionary in sentence1 Wed May 30 14:47:57 2018 in sentence: wie heißt du 
+    entering null word to dictionary in sentence1 Wed May 30 14:47:57 2018 in sentence: wie heißt du 
+    entering null word to dictionary in sentence1 Wed May 30 14:47:57 2018 in sentence: wie heißt du 
+    
+Respond: user:asd bot:laura ip: (~introduction) 1   wie heißt du ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-14:47:57 Why:~keywordless.2.0.~control.1.0   F:1080 
+Respond: user:asd bot:laura ip: (~introduction) 2   hallo ==> Wie heißt du?  When:May30'18-14:48:05 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:asd bot:laura ip: (~introduction) 3   bernd ==> Freut mich dich kennenzulernen, unknown-word. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May30'18-14:48:08 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:16 
+Respond: user:asd bot:laura ip: (~introduction) 4   Wie alt bist du ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-14:48:14 Why:~keywordless.2.0.~control.1.0   F:16 
+Respond: user:asd bot:laura ip: (~personal) 5   alter ==> Prima. Was möchstest du denn wissen?  When:May30'18-14:48:20 Why:~personal.0.0.~control.1.0   F:0 
+Respond: user:asd bot:laura ip: (~personal) 6   Wie alt bist du ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May30'18-14:48:24 Why:~personal.1.0.~control.1.0   F:15 
+Respond: user:asd bot:laura ip: (~personal) 7   Was ist dein alter ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-14:48:29 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:asd bot:laura ip: (~personal) 8   welches alter hast du ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May30'18-14:49:20 Why:~personal.1.0.~control.1.0   F:0 
+Respond: user:asd bot:laura ip: (~personal) 9   wo wohnst du ==> Ich wohne im ChatScript Verzeichnis.  When:May30'18-14:49:28 Why:~personal.2.0.~control.1.0   F:15 
+Respond: user:asd bot:laura ip: (~personal) 10   was ist dein wohnort ==> Ich wohne im ChatScript Verzeichnis.  When:May30'18-14:49:34 Why:~personal.2.0.~control.1.0   F:0 

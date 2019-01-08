@@ -1,0 +1,13 @@
+﻿Start: user:sdc bot:laura ip: rand:2400 (~introduction) 0 ==> Hey!  When:Jun19'18-15:59:33 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun19'18-15:59:33 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdc bot:laura ip: (~introduction) 1   d ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun19'18-15:59:34 Why:~keywordless.2.0.~control.1.0   F:15 
+Respond: user:sdc bot:laura ip: (~personal) 2   c ==> Prima. Was möchstest du denn wissen?  When:Jun19'18-15:59:36 Why:~personal.0.0.~control.1.0   F:2 
+Respond: user:sdc bot:laura ip: (~personal) 3   s ==> Kann ich Sonst noch was für dich tun?  When:Jun19'18-15:59:38 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:sdc bot:laura ip: (~personal) 4   c ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun19'18-15:59:39 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:sdc bot:laura ip: (~personal) 5   s ==> Kann ich Sonst noch was für dich tun?  When:Jun19'18-15:59:40 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:sdc bot:laura ip: (~personal) 6   d ==> Kann ich Sonst noch was für dich tun?  When:Jun19'18-15:59:40 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:sdc bot:laura ip: (~personal) 7   c ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun19'18-15:59:41 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:sdc bot:laura ip: (~personal) 8   d ==> Kann ich Sonst noch was für dich tun?  When:Jun19'18-15:59:41 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:sdc bot:laura ip: (~personal) 9   w ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun19'18-15:59:42 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:sdc bot:laura ip: (~personal) 10   d ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun19'18-15:59:42 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:sdc bot:laura ip: (~personal) 11   c ==> Kann ich Sonst noch was für dich tun?  When:Jun19'18-15:59:43 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:sdc bot:laura ip: (~mother_info) 12   wie heisst deine mama ==> Meine Mama heißt Charlotte.  When:Jun19'18-15:59:46 Why:~mother_info.0.0.~control.1.0   F:1 

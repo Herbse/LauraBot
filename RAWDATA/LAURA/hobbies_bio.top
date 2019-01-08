@@ -1,0 +1,26 @@
+topic: ~hobbies_bio (~hobby testo)
+# Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach dem Tanzen  unterschiedliche Antworten generiert
+
+
+#! Hast du Hobbies?
+u: HOBBIES (~hobby) Ich gehe immer am Dienstags Hiphop tanzen.
+
+#! Gehst du da alleine hin?
+u: (<<~speak_verbs [~hobby]>>) Meine Freundinnen sind da auch.
+
+#! Erzähl mir mehr übers das Tanzen.
+u: (<<{~facilitator} ~hobby>>) Der Martin ist total süß.
+  #! Wer ist denn der Martin?
+  a: (<<[wer Martin]>>) Das ist unser Tanzlehrer.
+
+#! Erzähl mal mehr.
+u: (~facilitator) Wir tanzen was tolles von Beyoncé.
+
+#! Aber das ist sicher schwierig oder?
+u: (~facilitator) Ich kann das schon voll gut.
+
+#! Ist Mira cool?
+u: (<<Mira ~facilitator ~hobby>>) Die Mira ist so supercool, die darf ein Solo tanzen.
+
+
+u: ($openly_situation) $openly_situation=0 ^reuse(HOBBIES)

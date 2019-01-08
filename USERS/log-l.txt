@@ -1,0 +1,10 @@
+﻿Start: user:l bot:harry ip: rand:1553 (~introductions) 0 ==> Welcome to ChatScript.  When:May03'18-08:49:56 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Apr24'18-16:42:37 0:May03'18-08:49:56 F:0 P:0 Why:~introductions.1.0.~control.0.0 
+Command: :build mine
+Start: user:l bot:test ip: rand:1553 (~introductions) 0 ==> Hallo!  When:May03'18-08:50:06 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-08:50:04 0:May03'18-08:50:06 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Respond: user:l bot:test ip: (~introductions) 1   Hallo ==> Wie heißt du?  When:May03'18-08:50:11 Why:~introductions.1.0.~control.1.0   F:918 
+Respond: user:l bot:test ip: (~introductions) 2   Peter ==> Freut mich dich kennenzulernen, peter. Wie kann ich dir helfen?  When:May03'18-08:50:22 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:l bot:test ip: (~courses_of_studies) 3   Wie dein name ist ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-08:50:35 Why:~courses_of_studies.1.0.~control.1.0   F:4 
+Respond: user:l bot:test ip: (~courses_of_studies) 4   Wie ist dein name? ==> Kann ich Sonst noch was für dich tun?  When:May03'18-08:50:40 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:l bot:test ip: (~courses_of_studies) 5   Beratung ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-08:50:48 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:l bot:test ip: (~courses_of_studies) 6   Studienberatung ==> Kann ich Sonst noch was für dich tun?  When:May03'18-08:50:51 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:l bot:test ip: (~courses_of_studies) 7   Ja ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-08:50:58 Why:~keywordless.2.0.~control.1.0   F:0 

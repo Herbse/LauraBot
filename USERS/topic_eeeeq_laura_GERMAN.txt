@@ -1,0 +1,32 @@
+USERS/topic_eeeeq_laura_GERMAN.txt
+jul2116 Nov21'18-15:28:20 Nov21'18-15:28:51 0 |
+1 2 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 ClpOi ia 0 0 0 
+~personal + 1 3y5EP ia 0 0 0 
+#`end topics
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=eeeeq: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=eeeeq
+$cs_bot=Laura
+$cs_randindex=2154
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ hh
+ huh
+#`end user
+ Hey!
+ Prima. Was möchstest du denn wissen?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+#`end chatbot

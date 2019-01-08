@@ -1,0 +1,35 @@
+USERS/topic_kl_laura_GERMAN.txt
+jul2116 Jun19'18-13:05:03 Jun19'18-13:05:34 0 |
+1 4 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 ClpOi ia 2 0 0 
+~personal + 1 3y5EP ia 4 0 0 
+#`end topics
+$name=Heinz
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=kl: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=kl
+$cs_bot=Laura
+$cs_randindex=2172
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~introduction 2 USER_NAME 
+ hallo
+ Heinz
+ Wie geht es dir
+ Wie geht es dir
+#`end user
+ Grüß Gott!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, Heinz. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Prima. Was möchstest du denn wissen?
+ Naja, es geht so.
+#`end chatbot

@@ -1,0 +1,34 @@
+﻿USERS/topic_sd_laura_GERMAN.txt
+jul2116 Nov29'18-14:03:46 Nov29'18-14:03:55 0 |
+1 4 0 DY 0 18 18 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~personal + 1 ZkwsA ia 3 0 0 
+~introduction + 1 ClpOi ia 0 0 0 
+#`end topics
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=sd: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=sd
+$cs_bot=Laura
+$cs_randindex=2428
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ 
+ 
+ wie geht es dir
+ 
+#`end user
+ Grüß Gott!
+ Kann ich noch was für dich tun?
+ Prima. Was möchstest du denn wissen?
+ Naja, es geht so.
+ Kann ich noch was für dich tun?
+#`end chatbot

@@ -1,0 +1,26 @@
+USERS/topic_ll_harry.txt
+jul2116 May03'18-08:49:11 May03'18-08:49:15 0 |
+1 2 0 DY 0 22 22 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions #pending
+~introductions + 1 Uk?Kk ca 2 0 0 
+#`end topics
+$cs_randindex=2205
+$cs_bot=Harry
+$cs_login=ll
+$cs_token=67337983
+$cs_control_main=~control
+$userprompt=ll: >
+$botprompt=HARRY: 
+$singleresponse=1
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ ll
+ Yes
+#`end user
+ Have you been here before?
+ Welcome back!
+#`end chatbot

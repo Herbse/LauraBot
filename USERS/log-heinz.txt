@@ -1,0 +1,25 @@
+﻿No such bot  heinz -  -  status: defaultbot word not found   in topic_heinz_anonymous_GERMAN.txt at 3: ^anonymous
+    Command: :build 0
+No such bot  heinz -  -  status: defaultbot word not found   in topic_heinz_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura
+Start: user:heinz bot:laura ip: rand:1060 (~introduction) 0 ==> Grüß Gott!  When:Jun16'18-13:35:18 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-13:35:18 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:heinz bot:laura ip: (~personal) 1   He ==> Prima. Was möchstest du denn wissen?  When:Jun16'18-13:35:22 Why:~personal.0.0.~control.1.0   F:21 
+Sourcefile Time used 1529148931755 ms for 1 sentences 1 tokens.
+Sourcefile Time used 1529148931755 ms for 1 sentences 1 tokens.
+Start: user:heinz bot:laura ip: rand:1061 (~personal) 1 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun16'18-17:56:24 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-13:35:18 F:0 P:Jun16'18-13:35:22 Why:~keywordless.2.0.~control.1.0 
+Command: :reset
+Start: user:heinz bot:laura ip: rand:1060 (~introduction) 0 ==> Grüß Gott!  When:Jun16'18-17:56:26 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-13:35:18 F:0 P:Jun16'18-13:35:22 Why:~introduction.0.0.~control.0.0 
+Respond: user:heinz bot:laura ip: (~introduction) 1   hi ==> Wie heißt du?  When:Jun16'18-17:56:28 Why:~introduction.1.0.~control.1.0   F:21 
+Respond: user:heinz bot:laura ip: (~introduction) 2   Peter ==> Freut mich dich kennenzulernen, Peter. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:Jun16'18-17:56:35 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:2 
+Respond: user:heinz bot:laura ip: (~introduction) 3   Wie alt bist du ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun16'18-17:56:42 Why:~keywordless.2.0.~control.1.0   F:2 
+Respond: user:heinz bot:laura ip: (~personal) 4   wie alt bist du ==> Prima. Was möchstest du denn wissen?  When:Jun16'18-17:56:50 Why:~personal.0.0.~control.1.0   F:2 
+Respond: user:heinz bot:laura ip: (~personal) 5   wie alt bist du ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:Jun16'18-17:56:56 Why:~personal.1.0.~control.1.0   F:2 
+Respond: user:heinz bot:laura ip: (~personal) 6   wie geht es dir ==> Naja, es geht so.  When:Jun16'18-17:57:00 Why:~personal.3.0.~control.1.0   F:2 
+Respond: user:heinz bot:laura ip: (~personal) 7   sag mal wie es dir geht ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun16'18-17:57:05 Why:~keywordless.2.0.~control.1.0   F:3 
+Respond: user:heinz bot:laura ip: (~personal) 8   wie geht ==> Naja, es geht so.  When:Jun16'18-17:57:10 Why:~personal.3.0.~control.1.0   F:2 
+Respond: user:heinz bot:laura ip: (~brother_info) 9   wie heisst dein bruder ==> Er heißt Leon.  When:Jun16'18-17:57:18 Why:~brother_info.3.0.~control.1.0   F:2 
+Respond: user:heinz bot:laura ip: (~brother_info) 10   wie heißt dein bruder ==> Er heißt Leon.  When:Jun16'18-17:59:50 Why:~brother_info.3.0.~control.1.0   F:3 
+Respond: user:heinz bot:laura ip: (~brother_info) 11    [A ==> Kann ich Sonst noch was für dich tun?  When:Jun16'18-17:59:53 Why:~keywordless.1.0.~control.1.0   F:3 
+Sourcefile Time used 1529164834415 ms for 11 sentences 36 tokens.
+Sourcefile Time used 1529164834415 ms for 11 sentences 36 tokens.
+Sourcefile Time used 1529164834416 ms for 11 sentences 36 tokens.

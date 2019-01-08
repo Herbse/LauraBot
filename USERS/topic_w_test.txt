@@ -1,0 +1,29 @@
+USERS/topic_w_test.txt
+jul2116 May03'18-08:54:03 May03'18-08:58:42 0 |
+1 2 0 DY 0 16 16 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~courses_of_studies #pending
+~courses_of_studies + 1 ?#m#&Is*Ok3 ea 1 0 0 
+~introductions + 1 $aL$D ia 0 0 0 
+#`end topics
+$cs_token=1184511
+$botprompt=TEST: 
+$userprompt=w: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=w
+$cs_bot=Test
+$cs_randindex=1564
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ ChatScript language=german
+ ja
+#`end user
+ Hallo!
+ Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot

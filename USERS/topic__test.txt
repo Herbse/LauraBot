@@ -1,0 +1,64 @@
+USERS/topic__test.txt
+jul2116 May03'18-10:19:50 May15'18-16:57:00 1526396187-4.14.0.2.1.0 |
+2 19 0 DY 0 7 7 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~biography #pending
+~biography + 5 =DCYzIs*Ok3 iaaaaaaaaa j 0 0 
+~introductions + 1 sE=FyIs*Ok3 ia 3 0 0 
+#`end topics
+$name=Heinz
+$cs_token=1184511
+$botprompt=TEST: 
+$userprompt=: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_bot=Test
+$cs_randindex=1285
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Beratung
+ Hey
+ Heinz
+ Wo wohnst du?
+ Wie alt bist du?
+ Biographie
+ Welches Verhältnis hast du zu deinen eltern
+ was machen deine eltern so
+ und deinem vater geht es gut
+ und dein vater
+ wie hilft er ihr denn sonntags
+ wie hilft er ihr
+ erzähl mir mehr über deinen papa
+ cool
+ und dann
+ wie heißt deine mama
+ und wie heißt dein bruder
+ wie heißt deine beste freundin
+ erzähl mir mehr über mira
+#`end user
+ Hallo!
+ Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?
+ Hallo!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, Heinz .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Ich wohne im ChatScript Verzeichnis.
+ Ich bin 14 Jahre alt. Sagt zumindest das Skript.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich liebe meine Eltern.
+ Meine Mama ist immer zu Hause. Sie ist schlimm krank.
+ Prima. Was möchstest du denn wissen?
+ Mein Papa hilft meiner Mama zu Hause.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Manchmal hilft Papa auch den Nachbarn.
+ Manchmal darf ich einem Papa beim Reparieren helfen.
+ Mama hilft mir dann immer bei Mathe.
+ Meine Mama heißt Charlotte.
+ Meine Bruder ist der Leon.
+ Meine beste Freundin ist die Mira.
+ Mira hat einen Hund. der ist soo süß, der will mich immer ablecken.
+#`end chatbot

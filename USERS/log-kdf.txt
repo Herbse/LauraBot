@@ -1,0 +1,1 @@
+﻿Start: user:kdf bot:laura ip: rand:1883 (~introduction) 0 ==> Grüß Gott!  When:Jun19'18-16:14:39 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun19'18-16:14:39 F:0 P:0 Why:~introduction.0.0.~control.0.0 

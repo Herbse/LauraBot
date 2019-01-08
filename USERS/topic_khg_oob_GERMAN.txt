@@ -1,0 +1,25 @@
+USERS/topic_khg_oob_GERMAN.txt
+jul2116 Nov29'18-10:05:49 0 0 |
+1 0 0 DY 0 6 6 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 1 nNZy8Js*Ok3 ia 0 0 0 
+#`end topics
+$cs_randindex=2015
+$cs_bot=Oob
+$cs_login=khg
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=khg: >
+$botprompt=OOB: 
+$cs_token=1184511
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+#`end user
+ Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot

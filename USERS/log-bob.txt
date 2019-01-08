@@ -1,0 +1,14 @@
+﻿Start: user:bob bot:harry ip: rand:632 (~introductions) 0 ==> Welcome to ChatScript.  When:Apr24'18-13:52:58 Version:8.2 Build0:Apr01'18-07:35:36 Build1:Apr01'18-07:35:48 0:Apr24'18-13:52:58 F:0 P:0 Why:~introductions.1.0.~control.0.0 
+Respond: user:bob bot:harry ip: (~introductions) 1   How are you ==> Have you been here before?  When:Apr24'18-13:53:04 Why:~introductions.2.0.~control.9.0   F:2 
+Respond: user:bob bot:harry ip: (~childhood) 2   What? ==> Did you run away from home when you were little?  When:Apr24'18-13:53:13 Why:~childhood.0.0.~control.9.0   F:1 
+Respond: user:bob bot:harry ip: (~childhood) 3   Why? ==> Surely you can guess why?  When:Apr24'18-13:53:17 Why:~quibble_why.12.0.~quibble_all.5.0   F:1 
+Respond: user:bob bot:harry ip: (~childhood) 4   No ==> Why no?  When:Apr24'18-13:53:21 Why:~honest_response.1.0.~quibble_all.12.0   F:0 
+Respond: user:bob bot:harry ip: (~childhood) 5   Just because ==> Does that reason seem to explain anything else?  When:Apr24'18-13:53:26 Why:~quibble_because.8.0.~quibble_all.8.0   F:1 
+Respond: user:bob bot:harry ip: (~childhood) 6   Ask again! ==> I ran away once, but my parents found me and dragged me back.  When:Apr24'18-13:53:33 Why:~childhood.1.0=RUNAWAY.~control.9.0   F:2 
+Respond: user:bob bot:harry ip: (~childhood) 7   Was it fun? ==> I don't know.  When:Apr24'18-13:53:40 Why:~honest_response.33.0.~quibble_all.12.0   F:3 
+Respond: user:bob bot:harry ip: (~childhood) 8   How old are you? ==> A couple of years.  When:Apr24'18-13:53:48 Why:~quibble_how.181.0.~quibble_all.7.0   F:3 
+Respond: user:bob bot:harry ip: (~childhood) 9   How invented you? ==> What scared you as a kid?  When:Apr24'18-13:53:57 Why:~childhood.2.0.~control.9.0   F:2 
+Respond: user:bob bot:harry ip: (~childhood) 10   Ghosts ==> Fine.  When:Apr24'18-13:54:03 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:3 
+Respond: user:bob bot:harry ip: (~childhood) 11   What scared you as a kid? ==> I was happy as a kid.  When:Apr24'18-13:54:11 Why:~childhood.6.0=HAPPY.~childhood.7.0   F:6 
+No such bot  Bob -  -  status: harry   in pG28YXAWtNd0hZMzOplnaoHgDUZgGe38J5X0veQuVTHxwPu.txt at 4: ^23aKFM1jjqchEilQS1LHZu/efTi\nDmaB+qA4MaEfMH0ySgmj8tDLl5zgePfw5/1vTQ6W+O1PWO7u8EoZN+rxXWMwhogP\nlyprjCwgNQuH1D+eiQvbz6k4z9mYZCj73MootsxQ477y4zEcdnjeLFQoNkrZpgNW\ngXP6DB+/pG28YXAWtNd0hZMzOplnaoHgDUZgGe38J5X0veQuVTHxwPu
+    

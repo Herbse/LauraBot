@@ -1,0 +1,15 @@
+topic: ~introduction  keep repeat ()
+
+t: [Hallo!][Hey!][Grüß Gott!] Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+
+u: ($test=1) Das ist der Test.
+#u: (\[ testc \]) Das ist der Testc.
+#u: (\[ testo \]) Das ist der Testo.
+
+#u: (\[ testc \]) $closed=1 
+#u: (\[ testo \]) $open=1
+u: ($closed=1 frage) $closed=0 Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+u: ($open=1 frage )$open=0 Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.
+u: (frage) Das ist die Frage.
+
+

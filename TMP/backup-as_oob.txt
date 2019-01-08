@@ -1,0 +1,36 @@
+﻿USERS/topic_as_oob_GERMAN.txt
+jul2116 Nov29'18-13:33:09 Nov29'18-13:47:44 0 |
+1 6 0 DY 0 6 6 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 1 nNZy8Js*Ok3 ia 4 0 0 
+#`end topics
+$open=0
+$closed=0
+$cs_token=1184511
+$botprompt=OOB: 
+$userprompt=as: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=as
+$cs_bot=Oob
+$cs_randindex=1849
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ frage
+ frage
+ frage
+ frage
+ 
+ 
+#`end user
+ Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+ Das ist die Frage.
+ Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+ Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+ Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.
+#`end chatbot

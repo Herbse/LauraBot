@@ -1,0 +1,61 @@
+USERS/topic_jeff_harry.txt
+jul2116 Apr24'18-14:48:34 Apr24'18-16:49:18 1524581206-2.0.0.4.0.0 |
+16 18 0 DY 0 22 22 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~childhood #pending
+~childhood + 2 BX!F!Is*Ok3 piaa h 0 0 
+~introductions + 1 Uk?Kk ca f 0 0 
+#`end topics
+$singleresponse=1
+$botprompt=HARRY: 
+$userprompt=jeff: >
+$cs_control_main=~control
+$cs_token=67337983
+$cs_login=Jeff
+$cs_bot=Harry
+$cs_randindex=2784
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~honest_response 14 GRUNT 
+ Who is Lennon?
+ Who is Beatles
+ how long is one meter?
+ How is the weather today
+ How much are 100 grams
+ Where has he touched you
+ Where is Nigeria
+ Where is Poland
+ What is germany?
+ where is germany?
+ Who is germany?
+ build Harry
+ apikey=asdhsdfohAA
+ :apikey=08asdhiasdjh
+ :apikey=nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCptQX68Opy6S66\nHGI9T3Tq8oWHB7rgdqZ04DRxKLbatOsaiw39K23aKFM1jjqchEilQS1LHZu/efTi\nDmaB+qA4MaEfMH0ySgmj8tDLl5zgePfw5/1vTQ6W+O1PWO7u8EoZN+rxXW
+ :noboot
+ ChatScript
+ :ChatScript
+#`end user
+ Welcome to ChatScript.
+ John Winston Ono Lennon  (9 October 1940 - 8 December 1980) was an English singer, songwriter, and peace activist who co-founded the Beatles, the most commercially successful band in the history of
+ The Beatles were an English rock band formed in Liverpool in 1960. With members John Lennon, Paul McCartney, George Harrison and Ringo Starr, they became widely regarded as the foremost and most infl
+ Long enough.
+ Have you been here before?
+ Too much.
+ Somewhere.
+ Did you run away from home when you were little?
+ On average it's about 238,857 miles from the moon.
+ Germany (German: Deutschland [ˈdɔʏtʃlant]), officially the Federal Republic of Germany (German: Bundesrepublik Deutschland,  listen ), is a federal parliamentary republic in central-western Europ
+ Nearby.
+ Germany (German: Deutschland [ˈdɔʏtʃlant]), officially the Federal Republic of Germany (German: Bundesrepublik Deutschland,  listen ), is a federal parliamentary republic in central-western Europ
+ I ran away once, but my parents found me and dragged me back.
+ Hi, again.
+ What scared you as a kid?
+ Fine.
+ Hi.
+ I was scared of machines. I had vivid dreams of the Terminator robots.
+ Did you have a happy childhood?
+ I don't know what to say.
+#`end chatbot

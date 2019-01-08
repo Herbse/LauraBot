@@ -1,0 +1,50 @@
+USERS/topic_sdc_laura_GERMAN.txt
+jul2116 Jun19'18-15:59:33 Jun19'18-15:59:46 0 |
+1 12 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal ~mother_info #pending
+~introduction + 1 ClpOi ia 0 0 0 
+~personal + 1 3y5EP ia 2 0 0 
+#`end topics
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=sdc: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=sdc
+$cs_bot=Laura
+$cs_randindex=2399
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ d
+ c
+ s
+ c
+ s
+ d
+ c
+ d
+ w
+ d
+ c
+ wie heisst deine mama
+#`end user
+ Hey!
+ Ich glaube das hab ich nicht ganz verstanden.
+ Prima. Was möchstest du denn wissen?
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Meine Mama heißt Charlotte.
+#`end chatbot

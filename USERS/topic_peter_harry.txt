@@ -1,0 +1,21 @@
+USERS/topic_peter_harry.txt
+jul2116 May02'18-17:53:53 May02'18-17:53:53 0 |
+1 1 ~introductions !Mb Uk?Kk  DY 0 22 22 0 # start, input#, rejoindertopic,rejoinderid (a:  ( ~yes ) Welcome back! ),checksum
+~introductions #pending
+~introductions + 1 Uk?Kk ca 1 0 0 
+#`end topics
+$singleresponse=1
+$botprompt=HARRY: 
+$userprompt=peter: >
+$cs_control_main=~control
+$cs_token=67337983
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Chatscript language=german
+#`end user
+ Have you been here before?
+#`end chatbot

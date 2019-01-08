@@ -1,0 +1,2327 @@
+In file included from SRC/constructCode.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/constructCode.cpp:83:76: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (*word1 == '^' && word1[1] == '^' && IsDigit(word1[2])) found = ""; // indirect function var 
+                                                                                                ^
+SRC/constructCode.cpp:84:55: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (*word1 == '^' && word1[1] == '_') found = ""; // indirect var
+                                                                           ^
+SRC/constructCode.cpp:85:75: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (*word1 == '^' && word1[1] == '\'' && word1[2] == '_') found = ""; // indirect var
+                                                                                               ^
+SRC/constructCode.cpp:165:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    CALLFRAME* frame = ChangeDepth(1, "If()", false);
+                                      ^
+SRC/constructCode.cpp:238:47: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            CALLFRAME* frame = ChangeDepth(0, "If{}", false, ptr);
+                                              ^
+SRC/constructCode.cpp:259:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    ChangeDepth(-1, "If()", true);
+                    ^
+SRC/constructCode.cpp:268:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    ChangeDepth(1, "Loop()", false, ptr+2);
+                   ^
+SRC/constructCode.cpp:299:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    CALLFRAME* frame = ChangeDepth(0, "Loop{}", false, ptr);
+                                      ^
+SRC/constructCode.cpp:316:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ChangeDepth(-1,"Loop{}",true); // allows step out to cover a loop 
+                       ^
+11 warnings generated.
+In file included from SRC/csocket.cpp:32:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/csocket.cpp:438:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* bot = "";
+                    ^
+3 warnings generated.
+In file included from SRC/dictionarySystem.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/dictionarySystem.cpp:71:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* mini = "";
+             ^
+SRC/dictionarySystem.cpp:587:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                mini = "WORDNET";
+                       ^
+SRC/dictionarySystem.cpp:596:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                mini = "BASIC";
+                       ^
+SRC/dictionarySystem.cpp:1153:49: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (Index2Word(hashbuckets[hash] != D)) myexit("Dictionary delete is wrong");// should never happen
+                                                       ^
+SRC/dictionarySystem.cpp:1671:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* buffer = InfiniteStack(limit,"ReadString");
+                                                   ^
+SRC/dictionarySystem.cpp:1983:30: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (gloss == NULL) gloss = "";
+                                           ^
+SRC/dictionarySystem.cpp:2461:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                answer =  "deadcow";
+                          ^
+SRC/dictionarySystem.cpp:3087:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        commentsData[tagRuleCount] = " ";
+                                                     ^
+SRC/dictionarySystem.cpp:3702:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* kind = "";
+                     ^
+SRC/dictionarySystem.cpp:3783:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!gloss) gloss = "";
+                            ^
+SRC/dictionarySystem.cpp:3824:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    char* buffer = InfiniteStack(limited, "DumpDictionaryEntry");
+                                          ^
+SRC/dictionarySystem.cpp:4208:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        WORDP D = StoreWord("whom", QWORD, KINDERGARTEN);
+                            ^
+SRC/dictionarySystem.cpp:4210:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("who", QWORD, KINDERGARTEN);  // wh_pronoun  also whether
+                      ^
+SRC/dictionarySystem.cpp:4212:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whose", QWORD, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4214:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whomever", QWORD, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4216:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whoever", QWORD, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4218:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("what", QWORD, KINDERGARTEN);  // determiner also   wh_determiner
+                      ^
+SRC/dictionarySystem.cpp:4220:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("which", QWORD, KINDERGARTEN);   // determiner also
+                      ^
+SRC/dictionarySystem.cpp:4222:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whichever", QWORD, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4224:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whatever", QWORD, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4227:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("where", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4229:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("when", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4231:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("why", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4233:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("how", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4236:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whence", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4238:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whereby", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4240:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whereein", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4242:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whereupon", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4245:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("however", ADVERB | QWORD | ADVERB | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4248:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whenever", ADVERB | ADVERB | QWORD | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4250:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whereever", ADVERB | QWORD | ADVERB | CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4253:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whereeof", CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4255:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whether", CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:4257:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        D = StoreWord("whither", CONJUNCTION_SUBORDINATE, KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:5116:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        FILE* in = FopenReadNormal("RAWDICT/bncfreq1.txt");
+                                   ^
+SRC/dictionarySystem.cpp:6133:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        WORDP be = StoreWord("be");
+                             ^
+SRC/dictionarySystem.cpp:6134:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        WORDP n = StoreWord("am");
+                            ^
+SRC/dictionarySystem.cpp:6136:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        n = StoreWord("are");
+                      ^
+SRC/dictionarySystem.cpp:6138:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        n = StoreWord("is");
+                      ^
+SRC/dictionarySystem.cpp:6140:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        n = StoreWord("being");
+                      ^
+SRC/dictionarySystem.cpp:6142:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        n = StoreWord("been");
+                      ^
+SRC/dictionarySystem.cpp:6144:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        n = StoreWord("was");
+                      ^
+SRC/dictionarySystem.cpp:6146:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        n = StoreWord("were");
+                      ^
+SRC/dictionarySystem.cpp:6740:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* name = "TOPIC/BUILD0/facts0.txt";
+                     ^
+SRC/dictionarySystem.cpp:7139:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readNames("RAWDICT/LINKPARSER/entities.locations.sing", NOUN | NOUN_PROPER_SINGULAR, 0);
+                  ^
+SRC/dictionarySystem.cpp:7140:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readNames("RAWDICT/lastnames.txt", NOUN | NOUN_PROPER_SINGULAR | NOUN_HUMAN, 0);
+                  ^
+SRC/dictionarySystem.cpp:7144:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                readFirstNames("RAWDICT/firstnames.txt");
+                               ^
+SRC/dictionarySystem.cpp:7145:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                readNames("RAWDICT/LINKPARSER/entities.given-female.sing", NOUN | NOUN_SHE | NOUN_HUMAN | NOUN_FIRSTNAME | NOUN_PROPER_SINGULAR, 0);
+                          ^
+SRC/dictionarySystem.cpp:7146:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                readNames("RAWDICT/LINKPARSER/entities.given-male.sing", NOUN | NOUN_HE | NOUN_HUMAN | NOUN_FIRSTNAME | NOUN_PROPER_SINGULAR, 0);
+                          ^
+SRC/dictionarySystem.cpp:7147:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                readNames("RAWDICT/LINKPARSER/entities.given-bisex.sing", NOUN | NOUN_HUMAN | NOUN_FIRSTNAME | NOUN_PROPER_SINGULAR | NOUN_HE | NOUN_SHE, 0);
+                          ^
+SRC/dictionarySystem.cpp:7149:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readReducedFirstNames("RAWDICT/reducedfirstnames.txt");
+                              ^
+SRC/dictionarySystem.cpp:7153:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (mini <= 0)  readSupplementalWord("RAWDICT/foreign.txt", FOREIGN_WORD, 0); // only on a full dictionary
+                                             ^
+SRC/dictionarySystem.cpp:7157:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readData("RAWDICT/WORDNET/data.noun"); //   
+                 ^
+SRC/dictionarySystem.cpp:7158:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readIndex("RAWDICT/WORDNET/index.noun", 0); //   
+                  ^
+SRC/dictionarySystem.cpp:7159:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readIrregularNouns("RAWDICT/noun_irregular.txt");
+                           ^
+SRC/dictionarySystem.cpp:7160:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/noun_more.txt", NOUN, 0);
+                             ^
+SRC/dictionarySystem.cpp:7161:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readFix("RAWDICT/WORDNET/noun.exc", NOUN | NOUN_SINGULAR);
+                ^
+SRC/dictionarySystem.cpp:7162:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readNounNoDeterminer("RAWDICT/nounnondeterminer.txt");
+                             ^
+SRC/dictionarySystem.cpp:7163:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readMonths("RAWDICT/months.txt");
+                   ^
+SRC/dictionarySystem.cpp:7166:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readOnomatopoeia("RAWDICT/onomatopoeia.txt");
+                         ^
+SRC/dictionarySystem.cpp:7167:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/interjectionlist.txt", INTERJECTION, 0);
+                             ^
+SRC/dictionarySystem.cpp:7168:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/otherlist.txt", 0, 0);
+                             ^
+SRC/dictionarySystem.cpp:7169:32: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (mini <= 0) readHomophones("RAWDICT/homophones.txt");// full dictionary
+                                      ^
+SRC/dictionarySystem.cpp:7172:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadSexed("RAWDICT/he.txt", NOUN_HE | NOUN_HUMAN);
+                  ^
+SRC/dictionarySystem.cpp:7173:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadSexed("RAWDICT/she.txt", NOUN_SHE | NOUN_HUMAN);
+                  ^
+SRC/dictionarySystem.cpp:7174:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadSexed("RAWDICT/they.txt", NOUN_THEY | NOUN_HUMAN);
+                  ^
+SRC/dictionarySystem.cpp:7176:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readWordKind("RAWDICT/timewords.txt", TIMEWORD);
+                     ^
+SRC/dictionarySystem.cpp:7180:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readData("RAWDICT/WORDNET/data.adj"); //   
+                 ^
+SRC/dictionarySystem.cpp:7181:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readIndex("RAWDICT/WORDNET/index.adj", NOUN | VERB); //   
+                  ^
+SRC/dictionarySystem.cpp:7182:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/adj_more.txt", ADJECTIVE | ADJECTIVE_NORMAL, 0);
+                             ^
+SRC/dictionarySystem.cpp:7183:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readWordKind("RAWDICT/numbers.txt", 0);
+                     ^
+SRC/dictionarySystem.cpp:7184:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readFix("RAWDICT/WORDNET/adj.exc", ADJECTIVE | ADJECTIVE_NORMAL); //   more and most forms
+                ^
+SRC/dictionarySystem.cpp:7186:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadSystemFlaggedWords("RAWDICT/adjectivepostpositive.txt", ADJECTIVE_POSTPOSITIVE);
+                               ^
+SRC/dictionarySystem.cpp:7187:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readParticipleVerbs("RAWDICT/participleadjectives.txt");
+                            ^
+SRC/dictionarySystem.cpp:7188:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        AdjNotPredicate("RAWDICT/adj_notpredicate.txt");
+                        ^
+SRC/dictionarySystem.cpp:7192:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readData("RAWDICT/WORDNET/data.adv"); //   
+                 ^
+SRC/dictionarySystem.cpp:7193:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readIndex("RAWDICT/WORDNET/index.adv", NOUN | VERB | ADJECTIVE); //   
+                  ^
+SRC/dictionarySystem.cpp:7194:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/adv_more.txt", ADVERB, 0);
+                             ^
+SRC/dictionarySystem.cpp:7195:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readIrregularAdverbs("RAWDICT/adverbs_irregular.txt");
+                             ^
+SRC/dictionarySystem.cpp:7196:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readFix("RAWDICT/WORDNET/adv.exc", ADVERB | ADVERB);
+                ^
+SRC/dictionarySystem.cpp:7205:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readConjunction("RAWDICT/conjunction.txt");
+                        ^
+SRC/dictionarySystem.cpp:7208:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readPrepositions("RAWDICT/prepositions.txt", true); //   now add onology data
+                         ^
+SRC/dictionarySystem.cpp:7209:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadSystemFlaggedWords("RAWDICT/omittabletimepreps.txt", OMITTABLE_TIME_PREPOSITION);
+                               ^
+SRC/dictionarySystem.cpp:7213:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readData("RAWDICT/WORDNET/data.verb"); //   make this read data last, MUST BE after prepositions, so ONTOLOGY doesnt grow, we put verb forms at end of it
+                 ^
+SRC/dictionarySystem.cpp:7214:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readIndex("RAWDICT/WORDNET/index.verb", NOUN); //   
+                  ^
+SRC/dictionarySystem.cpp:7216:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readIrregularVerbs("RAWDICT/verb_irregular.txt"); //   read first, to block some wordnet "like wonned won"
+                           ^
+SRC/dictionarySystem.cpp:7219:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/verb_more.txt", VERB, 0); // normal verbs
+                             ^
+SRC/dictionarySystem.cpp:7220:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/verb_infinitiveobject.txt", 0, VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE); // verbs taking infinitive after object
+                             ^
+SRC/dictionarySystem.cpp:7221:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/verb_infinitivedirect.txt", 0, VERB | VERB_INFINITIVE | VERB_TAKES_VERBINFINITIVE); // verbs taking infinitive directly
+                             ^
+SRC/dictionarySystem.cpp:7222:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/verb_causal_to.txt", 0, VERB | VERB_INFINITIVE | VERB_TAKES_INDIRECT_THEN_TOINFINITIVE); // verbs taking to infinitive after indirect
+                             ^
+SRC/dictionarySystem.cpp:7223:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadPhrasalVerb("RAWDICT/verb_phrasal.txt"); // full data
+                        ^
+SRC/dictionarySystem.cpp:7224:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSpellingExceptions("RAWDICT/verb_spell.txt");
+                               ^
+SRC/dictionarySystem.cpp:7228:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("have", VERB_INFINITIVE | VERB_PRESENT | AUX_HAVE | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7229:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("having", VERB_PRESENT_PARTICIPLE | AUX_HAVE | VERB | NOUN | NOUN_GERUND);
+                  ^
+SRC/dictionarySystem.cpp:7230:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("has", VERB_PRESENT_3PS | AUX_HAVE | VERB | SINGULAR_PERSON);
+                  ^
+SRC/dictionarySystem.cpp:7231:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("had", VERB_PAST | VERB_PAST_PARTICIPLE | AUX_HAVE | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7233:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("be", VERB | VERB_INFINITIVE | VERB | AUX_BE);
+                  ^
+SRC/dictionarySystem.cpp:7234:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("am", VERB_PRESENT | AUX_BE | VERB | SINGULAR_PERSON);
+                  ^
+SRC/dictionarySystem.cpp:7235:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("are", VERB_PRESENT | AUX_BE | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7236:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("is", AUX_BE | VERB_PRESENT_3PS | VERB | SINGULAR_PERSON);
+                  ^
+SRC/dictionarySystem.cpp:7237:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("being", AUX_BE | NOUN_GERUND | NOUN | VERB | VERB_PRESENT_PARTICIPLE);
+                  ^
+SRC/dictionarySystem.cpp:7238:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("was", AUX_BE | VERB_PAST | VERB | SINGULAR_PERSON);
+                  ^
+SRC/dictionarySystem.cpp:7239:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("were", AUX_BE | VERB_PAST | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7240:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("been", AUX_BE | VERB | VERB_PAST_PARTICIPLE);
+                  ^
+SRC/dictionarySystem.cpp:7242:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("going_to", AUX_VERB_FUTURE); // handled specially by substititions so wont exist UNLESS followed by potential infinitive
+                  ^
+SRC/dictionarySystem.cpp:7243:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("can", VERB_PRESENT | VERB_INFINITIVE | AUX_VERB_PRESENT | VERB); // modal
+                  ^
+SRC/dictionarySystem.cpp:7244:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("could", AUX_VERB_FUTURE);  // modal
+                  ^
+SRC/dictionarySystem.cpp:7245:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("dare", VERB_PRESENT | AUX_VERB_PRESENT | VERB | VERB_INFINITIVE);
+                  ^
+SRC/dictionarySystem.cpp:7246:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("dares", VERB_PRESENT_3PS | AUX_VERB_PRESENT | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7247:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("daring", VERB_PRESENT_PARTICIPLE | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7248:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("dared", VERB_PAST | AUX_VERB_PAST | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7249:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("do", VERB_PRESENT | VERB_INFINITIVE | VERB | AUX_DO);
+                  ^
+SRC/dictionarySystem.cpp:7250:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("does", VERB_PRESENT_3PS | VERB | AUX_DO | SINGULAR_PERSON);
+                  ^
+SRC/dictionarySystem.cpp:7251:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("doing", VERB_PRESENT_PARTICIPLE | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7252:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("did", VERB_PAST | VERB | AUX_DO);
+                  ^
+SRC/dictionarySystem.cpp:7253:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("done", VERB_PAST_PARTICIPLE | VERB);
+                  ^
+SRC/dictionarySystem.cpp:7254:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("get", VERB_PRESENT |  VERB   | VERB_INFINITIVE); // get is treated as aux BE
+                  ^
+SRC/dictionarySystem.cpp:7255:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("got", VERB_PAST_PARTICIPLE | VERB_PAST   | VERB);    /// colloquial for passive past  // the window got closed
+                  ^
+SRC/dictionarySystem.cpp:7256:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("gotten", VERB_PAST_PARTICIPLE | VERB  );
+                  ^
+SRC/dictionarySystem.cpp:7257:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("gets", VERB_PRESENT_3PS |   VERB);
+                  ^
+SRC/dictionarySystem.cpp:7258:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("getting", VERB_PRESENT_PARTICIPLE |   VERB | NOUN_GERUND | NOUN | VERB | VERB_PRESENT_PARTICIPLE);
+                  ^
+SRC/dictionarySystem.cpp:7259:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("had_better", AUX_VERB_PRESENT);
+                  ^
+SRC/dictionarySystem.cpp:7260:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("may", AUX_VERB_FUTURE); // modal
+                  ^
+SRC/dictionarySystem.cpp:7261:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("might", AUX_VERB_FUTURE); // modal
+                  ^
+SRC/dictionarySystem.cpp:7262:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("must", AUX_VERB_FUTURE);     // modal
+                  ^
+SRC/dictionarySystem.cpp:7263:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("need", VERB_PRESENT | AUX_VERB_PRESENT | VERB | VERB_INFINITIVE);
+                  ^
+SRC/dictionarySystem.cpp:7264:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("ought", AUX_VERB_FUTURE); // modal
+                  ^
+SRC/dictionarySystem.cpp:7265:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("ought_to", AUX_VERB_FUTURE);  // modal
+                  ^
+SRC/dictionarySystem.cpp:7266:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("shall", AUX_VERB_FUTURE); // modal
+                  ^
+SRC/dictionarySystem.cpp:7267:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("should", AUX_VERB_FUTURE); // modal
+                  ^
+SRC/dictionarySystem.cpp:7268:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("use_to", AUX_VERB_PAST | VERB | VERB_PRESENT | VERB_INFINITIVE);
+                  ^
+SRC/dictionarySystem.cpp:7269:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("used_to", AUX_VERB_PAST | VERB | VERB_PAST | VERB_PAST_PARTICIPLE); //BUT cannot handle "are you used to it?"
+                  ^
+SRC/dictionarySystem.cpp:7270:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("will", AUX_VERB_FUTURE); // modal
+                  ^
+SRC/dictionarySystem.cpp:7271:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        SetHelper("would", AUX_VERB_FUTURE); // modal
+                  ^
+SRC/dictionarySystem.cpp:7273:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        WORDP X = StoreWord("going", VERB | VERB_PRESENT_PARTICIPLE);
+                            ^
+SRC/dictionarySystem.cpp:7274:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        X = StoreWord("''",QUOTE);
+                      ^
+SRC/dictionarySystem.cpp:7275:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        X = StoreWord(".", PUNCTUATION); // closest we have 
+                      ^
+SRC/dictionarySystem.cpp:7276:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadSystemFlaggedWords("RAWDICT/existentialbe.txt", PRESENTATION_VERB);
+                               ^
+SRC/dictionarySystem.cpp:7277:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadSystemFlaggedWords("RAWDICT/adverbs_extent.txt", EXTENT_ADVERB);
+                               ^
+SRC/dictionarySystem.cpp:7278:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadSystemFlaggedWords("RAWDICT/verb_linking.txt", VERB_TAKES_ADJECTIVE); // copular verb (adjective as object)
+                               ^
+SRC/dictionarySystem.cpp:7279:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadParseWords("RAWDICT/parsemarks.txt");
+                       ^
+SRC/dictionarySystem.cpp:7283:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!readPronouns("RAWDICT/pronouns.txt"))
+                          ^
+SRC/dictionarySystem.cpp:7288:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/takepostpositiveadjective.txt", 0, 0);
+                             ^
+SRC/dictionarySystem.cpp:7289:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        StoreWord("there", THERE_EXISTENTIAL, KINDERGARTEN);
+                  ^
+SRC/dictionarySystem.cpp:7291:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        StoreWord("to", TO_INFINITIVE, KINDERGARTEN);
+                  ^
+SRC/dictionarySystem.cpp:7294:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReadDeterminers("RAWDICT/determiners.txt");
+                        ^
+SRC/dictionarySystem.cpp:7296:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        StoreWord("\"", QUOTE);
+                  ^
+SRC/dictionarySystem.cpp:7298:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readSupplementalWord("RAWDICT/conditional_idioms.txt", 0, 0);
+                             ^
+SRC/dictionarySystem.cpp:7301:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readWordByAge("RAWDICT/preschool_kindergarten.txt", KINDERGARTEN);
+                      ^
+SRC/dictionarySystem.cpp:7302:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readWordByAge("RAWDICT/grade1_2.txt", GRADE1_2);
+                      ^
+SRC/dictionarySystem.cpp:7303:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readWordByAge("RAWDICT/grade3_4.txt", GRADE3_4);
+                      ^
+SRC/dictionarySystem.cpp:7304:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readWordByAge("RAWDICT/grade5_6.txt", GRADE5_6);
+                      ^
+SRC/dictionarySystem.cpp:7305:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readWordByAge("RAWDICT/jrhigh.txt", GRADE5_6);
+                      ^
+SRC/dictionarySystem.cpp:7306:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readWordByAge("RAWDICT/basicEnglish.txt", GRADE5_6);
+                      ^
+SRC/dictionarySystem.cpp:7309:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readNonPos("RAWDICT/nonpos.txt");
+                   ^
+SRC/dictionarySystem.cpp:7310:32: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (mini >= 0) ReadDeadSynset("RAWDICT/deadsynset.txt"); // if we dont want wordnet all (which is the usual)
+                                      ^
+SRC/dictionarySystem.cpp:7311:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readNonNames("RAWDICT/nonnames.txt"); //   override our dictionary on some words it thinks of as names that are too common
+                     ^
+SRC/dictionarySystem.cpp:7312:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        readNonWords("RAWDICT/nonwords.txt");
+                     ^
+SRC/dictionarySystem.cpp:7437:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        AcquireDefines("src/dictionarySystem.h"); // need to process raw dictionary data but should NOT be final dict, since this is a dynamic file
+                       ^
+SRC/dictionarySystem.cpp:7440:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        Dqword = StoreWord("~qwords");
+                           ^
+SRC/dictionarySystem.cpp:7455:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                readMassNouns("RAWDICT/nounmass.txt");   // ENGLISH ONLY
+                              ^
+SRC/dictionarySystem.cpp:7456:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReadDeadFacts("RAWDICT/deadfacts.txt"); // kill off some problematic dictionary facts
+                              ^
+SRC/dictionarySystem.cpp:7457:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                readPluralNouns("RAWDICT/nounplural.txt");
+                                ^
+SRC/dictionarySystem.cpp:7470:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                AddShortDict("TOPIC/BUILD0/dict0.txt"); // add dictionary entries defined by level 0 dictionary entries
+                             ^
+SRC/dictionarySystem.cpp:7471:31: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (mini == 3) AddShortDict("TOPIC/BUILD1/dict1.txt"); // add dictionary entries defined by level 1 dictionary entries
+                                            ^
+SRC/dictionarySystem.cpp:7479:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                CheckShortDictionary("TOPIC/BUILD0/patternWords0.txt", true); // could live w/o pattern words, but extra amount is small
+                                     ^
+SRC/dictionarySystem.cpp:7480:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (mini == 3)  CheckShortDictionary("TOPIC/BUILD1/patternWords1.txt", true);
+                                                     ^
+SRC/dictionarySystem.cpp:7492:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReadAbbreviations("LIVEDATA/abbreviations.txt"); // needed for burst/tokenizing
+                                  ^
+SRC/dictionarySystem.cpp:7493:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReadTitles("RAWDICT/titles.txt"); //   forms of address like Mr. (before readData so things like potage_St._Germain are correctly handled - burst needs to know them...
+                           ^
+SRC/dictionarySystem.cpp:7495:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReadWordFrequency("RAWDICT/500kwords.txt", 20000, mini > 0); // add most frequent words NOT already known or until dict is 20K
+                                  ^
+SRC/dictionarySystem.cpp:7792:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (kind == NOUN) type = "noun";
+                                                 ^
+SRC/dictionarySystem.cpp:7793:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (kind == VERB) type = "verb";
+                                                 ^
+SRC/dictionarySystem.cpp:7794:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (kind == ADJECTIVE) type = "adjective";
+                                                      ^
+SRC/dictionarySystem.cpp:7795:31: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (kind == ADVERB) type = "adverb";
+                                                   ^
+SRC/dictionarySystem.cpp:7796:36: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (kind == PREPOSITION) type = "preposition";
+                                                        ^
+SRC/dictionarySystem.cpp:7797:47: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (kind == CONJUNCTION_COORDINATE) type = "conjunction";
+                                                                   ^
+SRC/dictionarySystem.cpp:7798:40: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (kind == AUX_VERB_FUTURE) type = "aux";
+                                                            ^
+179 warnings generated.
+In file included from SRC/english.cpp:2:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/english.cpp:635:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                entry = canonical = StoreWord("null word");
+                                              ^
+3 warnings generated.
+In file included from SRC/englishTagger.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/englishTagger.cpp:168:58: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        (char*)"POSSIBLEINFINITIVE",(char*)"POSSIBLEADJECTIVE", "POSSIBLETOLESSVERB",// 23
+                                                                ^
+SRC/englishTagger.cpp:2095:17: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                                        if (at > 0 &&  *wordStarts[at] == ';' || *wordStarts[at] == ':')  baseseen = true;
+                                            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~ ~~
+SRC/englishTagger.cpp:2095:17: note: place parentheses around the '&&' expression to silence this warning
+                                        if (at > 0 &&  *wordStarts[at] == ';' || *wordStarts[at] == ':')  baseseen = true;
+                                                   ^
+                                            (                                )
+SRC/englishTagger.cpp:3092:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* ambiguous = "";
+                          ^
+SRC/englishTagger.cpp:3093:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* faultyparse = "";
+                            ^
+SRC/englishTagger.cpp:3094:60: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!original && tokenFlags & FAULTY_PARSE) faultyparse = "badparse "; // only one of ambiguous (worse) and faultyparse will be true
+                                                                  ^
+SRC/englishTagger.cpp:3750:58: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                MarkMeaningAndImplications(0, 0, MakeMeaning(StoreWord("~noun_phrase")), j+1,i);
+                                                                       ^
+SRC/englishTagger.cpp:9063:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (!X) X = StoreWord("Missing canonical");
+                                              ^
+SRC/englishTagger.cpp:10064:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                role = "";
+                                       ^
+10 warnings generated.
+In file included from SRC/factSystem.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/factSystem.cpp:230:30: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!x[0] || !x[1] ) return ""; // safety from bad data
+                                    ^
+SRC/factSystem.cpp:254:35: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* word = InfiniteStack(limit,"TraceFact"); // short term
+                                         ^
+SRC/factSystem.cpp:365:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        D->word = " "; // kill off its name
+                                  ^
+SRC/factSystem.cpp:724:35: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* word = InfiniteStack(limit,"ExportFacts"); //short term
+                                         ^
+SRC/factSystem.cpp:748:61: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        EncryptableFileWrite(base,1,(buffer-base),out,ltmEncrypt,"LTM"); 
+                                                                                 ^
+SRC/factSystem.cpp:813:63: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                EncryptableFileWrite(buffer,1,strlen(buffer),out,ltmEncrypt,"LTM"); 
+                                                                            ^
+SRC/factSystem.cpp:1029:73: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                readit = DecryptableFileRead(filebuffer,1,userCacheSize,in,ltmEncrypt,"LTM");   // LTM file read, read it all in, including BOM
+                                                                                      ^
+SRC/factSystem.cpp:1084:35: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* word = InfiniteStack(limit,"WriteFacts"); // WriteFact uses no extra inversespace
+                                         ^
+SRC/factSystem.cpp:1164:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* buffer = InfiniteStack(limit,"CreateFastFact"); // fact might be big, cant use mere WORD_SIZE
+                                                   ^
+SRC/factSystem.cpp:1271:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        return ""; // illegal - only happens with facts (nondead) that refer to dead facts?
+                               ^
+12 warnings generated.
+In file included from SRC/functionExecute.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/functionExecute.cpp:635:42: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                else val = AllocateStack("");
+                                         ^
+SRC/functionExecute.cpp:641:42: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                else val = AllocateStack("");
+                                         ^
+SRC/functionExecute.cpp:666:57: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                callArgumentList[callArgumentIndex++] = AllocateStack("",0);
+                                                                      ^
+SRC/functionExecute.cpp:997:36: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        char* buf = InfiniteStack(limit,"DoFunction");
+                                                        ^
+SRC/functionExecute.cpp:1063:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* ans = "OK";
+                    ^
+SRC/functionExecute.cpp:1064:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (result & ENDCALL_BIT) ans = "ENDCALL";
+                                        ^
+SRC/functionExecute.cpp:1065:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & ENDRULE_BIT) ans = "ENDRULE";
+                                             ^
+SRC/functionExecute.cpp:1066:40: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & FAILRULE_BIT) ans = "FAILRULE";
+                                              ^
+SRC/functionExecute.cpp:1067:41: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & RETRYRULE_BIT) ans = "RETRYRULE";
+                                               ^
+SRC/functionExecute.cpp:1068:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & RETRYTOPRULE_BIT) ans = "RETRYTOPRULE";
+                                                  ^
+SRC/functionExecute.cpp:1070:40: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & ENDTOPIC_BIT) ans = "ENDTOPIC";
+                                              ^
+SRC/functionExecute.cpp:1071:41: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & FAILTOPIC_BIT) ans = "FAILTOPIC";
+                                               ^
+SRC/functionExecute.cpp:1072:42: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & RETRYTOPIC_BIT) ans = "RETRYTOPIC";
+                                                ^
+SRC/functionExecute.cpp:1074:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & ENDSENTENCE_BIT) ans = "ENDSENTENCE";
+                                                 ^
+SRC/functionExecute.cpp:1075:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & FAILSENTENCE_BIT) ans = "FAILSENTENCE";
+                                                  ^
+SRC/functionExecute.cpp:1076:45: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & RETRYSENTENCE_BIT) ans = "RETRYSENTENCE";
+                                                   ^
+SRC/functionExecute.cpp:1078:42: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & RETRYINPUT_BIT) ans = "RETRYINPUT";
+                                                ^
+SRC/functionExecute.cpp:1079:40: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & ENDINPUT_BIT) ans = "ENDINPUT";
+                                              ^
+SRC/functionExecute.cpp:1080:41: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & FAILINPUT_BIT) ans = "FAILINPUT";
+                                               ^
+SRC/functionExecute.cpp:1081:41: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & FAILMATCH_BIT) ans = "FAILMATCH";
+                                               ^
+SRC/functionExecute.cpp:1082:42: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result == NOPROBLEM_BIT) ans = "NOPROBLEM";
+                                                ^
+SRC/functionExecute.cpp:1083:41: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result == FAILLOOP_BIT) ans = "FAILLOOP";
+                                               ^
+SRC/functionExecute.cpp:1084:40: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result == ENDLOOP_BIT) ans = "ENDLOOP";
+                                              ^
+SRC/functionExecute.cpp:1085:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (result & UNDEFINED_FUNCTION) ans = "UNDEFINED_FUNCTION";
+                                                    ^
+SRC/functionExecute.cpp:1204:35: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* word = InfiniteStack(limit,"FLR");
+                                         ^
+SRC/functionExecute.cpp:1321:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if ( Mfirst == 0xffffffff) piece = "null";
+                                                   ^
+SRC/functionExecute.cpp:1341:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if ( Mfirst == 0xffffffff) piece = "null";
+                                                           ^
+SRC/functionExecute.cpp:1357:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if ( Mfirst == 0xffffffff) piece = "null";
+                                                           ^
+SRC/functionExecute.cpp:1511:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        howTopic = "gambit";
+                   ^
+SRC/functionExecute.cpp:1566:8: warning: address of array 'topic' will always evaluate to 'true' [-Wpointer-bool-conversion]
+                        if (topic && !(GetTopicFlags(topicid) & TOPIC_BLOCKED))
+                            ^~~~~ ~~
+SRC/functionExecute.cpp:2269:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!stricmp(arg2,(char*)"null")) arg2 = ""; // clear to null
+                                                 ^
+SRC/functionExecute.cpp:2552:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            (*debugMark)("+all", "all");
+                         ^
+SRC/functionExecute.cpp:2552:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            (*debugMark)("+all", "all");
+                                 ^
+SRC/functionExecute.cpp:2615:32: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            (*debugMark)(posn, "*");
+                               ^
+SRC/functionExecute.cpp:2762:121: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        (char*)"DO_ESSENTIALS",(char*)"DO_SUBSTITUTES",(char*)"DO_CONTRACTIONS",(char*)"DO_INTERJECTIONS",(char*)"DO_BRITISH", "DO_SPELLING", "DO_TEXTING", "DO_NOISE",
+                                                                                                                               ^
+SRC/functionExecute.cpp:2762:136: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        (char*)"DO_ESSENTIALS",(char*)"DO_SUBSTITUTES",(char*)"DO_CONTRACTIONS",(char*)"DO_INTERJECTIONS",(char*)"DO_BRITISH", "DO_SPELLING", "DO_TEXTING", "DO_NOISE",
+                                                                                                                                              ^
+SRC/functionExecute.cpp:2762:150: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        (char*)"DO_ESSENTIALS",(char*)"DO_SUBSTITUTES",(char*)"DO_CONTRACTIONS",(char*)"DO_INTERJECTIONS",(char*)"DO_BRITISH", "DO_SPELLING", "DO_TEXTING", "DO_NOISE",
+                                                                                                                                                            ^
+SRC/functionExecute.cpp:2960:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (debugMark) (*debugMark)("-revert", "*");
+                                    ^
+SRC/functionExecute.cpp:2960:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (debugMark) (*debugMark)("-revert", "*");
+                                               ^
+SRC/functionExecute.cpp:3013:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (debugMark) (*debugMark)("-all", "all");
+                                    ^
+SRC/functionExecute.cpp:3013:45: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (debugMark) (*debugMark)("-all", "all");
+                                            ^
+SRC/functionExecute.cpp:3044:32: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            (*debugMark)(posn, "*");
+                               ^
+SRC/functionExecute.cpp:3882:36: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        MEANING M = MakeMeaning(StoreWord("^tokenize"));
+                                          ^
+SRC/functionExecute.cpp:3909:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        char* copy = InfiniteStack(limit, "FactizeResult"); // localized
+                                                          ^
+SRC/functionExecute.cpp:4067:7: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        os = "MACH";
+             ^
+SRC/functionExecute.cpp:4756:35: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* x = InfiniteStack(limited, "ArgumentCode");
+                                         ^
+SRC/functionExecute.cpp:4775:65: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        factSet[n][++framecnt] = CreateFact(M, MakeMeaning(StoreWord("callstack")), M, FACTTRANSIENT);
+                                                                                     ^
+SRC/functionExecute.cpp:4857:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        scan = " "; // default is space AND OR _
+               ^
+SRC/functionExecute.cpp:4858:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        scan1 = "_";
+                ^
+SRC/functionExecute.cpp:4873:62: warning: '&&' within '||' [-Wlogical-op-parentheses]
+        if (IsDigit(*arg1) || (*arg1 == '+' || *arg1 == '-') && IsDigit(arg1[1])) // number first
+                           ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+SRC/functionExecute.cpp:4873:62: note: place parentheses around the '&&' expression to silence this warning
+        if (IsDigit(*arg1) || (*arg1 == '+' || *arg1 == '-') && IsDigit(arg1[1])) // number first
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+SRC/functionExecute.cpp:5578:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (!stricmp(arg4,(char*)"I")) past = "was";
+                                                                      ^
+SRC/functionExecute.cpp:5579:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else  past = "were";
+                                             ^
+SRC/functionExecute.cpp:5595:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (!stricmp(arg4,(char*)"I")) third = "am";
+                                                                       ^
+SRC/functionExecute.cpp:5596:113: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (!stricmp(arg4,(char*)"you") || !stricmp(arg4,(char*)"we") || !stricmp(arg4,(char*)"they")) third = "are";
+                                                                                                                                            ^
+SRC/functionExecute.cpp:5597:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else  third = "is";
+                                              ^
+SRC/functionExecute.cpp:5601:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (!stricmp(arg4,(char*)"I")) third = "do";
+                                                                       ^
+SRC/functionExecute.cpp:5602:113: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (!stricmp(arg4,(char*)"you") || !stricmp(arg4,(char*)"we") || !stricmp(arg4,(char*)"they")) third = "do";
+                                                                                                                                            ^
+SRC/functionExecute.cpp:5603:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else  third = "does";
+                                              ^
+SRC/functionExecute.cpp:5641:71: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (strcmp(arg3,(char*)"I") && strcmp(arg3,(char*)"you")) result = "does"; 
+                                                                                           ^
+SRC/functionExecute.cpp:5642:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else result = "do";
+                                      ^
+SRC/functionExecute.cpp:5646:71: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (strcmp(arg3,(char*)"I") && strcmp(arg3,(char*)"you")) result = "has"; 
+                                                                                           ^
+SRC/functionExecute.cpp:5647:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else result = "have";
+                                      ^
+SRC/functionExecute.cpp:5651:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (!strcmp(arg3,(char*)"I") ) result = "am";
+                                                                ^
+SRC/functionExecute.cpp:5652:50: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (!strcmp(arg3,(char*)"you")) result = "are"; 
+                                                                      ^
+SRC/functionExecute.cpp:5653:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else result = "is";
+                                      ^
+SRC/functionExecute.cpp:5657:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (!strcmp(arg3,(char*)"I") ) result = "was";
+                                                                ^
+SRC/functionExecute.cpp:5658:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        result = "were";
+                                 ^
+SRC/functionExecute.cpp:5673:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (!stricmp(word,(char*)"my")) word = "your";
+                                                                       ^
+SRC/functionExecute.cpp:5674:51: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (!stricmp(word,(char*)"your")) word = "my";
+                                                                              ^
+SRC/functionExecute.cpp:5675:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (!stricmp(word,(char*)"I")) word = "you";
+                                                                           ^
+SRC/functionExecute.cpp:5676:50: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (!stricmp(word,(char*)"you")) word = "I";
+                                                                             ^
+SRC/functionExecute.cpp:6253:36: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        MEANING M = MakeMeaning(StoreWord("words"));
+                                          ^
+SRC/functionExecute.cpp:6518:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                which = "";
+                        ^
+SRC/functionExecute.cpp:7253:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* msg = "tcpopen- only POST and GET allowed\r\n";
+                            ^
+SRC/functionExecute.cpp:7263:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* msg = "tcpopen- an url was not given\r\n";
+                            ^
+SRC/functionExecute.cpp:7390:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* msg = "tcpopen- failed to connect to server or died in transmission\r\n";
+                            ^
+SRC/functionExecute.cpp:7403:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        char* msg = "tcpopen- no HTTP ack code\r\n";
+                                    ^
+SRC/functionExecute.cpp:7441:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        char* msg = "tcpopen- no such function to call";
+                                    ^
+SRC/functionExecute.cpp:7448:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        char* msg = "tcpopen- function call failed";
+                                    ^
+SRC/functionExecute.cpp:7926:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        word = InfiniteStack(limit,"FieldCode");
+                                   ^
+82 warnings generated.
+In file included from SRC/infer.cpp:3:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+2 warnings generated.
+In file included from SRC/json.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/json.cpp:127:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* permanence = "";
+                           ^
+SRC/json.cpp:128:51: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (jsonPermanent == FACTTRANSIENT) permanence = "t";
+                                                         ^
+SRC/json.cpp:298:35: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* str = InfiniteStack(limit,"factsJsonHelper string");
+                                                ^
+SRC/json.cpp:517:41: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                curlBufferBase = InfiniteStack(limit, "CurlWriteMemoryCallback"); // can only be released from JSONOpenCode
+                                                      ^
+SRC/json.cpp:562:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* buffer = InfiniteStack(limit,"UrlEncode");
+                                           ^
+SRC/json.cpp:685:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* msg = "jsonopen- only POST, GET, PUT AND DELETE allowed\r\n";
+                            ^
+SRC/json.cpp:1159:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        FACT** stack = (FACT**)InfiniteStack64(limit, "jwritehierarchy");
+                                                      ^
+SRC/json.cpp:1196:25: warning: implicit conversion of NULL constant to 'bool' [-Wnull-conversion]
+                        WriteMeaning(F->verb,NULL,buffer);
+                        ~~~~~~~~~~~~         ^~~~
+                                             false
+SRC/json.cpp:1385:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        FACT** stack = (FACT**)InfiniteStack64(limit, "jcopy");
+                                                      ^
+SRC/json.cpp:1467:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        FACT** stack = (FACT**)InfiniteStack64(limit, "jwrite");
+                                                      ^
+SRC/json.cpp:1495:25: warning: implicit conversion of NULL constant to 'bool' [-Wnull-conversion]
+                        WriteMeaning(F->verb,NULL,buffer);
+                        ~~~~~~~~~~~~         ^~~~
+                                             false
+SRC/json.cpp:1895:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                value = "null";
+                        ^
+SRC/json.cpp:2067:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ARGUMENT(2) = "object";
+                                              ^
+SRC/json.cpp:2090:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ARGUMENT(2) = "array";
+                                              ^
+SRC/json.cpp:2368:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        FACT** stack = (FACT**)InfiniteStack64(limit, "JsonRenumber");
+                                                      ^
+SRC/json.cpp:2435:22: warning: implicit conversion of NULL constant to 'MEANING' (aka 'unsigned int') [-Wnull-conversion]
+        MEANING arrayName = NULL;
+                ~~~~~~~~~   ^~~~
+                            0
+SRC/json.cpp:2446:20: warning: implicit conversion of NULL constant to 'MEANING' (aka 'unsigned int') [-Wnull-conversion]
+                MEANING object = NULL;
+                        ~~~~~~   ^~~~
+                                 0
+SRC/json.cpp:2463:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        char* data = InfiniteStack(limit,"JSONReadCSVFileCode");
+                                                         ^
+20 warnings generated.
+In file included from SRC/mainSystem.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/mainSystem.cpp:3:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* version = "8.2";
+                ^
+SRC/mainSystem.cpp:16:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* configFile = "cs_init.txt";       // can set config params
+                   ^
+SRC/mainSystem.cpp:22:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+static char* erasename = "csuser_erase";
+                         ^
+SRC/mainSystem.cpp:285:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        mystart("createsystem");
+                ^
+SRC/mainSystem.cpp:291:7: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        os = "MACH";
+             ^
+SRC/mainSystem.cpp:322:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        kind = "Release";
+               ^
+SRC/mainSystem.cpp:1539:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        char* copy = InfiniteStack(limit,"FactizeResult"); // localized
+                                                         ^
+SRC/mainSystem.cpp:1707:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    ChangeDepth(1, ""); // never enter debugger on this
+                   ^
+SRC/mainSystem.cpp:1837:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* fact = "no default fact";
+                             ^
+SRC/mainSystem.cpp:1839:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (!D) fact = "defaultbot word not found";
+                               ^
+SRC/mainSystem.cpp:1843:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (!F)  fact = "defaultbot fact not found";
+                                        ^
+SRC/mainSystem.cpp:1844:41: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (F->flags & FACTDEAD) fact = "dead default fact";
+                                                             ^
+SRC/mainSystem.cpp:1850:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                CopyUserTopicFile("nosuchbot");
+                                  ^
+SRC/mainSystem.cpp:1855:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!ip) ip = "";
+                      ^
+SRC/mainSystem.cpp:2041:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (intercept) Callback(FindWord(intercept),"()",false); // call script function first
+                                                                    ^
+SRC/mainSystem.cpp:2076:49: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (intercept) Callback(FindWord(intercept),"()",false); // call script function after
+                                                                            ^
+SRC/mainSystem.cpp:2202:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (result & ENDINPUT_BIT) nextInput = "";
+                                                                       ^
+SRC/mainSystem.cpp:2323:42: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (result == ENDINPUT_BIT) nextInput = ""; // end future input
+                                                ^
+SRC/mainSystem.cpp:2504:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* buffer = InfiniteStack(limit,"AddResponse"); // localized infinite allocation
+                                           ^
+SRC/mainSystem.cpp:2574:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("Remove ?!", wordCount, 1, 1, tokens);
+                                     ^
+SRC/mainSystem.cpp:2871:7: error: use of undeclared identifier 'i'
+        for (i = 1; i <= wordCount; ++i)
+             ^
+SRC/mainSystem.cpp:2871:14: error: use of undeclared identifier 'i'
+        for (i = 1; i <= wordCount; ++i)
+                    ^
+SRC/mainSystem.cpp:2871:32: error: use of undeclared identifier 'i'
+        for (i = 1; i <= wordCount; ++i)
+                                      ^
+SRC/mainSystem.cpp:2873:31: error: use of undeclared identifier 'i'
+                int start = derivationIndex[i] >> 8;
+                                            ^
+SRC/mainSystem.cpp:2874:29: error: use of undeclared identifier 'i'
+                int end = derivationIndex[i] & 0x00ff;
+                                          ^
+SRC/mainSystem.cpp:2878:9: error: use of undeclared identifier 'j'
+                        for (j = start; j <= reach; ++j)
+                             ^
+SRC/mainSystem.cpp:2878:20: error: use of undeclared identifier 'j'
+                        for (j = start; j <= reach; ++j)
+                                        ^
+SRC/mainSystem.cpp:2878:34: error: use of undeclared identifier 'j'
+                        for (j = start; j <= reach; ++j)
+                                                      ^
+SRC/mainSystem.cpp:2880:39: error: use of undeclared identifier 'j'
+                                strcpy(atword, derivationSentence[j]);
+                                                                  ^
+SRC/mainSystem.cpp:2882:9: error: use of undeclared identifier 'j'
+                                if (j < derivationLength) *atword++ = ' ';
+                                    ^
+SRC/mainSystem.cpp:2891:8: error: use of undeclared identifier 'i'
+                for (i = 1; i <= wordCount; ++i) 
+                     ^
+SRC/mainSystem.cpp:2891:15: error: use of undeclared identifier 'i'
+                for (i = 1; i <= wordCount; ++i) 
+                            ^
+SRC/mainSystem.cpp:2891:33: error: use of undeclared identifier 'i'
+                for (i = 1; i <= wordCount; ++i) 
+                                              ^
+SRC/mainSystem.cpp:2893:43: error: use of undeclared identifier 'i'
+                        Log(STDTRACELOG,(char*)"%s",wordStarts[i]);
+                                                               ^
+SRC/mainSystem.cpp:2894:32: error: use of undeclared identifier 'i'
+                        int start = derivationIndex[i] >> 8;
+                                                    ^
+SRC/mainSystem.cpp:2895:30: error: use of undeclared identifier 'i'
+                        int end = derivationIndex[i] & 0x00ff;
+                                                  ^
+SRC/mainSystem.cpp:2896:35: error: use of undeclared identifier 'i'
+                        if (start == end && wordStarts[i] == derivationSentence[start]) {;} // unchanged from original
+                                                       ^
+SRC/mainSystem.cpp:2899:29: error: use of undeclared identifier 'i'
+                                start = derivationIndex[i] >> 8;
+                                                        ^
+SRC/mainSystem.cpp:2900:27: error: use of undeclared identifier 'i'
+                                end = derivationIndex[i] & 0x00Ff;
+                                                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+22 warnings and 20 errors generated.
+In file included from SRC/markSystem.cpp:3:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/markSystem.cpp:710:98: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (IsModelNumber(D->word) && !canonical) MarkMeaningAndImplications(0,0, MakeMeaning(StoreWord("~modelnumber")), start, end, false);
+                                                                                                        ^
+SRC/markSystem.cpp:733:118: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (i == startSentence && upperCount > 10 && lowerCount < 5) MarkMeaningAndImplications(0, 0,MakeMeaning(StoreWord("~shout")),i,i);
+                                                                                                                                   ^
+SRC/markSystem.cpp:794:86: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (*wordStarts[i] == '@') MarkMeaningAndImplications(0, 0,MakeMeaning(StoreWord("~twitter_name")),i,i);
+                                                                                                                 ^
+SRC/markSystem.cpp:795:86: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (*wordStarts[i] == '#') MarkMeaningAndImplications(0, 0,MakeMeaning(StoreWord("~hashtag_label")),i,i);
+                                                                                                                 ^
+SRC/markSystem.cpp:810:67: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (ok) MarkMeaningAndImplications(0, 0, MakeMeaning(StoreWord("~capacronym")), i, i);
+                                                                                       ^
+SRC/markSystem.cpp:838:94: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (strchr(wordCanonical[i], '.')) MarkMeaningAndImplications(0, 0, MakeMeaning(StoreWord("~float")), i, i, true);
+                                                                                                                  ^
+SRC/markSystem.cpp:841:60: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                MarkMeaningAndImplications(0, 0, MakeMeaning(StoreWord("~integer")), i, i, true);
+                                                                                       ^
+SRC/markSystem.cpp:842:87: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (*wordStarts[i] != '-') MarkMeaningAndImplications(0, 0, MakeMeaning(StoreWord("~positiveInteger")), i, i, true);
+                                                                                                                  ^
+SRC/markSystem.cpp:843:65: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else MarkMeaningAndImplications(0, 0, MakeMeaning(StoreWord("~negativeinteger")), i, i, true);
+                                                                                            ^
+11 warnings generated.
+In file included from SRC/mongodb.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/mongodb.cpp:23:10: fatal error: 'bson.h' file not found
+#include "bson.h"
+         ^~~~~~~~
+2 warnings and 1 error generated.
+In file included from SRC/mysql.cpp:2:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/mysql.cpp:360:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+   char *myserver = "localhost";
+                    ^
+SRC/mysql.cpp:361:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+   char *user = "root";
+                ^
+SRC/mysql.cpp:362:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+   char *password = "mysql"; 
+                    ^
+SRC/mysql.cpp:363:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+   char *database = "mysql";
+                    ^
+6 warnings generated.
+In file included from SRC/os.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/os.cpp:20:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* infiniteCaller = "";
+                       ^
+SRC/os.cpp:406:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        infiniteCaller = "";
+                         ^
+SRC/os.cpp:644:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (*id == 'b' && !id[1]) id = "u-8b02518d-c148-5d45-936b-491d39ced70c"; // cheat override to test outside of kore logins
+                                       ^
+SRC/os.cpp:710:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        callArgumentList[callArgumentIndex++] =   "direct"; // get the text of it gives us, dont make facts out of it
+                                                  ^
+SRC/os.cpp:711:45: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        callArgumentList[callArgumentIndex++] =    "POST";
+                                                   ^
+SRC/os.cpp:716:45: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        callArgumentList[callArgumentIndex++] =    ""; // timer override
+                                                   ^
+SRC/os.cpp:1192:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* path = "";
+                     ^
+SRC/os.cpp:1888:6: warning: address of array 'hide' will always evaluate to 'true' [-Wpointer-bool-conversion]
+        if (hide)
+        ~~  ^~~~
+10 warnings generated.
+In file included from SRC/outputSystem.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/outputSystem.cpp:655:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                Output_Dollar(word, "", space,buffer,controls,result,false,false); // allow json processing
+                                                    ^
+SRC/outputSystem.cpp:940:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    char* word = AllocateBuffer("output"); // allocation from stack doesnt work for unknown reason
+                                ^
+SRC/outputSystem.cpp:1131:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                FreeBuffer("output1");
+                                           ^
+SRC/outputSystem.cpp:1204:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        FreeBuffer("output2");
+                   ^
+6 warnings generated.
+In file included from SRC/patternSystem.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/patternSystem.cpp:106:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* at = "";
+                   ^
+SRC/patternSystem.cpp:291:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* base = InfiniteStack64(limit,"PushMatch");
+                                           ^
+SRC/patternSystem.cpp:777:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                                        char* at = "";
+                                                                   ^
+SRC/patternSystem.cpp:847:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        else ptr = ""; // null function
+                                                   ^
+SRC/patternSystem.cpp:896:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        char* type = "[";
+                                                     ^
+SRC/patternSystem.cpp:897:31: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        if (*word == '(') type = "(";
+                                                                 ^
+SRC/patternSystem.cpp:898:36: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        else if (*word == '{') type = "{";
+                                                                      ^
+SRC/patternSystem.cpp:901:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                                type = "<<";
+                                                       ^
+SRC/patternSystem.cpp:1068:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                                char* val = "";
+                                                            ^
+11 warnings generated.
+In file included from SRC/postgres.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+2 warnings generated.
+In file included from SRC/scriptCompile.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/scriptCompile.cpp:565:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                hat = " ";
+                                      ^
+SRC/scriptCompile.cpp:1305:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* space = "";
+                              ^
+SRC/scriptCompile.cpp:1306:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (REJOINDERID(currentRuleID)) space = "    ";
+                                                        ^
+SRC/scriptCompile.cpp:1825:51: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        while (cntr < 15) argset[++cntr] = AllocateStack("");
+                                                         ^
+SRC/scriptCompile.cpp:1946:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* which = "Something";
+                              ^
+SRC/scriptCompile.cpp:1947:49: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (D->internalBits & DO_SUBSTITUTES) which = "Substitutes.txt";
+                                                              ^
+SRC/scriptCompile.cpp:1948:50: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (D->internalBits & DO_CONTRACTIONS) which = "Contractions.txt";
+                                                               ^
+SRC/scriptCompile.cpp:1949:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (D->internalBits & DO_ESSENTIALS) which = "Essentials.txt";
+                                                             ^
+SRC/scriptCompile.cpp:1950:51: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (D->internalBits & DO_INTERJECTIONS) which = "Interjections.txt";
+                                                                ^
+SRC/scriptCompile.cpp:1951:45: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (D->internalBits & DO_BRITISH) which = "British.txt";
+                                                          ^
+SRC/scriptCompile.cpp:1952:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (D->internalBits & DO_SPELLING) which = "Spelling.txt";
+                                                           ^
+SRC/scriptCompile.cpp:1953:45: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (D->internalBits & DO_TEXTING) which = "Texting.txt";
+                                                          ^
+SRC/scriptCompile.cpp:1954:45: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (D->internalBits & DO_PRIVATE) which = "user private substitution";
+                                                          ^
+SRC/scriptCompile.cpp:2184:22: warning: address of array 'livedata' will always evaluate to 'true' [-Wpointer-bool-conversion]
+                                if (!word[1] && !livedata) 
+                                                ~^~~~~~~~
+SRC/scriptCompile.cpp:4382:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                return ""; // there is no header anymore
+                       ^
+SRC/scriptCompile.cpp:4389:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        return "";
+               ^
+SRC/scriptCompile.cpp:5078:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* ptr = "";
+                    ^
+19 warnings generated.
+In file included from SRC/spellcheck.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/spellcheck.cpp:155:121: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"french") && k == 1 && *word != 'y' && *word != 'a' && *word != 'A' && !SameUTF(word,"à") && !SameUTF(word, "À") && !SameUTF(word, "ô") && !SameUTF(word,"Ô")) continue; //   in french only y, a and ô are allowed single-letter words
+                                                                                                                        ^
+SRC/spellcheck.cpp:155:145: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"french") && k == 1 && *word != 'y' && *word != 'a' && *word != 'A' && !SameUTF(word,"à") && !SameUTF(word, "À") && !SameUTF(word, "ô") && !SameUTF(word,"Ô")) continue; //   in french only y, a and ô are allowed single-letter words
+                                                                                                                                               ^
+SRC/spellcheck.cpp:155:169: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"french") && k == 1 && *word != 'y' && *word != 'a' && *word != 'A' && !SameUTF(word,"à") && !SameUTF(word, "À") && !SameUTF(word, "ô") && !SameUTF(word,"Ô")) continue; //   in french only y, a and ô are allowed single-letter words
+                                                                                                                                                                      ^
+SRC/spellcheck.cpp:155:192: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"french") && k == 1 && *word != 'y' && *word != 'a' && *word != 'A' && !SameUTF(word,"à") && !SameUTF(word, "À") && !SameUTF(word, "ô") && !SameUTF(word,"Ô")) continue; //   in french only y, a and ô are allowed single-letter words
+                                                                                                                                                                                            ^
+SRC/spellcheck.cpp:195:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReplaceWords("Splitword",i,1,2,tokens);
+                             ^
+SRC/spellcheck.cpp:213:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("SplitWords",i,2,2,tokens);
+                                     ^
+SRC/spellcheck.cpp:409:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("' as feet", i, 1, 1, tokens);
+                                     ^
+SRC/spellcheck.cpp:416:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("' as feet", i, 1, 1, tokens);
+                                     ^
+SRC/spellcheck.cpp:460:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("dotsentence", i, 1, 3, tokens);
+                                             ^
+SRC/spellcheck.cpp:487:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("joined number word", i, 1, 2, tokens);
+                                     ^
+SRC/spellcheck.cpp:499:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("KnownUpperModelNumber", i, 1, 1, tokens);
+                                             ^
+SRC/spellcheck.cpp:513:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("am as time", i, 1, 1, tokens);
+                                     ^
+SRC/spellcheck.cpp:541:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("multiple repeat letters", i, 1, 1, tokens);
+                                             ^
+SRC/spellcheck.cpp:571:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                                ReplaceWords("2 repeat letters", i, 1, 1, tokens);
+                                                             ^
+SRC/spellcheck.cpp:600:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        ReplaceWords("smooshed 1+2", i, 1, 3, tokens);
+                                                     ^
+SRC/spellcheck.cpp:636:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        ReplaceWords("merge", i, 2, 1, tokens);
+                                                     ^
+SRC/spellcheck.cpp:654:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("omitg", i, 1, 1, tokens);
+                                             ^
+SRC/spellcheck.cpp:672:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        ReplaceWords("KnownWord",i,1,1,tokens);
+                                                     ^
+SRC/spellcheck.cpp:683:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        ReplaceWords("KnownUpper",i,1,1,tokens);
+                                                     ^
+SRC/spellcheck.cpp:752:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("Alternatecase",i,1,1,tokens);
+                                             ^
+SRC/spellcheck.cpp:777:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        tokens[2] = "/";
+                                    ^
+SRC/spellcheck.cpp:779:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("Split",i,1,3,tokens);
+                                     ^
+SRC/spellcheck.cpp:815:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("Pair",i,1,2,tokens);
+                                             ^
+SRC/spellcheck.cpp:827:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("Break old",i,1,2,tokens);
+                                             ^
+SRC/spellcheck.cpp:862:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("Split",i,1,2,tokens);
+                                             ^
+SRC/spellcheck.cpp:882:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        ReplaceWords("Spell",i,1,1,tokens);
+                                                     ^
+SRC/spellcheck.cpp:914:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("Nearest real word",i,1,1,tokens);
+                                             ^
+SRC/spellcheck.cpp:933:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xa7)) return 'c';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:933:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xa7)) return 'c';
+                         ~   ^      ~
+SRC/spellcheck.cpp:933:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xa7)) return 'c';
+                             ^~
+                             =
+SRC/spellcheck.cpp:936:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb1)) return 'n';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:936:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb1)) return 'n';
+                         ~   ^      ~
+SRC/spellcheck.cpp:936:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb1)) return 'n';
+                             ^~
+                             =
+SRC/spellcheck.cpp:938:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb8 )) return 'o';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:938:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb8 )) return 'o';
+                         ~   ^       ~
+SRC/spellcheck.cpp:938:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb8 )) return 'o';
+                             ^~
+                             =
+SRC/spellcheck.cpp:959:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb5)) return 'j';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:959:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb5)) return 'j';
+                         ~   ^      ~
+SRC/spellcheck.cpp:959:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb5)) return 'j';
+                             ^~
+                             =
+SRC/spellcheck.cpp:960:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb7)) return 'k';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:960:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb7)) return 'k';
+                         ~   ^      ~
+SRC/spellcheck.cpp:960:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb7)) return 'k';
+                             ^~
+                             =
+SRC/spellcheck.cpp:972:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb5 )) return 'w';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:972:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb5 )) return 'w';
+                         ~   ^       ~
+SRC/spellcheck.cpp:972:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb5 )) return 'w';
+                             ^~
+                             =
+SRC/spellcheck.cpp:973:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb7)) return 'y';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:973:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb7)) return 'y';
+                         ~   ^      ~
+SRC/spellcheck.cpp:973:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb7)) return 'y';
+                             ^~
+                             =
+SRC/spellcheck.cpp:979:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0x90)) return 'i';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:979:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0x90)) return 'i';
+                         ~   ^      ~
+SRC/spellcheck.cpp:979:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0x90)) return 'i';
+                             ^~
+                             =
+SRC/spellcheck.cpp:980:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0x92)) return 'o';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:980:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0x92)) return 'o';
+                         ~   ^      ~
+SRC/spellcheck.cpp:980:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0x92)) return 'o';
+                             ^~
+                             =
+SRC/spellcheck.cpp:983:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xa9)) return 'k';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:983:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xa9)) return 'k';
+                         ~   ^      ~
+SRC/spellcheck.cpp:983:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xa9)) return 'k';
+                             ^~
+                             =
+SRC/spellcheck.cpp:985:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb0)) return 'j';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:985:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb0)) return 'j';
+                         ~   ^      ~
+SRC/spellcheck.cpp:985:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb0)) return 'j';
+                             ^~
+                             =
+SRC/spellcheck.cpp:986:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb5)) return 'g';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:986:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb5)) return 'g';
+                         ~   ^      ~
+SRC/spellcheck.cpp:986:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb5)) return 'g';
+                             ^~
+                             =
+SRC/spellcheck.cpp:987:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xb9)) return 'n';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:987:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xb9)) return 'n';
+                         ~   ^      ~
+SRC/spellcheck.cpp:987:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xb9)) return 'n';
+                             ^~
+                             =
+SRC/spellcheck.cpp:988:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xbb)) return 'a';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:988:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xbb)) return 'a';
+                         ~   ^      ~
+SRC/spellcheck.cpp:988:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xbb)) return 'a';
+                             ^~
+                             =
+SRC/spellcheck.cpp:989:16: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if ((c1 == 0xbf)) return 'o';
+                          ~~~^~~~~~~
+SRC/spellcheck.cpp:989:16: note: remove extraneous parentheses around the comparison to silence this warning
+                else if ((c1 == 0xbf)) return 'o';
+                         ~   ^      ~
+SRC/spellcheck.cpp:989:16: note: use '=' to turn this equality comparison into an assignment
+                else if ((c1 == 0xbf)) return 'o';
+                             ^~
+                             =
+SRC/spellcheck.cpp:1182:68: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            if (*currentCharReal == 'a' && SameUTF(currentCharDict,"â"))
+                                                                   ^
+SRC/spellcheck.cpp:1189:68: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            if (*currentCharReal == 'e' && SameUTF(currentCharDict,"ê"))
+                                                                   ^
+SRC/spellcheck.cpp:1196:99: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            if (*currentCharReal == 0xc3 && currentCharReal[1] == 0xa8 && SameUTF(currentCharDict,"ê"))
+                                                                                                  ^
+SRC/spellcheck.cpp:1203:68: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            if (*currentCharReal == 'i' && SameUTF(currentCharDict,"î"))
+                                                                   ^
+SRC/spellcheck.cpp:1210:69: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            if (*currentCharReal == 'o' && SameUTF(currentCharDict, "ô"))
+                                                                    ^
+SRC/spellcheck.cpp:1217:69: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            if (*currentCharReal == 'u' && SameUTF(currentCharDict, "û"))
+                                                                    ^
+SRC/spellcheck.cpp:1252:69: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            if (*currentCharReal == 's' && SameUTF(currentCharDict, "ç"))
+                                                                    ^
+SRC/spellcheck.cpp:1259:69: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            if (*currentCharReal == 'c' && SameUTF(currentCharDict, "ç"))
+                                                                    ^
+SRC/spellcheck.cpp:1417:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ending = "s";
+                                 ^
+53 warnings generated.
+In file included from SRC/systemVariables.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/systemVariables.cpp:5:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* compileDate = __DATE__    " "  __TIME__;
+                    ^
+<scratch space>:231:1: note: expanded from here
+"Jun 16 2018"
+^
+SRC/systemVariables.cpp:34:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                return "";
+                       ^
+SRC/systemVariables.cpp:37:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!var) return "";
+                         ^
+SRC/systemVariables.cpp:49:62: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (strstr(sysvars[i].comment,(char*)"Boolean")) result = "null";
+                                                                                  ^
+SRC/systemVariables.cpp:50:67: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (strstr(sysvars[i].comment,(char*)"Numeric")) result = "0";
+                                                                                       ^
+SRC/systemVariables.cpp:51:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else result = "null";
+                                      ^
+SRC/systemVariables.cpp:75:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "1";
+                               ^
+SRC/systemVariables.cpp:87:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    if (regression) return "Monday";
+                           ^
+SRC/systemVariables.cpp:92:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'o': return "Monday";
+                         ^
+SRC/systemVariables.cpp:94:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'e': return "Wednesday";
+                         ^
+SRC/systemVariables.cpp:95:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'h': return "Thursday";
+                         ^
+SRC/systemVariables.cpp:96:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'r': return "Friday";
+                         ^
+SRC/systemVariables.cpp:97:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'a': return "Saturday";
+                         ^
+SRC/systemVariables.cpp:99:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        return "";
+               ^
+SRC/systemVariables.cpp:107:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "2";
+                               ^
+SRC/systemVariables.cpp:157:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "11";
+                               ^
+SRC/systemVariables.cpp:169:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "";
+                               ^
+SRC/systemVariables.cpp:186:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "1";
+                               ^
+SRC/systemVariables.cpp:200:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "12";
+                               ^
+SRC/systemVariables.cpp:212:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "6";
+                               ^
+SRC/systemVariables.cpp:218:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (systemValue[1] == 'a') return "1";
+                                                          ^
+SRC/systemVariables.cpp:219:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (systemValue[2] == 'n') return "6";
+                                                               ^
+SRC/systemVariables.cpp:220:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (systemValue[2] == 'l') return "7";
+                                                               ^
+SRC/systemVariables.cpp:222:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                case 'F': return "2";
+                                 ^
+SRC/systemVariables.cpp:225:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                case 'S': return "9";
+                                 ^
+SRC/systemVariables.cpp:226:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                case 'O': return "10";
+                                 ^
+SRC/systemVariables.cpp:227:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'N': return "11";
+                         ^
+SRC/systemVariables.cpp:228:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'D': return "12";
+                         ^
+SRC/systemVariables.cpp:230:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        return "";
+               ^
+SRC/systemVariables.cpp:238:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "June";
+                               ^
+SRC/systemVariables.cpp:244:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (systemValue[1] == 'a') return "January";
+                                                          ^
+SRC/systemVariables.cpp:245:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (systemValue[2] == 'n') return "June";
+                                                               ^
+SRC/systemVariables.cpp:246:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (systemValue[2] == 'l') return "July";
+                                                               ^
+SRC/systemVariables.cpp:248:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                case 'F': return "February";
+                                 ^
+SRC/systemVariables.cpp:251:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                case 'S': return "September";
+                                 ^
+SRC/systemVariables.cpp:252:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                case 'O': return "October";
+                                 ^
+SRC/systemVariables.cpp:253:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'N': return "November";
+                         ^
+SRC/systemVariables.cpp:254:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case 'D': return "December";
+                         ^
+SRC/systemVariables.cpp:256:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        return "";
+               ^
+SRC/systemVariables.cpp:264:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "12";
+                               ^
+SRC/systemVariables.cpp:276:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "12";
+                               ^
+SRC/systemVariables.cpp:287:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "01:40";
+                               ^
+SRC/systemVariables.cpp:321:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    if (regression) return "1";
+                           ^
+SRC/systemVariables.cpp:337:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "2017";
+                               ^
+SRC/systemVariables.cpp:348:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (regression) return "0";
+                               ^
+SRC/systemVariables.cpp:580:57: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (currentTopicID == 0 || currentRuleID == -1) return "";
+                                                               ^
+SRC/systemVariables.cpp:590:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!server) return "";
+                            ^
+SRC/systemVariables.cpp:619:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!trace) return "0";
+                           ^
+SRC/systemVariables.cpp:629:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!trace) return "0";
+                           ^
+SRC/systemVariables.cpp:648:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (value && *value == '.') return ""; // ignore init
+                                           ^
+SRC/systemVariables.cpp:653:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                return "";
+                       ^
+SRC/systemVariables.cpp:833:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (tokenFlags & PAST) return "past";
+                                           ^
+SRC/systemVariables.cpp:834:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (tokenFlags & FUTURE) return "future";
+                                             ^
+SRC/systemVariables.cpp:835:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else return "present";
+                    ^
+SRC/systemVariables.cpp:846:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        return "";
+               ^
+SRC/systemVariables.cpp:948:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!responseIndex) return "";
+                                   ^
+58 warnings generated.
+In file included from SRC/tagger.cpp:3:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/tagger.cpp:368:44: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (subject) DescribeUnit(subject,buffer, "Subj:",0,0);
+                                                  ^
+SRC/tagger.cpp:388:30: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        DescribeUnit(object,buffer, "  Object:",0,0);
+                                    ^
+SRC/tagger.cpp:389:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        DescribeUnit(complement,buffer, "Complement:",0,0);
+                                        ^
+SRC/tagger.cpp:436:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                DescribeUnit(objectRef[j],buffer, "  Direct:",verbalid,0);
+                                                                  ^
+SRC/tagger.cpp:437:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                DescribeUnit(complementRef[j],buffer, " Complement:",verbalid,0);
+                                                                      ^
+SRC/tagger.cpp:468:39: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                DescribeUnit(objectRef[j],buffer, "  DirectObject:",0,clauseid);
+                                                                  ^
+SRC/tagger.cpp:469:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                DescribeUnit(complementRef[j],buffer, "  Complement:",0,clauseid);
+                                                                      ^
+SRC/tagger.cpp:511:51: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                DescribeComponent(wordCount,buffer,(char*)"{","}"); // wrapped?
+                                                                              ^
+SRC/tagger.cpp:514:42: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        DescribeComponent(i,buffer,(char*)"{","}"); // wrapped?
+                                                              ^
+11 warnings generated.
+In file included from SRC/testing.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/testing.cpp:768:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ProcessInput("");
+                                     ^
+SRC/testing.cpp:1717:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                output = " "; // rejoinders block each other whether or not they generate output,
+                                         ^
+SRC/testing.cpp:3168:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!*file) file = "REGRESS/postest.txt";
+                           ^
+SRC/testing.cpp:3259:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!*file) file = "RAWDICT/postiming.txt";
+                           ^
+SRC/testing.cpp:3285:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    if (!*file) file = "LIVEDATA/ENGLISH/SUBSTITUTES/spellfix.txt";
+                       ^
+SRC/testing.cpp:4575:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (!gloss) gloss = "";
+                                    ^
+SRC/testing.cpp:4591:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (!gloss) gloss = "";
+                                            ^
+SRC/testing.cpp:5103:49: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (D <= dictionaryPreBuild[LAYER_0]) loc = "w";
+                                                                            ^
+SRC/testing.cpp:5104:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (D->internalBits & BUILD0) loc = "0";
+                                                                         ^
+SRC/testing.cpp:5105:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (D->internalBits & BUILD1) loc = "1";
+                                                                         ^
+SRC/testing.cpp:5106:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else loc = "?";
+                                           ^
+SRC/testing.cpp:5109:49: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if (E <= dictionaryPreBuild[LAYER_0]) loc = "w";
+                                                                            ^
+SRC/testing.cpp:5110:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (E->internalBits & BUILD0) loc = "0";
+                                                                         ^
+SRC/testing.cpp:5111:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (E->internalBits & BUILD1) loc = "1";
+                                                                         ^
+SRC/testing.cpp:5112:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else loc = "?";
+                                           ^
+SRC/testing.cpp:7407:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        PrepareVariableChange(D,"",false);
+                                                ^
+SRC/testing.cpp:7754:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* header = "";
+                       ^
+SRC/testing.cpp:7755:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ARGUMENT(1) = "transient direct";
+                      ^
+SRC/testing.cpp:7756:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ARGUMENT(2) = "post";
+                      ^
+SRC/testing.cpp:7760:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ARGUMENT(6) = "";
+                      ^
+SRC/testing.cpp:7777:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        while (at = ReadCompiledWord(at, word1))
+               ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SRC/testing.cpp:7777:12: note: place parentheses around the assignment to silence this warning
+        while (at = ReadCompiledWord(at, word1))
+                  ^
+               (                               )
+SRC/testing.cpp:7777:12: note: use '==' to turn this assignment into an equality comparison
+        while (at = ReadCompiledWord(at, word1))
+                  ^
+                  ==
+SRC/testing.cpp:7845:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* source = "concepts.top";
+                       ^
+SRC/testing.cpp:7857:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                source = "cset.txt";
+                         ^
+SRC/testing.cpp:7863:42: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!stricmp(language,"ARABIC")) into = "ar";
+                                                ^
+SRC/testing.cpp:7864:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"BENGALI")) into = "bn";
+                                                      ^
+SRC/testing.cpp:7865:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"CHINESE")) into = "zh";
+                                                      ^
+SRC/testing.cpp:7866:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"CZECH")) into = "cs";
+                                                    ^
+SRC/testing.cpp:7867:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"DUTCH")) into = "nl";
+                                                    ^
+SRC/testing.cpp:7868:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"FINNISH")) into = "fi";
+                                                      ^
+SRC/testing.cpp:7869:47: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"FRENCH")) into = "fr";
+                                                     ^
+SRC/testing.cpp:7870:47: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"GERMAN")) into = "de";
+                                                     ^
+SRC/testing.cpp:7871:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"GREEK")) into = "el";
+                                                    ^
+SRC/testing.cpp:7872:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"HINDI")) into = "hi";
+                                                    ^
+SRC/testing.cpp:7873:50: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"HUNGARIAN")) into = "hu";
+                                                        ^
+SRC/testing.cpp:7874:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"ITALIAN")) into = "it";
+                                                      ^
+SRC/testing.cpp:7875:49: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"JAPANESE")) into = "ja";
+                                                       ^
+SRC/testing.cpp:7876:47: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"KOREAN")) into = "ko";
+                                                     ^
+SRC/testing.cpp:7877:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"MALAY")) into = "ms";
+                                                    ^
+SRC/testing.cpp:7878:50: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"NORWEGIAN")) into = "no";
+                                                        ^
+SRC/testing.cpp:7879:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"PUNJABI")) into = "pa";
+                                                      ^
+SRC/testing.cpp:7880:47: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"POLISH")) into = "pl";
+                                                     ^
+SRC/testing.cpp:7881:51: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"PORTUGUESE")) into = "pt";
+                                                         ^
+SRC/testing.cpp:7882:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"RUSSIAN")) into = "ru";
+                                                      ^
+SRC/testing.cpp:7883:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"SPANISH")) into = "es";
+                                                      ^
+SRC/testing.cpp:7884:48: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"SWEDISH")) into = "sv";
+                                                      ^
+SRC/testing.cpp:7885:47: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (!stricmp(language,"TELUGU")) into = "te";
+                                                     ^
+SRC/testing.cpp:8411:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* prior = "";
+                              ^
+SRC/testing.cpp:8412:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* prior2 = "";
+                               ^
+SRC/testing.cpp:9255:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        myexit("end foreign build");
+               ^
+SRC/testing.cpp:9359:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* why = "";
+                            ^
+SRC/testing.cpp:9371:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else why = "";
+                                   ^
+SRC/testing.cpp:9451:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else rule = "-";
+                                            ^
+SRC/testing.cpp:9553:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                char* type = " ";
+                                             ^
+SRC/testing.cpp:9554:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                if ( flag == 0) type = "user->bot";
+                                                       ^
+SRC/testing.cpp:9555:32: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if (flag == 1) type = "bot->user";
+                                                           ^
+SRC/testing.cpp:9556:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if ( flag == 2) type = "topic user->bot";
+                                                            ^
+SRC/testing.cpp:9557:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if ( flag == 3) type = "topic bot->user";
+                                                            ^
+SRC/testing.cpp:9558:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if ( flag == 4) type = "indent bot";
+                                                            ^
+SRC/testing.cpp:9559:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if ( flag == 5) type = "indent human";
+                                                            ^
+SRC/testing.cpp:9560:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if ( flag == 6) type = "user only";
+                                                            ^
+SRC/testing.cpp:9561:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if ( flag == 7) type = "tags verify user->bot";
+                                                            ^
+SRC/testing.cpp:9562:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if ( flag == 8) type = "indent bot + topic";
+                                                            ^
+SRC/testing.cpp:9563:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                else if ( flag == 11) type = "timeline";
+                                                             ^
+65 warnings generated.
+In file included from SRC/textUtilities.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/textUtilities.cpp:321:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* stack = InfiniteStack64(limit,"initnumbers");
+                                            ^
+SRC/textUtilities.cpp:337:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                else myexit("Bad number table");
+                            ^
+SRC/textUtilities.cpp:357:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        stack = InfiniteStack64(limit, "initcurrency");
+                                       ^
+SRC/textUtilities.cpp:367:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (*kind != '~') myexit("Bad currency table");
+                                         ^
+SRC/textUtilities.cpp:385:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        stack = InfiniteStack64(limit, "initmonths");
+                                       ^
+SRC/textUtilities.cpp:571:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* buf = InfiniteStack(limit,"ChangeSpecial");
+                                        ^
+SRC/textUtilities.cpp:2554:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* buffer = InfiniteStack(limit,"Purify"); // transient
+                                           ^
+SRC/textUtilities.cpp:2637:63: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        unsigned char* buffer = (unsigned char*) InfiniteStack(limit,"UTF2ExtendedAscii"); // transient
+                                                                     ^
+10 warnings generated.
+In file included from SRC/tokenSystem.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/tokenSystem.cpp:32:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        wordStarts[0] = ""; // underflow protection
+                        ^
+SRC/tokenSystem.cpp:306:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                return "";
+                       ^
+SRC/tokenSystem.cpp:314:41: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* joinBuffer = InfiniteStack(limit,"JoinWords"); // transient
+                                               ^
+SRC/tokenSystem.cpp:385:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                char* buf = InfiniteStack(limit,"HandleQuoter"); // transient
+                                                                ^
+SRC/tokenSystem.cpp:453:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                                ARGUMENT(1) = "TRANSIENT SAFE";
+                                                              ^
+SRC/tokenSystem.cpp:841:112: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+        else if (!stricmp(language, "french") && (!stricmp(place, "er") || !stricmp(place, "ere") || !stricmp(place, "<E8>re") || !stricmp(place, "nd") || !stricmp(place, "nde") || !stricmp(place, "eme") || !stricmp(place, "<E8>me"))) return end;
+                                                                                                                      ^~~~
+SRC/tokenSystem.cpp:841:215: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+        else if (!stricmp(language, "french") && (!stricmp(place, "er") || !stricmp(place, "ere") || !stricmp(place, "<E8>re") || !stricmp(place, "nd") || !stricmp(place, "nde") || !stricmp(place, "eme") || !stricmp(place, "<E8>me"))) return end;
+                                                                                                                                                                                                                                ^~~~
+SRC/tokenSystem.cpp:1314:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("Merge name",start,end-start + 1,1,tokens);  //   replace multiple words with single word
+                                     ^
+SRC/tokenSystem.cpp:1370:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                ReplaceWords("lowercase",1,1,1,tokens);
+                                             ^
+SRC/tokenSystem.cpp:1378:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReplaceWords("multiword",1,1,1,tokens);
+                             ^
+SRC/tokenSystem.cpp:1435:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        ReplaceWords("Date",start,end-start+1,1,tokens);
+                                     ^
+SRC/tokenSystem.cpp:1450:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        wordStarts[wordCount+1] = "";
+                                  ^
+SRC/tokenSystem.cpp:1451:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        wordStarts[wordCount+2] = "";
+                                  ^
+SRC/tokenSystem.cpp:1731:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ReplaceWords("Merge number",start,end-start,1,tokens);
+                     ^
+SRC/tokenSystem.cpp:1761:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReplaceWords("Split underscore",i,1,index,tokens);
+                             ^
+SRC/tokenSystem.cpp:1901:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* buffer = InfiniteStack(limit,"ReplaceWords");
+                                                   ^
+SRC/tokenSystem.cpp:1929:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        sub = "would";
+                                              ^
+SRC/tokenSystem.cpp:1933:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        sub = "had";
+                                              ^
+SRC/tokenSystem.cpp:1937:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        sub = "would";
+                                              ^
+SRC/tokenSystem.cpp:1941:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        sub = "had";
+                                              ^
+SRC/tokenSystem.cpp:1979:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReplaceWords("Number units", i, 1, 2, tokens); // remove 1, add 2
+                             ^
+SRC/tokenSystem.cpp:2010:36: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                if (i != wordCount)     ReplaceWords("Deleting",i,erasing+1 + extra,extra,tokens); // remove the removals + the one after if there is one. replace with just the one
+                                                     ^
+SRC/tokenSystem.cpp:2011:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                else    ReplaceWords("Deleting",i,erasing+1,erasing,tokens); // remove 1, add 0
+                                     ^
+SRC/tokenSystem.cpp:2038:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReplaceWords("Replacement",i,1,1,tokens);       
+                             ^
+SRC/tokenSystem.cpp:2049:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReplaceWords("Multireplace",i, erase, count,tokens);
+                             ^
+SRC/tokenSystem.cpp:2255:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                ReplaceWords("Idiom",i,idiomMatch + 1,1,tokens);
+                             ^
+28 warnings generated.
+In file included from SRC/topicSystem.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/topicSystem.cpp:65:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* howTopic = "";
+                 ^
+SRC/topicSystem.cpp:393:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!*tag)  return "";
+                           ^
+SRC/topicSystem.cpp:403:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!D) return "";
+                       ^
+SRC/topicSystem.cpp:478:54: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!topicid || !block || !block->topicName) return "";
+                                                            ^
+SRC/topicSystem.cpp:491:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (type == GAMBIT) name = "Gambits";
+                                   ^
+SRC/topicSystem.cpp:492:36: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (type == QUESTION) name = "Questions";
+                                          ^
+SRC/topicSystem.cpp:493:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (type == STATEMENT) name = "Statements";
+                                           ^
+SRC/topicSystem.cpp:494:46: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (type == STATEMENT_QUESTION) name = "Responders";
+                                                    ^
+SRC/topicSystem.cpp:495:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else name = "unknown";
+                    ^
+SRC/topicSystem.cpp:676:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (rule == NULL) return "?";
+                                 ^
+SRC/topicSystem.cpp:1167:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* output = InfiniteStack(limit,"ProcessRuleOutput"); // transient
+                                                   ^
+SRC/topicSystem.cpp:1339:45: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        char* pattern = InfiniteStack(limitstack,"TestRule"); // transient
+                                                                 ^
+SRC/topicSystem.cpp:1418:82: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        result = RegularReuse(currentTopicID, TOPLEVELID(currentRuleID), xrule,buffer,"",false);
+                                                                                                      ^
+SRC/topicSystem.cpp:1659:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (active == QUESTION) howTopic = "question";
+                                           ^
+SRC/topicSystem.cpp:1660:43: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else if (active == STATEMENT) howTopic = "statement";
+                                                 ^
+SRC/topicSystem.cpp:1661:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        else howTopic = "gambit";
+                        ^
+SRC/topicSystem.cpp:1703:58: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                SetUserVariable((char*)"$$topic_retry_limit_exceeded", "true");
+                                                                       ^
+SRC/topicSystem.cpp:2109:37: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        TI(D->x.topicIndex)->topicName = ""; // make prebuilt topic unfindable
+                                                         ^
+SRC/topicSystem.cpp:2250:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            myexit("bad compile",4); // error
+                   ^
+SRC/topicSystem.cpp:2773:11: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        myexit("bad compile", 4); // error
+                               ^
+SRC/topicSystem.cpp:2903:81: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        for (int i = priorTopicCount + 1; i <= numberOfTopics; ++i) TI(i)->topicName = "";
+                                                                                       ^
+SRC/topicSystem.cpp:2904:38: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (layer == 0)  TI(0)->topicName = "";
+                                            ^
+24 warnings generated.
+In file included from SRC/userCache.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/userCache.cpp:105:50: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        EncryptableFileWrite(ptr,1,size,out,userEncrypt,"USER"); // user topic file write
+                                                        ^
+SRC/userCache.cpp:264:70: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                readit = DecryptableFileRead(buffer,1,userCacheSize,in,userEncrypt,"USER"); // reading topic file of user
+                                                                                   ^
+4 warnings generated.
+In file included from SRC/userSystem.cpp:1:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/userSystem.cpp:22:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+static char* saveVersion = "jul2116";   // format of save file
+                           ^
+SRC/userSystem.cpp:271:35: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* word = InfiniteStack(limit,"SafeLine"); // transient safe
+                                         ^
+SRC/userSystem.cpp:462:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (!val) val = ""; // for null variables being marked as traced
+                                        ^
+SRC/userSystem.cpp:540:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        PrepareVariableChange(D,"",false); // keep it alive as long as it is traced
+                                                ^
+6 warnings generated.
+In file included from SRC/variableSystem.cpp:3:
+In file included from SRC/common.h:186:
+SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char* AllocateBuffer(char*name = "");
+                                 ^
+SRC/os.h:145:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+void FreeBuffer(char*name = "");
+                            ^
+SRC/variableSystem.cpp:166:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!value) value = "";
+                            ^
+SRC/variableSystem.cpp:167:40: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (!canonicalValue) canonicalValue = "";
+                                              ^
+SRC/variableSystem.cpp:192:32: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        if (i > MAX_WILDCARDS) return "";
+                                      ^
+SRC/variableSystem.cpp:259:60: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        if (separator[1] == 's' || separator[1] == 'S') label = "subject"; 
+                                                                                ^
+SRC/variableSystem.cpp:260:65: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else if (separator[1] == 'v' || separator[1] == 'V') label = "verb";
+                                                                                     ^
+SRC/variableSystem.cpp:261:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        else label = "object";
+                                     ^
+SRC/variableSystem.cpp:319:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        item = "``";
+                                               ^
+SRC/variableSystem.cpp:343:35: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char* ans = InfiniteStack(limit,"GetUserVariable"); // has complete
+                                                ^
+SRC/variableSystem.cpp:356:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                item = "``";
+                       ^
+SRC/variableSystem.cpp:359:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        return "";
+               ^
+SRC/variableSystem.cpp:547:59: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+            FACT** stack = (FACT**)InfiniteStack64(limit, "array merge");
+                                                          ^
+SRC/variableSystem.cpp:789:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ListVariables("preboot", kernelVariableThreadList);
+                      ^
+SRC/variableSystem.cpp:790:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        ListVariables("boot", botVariableThreadList);
+                      ^
+15 warnings generated.

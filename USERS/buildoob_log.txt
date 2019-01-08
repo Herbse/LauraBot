@@ -1,0 +1,31 @@
+﻿ChatScript Version 8.2  compiled Jun 19 2018 14:20:20
+
+>>Reading folder RAWDATA/OOB/
+
+----Reading file simpletopic.top
+Reading outputmacro: ^myfunc
+Reading topic ~xpostagsentence
+
+----Reading file introduction.top
+Reading topic ~introduction
+
+----Reading file handle_oob.top
+Reading topic ~handle_oob
+
+----Reading file simplecontrol.top
+Rename @9 as @chatoutput
+Reading outputmacro: ^oob
+Reading topic ~xrejoinder
+Reading table ^tbl:defaultbot
+Reading topic ~control
+
+----Reading file keywordless.top
+Reading topic ~keywordless
+
+<<end folder RAWDATA/OOB
+No errors or warnings
+
+
+
+Finished compile
+

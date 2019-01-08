@@ -1,0 +1,84 @@
+USERS/topic__test_GERMAN.txt
+jul2116 May03'18-10:42:25 May03'18-10:45:46 1525337058-13.18.0.2.1.0 |
+1 30 0 DY 0 16 16 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~questions_economics ~courses_of_studies ~questions_interests ~questions_informatics #pending
+~courses_of_studies + 1 ?#m#&Is*Ok3 ea m 0 0 
+~introductions + 1 $aL$D ia 2 0 0 
+~questions_economics + 3 GqGGGIs*Ok3 aaapca f 0 0 
+~questions_informatics + 2 fua@V aadc u 0 0 
+#`end topics
+$lancreativeguages=1
+$design=3
+$study_result_2=Internationales_Wirtschaftsingenieurwesen
+$study_result=BWL
+$concepts=3
+$logical_thinking=0
+$economics=3
+$asked_for_subject=true
+$name=Kert
+$cs_token=1184511
+$botprompt=TEST: 
+$userprompt=: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_bot=Test
+$cs_randindex=1285
+$tech=3
+$languages=1
+$study_result2=International_Management
+$second_subject=true
+$informatics=3
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~questions_informatics 28 CREATIVE ~questions_informatics 26 CREATIVE ~questions_informatics 29 CREATIVE 
+ Hallo
+ Kert
+ Ich brauche eine Studienberatung
+ Nein
+ Ich weiß nicht was ich studieren soll
+ Ja
+ Technik
+ Wirtschaft
+ mega viel
+ überhaupt nicht
+ kk
+ krass viel
+ Liebe es
+ naja
+ wenig
+ internationales Wirtschaftsingenieurwesen
+ BWL
+ Beratung
+ Studienberatung
+ Was soll ich studieren?
+ Nein
+ was soll ich studieren?
+ Ja
+ BWL
+ Informatik
+ sehr
+ ja
+ neni
+ Nein
+ Wenig
+#`end user
+ Gibt es noch eine andere Fachrichtung, in der du dir vorstellen kannst, zu studieren?
+ Das hab ich nicht ganz verstanden. 
+  
+ Wie sehr macht es dir Spaß, Sachen zu gestalten?
+ Bist du sehr kreativ?
+ Das hab ich nicht ganz verstanden. 
+  
+ Bist du sehr kreativ?
+ Das hab ich nicht ganz verstanden. 
+  
+ Bist du sehr kreativ?
+ Das hab ich nicht ganz verstanden. 
+  
+ Bist du sehr kreativ?
+ Mal sehen... BWL könnte zu dir passen. Alternativ habe ich noch Internationales Wirtschaftsingenieurwesen im Angebot. Über welchen Studiengang würdest du gerne mehr wissen?
+#`end chatbot

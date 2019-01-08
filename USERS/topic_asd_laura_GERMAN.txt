@@ -1,0 +1,46 @@
+USERS/topic_asd_laura_GERMAN.txt
+jul2116 May30'18-14:45:26 May30'18-14:49:34 0 |
+1 10 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 ClpOi ia 3 0 0 
+~personal + 1 3buwS ia a 0 0 
+#`end topics
+$cs_token=1184511
+$botprompt=LAURA: 
+$userprompt=asd: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=asd
+$cs_bot=Laura
+$cs_randindex=3773
+$name=bernd
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ wie heißt du
+ hallo
+ bernd
+ Wie alt bist du
+ alter
+ Wie alt bist du
+ Was ist dein alter
+ welches alter hast du
+ wo wohnst du
+ was ist dein wohnort
+#`end user
+ Grüß Gott!
+ Ich glaube das hab ich nicht ganz verstanden.
+ Wie heißt du?
+ Freut mich dich kennenzulernen, unknown-word. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Ich glaube das hab ich nicht ganz verstanden.
+ Prima. Was möchstest du denn wissen?
+ Ich bin 14 Jahre alt. Sagt zumindest das Skript.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich bin 14 Jahre alt. Sagt zumindest das Skript.
+ Ich wohne im ChatScript Verzeichnis.
+ Ich wohne im ChatScript Verzeichnis.
+#`end chatbot

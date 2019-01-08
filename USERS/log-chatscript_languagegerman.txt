@@ -1,0 +1,4 @@
+﻿Start: user:chatscript_languagegerman bot:harry ip: rand:1207 (~introductions) 0 ==> Welcome to ChatScript.  When:May02'18-17:35:26 Version:8.2 Build0:Apr24'18-16:46:39 Build1:Apr24'18-16:42:37 0:May02'18-17:35:26 F:0 P:0 Why:~introductions.1.0.~control.0.0 
+Respond: user:chatscript_languagegerman bot:harry ip: (~introductions) 1   Test ==> Have you been here before?  When:May02'18-17:35:38 Why:~introductions.2.0.~control.9.0   F:0 
+Respond: user:chatscript_languagegerman bot:harry ip: (~childhood) 2   test ==> Did you run away from home when you were little?  When:May02'18-17:48:36 Why:~childhood.0.0.~control.9.0   F:0 
+Start: user:chatscript_languagegerman bot:laura ip: rand:1208 (~introduction) 0 ==> Hey!  When:May23'18-13:54:03 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-12:37:20 0:May23'18-13:54:03 F:0 P:0 Why:~introduction.0.0.~control.0.0 

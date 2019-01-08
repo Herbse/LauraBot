@@ -1,0 +1,11 @@
+﻿Start: user:jwe bot:laura ip: rand:1420 (~introduction) 0 ==> Hey!  When:Jun16'18-18:01:05 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:01:05 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:jwe bot:laura ip: (~introduction) 1   huhu ==> Kann ich Sonst noch was für dich tun?  When:Jun16'18-18:01:08 Why:~keywordless.1.0.~control.1.0   F:8 
+Respond: user:jwe bot:laura ip: (~introduction) 2   hey ==> Wie heißt du?  When:Jun16'18-18:01:16 Why:~introduction.1.0.~control.1.0   F:3 
+Command: :reset
+Start: user:jwe bot:laura ip: rand:1420 (~introduction) 0 ==> Hey!  When:Jun16'18-18:01:21 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:01:05 F:0 P:Jun16'18-18:01:16 Why:~introduction.0.0.~control.0.0 
+Respond: user:jwe bot:laura ip: (~introduction) 1   hi ==> Wie heißt du?  When:Jun16'18-18:01:23 Why:~introduction.1.0.~control.1.0   F:1 
+Command: :reset
+Start: user:jwe bot:laura ip: rand:1420 (~introduction) 0 ==> Hey!  When:Jun16'18-18:01:50 Version:7.73 Build0:Jun16'18-13:34:54 Build1:Jun16'18-13:35:12 0:Jun16'18-18:01:05 F:0 P:Jun16'18-18:01:23 Why:~introduction.0.0.~control.0.0 
+Respond: user:jwe bot:laura ip: (~introduction) 1   hi ==> Wie heißt du?  When:Jun16'18-18:01:51 Why:~introduction.1.0.~control.1.0   F:4 
+Respond: user:jwe bot:laura ip: (~introduction) 2   hans ==> Freut mich dich kennenzulernen, unknown-word. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:Jun16'18-18:01:59 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:2 
+Sourcefile Time used 1529165037352 ms for 5 sentences 5 tokens.

@@ -1,0 +1,6 @@
+﻿Start: user:sd bot:laura ip: rand:2429 (~introduction) 0 ==> Grüß Gott!  When:Nov29'18-14:03:46 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Nov29'18-13:53:31 0:Nov29'18-14:03:46 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:sd bot:laura ip: (~introduction) 1    [A [A [A [A ==> Kann ich noch was für dich tun?  When:Nov29'18-14:03:49 Why:~keywordless.0.0.~control.2.0   F:14 
+Respond: user:sd bot:laura ip: (~personal) 2    [A ==> Prima. Was möchstest du denn wissen?  When:Nov29'18-14:03:49 Why:~personal.0.0.~control.2.0   F:1 
+Respond: user:sd bot:laura ip: (~personal) 3   wie geht es dir ==> Naja, es geht so.  When:Nov29'18-14:03:54 Why:~personal.3.0.~control.2.0   F:1 
+Respond: user:sd bot:laura ip: (~personal) 4    [A ==> Kann ich noch was für dich tun?  When:Nov29'18-14:03:55 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sd bot:laura ip: (~personal) 5    [A ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov29'18-14:03:58 Why:~keywordless.1.0.~control.2.0   F:1 

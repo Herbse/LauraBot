@@ -1,0 +1,42 @@
+USERS/topic_6_laura_GERMAN.txt
+jul2116 May24'18-12:05:33 May24'18-12:08:16 0 |
+6 5 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 sE=FyIs*Ok3 ia 2 0 0 
+~personal + 1 E2y?F ia 2 0 0 
+#`end topics
+$cs_randindex=1499
+$cs_bot=Laura
+$cs_login=6
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=6: >
+$botprompt=LAURA: 
+$cs_token=1184511
+$name=Hans
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~introduction 2 USER_NAME 
+ Hey
+ Hans
+ wie alt bist du
+ kk
+ kk
+#`end user
+ Grüß Gott!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, Hans .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
+ Prima. Was möchstest du denn wissen?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Kann ich Sonst noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich Sonst noch was für dich tun?
+ Kann ich Sonst noch was für dich tun?
+ Kann ich Sonst noch was für dich tun?
+ Kann ich Sonst noch was für dich tun?
+#`end chatbot

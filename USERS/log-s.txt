@@ -1,0 +1,60 @@
+﻿Start: user:s bot:test ip: rand:1560 (~introductions) 0 ==> Hallo!  When:May03'18-09:59:56 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-08:50:04 0:May03'18-09:59:56 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Respond: user:s bot:test ip: (~introductions) 1   Hallo ==> Wie heißt du?  When:May03'18-09:59:59 Why:~introductions.1.0.~control.1.0   F:925 
+Start: user:s bot:test ip: rand:1562 (~courses_of_studies) 1 ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-10:09:00 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-08:50:04 0:May03'18-09:59:56 F:0 P:May03'18-09:59:59 Why:~courses_of_studies.1.0.~control.1.0 
+Command: :build harry
+Start: user:s bot:harry ip: rand:1560 (~introductions) 0 ==> Welcome to ChatScript.  When:May03'18-10:09:11 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-10:09:09 0:May03'18-10:09:11 F:0 P:0 Why:~introductions.1.0.~control.0.0 
+Respond: user:s bot:harry ip: (~introductions) 1   ChatScript language=german ==> Indeed.  When:May03'18-10:09:28 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:53 
+Command: :ChatScript language =german
+Respond: user:s bot:harry ip: (~introductions) 2   :ChatScript language =german ==> Have you been here before?  When:May03'18-10:09:45 Why:~introductions.2.0.~control.9.0   F:100 
+Command: :ChatScript language=german
+Respond: user:s bot:harry ip: (~introductions) 3   :ChatScript language=german ==> Right.  When:May03'18-10:09:51 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:50 
+Respond: user:s bot:harry ip: (~childhood) 4   Wie geht es dir ==> Did you run away from home when you were little?  When:May03'18-10:10:02 Why:~childhood.0.0.~control.9.0   F:15 
+Respond: user:s bot:harry ip: (~childhood) 5   No ==> You should try it some time. Travel broadens the mind.  When:May03'18-10:10:05 Why:~childhood.0.2   F:0 
+Command: :build german
+Start: user:s bot:test ip: rand:1561 (~introductions) 1 ==> Use :prepare to see your input data German tagging IF YOU HAVE INSTALLED TREETAGGER + German data.  When:May03'18-10:10:14 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-10:10:11 0:May03'18-09:59:56 F:0 P:May03'18-09:59:59 Why:~introductions.0.0.~control.0.0 
+entering null word to dictionary in sentence2 Thu May 03 10:10:27 2018 in sentence: Hallo 
+    
+Respond: user:s bot:test ip: (~introductions) 2   Hallo ==> Line gambit  When:May03'18-10:10:27 Why:~introductions.1.0.~control.1.0   F:901 
+Respond: user:s bot:test ip: (~introductions) 3   Wie geht es dir ==> Line gambit  When:May03'18-10:10:33 Why:~introductions.1.0.~control.1.0   F:15 
+Respond: user:s bot:test ip: (~introductions) 4   und dann ==> Line gambit  When:May03'18-10:10:40 Why:~introductions.1.0.~control.1.0   F:0 
+Command: :build mine
+Start: user:s bot:test ip: rand:1564 (~introductions) 4 ==> Hallo!  When:May03'18-10:11:09 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-10:11:06 0:May03'18-09:59:56 F:0 P:May03'18-10:10:40 Why:~introductions.0.0.~control.0.0 
+Respond: user:s bot:test ip: (~introductions) 5   Hallo ==> Wie heißt du?  When:May03'18-10:11:11 Why:~introductions.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~introductions) 6   Peter ==> Freut mich dich kennenzulernen, peter. Wie kann ich dir helfen?  When:May03'18-10:11:13 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 7   Wie heisst du? ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-10:11:18 Why:~courses_of_studies.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 8   Nein ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:11:24 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 9   Aber ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:11:28 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~conclusion) 10   ciao ==> Hoffentlich sieht man sich mal wieder, Peter!  When:May03'18-10:14:27 Why:~conclusion.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~conclusion) 11   hallo ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:14:33 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~informatics) 12   Informatik ==> Im Studiengang Informatik lerst du wie man programmiert, Rechnernetzte aufbaut, Algorithmen entwickelt und dabei auch noch agil vorgeht.  When:May03'18-10:14:36 Why:~informatics.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~informatics) 13   informatik ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:14:42 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~informatics) 14   Was kannst du mir über Informatik sagen? ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:14:53 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 15   Ic m"chte gerne Informatik studieren ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-10:16:14 Why:~courses_of_studies.0.0.~control.1.0   F:15 
+Respond: user:s bot:test ip: (~courses_of_studies) 16   Genau ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:16:17 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:s bot:test ip: (~courses_of_studies) 17   Ich brauche eine Studienberatung ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:16:30 Why:~keywordless.1.0.~control.1.0   F:0 
+Command: :reset
+Start: user:s bot:test ip: rand:1560 (~introductions) 0 ==> Hallo!  When:May03'18-10:16:56 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-10:11:06 0:May03'18-09:59:56 F:1525335374-4.0.0.2.1.0 P:May03'18-10:16:30 Why:~introductions.0.0.~control.0.0 
+Respond: user:s bot:test ip: (~introductions) 1   hoi ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:17:04 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~introductions) 2   Hallo ==> Wie heißt du?  When:May03'18-10:17:08 Why:~introductions.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~introductions) 3   Weiß ich nicht ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:17:13 Why:~keywordless.1.0.~control.1.0   F:2 
+Respond: user:s bot:test ip: (~introductions) 4   Hallo ==> Wie heißt du?  When:May03'18-10:17:16 Why:~introductions.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~introductions) 5   her ==> Freut mich dich kennenzulernen, she. Wie kann ich dir helfen?  When:May03'18-10:17:18 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
+Respond: user:s bot:test ip: (~introductions) 6   i dont know ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:17:31 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 7   advice ==> Wusstest du, dass es 37 Studiengänge an der Hochschule Augsburg gibt?  When:May03'18-10:17:33 Why:~courses_of_studies.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 8   no ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:17:36 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 9   yes ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:17:38 Why:~keywordless.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 10   why ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:17:40 Why:~keywordless.2.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~courses_of_studies) 11   what is your name ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:17:43 Why:~keywordless.1.0.~control.1.0   F:0 
+Start: user:s bot:test ip: rand:1572 (~courses_of_studies) 11 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:33:24 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-10:11:06 0:May03'18-09:59:56 F:1525335374-4.0.0.2.1.0 P:May03'18-10:17:43 Why:~keywordless.2.0.~control.1.0 
+entering null word to dictionary in sentence12 Thu May 03 10:33:30 2018 in sentence: Wie bitte 
+    entering null word to dictionary in sentence12 Thu May 03 10:33:30 2018 in sentence: Wie bitte 
+    
+Respond: user:s bot:test ip: (~courses_of_studies) 12   Wie bitte ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:33:30 Why:~keywordless.2.0.~control.1.0   F:865 
+Respond: user:s bot:test ip: (~courses_of_studies) 13   Hallo ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:33:34 Why:~keywordless.2.0.~control.1.0   F:0 
+Start: user:s bot:test ip: rand:1574 (~courses_of_studies) 13 ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:34:41 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-10:11:06 0:May03'18-09:59:56 F:1525335374-4.0.0.2.1.0 P:May03'18-10:33:34 Why:~keywordless.1.0.~control.1.0 
+entering null word to dictionary in sentence14 Thu May 03 10:34:45 2018 in sentence: Hallo 
+    
+Respond: user:s bot:test ip: (~courses_of_studies) 14   Hallo ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:34:45 Why:~keywordless.1.0.~control.1.0   F:859 
+Respond: user:s bot:test ip: (~courses_of_studies) 15   Beratung ==> Ich glaube das hab ich nicht ganz verstanden.  When:May03'18-10:34:54 Why:~keywordless.2.0.~control.1.0   F:16 
+Respond: user:s bot:test ip: (~informatics) 16   Informatik ==> Im Studiengang Informatik lerst du wie man programmiert, Rechnernetzte aufbaut, Algorithmen entwickelt und dabei auch noch agil vorgeht.  When:May03'18-10:34:58 Why:~informatics.1.0.~control.1.0   F:0 
+Respond: user:s bot:test ip: (~informatics) 17   Wirtschaft ==> Kann ich Sonst noch was für dich tun?  When:May03'18-10:35:08 Why:~keywordless.1.0.~control.1.0   F:0 

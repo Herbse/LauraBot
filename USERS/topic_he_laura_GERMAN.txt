@@ -1,0 +1,28 @@
+USERS/topic_he_laura_GERMAN.txt
+jul2116 Jun16'18-19:03:24 Jun16'18-19:03:26 0 |
+2 1 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 1 ClpOi ia 1 0 0 
+#`end topics
+$cs_token=1180415
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=he: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=he
+$cs_bot=Laura
+$cs_randindex=2066
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Hi
+#`end user
+ Hallo!
+ Wie heißt du?
+ Kann ich Sonst noch was für dich tun?
+#`end chatbot

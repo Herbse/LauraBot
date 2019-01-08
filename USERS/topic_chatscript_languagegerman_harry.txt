@@ -1,0 +1,28 @@
+USERS/topic_chatscript_languagegerman_harry.txt
+jul2116 May02'18-17:35:26 May02'18-17:48:36 0 |
+1 2 ~childhood ZMb BX!F!Is*Ok3  DY 0 22 22 0 # start, input#, rejoindertopic,rejoinderid (a:  ( ~yes ) Was it fun? ),checksum
+~introductions ~childhood #pending
+~childhood + 2 BX!F!Is*Ok3 iaaa 2 0 0 
+~introductions + 1 Uk?Kk ca 1 0 0 
+#`end topics
+$singleresponse=1
+$botprompt=HARRY: 
+$userprompt=chatscript_languagegerman: >
+$cs_control_main=~control
+$cs_token=67337983
+$cs_login=ChatScript language=german
+$cs_bot=Harry
+$cs_randindex=1207
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Test
+ test
+#`end user
+ Welcome to ChatScript.
+ Have you been here before?
+ Did you run away from home when you were little?
+#`end chatbot

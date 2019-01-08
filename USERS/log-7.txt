@@ -1,0 +1,30 @@
+﻿Start: user:7 bot:laura ip:127.0.0.1 rand:1501 (~introduction) 0 ==> Hey!  When:May24'18-12:31:57 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+TCP 127.0.0.1 closed connection prematurely
+TCP 127.0.0.1 closed connection prematurely
+***127.0.0.1 client presocket failed May 24 12:34:20 2018
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-12:39:31 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-13:49:47 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-13:51:56 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-13:53:01 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-13:55:22 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-13:57:51 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-13:58:43 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:00:48 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:01:48 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:07:34 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:12:36 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:13:07 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 14:13:07 2018
+***127.0.0.1 client presocket failed May 24 14:13:36 2018
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:14:36 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 14:14:43 2018
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:15:03 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 14:15:07 2018
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:15:27 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 14:15:27 2018
+***127.0.0.1 client presocket failed May 24 14:15:29 2018
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:15:48 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 14:15:50 2018
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:16:13 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 14:16:14 2018
+Start: user:7 bot:laura ip:127.0.0.1 rand:1502 (~introduction) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-14:17:08 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-12:31:57 F:0 P:0 Why:~keywordless.2.0.~control.1.0 

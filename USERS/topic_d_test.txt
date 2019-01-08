@@ -1,0 +1,31 @@
+USERS/topic_d_test.txt
+jul2116 May03'18-10:35:54 May03'18-10:36:04 0 |
+1 3 0 DY 0 16 16 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions #pending
+~introductions + 1 $aL$D ia 2 0 0 
+#`end topics
+$cs_randindex=1545
+$cs_bot=Test
+$cs_login=d
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=d: >
+$botprompt=TEST: 
+$cs_token=1184511
+$name=S
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~introductions 2 USER_NAME 
+ Hallo
+ S
+ Studienberatung
+#`end user
+ Hallo!
+ Wie heißt du?
+ Freut mich dich kennenzulernen, S. Wie kann ich dir helfen?
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot

@@ -1,0 +1,46 @@
+USERS/topic_bob_harry.txt
+jul2116 Apr24'18-13:52:58 Apr24'18-13:54:11 0 |
+1 11 0 DY 0 22 22 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introductions ~childhood #pending
+~childhood + 2 BX!F!Is*Ok3 ocaa b 0 0 
+~introductions + 1 Uk?Kk ca 1 0 0 
+#`end topics
+$cs_randindex=632
+$cs_bot=Harry
+$cs_login=Bob
+$cs_token=67337983
+$cs_control_main=~control
+$userprompt=bob: >
+$botprompt=HARRY: 
+$singleresponse=1
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context ~childhood 11 HAPPY 
+ How are you
+ What?
+ Why?
+ No
+ Just because
+ Ask again!
+ Was it fun?
+ How old are you?
+ How invented you?
+ Ghosts
+ What scared you as a kid?
+#`end user
+ Welcome to ChatScript.
+ Have you been here before?
+ Did you run away from home when you were little?
+ Surely you can guess why?
+ Why no?
+ Does that reason seem to explain anything else?
+ I ran away once, but my parents found me and dragged me back.
+ I don't know.
+ A couple of years.
+ What scared you as a kid?
+ Fine.
+ I was happy as a kid.
+#`end chatbot

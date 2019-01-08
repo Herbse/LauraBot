@@ -1,0 +1,7 @@
+﻿Start: user:eeeeq bot:laura ip: rand:2155 (~introduction) 0 ==> Hey!  When:Nov21'18-15:28:20 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun19'18-16:17:54 0:Nov21'18-15:28:20 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :build 0
+Start: user:eeeeq bot:laura ip: rand:2155 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:Nov21'18-15:28:39 Version:8.2 Build0:Nov21'18-15:28:28 Build1:Jun19'18-16:17:54 0:Nov21'18-15:28:20 F:0 P:0 Why:~personal.0.0.~control.1.0 
+Command: :build laura
+Start: user:eeeeq bot:laura ip: rand:2155 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov21'18-15:28:48 Version:8.2 Build0:Nov21'18-15:28:28 Build1:Nov21'18-15:28:46 0:Nov21'18-15:28:20 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Respond: user:eeeeq bot:laura ip: (~personal) 1   hh ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov21'18-15:28:50 Why:~keywordless.2.0.~control.1.0   F:12 
+Respond: user:eeeeq bot:laura ip: (~personal) 2   huh ==> Kann ich Sonst noch was für dich tun?  When:Nov21'18-15:28:51 Why:~keywordless.1.0.~control.1.0   F:1 

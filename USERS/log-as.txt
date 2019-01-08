@@ -1,0 +1,34 @@
+﻿Start: user:as bot:laura ip: rand:1850 (~introduction) 0 ==> Grüß Gott!  When:Nov29'18-11:57:56 Version:8.2 Build0:Nov29'18-11:57:18 Build1:Nov29'18-11:52:41 0:Nov29'18-11:57:56 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :build 0
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:Nov29'18-11:58:20 Version:8.2 Build0:Nov29'18-11:58:04 Build1:Nov29'18-11:52:41 0:Nov29'18-11:57:56 F:0 P:0 Why:~personal.0.0.~control.2.0 
+Command: :build 0
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-12:04:30 Version:8.2 Build0:Nov29'18-12:04:24 Build1:Nov29'18-11:52:41 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build 0
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-12:05:31 Version:8.2 Build0:Nov29'18-12:05:17 Build1:Nov29'18-11:52:41 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build 0
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-12:08:59 Version:8.2 Build0:Nov29'18-12:08:45 Build1:Nov29'18-11:52:41 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build laura
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-12:11:14 Version:8.2 Build0:Nov29'18-12:08:45 Build1:Nov29'18-12:11:12 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build 0
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-12:11:31 Version:8.2 Build0:Nov29'18-12:11:21 Build1:Nov29'18-12:11:12 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build 0
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-12:12:04 Version:8.2 Build0:Nov29'18-12:11:55 Build1:Nov29'18-12:11:12 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build 0
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-12:19:01 Version:8.2 Build0:Nov29'18-12:18:52 Build1:Nov29'18-12:11:12 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build 0
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-12:21:41 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Nov29'18-12:11:12 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :build oob
+Start: user:as bot:oob ip: rand:1850 (~introduction) 0 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Nov29'18-13:33:09 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Nov29'18-13:33:02 0:Nov29'18-13:33:09 F:0 P:0 Why:~introduction.0.0.~control.1.0 
+Respond: user:as bot:oob ip: (~introduction) 1   frage ==> Das ist die Frage.  When:Nov29'18-13:35:38 Why:~introduction.4.0.~control.3.0   F:25 
+Respond: user:as bot:oob ip: (~introduction) 2   [testc]frage ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Nov29'18-13:35:59 Why:~introduction.2.0.~control.3.0   F:1 
+Respond: user:as bot:oob ip: (~introduction) 3   [testc] frage ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Nov29'18-13:36:12 Why:~introduction.2.0.~control.3.0   F:1 
+Respond: user:as bot:oob ip: (~introduction) 4   [testo] frage ==> Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.  When:Nov29'18-13:36:21 Why:~introduction.3.0.~control.3.0   F:2 
+Respond: user:as bot:oob ip: (~introduction) 5   [test] ==>   When:Nov29'18-13:36:55   F:1 
+Respond: user:as bot:oob ip: (~introduction) 6   [question-ty  e:open] ==>   When:Nov29'18-13:47:44   F:2 
+Respond: user:as bot:oob ip: (~introduction) 7   [ping] ==> Pong.  When:Nov29'18-13:48:07 Why:~control.0.0   F:1 
+Command: :build laura
+Start: user:as bot:laura ip: rand:1850 (~personal) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-13:53:39 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Nov29'18-13:53:31 0:Nov29'18-11:57:56 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Command: :reset
+Start: user:as bot:laura ip: rand:1850 (~introduction) 0 ==> Grüß Gott!  When:Nov29'18-13:53:59 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Nov29'18-13:53:31 0:Nov29'18-11:57:56 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:as bot:laura ip: (~personal) 1   asd ==> Prima. Was möchstest du denn wissen?  When:Nov29'18-13:54:01 Why:~personal.0.0.~control.2.0   F:1 
+Respond: user:as bot:laura ip: (~personal) 2   wie geht es dir? ==> Naja, es geht so.  When:Nov29'18-13:54:13 Why:~personal.3.0.~control.2.0   F:2 

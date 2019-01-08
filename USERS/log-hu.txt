@@ -1,0 +1,4 @@
+﻿Start: user:hu bot:laura ip: rand:2083 (~introduction) 0 ==> Hey!  When:Jun05'18-15:35:57 Version:8.2 Build0:Jun05'18-14:15:01 Build1:Jun05'18-15:34:58 0:Jun05'18-15:35:57 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+entering null word to dictionary in sentence1 Tue Jun 05 15:36:02 2018 in sentence: nein 
+    
+Respond: user:hu bot:laura ip: (~introduction) 1   nein ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jun05'18-15:36:02 Why:~keywordless.2.0.~control.1.0   F:846 

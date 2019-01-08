@@ -1,0 +1,94 @@
+﻿Start: user:5 bot:laura ip:127.0.0.1 rand:1499 (~introduction) 0 ==> Hey!  When:May24'18-11:07:19 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:07:19 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 1  Hey ==> Wie heißt du?  When:May24'18-11:07:27 Why:~introduction.1.0.~control.1.0   F:1420 
+***127.0.0.1 client presocket failed May 24 11:07:27 2018
+1 Thu May 24 11:07:27 2018 in sentence: Hey 
+    TCP 127.0.0.1 closed connection prematurely
+1 Thu May 24 11:07:28 2018 in sentence: Hey 
+    Start: user:5 bot:laura ip:127.0.0.1 rand:1499 (~introduction) 0 ==> Hey!  When:May24'18-11:10:59 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:10:59 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 1  Hey ==> Wie heißt du?  When:May24'18-11:11:10 Why:~introduction.1.0.~control.1.0   F:1151 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 2  hi ==> Freut mich dich kennenzulernen, emohello .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May24'18-11:11:18 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+***127.0.0.1 client presocket failed May 24 11:11:18 2018
+2 Thu May 24 11:11:18 2018 in sentence: hi 
+    TCP 127.0.0.1 closed connection prematurely
+2 Thu May 24 11:11:20 2018 in sentence: hi 
+    ***127.0.0.1 client presocket failed May 24 11:20:50 2018
+2 Thu May 24 11:20:50 2018 in sentence: hi 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 3  hallo ==> Wie heißt du?  When:May24'18-11:21:15 Why:~introduction.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 4  Heinz ==> Freut mich dich kennenzulernen, Heinz .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May24'18-11:21:32 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+***127.0.0.1 client presocket failed May 24 11:21:32 2018
+4 Thu May 24 11:21:32 2018 in sentence: Heinz 
+    TCP 127.0.0.1 closed connection prematurely
+4 Thu May 24 11:21:34 2018 in sentence: Heinz 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 5  hallo ==> Wie heißt du?  When:May24'18-11:24:26 Why:~introduction.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 6  hallo ==> Freut mich dich kennenzulernen, emohello .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May24'18-11:24:28 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 7  hallo ==> Wie heißt du?  When:May24'18-11:24:35 Why:~introduction.1.0.~control.1.0   F:0 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 8  hallo ==> Freut mich dich kennenzulernen, emohello .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May24'18-11:24:37 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 9  hallo ==> Wie heißt du?  When:May24'18-11:24:38 Why:~introduction.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 10  hallo ==> Freut mich dich kennenzulernen, emohello .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May24'18-11:24:39 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 11  hallo ==> Wie heißt du?  When:May24'18-11:24:42 Why:~introduction.1.0.~control.1.0   F:0 
+***127.0.0.1 client presocket failed May 24 11:24:42 2018
+11 Thu May 24 11:24:42 2018 in sentence: hallo 
+    TCP 127.0.0.1 closed connection prematurely
+11 Thu May 24 11:24:45 2018 in sentence: hallo 
+    Start: user:5 bot:laura ip:127.0.0.1 rand:1511 (~introduction) 11 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:25:44 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:10:59 F:0 P:May24'18-11:24:42 Why:~keywordless.2.0.~control.1.0 
+Start: user:5 bot:laura ip:127.0.0.1 rand:1511 (~introduction) 11 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:25:47 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:10:59 F:0 P:May24'18-11:24:42 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 11:25:47 2018
+TCP 127.0.0.1 closed connection prematurely
+Start: user:5 bot:laura ip:127.0.0.1 rand:1511 (~introduction) 11 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:27:53 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:10:59 F:0 P:May24'18-11:24:42 Why:~keywordless.2.0.~control.1.0 
+***127.0.0.1 client presocket failed May 24 11:30:09 2018
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 12  huhu ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:30:33 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 13  hey ==> Wie heißt du?  When:May24'18-11:31:04 Why:~introduction.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 14  Hallo ==> Freut mich dich kennenzulernen, emohello .Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)  When:May24'18-11:34:32 Why:~introduction.1.1=USER_NAME.~introduction.1.4   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~introduction) 15  test ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:36:14 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 16  gggg ==> Prima. Was möchstest du denn wissen?  When:May24'18-11:48:49 Why:~personal.0.0.~control.1.0   F:2 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 17  gggg ==> Kann ich Sonst noch was für dich tun?  When:May24'18-11:48:53 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 18  gggg ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:48:56 Why:~keywordless.2.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:48:56 2018
+18 Thu May 24 11:48:56 2018 in sentence: gggg 
+    TCP 127.0.0.1 closed connection prematurely
+18 Thu May 24 11:48:58 2018 in sentence: gggg 
+    ***127.0.0.1 client presocket failed May 24 11:50:09 2018
+18 Thu May 24 11:50:09 2018 in sentence: gggg 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 19  Hey ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:51:24 Why:~keywordless.2.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:51:50 2018
+19 Thu May 24 11:51:50 2018 in sentence: Hey 
+    Start: user:5 bot:laura ip:127.0.0.1 rand:1518 (~personal) 19 ==> Kann ich Sonst noch was für dich tun?  When:May24'18-11:52:01 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:10:59 F:1527154574-11.2.0.2.1.0 P:May24'18-11:51:24 Why:~keywordless.1.0.~control.1.0 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 20  Hey ==> Kann ich Sonst noch was für dich tun?  When:May24'18-11:52:11 Why:~keywordless.1.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:52:11 2018
+20 Thu May 24 11:52:11 2018 in sentence: Hey 
+    TCP 127.0.0.1 closed connection prematurely
+20 Thu May 24 11:52:12 2018 in sentence: Hey 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 21  Hallo ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:52:21 Why:~keywordless.2.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:52:52 2018
+21 Thu May 24 11:52:52 2018 in sentence: Hallo 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 22  dd ==> Kann ich Sonst noch was für dich tun?  When:May24'18-11:52:56 Why:~keywordless.1.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:53:12 2018
+22 Thu May 24 11:53:12 2018 in sentence: dd 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 23   cc ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:53:20 Why:~keywordless.2.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:53:22 2018
+23 Thu May 24 11:53:22 2018 in sentence: cc 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 24  uu ==> Kann ich Sonst noch was für dich tun?  When:May24'18-11:53:52 Why:~keywordless.1.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:56:13 2018
+24 Thu May 24 11:56:13 2018 in sentence: uu 
+    ***127.0.0.1 client presocket failed May 24 11:56:23 2018
+24 Thu May 24 11:56:23 2018 in sentence: uu 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 25  hhh ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:56:41 Why:~keywordless.2.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:56:46 2018
+25 Thu May 24 11:56:46 2018 in sentence: hhh 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 26  mmk ==> Kann ich Sonst noch was für dich tun?  When:May24'18-11:57:07 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 27  ccc ==> Kann ich Sonst noch was für dich tun?  When:May24'18-11:58:37 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 28  p ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:58:42 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 29  ht ==> Kann ich Sonst noch was für dich tun?  When:May24'18-11:58:47 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 30  ss ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:58:52 Why:~keywordless.2.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 11:58:52 2018
+30 Thu May 24 11:58:52 2018 in sentence: ss 
+    TCP 127.0.0.1 closed connection prematurely
+30 Thu May 24 11:58:54 2018 in sentence: ss 
+    ***127.0.0.1 client presocket failed May 24 11:59:37 2018
+30 Thu May 24 11:59:37 2018 in sentence: ss 
+    Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 31  hh ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:59:44 Why:~keywordless.2.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 32     ==> Kann ich Sonst noch was für dich tun?  When:May24'18-12:05:08 Why:~keywordless.1.0.~control.1.0   F:1 
+Respond: user:5 bot:laura ip:127.0.0.1 (~personal) 33  hallo ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-12:05:20 Why:~keywordless.2.0.~control.1.0   F:1 
+***127.0.0.1 client presocket failed May 24 12:05:24 2018
+33 Thu May 24 12:05:24 2018 in sentence: hallo 
+    

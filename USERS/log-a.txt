@@ -1,0 +1,19 @@
+﻿Start: user:a bot:test ip: rand:1542 (~introductions) 0 ==> Hallo!  When:May03'18-09:56:03 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-08:50:04 0:May03'18-09:56:03 F:0 P:0 Why:~introductions.0.0.~control.0.0 
+Respond: user:a bot:test ip: (~introductions) 1   hallo ==> Wie heißt du?  When:May03'18-09:56:09 Why:~introductions.1.0.~control.1.0   F:877 
+Start: user:a bot:laura ip: rand:1543 (~introduction) 0 ==> Hallo!  When:May30'18-16:19:36 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-16:16:38 0:May30'18-16:19:36 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :concepts AIDS
+AIDS: ~social_issues ~diseaselist ~aids_words ~styles ~sicknesses ~attributes ~nounlist 
+Command: :concepts eingesperrt
+eingesperrt: 
+Command: :concepts "ffnen
+Command: :build 1
+Start: user:a bot:laura ip: rand:1543 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:May30'18-16:21:59 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-16:16:38 0:May30'18-16:19:36 F:0 P:0 Why:~personal.0.0.~control.1.0 
+Command: :concepts pferd
+Command: :concepts horse
+horse: ~soundmaker ~vehicles_land ~tool ~hobbies_animals ~herbivore ~mammals ~vehicle ~hobby ~beings ~animals ~rideable ~enterable ~auto_dealer ~artifacts ~entertainment_stuff ~animate_thing ~eatable ~burnable ~animals_generic ~animal_kingdoms ~functions ~store_type ~objects ~human_data ~nounlist 
+Command: :concepts eingesperrt
+eingesperrt: 
+Command: :build 1
+Start: user:a bot:laura ip: rand:1543 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May30'18-16:22:40 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May30'18-16:16:38 0:May30'18-16:19:36 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
+Command: :concepts eingesperrt
+eingesperrt: 

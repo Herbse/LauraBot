@@ -1,0 +1,30 @@
+USERS/topic_karl_laura_GERMAN.txt
+jul2116 Jun05'18-14:18:02 Jun05'18-15:35:11 0 |
+2 2 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~personal #pending
+~introduction + 1 ClpOi ia 0 0 0 
+~personal + 1 wH9KW ia 1 0 0 
+#`end topics
+$cs_randindex=1999
+$cs_bot=Laura
+$cs_login=karl
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=karl: >
+$botprompt=LAURA: 
+$cs_token=1184511
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ Nein
+ nein
+#`end user
+ Grüß Gott!
+ Ich glaube das hab ich nicht ganz verstanden.
+ Prima. Was möchstest du denn wissen?
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot
