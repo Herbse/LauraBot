@@ -1,12 +1,12 @@
 # LauraBot
 
-First prototype for the ChatScript based bot for the Vicontact prototype. 
+First prototype of the ChatScript based bot for the Vicontact project. 
 
 Consists of two bots at the moment:
 
 # "Laura"
 
-Recent version of a prototype child, which is should be used in the experiment. The language is German.
+Recent version of a prototype child, which should be used in the experiment. The language is German.
 
 # "OOB"
 
