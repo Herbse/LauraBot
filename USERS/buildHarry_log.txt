@@ -68,10 +68,12 @@ Reading topic ~quibble_what
 
 <<end folder RAWDATA/QUIBBLE
 *** Warning-  Undefined set or topic ~emohowzit line 2 in introductions.top
+*** Warning-  Undefined set or topic ~why line 42 in eliza_where.top
 
 WARNING SUMMARY: 
   line 1 of : Undefined set or topic ~emohowzit line 2 in introductions.top
-1 serious warnings, 0 function warnings, 0 spelling warnings, 0 case warnings, 0 substitution warnings
+  line 5 of : Undefined set or topic ~why line 42 in eliza_where.top
+2 serious warnings, 0 function warnings, 0 spelling warnings, 0 case warnings, 0 substitution warnings
     
 
 Finished compile

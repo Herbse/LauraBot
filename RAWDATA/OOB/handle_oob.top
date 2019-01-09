@@ -1,10 +1,12 @@
 topic: ~handle_oob nostay()
 
+u: (test) Das ist der Test ^keep() ^repeat()
+
 u: (testc) $closed=1 ^keep() ^repeat()
 
 u: (testo) $open=1 ^keep() ^repeat()
 
-u: (test) $test=1 ^keep() ^repeat()
+
 
 
 

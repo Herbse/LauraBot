@@ -21,7 +21,6 @@ DATA:
 oob
 
 topic: ~control system ()
-u: ( \[ ping \]) Pong.
 # on startup, do introduction
 u: ( %input<%userfirstline) 
 	gambit(~introduction)

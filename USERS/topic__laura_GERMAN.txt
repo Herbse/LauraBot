@@ -1,11 +1,12 @@
 USERS/topic__laura_GERMAN.txt
-jul2116 Jun19'18-13:11:26 Jun19'18-13:13:24 1529406686-11.1.0.2.1.0 |
-1372 1372 0 DY 0 14 14 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+jul2116 Jan09'19-12:04:14 Jan09'19-14:33:21 0 |
+5 7 0 DY 0 18 18 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
 ~introduction ~personal #pending
-~introduction + 1 ClpOi ia 1 0 0 
-~personal + 1 3y5EP ia 2 0 0 
+~personal + 1 3m5ak ia 6 0 0 
+~introduction + 2 h!w3wIs*Ok3 iaaa 4 0 0 
 #`end topics
-$cs_token=1180415
+$event_state=0
+$cs_token=1180160
 $singleresponse=1
 $botprompt=LAURA: 
 $userprompt=: >
@@ -20,50 +21,21 @@ $cs_trace=0
 #`end fact sets
 #`end user facts 0
 #context 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ rand
+ rand
+ rand
+ rand
+ ping
+ frage
+ fra:build oob
 #`end user
- Kann ich Sonst noch was für dich tun?
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich Sonst noch was für dich tun?
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich Sonst noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
+ Grüß Gott!
+ 9
+ 10
+ 7
+ 11
+ Kann ich noch was für dich tun?
+ Kann ich noch was für dich tun?
+ Prima. Was möchstest du denn wissen?
  Ich glaube das hab ich nicht ganz verstanden.
 #`end chatbot

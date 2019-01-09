@@ -21,3 +21,17 @@ Respond: user:asd bot:laura ip: (~personal) 7   Was ist dein alter ==> Ich glaub
 Respond: user:asd bot:laura ip: (~personal) 8   welches alter hast du ==> Ich bin 14 Jahre alt. Sagt zumindest das Skript.  When:May30'18-14:49:20 Why:~personal.1.0.~control.1.0   F:0 
 Respond: user:asd bot:laura ip: (~personal) 9   wo wohnst du ==> Ich wohne im ChatScript Verzeichnis.  When:May30'18-14:49:28 Why:~personal.2.0.~control.1.0   F:15 
 Respond: user:asd bot:laura ip: (~personal) 10   was ist dein wohnort ==> Ich wohne im ChatScript Verzeichnis.  When:May30'18-14:49:34 Why:~personal.2.0.~control.1.0   F:0 
+Start: user:asd bot:oob ip: rand:3774 (~introduction) 0 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Jan09'19-11:42:27 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:51:36 0:Jan09'19-11:42:27 F:0 P:0 Why:~introduction.0.0.~control.1.0 
+Respond: user:asd bot:oob ip: (~introduction) 1   [testc] frage ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Jan09'19-11:43:35 Why:~introduction.2.0.~control.3.0   F:26 
+Respond: user:asd bot:oob ip: (~introduction) 2   [testo]frage ==> Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.  When:Jan09'19-11:43:45 Why:~introduction.3.0.~control.3.0   F:1 
+Respond: user:asd bot:oob ip: (~introduction) 3   [testc]frage ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Jan09'19-11:43:53 Why:~introduction.2.0.~control.3.0   F:1 
+Respond: user:asd bot:oob ip: (~introduction) 4   [testc]frage ==> Das war eine geschlossene Frage. Die Antwort darauf ist trivial.  When:Jan09'19-11:44:01 Why:~introduction.2.0.~control.3.0   F:1 
+Respond: user:asd bot:oob ip: (~introduction) 5   [testo]frage ==> Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.  When:Jan09'19-11:44:28 Why:~introduction.3.0.~control.3.0   F:2 
+Respond: user:asd bot:oob ip: (~introduction) 6   [test] ==>   When:Jan09'19-11:45:44   F:2 
+Respond: user:asd bot:oob ip: (~introduction) 7   frage ==> Das ist der Test.  When:Jan09'19-11:46:06 Why:~introduction.1.0.~control.3.0   F:1 
+Command: :why
+~introduction.1.0.5.3.0  u:  ( $test=1 ) Das ist der Test. 
+ via ~control.5.3.0  u:  ( ) $$currenttopic = %topic $$response = %response ^if 00v( %response  $$response ) 00I{...   
+Respond: user:asd bot:oob ip: (~introduction) 8   frage ==> Das ist der Test.  When:Jan09'19-11:46:30 Why:~introduction.1.0.~control.3.0   F:1 
+Respond: user:asd bot:oob ip: (~introduction) 9   frage ==> Das ist der Test.  When:Jan09'19-11:46:34 Why:~introduction.1.0.~control.3.0   F:1 
+Command: :build laura

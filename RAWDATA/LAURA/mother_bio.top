@@ -4,7 +4,7 @@ topic: ~mother_bio keep repeat (~mother)
 u: MAMA_SICK (~mother) Meine Mama ist immer zu Hause. Sie ist schlimm krank.
 
 #! Was hat sie denn?
-u:(~why) ^reuse(MAMA_HOSPITAL)
+u: (~why) ^reuse(MAMA_HOSPITAL)
 
 #! Erzähl mir mehr über deine Mama!
 u: MAMA_HOSPITAL (<<~speak_verbs ~mother>>) Mama ist manchmal ganz lange im Krankenhaus.

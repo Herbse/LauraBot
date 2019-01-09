@@ -1139,32 +1139,31 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOL
     concept: 1038  ~what
     concept: 1039  ~white
     concept: 1040  ~white_hackers
-    concept: 1041  ~why
-    concept: 1042  ~wildness_words
-    concept: 1043  ~wind_force
-    concept: 1044  ~wine
-    concept: 1045  ~wine_red
-    concept: 1046  ~wine_white
-    concept: 1047  ~winter_sports
-    concept: 1048  ~wnapplied_science
-    concept: 1049  ~wndoctrines
-    concept: 1050  ~wnengineering
-    concept: 1051  ~wnfree_time
-    concept: 1052  ~wnmedicine
-    concept: 1053  ~wnsocial_science
-    concept: 1054  ~wood
-    concept: 1055  ~woodmetalclayglasscraft
-    concept: 1056  ~word_games
-    concept: 1057  ~wordnetpropogate
-    concept: 1058  ~wordtypes
-    concept: 1059  ~worklist
-    concept: 1060  ~xmeasurers
-    concept: 1061  ~xweight_words
-    concept: 1062  ~xweightnouns
-    concept: 1063  ~yellow
-    concept: 1064  ~yellow_other
-    concept: 1065  ~yesanswer
-    concept: 1066  ~noanswer
+    concept: 1041  ~wildness_words
+    concept: 1042  ~wind_force
+    concept: 1043  ~wine
+    concept: 1044  ~wine_red
+    concept: 1045  ~wine_white
+    concept: 1046  ~winter_sports
+    concept: 1047  ~wnapplied_science
+    concept: 1048  ~wndoctrines
+    concept: 1049  ~wnengineering
+    concept: 1050  ~wnfree_time
+    concept: 1051  ~wnmedicine
+    concept: 1052  ~wnsocial_science
+    concept: 1053  ~wood
+    concept: 1054  ~woodmetalclayglasscraft
+    concept: 1055  ~word_games
+    concept: 1056  ~wordnetpropogate
+    concept: 1057  ~wordtypes
+    concept: 1058  ~worklist
+    concept: 1059  ~xmeasurers
+    concept: 1060  ~xweight_words
+    concept: 1061  ~xweightnouns
+    concept: 1062  ~yellow
+    concept: 1063  ~yellow_other
+    concept: 1064  ~yesanswer
+    concept: 1065  ~noanswer
 file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/prepositionhierarchy.top
     concept: 1  ~directionplacepreposition
     concept: 2  ~directionon

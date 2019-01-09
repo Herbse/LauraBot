@@ -72,3 +72,16 @@ PATTERN-69 Failed to balance ( or [ or { or << properly, still at ( for ( wo ^in
 BUG in topic_sdg_anonymous_GERMAN.txt at 0: ^anonymous 
 BUG: Tue Dec 04 16:00:25 2018: input:0 No such bot  sdg -  -  status: defaultbot word not found caller:sdg callee: at  in sentence: wie heisst denn dein onkel?
 No such bot  sdg -  -  status: defaultbot word not found
+BUG in topic__build oob_GERMAN.txt at 3: ^build oob No such bot  :build oob -  -  status: laura
+BUG in introduction.top at 18: u: (ping) \[pong\]  
+OUTPUT-3 Unbalanced ] in 
+
+BUG in topic__anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Wed Jan 09 14:38:07 2019: input:0 No such bot   -  -  status: defaultbot word not found caller: callee: at  in sentence: ping
+No such bot   -  -  status: defaultbot word not found
+BUG in introduction.top at 15: u: (ping) \[pong\] ... 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in topic__anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Wed Jan 09 14:38:38 2019: input:0 No such bot   -  -  status: defaultbot word not found caller: callee: at  in sentence: ping
+No such bot   -  -  status: defaultbot word not found

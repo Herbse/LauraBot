@@ -1,14 +1,10 @@
-topic: ~personal keep repeat [~alter ~residence] 
+topic: ~personal keep repeat (~alter) 
 
 t: Prima. Was möchstest du denn wissen?
 
 u: (<<~age [du dein]>>) Ich bin 14 Jahre alt. Sagt zumindest das Skript.
 
-u: (~residence) Ich wohne im ChatScript Verzeichnis.
-
 u: (~emohow_closed) Naja, es geht so.
-
-u: (~yes) test
 
 
 

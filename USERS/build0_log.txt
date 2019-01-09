@@ -1136,7 +1136,6 @@ Reading concept ~weight_words
 Reading concept ~what
 Reading concept ~white
 Reading concept ~white_hackers
-Reading concept ~why
 Reading concept ~wildness_words
 Reading concept ~wind_force
 Reading concept ~wine

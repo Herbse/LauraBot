@@ -60,7 +60,6 @@ Reading concept ~problems
 Reading concept ~residence
 Reading concept ~relationship
 Reading concept ~why
-*** Warning- line 23 of a_concepts.top: CONCEPT-3 Concept/topic already defined ~why
 
 ----Reading file handle_oob.top
 Reading topic ~handle_oob
@@ -81,11 +80,9 @@ Reading topic ~topic_roulette
 Reading topic ~keywordless
 
 <<end folder RAWDATA/LAURA
+No errors or warnings
 
-WARNING SUMMARY: 
-  line 23 of a_concepts.top: CONCEPT-3 Concept/topic already defined ~why
-1 serious warnings, 0 function warnings, 0 spelling warnings, 0 case warnings, 0 substitution warnings
-    
+
 
 Finished compile
 

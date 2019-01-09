@@ -14,5 +14,43 @@ u: (~emohello) Wie heißt du?
 	#! Will ich nicht sagen.
 	a: NO_NAME (<<[wissen sagen angeben]  nicht>>) Ok, dann nicht. Du kannst mir aber trotzdem eine Frage zu meiner Biographie stellen. Ansonsten kommen wir hier nicht weiter.
 
+#!test für dan randomizer
 
+u: (rand) [1][2][3][4][5][6][7][8][9][10][11][12]
 
+#! Wie geht es dir?
+#! Ist alles in Ordnung?
+u: CLOSED_SITUATION(<<~emohow_closed ~bot>>) $closed_question_emo=1 ^respond(~answer_roulette)
+  #! Warum geht es dir denn nicht so gut?
+  a: (~why) $openly_situation=1 ^respond(~event_uncle)
+
+#! Was beschäftigt dich denn gerade?
+#! Was ist los bei dir?
+u: OPENLY_SITUATION(<<~emohow_open ~bot>>) $openly_situation=1 ^respond(~topic_roulette)
+
+#! Worüber möchtest du heute mit mir sprechen?
+u: (<~why * ~speak_verbs) ^reuse(OPENLY_SITUATION)
+
+#! Möchtest du über deine Eltern sprechen?
+u: TOPIC_CHOICE(über *1 _*1 sprechen) ^refine()
+  a:(_0?~parents) $topic = parents ^respond(~topic_roulette)
+  a:(_0==onkel) $topic = uncle ^respond(~topic_roulette)
+  a:(_0==bruder) $topic = brother ^respond(~topic_roulette)
+  a:() Nein, darüber möchte ich nicht sprechen.
+
+#! Ist dir etwas in der Schule/zu Hause/mit deinen Eltern/mit deinem Onkel passiert?
+u: WHAT_HAPPEND_CLOSED (<<(was) {~places ~people} ~happening>>) $closed_question=1 ^respond(~answer_roulette)  # Hinweis: hier in Zukunft Bedingung abändern, wenn wir darauf achten wollen, ob die Info bereits vom Kind gegeben wurde oder nicht
+
+#! Was ist dir denn passiert?
+u: WHAT_HAPPEND_OPEN (<was *~3  ~happening) $openly_situation=1 ^respond(~event_uncle)
+
+#! Gibt es vielleicht Stress mit jemandem aus deiner Klasse.
+u: PROBLEMS (<<~problems [mit in beim]>>) $closed_question_prob=1 ^respond(~answer_roulette)
+  a: (<<oder [mit in]>>) Ich habe ja gesagt, dass ich keine Probleme habe.
+
+#! Wie läuft es denn so zu Hause?
+u: OPENLY_SITUATION_HOME(<<zu hause>>) $openly_situation_home=1 ^respond(~topic_roulette)
+
+#! Wie alt bist du?
+#! Was ist dein Alter?
+u: (<<~age [du dein]>>) Ich bin 10 Jahre alt.

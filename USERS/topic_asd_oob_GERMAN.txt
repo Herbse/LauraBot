@@ -1,0 +1,44 @@
+USERS/topic_asd_oob_GERMAN.txt
+jul2116 Jan09'19-11:42:27 Jan09'19-11:46:34 0 |
+1 9 0 DY 0 6 6 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 1 fF8aW ia 9 0 0 
+#`end topics
+$closed=0
+$cs_randindex=3773
+$cs_bot=Oob
+$cs_login=asd
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=asd: >
+$botprompt=OOB: 
+$cs_token=1184511
+$open=0
+$test=1
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ frage
+ frage
+ frage
+ frage
+ frage
+ 
+ frage
+ frage
+ frage
+#`end user
+ Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+ Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+ Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.
+ Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+ Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+ Das war eine offen Frage. Die Antwort darauf ist qualitativ hochwertig.
+ Das ist der Test.
+ Das ist der Test.
+ Das ist der Test.
+#`end chatbot

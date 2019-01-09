@@ -1,0 +1,66 @@
+USERS/topic__oob_GERMAN.txt
+jul2116 Jan09'19-11:49:49 Jan09'19-14:38:51 1547041131-2.5.0.5.2.0 |
+15 15 0 DY 0 6 6 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 1 P7@Z3Js*Ok3 ia f 0 0 
+#`end topics
+$cs_token=1184511
+$botprompt=OOB: 
+$userprompt=: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_bot=Oob
+$cs_randindex=1285
+$test=0
+$open=0
+$closed=0
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ 
+ 
+ [test][test]
+ [test]frage
+ 
+ 
+ frage
+ frage
+ frage
+ 
+ [test]frage
+ [testc]frage
+ ping
+ ping
+ ping
+#`end user
+ Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+ Das ist der Test.
+ Das ist der Test
+ Das ist der Test
+ Das ist der Test
+ Das ist der Test
+ Das ist der Test
+ Das war eine offene Frage. Die Antwort darauf ist qualitativ hochwertig.
+ Das ist der Test
+ Kann ich dir noch irgendwie weiterhelfen?
+ Das ist der Test
+ Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+ Das war eine offene Frage. Die Antwort darauf ist qualitativ hochwertig.
+ Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+ Das ist der Test
+ Das ist der Test
+ Das ist der Test
+ Das ist die Frage.
+ Das ist der Test
+ Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
+ Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+ Pong
+ Kann ich dir noch irgendwie weiterhelfen?
+ Pong
+ Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+ ...
+#`end chatbot

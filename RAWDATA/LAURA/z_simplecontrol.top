@@ -28,7 +28,7 @@ u: ( %input<%userfirstline)
 
 
 #! [ question: open]
-u: (\[ * \]  )
+u: (\[ * \])
     ^respond(~handle_oob)
     ^end(SENTENCE)
 

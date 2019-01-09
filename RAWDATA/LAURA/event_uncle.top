@@ -11,7 +11,7 @@ u: ([wann immer oft] ^incontext(UNCLE_EVENT)) Fast jeden Tag.
 
 #! Wie findest du das?
 #! Wie findest du den?
-#! Wie verstehtst du dich mit dem?
+#! Wie verstehst du dich mit dem?
 u: (~relationship ^incontext(UNCLE_EVENT)) Nicht so gut.
 
 #! Wo?
@@ -65,4 +65,3 @@ u: UNCLE_EVENT_7 ($event_state=7 [~facilitator ~action ~touch]) Ich möchte da n
 
 #---------------------------------------------------------------------------------------------
 
-u: ($openly_situation=1) $openly_situation=0 ^reuse(ONKEL_EVENT)
