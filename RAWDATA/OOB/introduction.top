@@ -12,6 +12,6 @@ u: ($closed=1 frage) $closed=0 Das war eine geschlossene Frage. Die Antwort dara
 u: ($open=1 frage )$open=0 Das war eine offene Frage. Die Antwort darauf ist qualitativ hochwertig.
 u: (frage) Das ist die Frage.
 
-u: (ping) \[pong \] ...
+u: (ping) \[ pong \] ...
 
 
