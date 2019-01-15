@@ -5,7 +5,7 @@ topic: ~names_bio keep repeat [~names]
 u: BROTHER_NAME (<<~names  dein ~brother>>) Er heißt Leon.
 
 #! Wie heißt deine Mama?
-u: MOTHER_NAME (<<~names deine ~mother>>) Meine Mama ist die Charlotte.
+u: MOTHER_NAME (<<~names deine ~mother>>) Meine Mama heißt Charlotte.
 
 #! Wie heißt dein Papa?
 u: FATHER_NAME (<<~names dein ~father>>) Mein Papa heißt Stefan.

@@ -5,3 +5,4 @@ c:/users/admin/documents/chatscript-8.2/rawdata/harry/childhood.top
 c:/users/admin/documents/chatscript-8.2/rawdata/harry/introductions.top
 c:/users/admin/documents/chatscript-8.2/rawdata/harry/keywordless.top
 c:/users/admin/documents/chatscript-8.2/rawdata/harry/simplecontrol.top
+Start: user:ll bot:laura ip: rand:2206 (~introduction) 0 ==> Hey!  When:Jan15'19-16:47:25 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:33:34 0:Jan15'19-16:47:25 F:0 P:0 Why:~introduction.0.0.~control.0.0 

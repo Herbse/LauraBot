@@ -1,0 +1,7 @@
+﻿Start: user:kjn bot:oob ip: rand:2089 (~introduction) 0 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Jan09'19-16:32:01 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan09'19-14:38:42 0:Jan09'19-16:32:01 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :build laura
+Start: user:kjn bot:laura ip: rand:2089 (~introduction) 0 ==> Grüß Gott!  When:Jan09'19-16:32:56 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan09'19-16:32:49 0:Jan09'19-16:32:56 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:kjn bot:laura ip: (~introduction) 1   rando ==> 9  When:Jan09'19-16:33:00 Why:~introduction.2.0.~control.2.0   F:12 
+Respond: user:kjn bot:laura ip: (~introduction) 2   rando ==> 12  When:Jan09'19-16:33:02 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:kjn bot:laura ip: (~introduction) 3   rando ==> 11  When:Jan09'19-16:33:04 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:kjn bot:laura ip: (~introduction) 4   rando ==> 10  When:Jan09'19-16:33:05 Why:~introduction.2.0.~control.2.0   F:1 

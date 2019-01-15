@@ -1,30 +1,28 @@
 topic: ~mother_bio keep repeat (~mother)
 
+
+
+# Kernaussagen----------------------------------------------------------------------------------------
 #! Was machen deine Eltern so?
 u: MAMA_SICK (~mother) Meine Mama ist immer zu Hause. Sie ist schlimm krank.
 
 #! Was hat sie denn?
-u: (~why) ^reuse(MAMA_HOSPITAL)
+u: (~why) ^reuse(MAMA_BACK)
 
 #! Erzähl mir mehr über deine Mama!
-u: MAMA_HOSPITAL (<<~speak_verbs ~mother>>) Mama ist manchmal ganz lange im Krankenhaus.
+u: MAMA_BACK (<<~speak_verbs ~mother>>) Sie muss im Bett liegen, wegen ihrem Rücken.
 
-    #! Warum muss sie denn ins Krankenhaus?
-    #! Was hat sie denn?
-    a: (~why) Da muss sie im Bett liegen, wegen ihrem Rücken.
-
-      #! Hat sie irgendeine schlimme Krankheit?
-      #! Mhm, erzähl mir mehr davon.
-      b: ([~facilitator (hat sie)]) Mehr weiß ich leider nicht.
-
-#! Wer passt dann auf dich auf, wenn deine Mama im Krankenhaus ist?
-u: ([aufpassen <<passt auf>> alleine]) Papa.
 
 #! Und was machst du gerne mit deiner Mama?
-u: MAMA_HOMEWORK (<<~action ~mother>>) Zuhause setze ich mich zu ihr und mache Hausaufgaben.
+u: MAMA_HOMEWORK (<<~action ~mother>>) Nach der Schule setze ich mich zu Mama und mache Hausaufgaben.
 
-  #! Sie hilft dir also bei den Hausaufgaben?)
-  a: (Hausaufgaben) Mama hilft mir dann immer bei Mathe.
+#! Sie hilft dir also bei den Hausaufgaben?)
+u: MAMA_MATH (Hausaufgaben) Mama hilft mir dann immer bei Mathe.
+
+# -----------------------------------------------------------------------------------------------------
+
+#! Beziehung
+u: MAMA_RELATIONSHIP (~relationship ~mother) Ich hab meine Mama so lieb.
 
   u: ($openly_situation_home=1) $openly_situation_home=0 ^reuse(MAMA_SICK)
   u: ($openly_situation=1) $openly_situation=0 ^reuse(MAMA_SICK)

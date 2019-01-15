@@ -1,0 +1,7 @@
+﻿ ~hobbies_bio.0.0 #! Hast du Hobbies?
+ ~hobbies_bio.1.0 #! Gehst du da alleine hin?
+ ~hobbies_bio.2.0 #! Erzähl mir mehr übers das Tanzen.
+ ~hobbies_bio.3.0 #! Erzähl mal mehr.
+ ~hobbies_bio.4.0 #! Aber das ist sicher schwierig oder?
+ ~hobbies_bio.5.0 #! Ist Mira cool?
+ ~hobbies_bio.6.0 #! Beziehung

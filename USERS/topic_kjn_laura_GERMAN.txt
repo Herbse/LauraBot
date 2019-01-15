@@ -1,0 +1,34 @@
+USERS/topic_kjn_laura_GERMAN.txt
+jul2116 Jan09'19-16:32:56 Jan09'19-16:33:05 0 |
+1 4 0 DY 0 18 18 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 2 %76Hj iaaa 4 0 0 
+#`end topics
+$event_state=0
+$cs_token=1180160
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=kjn: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_login=kjn
+$cs_bot=Laura
+$cs_randindex=2088
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ rando
+ rando
+ rando
+ rando
+#`end user
+ Grüß Gott!
+ 9
+ 12
+ 11
+ 10
+#`end chatbot

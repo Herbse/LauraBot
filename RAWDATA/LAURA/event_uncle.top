@@ -1,6 +1,9 @@
 topic: ~event_uncle keep repeat (onkel Dirk familie Hause ~facilitator ~action ~touch)
 
 
+
+# Kernaussagen----------------------------------------------------------------------------------------
+
 #! Erzähl mir von deinem Onkel 
 u: UNCLE_EVENT ($event_state=0 onkel) $event_state=1  Mein Onkel schläft jetzt immer bei uns.
 
@@ -8,11 +11,6 @@ u: UNCLE_EVENT ($event_state=0 onkel) $event_state=1  Mein Onkel schläft jetzt 
 #! Was heißt immer?
 #! Wie oft?
 u: ([wann immer oft] ^incontext(UNCLE_EVENT)) Fast jeden Tag.
-
-#! Wie findest du das?
-#! Wie findest du den?
-#! Wie verstehst du dich mit dem?
-u: (~relationship ^incontext(UNCLE_EVENT)) Nicht so gut.
 
 #! Wo?
 u: (wo ^incontext(UNCLE_EVENT)) Im Wohnzimmer
@@ -30,38 +28,48 @@ u: (<< bruder [~father ~mother]>> ^incontext(UNCLE_EVENT_1))  ^reuse (UNCLE_EVEN
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?
-u: UNCLE_EVENT_2 ($event_state=2 [~facilitator ~action ~touch]) $event_state=3 Der kommt in mein Zimmer, obwohl ich das nicht will.
+u: UNCLE_EVENT_2 ($event_state=2 [~facilitator ~action ~touch]) $event_state=3 Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
  
 #---------------------------------------------------------------------------------------------    
 
 #! Warum willst du denn nicht, dass er in dein Zimmer kommt?
 #! Und was macht
-u: UNCLE_EVENT_2 ($event_state=2 [~facilitator ~action ~touch]) $event_state=3 Er haut mir immer auf den Po.
+u: UNCLE_EVENT_3 ($event_state=3 [~facilitator ~action ~touch]) $event_state=3 Der nervt mich und sagt ich soll aufräumen.
 
 #---------------------------------------------------------------------------------------------
 
 #! Was hat dein Onkel denn gemacht?
-u: UNCLE_EVENT_3 ($event_state=3 [~facilitator ~action ~touch]) $event_state=4 Er hat mich mal am Po angefasst.
+u: UNCLE_EVENT_4 ($event_state=4 [~facilitator ~action ~touch]) $event_state=4 Er haut mir immer auf den Po. Das ist voll gemein!
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: UNCLE_EVENT_4 ($event_state=4 [~facilitator ~action ~touch]) $event_state=5 Einmal waren wir schwimmen, da sollte ich sein Ding in den Mund nehmen.
+u: UNCLE_EVENT_5 ($event_state=5 [~facilitator ~action ~touch]) $event_state=5 Meine Mama sagt, der haut mich, weil ich immer frech zu ihm bin.
 
+#---------------------------------------------------------------------------------------------
+# Ab hier sind die Ereignisse zum sexuellen Missbrauch
 #---------------------------------------------------------------------------------------------
 
 #! Was meinst du mit "sein Ding"?
-u: UNCLE_EVENT_5  ($event_state=5 [~facilitator ~action ~touch]) $event_state=6 Seinen Penis.
+u: UNCLE_EVENT_6  ($event_state=6 [~facilitator ~action ~touch]) $event_state=6 Neulich waren wir schwimmen, sollte ich sein Ding in den Mund nehmen.
 
 #---------------------------------------------------------------------------------------------
 
 #! wie ist das passiert?
-u: UNCLE_EVENT_6 ($event_state=6 [~facilitator ~action ~touch]) $event_state=7  Er kam in meine Kabine und wollte mir beim Umziehen helfen.
+u: UNCLE_EVENT_7 ($event_state=7 [~facilitator ~action ~touch]) $event_state=7  Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: UNCLE_EVENT_7 ($event_state=7 [~facilitator ~action ~touch]) Ich möchte da nicht mehr darüber reden.
+u: UNCLE_EVENT_8 ($event_state=8 [~facilitator ~action ~touch]) Dann hat er seine Hose runtergezogen.
+
+#---------------------------------------------------------------------------------------------
+#! Ist noch mehr passiert?
+u: UNCLE_EVENT_9 ($event_state=9 [~facilitator ~action ~touch]) Das war voll eklig. Ich will den nicht mehr sehen.
 
 #---------------------------------------------------------------------------------------------
 
+#! Wie findest du das?
+#! Wie findest du den?
+#! Wie verstehst du dich mit dem?
+u: (~relationship ^incontext(UNCLE_EVENT)) Der ist voll blöd.

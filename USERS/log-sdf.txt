@@ -16,3 +16,172 @@ Command: :build laura
 Start: user:sdf bot:laura ip: rand:2403 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:Jun19'18-16:18:01 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun19'18-16:17:54 0:Jun16'18-18:51:54 F:0 P:Jun16'18-18:53:18 Why:~personal.0.0.~control.1.0 
 Respond: user:sdf bot:laura ip: (~personal) 1   wie geht es dir ==> Naja, es geht so.  When:Jun19'18-16:29:58 Why:~personal.3.0.~control.1.0   F:28 
 Respond: user:sdf bot:laura ip: (~personal) 2   und sonst wie geht ==> Naja, es geht so.  When:Jun19'18-16:30:06 Why:~personal.3.0.~control.1.0   F:3 
+Start: user:sdf bot:laura ip: rand:2405 (~introduction) 2 ==> Hallo!  When:Jan15'19-16:26:31 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan09'19-16:32:49 0:Jun16'18-18:51:54 F:0 P:Jun19'18-16:30:06 Why:~introduction.0.0.~control.0.0 
+Command: :build laura
+Start: user:sdf bot:laura ip: rand:2405 (~personal) 2 ==> Prima. Was möchstest du denn wissen?  When:Jan15'19-16:26:43 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:26:35 0:Jun16'18-18:51:54 F:0 P:Jun19'18-16:30:06 Why:~personal.0.0.~control.2.0 
+Respond: user:sdf bot:laura ip: (~personal) 3   rando ==> Kann ich noch was für dich tun?  When:Jan15'19-16:26:47 Why:~keywordless.0.0.~control.2.0   F:49 
+Respond: user:sdf bot:laura ip: (~personal) 4   rando ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan15'19-16:26:50 Why:~keywordless.1.0.~control.2.0   F:1 
+Command: :reset
+Start: user:sdf bot:laura ip: rand:2403 (~introduction) 0 ==> Hallo!  When:Jan15'19-16:26:53 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:26:35 0:Jun16'18-18:51:54 F:0 P:Jan15'19-16:26:50 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdf bot:laura ip: (~introduction) 1   rando ==> 4  When:Jan15'19-16:26:55 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~introduction) 2   rando ==> 1  When:Jan15'19-16:26:57 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~introduction) 3   rando ==> 7  When:Jan15'19-16:26:59 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~introduction) 4   rando ==> 2  When:Jan15'19-16:27:00 Why:~introduction.2.0.~control.2.0   F:0 
+Respond: user:sdf bot:laura ip: (~introduction) 5   rando ==> 9  When:Jan15'19-16:27:02 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~introduction) 6   rando ==> 8  When:Jan15'19-16:27:10 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~introduction) 7   rando ==> 4  When:Jan15'19-16:27:12 Why:~introduction.2.0.~control.2.0   F:0 
+Respond: user:sdf bot:laura ip: (~introduction) 8   rando ==> 1  When:Jan15'19-16:27:14 Why:~introduction.2.0.~control.2.0   F:0 
+Respond: user:sdf bot:laura ip: (~introduction) 9   rando ==> 2  When:Jan15'19-16:27:17 Why:~introduction.2.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~introduction) 10   rando ==> 7  When:Jan15'19-16:27:19 Why:~introduction.2.0.~control.2.0   F:1 
+Command: :prepare tag
+TokenControl: DO_NUMBER_MERGE DO_DATE_MERGE NO_HYPHEN_END 
+
+
+Original User Input: tag
+Tokenized into: tag  
+Actual used input: tag 
+
+
+Concepts: 
+
+1: tag (raw):
+   +tag
+ // 
+1: tagen (canonical):    +tagen
+ //  
+
+Sequences:
+       +~timewords
+       +~modifyabletimenoun
+       +~timebasedreference
+       +~time_reference
+       +~time_item
+       +~time_circadian_reference
+       +~time_unit
+         +~processes
+           +~nounlist
+       +~time_instant
+       +~measurelist
+       +~games_kid
+         +~game
+           +~toy_store
+             +~store_type
+           +~gamelist
+           +~toy
+             +~tool
+             +~toyable
+               +~functions
+             +~entertainment_stuff
+               +~artifacts
+                 +~objects
+                 +~human_data
+       +~age_words
+         +~age_reference
+         +~age_gender
+   +Tag^
+   +Tagen^
+
+After parse TokenFlags: USERINPUT 
+Respond: user:sdf bot:laura ip: (~personal) 11   tag ==> Prima. Was möchstest du denn wissen?  When:Jan15'19-16:29:29 Why:~personal.0.0.~control.2.0   F:2 
+Respond: user:sdf bot:laura ip: (~personal) 12   tag ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan15'19-16:29:31 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~personal) 13   tag ==> Kann ich noch was für dich tun?  When:Jan15'19-16:29:33 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~personal) 14   erz  hl mir doch von deinem tag ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan15'19-16:29:38 Why:~keywordless.1.0.~control.2.0   F:5 
+Command: :build laura
+Start: user:sdf bot:laura ip: rand:2417 (~introduction) 14 ==> Grüß Gott!  When:Jan15'19-16:32:13 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:32:05 0:Jun16'18-18:51:54 F:0 P:Jan15'19-16:29:38 Why:~introduction.0.0.~control.0.0 
+Command: :build laura
+Start: user:sdf bot:laura ip: rand:2417 (~introduction) 14 ==> Grüß Gott!  When:Jan15'19-16:33:23 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:33:14 0:Jun16'18-18:51:54 F:0 P:Jan15'19-16:29:38 Why:~introduction.0.0.~control.0.0 
+Command: :build laura
+Start: user:sdf bot:laura ip: rand:2417 (~introduction) 14 ==> Kann ich noch was für dich tun?  When:Jan15'19-16:33:41 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:33:34 0:Jun16'18-18:51:54 F:0 P:Jan15'19-16:29:38 Why:~keywordless.0.0.~control.2.0 
+Respond: user:sdf bot:laura ip: (~introduction) 15   erz  hl mir doch mal von deinem tag ==> Kann ich noch was für dich tun?  When:Jan15'19-16:34:00 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~introduction) 16   erz  hl tag ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan15'19-16:34:07 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~mother_bio) 17   sage tag ==> Meine Mama ist immer zu Hause. Sie ist schlimm krank.  When:Jan15'19-16:34:10 Why:~mother_bio.0.0=MAMA_SICK.~mother_bio.7.0   F:1 
+Respond: user:sdf bot:laura ip: (~mother_bio) 18   sage tag ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan15'19-16:34:17 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~mother_bio) 19   sage tag ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan15'19-16:34:19 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~mother_bio) 20   sage tag ==> Kann ich noch was für dich tun?  When:Jan15'19-16:34:21 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~mother_bio) 21   sage tag ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan15'19-16:34:23 Why:~keywordless.1.0.~control.2.0   F:2 
+Command: :why
+~keywordless.1.0.4.2.0  r:  Ich glaube das hab ich nicht ganz verstanden. ^keep ( ) ^repeat ( ) 
+ via ~control.4.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :prepare erz  hle
+TokenControl: DO_NUMBER_MERGE DO_DATE_MERGE NO_HYPHEN_END 
+
+
+Original User Input: erz  hle
+Tokenized into: erz  hle  
+Actual used input: erz hle 
+
+
+Concepts: 
+
+1: erz (raw):
+   +erz
+   +~unknownword
+ // 
+1: unknown-word (canonical):    +unknown-word
+ //  
+
+2: hle (raw):
+   +hle
+   +~unknownword
+ // 
+2: unknown-word (canonical):    +unknown-word
+ //  
+
+Sequences:
+   +Erz^
+
+
+After parse TokenFlags: USERINPUT 
+Command: :prepare erzaehle
+TokenControl: DO_NUMBER_MERGE DO_DATE_MERGE NO_HYPHEN_END 
+
+
+Original User Input: erzaehle
+Tokenized into: erzaehle  
+Actual used input: erzaehle 
+
+
+Concepts: 
+
+1: erzaehle (raw):
+   +erzaehle
+   +~unknownword
+ // 
+1: unknown-word (canonical):    +unknown-word
+ //  
+
+Sequences:
+
+After parse TokenFlags: USERINPUT 
+Command: :prepare sagen
+TokenControl: DO_NUMBER_MERGE DO_DATE_MERGE NO_HYPHEN_END 
+
+
+Original User Input: sagen
+Tokenized into: sagen  
+Actual used input: sagen 
+
+
+Concepts: 
+
+1: sagen (raw):
+       +~quotableverbs
+       +~tell
+         +~speak_verbs
+           +~communicate_verbs
+             +~social_verbs
+               +~animate_verbs
+                 +~verblist
+       +~explain
+   +sagen
+ // 
+1: sagen (canonical):  //  
+
+Sequences:
+   +Sagen^
+
+After parse TokenFlags: USERINPUT 
+Respond: user:sdf bot:laura ip: (~mother_bio) 22   sage tage ==> Kann ich noch was für dich tun?  When:Jan15'19-16:36:55 Why:~keywordless.0.0.~control.2.0   F:2 
+Respond: user:sdf bot:laura ip: (~mother_bio) 23   sage tag ==> Kann ich noch was für dich tun?  When:Jan15'19-16:36:57 Why:~keywordless.0.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~mother_bio) 24   sage tag ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan15'19-16:37:00 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura ip: (~mother_bio) 25   sage tag ==> Kann ich noch was für dich tun?  When:Jan15'19-16:37:03 Why:~keywordless.0.0.~control.2.0   F:0 

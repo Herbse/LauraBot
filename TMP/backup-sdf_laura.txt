@@ -1,0 +1,79 @@
+﻿USERS/topic_sdf_laura_GERMAN.txt
+jul2116 Jun16'18-18:51:54 Jan15'19-16:37:00 1547566440-20.0.0.4.2.0 |
+15 24 0 DY 0 20 20 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~personal ~introduction ~mother_bio #pending
+~personal + 1 3m5ak ia b 0 0 
+~introduction + 2 YlBFlIs*Ok3 iaaa e 0 0 
+#`end topics
+$cs_randindex=2402
+$cs_bot=Laura
+$cs_login=sdf
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=sdf: >
+$botprompt=LAURA: 
+$singleresponse=1
+$cs_token=1180160
+$event_state=0
+$openly_situation=0
+$cs_trace=0
+#`end variables
+0 #set flags
+#`end fact sets
+#`end user facts 0
+#context 
+ rando
+ rando
+ rando
+ rando
+ rando
+ rando
+ rando
+ rando
+ rando
+ rando
+ tag
+ tag
+ tag
+ erz  hl mir doch von deinem tag
+ erz  hl mir doch mal von deinem tag
+ erz  hl tag
+ sage tag
+ sage tag
+ sage tag
+ sage tag
+ sage tag
+ sage tage
+ sage tag
+ sage tag
+#`end user
+ Hallo!
+ 4
+ 1
+ 7
+ 2
+ 9
+ 8
+ 4
+ 1
+ 2
+ 7
+ Prima. Was möchstest du denn wissen?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Grüß Gott!
+ Grüß Gott!
+ Kann ich noch was für dich tun?
+ Kann ich noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Meine Mama ist immer zu Hause. Sie ist schlimm krank.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+ Kann ich noch was für dich tun?
+ Kann ich noch was für dich tun?
+ Ich glaube das hab ich nicht ganz verstanden.
+#`end chatbot

@@ -1,2 +1,2 @@
-dependencies: /Users/hermannbarbe/ChatScript-8.2/SRC/jsmn.cpp \
-  /Users/hermannbarbe/ChatScript-8.2/SRC/jsmn.h
+dependencies: /Users/hermannbarbe/Documents/GitHub/LauraBot/SRC/jsmn.cpp \
+  /Users/hermannbarbe/Documents/GitHub/LauraBot/SRC/jsmn.h

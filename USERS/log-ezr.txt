@@ -1,0 +1,32 @@
+﻿Start: user:ezr bot:laura ip: rand:183 (~introduction) 0 ==> Grüß Gott!  When:Jan15'19-17:30:57 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:33:34 0:Jan15'19-17:30:57 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Command: :prepare erzählen
+TokenControl: DO_NUMBER_MERGE DO_DATE_MERGE NO_HYPHEN_END 
+
+
+Original User Input: erzählen
+Tokenized into: erzählen  
+Actual used input: erzählen 
+
+
+Concepts: 
+
+1: erzählen (raw):
+       +~quotableverbs
+       +~tell
+         +~speak_verbs
+           +~communicate_verbs
+             +~social_verbs
+               +~animate_verbs
+                 +~verblist
+   +erzählen
+ // 
+1: erzählen (canonical):  //     +~utf8
+
+
+Sequences:
+   +Erzählen^
+
+After parse TokenFlags: USERINPUT 
+Respond: user:ezr bot:laura ip: (~hobbies_bio) 1   erzähl mir doch mal von deinem tag ==> Ich gehe immer am Dienstags in den Club, Hiphop tanzen.  When:Jan15'19-17:33:06 Why:~hobbies_bio.0.0=HOBBIES_DANCE.~hobbies_bio.7.0   F:3 
+Respond: user:ezr bot:laura ip: (~personal) 2   Erzähl mir doch mla von deinem tag ==> Prima. Was möchstest du denn wissen?  When:Jan15'19-17:33:18 Why:~personal.0.0.~control.2.0   F:1 
+Respond: user:ezr bot:laura ip: (~personal) 3   erzähl mir doch mal von deinem tag ==> Kann ich noch was für dich tun?  When:Jan15'19-17:33:25 Why:~keywordless.0.0.~control.2.0   F:1 

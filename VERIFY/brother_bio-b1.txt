@@ -1,0 +1,12 @@
+﻿ ~brother_bio.0.0 #! Hast du noch Geschwister?
+ ~brother_bio.1.0 #! Hast du einen Bruder?
+ ~brother_bio.2.0 #! Hast du eine Schwester?
+ ~brother_bio.3.0 #! Wie alt ist Leon?
+ ~brother_bio.4.0 #! Wie alt sind die Freunde?
+ ~brother_bio.5.0 #! Und wie findest du den Leon?
+ ~brother_bio.5.0 #! Wie ist euer Verhältnis?
+ ~brother_bio.6.0 #! Wie heißen die Freunde deines Bruders?
+ ~brother_bio.7.0 #! Was machst du denn gerne mit Leon
+ ~brother_bio.8.0 #! Erzähl mir doch mehr über Leon.
+ ~brother_bio.9.0 #! Erzähl mir doch mehr über Leon.
+ ~brother_bio.10.0 #! Erzähl mir doch mehr über Leon.

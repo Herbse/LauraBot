@@ -329,3 +329,38 @@ Command: :why
 Respond: user:sdg bot:oob ip: (~introduction) 5   [ping] ==> Pong.  When:Dec05'18-14:51:20 Why:~control.0.0   F:1 
 Command: :build oob
 Start: user:sdg bot:oob ip: rand:2408 (~introduction) 5 ==> Das ist der Test.  When:Dec05'18-14:51:45 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:51:36 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:51:20 Why:~introduction.1.0.~control.3.0 
+Start: user:sdg bot:laura ip: rand:2413 (~introduction) 9 ==> Hey!  When:Jan15'19-16:41:51 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:33:34 0:Jun19'18-15:57:43 F:1543923360-10.2.8.10.6.0 P:Dec04'18-16:08:21 Why:~introduction.0.0.~control.0.0 
+Command: :prepare er  hlen
+TokenControl: DO_NUMBER_MERGE DO_DATE_MERGE NO_HYPHEN_END 
+
+
+Original User Input: er  hlen
+Tokenized into: er  hlen  
+Actual used input: er hlen 
+
+
+Concepts: 
+
+1: er (raw):
+   +~pronoun
+   +~pronoun_subject
+   +~pronoun_object
+   +~noun_phrase
+   +er
+ // 
+1: er (canonical):  //  
+
+2: hlen (raw):
+   +hlen
+   +~unknownword
+ // 
+2: unknown-word (canonical):    +unknown-word
+ //  
+
+Sequences:
+   +Er^
+       +~tv_show
+   +ER^
+
+
+After parse TokenFlags: USERINPUT 

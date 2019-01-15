@@ -10,15 +10,36 @@ u: (<<~own du ~brother>>) Ja.
 #! Hast du eine Schwester?
 u: (<<~own du schwester>>) Nein. Ich habe einen Bruder.
 
+#! Wie alt ist Leon?
+u: (~age Leon) 12.
+
+#! Wie alt sind die Freunde?
+u: (<<~age freunde>>) So alt wie Leon.
+
 #! Und wie findest du den Leon?
 #! Wie ist euer Verhältnis?
 u: (<<~relationship [Leon ~brother ihm eure]>>) Ich mag Leon richtig gerne.
+
+#! Wie heißen die Freunde deines Bruders?
+u: (<<~names freunde>>) Max und Cem
+
+
+
+# Kernaussagen----------------------------------------------------------------------------------------
 
 #! Was machst du denn gerne mit Leon
 u: LEON_FIFA (<<~action [Leon ~brother]>>) Wenn der Leon FIFA spielt darf ich immer zugucken.
 
 #! Erzähl mir doch mehr über Leon.
-u: (<<~speak_verbs Leon>>) Wenn Leons Freunde kommen, muss ich immer alleine spielen.
+u: LEON_FRIENDS (<<~speak_verbs Leon>>) Wenn Leons Freunde kommen, muss ich immer alleine spielen.
+
+#! Erzähl mir doch mehr über Leon.
+u: LEON_GAMES (<<~speak_verbs Leon>>) Die spielen dann auch so andere Spiele mit Schießen und Leon sagt, ich soll da nicht zugucken.
+
+#! Erzähl mir doch mehr über Leon.
+u: LEON_LEAVE (<<~speak_verbs Leon>>) Dann gehe ich raus oder zu Mira. 
+# ----------------------------------------------------------------------------------------------------
+
 
 u: ($openly_situation_home=1) $openly_situation_home=0 ^reuse(LEON_FIFA)
 u: ($openly_situation=1) $openly_situation=0 ^reuse(LEON_FIFA)

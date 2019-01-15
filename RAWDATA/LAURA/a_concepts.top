@@ -20,4 +20,5 @@ concept: ~places [Zimmer zu_Hause Hause zu_hause Schule Schulweg Tanzen ~residen
 concept: ~problems [Stress Problem  Schwierigkeiten Probleme Zwist Streit Ungereimtheit Streitigkeiten]
 concept: ~residence [Wohnort Haus Wohnung wohnst lebst täst]
 concept: ~relationship [Verhältnis Verhältniss verhältnis verhältniss Beziehung findest verstehst versteht]
+concept: ~school [Schule Hort]
 concept: ~why [woher "wie das" "was meinst" wozu warum weshalb wieso wie was worüber]

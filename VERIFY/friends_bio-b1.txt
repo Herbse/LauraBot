@@ -1,0 +1,7 @@
+﻿ ~friends_bio.0.0 #! Hast du eine Freundin?
+ ~friends_bio.1.0 #! Was macht ihr so zusammen?
+ ~friends_bio.2.0 #! Und was ist jetzt mit ihr los?
+ ~friends_bio.3.0 #! Erzähl mir mehr über Mira!
+ ~friends_bio.4.0 #! Habt ihr sonst gemeinsame Hobbies?
+ ~friends_bio.5.0 #! Was macht ihr so zusammen?
+ ~friends_bio.6.0 #! Beziehung

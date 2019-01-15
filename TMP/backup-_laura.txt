@@ -1,39 +1,27 @@
 ﻿USERS/topic__laura_GERMAN.txt
-jul2116 Jan09'19-12:04:14 Jan09'19-14:33:14 0 |
-5 6 0 DY 0 18 18 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+jul2116 Jan15'19-18:29:17 Jan15'19-18:29:21 1547573357-20.0.0.4.2.0 |
+1 1351 0 DY 0 20 20 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
 ~introduction ~personal #pending
-~personal + 1 3m5ak ia 6 0 0 
-~introduction + 2 h!w3wIs*Ok3 iaaa 4 0 0 
+~personal + 1 3m5ak ia 3 0 0 
+~introduction + 2 YlBFlIs*Ok3 iaaa 1 0 0 
 #`end topics
-$cs_randindex=1285
-$cs_bot=Laura
-$cs_control_main=~control
-$cs_language=german
-$cs_externaltag=~xpostagsentence
-$userprompt=: >
-$botprompt=LAURA: 
-$singleresponse=1
-$cs_token=1180160
 $event_state=0
+$cs_token=1180160
+$singleresponse=1
+$botprompt=LAURA: 
+$userprompt=: >
+$cs_externaltag=~xpostagsentence
+$cs_language=german
+$cs_control_main=~control
+$cs_bot=Laura
+$cs_randindex=1285
 $cs_trace=0
 #`end variables
 0 #set flags
 #`end fact sets
 #`end user facts 0
 #context 
- rand
- rand
- rand
- rand
- ping
- frage
+ 
 #`end user
- Grüß Gott!
- 9
- 10
- 7
- 11
  Kann ich noch was für dich tun?
- Kann ich noch was für dich tun?
- Prima. Was möchstest du denn wissen?
 #`end chatbot

@@ -14,9 +14,8 @@ u: (~emohello) Wie heißt du?
 	#! Will ich nicht sagen.
 	a: NO_NAME (<<[wissen sagen angeben]  nicht>>) Ok, dann nicht. Du kannst mir aber trotzdem eine Frage zu meiner Biographie stellen. Ansonsten kommen wir hier nicht weiter.
 
-#!test für dan randomizer
-
-u: (rand) [1][2][3][4][5][6][7][8][9][10][11][12]
+#! randomizer test
+u: (rando) [1][2][3][4][5][6][7][8][9][10][11][12]
 
 #! Wie geht es dir?
 #! Ist alles in Ordnung?
@@ -30,6 +29,10 @@ u: OPENLY_SITUATION(<<~emohow_open ~bot>>) $openly_situation=1 ^respond(~topic_r
 
 #! Worüber möchtest du heute mit mir sprechen?
 u: (<~why * ~speak_verbs) ^reuse(OPENLY_SITUATION)
+
+#! Erzähl mir von deinem Tag.
+#! Erzähl mir doch mal, wie sieht ein typischer Tag bei dir aus?
+u: (<<~speak_verbs tag>>) ^reuse(OPENLY_SITUATION)
 
 #! Möchtest du über deine Eltern sprechen?
 u: TOPIC_CHOICE(über *1 _*1 sprechen) ^refine()

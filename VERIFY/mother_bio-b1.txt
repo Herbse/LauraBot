@@ -1,0 +1,6 @@
+﻿ ~mother_bio.0.0 #! Was machen deine Eltern so?
+ ~mother_bio.1.0 #! Was hat sie denn?
+ ~mother_bio.2.0 #! Erzähl mir mehr über deine Mama!
+ ~mother_bio.3.0 #! Und was machst du gerne mit deiner Mama?
+ ~mother_bio.4.0 #! Sie hilft dir also bei den Hausaufgaben?)
+ ~mother_bio.5.0 #! Beziehung
