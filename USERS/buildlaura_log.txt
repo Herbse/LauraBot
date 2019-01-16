@@ -2,12 +2,6 @@
 
 >>Reading folder RAWDATA/LAURA/
 
-----Reading file school_class.top
-Reading topic ~school_class
-
-----Reading file school_soz.top
-Reading topic ~school_soz
-
 ----Reading file z_simplecontrol.top
 Rename @9 as @chatoutput
 Reading outputmacro: ^laura
@@ -65,7 +59,6 @@ Reading concept ~places
 Reading concept ~problems
 Reading concept ~residence
 Reading concept ~relationship
-Reading concept ~school
 Reading concept ~why
 
 ----Reading file handle_oob.top

@@ -1,20 +1,21 @@
 USERS/topic_sdg_laura_GERMAN.txt
 jul2116 Jun19'18-15:57:43 Dec04'18-16:08:21 1543923360-10.2.8.10.6.0 |
-10 9 0 DY 0 20 20 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
-~event_uncle ~personal ~introduction #pending
-~introduction + 2 YlBFlIs*Ok3 iaaa 9 0 0 
+1 9 0 DY 0 18 18 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction ~event_uncle ~personal #pending
+~personal + 1 ZkwsA ia 9 0 0 
+~introduction + 1 s1Q@# ia 0 0 0 
 #`end topics
-$event_state=0
-$cs_token=1180160
-$singleresponse=1
-$botprompt=LAURA: 
-$userprompt=sdg: >
-$cs_externaltag=~xpostagsentence
-$cs_language=german
-$cs_control_main=~control
-$cs_login=sdg
-$cs_bot=Laura
 $cs_randindex=2403
+$cs_bot=Laura
+$cs_login=sdg
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=sdg: >
+$botprompt=LAURA: 
+$singleresponse=1
+$cs_token=1180160
+$event_state=2
 $cs_trace=0
 #`end variables
 0 #set flags
@@ -41,5 +42,4 @@ $cs_trace=0
  Der kommt in mein Zimmer, obwohl ich das nicht will.
  Kann ich noch was für dich tun?
  Prima. Was möchstest du denn wissen?
- Hey!
 #`end chatbot

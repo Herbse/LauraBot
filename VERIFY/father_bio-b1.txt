@@ -1,5 +1,0 @@
-﻿ ~father_bio.0.0 #! Erzähl mal etwas über deinen Vater?
-     ~father_bio.0.1 #! Wie hilft er ihr?
- ~father_bio.2.0 #! Erzähl mir mehr über deinen Papa!
- ~father_bio.3.0 #! Was machst du denn gern mit deinem Papa?
- ~father_bio.4.0 #! Beziehung

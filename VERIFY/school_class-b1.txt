@@ -1,4 +1,0 @@
-﻿ ~school_class.0.0 #! 
- ~school_class.1.0 #! 
- ~school_class.2.0 #! 
- ~school_class.3.0 #! 

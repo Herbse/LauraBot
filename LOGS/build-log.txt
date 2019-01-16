@@ -1070,7 +1070,65 @@ SRC/mainSystem.cpp:2504:37: warning: conversion from string literal to 'char *' 
 SRC/mainSystem.cpp:2574:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
                         ReplaceWords("Remove ?!", wordCount, 1, 1, tokens);
                                      ^
-22 warnings generated.
+SRC/mainSystem.cpp:2871:7: error: use of undeclared identifier 'i'
+        for (i = 1; i <= wordCount; ++i)
+             ^
+SRC/mainSystem.cpp:2871:14: error: use of undeclared identifier 'i'
+        for (i = 1; i <= wordCount; ++i)
+                    ^
+SRC/mainSystem.cpp:2871:32: error: use of undeclared identifier 'i'
+        for (i = 1; i <= wordCount; ++i)
+                                      ^
+SRC/mainSystem.cpp:2873:31: error: use of undeclared identifier 'i'
+                int start = derivationIndex[i] >> 8;
+                                            ^
+SRC/mainSystem.cpp:2874:29: error: use of undeclared identifier 'i'
+                int end = derivationIndex[i] & 0x00ff;
+                                          ^
+SRC/mainSystem.cpp:2878:9: error: use of undeclared identifier 'j'
+                        for (j = start; j <= reach; ++j)
+                             ^
+SRC/mainSystem.cpp:2878:20: error: use of undeclared identifier 'j'
+                        for (j = start; j <= reach; ++j)
+                                        ^
+SRC/mainSystem.cpp:2878:34: error: use of undeclared identifier 'j'
+                        for (j = start; j <= reach; ++j)
+                                                      ^
+SRC/mainSystem.cpp:2880:39: error: use of undeclared identifier 'j'
+                                strcpy(atword, derivationSentence[j]);
+                                                                  ^
+SRC/mainSystem.cpp:2882:9: error: use of undeclared identifier 'j'
+                                if (j < derivationLength) *atword++ = ' ';
+                                    ^
+SRC/mainSystem.cpp:2891:8: error: use of undeclared identifier 'i'
+                for (i = 1; i <= wordCount; ++i) 
+                     ^
+SRC/mainSystem.cpp:2891:15: error: use of undeclared identifier 'i'
+                for (i = 1; i <= wordCount; ++i) 
+                            ^
+SRC/mainSystem.cpp:2891:33: error: use of undeclared identifier 'i'
+                for (i = 1; i <= wordCount; ++i) 
+                                              ^
+SRC/mainSystem.cpp:2893:43: error: use of undeclared identifier 'i'
+                        Log(STDTRACELOG,(char*)"%s",wordStarts[i]);
+                                                               ^
+SRC/mainSystem.cpp:2894:32: error: use of undeclared identifier 'i'
+                        int start = derivationIndex[i] >> 8;
+                                                    ^
+SRC/mainSystem.cpp:2895:30: error: use of undeclared identifier 'i'
+                        int end = derivationIndex[i] & 0x00ff;
+                                                  ^
+SRC/mainSystem.cpp:2896:35: error: use of undeclared identifier 'i'
+                        if (start == end && wordStarts[i] == derivationSentence[start]) {;} // unchanged from original
+                                                       ^
+SRC/mainSystem.cpp:2899:29: error: use of undeclared identifier 'i'
+                                start = derivationIndex[i] >> 8;
+                                                        ^
+SRC/mainSystem.cpp:2900:27: error: use of undeclared identifier 'i'
+                                end = derivationIndex[i] & 0x00Ff;
+                                                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+22 warnings and 20 errors generated.
 In file included from SRC/markSystem.cpp:3:
 In file included from SRC/common.h:186:
 SRC/os.h:144:34: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
@@ -1578,7 +1636,7 @@ SRC/systemVariables.cpp:5:21: warning: conversion from string literal to 'char *
 char* compileDate = __DATE__    " "  __TIME__;
                     ^
 <scratch space>:231:1: note: expanded from here
-"Jan 15 2019"
+"Jun 16 2018"
 ^
 SRC/systemVariables.cpp:34:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
                 return "";

@@ -1,4 +1,0 @@
-﻿ ~school_soz.0.0 #! 
- ~school_soz.1.0 #! 
- ~school_soz.2.0 #! 
- ~school_soz.3.0 #! 

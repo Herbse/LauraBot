@@ -1,22 +1,3 @@
 ﻿+ @chatoutput 9
-+ laura 
++ oob 
 + defaultbot 
-+ was_macht 
-+ was_geht 
-+ wie_fühlst 
-+ wie_geht's 
-+ wie_geht 
-+ wie_geht_es 
-+ wie_gehts 
-+ wie_ist_es 
-+ was_ist_heute_los 
-+ was_ist_los 
-+ was_beschäftigt 
-+ erzähl_mal 
-+ alles_klar 
-+ na_dann 
-+ und_dann 
-+ so_lala 
-+ zu_hause 
-+ wie_das 
-+ was_meinst 

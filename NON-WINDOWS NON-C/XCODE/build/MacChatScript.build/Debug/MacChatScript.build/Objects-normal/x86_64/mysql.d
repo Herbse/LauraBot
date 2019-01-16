@@ -1,1 +1,1 @@
-dependencies: /Users/hermannbarbe/Documents/GitHub/LauraBot/SRC/mysql.cpp
+dependencies: /Users/hermannbarbe/ChatScript-8.2/SRC/mysql.cpp

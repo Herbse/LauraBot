@@ -1,2 +1,1 @@
-dependencies: \
-  /Users/hermannbarbe/Documents/GitHub/LauraBot/SRC/privatesrc.cpp
+dependencies: /Users/hermannbarbe/ChatScript-8.2/SRC/privatesrc.cpp

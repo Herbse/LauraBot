@@ -1,1 +1,0 @@
-﻿Start: user:qw bot:laura ip: rand:2382 (~introduction) 0 ==> Grüß Gott!  When:Jan15'19-17:29:33 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan15'19-16:33:34 0:Jan15'19-17:29:33 F:0 P:0 Why:~introduction.0.0.~control.0.0 

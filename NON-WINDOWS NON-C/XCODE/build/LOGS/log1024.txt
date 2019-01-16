@@ -1,5 +1,4 @@
 ﻿Tue Jun 19 14:20:36 2018 - Error opening binary write file DICT/ENGLISH/facts.bin:    in facts.txt at 0: 
     Tue Jun 19 14:22:12 2018 - Error opening binary write file DICT/ENGLISH/facts.bin:    in facts.txt at 0: 
     Tue Jun 19 14:27:34 2018 - Error opening binary write file DICT/ENGLISH/facts.bin:    in facts.txt at 0: 
-    Tue Jan 15 17:26:22 2019 - Error opening binary write file DICT/ENGLISH/facts.bin:    in facts.txt at 0: 
     

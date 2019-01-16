@@ -1,5 +1,4 @@
-dependencies: \
-  /Users/hermannbarbe/Documents/GitHub/LauraBot/SRC/javascript.cpp \
-  /Users/hermannbarbe/Documents/GitHub/LauraBot/SRC/duktape/duktape.h \
-  /Users/hermannbarbe/Documents/GitHub/LauraBot/SRC/duktape/duk_config.h \
-  /Users/hermannbarbe/Documents/GitHub/LauraBot/SRC/common1.h
+dependencies: /Users/hermannbarbe/ChatScript-8.2/SRC/javascript.cpp \
+  /Users/hermannbarbe/ChatScript-8.2/SRC/duktape/duktape.h \
+  /Users/hermannbarbe/ChatScript-8.2/SRC/duktape/duk_config.h \
+  /Users/hermannbarbe/ChatScript-8.2/SRC/common1.h
