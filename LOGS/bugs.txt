@@ -85,3 +85,26 @@ OUTPUT-3 Unbalanced ] in
 BUG in topic__anonymous_GERMAN.txt at 0: ^anonymous 
 BUG: Wed Jan 09 14:38:38 2019: input:0 No such bot   -  -  status: defaultbot word not found caller: callee: at  in sentence: ping
 No such bot   -  -  status: defaultbot word not found
+BUG in parents_bio.top at 10: u:  ^reuse(PARENTS_RELATIONSHIP) 
+RULE-3 Missing pattern for responder
+
+BUG in topic_pouh_anonymous_GERMAN.txt at 0: ^anonymous No such bot  pouh -  -  status: defaultbot word not found
+BUG in school_soz.top at 28: #! Machst du die Hausaufgaben manchmal gemeinsam mit deinen Klassenkameraden?  
+#! sample input seen during a call. Probably missing a closing )
+
+BUG in introduction.top at 33: u: WHAT_HAPPEND_CLOSED (<<(was {~places ~people} ~happening>>) $closed_question=1 ^respond(~answer_roulette)  # Hinweis: hier in Zukunft Bedingung abändern, wenn wir darauf achten wollen, ob die Info bereits vom Kind gegeben wurde oder nicht 
+PATTERN-23 Have no << in progress
+
+BUG in friends_bio.top at 68: u: (hast du * ~friend) [Ja] Nein] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in brother_bio.top at 68: u: (<<verbringen ~bot viel zeit [Leon ~brother]) [Mhm][Nee] 
+PATTERN-9 ) is not closing corresponding (
+
+BUG in a_concepts.top at 7: conceüt: ~classmate [mitschüler klassenkameraden klassenkameradinnen] 
+FILE-1 Unknown top-level declaration conceüt: in RAWDATA/LAURA/a_concepts.top
+
+BUG in mother_bio.top at 44: u: (<<anstrengend ~mother helfen) [Ja][Nein] 
+PATTERN-9 ) is not closing corresponding (
+
+BUG in topic_wer_anonymous_GERMAN.txt at 0: ^anonymous No such bot  wer -  -  status: defaultbot word not found

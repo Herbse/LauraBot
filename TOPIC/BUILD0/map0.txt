@@ -9,7 +9,7 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/adjectivehierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/adjectivehierarchy.top
     concept: 1  ~timeadjmodifier
     concept: 2  ~pretimeadjmodifier
     concept: 3  ~color_adjectives
@@ -96,9 +96,9 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOL
     concept: 84  ~transition_adjectives
     concept: 85  ~weather_adjectives
     concept: 86  ~when_adjectives
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/opposite.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/opposite.tbl
     concept: 3  ~numberoperator
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/concepts.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/concepts.top
     concept: 1  ~cartoon_character
     concept: 2  ~architect
     concept: 3  ~athlete
@@ -1164,7 +1164,7 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOL
     concept: 1063  ~yellow_other
     concept: 1064  ~yesanswer
     concept: 1065  ~noanswer
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/prepositionhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/prepositionhierarchy.top
     concept: 1  ~directionplacepreposition
     concept: 2  ~directionon
     concept: 3  ~directionunder
@@ -1182,7 +1182,7 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOL
     concept: 15  ~relationpreposition
     concept: 16  ~timepreposition
     concept: 17  ~prepositionlist
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/adverbhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/adverbhierarchy.top
     concept: 1  ~modifyabletimenoun
     concept: 2  ~timeadvmodifier
     concept: 3  ~modifyabledistancenoun
@@ -1217,7 +1217,7 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOL
     concept: 32  ~viewpoint_adverbs
     concept: 33  ~when_adverbs
     concept: 34  ~negative_adverb_starter
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/verbhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/verbhierarchy.top
     concept: 1  ~determinerlist
     concept: 2  ~qwords
     concept: 3  ~static_verbs
@@ -1454,154 +1454,153 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOL
     concept: 234  ~legal_help
     concept: 235  ~legal_lawmaking
     concept: 236  ~legal_verbs
-    concept: 237  ~like
-    concept: 238  ~linkingverb
-    concept: 239  ~list
-    concept: 240  ~live
-    concept: 241  ~loosen
-    concept: 242  ~lose_verbs
-    concept: 243  ~lost
-    concept: 244  ~lung_ill
-    concept: 245  ~make_cleaner
-    concept: 246  ~make_dirtier
-    concept: 247  ~make_drier
-    concept: 248  ~make_love
-    concept: 249  ~make_wetter
-    concept: 250  ~marry
-    concept: 251  ~medical_improve
-    concept: 252  ~meet
-    concept: 253  ~mental_verbs
-    concept: 254  ~mine
-    concept: 255  ~misc_negative_emotions
-    concept: 256  ~misc_positive_emotions
-    concept: 257  ~motion_ill
-    concept: 258  ~moving_air
-    concept: 259  ~moving_beyond
-    concept: 260  ~moving_escape
-    concept: 261  ~moving_fast_land
-    concept: 262  ~moving_generic
-    concept: 263  ~moving_object
-    concept: 264  ~moving_slow_land
-    concept: 265  ~moving_to
-    concept: 266  ~moving_water
-    concept: 267  ~negative_social
-    concept: 268  ~nice_weather
-    concept: 269  ~nonverbal_communication_verbs
-    concept: 270  ~obedience_verbs
-    concept: 271  ~opinion_verbs
-    concept: 272  ~own
-    concept: 273  ~possess
-    concept: 274  ~parent
-    concept: 275  ~pause
-    concept: 276  ~perception_verbs
-    concept: 277  ~photographing
-    concept: 278  ~physicalattribute_verbs
-    concept: 279  ~play
-    concept: 280  ~play_instrument
-    concept: 281  ~play_sport
-    concept: 282  ~positive_social
-    concept: 283  ~possession_verbs
-    concept: 284  ~praise
-    concept: 285  ~prevent
-    concept: 286  ~price
-    concept: 287  ~promise
-    concept: 288  ~purchaseinterest
-    concept: 289  ~rain
-    concept: 290  ~read
-    concept: 291  ~reasoning_basis
-    concept: 292  ~reasoning_conclusion
-    concept: 293  ~reasoning_process
-    concept: 294  ~reasoning_think_verbs
-    concept: 295  ~reduce_containment
-    concept: 296  ~remain_stationary
-    concept: 297  ~remember
-    concept: 298  ~remove_magnetism
-    concept: 299  ~remove_smell
-    concept: 300  ~repair
-    concept: 301  ~repeat
-    concept: 302  ~reproduce_verbs
-    concept: 303  ~resurrect
-    concept: 304  ~role_verbs
-    concept: 305  ~rust
-    concept: 306  ~search
-    concept: 307  ~sell
-    concept: 308  ~sew
-    concept: 309  ~sharpen
-    concept: 310  ~silence
-    concept: 311  ~simplify
-    concept: 312  ~sleep
-    concept: 313  ~sleepstate_verbs
-    concept: 314  ~smell
-    concept: 315  ~social_reputation_verbs
-    concept: 316  ~social_verbs
-    concept: 317  ~speak_thru_device
-    concept: 318  ~speak_verbs
-    concept: 319  ~special_activities_verbs
-    concept: 320  ~start
-    concept: 321  ~steal
-    concept: 322  ~stomach_ill
-    concept: 323  ~stop_verbs
-    concept: 324  ~strengthen
-    concept: 325  ~substitute
-    concept: 326  ~surprise
-    concept: 327  ~swallow_drink_verbs
-    concept: 328  ~swallow_either
-    concept: 329  ~swallow_food_verbs
-    concept: 330  ~swallowing_verbs
-    concept: 331  ~swap
-    concept: 332  ~talkstyle
-    concept: 333  ~taste
-    concept: 334  ~tell
-    concept: 335  ~think_verbs
-    concept: 336  ~throw
-    concept: 337  ~tighten
-    concept: 338  ~time_delay
-    concept: 339  ~time_event_verbs
-    concept: 340  ~time_passage
-    concept: 341  ~tobe
-    concept: 342  ~involve
-    concept: 343  ~touch
-    concept: 344  ~undress
-    concept: 345  ~unjoin
-    concept: 346  ~use
-    concept: 347  ~vehicle_verbs
-    concept: 348  ~verbal_agree
-    concept: 349  ~verbal_disagree
-    concept: 350  ~verblist
-    concept: 351  ~videoing
-    concept: 352  ~vision_verbs
-    concept: 353  ~waken
-    concept: 354  ~want
-    concept: 355  ~watch
-    concept: 356  ~weaken
-    concept: 357  ~weather_verbs
-    concept: 358  ~wind
-    concept: 359  ~won
-    concept: 360  ~worship
-    concept: 361  ~writing
-    concept: 362  ~comment
-    concept: 363  ~ask
-    concept: 364  ~post
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/affect.top
+    concept: 237  ~linkingverb
+    concept: 238  ~list
+    concept: 239  ~live
+    concept: 240  ~loosen
+    concept: 241  ~lose_verbs
+    concept: 242  ~lost
+    concept: 243  ~lung_ill
+    concept: 244  ~make_cleaner
+    concept: 245  ~make_dirtier
+    concept: 246  ~make_drier
+    concept: 247  ~make_love
+    concept: 248  ~make_wetter
+    concept: 249  ~marry
+    concept: 250  ~medical_improve
+    concept: 251  ~meet
+    concept: 252  ~mental_verbs
+    concept: 253  ~mine
+    concept: 254  ~misc_negative_emotions
+    concept: 255  ~misc_positive_emotions
+    concept: 256  ~motion_ill
+    concept: 257  ~moving_air
+    concept: 258  ~moving_beyond
+    concept: 259  ~moving_escape
+    concept: 260  ~moving_fast_land
+    concept: 261  ~moving_generic
+    concept: 262  ~moving_object
+    concept: 263  ~moving_slow_land
+    concept: 264  ~moving_to
+    concept: 265  ~moving_water
+    concept: 266  ~negative_social
+    concept: 267  ~nice_weather
+    concept: 268  ~nonverbal_communication_verbs
+    concept: 269  ~obedience_verbs
+    concept: 270  ~opinion_verbs
+    concept: 271  ~own
+    concept: 272  ~possess
+    concept: 273  ~parent
+    concept: 274  ~pause
+    concept: 275  ~perception_verbs
+    concept: 276  ~photographing
+    concept: 277  ~physicalattribute_verbs
+    concept: 278  ~play
+    concept: 279  ~play_instrument
+    concept: 280  ~play_sport
+    concept: 281  ~positive_social
+    concept: 282  ~possession_verbs
+    concept: 283  ~praise
+    concept: 284  ~prevent
+    concept: 285  ~price
+    concept: 286  ~promise
+    concept: 287  ~purchaseinterest
+    concept: 288  ~rain
+    concept: 289  ~read
+    concept: 290  ~reasoning_basis
+    concept: 291  ~reasoning_conclusion
+    concept: 292  ~reasoning_process
+    concept: 293  ~reasoning_think_verbs
+    concept: 294  ~reduce_containment
+    concept: 295  ~remain_stationary
+    concept: 296  ~remember
+    concept: 297  ~remove_magnetism
+    concept: 298  ~remove_smell
+    concept: 299  ~repair
+    concept: 300  ~repeat
+    concept: 301  ~reproduce_verbs
+    concept: 302  ~resurrect
+    concept: 303  ~role_verbs
+    concept: 304  ~rust
+    concept: 305  ~search
+    concept: 306  ~sell
+    concept: 307  ~sew
+    concept: 308  ~sharpen
+    concept: 309  ~silence
+    concept: 310  ~simplify
+    concept: 311  ~sleep
+    concept: 312  ~sleepstate_verbs
+    concept: 313  ~smell
+    concept: 314  ~social_reputation_verbs
+    concept: 315  ~social_verbs
+    concept: 316  ~speak_thru_device
+    concept: 317  ~speak_verbs
+    concept: 318  ~special_activities_verbs
+    concept: 319  ~start
+    concept: 320  ~steal
+    concept: 321  ~stomach_ill
+    concept: 322  ~stop_verbs
+    concept: 323  ~strengthen
+    concept: 324  ~substitute
+    concept: 325  ~surprise
+    concept: 326  ~swallow_drink_verbs
+    concept: 327  ~swallow_either
+    concept: 328  ~swallow_food_verbs
+    concept: 329  ~swallowing_verbs
+    concept: 330  ~swap
+    concept: 331  ~talkstyle
+    concept: 332  ~taste
+    concept: 333  ~tell
+    concept: 334  ~think_verbs
+    concept: 335  ~throw
+    concept: 336  ~tighten
+    concept: 337  ~time_delay
+    concept: 338  ~time_event_verbs
+    concept: 339  ~time_passage
+    concept: 340  ~tobe
+    concept: 341  ~involve
+    concept: 342  ~touch
+    concept: 343  ~undress
+    concept: 344  ~unjoin
+    concept: 345  ~use
+    concept: 346  ~vehicle_verbs
+    concept: 347  ~verbal_agree
+    concept: 348  ~verbal_disagree
+    concept: 349  ~verblist
+    concept: 350  ~videoing
+    concept: 351  ~vision_verbs
+    concept: 352  ~waken
+    concept: 353  ~want
+    concept: 354  ~watch
+    concept: 355  ~weaken
+    concept: 356  ~weather_verbs
+    concept: 357  ~wind
+    concept: 358  ~won
+    concept: 359  ~worship
+    concept: 360  ~writing
+    concept: 361  ~comment
+    concept: 362  ~ask
+    concept: 363  ~post
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/affect.top
     concept: 1  ~badness
     concept: 2  ~weakbadness
     concept: 3  ~strongbadness
     concept: 4  ~goodness
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/PARSER/parsedata.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/PARSER/parsedata.top
     concept: 1  ~misc_parsedata
     concept: 2  ~causal_to_infinitive_verbs
     concept: 3  ~verbs_of_perception
     concept: 4  ~completeness_adjectives
     concept: 5  ~quotableverbs
     concept: 6  ~restrictive_adverbs
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/ONTOLOGY/GERMAN/PARSER/timewords.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/PARSER/timewords.top
     concept: 1  ~timewords
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/container.tbl
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/material.tbl
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/musicbasic.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/container.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/material.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/musicbasic.tbl
           if 6 125  
           ifend 6 177  
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/malepeople.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/malepeople.tbl
           if 43 33  
           ifend 43 99  
           if 44 104  
@@ -1610,20 +1609,20 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLD
           ifend 505 87  
           if 506 92  
           ifend 506 148  
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/animals.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/animals.tbl
     concept: 100  ~animal_homes
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/femalepeople.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/femalepeople.tbl
     concept: 1  ~designer
     concept: 55  ~career
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/music.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/music.tbl
     concept: 1  ~song
     concept: 3  ~celebrity
           if 286 33  
           ifend 286 87  
           if 287 92  
           ifend 287 144  
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/speed.tbl
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/tools.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/speed.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/tools.tbl
           if 19 156  
           ifend 19 210  
           if 20 215  
@@ -1636,14 +1635,14 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLD
           ifend 23 446  
           if 24 451  
           ifend 24 502  
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/videogames.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/videogames.tbl
           if 3 4  
           if 7 96  
           ifend 7 148  
           ifend 8 154  
           if 9 159  
           ifend 13 286  
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/peoplegroups.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/peoplegroups.tbl
     concept: 2  ~nfc-west_football_team
     concept: 3  ~nfc-east_football_team
     concept: 4  ~afc-west_football_team
@@ -1653,8 +1652,8 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLD
     concept: 8  ~afc-south_football_team
     concept: 9  ~afc-north_football_team
     concept: 10  ~football_teams
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/lifespan.tbl
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/things.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/lifespan.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/things.tbl
     concept: 1  ~electronics_store
     concept: 2  ~grocery
     concept: 32  ~hot_things
@@ -1677,16 +1676,16 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLD
     concept: 405  ~use_intentionverbs
     concept: 406  ~blowing
     concept: 407  ~interrogate
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/basicgeography.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/basicgeography.tbl
     concept: 166  ~countryadjective
     concept: 442  ~capital
     concept: 714  ~state_region
           if 719 104  
           ifend 723 322  
     concept: 1253  ~currency
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/color.tbl
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/geography.tbl
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/literature.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/color.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/geography.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/literature.tbl
           if 13 105  
           ifend 17 221  
           if 18 226  
@@ -1699,7 +1698,7 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLD
           ifend 1044 277  
           if 1243 4  
           ifend 1249 180  
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/basicbooks.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/basicbooks.tbl
           if 4 33  
           ifend 4 87  
           if 5 92  
@@ -1716,14 +1715,14 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLD
           ifend 54 279  
           if 55 284  
           ifend 55 337  
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/movies_tv.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/movies_tv.tbl
           if 7 4  
           if 10 81  
           ifend 13 163  
           ifend 14 169  
           if 25144 4  
           ifend 25148 119  
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/WORLDDATA/basicmovies_tv.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/basicmovies_tv.tbl
           if 330 4  
           ifend 334 119  
           if 356 4  

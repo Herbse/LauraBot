@@ -1,4 +1,4 @@
-topic: ~answer_roulette nostay()
+topic: ~answer_roulette keep repeat nostay()
 
 u: ($closed_question=1) $closed_question=0 [Ja][Nein][Ich weiß nicht.][Keine Ahnung.][Mhm.][Nee]
 u: ($closed_question_emo=1) $closed_question_emo=0 [Naja, es geht so.] [Nicht gut.] [Weiß nicht][Ganz okay.]

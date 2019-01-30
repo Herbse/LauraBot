@@ -1,59 +1,58 @@
-topic: ~introduction  keep repeat()
+topic: ~introduction  keep repeat (hallo hi ~emohow_open ~emohow_closed ~speak_verbs ~narrate ~happening familie ~home tag)
 
 t: $event_state=0 [Hallo!][Hey!][Grüß Gott!]
 
-u: (~emohello) Wie heißt du?
-	#! Ich bin Tom.
-	a: USER_NAME ([sein bin] _*1 >) $name = '_0 Freut mich dich kennenzulernen, _0. Ich heiße Laura. Stelle mir eine Frage zu meiner Biographie! (Denn im Moment weiß ich nicht viel mehr...)
-	#! Ich heiße Tom.
-	a: (ich heiße _*1 >) ^reuse(USER_NAME)
-	#! Mein Name ist Tom.
-	a: (mein name [sein ist] _*1 > ) $name = '_0 ^reuse(USER_NAME)
-	#! Tom.
-	a: ( < _*1 > ) $name = '_0 ^reuse(USER_NAME)	 
-	#! Will ich nicht sagen.
-	a: NO_NAME (<<[wissen sagen angeben]  nicht>>) Ok, dann nicht. Du kannst mir aber trotzdem eine Frage zu meiner Biographie stellen. Ansonsten kommen wir hier nicht weiter.
-
-#! randomizer test
-u: (rando) [1][2][3][4][5][6][7][8][9][10][11][12]
+u: ([hallo hi]) Ich bin Laura und möchte dir etwas erzählen.
 
 #! Wie geht es dir?
 #! Ist alles in Ordnung?
 u: CLOSED_SITUATION(<<~emohow_closed ~bot>>) $closed_question_emo=1 ^respond(~answer_roulette)
   #! Warum geht es dir denn nicht so gut?
-  a: (~why) $openly_situation=1 ^respond(~event_uncle)
+  a: (~why) $narrative=1 ^respond(~event_uncle)
 
 #! Was beschäftigt dich denn gerade?
 #! Was ist los bei dir?
-u: OPENLY_SITUATION(<<~emohow_open ~bot>>) $openly_situation=1 ^respond(~topic_roulette)
+u: OPENLY_SITUATION(<<~emohow_open ~bot>>) $narrative=1 ^respond(~topic_roulette)
 
-#! Worüber möchtest du heute mit mir sprechen?
+#! Worüber möchtest du heute mit mir sprechen? 
+#(PLACEHOLDER CHECKEN)
 u: (<~why * ~speak_verbs) ^reuse(OPENLY_SITUATION)
 
 #! Erzähl mir von deinem Tag.
 #! Erzähl mir doch mal, wie sieht ein typischer Tag bei dir aus?
-u: (<<~speak_verbs tag>>) ^reuse(OPENLY_SITUATION)
+u: (<<~narrate tag>>) ^reuse(OPENLY_SITUATION)
 
 #! Möchtest du über deine Eltern sprechen?
-u: TOPIC_CHOICE(über *1 _*1 sprechen) ^refine()
+u: TOPIC_CHOICE(über *1 _*1 ~speak_verbs) ^refine()
   a:(_0?~parents) $topic = parents ^respond(~topic_roulette)
   a:(_0==onkel) $topic = uncle ^respond(~topic_roulette)
   a:(_0==bruder) $topic = brother ^respond(~topic_roulette)
   a:() Nein, darüber möchte ich nicht sprechen.
 
 #! Ist dir etwas in der Schule/zu Hause/mit deinen Eltern/mit deinem Onkel passiert?
-u: WHAT_HAPPEND_CLOSED (<<(was) {~places ~people} ~happening>>) $closed_question=1 ^respond(~answer_roulette)  # Hinweis: hier in Zukunft Bedingung abändern, wenn wir darauf achten wollen, ob die Info bereits vom Kind gegeben wurde oder nicht
+u: WHAT_HAPPEND_CLOSED (<<was {~places ~people} ~happening>>) $closed_question=1 ^respond(~answer_roulette)  
 
 #! Was ist dir denn passiert?
-u: WHAT_HAPPEND_OPEN (<was *~3  ~happening) $openly_situation=1 ^respond(~event_uncle)
+u: WHAT_HAPPEND_OPEN (<was *~3  ~happening) $narrative=1 ^respond(~event_uncle)
 
 #! Gibt es vielleicht Stress mit jemandem aus deiner Klasse.
 u: PROBLEMS (<<~problems [mit in beim]>>) $closed_question_prob=1 ^respond(~answer_roulette)
   a: (<<oder [mit in]>>) Ich habe ja gesagt, dass ich keine Probleme habe.
 
-#! Wie läuft es denn so zu Hause?
-u: OPENLY_SITUATION_HOME(<<zu hause>>) $openly_situation_home=1 ^respond(~topic_roulette)
+#! Erzähl mir von zu Hause.
+#! Erzähl ruhig mal, wie das dann so bei dir zuhause ist. 
+#! Erzähl mir was ihr zusammen macht, wenn du zuhause bist. 
+u: OPENLY_SITUATION_HOME(<<~narrate ~home>>) $openly_situation_home=1 ^respond(~topic_roulette)
 
-#! Wie alt bist du?
-#! Was ist dein Alter?
-u: (<<~age [du dein]>>) Ich bin 10 Jahre alt.
+#! Wie läuft es in der Schule? 
+u: (<<~narrate ~school>>) [^respond(~school_class)][^respond(~school_soz)]
+
+#! Erzähl mir etwas über deine Familie. 
+u: (<<~narrate familie>>) ^reuse(OPENLY_SITUATION_HOME)
+
+#! Verbringst du gerne Zeit mit deiner Familie?
+u: (<<~like ~activity familie>>) [Ja][Nein]
+
+#! Was unternimmst du zusammen mit deiner Familie, z.B. am Wochenende? 
+u: (<<~activity familie>>) ^reuse(OPENLY_SITUATION_HOME)
+

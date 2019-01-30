@@ -20,7 +20,7 @@
 #GERMAN concept: ~INVERSION_ADVERBS (      "unter keinen Umständen" nie Kaum "nicht nur" nirgends "auf keinen Fall" "nur dann" kaum selten "unter keinen Umständen"   )
 #GERMAN concept: ~SPEED_ADVERBS (      schnell langsam schnell träge effizient   )
 #GERMAN concept: ~NEVER (      nie   )
-#GERMAN concept: ~OFTEN (      viel häufig häufig allgemein "viele Male" normalerweise häufig regelmäßig typisch gewöhnlich viele   )
+#GERMAN concept: ~OFTEN ( öfters öfter oft  viel häufig allgemein "viele Male" normalerweise häufig regelmäßig typisch gewöhnlich viele   )
 #GERMAN concept: ~PLACE_ADVERBS (      Über über "im Ausland" über voraus "eine lange" um "ein Weg" rückwärts zurück hinter unten durch bergab "nach unten" "nach unten" ostwärts überall vorwärts Hier "nach Hause" Zuhause drinnen "nach innen" im "in der Nähe" nordwärts nirgends aus ab auf draußen draußen auswärts aus Übersee "zu Ende" runden seitwärts südwärts Dort durch unter bergauf "nach oben" oben westwärts   )
 #GERMAN concept: ~PURPOSE_ADVERBS (      weil damit damit "damit nicht" damit   )
 #GERMAN concept: ~QUESTION_ADVERBS (      Wie wann woher Warum   )

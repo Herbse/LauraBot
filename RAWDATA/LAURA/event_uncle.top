@@ -1,11 +1,11 @@
-topic: ~event_uncle keep repeat (onkel Dirk familie Hause ~facilitator ~action ~touch)
+topic: ~event_uncle keep repeat (onkel Dirk ~facilitator ~action ~touch)
 
 
 
-# Kernaussagen----------------------------------------------------------------------------------------
+# Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mir von deinem Onkel 
-u: UNCLE_EVENT ($event_state=0 onkel) $event_state=1  Mein Onkel schläft jetzt immer bei uns.
+u: UNCLE_EVENT (onkel)  Mein Onkel schläft jetzt immer bei uns.
 
 #! Wann? 
 #! Was heißt immer?
@@ -17,59 +17,138 @@ u: (wo ^incontext(UNCLE_EVENT)) Im Wohnzimmer
 
 #---------------------------------------------------------------------------------------------
 
-#!Und dann?
-u: UNCLE_EVENT_1 ($event_state=1 [~facilitator ~action ~touch]) $event_state=2 Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+#! Erzähl mir mal von deinem Onkel
+u: UNCLE_EVENT_1 ([~facilitator ~narrate ~action ~touch]) Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
 
 #! Wer ist denn dein Onkel?
-u: (<<wer onkel>> ^incontext(UNCLE_EVENT_1)) ^reuse (UNCLE_EVENT_1)
+u: (<<wer [onkel Dirk]>> ^incontext(UNCLE_EVENT_1)) ^reuse (UNCLE_EVENT_1)
 
 #!Ist das der Bruder von deiner Mama/Papa?
-u: (<< bruder [~father ~mother]>> ^incontext(UNCLE_EVENT_1))  ^reuse (UNCLE_EVENT_1)
+u: (<< bruder [~father ~mother]>> ^incontext(UNCLE_EVENT_1)) ^reuse(UNCLE_EVENT_1)
+
+#! Woher kennen sich Dirk und dein Papa?
+u: (woher) Von früher.
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?
-u: UNCLE_EVENT_2 ($event_state=2 [~facilitator ~action ~touch]) $event_state=3 Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
+u: UNCLE_EVENT_2 ([~facilitator ~action ~touch ~narrate]) Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+
  
 #---------------------------------------------------------------------------------------------    
 
 #! Warum willst du denn nicht, dass er in dein Zimmer kommt?
 #! Und was macht
-u: UNCLE_EVENT_3 ($event_state=3 [~facilitator ~action ~touch]) $event_state=3 Der nervt mich und sagt ich soll aufräumen.
+u: UNCLE_EVENT_3 ([~facilitator ~action ~touch ~narrate]) Der nervt mich und sagt ich soll aufräumen.
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
 
 #---------------------------------------------------------------------------------------------
 
 #! Was hat dein Onkel denn gemacht?
-u: UNCLE_EVENT_4 ($event_state=4 [~facilitator ~action ~touch]) $event_state=4 Er haut mir immer auf den Po. Das ist voll gemein!
+u: UNCLE_EVENT_4 ([~facilitator ~action ~touch ~narrate]) Er haut mir immer auf den Po. Das ist voll gemein!
+    #! Wann?
+    a: (~time) Na immer halt.
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) ^reuse(UNCLE_EVENT_5)
+    #! Warum haut er dir auf den Po?
+    a: (~why) ^reuse(UNCLE_EVENT_5)
+   
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: UNCLE_EVENT_5 ($event_state=5 [~facilitator ~action ~touch]) $event_state=5 Meine Mama sagt, der haut mich, weil ich immer frech zu ihm bin.
-
+u: UNCLE_EVENT_5 ([~facilitator ~action ~touch ~narrate]) Meine Mama sagt, der haut mich, weil ich immer frech zu ihm bin.
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
 #---------------------------------------------------------------------------------------------
 # Ab hier sind die Ereignisse zum sexuellen Missbrauch
 #---------------------------------------------------------------------------------------------
 
 #! Was meinst du mit "sein Ding"?
-u: UNCLE_EVENT_6  ($event_state=6 [~facilitator ~action ~touch]) $event_state=6 Neulich waren wir schwimmen, sollte ich sein Ding in den Mund nehmen.
+u: UNCLE_EVENT_6  ( [~facilitator ~action ~touch ~narrate]) Neulich waren wir schwimmen, sollte ich sein Ding in den Mund nehmen.
+    #! Wann?
+    a: (~time) Vor zwei oder drei Wochen.
+    #! Er hat also gewollt, dass du seinen Penis in den Mund nimmst.
+    a: (<<also [penis ding glied] mund>>) ^reuse(UNCLE_EVENT_7)
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+
 
 #---------------------------------------------------------------------------------------------
 
 #! wie ist das passiert?
-u: UNCLE_EVENT_7 ($event_state=7 [~facilitator ~action ~touch]) $event_state=7  Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
-
+u: UNCLE_EVENT_7 ([~facilitator ~action ~touch ~narrate]) Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
+    #!War das einmal oder kam das öfter vor?
+    a: ([~frequency einmal]) Nee, nur einmal.
+    
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: UNCLE_EVENT_8 ($event_state=8 [~facilitator ~action ~touch]) Dann hat er seine Hose runtergezogen.
-
+u: UNCLE_EVENT_8 ([~facilitator ~action ~touch ~narrate]) Dann hat er seine Hose runtergezogen.
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?
-u: UNCLE_EVENT_9 ($event_state=9 [~facilitator ~action ~touch]) Das war voll eklig. Ich will den nicht mehr sehen.
+u: UNCLE_EVENT_9 ([~facilitator ~action ~touch ~narrate]) Das war voll eklig. Ich will den nicht mehr sehen.
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+# Spezifische Antworten-------------------------------------------------------------------------
 
-#---------------------------------------------------------------------------------------------
+#! Wie findest du es, dass du nach der Schule von dem Freund deiner Eltern abgeholt wirst? 
+u: (<<~relationship [abholen abgeholt]>>) Das ist voll blöd
+    #! Und was sagt dein Vater dazu? 
+    #! Wie finden deine Eltern das? 
+    a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+
 
 #! Wie findest du das?
 #! Wie findest du den?
 #! Wie verstehst du dich mit dem?
-u: (~relationship ^incontext(UNCLE_EVENT)) Der ist voll blöd.
+u: (~relationship ^incontext(UNCLE_EVENT)) Nicht so gut.
+    #! Warum?
+    a: (~why) ^reuse(UNCLE_EVENT_2)
+
+#! Dirk ist also dein Onkel
+u: (<<Dirk also onkel>>) ^reuse(UNCLE_EVENT_2)
+
+#! Hast du mit jemandem über deinen Onkel geredet, mit deinen Eltern oder einem Freund?  
+u: (<<~narrate über [onkel Dirk] eltern oder [freund freundin freundinnen freunde]>>) [Mit meiner Freundin.][Mit meiner Freundin.]
+
+#! Bringt dich dein Onkel nach der Schule direkt nach Hause oder fahrt ihr noch woanders hin? 
+u: (<<[onkel Dirk er] [schule abholen] ~home oder woanders>>) [Er bringt mich nach Hause.] [Er fährt mich woanders hin.]
+
+#! Fährst du gerne mit deinem Onkel mit oder wärst du lieber im Kinderhort? 
+u: (<<[onkel Dirk er ihm] oder [kinderhort kindergarten]>>) [Fahre gerne mit Dirk] [Bin lieber im Kinderhort.]
+
+#! Schläft dein Onkel nur bei euch oder ist er auch tagsüber da?
+u: (<<[onkel Dirk er] schläft oder [tagsüber tag]>>) [Der schläft nur bei uns.] [Der ist auch tagsüber da.]
+
+#! Holt dein Papa dich auch manchmal von der Schule ab oder macht das immer der Onkel? 
+u: (<<abholen ~father oder [onkel er]>>) [Manchmal auch mein Papa][Das macht immer der Onkel]
+
+#! Wissen deine Eltern, dass du deinen Onkel blöd findest? 
+u: (~knowing) [Ja.][Nein.]
+
+#! Hilft dein Onkel manchmal der Mama? 
+u: (<<hilft [onkel Dirk er] ~mother>>) [Ja.][Nein.]
+
+#! Tut dir das weh, wenn er dich auf den Po haut? 
+u: (<<[weh schmerzen] [hauen haut schlagen schlägt]>>) [Ja.][Nein.]
+
+#! Sind deine Eltern mal dabei gewesen, wenn er das getan hat? 
+u: (<<[eltern ~father ~mother jemand irgendjemand] dabei>>) [Ja.][Nein.]
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(UNCLE_EVENT)

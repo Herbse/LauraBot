@@ -1,12 +1,12 @@
-topic: ~topic_roulette nostay()
+topic: ~topic_roulette keep repeat nostay()
 
 # Randomisierung für TOPIC_CHOICE, ~introduction
-u: ($topic==parents)  $openly_situation=1 [^respond(~father_bio)] [^respond(~mother_bio)][^respond(~parents_bio)]
-u: ($topic==brother)  $openly_situation=1 ^respond(~brother_bio)
-u: ($topic==uncle)  $openly_situation=1 ^respond(~event_uncle)
+u: ($topic==parents)  $narrative=1 [^respond(~father_bio)] [^respond(~mother_bio)][^respond(~parents_bio)]
+u: ($topic==brother)  $narrative=1 ^respond(~brother_bio)
+u: ($topic==uncle)  $narrative=1 ^respond(~event_uncle)
 
 # Randomisierung für OPENLY_SITUATION, ~introduction
-u: ($openly_situation=1) [^respond(~event_uncle)][^respond(~brother_bio)][^respond(~father_bio)][^respond(~friends_bio)][^respond(~mother_bio)][^respond(~hobbies_bio)]
+u: ($narrative=1) [^respond(~event_uncle)][^respond(~brother_bio)][^respond(~father_bio)][^respond(~friends_bio)][^respond(~mother_bio)][^respond(~hobbies_bio)][^respond(~school_class)][^respond(~school_soz)]
 
 # Randomisierung für OPENLY_SITUATION_HOME, ~introduction
-u: ($openly_situation_home=1)$openly_situation=1 [^respond(~brother_bio)] [^respond(~father_bio)] [^respond(~mother_bio)]
+u: ($openly_situation_home=1)$narrative=1 [^respond(~brother_bio)] [^respond(~father_bio)] [^respond(~mother_bio)][^respond(~parents_bio)]

@@ -329,3 +329,6 @@ Command: :why
 Respond: user:sdg bot:oob ip: (~introduction) 5   [ping] ==> Pong.  When:Dec05'18-14:51:20 Why:~control.0.0   F:1 
 Command: :build oob
 Start: user:sdg bot:oob ip: rand:2408 (~introduction) 5 ==> Das ist der Test.  When:Dec05'18-14:51:45 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Dec05'18-14:51:36 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:51:20 Why:~introduction.1.0.~control.3.0 
+Start: user:sdg bot:oob ip: rand:2409 (~introduction) 5 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Jan16'19-15:18:04 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan09'19-14:38:42 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:51:20 Why:~introduction.0.0.~control.0.0 
+Start: user:sdg bot:oob ip: rand:2408 (~introduction) 5 ==> Das ist der Test.  When:Jan16'19-15:21:36 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan09'19-14:38:42 0:Dec05'18-14:42:17 F:0 P:Dec05'18-14:51:20 Why:~introduction.1.0.~control.2.0 
+Command: :build laura

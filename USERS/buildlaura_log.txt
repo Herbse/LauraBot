@@ -2,6 +2,12 @@
 
 >>Reading folder RAWDATA/LAURA/
 
+----Reading file school_class.top
+Reading topic ~school_class
+
+----Reading file school_soz.top
+Reading topic ~school_soz
+
 ----Reading file z_simplecontrol.top
 Rename @9 as @chatoutput
 Reading outputmacro: ^laura
@@ -31,6 +37,9 @@ Reading topic ~brother_bio
 Reading outputmacro: ^myfunc
 Reading topic ~xpostagsentence
 
+----Reading file yes_no_questions.top
+Reading topic ~yes_no_questions
+
 ----Reading file event_uncle.top
 Reading topic ~event_uncle
 
@@ -43,22 +52,32 @@ Reading concept ~action
 Reading concept ~activity
 Reading concept ~age
 Reading concept ~bot
+Reading concept ~classmates
 Reading concept ~emohow_closed
 Reading concept ~emohow_open
 Reading concept ~facilitator
+Reading concept ~frequency
 Reading concept ~happening
+Reading concept ~home
+Reading concept ~knowing
+Reading concept ~like
 Reading concept ~like_strong
 Reading concept ~like_ok
 Reading concept ~like_a_bit
 Reading concept ~like_not
 Reading concept ~mood
 Reading concept ~names
+Reading concept ~narrate
 Reading concept ~parents
 Reading concept ~people
 Reading concept ~places
 Reading concept ~problems
 Reading concept ~residence
 Reading concept ~relationship
+Reading concept ~school
+Reading concept ~time
+Reading concept ~yes_no
+Reading concept ~while
 Reading concept ~why
 
 ----Reading file handle_oob.top

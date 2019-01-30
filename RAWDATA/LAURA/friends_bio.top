@@ -1,30 +1,78 @@
 topic: ~friends_bio (~friend Mira)
 # Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
 
+# Narrative Antworten----------------------------------------------------------------------------------------
 
-# Kernaussagen----------------------------------------------------------------------------------------
+u: FRIEND_INTRO () Mira und ich sind beste Freundinnen.
 
 #! Hast du eine Freundin?
-u: FRIEND_INTRO(<<[wer haben] [~friend Mira]>>) Mira und ich sind beste Freundinnen.
+u: (<<[wer haben] [~friend Mira]>>) ^reuse(FRIEND_INTRO)
 
 #! Was macht ihr so zusammen?
-u: FRIEND_DANCE(<< ~action [ihr ~friend Mira]>>) Wir tanzen zusammen im Club.
+u: FRIEND_DANCE(<< ~activity [ihr ~friend Mira]>>) Wir tanzen zusammen im Club.
+    #! Wie oft?
+    a: (~frequency) Jeden Dienstag.
+    #! Welcher Club?
+    a: (<<[was welcher] club>>) Der Jugendclub hier bei der Schule.
 
 #! Und was ist jetzt mit ihr los?
 u: (<<was los [~friend Mira]>>)  ^reuse(FRIEND_DANCE)
 
 #! Erzähl mir mehr über Mira!
-u: FRIEND_DOG(<<~speak_verbs [Mira ~friend]>>) Mira hat einen Hund. der ist soo süß, der will mich immer ablecken.
+u: FRIEND_DOG(<<~narrate [Mira ~friend]>>) Mira hat einen Hund. der ist soo süß, der will mich immer ablecken.
 
-#! Habt ihr sonst gemeinsame Hobbies?
-u: FRIEND_ELSE(<<~speak_verbs [Mira ~friend]>>) Bei Mira zu Hause spielen wir Let´s dance.
+#! Erzähl mir ruhig von Miras zu Hause.
+u: FRIEND_ELSE(<<~narrate [Mira ~friend]>>) Bei Mira zu Hause spielen wir Let´s Dance.
+    #! Was hast du mit Mira gespielt? 
+    a: (was) Let´s Dance.
+    #! Wo habt ihr mit Mira gespielt? 
+    a: (wo) Bei ihr zu Hause.
+    #! Wie oft?
+    a: (~frequency) Ab und zu.
 
-#! Was macht ihr so zusammen?
-u: (<<~action [ihr ~friend Mira]>>) ^reuse(FRIEND_ELSE)
+#! Du hast vorhin erzählt, dass du sie auch manchmal zuhause besuchst. Was macht ihr dort?
+u: (<<was [dort ~home] ~activity>>) Wir spielen Let´s Dance.
 
-# ----------------------------------------------------------------------------------------------------
+#! Was macht ihr sonst so zusammen?
+u: (<<~activity [ihr ~friend Mira]>>) ^reuse(FRIEND_ELSE)
 
-#! Beziehung
+# Spezifische Antworten-------------------------------------------------------------------------------------
+
+#! Wie findest du die Mira?
 u: FRIEND_RELATIONSHIP (~relationship Mira) Wir sind beste Freundinnen.
 
-u: ($openly_situation=1) $openly_situation=0 ^reuse(FRIEND_DANCE)
+#! Wie oft gehst du zu Mira? 
+u: (<<~frequency [Mira ~friend sie euch]>>) Jeden Dienstag.
+
+#! Wo habt ihr zwei euch kennengelernt?
+u: (<<wo [kennengelernt kennenlernen kennen] [ihr euch sie]>>)^reuse(FRIEND_DANCE)
+
+#! Ist die Mira in deiner Tanzgruppe oder bekommt sie Einzelunterricht? 
+u: (<<[tanzgruppe gruppe team gemeinsam] oder [einzelunterricht einzeln alleine]>>) [Wir tanzen zusammen][Sie bekommt Einzelunterricht]
+
+#! Ist die Mira auch auf deiner Schule oder kennst du sie vom Tanzen? 
+u: (<<[schule klasse] oder [tanzen club tanz]>>) [Wir sind auf der selben Schule][Wir kennn uns vom Tanzen]
+
+#! Übernachtest du mal bei deinen Freundinnen oder sie bei dir?
+u: (<<übernachten [~friend freundinnen] oder >>) [Ich übernachte manchmal dort][Manchmal bei mir.]
+
+#! Übernachtet ihr schonmal beieinander?
+u: (<<übernachten [ihr ~friend freundinnen]>>) [Ja][Nein]
+
+#! Kommt Mira manchmal auch zu dir nach Hause? 
+#! Spielt ihr auch manchmal bei dir zuhause? 
+u: (<<[Mira ~friend freundinnen ihr] [zu bei] dir>>)[Ja][Nein]
+
+#! Hast du Freunde, mit denen du dich außerhalb der Schule manchmal triffst? 
+u: (hast du * ~friend) [Ja] [Nein]
+    #! Erzähl mir mal von denen.
+    a: (~narrate) ^reuse(FRIEND_INTRO)
+
+#! Sind Miras Eltern dann auch zuhause?
+u: (<< [Miras ihre] eltern ~home >>) [Ja][Nein]
+
+#! Dürft ihr mit dem auch schonmal Gassi gehen? 
+u: (<<[geht dürft] [gassi raus spazieren]>>) [Ja][Nein]
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(FRIEND_INTRO)
+

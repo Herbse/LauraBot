@@ -1,69 +1,37 @@
 ﻿USERS/topic_wer_laura_GERMAN.txt
-jul2116 Nov21'18-15:10:31 Dec09'18-19:52:59 1544381107-18.0.0.2.2.0 |
-1 489201 0 DY 0 18 18 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
-~introduction ~personal #pending
-~personal + 1 ZkwsA ia 3 0 0 
-~introduction + 1 ClpOi ia 0 0 0 
+jul2116 Nov21'18-15:10:31 Jan28'19-17:47:52 1544381107-18.0.0.2.2.0 |
+1 5 0 DY 0 21 21 0 # start, input#, no rejoinder, #0topics, #1topics, layer2
+~introduction #pending
+~introduction + 2 s7deXIs*Ok3 iaaa 0 0 0 
+~yes_no_questions + 1 =eC+B ia 3 0 0 
 #`end topics
-$cs_token=1180415
-$singleresponse=1
-$botprompt=LAURA: 
-$userprompt=wer: >
-$cs_externaltag=~xpostagsentence
-$cs_language=german
-$cs_control_main=~control
-$cs_login=wer
-$cs_bot=Laura
 $cs_randindex=2707
+$cs_bot=Laura
+$cs_login=wer
+$cs_control_main=~control
+$cs_language=german
+$cs_externaltag=~xpostagsentence
+$userprompt=wer: >
+$botprompt=LAURA: 
+$singleresponse=1
+$cs_token=1180160
+$event_state=0
 $cs_trace=0
 #`end variables
 0 #set flags
 #`end fact sets
 #`end user facts 0
 #context 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ erz  hle tag
+ erz  hle tag
+ hast du das schon mal gemacht
+ hast du jenes schon mal gemacht
+ hast du hier schonmal gegessen
 #`end user
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
+ Grüß Gott!
  Ich glaube das hab ich nicht ganz verstanden.
  Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
- Kann ich noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
- Ich glaube das hab ich nicht ganz verstanden.
- Kann ich noch was für dich tun?
+ Ja
  Ich glaube das hab ich nicht ganz verstanden.
  Kann ich noch was für dich tun?
 #`end chatbot

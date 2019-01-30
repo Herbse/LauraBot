@@ -1,8 +1,11 @@
 topic: ~parents_bio keep repeat (~parents)
 
-
+u: PARENTS_RELATIONSHIP () Ich liebe meine Eltern.
 # Eltern
 #! Welches Verhältnis hast du zu deinen Eltern?
-u: PARENTS_RELATIONSHIP(<<~relationship ~parents>>) Ich liebe meine Eltern.
+u: (<<~relationship ~parents>>) ^reuse(PARENTS_RELATIONSHIP)
 
-u: ($openly_situation=1) $openly_situation=0 ^reuse(PARENTS_RELATIONSHIP)
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(PARENTS_RELATIONSHIP)
+
+

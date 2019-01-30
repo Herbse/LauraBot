@@ -1454,7 +1454,6 @@ Reading concept ~legal_harm
 Reading concept ~legal_help
 Reading concept ~legal_lawmaking
 Reading concept ~legal_verbs
-Reading concept ~like
 Reading concept ~linkingverb
 Reading concept ~list
 Reading concept ~live

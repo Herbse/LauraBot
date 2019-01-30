@@ -15,3 +15,86 @@ Command: :build 0
 Start: user:k bot:laura ip: rand:1554 (~introduction) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-11:56:22 Version:8.2 Build0:Nov29'18-11:56:04 Build1:Nov29'18-11:52:41 0:Nov29'18-11:50:14 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
 Command: :build 0
 Start: user:k bot:laura ip: rand:1554 (~introduction) 0 ==> Kann ich noch was für dich tun?  When:Nov29'18-11:57:31 Version:8.2 Build0:Nov29'18-11:57:18 Build1:Nov29'18-11:52:41 0:Nov29'18-11:50:14 F:0 P:0 Why:~keywordless.0.0.~control.2.0 
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:55:20 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:k bot:laura ip: (~friends_bio) 1   erzähl von deinem tag ==> Mira und ich sind beste Freundinnen.  When:Jan16'19-17:55:26 Why:~friends_bio.0.0=FRIEND_INTRO.~control.2.0   F:31 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:04 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:55:26 Why:~introduction.0.0.~control.0.0 
+Respond: user:k bot:laura ip: (~friends_bio) 1   erzähl von deinem tag ==> Mira und ich sind beste Freundinnen.  When:Jan16'19-17:56:06 Why:~friends_bio.0.0=FRIEND_INTRO.~control.2.0   F:0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:09 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:06 Why:~introduction.0.0.~control.0.0 
+Respond: user:k bot:laura ip: (~friends_bio) 1   erzähl von deinem tag ==> Mira und ich sind beste Freundinnen.  When:Jan16'19-17:56:11 Why:~friends_bio.0.0=FRIEND_INTRO.~control.2.0   F:15 
+Respond: user:k bot:laura ip: (~father_bio) 2   erzähl von deinem tag ==> Mein Papa hilft meiner Mama zu Hause.  When:Jan16'19-17:56:13 Why:~father_bio.0.0=PAPA_HELP_MUM.~control.2.0   F:15 
+Respond: user:k bot:laura ip: (~parents_bio) 3   erzähl von deinem tag ==> Ich liebe meine Eltern.  When:Jan16'19-17:56:15 Why:~parents_bio.0.0=PARENTS_RELATIONSHIP.~control.2.0   F:0 
+Respond: user:k bot:laura ip: (~introduction) 4   erzähl von deinem tag ==> Ich glaube das hab ich nicht ganz verstanden.  When:Jan16'19-17:56:16 Why:~keywordless.1.0.~control.2.0   F:0 
+Respond: user:k bot:laura ip: (~school_soz) 5   erzähl von deinem tag ==> Mit den anderen Kindern ist alles in Ordnung.  When:Jan16'19-17:56:17 Why:~school_soz.0.0=SCHOOL_KIDS.~control.2.0   F:15 
+Respond: user:k bot:laura ip: (~school_soz) 6   erzähl von deinem tag ==> Manchmal sind die anderen Mädchen schon blöd, einfach so.  When:Jan16'19-17:56:19 Why:~school_soz.1.0=SCHOOL_GIRLS.~control.2.0   F:0 
+Respond: user:k bot:laura ip: (~school_soz) 7   erzähl von deinem tag ==> Manchmal sind die anderen Mädchen schon blöd, einfach so.  When:Jan16'19-17:56:20 Why:~school_soz.1.0=SCHOOL_GIRLS.~control.2.0   F:0 
+Respond: user:k bot:laura ip: (~school_soz) 8   erzähl von deinem tag ==> Manchmal sind die anderen Mädchen schon blöd, einfach so.  When:Jan16'19-17:56:21 Why:~school_soz.1.0=SCHOOL_GIRLS.~control.2.0   F:0 
+Respond: user:k bot:laura ip: (~school_soz) 9   erzähl von deinem tag ==> Manchmal sind die anderen Mädchen schon blöd, einfach so.  When:Jan16'19-17:56:22 Why:~school_soz.1.0=SCHOOL_GIRLS.~control.2.0   F:15 
+Respond: user:k bot:laura ip: (~school_soz) 10   erzähl von deinem tag ==> Manchmal sind die anderen Mädchen schon blöd, einfach so.  When:Jan16'19-17:56:22 Why:~school_soz.1.0=SCHOOL_GIRLS.~control.2.0   F:0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:24 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:22 Why:~introduction.0.0.~control.0.0 
+Respond: user:k bot:laura ip: (~friends_bio) 1   erzähl von deinem tag ==> Mira und ich sind beste Freundinnen.  When:Jan16'19-17:56:27 Why:~friends_bio.0.0=FRIEND_INTRO.~control.2.0   F:0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:32 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:34 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:36 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:36 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:37 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:37 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:37 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:37 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:38 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:27 Why:~introduction.0.0.~control.0.0 
+Respond: user:k bot:laura ip: (~introduction) 1     ==> Kann ich noch was für dich tun?  When:Jan16'19-17:56:38 Why:~keywordless.0.0.~control.2.0   F:0 
+Respond: user:k bot:laura ip: (~school_soz) 2   erzähl von deinem tag ==> Mit den anderen Kindern ist alles in Ordnung.  When:Jan16'19-17:56:38 Why:~school_soz.0.0=SCHOOL_KIDS.~control.2.0   F:0 
+Respond: user:k bot:laura ip: (~school_soz) 3   erzähl von deinem tag ==> Manchmal sind die anderen Mädchen schon blöd, einfach so.  When:Jan16'19-17:56:39 Why:~school_soz.1.0=SCHOOL_GIRLS.~control.2.0   F:0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:41 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:42 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:42 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:43 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:43 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:44 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:44 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:44 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:45 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:45 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:45 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:45 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:46 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:46 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:46 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:46 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:47 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Command: :reset#
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:56:47 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:51:09 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:39 Why:~introduction.0.0.~control.0.0 
+Respond: user:k bot:laura ip: (~friends_bio) 1   erzähl von deinem tag ==> Mira und ich sind beste Freundinnen.  When:Jan16'19-17:56:55 Why:~friends_bio.0.0=FRIEND_INTRO.~control.2.0   F:15 
+Command: :build laura
+Start: user:k bot:laura ip: rand:1559 (~friends_bio) 1 ==> Kann ich noch was für dich tun?  When:Jan16'19-17:58:07 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:57:47 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:55 Why:~keywordless.0.0.~control.2.0 
+Command: :reset
+Start: user:k bot:laura ip: rand:1553 (~introduction) 0 ==> Hallo!  When:Jan16'19-17:58:10 Version:8.2 Build0:Jan09'19-12:05:27 Build1:Jan16'19-17:57:47 0:Nov29'18-11:50:14 F:0 P:Jan16'19-17:56:55 Why:~introduction.0.0.~control.0.0 
+Respond: user:k bot:laura ip: (~friends_bio) 1   erzähl von deinem tag ==> Mira und ich sind beste Freundinnen.  When:Jan16'19-17:58:13 Why:~friends_bio.0.0=FRIEND_INTRO.~control.2.0   F:14 

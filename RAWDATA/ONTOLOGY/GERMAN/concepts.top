@@ -289,7 +289,7 @@
 #GERMAN concept: ~DIVERSITY_WORDS (      Amalgam verschmelzen sortiert vielfältig heterogen homogen Sonstiges bunt "ohne Beziehung" variiert varigated verschiedene   )
 #GERMAN concept: ~DIVISION (      Aufteilung aus pro Prozent "Quotient aus" "Verhältnis von"   )
 #GERMAN concept: ~DO ( Machen Tun Erledigen)
-#GERMAN concept: ~DO_WITH_TITLES ( ~buy ~hear ~like ~own ~read ~watch        )
+#GERMAN concept: ~DO_WITH_TITLES ( ~buy ~hear ~own ~read ~watch        )
 #GERMAN concept: ~DOCTOR PROBABLE_NOUN (      Akupunkteur Akustiker Chiropraktiker Gerichtsmediziner Arzt DR kinesiologist Arzt Onkologe Optiker Pathologe Arzt Fußpflegerin Psychiater Psychologe Schamane Chirurg Therapeut Tierarzt Tierarzt Tierarzt   )
 #GERMAN concept: ~DOG_BREEDS PROBABLE_NOUN ANIMATE_BEING (      basset Beagle Bulldogge Collie colly Dackel Dalmatiner Dalmation Dobermann Hund Pudel Spaniel Terrier   )
 #GERMAN concept: ~DOMINANCE_WORDS (      durchsetzungs Dominanz Dominant unabhängig minderwertig passiv vorherrschend untergeordnet überlegen   )

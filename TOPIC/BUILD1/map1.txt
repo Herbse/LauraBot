@@ -9,7 +9,488 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/OOB/simpletopic.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/school_class.top
+    topic: 1  ~school_class
+        rule: 6  ~school_class.0.0-SCHOOL_MATH u: 
+          line: 6 0  # Mathe ist voll schwer, da mach
+          Complexity of rule ~school_class.0.0-SCHOOL_MATH u: 1
+        rule: 8  ~school_class.0.1 a: 
+          line: 8 0  # ^reuse ( SCHOOL_BOARD ) 
+          Complexity of rule ~school_class.0.1- a: 1
+        rule: 11  ~school_class.1.0-SCHOOL_BOARD u: 
+          line: 11 0  # Gestern musste ich was an der 
+          Complexity of rule ~school_class.1.0-SCHOOL_BOARD u: 1
+        rule: 14  ~school_class.2.0-SCHOOL_HOMEWORK u: 
+          line: 14 0  # Wir müssen jedes Mal die Haus
+          Complexity of rule ~school_class.2.0-SCHOOL_HOMEWORK u: 1
+        rule: 17  ~school_class.3.0-SCHOOL_TUTOR u: 
+          line: 17 0  # Frau Müller sagt, ich soll Na
+          Complexity of rule ~school_class.3.0-SCHOOL_TUTOR u: 1
+        rule: 22  ~school_class.4.0 u: 
+          line: 22 0  # [ Ja nur in Mathe. ] [ Nein, a
+          Complexity of rule ~school_class.4.0- u: 1
+        rule: 25  ~school_class.5.0 u: 
+          line: 25 0  # [ Ja. ] [ Nein. ] 
+          Complexity of rule ~school_class.5.0- u: 1
+        rule: 28  ~school_class.6.0 u: 
+          line: 28 0  # [ Ja ] 
+          Complexity of rule ~school_class.6.0- u: 1
+        rule: 31  ~school_class.7.0 u: 
+          line: 31 0  # [ Ja. ] [ Nein. ] 
+          Complexity of rule ~school_class.7.0- u: 1
+        rule: 34  ~school_class.8.0 u: 
+          Complexity of rule ~school_class.8.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/school_soz.top
+    topic: 1  ~school_soz
+        rule: 6  ~school_soz.0.0-SCHOOL_KIDS u: 
+          line: 6 0  # Mit den anderen Kindern ist al
+          Complexity of rule ~school_soz.0.0-SCHOOL_KIDS u: 1
+        rule: 9  ~school_soz.1.0-SCHOOL_GIRLS u: 
+          line: 9 0  # Manchmal sind die anderen Mäd
+          Complexity of rule ~school_soz.1.0-SCHOOL_GIRLS u: 1
+        rule: 12  ~school_soz.2.0-SCHOOL_LAUGHING u: 
+          line: 12 0  # Ich finde das doof, wenn die a
+          Complexity of rule ~school_soz.2.0-SCHOOL_LAUGHING u: 1
+        rule: 15  ~school_soz.3.0-SCHOOL_MIRA u: 
+          line: 15 0  # Am liebsten wäre ich mit Mira
+          Complexity of rule ~school_soz.3.0-SCHOOL_MIRA u: 1
+        rule: 20  ~school_soz.4.0 u: 
+          line: 20 0  # Dirk holt mich oft ab. 
+          Complexity of rule ~school_soz.4.0- u: 1
+        rule: 23  ~school_soz.5.0 u: 
+          line: 23 0  # [ Die Mama. ] [ Der Papa. ] 
+          Complexity of rule ~school_soz.5.0- u: 1
+        rule: 26  ~school_soz.6.0 u: 
+          line: 26 0  # ^reuse ( SCHOOL_GIRLS ) 
+          Complexity of rule ~school_soz.6.0- u: 1
+        rule: 29  ~school_soz.7.0 u: 
+          Complexity of rule ~school_soz.7.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/z_simplecontrol.top
+    macro: 4  ^laura
+          line: 5 0  # ^addtopic ( ~introduction ) 
+          line: 6 28  # $cs_control_main = ~control 
+          line: 7 56  # $cs_language = german 
+          line: 8 78  # $cs_externaltag = ~xpostagsent
+          line: 9 113  # $userprompt = ^"%user: >" 
+          line: 10 139  # $botprompt = ^"LAURA: " 
+          line: 11 163  # $singleresponse = 1 
+          line: 12 183  # $cs_token = 1048576 | 512 | 13
+          Complexity of ^laura: 1
+    topic: 14  ~xrejoinder
+        rule: 17  ~xrejoinder.0.0 u: 
+          line: 17 0  # ^nofail ( topic ^rejoinder ( )
+          Complexity of rule ~xrejoinder.0.0- u: 1
+    topic: 24  ~control
+        rule: 26  ~control.0.0 u: 
+          line: 27 0  # ^gambit ( ~introduction ) 
+          Complexity of rule ~control.0.0- u: 1
+        rule: 31  ~control.1.0 u: 
+          line: 32 0  # ^respond ( ~handle_oob ) 
+          line: 33 25  # ^end ( SENTENCE ) 
+          Complexity of rule ~control.1.0- u: 1
+        rule: 38  ~control.2.0 u: 
+          line: 39 0  # $$currenttopic = %topic 
+          line: 40 24  # $_responsecount = %response 
+          if 41 56  
+          ifend 41 109  
+          line: 41 52  # ^if 00n( $singleresponse ) 00v
+          if 45 114  
+          ifend 45 193  
+          line: 45 110  # ^if 00A( %response == $_respon
+          if 47 198  
+          line: 47 194  # ^if 00R( %length == 0 and %res
+          line: 48 254  # { 
+          line: 49 256  # ^nofail ( TOPIC ^gambit ( $$cu
+          ifend 50 306  
+          line: 50 301  # } 004 
+          if 52 311  
+          ifend 52 403  
+          line: 52 307  # ^if 00A( %response == $_respon
+          if 54 408  
+          line: 54 404  # ^if 00A( %response == $_respon
+          line: 55 447  # { 
+          line: 56 449  # @8 = ^keywordtopics ( ) 
+          loop 57 479  
+          line: 57 473  # ^loop ( -1 ) aaa 
+          line: 58 490  # { 
+          line: 59 492  # $$topic = ^first ( @8subject )
+          line: 60 523  # ^nofail ( TOPIC ^respond ( $$t
+          if 61 566  
+          line: 61 562  # ^if 00m( %response != 0 ) aaa
+          line: 62 591  # { 
+          line: 63 593  # ^end ( RULE ) 
+          ifend 64 612  
+          line: 64 607  # } 004 
+          loopend 65 615  
+          line: 65 613  # } 
+          ifend 66 620  
+          line: 66 615  # } 004 
+          if 68 625  
+          line: 68 621  # ^if 00A( %response == $_respon
+          line: 69 664  # { 
+          line: 70 666  # ^nofail ( TOPIC ^respond ( ~ke
+          ifend 71 715  
+          line: 71 710  # } 004 
+          if 74 720  
+          line: 74 716  # ^if 00F( %outputrejoinder or %
+          line: 75 764  # { 
+          line: 76 766  # ^end ( TOPIC ) 
+          ifend 77 786  
+          line: 77 781  # } 004 
+          if 79 791  
+          ifend 79 913  
+          line: 79 787  # ^if 00%( %response == $_respon
+          if 81 918  
+          line: 81 914  # ^if 00A( %response == $_respon
+          line: 82 957  # { 
+          line: 83 959  # @8 = ^keywordtopics ( ) 
+          loop 84 989  
+          line: 84 983  # ^loop ( -1 ) aaa 
+          line: 85 1000  # { 
+          line: 86 1002  # $$topic = ^first ( @8subject )
+          line: 87 1033  # ^nofail ( TOPIC ^gambit ( $$to
+          if 88 1075  
+          line: 88 1071  # ^if 00m( %response != 0 ) aaa
+          line: 89 1100  # { 
+          line: 90 1102  # ^end ( RULE ) 
+          ifend 91 1121  
+          line: 91 1116  # } 004 
+          loopend 92 1124  
+          line: 92 1122  # } 
+          ifend 93 1129  
+          line: 93 1124  # } 004 
+          if 94 1134  
+          ifend 94 1225  
+          line: 94 1130  # ^if 00A( %response == $_respon
+          if 96 1230  
+          line: 96 1226  # ^if 00A( %response == $_respon
+          line: 97 1269  # { 
+          line: 98 1271  # @8 = ^gambittopics ( ) 
+          loop 99 1300  
+          line: 99 1294  # ^loop ( -1 ) aaa 
+          line: 100 1311  # { 
+          line: 101 1313  # $$topic = ^pick ( @8subject ) 
+          line: 102 1343  # ^nofail ( TOPIC ^gambit ( $$to
+          if 103 1385  
+          line: 103 1381  # ^if 00A( %response != $_respon
+          line: 104 1424  # { 
+          line: 105 1426  # ^end ( RULE ) 
+          ifend 106 1445  
+          line: 106 1440  # } 004 
+          loopend 107 1448  
+          line: 107 1446  # } 
+          ifend 108 1453  
+          line: 108 1448  # } 004 
+          if 109 1458  
+          line: 109 1454  # ^if 00A( %response == $_respon
+          line: 110 1497  # { 
+          line: 111 1499  # ^repeat ( ) 
+          line: 112 1511  # I don't know what to say. 
+          line: 113 1537  # } aaa 
+          ifend 115 1542  
+          Complexity of rule ~control.2.0- u: 16
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/father_bio.top
+    topic: 1  ~father_bio
+        rule: 6  ~father_bio.0.0-PAPA_HELP_MUM u: 
+          line: 6 0  # Mein Papa hilft meiner Mama zu
+          Complexity of rule ~father_bio.0.0-PAPA_HELP_MUM u: 1
+        rule: 8  ~father_bio.0.1 a: 
+          line: 8 0  # [ Beim Wäsche machen ] [ Beim
+          Complexity of rule ~father_bio.0.1- a: 1
+        rule: 12  ~father_bio.1.0 u: 
+          line: 12 0  # ^reuse ( PAPA_HELP_MUM ) 
+          Complexity of rule ~father_bio.1.0- u: 1
+        rule: 15  ~father_bio.2.0-PAPA_COOK u: 
+          line: 15 0  # Er geht einkaufen und kocht ih
+          Complexity of rule ~father_bio.2.0-PAPA_COOK u: 1
+        rule: 17  ~father_bio.2.1 a: 
+          line: 17 0  # [ Nur für sie ] [ Er kocht f�
+          Complexity of rule ~father_bio.2.1- a: 1
+        rule: 20  ~father_bio.3.0-PAPA_HELP_NEIGHBOURS u: 
+          line: 20 0  # Papa hilft den Nachbarn beim A
+          Complexity of rule ~father_bio.3.0-PAPA_HELP_NEIGHBOURS u: 1
+        rule: 22  ~father_bio.3.1 a: 
+          line: 22 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~father_bio.3.1- a: 1
+        rule: 26  ~father_bio.4.0-PAPA_REPAIR u: 
+          line: 26 0  # Am Wochenende darf ich manchma
+          Complexity of rule ~father_bio.4.0-PAPA_REPAIR u: 1
+        rule: 28  ~father_bio.4.1 a: 
+          line: 28 0  # [ Nur ich ] [ Auch andere ] 
+          Complexity of rule ~father_bio.4.1- a: 1
+        rule: 30  ~father_bio.4.2 a: 
+          line: 30 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~father_bio.4.2- a: 1
+        rule: 32  ~father_bio.4.3 a: 
+          line: 32 0  # [ Ganzen Tag ] [ Ein paar Stun
+          Complexity of rule ~father_bio.4.3- a: 1
+        rule: 38  ~father_bio.5.0-PAPA_RELATIONSHIP u: 
+          line: 38 0  # Der ist so lieb. 
+          Complexity of rule ~father_bio.5.0-PAPA_RELATIONSHIP u: 1
+        rule: 41  ~father_bio.6.0 u: 
+          line: 41 0  # ^reuse ( PAPA_REPAIR ) 
+          Complexity of rule ~father_bio.6.0- u: 1
+        rule: 45  ~father_bio.7.0 u: 
+          line: 45 0  # ^reuse ( PAPA_HELP_NEIGHBOURS 
+          Complexity of rule ~father_bio.7.0- u: 1
+        rule: 48  ~father_bio.8.0 u: 
+          line: 48 0  # ^reuse ( PAPA_HELP_MUM ) 
+          Complexity of rule ~father_bio.8.0- u: 1
+        rule: 51  ~father_bio.9.0 u: 
+          line: 51 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~father_bio.9.0- u: 1
+        rule: 54  ~father_bio.10.0 u: 
+          line: 54 0  # ^reuse ( PAPA_COOK ) 
+          Complexity of rule ~father_bio.10.0- u: 1
+        rule: 57  ~father_bio.11.0 u: 
+          line: 57 0  # ^ ( PAPA_HELP_NEIGHBOURS ) 
+          Complexity of rule ~father_bio.11.0- u: 1
+        rule: 60  ~father_bio.12.0 u: 
+          line: 60 0  # ^respond ( ~mother_bio ) 
+          Complexity of rule ~father_bio.12.0- u: 1
+        rule: 63  ~father_bio.13.0 u: 
+          line: 63 0  # ^respond ( ~mother_bio ) 
+          Complexity of rule ~father_bio.13.0- u: 1
+        rule: 66  ~father_bio.14.0 u: 
+          line: 66 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~father_bio.14.0- u: 1
+        rule: 69  ~father_bio.15.0 u: 
+          line: 69 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~father_bio.15.0- u: 1
+        rule: 72  ~father_bio.16.0 u: 
+          Complexity of rule ~father_bio.16.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/parents_bio.top
+    topic: 1  ~parents_bio
+        rule: 3  ~parents_bio.0.0-PARENTS_RELATIONSHIP u: 
+          line: 3 0  # Ich liebe meine Eltern. 
+          Complexity of rule ~parents_bio.0.0-PARENTS_RELATIONSHIP u: 1
+        rule: 6  ~parents_bio.1.0 u: 
+          line: 6 0  # ^reuse ( PARENTS_RELATIONSHIP 
+          Complexity of rule ~parents_bio.1.0- u: 1
+        rule: 9  ~parents_bio.2.0 u: 
+          Complexity of rule ~parents_bio.2.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/personal.top
+    topic: 1  ~personal
+        rule: 4  ~personal.0.0 u: 
+          line: 4 0  # Ich bin 14 Jahre alt. Sagt zum
+          Complexity of rule ~personal.0.0- u: 1
+        rule: 6  ~personal.1.0 u: 
+          line: 6 0  # Naja, es geht 
+          Complexity of rule ~personal.1.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/introduction.top
+    topic: 1  ~introduction
+        rule: 3  ~introduction.0.0- t: 
+          line: 3 0  # $event_state = 0 [ Hallo! ] [ 
+          Complexity of rule ~introduction.0.0- t: 1
+        rule: 5  ~introduction.1.0 u: 
+          line: 5 0  # Ich bin Laura und möchte dir 
+          Complexity of rule ~introduction.1.0- u: 1
+        rule: 9  ~introduction.2.0-CLOSED_SITUATION u: 
+          line: 9 0  # $closed_question_emo = 1 ^resp
+          Complexity of rule ~introduction.2.0-CLOSED_SITUATION u: 1
+        rule: 11  ~introduction.2.1 a: 
+          line: 11 0  # $narrative = 1 ^respond ( ~eve
+          Complexity of rule ~introduction.2.1- a: 1
+        rule: 15  ~introduction.3.0-OPENLY_SITUATION u: 
+          line: 15 0  # $narrative = 1 ^respond ( ~top
+          Complexity of rule ~introduction.3.0-OPENLY_SITUATION u: 1
+        rule: 19  ~introduction.4.0 u: 
+          line: 19 0  # ^reuse ( OPENLY_SITUATION ) 
+          Complexity of rule ~introduction.4.0- u: 1
+        rule: 23  ~introduction.5.0 u: 
+          line: 23 0  # ^reuse ( OPENLY_SITUATION ) 
+          Complexity of rule ~introduction.5.0- u: 1
+        rule: 26  ~introduction.6.0-TOPIC_CHOICE u: 
+          line: 26 0  # ^refine ( ) 
+          Complexity of rule ~introduction.6.0-TOPIC_CHOICE u: 1
+        rule: 27  ~introduction.6.1 a: 
+          line: 27 0  # $topic = parents ^respond ( ~t
+          Complexity of rule ~introduction.6.1- a: 1
+        rule: 28  ~introduction.6.2 a: 
+          line: 28 0  # $topic = uncle ^respond ( ~top
+          Complexity of rule ~introduction.6.2- a: 1
+        rule: 29  ~introduction.6.3 a: 
+          line: 29 0  # $topic = brother ^respond ( ~t
+          Complexity of rule ~introduction.6.3- a: 1
+        rule: 30  ~introduction.6.4 a: 
+          line: 30 0  # Nein, darüber möchte ich nic
+          Complexity of rule ~introduction.6.4- a: 1
+        rule: 33  ~introduction.7.0-WHAT_HAPPEND_CLOSED u: 
+          line: 33 0  # $closed_question = 1 ^respond 
+          Complexity of rule ~introduction.7.0-WHAT_HAPPEND_CLOSED u: 1
+        rule: 36  ~introduction.8.0-WHAT_HAPPEND_OPEN u: 
+          line: 36 0  # $narrative = 1 ^respond ( ~eve
+          Complexity of rule ~introduction.8.0-WHAT_HAPPEND_OPEN u: 1
+        rule: 39  ~introduction.9.0-PROBLEMS u: 
+          line: 39 0  # $closed_question_prob = 1 ^res
+          Complexity of rule ~introduction.9.0-PROBLEMS u: 1
+        rule: 40  ~introduction.9.1 a: 
+          line: 40 0  # Ich habe ja gesagt, dass ich k
+          Complexity of rule ~introduction.9.1- a: 1
+        rule: 45  ~introduction.10.0-OPENLY_SITUATION_HOME u: 
+          line: 45 0  # $openly_situation_home = 1 ^re
+          Complexity of rule ~introduction.10.0-OPENLY_SITUATION_HOME u: 1
+        rule: 48  ~introduction.11.0 u: 
+          line: 48 0  # [ ^respond ( ~school_class ) ]
+          Complexity of rule ~introduction.11.0- u: 1
+        rule: 51  ~introduction.12.0 u: 
+          line: 51 0  # ^reuse ( OPENLY_SITUATION_HOME
+          Complexity of rule ~introduction.12.0- u: 1
+        rule: 54  ~introduction.13.0 u: 
+          line: 54 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~introduction.13.0- u: 1
+        rule: 57  ~introduction.14.0 u: 
+          Complexity of rule ~introduction.14.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/friends_bio.top
+    topic: 1  ~friends_bio
+        rule: 6  ~friends_bio.0.0-FRIEND_INTRO u: 
+          line: 6 0  # Mira und ich sind beste Freund
+          Complexity of rule ~friends_bio.0.0-FRIEND_INTRO u: 1
+        rule: 9  ~friends_bio.1.0 u: 
+          line: 9 0  # ^reuse ( FRIEND_INTRO ) 
+          Complexity of rule ~friends_bio.1.0- u: 1
+        rule: 12  ~friends_bio.2.0-FRIEND_DANCE u: 
+          line: 12 0  # Wir tanzen zusammen im Club. 
+          Complexity of rule ~friends_bio.2.0-FRIEND_DANCE u: 1
+        rule: 14  ~friends_bio.2.1 a: 
+          line: 14 0  # Jeden Dienstag. 
+          Complexity of rule ~friends_bio.2.1- a: 1
+        rule: 16  ~friends_bio.2.2 a: 
+          line: 16 0  # Der Jugendclub hier bei der Sc
+          Complexity of rule ~friends_bio.2.2- a: 1
+        rule: 19  ~friends_bio.3.0 u: 
+          line: 19 0  # ^reuse ( FRIEND_DANCE ) 
+          Complexity of rule ~friends_bio.3.0- u: 1
+        rule: 22  ~friends_bio.4.0-FRIEND_DOG u: 
+          line: 22 0  # Mira hat einen Hund. der ist s
+          Complexity of rule ~friends_bio.4.0-FRIEND_DOG u: 1
+        rule: 25  ~friends_bio.5.0-FRIEND_ELSE u: 
+          line: 25 0  # Bei Mira zu Hause spielen wir 
+          Complexity of rule ~friends_bio.5.0-FRIEND_ELSE u: 1
+        rule: 27  ~friends_bio.5.1 a: 
+          line: 27 0  # Let´s Dance. 
+          Complexity of rule ~friends_bio.5.1- a: 1
+        rule: 29  ~friends_bio.5.2 a: 
+          line: 29 0  # Bei ihr zu Hause. 
+          Complexity of rule ~friends_bio.5.2- a: 1
+        rule: 31  ~friends_bio.5.3 a: 
+          line: 31 0  # Ab und zu. 
+          Complexity of rule ~friends_bio.5.3- a: 1
+        rule: 34  ~friends_bio.6.0 u: 
+          line: 34 0  # Wir spielen Let´s Dance. 
+          Complexity of rule ~friends_bio.6.0- u: 1
+        rule: 37  ~friends_bio.7.0 u: 
+          line: 37 0  # ^reuse ( FRIEND_ELSE ) 
+          Complexity of rule ~friends_bio.7.0- u: 1
+        rule: 42  ~friends_bio.8.0-FRIEND_RELATIONSHIP u: 
+          line: 42 0  # Wir sind beste Freundinnen. 
+          Complexity of rule ~friends_bio.8.0-FRIEND_RELATIONSHIP u: 1
+        rule: 45  ~friends_bio.9.0 u: 
+          line: 45 0  # Jeden Dienstag. 
+          Complexity of rule ~friends_bio.9.0- u: 1
+        rule: 48  ~friends_bio.10.0 u: 
+          line: 48 0  # ^reuse ( FRIEND_DANCE ) 
+          Complexity of rule ~friends_bio.10.0- u: 1
+        rule: 51  ~friends_bio.11.0 u: 
+          line: 51 0  # [ Wir tanzen zusammen ] [ Sie 
+          Complexity of rule ~friends_bio.11.0- u: 1
+        rule: 54  ~friends_bio.12.0 u: 
+          line: 54 0  # [ Wir sind auf der selben Schu
+          Complexity of rule ~friends_bio.12.0- u: 1
+        rule: 57  ~friends_bio.13.0 u: 
+          line: 57 0  # [ Ich übernachte manchmal dor
+          Complexity of rule ~friends_bio.13.0- u: 1
+        rule: 60  ~friends_bio.14.0 u: 
+          line: 60 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~friends_bio.14.0- u: 1
+        rule: 64  ~friends_bio.15.0 u: 
+          line: 64 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~friends_bio.15.0- u: 1
+        rule: 67  ~friends_bio.16.0 u: 
+          line: 67 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~friends_bio.16.0- u: 1
+        rule: 69  ~friends_bio.16.1 a: 
+          line: 69 0  # ^reuse ( FRIEND_INTRO ) 
+          Complexity of rule ~friends_bio.16.1- a: 1
+        rule: 72  ~friends_bio.17.0 u: 
+          line: 72 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~friends_bio.17.0- u: 1
+        rule: 75  ~friends_bio.18.0 u: 
+          line: 75 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~friends_bio.18.0- u: 1
+        rule: 77  ~friends_bio.19.0 u: 
+          Complexity of rule ~friends_bio.19.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/brother_bio.top
+    topic: 1  ~brother_bio
+        rule: 9  ~brother_bio.0.0-LEON_FIFA u: 
+          line: 9 0  # Wenn der Leon FIFA spielt darf
+          Complexity of rule ~brother_bio.0.0-LEON_FIFA u: 1
+        rule: 12  ~brother_bio.1.0-LEON_FRIENDS u: 
+          line: 12 0  # Wenn Leons Freunde kommen, mus
+          Complexity of rule ~brother_bio.1.0-LEON_FRIENDS u: 1
+        rule: 15  ~brother_bio.2.0-LEON_GAMES u: 
+          line: 15 0  # Die spielen dann auch so ander
+          Complexity of rule ~brother_bio.2.0-LEON_GAMES u: 1
+        rule: 18  ~brother_bio.3.0-LEON_LEAVE u: 
+          line: 18 0  # Dann gehe ich raus oder zu Mir
+          Complexity of rule ~brother_bio.3.0-LEON_LEAVE u: 1
+        rule: 23  ~brother_bio.4.0 u: 
+          line: 23 0  # Das ist mein Bruder. 
+          Complexity of rule ~brother_bio.4.0- u: 1
+        rule: 26  ~brother_bio.5.0 u: 
+          line: 26 0  # Ich habe einen Bruder. 
+          Complexity of rule ~brother_bio.5.0- u: 1
+        rule: 29  ~brother_bio.6.0 u: 
+          line: 29 0  # Ja. 
+          Complexity of rule ~brother_bio.6.0- u: 1
+        rule: 32  ~brother_bio.7.0 u: 
+          line: 32 0  # Nein. Ich habe einen Bruder. 
+          Complexity of rule ~brother_bio.7.0- u: 1
+        rule: 35  ~brother_bio.8.0 u: 
+          line: 35 0  # 12. 
+          Complexity of rule ~brother_bio.8.0- u: 1
+        rule: 38  ~brother_bio.9.0 u: 
+          line: 38 0  # So alt wie Leon. 
+          Complexity of rule ~brother_bio.9.0- u: 1
+        rule: 41  ~brother_bio.10.0-LEON_RELATIONSHIP u: 
+          line: 41 0  # Ich mag Leon richtig gerne. 
+          Complexity of rule ~brother_bio.10.0-LEON_RELATIONSHIP u: 1
+        rule: 46  ~brother_bio.11.0-LEON_RELATIONSHIP u: 
+          line: 46 0  # ^reuse ( LEON_RELATIONSHIP ) 
+          Complexity of rule ~brother_bio.11.0-LEON_RELATIONSHIP u: 1
+        rule: 49  ~brother_bio.12.0 u: 
+          line: 49 0  # Fifa spielen. 
+          Complexity of rule ~brother_bio.12.0- u: 1
+        rule: 52  ~brother_bio.13.0 u: 
+          line: 52 0  # In Leons Zimmer 
+          Complexity of rule ~brother_bio.13.0- u: 1
+        rule: 56  ~brother_bio.14.0 u: 
+          line: 56 0  # ^reuse ( LEON_FIFA ) 
+          Complexity of rule ~brother_bio.14.0- u: 1
+        rule: 59  ~brother_bio.15.0 u: 
+          line: 59 0  # ^reuse ( LEON_GAMES ) 
+          Complexity of rule ~brother_bio.15.0- u: 1
+        rule: 62  ~brother_bio.16.0 u: 
+          line: 62 0  # Max und Cem 
+          Complexity of rule ~brother_bio.16.0- u: 1
+        rule: 65  ~brother_bio.17.0 u: 
+          line: 65 0  # ^reuse ( LEON_LEAVE ) 
+          Complexity of rule ~brother_bio.17.0- u: 1
+        rule: 68  ~brother_bio.18.0 u: 
+          line: 68 0  # [ Mhm ] [ Nee ] 
+          Complexity of rule ~brother_bio.18.0- u: 1
+        rule: 71  ~brother_bio.19.0 u: 
+          line: 71 0  # [ Ja ] [ Nö ] 
+          Complexity of rule ~brother_bio.19.0- u: 1
+        rule: 74  ~brother_bio.20.0 u: 
+          line: 74 0  # [ Ja ] [ Nee ] 
+          Complexity of rule ~brother_bio.20.0- u: 1
+        rule: 77  ~brother_bio.21.0 u: 
+          line: 77 0  # [ Mhm ] [ Nee ] 
+          Complexity of rule ~brother_bio.21.0- u: 1
+        rule: 80  ~brother_bio.22.0 u: 
+          Complexity of rule ~brother_bio.22.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/z_simpletopic.top
     macro: 1  ^myfunc
           line: 2 0  # $$wordindex += 1 
           line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
@@ -24,160 +505,390 @@ file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/OOB/s
           line: 11 0  # $$wordindex = 0 
           line: 12 16  # ^log ( FILE chat.txt NEW '_0 )
           Complexity of rule ~xpostagsentence.1.0- t: 1
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/OOB/introduction.top
-    topic: 1  ~introduction
-        rule: 3  ~introduction.0.0- t: 
-          line: 3 0  # [ Hallo! ] [ Hey! ] [ Grüß G
-          Complexity of rule ~introduction.0.0- t: 1
-        rule: 5  ~introduction.1.0 u: 
-          line: 5 0  # $test = 0 Das ist der Test. 
-          Complexity of rule ~introduction.1.0- u: 1
-        rule: 11  ~introduction.2.0 u: 
-          line: 11 0  # $closed = 0 Das war eine gesch
-          Complexity of rule ~introduction.2.0- u: 1
-        rule: 12  ~introduction.3.0 u: 
-          line: 12 0  # $open = 0 Das war eine offene 
-          Complexity of rule ~introduction.3.0- u: 1
-        rule: 13  ~introduction.4.0 u: 
-          line: 13 0  # Das ist die Frage. 
-          Complexity of rule ~introduction.4.0- u: 1
-        rule: 15  ~introduction.5.0 u: 
-          line: 15 0  # \[ pong \] 
-          Complexity of rule ~introduction.5.0- u: 1
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/OOB/handle_oob.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/yes_no_questions.top
+    topic: 1  ~yes_no_questions
+        rule: 3  ~yes_no_questions.0.0 u: 
+          Complexity of rule ~yes_no_questions.0.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/event_uncle.top
+    topic: 1  ~event_uncle
+        rule: 8  ~event_uncle.0.0-UNCLE_EVENT u: 
+          line: 8 0  # Mein Onkel schläft jetzt imme
+          Complexity of rule ~event_uncle.0.0-UNCLE_EVENT u: 1
+        rule: 13  ~event_uncle.1.0 u: 
+          line: 13 0  # Fast jeden Tag. 
+          Complexity of rule ~event_uncle.1.0- u: 1
+        rule: 16  ~event_uncle.2.0 u: 
+          line: 16 0  # Im Wohnzimmer 
+          Complexity of rule ~event_uncle.2.0- u: 1
+        rule: 21  ~event_uncle.3.0-UNCLE_EVENT_1 u: 
+          line: 21 0  # Das ist nicht mein richtiger O
+          Complexity of rule ~event_uncle.3.0-UNCLE_EVENT_1 u: 1
+        rule: 24  ~event_uncle.4.0 u: 
+          line: 24 0  # ^reuse ( UNCLE_EVENT_1 ) 
+          Complexity of rule ~event_uncle.4.0- u: 1
+        rule: 27  ~event_uncle.5.0 u: 
+          line: 27 0  # ^reuse ( UNCLE_EVENT_1 ) 
+          Complexity of rule ~event_uncle.5.0- u: 1
+        rule: 30  ~event_uncle.6.0 u: 
+          line: 30 0  # Von früher. 
+          Complexity of rule ~event_uncle.6.0- u: 1
+        rule: 34  ~event_uncle.7.0-UNCLE_EVENT_2 u: 
+          line: 34 0  # Der kommt einfach in mein Zimm
+          Complexity of rule ~event_uncle.7.0-UNCLE_EVENT_2 u: 1
+        rule: 37  ~event_uncle.7.1 a: 
+          line: 37 0  # Keine Ahnung. Nichts. 
+          Complexity of rule ~event_uncle.7.1- a: 1
+        rule: 44  ~event_uncle.8.0-UNCLE_EVENT_3 u: 
+          line: 44 0  # Der nervt mich und sagt ich so
+          Complexity of rule ~event_uncle.8.0-UNCLE_EVENT_3 u: 1
+        rule: 47  ~event_uncle.8.1 a: 
+          line: 47 0  # Keine Ahnung. Nichts. 
+          Complexity of rule ~event_uncle.8.1- a: 1
+        rule: 52  ~event_uncle.9.0-UNCLE_EVENT_4 u: 
+          line: 52 0  # Er haut mir immer auf den Po. 
+          Complexity of rule ~event_uncle.9.0-UNCLE_EVENT_4 u: 1
+        rule: 54  ~event_uncle.9.1 a: 
+          line: 54 0  # Na immer halt. 
+          Complexity of rule ~event_uncle.9.1- a: 1
+        rule: 57  ~event_uncle.9.2 a: 
+          line: 57 0  # ^reuse ( UNCLE_EVENT_5 ) 
+          Complexity of rule ~event_uncle.9.2- a: 1
+        rule: 59  ~event_uncle.9.3 a: 
+          line: 59 0  # ^reuse ( UNCLE_EVENT_5 ) 
+          Complexity of rule ~event_uncle.9.3- a: 1
+        rule: 65  ~event_uncle.10.0-UNCLE_EVENT_5 u: 
+          line: 65 0  # Meine Mama sagt, der haut mich
+          Complexity of rule ~event_uncle.10.0-UNCLE_EVENT_5 u: 1
+        rule: 68  ~event_uncle.10.1 a: 
+          line: 68 0  # Keine Ahnung. Nichts. 
+          Complexity of rule ~event_uncle.10.1- a: 1
+        rule: 74  ~event_uncle.11.0-UNCLE_EVENT_6 u: 
+          line: 74 0  # Neulich waren wir schwimmen, s
+          Complexity of rule ~event_uncle.11.0-UNCLE_EVENT_6 u: 1
+        rule: 76  ~event_uncle.11.1 a: 
+          line: 76 0  # Vor zwei oder drei Wochen. 
+          Complexity of rule ~event_uncle.11.1- a: 1
+        rule: 78  ~event_uncle.11.2 a: 
+          line: 78 0  # ^reuse ( UNCLE_EVENT_7 ) 
+          Complexity of rule ~event_uncle.11.2- a: 1
+        rule: 81  ~event_uncle.11.3 a: 
+          line: 81 0  # Keine Ahnung. Nichts. 
+          Complexity of rule ~event_uncle.11.3- a: 1
+        rule: 87  ~event_uncle.12.0-UNCLE_EVENT_7 u: 
+          line: 87 0  # Er ist in meine Kabine gekomme
+          Complexity of rule ~event_uncle.12.0-UNCLE_EVENT_7 u: 1
+        rule: 89  ~event_uncle.12.1 a: 
+          line: 89 0  # Nee, nur einmal. 
+          Complexity of rule ~event_uncle.12.1- a: 1
+        rule: 93  ~event_uncle.12.2 a: 
+          line: 93 0  # Keine Ahnung. Nichts. 
+          Complexity of rule ~event_uncle.12.2- a: 1
+        rule: 97  ~event_uncle.13.0-UNCLE_EVENT_8 u: 
+          line: 97 0  # Dann hat er seine Hose runterg
+          Complexity of rule ~event_uncle.13.0-UNCLE_EVENT_8 u: 1
+        rule: 100  ~event_uncle.13.1 a: 
+          line: 100 0  # Keine Ahnung. Nichts. 
+          Complexity of rule ~event_uncle.13.1- a: 1
+        rule: 103  ~event_uncle.14.0-UNCLE_EVENT_9 u: 
+          line: 103 0  # Das war voll eklig. Ich will d
+          Complexity of rule ~event_uncle.14.0-UNCLE_EVENT_9 u: 1
+        rule: 106  ~event_uncle.14.1 a: 
+          line: 106 0  # Keine Ahnung. Nichts. 
+          Complexity of rule ~event_uncle.14.1- a: 1
+        rule: 110  ~event_uncle.15.0 u: 
+          line: 110 0  # Das ist voll blöd 
+          Complexity of rule ~event_uncle.15.0- u: 1
+        rule: 113  ~event_uncle.15.1 a: 
+          line: 113 0  # Keine Ahnung. Nichts. 
+          Complexity of rule ~event_uncle.15.1- a: 1
+        rule: 119  ~event_uncle.16.0 u: 
+          line: 119 0  # Nicht so gut. 
+          Complexity of rule ~event_uncle.16.0- u: 1
+        rule: 121  ~event_uncle.16.1 a: 
+          line: 121 0  # ^reuse ( UNCLE_EVENT_2 ) 
+          Complexity of rule ~event_uncle.16.1- a: 1
+        rule: 124  ~event_uncle.17.0 u: 
+          line: 124 0  # ^reuse ( UNCLE_EVENT_2 ) 
+          Complexity of rule ~event_uncle.17.0- u: 1
+        rule: 127  ~event_uncle.18.0 u: 
+          line: 127 0  # [ Mit meiner Freundin. ] [ Mit
+          Complexity of rule ~event_uncle.18.0- u: 1
+        rule: 130  ~event_uncle.19.0 u: 
+          line: 130 0  # [ Er bringt mich nach Hause. ]
+          Complexity of rule ~event_uncle.19.0- u: 1
+        rule: 133  ~event_uncle.20.0 u: 
+          line: 133 0  # [ Fahre gerne mit Dirk ] [ Bin
+          Complexity of rule ~event_uncle.20.0- u: 1
+        rule: 136  ~event_uncle.21.0 u: 
+          line: 136 0  # [ Der schläft nur bei uns. ] 
+          Complexity of rule ~event_uncle.21.0- u: 1
+        rule: 139  ~event_uncle.22.0 u: 
+          line: 139 0  # [ Manchmal auch mein Papa ] [ 
+          Complexity of rule ~event_uncle.22.0- u: 1
+        rule: 142  ~event_uncle.23.0 u: 
+          line: 142 0  # [ Ja. ] [ Nein. ] 
+          Complexity of rule ~event_uncle.23.0- u: 1
+        rule: 145  ~event_uncle.24.0 u: 
+          line: 145 0  # [ Ja. ] [ Nein. ] 
+          Complexity of rule ~event_uncle.24.0- u: 1
+        rule: 148  ~event_uncle.25.0 u: 
+          line: 148 0  # [ Ja. ] [ Nein. ] 
+          Complexity of rule ~event_uncle.25.0- u: 1
+        rule: 151  ~event_uncle.26.0 u: 
+          line: 151 0  # [ Ja. ] [ Nein. ] 
+          Complexity of rule ~event_uncle.26.0- u: 1
+        rule: 154  ~event_uncle.27.0 u: 
+          Complexity of rule ~event_uncle.27.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/b_answer_roulette.top
+    topic: 1  ~answer_roulette
+        rule: 3  ~answer_roulette.0.0 u: 
+          line: 3 0  # $closed_question = 0 [ Ja ] [ 
+          Complexity of rule ~answer_roulette.0.0- u: 1
+        rule: 4  ~answer_roulette.1.0 u: 
+          line: 4 0  # $closed_question_emo = 0 [ Naj
+          Complexity of rule ~answer_roulette.1.0- u: 1
+        rule: 5  ~answer_roulette.2.0 u: 
+          Complexity of rule ~answer_roulette.2.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/a_concepts.top
+    topic: 1  ~own_concepts
+    concept: 3  ~action
+    concept: 4  ~activity
+    concept: 5  ~age
+    concept: 6  ~bot
+    concept: 7  ~classmates
+    concept: 8  ~emohow_closed
+    concept: 9  ~emohow_open
+    concept: 10  ~facilitator
+    concept: 11  ~frequency
+    concept: 12  ~happening
+    concept: 13  ~home
+    concept: 14  ~knowing
+    concept: 15  ~like
+    concept: 16  ~like_strong
+    concept: 17  ~like_ok
+    concept: 18  ~like_a_bit
+    concept: 19  ~like_not
+    concept: 20  ~mood
+    concept: 21  ~names
+    concept: 22  ~narrate
+    concept: 23  ~parents
+    concept: 24  ~people
+    concept: 25  ~places
+    concept: 26  ~problems
+    concept: 27  ~residence
+    concept: 28  ~relationship
+    concept: 29  ~school
+    concept: 30  ~time
+    concept: 31  ~yes_no
+    concept: 32  ~while
+    concept: 33  ~why
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/handle_oob.top
     topic: 1  ~handle_oob
         rule: 3  ~handle_oob.0.0 u: 
-          line: 3 0  # Das ist der Test ^keep ( ) ^re
+          line: 3 0  # $closed = 1 ^keep ( ) ^repeat 
           Complexity of rule ~handle_oob.0.0- u: 1
         rule: 5  ~handle_oob.1.0 u: 
-          line: 5 0  # $closed = 1 ^keep ( ) ^repeat 
           Complexity of rule ~handle_oob.1.0- u: 1
-        rule: 7  ~handle_oob.2.0 u: 
-          Complexity of rule ~handle_oob.2.0- u: 1
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/OOB/simplecontrol.top
-    macro: 4  ^oob
-          line: 5 0  # ^addtopic ( ~introduction ) 
-          line: 6 28  # $cs_control_main = ~control 
-          line: 7 56  # $cs_language = german 
-          line: 8 78  # $cs_externaltag = ~xpostagsent
-          line: 9 113  # $userprompt = ^"%user: >" 
-          line: 10 139  # $botprompt = ^"OOB: " 
-          line: 11 161  # $cs_token = 1048576 | 4096 | 2
-          Complexity of ^oob: 1
-    topic: 13  ~xrejoinder
-        rule: 16  ~xrejoinder.0.0 u: 
-          line: 16 0  # ^nofail ( topic ^rejoinder ( )
-          Complexity of rule ~xrejoinder.0.0- u: 1
-    topic: 23  ~control
-        rule: 25  ~control.0.0 u: 
-          line: 26 0  # ^gambit ( ~introduction ) 
-          Complexity of rule ~control.0.0- u: 1
-        rule: 29  ~control.1.0 u: 
-          line: 30 0  # ^respond ( ~handle_oob ) 
-          line: 31 25  # ^end ( SENTENCE ) 
-          Complexity of rule ~control.1.0- u: 1
-        rule: 35  ~control.2.0 u: 
-          line: 36 0  # $$currenttopic = %topic 
-          line: 37 24  # $$response = %response 
-          if 38 51  
-          ifend 38 125  
-          line: 38 47  # ^if 00v( %response == $$respon
-          if 40 130  
-          line: 40 126  # ^if 00M( %length == 0 and %res
-          line: 41 181  # { 
-          line: 42 183  # ^nofail ( TOPIC ^gambit ( $$cu
-          ifend 43 233  
-          line: 43 228  # } 004 
-          if 45 238  
-          ifend 45 325  
-          line: 45 234  # ^if 00v( %response == $$respon
-          if 47 330  
-          line: 47 326  # ^if 00v( %response == $$respon
-          line: 48 364  # { 
-          line: 49 366  # @8 = ^keywordtopics ( ) 
-          loop 50 396  
-          line: 50 390  # ^loop ( -1 ) aaa 
-          line: 51 407  # { 
-          line: 52 409  # $$topic = ^first ( @8subject )
-          line: 53 440  # ^nofail ( TOPIC ^respond ( $$t
-          if 54 483  
-          line: 54 479  # ^if 00m( %response != 0 ) aaa
-          line: 55 508  # { 
-          line: 56 510  # ^end ( RULE ) 
-          ifend 57 529  
-          line: 57 524  # } 004 
-          loopend 58 532  
-          line: 58 530  # } 
-          ifend 59 537  
-          line: 59 532  # } 004 
-          if 61 542  
-          ifend 61 626  
-          line: 61 538  # ^if 00v( %response == $$respon
-          if 64 631  
-          line: 64 627  # ^if 00F( %outputrejoinder or %
-          line: 65 675  # { 
-          line: 66 677  # ^end ( TOPIC ) 
-          ifend 67 697  
-          line: 67 692  # } 004 
-          if 69 702  
-          ifend 69 819  
-          line: 69 698  # ^if 00~( %response == $$respon
-          if 71 824  
-          line: 71 820  # ^if 00v( %response == $$respon
-          line: 72 858  # { 
-          line: 73 860  # @8 = ^keywordtopics ( ) 
-          loop 74 890  
-          line: 74 884  # ^loop ( -1 ) aaa 
-          line: 75 901  # { 
-          line: 76 903  # $$topic = ^first ( @8subject )
-          line: 77 934  # ^nofail ( TOPIC ^gambit ( $$to
-          if 78 976  
-          line: 78 972  # ^if 00m( %response != 0 ) aaa
-          line: 79 1001  # { 
-          line: 80 1003  # ^end ( RULE ) 
-          ifend 81 1022  
-          line: 81 1017  # } 004 
-          loopend 82 1025  
-          line: 82 1023  # } 
-          ifend 83 1030  
-          line: 83 1025  # } 004 
-          if 84 1035  
-          ifend 84 1121  
-          line: 84 1031  # ^if 00v( %response == $$respon
-          if 86 1126  
-          line: 86 1122  # ^if 00v( %response == $$respon
-          line: 87 1160  # { 
-          line: 88 1162  # @8 = ^gambittopics ( ) 
-          loop 89 1191  
-          line: 89 1185  # ^loop ( -1 ) aaa 
-          line: 90 1202  # { 
-          line: 91 1204  # $$topic = ^pick ( @8subject ) 
-          line: 92 1234  # ^nofail ( TOPIC ^gambit ( $$to
-          if 93 1276  
-          line: 93 1272  # ^if 00v( %response != $$respon
-          line: 94 1310  # { 
-          line: 95 1312  # ^end ( RULE ) 
-          ifend 96 1331  
-          line: 96 1326  # } 004 
-          loopend 97 1334  
-          line: 97 1332  # } 
-          ifend 98 1339  
-          line: 98 1334  # } 004 
-          if 99 1344  
-          line: 99 1340  # ^if 00v( %response == $$respon
-          line: 100 1378  # { 
-          line: 101 1380  # ^repeat ( ) 
-          line: 102 1392  # I don't know what to say. 
-          line: 103 1418  # } aaa 
-          ifend 105 1423  
-          Complexity of rule ~control.2.0- u: 15
-file: 0  /Users/hermannbarbe/Desktop/Laura_Prototyp/ChatScript-8.2/RAWDATA/OOB/keywordless.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/hobbies_bio.top
+    topic: 1  ~hobbies_bio
+        rule: 8  ~hobbies_bio.0.0-HOBBIES_DANCE u: 
+          line: 8 0  # Ich gehe immer am Dienstags in
+          Complexity of rule ~hobbies_bio.0.0-HOBBIES_DANCE u: 1
+        rule: 10  ~hobbies_bio.0.1 a: 
+          line: 10 0  # Der Jugendclub hier bei der Sc
+          Complexity of rule ~hobbies_bio.0.1- a: 1
+        rule: 13  ~hobbies_bio.1.0 u: 
+          line: 13 0  # ^reuse ( HOBBIES_DANCE ) 
+          Complexity of rule ~hobbies_bio.1.0- u: 1
+        rule: 16  ~hobbies_bio.2.0 u: 
+          line: 16 0  # [ Nein mit meinen Freundinnen 
+          Complexity of rule ~hobbies_bio.2.0- u: 1
+        rule: 20  ~hobbies_bio.3.0 u: 
+          line: 20 0  # ^reuse ( HOBBIES_BEYONCE ) 
+          Complexity of rule ~hobbies_bio.3.0- u: 1
+        rule: 23  ~hobbies_bio.4.0-HOBBIES_TEACHER u: 
+          line: 23 0  # Der Martin ist total süß. Da
+          Complexity of rule ~hobbies_bio.4.0-HOBBIES_TEACHER u: 1
+        rule: 26  ~hobbies_bio.5.0-HOBBIES_BEYONCE u: 
+          line: 26 0  # Wir tanzen was tolles von Beyo
+          Complexity of rule ~hobbies_bio.5.0-HOBBIES_BEYONCE u: 1
+        rule: 28  ~hobbies_bio.5.1 a: 
+          line: 28 0  # ^reuse ( HOBBIES_SOLO ) 
+          Complexity of rule ~hobbies_bio.5.1- a: 1
+        rule: 32  ~hobbies_bio.6.0-HOBBIES_SOLO u: 
+          line: 32 0  # Die Mira ist so supercool, die
+          Complexity of rule ~hobbies_bio.6.0-HOBBIES_SOLO u: 1
+        rule: 37  ~hobbies_bio.7.0-TEACHER_RELATIONSHIP u: 
+          line: 37 0  # Der ist so süß. 
+          Complexity of rule ~hobbies_bio.7.0-TEACHER_RELATIONSHIP u: 1
+        rule: 40  ~hobbies_bio.8.0 u: 
+          line: 40 0  # ^reuse ( HOBBIES_BEYONCE ) 
+          Complexity of rule ~hobbies_bio.8.0- u: 1
+        rule: 43  ~hobbies_bio.9.0 u: 
+          line: 43 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~hobbies_bio.9.0- u: 1
+        rule: 46  ~hobbies_bio.10.0 u: 
+          line: 46 0  # Immer dienstags. 
+          Complexity of rule ~hobbies_bio.10.0- u: 1
+        rule: 49  ~hobbies_bio.11.0 u: 
+          line: 49 0  # Mira, Verena und Lucy. 
+          Complexity of rule ~hobbies_bio.11.0- u: 1
+        rule: 52  ~hobbies_bio.12.0 u: 
+          line: 52 0  # Schon lange. 
+          Complexity of rule ~hobbies_bio.12.0- u: 1
+        rule: 55  ~hobbies_bio.13.0 u: 
+          line: 55 0  # [ Onkel Dirk. ] [ Papa. ] 
+          Complexity of rule ~hobbies_bio.13.0- u: 1
+        rule: 58  ~hobbies_bio.14.0 u: 
+          line: 58 0  # [ Ich werde abgeholt. ] [ Ich 
+          Complexity of rule ~hobbies_bio.14.0- u: 1
+        rule: 61  ~hobbies_bio.15.0 u: 
+          line: 61 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~hobbies_bio.15.0- u: 1
+        rule: 64  ~hobbies_bio.16.0 u: 
+          line: 64 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~hobbies_bio.16.0- u: 1
+        rule: 67  ~hobbies_bio.17.0 u: 
+          line: 67 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~hobbies_bio.17.0- u: 1
+        rule: 70  ~hobbies_bio.18.0 u: 
+          line: 70 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~hobbies_bio.18.0- u: 1
+        rule: 73  ~hobbies_bio.19.0 u: 
+          line: 73 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~hobbies_bio.19.0- u: 1
+        rule: 76  ~hobbies_bio.20.0 u: 
+          Complexity of rule ~hobbies_bio.20.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/mother_bio.top
+    topic: 1  ~mother_bio
+        rule: 7  ~mother_bio.0.0-MAMA_SICK u: 
+          line: 7 0  # Meine Mama ist immer zu Hause.
+          Complexity of rule ~mother_bio.0.0-MAMA_SICK u: 1
+        rule: 10  ~mother_bio.1.0 u: 
+          line: 10 0  # ^reuse ( MAMA_BACK ) 
+          Complexity of rule ~mother_bio.1.0- u: 1
+        rule: 13  ~mother_bio.2.0 u: 
+          line: 13 0  # ^reuse ( MAMA_BACK ) 
+          Complexity of rule ~mother_bio.2.0- u: 1
+        rule: 16  ~mother_bio.3.0-MAMA_BACK u: 
+          line: 16 0  # Sie muss im Bett liegen, wegen
+          Complexity of rule ~mother_bio.3.0-MAMA_BACK u: 1
+        rule: 18  ~mother_bio.3.1 a: 
+          line: 18 0  # Sie ist schlimm krank. 
+          Complexity of rule ~mother_bio.3.1- a: 1
+        rule: 21  ~mother_bio.4.0-MAMA_HOMEWORK u: 
+          line: 21 0  # Nach der Schule setze ich mich
+          Complexity of rule ~mother_bio.4.0-MAMA_HOMEWORK u: 1
+        rule: 24  ~mother_bio.5.0-MAMA_MATH u: 
+          line: 24 0  # Mama hilft mir dann immer bei 
+          Complexity of rule ~mother_bio.5.0-MAMA_MATH u: 1
+        rule: 29  ~mother_bio.6.0 u: 
+          line: 29 0  # ^reuse ( MAMA_MATH ) 
+          Complexity of rule ~mother_bio.6.0- u: 1
+        rule: 32  ~mother_bio.7.0 u: 
+          line: 32 0  # ^reuse ( MAMA_HOMEWORK ) 
+          Complexity of rule ~mother_bio.7.0- u: 1
+        rule: 35  ~mother_bio.8.0-MAMA_RELATIONSHIP u: 
+          line: 35 0  # Ich hab meine Mama so lieb. 
+          Complexity of rule ~mother_bio.8.0-MAMA_RELATIONSHIP u: 1
+        rule: 38  ~mother_bio.9.0 u: 
+          line: 38 0  # ^reuse ( MAMA_HOMEWORK ) 
+          Complexity of rule ~mother_bio.9.0- u: 1
+        rule: 41  ~mother_bio.10.0 u: 
+          line: 41 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~mother_bio.10.0- u: 1
+        rule: 44  ~mother_bio.11.0 u: 
+          line: 44 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~mother_bio.11.0- u: 1
+        rule: 47  ~mother_bio.12.0 u: 
+          line: 47 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~mother_bio.12.0- u: 1
+        rule: 51  ~mother_bio.13.0 u: 
+          line: 51 0  # Schon ganz lang. 
+          Complexity of rule ~mother_bio.13.0- u: 1
+        rule: 54  ~mother_bio.14.0 u: 
+          line: 54 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~mother_bio.14.0- u: 1
+        rule: 57  ~mother_bio.15.0 u: 
+          Complexity of rule ~mother_bio.15.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/names_bio.top
+    topic: 1  ~names_bio
+        rule: 5  ~names_bio.0.0-BROTHER_NAME u: 
+          line: 5 0  # Er heißt Leon. 
+          Complexity of rule ~names_bio.0.0-BROTHER_NAME u: 1
+        rule: 8  ~names_bio.1.0-MOTHER_NAME u: 
+          line: 8 0  # Meine Mama heißt Charlotte. 
+          Complexity of rule ~names_bio.1.0-MOTHER_NAME u: 1
+        rule: 11  ~names_bio.2.0-FATHER_NAME u: 
+          line: 11 0  # Mein Papa heißt Stefan. 
+          Complexity of rule ~names_bio.2.0-FATHER_NAME u: 1
+        rule: 14  ~names_bio.3.0-FRIEND_NAME u: 
+          line: 14 0  # Meine beste Freundin ist die M
+          Complexity of rule ~names_bio.3.0-FRIEND_NAME u: 1
+        rule: 17  ~names_bio.4.0-UNCLE_NAME u: 
+          line: 17 0  # Der heißt Dirk. 
+          Complexity of rule ~names_bio.4.0-UNCLE_NAME u: 1
+        rule: 20  ~names_bio.5.0 u: 
+          line: 20 0  # ^reuse ( UNCLE_NAME ) 
+          Complexity of rule ~names_bio.5.0- u: 1
+        rule: 23  ~names_bio.6.0-BOT_NAME u: 
+          line: 23 0  # Laura. 
+          Complexity of rule ~names_bio.6.0-BOT_NAME u: 1
+        rule: 25  ~names_bio.7.0 u: 
+          line: 25 0  # Wessen Name nochmal? 
+          Complexity of rule ~names_bio.7.0- u: 1
+        rule: 27  ~names_bio.7.1 a: 
+          line: 27 0  # ^reuse ( BROTHER_NAME ) 
+          Complexity of rule ~names_bio.7.1- a: 1
+        rule: 29  ~names_bio.7.2 a: 
+          line: 29 0  # ^reuse ( MOTHER_NAME ) 
+          Complexity of rule ~names_bio.7.2- a: 1
+        rule: 31  ~names_bio.7.3 a: 
+          line: 31 0  # ^reuse ( FATHER_NAME ) 
+          Complexity of rule ~names_bio.7.3- a: 1
+        rule: 33  ~names_bio.7.4 a: 
+          line: 33 0  # ^reuse ( FRIEND_NAME ) 
+          Complexity of rule ~names_bio.7.4- a: 1
+        rule: 35  ~names_bio.7.5 a: 
+          line: 35 0  # ^reuse ( UNCLE_NAME ) 
+          Complexity of rule ~names_bio.7.5- a: 1
+        rule: 37  ~names_bio.7.6 a: 
+          Complexity of rule ~names_bio.7.6- a: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/b_topic_roulette.top
+    topic: 1  ~topic_roulette
+        rule: 4  ~topic_roulette.0.0 u: 
+          line: 4 0  # $narrative = 1 [ ^respond ( ~f
+          Complexity of rule ~topic_roulette.0.0- u: 1
+        rule: 5  ~topic_roulette.1.0 u: 
+          line: 5 0  # $narrative = 1 ^respond ( ~bro
+          Complexity of rule ~topic_roulette.1.0- u: 1
+        rule: 6  ~topic_roulette.2.0 u: 
+          line: 6 0  # $narrative = 1 ^respond ( ~eve
+          Complexity of rule ~topic_roulette.2.0- u: 1
+        rule: 9  ~topic_roulette.3.0 u: 
+          line: 9 0  # [ ^respond ( ~event_uncle ) ] 
+          Complexity of rule ~topic_roulette.3.0- u: 1
+        rule: 12  ~topic_roulette.4.0 u: 
+          Complexity of rule ~topic_roulette.4.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/keywordless.top
     topic: 1  ~keywordless
         rule: 3  ~keywordless.0.0- r: 
-          line: 3 0  # Kann ich dir noch irgendwie we
+          line: 3 0  # Darüber möchte ich jetzt nic
           Complexity of rule ~keywordless.0.0- r: 1
         rule: 5  ~keywordless.1.0- r: 
-          line: 5 0  # Kann ich Sonst noch was für d
+          line: 5 0  # Keine Ahnung. ^keep ( ) ^repea
           Complexity of rule ~keywordless.1.0- r: 1
         rule: 7  ~keywordless.2.0- r: 
+          line: 7 0  # Das weiß ich doch nicht. ^kee
           Complexity of rule ~keywordless.2.0- r: 1
+        rule: 9  ~keywordless.3.0- r: 
+          line: 9 0  # Ehm... ^keep ( ) ^repeat ( ) 
+          Complexity of rule ~keywordless.3.0- r: 1
+        rule: 11  ~keywordless.4.0- r: 
+          line: 11 0  # Was meinen sie damit genau? ^k
+          Complexity of rule ~keywordless.4.0- r: 1
+        rule: 13  ~keywordless.5.0- r: 
+          line: 13 0  # Weiß nicht... ^keep ( ) ^repe
+          Complexity of rule ~keywordless.5.0- r: 1
+        rule: 15  ~keywordless.6.0- r: 
+          Complexity of rule ~keywordless.6.0- r: 1

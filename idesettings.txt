@@ -1,7 +1,7 @@
 script: 10 170 1260 756 
 input: 1310 170 556 70 
 output: 1310 250 556 207 
-statistics: 10 956 1856 70 
+statistics: 10 956 1440 70 
 variables: 1310 467 556 207 
 stack: 1310 684 556 242 
 go: 10 10 106 35 
