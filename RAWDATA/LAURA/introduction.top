@@ -1,4 +1,4 @@
-topic: ~introduction  keep repeat (hallo hi ~emohow_open ~emohow_closed ~speak_verbs ~narrate ~happening familie ~home tag)
+topic: ~introduction  repeat (hallo hi ~emohow_open ~emohow_closed ~speak_verbs ~narrate ~happening familie ~home tag)
 
 t: $event_state=0 [Hallo!][Hey!][Grüß Gott!]
 

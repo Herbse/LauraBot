@@ -1,4 +1,4 @@
-topic: ~hobbies_bio (~hobby ~dance tanzkurs tanz)
+topic: ~hobbies_bio repeat (~hobby ~dance tanzkurs tanz)
 # Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach dem Tanzen  unterschiedliche Antworten generiert
 
 
