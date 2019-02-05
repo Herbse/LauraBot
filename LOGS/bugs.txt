@@ -108,3 +108,9 @@ BUG in mother_bio.top at 44: u: (<<anstrengend ~mother helfen) [Ja][Nein]
 PATTERN-9 ) is not closing corresponding (
 
 BUG in topic_wer_anonymous_GERMAN.txt at 0: ^anonymous No such bot  wer -  -  status: defaultbot word not found
+
+BUG: Tue Feb 05 11:05:56 2019: input:1 No system variable %input<%userfirstline   caller:pij callee:laura at  in sentence:  [ question: open]
+No system variable %input<%userfirstline  
+MinReleaseStackGap 88MB MinHeapAvailable 89MB
+MaxBuffers used 7 of 80
+

@@ -9,7 +9,7 @@ $cs_externaltag = ~xPOSTAGSENTENCE
 $userprompt = ^"%user: >"
 $botprompt = ^"LAURA: "
 $singleResponse = 1 # issue only 1 output message
-$cs_token = #NO_HYPHEN_END  | #DO_NUMBER_MERGE | #DO_DATE_MERGE  
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE  | #DO_SPELLCHECK  | #DO_PARSE  
 
 topic: ~xrejoinder system repeat ()
 

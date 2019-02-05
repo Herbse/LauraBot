@@ -1,4 +1,4 @@
-topic: ~event_uncle (onkel Dirk ~facilitator ~action ~touch)
+topic: ~event_uncle (onkel Dirk ~facilitator ~action ~touch zimmer)
 
 
 
@@ -18,7 +18,7 @@ u: (wo ^incontext(UNCLE_EVENT)) Im Wohnzimmer
 #---------------------------------------------------------------------------------------------
 
 #! Erzähl mir mal von deinem Onkel
-u: UNCLE_EVENT_1 ([~facilitator ~narrate ~action ~touch]) Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+u: UNCLE_EVENT_1 ([~facilitator ~narrate ~action ~touch onkel]) Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
 
 #! Wer ist denn dein Onkel?
 u: (<<wer [onkel Dirk]>> ^incontext(UNCLE_EVENT_1)) ^reuse (UNCLE_EVENT_1)
@@ -31,17 +31,17 @@ u: (woher) Von früher.
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?
-u: UNCLE_EVENT_2 ([~facilitator ~action ~touch ~narrate]) Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
+u: UNCLE_EVENT_2 ([~facilitator ~action ~touch ~narrate onkel]) Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
     a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
 
- 
+
 #---------------------------------------------------------------------------------------------    
 
 #! Warum willst du denn nicht, dass er in dein Zimmer kommt?
 #! Und was macht
-u: UNCLE_EVENT_3 ([~facilitator ~action ~touch ~narrate]) Der nervt mich und sagt ich soll aufräumen.
+u: UNCLE_EVENT_3 ([~facilitator ~action ~touch ~narrate onkel]) Der nervt mich und sagt ich soll aufräumen.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
     a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
@@ -49,7 +49,7 @@ u: UNCLE_EVENT_3 ([~facilitator ~action ~touch ~narrate]) Der nervt mich und sag
 #---------------------------------------------------------------------------------------------
 
 #! Was hat dein Onkel denn gemacht?
-u: UNCLE_EVENT_4 ([~facilitator ~action ~touch ~narrate]) Er haut mir immer auf den Po. Das ist voll gemein!
+u: UNCLE_EVENT_4 ([~facilitator ~action ~touch ~narrate onkel]) Er haut mir immer auf den Po. Das ist voll gemein!
     #! Wann?
     a: (~time) Na immer halt.
     #! Und was sagt dein Vater dazu? 
@@ -57,21 +57,25 @@ u: UNCLE_EVENT_4 ([~facilitator ~action ~touch ~narrate]) Er haut mir immer auf 
     a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) ^reuse(UNCLE_EVENT_5)
     #! Warum haut er dir auf den Po?
     a: (~why) ^reuse(UNCLE_EVENT_5)
+    #! Er haut dir auf den Po?
+    a: (<<haut po>>) ^reuse(UNCLE_EVENT_5)
    
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: UNCLE_EVENT_5 ([~facilitator ~action ~touch ~narrate]) Meine Mama sagt, der haut mich, weil ich immer frech zu ihm bin.
+u: UNCLE_EVENT_5 ([~facilitator ~action ~touch ~narrate onkel]) Meine Mama sagt, der haut mich, weil ich immer frech zu ihm bin.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
     a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    #! Und wie findest du das?
+    a: (~relationship) Das tut echt weh.
 #---------------------------------------------------------------------------------------------
 # Ab hier sind die Ereignisse zum sexuellen Missbrauch
 #---------------------------------------------------------------------------------------------
 
 #! Was meinst du mit "sein Ding"?
-u: UNCLE_EVENT_6  ( [~facilitator ~action ~touch ~narrate]) Neulich waren wir schwimmen, sollte ich sein Ding in den Mund nehmen.
+u: UNCLE_EVENT_6  ( [~facilitator ~action ~touch ~narrate onkel]) Neulich waren wir schwimmen, sollte ich sein Ding in den Mund nehmen.
     #! Wann?
     a: (~time) Vor zwei oder drei Wochen.
     #! Er hat also gewollt, dass du seinen Penis in den Mund nimmst.
@@ -84,7 +88,7 @@ u: UNCLE_EVENT_6  ( [~facilitator ~action ~touch ~narrate]) Neulich waren wir sc
 #---------------------------------------------------------------------------------------------
 
 #! wie ist das passiert?
-u: UNCLE_EVENT_7 ([~facilitator ~action ~touch ~narrate]) Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
+u: UNCLE_EVENT_7 ([~facilitator ~action ~touch ~narrate onkel]) Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
     #!War das einmal oder kam das öfter vor?
     a: ([~frequency einmal]) Nee, nur einmal.
     
@@ -94,13 +98,13 @@ u: UNCLE_EVENT_7 ([~facilitator ~action ~touch ~narrate]) Er ist in meine Kabine
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: UNCLE_EVENT_8 ([~facilitator ~action ~touch ~narrate]) Dann hat er seine Hose runtergezogen.
+u: UNCLE_EVENT_8 ([~facilitator ~action ~touch ~narrate onkel]) Dann hat er seine Hose runtergezogen.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
     a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?
-u: UNCLE_EVENT_9 ([~facilitator ~action ~touch ~narrate]) Das war voll eklig. Ich will den nicht mehr sehen.
+u: UNCLE_EVENT_9 ([~facilitator ~action ~touch ~narrate onkel]) Das war voll eklig. Ich will den nicht mehr sehen.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
     a: ([was wie][sagen finden sagt findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
@@ -149,6 +153,9 @@ u: (<<[weh schmerzen] [hauen haut schlagen schlägt]>>) [Ja.][Nein.]
 
 #! Sind deine Eltern mal dabei gewesen, wenn er das getan hat? 
 u: (<<[eltern ~father ~mother jemand irgendjemand] dabei>>) [Ja.][Nein.]
+
+#! Wer kommt in dein Zimmer?
+u: (<<wer zimmer>>) Mein Onkel.
 
 # Weiterleitung aus dem Topic-Roulette
 u: ($narrative=1) $narrative=0 ^reuse(UNCLE_EVENT)

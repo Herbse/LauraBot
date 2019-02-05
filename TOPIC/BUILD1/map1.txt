@@ -74,7 +74,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/z_simplecon
           line: 9 113  # $userprompt = ^"%user: >" 
           line: 10 139  # $botprompt = ^"LAURA: " 
           line: 11 163  # $singleresponse = 1 
-          line: 12 183  # $cs_token = 1048576 | 512 | 13
+          line: 12 183  # $cs_token = 512 | 131072 | 102
           Complexity of ^laura: 1
     topic: 14  ~xrejoinder
         rule: 17  ~xrejoinder.0.0 u: 
@@ -556,89 +556,98 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/event_uncle
         rule: 59  ~event_uncle.9.3 a: 
           line: 59 0  # ^reuse ( UNCLE_EVENT_5 ) 
           Complexity of rule ~event_uncle.9.3- a: 1
-        rule: 65  ~event_uncle.10.0-UNCLE_EVENT_5 u: 
-          line: 65 0  # Meine Mama sagt, der haut mich
+        rule: 61  ~event_uncle.9.4 a: 
+          line: 61 0  # ^reuse ( UNCLE_EVENT_5 ) 
+          Complexity of rule ~event_uncle.9.4- a: 1
+        rule: 67  ~event_uncle.10.0-UNCLE_EVENT_5 u: 
+          line: 67 0  # Meine Mama sagt, der haut mich
           Complexity of rule ~event_uncle.10.0-UNCLE_EVENT_5 u: 1
-        rule: 68  ~event_uncle.10.1 a: 
-          line: 68 0  # Keine Ahnung. Nichts. 
+        rule: 70  ~event_uncle.10.1 a: 
+          line: 70 0  # Keine Ahnung. Nichts. 
           Complexity of rule ~event_uncle.10.1- a: 1
-        rule: 74  ~event_uncle.11.0-UNCLE_EVENT_6 u: 
-          line: 74 0  # Neulich waren wir schwimmen, s
+        rule: 72  ~event_uncle.10.2 a: 
+          line: 72 0  # Das tut echt weh. 
+          Complexity of rule ~event_uncle.10.2- a: 1
+        rule: 78  ~event_uncle.11.0-UNCLE_EVENT_6 u: 
+          line: 78 0  # Neulich waren wir schwimmen, s
           Complexity of rule ~event_uncle.11.0-UNCLE_EVENT_6 u: 1
-        rule: 76  ~event_uncle.11.1 a: 
-          line: 76 0  # Vor zwei oder drei Wochen. 
+        rule: 80  ~event_uncle.11.1 a: 
+          line: 80 0  # Vor zwei oder drei Wochen. 
           Complexity of rule ~event_uncle.11.1- a: 1
-        rule: 78  ~event_uncle.11.2 a: 
-          line: 78 0  # ^reuse ( UNCLE_EVENT_7 ) 
+        rule: 82  ~event_uncle.11.2 a: 
+          line: 82 0  # ^reuse ( UNCLE_EVENT_7 ) 
           Complexity of rule ~event_uncle.11.2- a: 1
-        rule: 81  ~event_uncle.11.3 a: 
-          line: 81 0  # Keine Ahnung. Nichts. 
+        rule: 85  ~event_uncle.11.3 a: 
+          line: 85 0  # Keine Ahnung. Nichts. 
           Complexity of rule ~event_uncle.11.3- a: 1
-        rule: 87  ~event_uncle.12.0-UNCLE_EVENT_7 u: 
-          line: 87 0  # Er ist in meine Kabine gekomme
+        rule: 91  ~event_uncle.12.0-UNCLE_EVENT_7 u: 
+          line: 91 0  # Er ist in meine Kabine gekomme
           Complexity of rule ~event_uncle.12.0-UNCLE_EVENT_7 u: 1
-        rule: 89  ~event_uncle.12.1 a: 
-          line: 89 0  # Nee, nur einmal. 
+        rule: 93  ~event_uncle.12.1 a: 
+          line: 93 0  # Nee, nur einmal. 
           Complexity of rule ~event_uncle.12.1- a: 1
-        rule: 93  ~event_uncle.12.2 a: 
-          line: 93 0  # Keine Ahnung. Nichts. 
+        rule: 97  ~event_uncle.12.2 a: 
+          line: 97 0  # Keine Ahnung. Nichts. 
           Complexity of rule ~event_uncle.12.2- a: 1
-        rule: 97  ~event_uncle.13.0-UNCLE_EVENT_8 u: 
-          line: 97 0  # Dann hat er seine Hose runterg
+        rule: 101  ~event_uncle.13.0-UNCLE_EVENT_8 u: 
+          line: 101 0  # Dann hat er seine Hose runterg
           Complexity of rule ~event_uncle.13.0-UNCLE_EVENT_8 u: 1
-        rule: 100  ~event_uncle.13.1 a: 
-          line: 100 0  # Keine Ahnung. Nichts. 
+        rule: 104  ~event_uncle.13.1 a: 
+          line: 104 0  # Keine Ahnung. Nichts. 
           Complexity of rule ~event_uncle.13.1- a: 1
-        rule: 103  ~event_uncle.14.0-UNCLE_EVENT_9 u: 
-          line: 103 0  # Das war voll eklig. Ich will d
+        rule: 107  ~event_uncle.14.0-UNCLE_EVENT_9 u: 
+          line: 107 0  # Das war voll eklig. Ich will d
           Complexity of rule ~event_uncle.14.0-UNCLE_EVENT_9 u: 1
-        rule: 106  ~event_uncle.14.1 a: 
-          line: 106 0  # Keine Ahnung. Nichts. 
+        rule: 110  ~event_uncle.14.1 a: 
+          line: 110 0  # Keine Ahnung. Nichts. 
           Complexity of rule ~event_uncle.14.1- a: 1
-        rule: 110  ~event_uncle.15.0 u: 
-          line: 110 0  # Das ist voll blöd 
+        rule: 114  ~event_uncle.15.0 u: 
+          line: 114 0  # Das ist voll blöd 
           Complexity of rule ~event_uncle.15.0- u: 1
-        rule: 113  ~event_uncle.15.1 a: 
-          line: 113 0  # Keine Ahnung. Nichts. 
+        rule: 117  ~event_uncle.15.1 a: 
+          line: 117 0  # Keine Ahnung. Nichts. 
           Complexity of rule ~event_uncle.15.1- a: 1
-        rule: 119  ~event_uncle.16.0 u: 
-          line: 119 0  # Nicht so gut. 
+        rule: 123  ~event_uncle.16.0 u: 
+          line: 123 0  # Nicht so gut. 
           Complexity of rule ~event_uncle.16.0- u: 1
-        rule: 121  ~event_uncle.16.1 a: 
-          line: 121 0  # ^reuse ( UNCLE_EVENT_2 ) 
+        rule: 125  ~event_uncle.16.1 a: 
+          line: 125 0  # ^reuse ( UNCLE_EVENT_2 ) 
           Complexity of rule ~event_uncle.16.1- a: 1
-        rule: 124  ~event_uncle.17.0 u: 
-          line: 124 0  # ^reuse ( UNCLE_EVENT_2 ) 
+        rule: 128  ~event_uncle.17.0 u: 
+          line: 128 0  # ^reuse ( UNCLE_EVENT_2 ) 
           Complexity of rule ~event_uncle.17.0- u: 1
-        rule: 127  ~event_uncle.18.0 u: 
-          line: 127 0  # [ Mit meiner Freundin. ] [ Mit
+        rule: 131  ~event_uncle.18.0 u: 
+          line: 131 0  # [ Mit meiner Freundin. ] [ Mit
           Complexity of rule ~event_uncle.18.0- u: 1
-        rule: 130  ~event_uncle.19.0 u: 
-          line: 130 0  # [ Er bringt mich nach Hause. ]
+        rule: 134  ~event_uncle.19.0 u: 
+          line: 134 0  # [ Er bringt mich nach Hause. ]
           Complexity of rule ~event_uncle.19.0- u: 1
-        rule: 133  ~event_uncle.20.0 u: 
-          line: 133 0  # [ Fahre gerne mit Dirk ] [ Bin
+        rule: 137  ~event_uncle.20.0 u: 
+          line: 137 0  # [ Fahre gerne mit Dirk ] [ Bin
           Complexity of rule ~event_uncle.20.0- u: 1
-        rule: 136  ~event_uncle.21.0 u: 
-          line: 136 0  # [ Der schläft nur bei uns. ] 
+        rule: 140  ~event_uncle.21.0 u: 
+          line: 140 0  # [ Der schläft nur bei uns. ] 
           Complexity of rule ~event_uncle.21.0- u: 1
-        rule: 139  ~event_uncle.22.0 u: 
-          line: 139 0  # [ Manchmal auch mein Papa ] [ 
+        rule: 143  ~event_uncle.22.0 u: 
+          line: 143 0  # [ Manchmal auch mein Papa ] [ 
           Complexity of rule ~event_uncle.22.0- u: 1
-        rule: 142  ~event_uncle.23.0 u: 
-          line: 142 0  # [ Ja. ] [ Nein. ] 
+        rule: 146  ~event_uncle.23.0 u: 
+          line: 146 0  # [ Ja. ] [ Nein. ] 
           Complexity of rule ~event_uncle.23.0- u: 1
-        rule: 145  ~event_uncle.24.0 u: 
-          line: 145 0  # [ Ja. ] [ Nein. ] 
+        rule: 149  ~event_uncle.24.0 u: 
+          line: 149 0  # [ Ja. ] [ Nein. ] 
           Complexity of rule ~event_uncle.24.0- u: 1
-        rule: 148  ~event_uncle.25.0 u: 
-          line: 148 0  # [ Ja. ] [ Nein. ] 
+        rule: 152  ~event_uncle.25.0 u: 
+          line: 152 0  # [ Ja. ] [ Nein. ] 
           Complexity of rule ~event_uncle.25.0- u: 1
-        rule: 151  ~event_uncle.26.0 u: 
-          line: 151 0  # [ Ja. ] [ Nein. ] 
+        rule: 155  ~event_uncle.26.0 u: 
+          line: 155 0  # [ Ja. ] [ Nein. ] 
           Complexity of rule ~event_uncle.26.0- u: 1
-        rule: 154  ~event_uncle.27.0 u: 
+        rule: 158  ~event_uncle.27.0 u: 
+          line: 158 0  # Mein Onkel. 
           Complexity of rule ~event_uncle.27.0- u: 1
+        rule: 161  ~event_uncle.28.0 u: 
+          Complexity of rule ~event_uncle.28.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/b_answer_roulette.top
     topic: 1  ~answer_roulette
         rule: 3  ~answer_roulette.0.0 u: 
