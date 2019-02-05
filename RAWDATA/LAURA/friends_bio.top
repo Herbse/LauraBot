@@ -1,4 +1,4 @@
-topic: ~friends_bio  repeat(~friend Mira)
+topic: ~friends_bio (~friend Mira)
 # Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
 
 # Narrative Antworten----------------------------------------------------------------------------------------
