@@ -1,5 +1,6 @@
-﻿unterricht
-mathe
+﻿mathe
+hausaufgaben
+unterricht
 schwer
 nicht_einfach
 nicht_leicht
@@ -20,7 +21,6 @@ magst
 abholen
 abgeholt
 kümmern
-hausaufgaben
 aufgaben
 geholfen
 wäsche
@@ -142,8 +142,8 @@ passiert
 aha
 ok
 okay
-testy
-ohallo
+testx
+hallo
 hi
 hey
 hello
