@@ -1,1 +1,1 @@
-0,5,10,15,20,25,30,35,40,45,50,55 * * * * cd /home/hermann/Laurabot/BINARIES && ./LinuxChatScript64 >> cronserver.log 2>&1
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * cd /home/hermann/Github/LauraBot/BINARIES && ./LinuxChatScript64 >> cronserver.log 2>&1
