@@ -1,11 +1,11 @@
-topic: ~event_uncle (onkel Dirk ~facilitator ~action ~touch ~places ~narrate wo woher)
+topic: ~event_uncle (onkel Dirk ~facilitator ~action ~touch ~places wo woher)
 
 
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mir von deinem Onkel 
-u: UNCLE_EVENT (onkel)  Mein Onkel schläft jetzt immer bei uns.
+u: UNCLE_EVENT ([~facilitator ~narrate onkel])  Mein Onkel schläft jetzt immer bei uns.
 
 #! Wann? 
 #! Was heißt immer?
