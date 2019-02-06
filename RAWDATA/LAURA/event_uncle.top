@@ -18,7 +18,7 @@ u: (wo ^incontext(UNCLE_EVENT)) Im Wohnzimmer
 #---------------------------------------------------------------------------------------------
 
 #! Erzähl mir mal von deinem Onkel
-u: UNCLE_EVENT_1 ([~facilitator ~narrate ~action ~touch]) Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+u: UNCLE_EVENT_1 ([~facilitator ~narrate]) Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
 
 #! Wer ist denn dein Onkel?
 u: (<<wer [onkel Dirk]>> ^incontext(UNCLE_EVENT_1)) ^reuse (UNCLE_EVENT_1)

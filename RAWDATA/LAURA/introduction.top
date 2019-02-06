@@ -16,7 +16,7 @@ u: OPENLY_SITUATION(<<~emohow_open ~bot>>) $narrative=1 ^respond(~topic_roulette
 
 #! Worüber möchtest du heute mit mir sprechen? 
 #(PLACEHOLDER CHECKEN)
-u: (<~why * ~narrate) ^reuse(OPENLY_SITUATION)
+u: (<<~why ~narrate>>) ^reuse(OPENLY_SITUATION)
 
 #! Erzähl mir von deinem Tag.
 #! Erzähl mir doch mal, wie sieht ein typischer Tag bei dir aus?

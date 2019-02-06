@@ -1442,6 +1442,8 @@ gelegentlich
 rezidivierenden
 halbjährlich
 kith
+freundinnen
+freunde
 spud
 bleifrei
 chlorobenzylidenemalononitrile
@@ -2365,6 +2367,7 @@ ausreichend
 thunder
 kürzlich
 gegenwärtig
+hobbies
 cerise
 coccineous
 coquelicot
@@ -3678,6 +3681,7 @@ stigmatisieren
 bagatellisieren
 vituperate
 hast
+besitzt
 ausüben
 meine
 seine

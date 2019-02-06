@@ -428,72 +428,72 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/friends_bio
           Complexity of rule ~friends_bio.19.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/brother_bio.top
     topic: 1  ~brother_bio
-        rule: 9  ~brother_bio.0.0-LEON_FIFA u: 
-          line: 9 0  # Wenn der Leon FIFA spielt darf
+        rule: 7  ~brother_bio.0.0-LEON_FIFA u: 
+          line: 7 0  # Wenn der Leon FIFA spielt darf
           Complexity of rule ~brother_bio.0.0-LEON_FIFA u: 1
-        rule: 12  ~brother_bio.1.0-LEON_FRIENDS u: 
-          line: 12 0  # Wenn Leons Freunde kommen, mus
+        rule: 10  ~brother_bio.1.0-LEON_FRIENDS u: 
+          line: 10 0  # Wenn Leons Freunde kommen, mus
           Complexity of rule ~brother_bio.1.0-LEON_FRIENDS u: 1
-        rule: 15  ~brother_bio.2.0-LEON_GAMES u: 
-          line: 15 0  # Die spielen dann auch so ander
+        rule: 13  ~brother_bio.2.0-LEON_GAMES u: 
+          line: 13 0  # Die spielen dann auch so ander
           Complexity of rule ~brother_bio.2.0-LEON_GAMES u: 1
-        rule: 18  ~brother_bio.3.0-LEON_LEAVE u: 
-          line: 18 0  # Dann gehe ich raus oder zu Mir
+        rule: 16  ~brother_bio.3.0-LEON_LEAVE u: 
+          line: 16 0  # Dann gehe ich raus oder zu Mir
           Complexity of rule ~brother_bio.3.0-LEON_LEAVE u: 1
-        rule: 23  ~brother_bio.4.0 u: 
-          line: 23 0  # Das ist mein Bruder. 
+        rule: 21  ~brother_bio.4.0 u: 
+          line: 21 0  # Das ist mein Bruder. 
           Complexity of rule ~brother_bio.4.0- u: 1
-        rule: 26  ~brother_bio.5.0 u: 
-          line: 26 0  # Ich habe einen Bruder. 
+        rule: 24  ~brother_bio.5.0 u: 
+          line: 24 0  # Ich habe einen Bruder. 
           Complexity of rule ~brother_bio.5.0- u: 1
-        rule: 29  ~brother_bio.6.0 u: 
-          line: 29 0  # Ja. 
+        rule: 27  ~brother_bio.6.0 u: 
+          line: 27 0  # Ja. 
           Complexity of rule ~brother_bio.6.0- u: 1
-        rule: 32  ~brother_bio.7.0 u: 
-          line: 32 0  # Nein. Ich habe einen Bruder. 
+        rule: 30  ~brother_bio.7.0 u: 
+          line: 30 0  # Nein. Ich habe einen Bruder. 
           Complexity of rule ~brother_bio.7.0- u: 1
-        rule: 35  ~brother_bio.8.0 u: 
-          line: 35 0  # 12. 
+        rule: 33  ~brother_bio.8.0 u: 
+          line: 33 0  # 12. 
           Complexity of rule ~brother_bio.8.0- u: 1
-        rule: 38  ~brother_bio.9.0 u: 
-          line: 38 0  # So alt wie Leon. 
+        rule: 36  ~brother_bio.9.0 u: 
+          line: 36 0  # So alt wie Leon. 
           Complexity of rule ~brother_bio.9.0- u: 1
-        rule: 41  ~brother_bio.10.0-LEON_RELATIONSHIP u: 
-          line: 41 0  # [ Wir verstehen uns gut. ] [ W
+        rule: 39  ~brother_bio.10.0-LEON_RELATIONSHIP u: 
+          line: 39 0  # [ Wir verstehen uns gut. ] [ W
           Complexity of rule ~brother_bio.10.0-LEON_RELATIONSHIP u: 1
-        rule: 46  ~brother_bio.11.0-LEON_RELATIONSHIP u: 
+        rule: 44  ~brother_bio.11.0-LEON_RELATIONSHIP u: 
           Complexity of rule ~brother_bio.11.0-LEON_RELATIONSHIP u: 1
-        rule: 49  ~brother_bio.12.0 u: 
-          line: 49 0  # Fifa spielen. 
+        rule: 47  ~brother_bio.12.0 u: 
+          line: 47 0  # Fifa spielen. 
           Complexity of rule ~brother_bio.12.0- u: 1
-        rule: 52  ~brother_bio.13.0 u: 
-          line: 52 0  # In Leons Zimmer 
+        rule: 50  ~brother_bio.13.0 u: 
+          line: 50 0  # In Leons Zimmer 
           Complexity of rule ~brother_bio.13.0- u: 1
-        rule: 56  ~brother_bio.14.0 u: 
-          line: 56 0  # ^reuse ( LEON_FIFA ) 
+        rule: 54  ~brother_bio.14.0 u: 
+          line: 54 0  # ^reuse ( LEON_FIFA ) 
           Complexity of rule ~brother_bio.14.0- u: 1
-        rule: 59  ~brother_bio.15.0 u: 
-          line: 59 0  # ^reuse ( LEON_GAMES ) 
+        rule: 57  ~brother_bio.15.0 u: 
+          line: 57 0  # ^reuse ( LEON_GAMES ) 
           Complexity of rule ~brother_bio.15.0- u: 1
-        rule: 62  ~brother_bio.16.0 u: 
-          line: 62 0  # Max und Cem 
+        rule: 60  ~brother_bio.16.0 u: 
+          line: 60 0  # Max und Cem 
           Complexity of rule ~brother_bio.16.0- u: 1
-        rule: 65  ~brother_bio.17.0 u: 
-          line: 65 0  # ^reuse ( LEON_LEAVE ) 
+        rule: 63  ~brother_bio.17.0 u: 
+          line: 63 0  # ^reuse ( LEON_LEAVE ) 
           Complexity of rule ~brother_bio.17.0- u: 1
-        rule: 68  ~brother_bio.18.0 u: 
-          line: 68 0  # [ Mhm ] [ Nee ] 
+        rule: 66  ~brother_bio.18.0 u: 
+          line: 66 0  # [ Mhm ] [ Nee ] 
           Complexity of rule ~brother_bio.18.0- u: 1
-        rule: 71  ~brother_bio.19.0 u: 
-          line: 71 0  # [ Ja ] [ Nö ] 
+        rule: 69  ~brother_bio.19.0 u: 
+          line: 69 0  # [ Ja ] [ Nö ] 
           Complexity of rule ~brother_bio.19.0- u: 1
-        rule: 74  ~brother_bio.20.0 u: 
-          line: 74 0  # [ Ja ] [ Nee ] 
+        rule: 72  ~brother_bio.20.0 u: 
+          line: 72 0  # [ Ja ] [ Nee ] 
           Complexity of rule ~brother_bio.20.0- u: 1
-        rule: 77  ~brother_bio.21.0 u: 
-          line: 77 0  # [ Mhm ] [ Nee ] 
+        rule: 75  ~brother_bio.21.0 u: 
+          line: 75 0  # [ Mhm ] [ Nee ] 
           Complexity of rule ~brother_bio.21.0- u: 1
-        rule: 80  ~brother_bio.22.0 u: 
+        rule: 78  ~brother_bio.22.0 u: 
           Complexity of rule ~brother_bio.22.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/z_simpletopic.top
     macro: 1  ^myfunc

@@ -262,3 +262,7 @@ Finished 5: heapusedOnEntry: 9967992 heapUsedNow: 9967992 buffers:3 stackused: 9
 BugDepth 4: heapusedOnEntry: 9967936 buffers:2 stackused: 90031368 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
 BugDepth 3: heapusedOnEntry: 9967936 buffers:2 stackused: 90031560 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
 BugDepth 2: heapusedOnEntry: 9967892 buffers:1 stackused: 90031816 ~xpostagsentence.1.0{}  - 
+BUG in introduction.top at 19: u: (<<~why * ~narrate>>) ^reuse(OPENLY_SITUATION) 
+PATTERN-45 Can not have wildcard * inside << >>
+
+BUG in topic_asf_anonymous_GERMAN.txt at 0: ^anonymous No such bot  asf -  -  status: defaultbot word not found
