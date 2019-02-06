@@ -1,9 +1,10 @@
-﻿+ aufpassen PATTERN_WORD 
+﻿+ why PATTERN_WORD 
++ aufpassen PATTERN_WORD 
 + hingehen PATTERN_WORD 
 + einzeln PATTERN_WORD 
 + bett PATTERN_WORD 
 + abgelaufen PATTERN_WORD 
-+ activity PATTERN_WORD 
++ gefunden PATTERN_WORD 
 + @chatoutput 9
 + laura 
 + defaultbot 
@@ -26,6 +27,8 @@
 + und_dann 
 + wie_oft 
 + wie_häufig 
++ grüß_gott 
++ früße_dich 
 + zu_hause 
 + wissen_deine 
 + weißt_du 
@@ -40,20 +43,41 @@
 + erzähl_mir 
 + erzähl_ruhig 
 + wie_läuft 
++ in_die_haare 
 + hast_du 
++ hattest_du 
++ hat_er 
++ hatte_er 
++ hat_sie 
++ hatte_sie 
 + gibt_es 
++ gab_es 
 + willst_du 
++ wolltest_du 
++ wollte_er 
++ wollte_sie 
++ will_er 
++ wollen_sie 
++ will_sie 
 + gefällt_es 
++ gefällt_er 
 + ist_da 
 + waren_da 
++ sind_da 
 + unternehmt_ihr 
++ unternimmst_du 
 + machst_du 
++ macht_er 
++ macht_sie 
++ machen_sie 
++ machte_er 
++ machte_sie 
 + magst_du 
++ mag_er 
++ mag_sie 
 + seht_ihr 
-+ wissen_dein 
 + kennst_du 
 + verstehst_du 
-+ gab_es 
 + kannst_du 
 + war_da 
 + habt_ihr 

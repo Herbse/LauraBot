@@ -57,6 +57,7 @@ Reading concept ~emohow_closed
 Reading concept ~emohow_open
 Reading concept ~facilitator
 Reading concept ~frequency
+Reading concept ~greetings
 Reading concept ~happening
 Reading concept ~home
 Reading concept ~knowing

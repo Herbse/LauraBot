@@ -248,3 +248,17 @@ Finished 5: heapusedOnEntry: 9965560 heapUsedNow: 9965560 buffers:4 stackused: 9
 BugDepth 4: heapusedOnEntry: 9965504 buffers:3 stackused: 90033800 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
 BugDepth 3: heapusedOnEntry: 9965504 buffers:3 stackused: 90033992 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
 BugDepth 2: heapusedOnEntry: 9965460 buffers:2 stackused: 90034248 ~xpostagsentence.1.0{}  - 
+BUG in introduction.top at 57: u: (<<was ~narrate) $narrative=1 ^respond(~topic_roulette) 
+PATTERN-9 ) is not closing corresponding (
+
+BUG in topic_asf_anonymous_GERMAN.txt at 0: ^anonymous No such bot  asf -  -  status: defaultbot word not found
+
+BUG: Wed Feb 06 16:23:35 2019: input:1 entering null word to dictionary in sentence caller:asf callee:laura at  script: ~xpostagsentence.1.0 in sentence: hey
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9967992 heapUsedNow: 9967992 buffers:3 stackused: 90031048 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9967936 buffers:2 stackused: 90031368 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9967936 buffers:2 stackused: 90031560 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9967892 buffers:1 stackused: 90031816 ~xpostagsentence.1.0{}  - 

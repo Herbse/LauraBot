@@ -20,8 +20,7 @@ reader/**/*
 treetagger/**/*
 
 # ignore so it does not get committed by mistake on windows
-BINARIES/MacChatScript
-BINARIES/chatscript_Debug_v140.exe
+BINARIES/
 
 # file types
 *.bak

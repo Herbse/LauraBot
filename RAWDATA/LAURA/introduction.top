@@ -54,7 +54,7 @@ u: (<<~narrate familie>>) ^reuse(OPENLY_SITUATION_HOME)
 u: (<<~like ~activity familie>>) [Ja][Nein]
 
 #! Möchtest du mir was erzählen?
-u: (<<was ~narrate) $narrative=1 ^respond(~topic_roulette)
+u: (<<was ~narrate>>) $narrative=1 ^respond(~topic_roulette)
 
 #! Was unternimmst du zusammen mit deiner Familie, z.B. am Wochenende? 
 u: (<<~activity familie>>) ^reuse(OPENLY_SITUATION_HOME)
