@@ -1,2 +1,2 @@
-﻿^laura o 0 0 A( ) ^addtopic ( ~introduction ) $cs_control_main = ~control $cs_language = german $cs_externaltag = ~xpostagsentence $userprompt = ^"%user: >" $botprompt = ^"LAURA: " $singleresponse = 1 $cs_token = 512 | 131072 | 1024 | 2048 | 24576 `
+﻿^laura o 0 0 A( ) ^addtopic ( ~introduction ) $cs_control_main = ~control $cs_language = german $cs_externaltag = ~xpostagsentence $userprompt = ^"%user: >" $botprompt = ^"LAURA: " $singleresponse = 1 $cs_token = 512 | 131072 | 1024 `
 ^myfunc o 0 0 B( ^data $$concept ) $$wordindex += 1 _0 = ^burst ( ^0 "^\t" ) $$concept = ^join ( ~ _1 ) ^settag ( $$wordindex $$concept ) ^setcanon ( $$wordindex _2 ) `

@@ -114,3 +114,129 @@ No system variable %input<%userfirstline
 MinReleaseStackGap 88MB MinHeapAvailable 89MB
 MaxBuffers used 7 of 80
 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965544 heapUsedNow: 9965544 buffers:4 stackused: 90033496 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965488 buffers:3 stackused: 90033816 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965488 buffers:3 stackused: 90034008 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965444 buffers:2 stackused: 90034264 ~xpostagsentence.1.0{}  - 
+
+BUG: Tue Feb 05 16:40:47 2019: input:1 entering null word to dictionary in sentence caller:ijhg callee:laura at  script: ~xpostagsentence.1.0 in sentence: hi
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 6 of 80
+
+Finished 5: heapusedOnEntry: 9965544 heapUsedNow: 9965544 buffers:3 stackused: 90033496 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965488 buffers:2 stackused: 90033816 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965488 buffers:2 stackused: 90034008 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965440 buffers:1 stackused: 90034264 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965640 heapUsedNow: 9965640 buffers:4 stackused: 90033400 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965584 buffers:3 stackused: 90033720 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965584 buffers:3 stackused: 90033912 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965536 buffers:2 stackused: 90034168 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965544 heapUsedNow: 9965544 buffers:4 stackused: 90033496 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965488 buffers:3 stackused: 90033816 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965488 buffers:3 stackused: 90034008 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965444 buffers:2 stackused: 90034264 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965592 heapUsedNow: 9965592 buffers:4 stackused: 90033448 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965536 buffers:3 stackused: 90033768 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965536 buffers:3 stackused: 90033960 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965496 buffers:2 stackused: 90034216 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965608 heapUsedNow: 9965608 buffers:4 stackused: 90033432 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965552 buffers:3 stackused: 90033752 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965552 buffers:3 stackused: 90033944 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965504 buffers:2 stackused: 90034200 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Finished 5: heapusedOnEntry: 9965608 heapUsedNow: 9965608 buffers:4 stackused: 90033432 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965552 buffers:3 stackused: 90033752 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965552 buffers:3 stackused: 90033944 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965504 buffers:2 stackused: 90034200 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Finished 5: heapusedOnEntry: 9965544 heapUsedNow: 9965544 buffers:4 stackused: 90033496 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965488 buffers:3 stackused: 90033816 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965488 buffers:3 stackused: 90034008 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965448 buffers:2 stackused: 90034264 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965512 heapUsedNow: 9965512 buffers:4 stackused: 90033528 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965456 buffers:3 stackused: 90033848 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965456 buffers:3 stackused: 90034040 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965412 buffers:2 stackused: 90034296 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965448 heapUsedNow: 9965448 buffers:4 stackused: 90033592 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965392 buffers:3 stackused: 90033912 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965392 buffers:3 stackused: 90034104 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965348 buffers:2 stackused: 90034360 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965448 heapUsedNow: 9965448 buffers:4 stackused: 90033592 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965392 buffers:3 stackused: 90033912 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965392 buffers:3 stackused: 90034104 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965356 buffers:2 stackused: 90034360 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965448 heapUsedNow: 9965448 buffers:4 stackused: 90033592 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965392 buffers:3 stackused: 90033912 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965392 buffers:3 stackused: 90034104 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965348 buffers:2 stackused: 90034360 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965528 heapUsedNow: 9965528 buffers:4 stackused: 90033512 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965472 buffers:3 stackused: 90033832 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965472 buffers:3 stackused: 90034024 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965428 buffers:2 stackused: 90034280 ~xpostagsentence.1.0{}  - 
+
+BUG: Wed Feb 06 11:01:34 2019: input:1 entering null word to dictionary in sentence caller:qr callee:laura at  script: ~xpostagsentence.1.0 in sentence: vater
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 6 of 80
+
+Finished 5: heapusedOnEntry: 9965528 heapUsedNow: 9965528 buffers:3 stackused: 90033512 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965472 buffers:2 stackused: 90033832 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965472 buffers:2 stackused: 90034024 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965428 buffers:1 stackused: 90034280 ~xpostagsentence.1.0{}  - 
+
+BUG: Wed Feb 06 11:03:36 2019: input:1 entering null word to dictionary in sentence caller:afaf callee:laura at  script: ~xpostagsentence.1.0 in sentence: vater
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 6 of 80
+
+Finished 5: heapusedOnEntry: 9965528 heapUsedNow: 9965528 buffers:3 stackused: 90033512 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965472 buffers:2 stackused: 90033832 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965472 buffers:2 stackused: 90034024 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965436 buffers:1 stackused: 90034280 ~xpostagsentence.1.0{}  - 
