@@ -142,7 +142,7 @@ passiert
 aha
 ok
 okay
-testx
+testi
 hallo
 hi
 hey
@@ -166,6 +166,7 @@ heißt
 beschreibe
 beschreib
 erzähle
+erzähl
 sag
 sage
 erziehungsberechtigte
@@ -221,6 +222,7 @@ Stefan
 sagst
 bescheid
 übst
+anderen
 kinder
 auch
 gut

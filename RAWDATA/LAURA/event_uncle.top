@@ -34,9 +34,9 @@ u: (woher) Von früher.
 u: UNCLE_EVENT_2 ([~facilitator ~action ~touch ~narrate]) Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) Keine Ahnung. Nichts.
     #! Warum?
-    a: (~why)Wenn ich das nur wüsste.
+    a: (~why) Wenn ich das nur wüsste.
 
 #---------------------------------------------------------------------------------------------    
 
@@ -45,7 +45,7 @@ u: UNCLE_EVENT_2 ([~facilitator ~action ~touch ~narrate]) Der kommt einfach in m
 u: UNCLE_EVENT_3 ([~facilitator ~action ~touch ~narrate]) Der nervt mich und sagt ich soll aufräumen.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) Keine Ahnung. Nichts.
     #! Warum?
     a: (~why) Wenn ich das nur wüsste.
 #---------------------------------------------------------------------------------------------
@@ -56,7 +56,7 @@ u: UNCLE_EVENT_4 ([~facilitator ~action ~touch ~narrate]) Er haut mir immer auf 
     a: (~time) Na immer halt.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) ^reuse(UNCLE_EVENT_5)
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) ^reuse(UNCLE_EVENT_5)
     #! Warum haut er dir auf den Po?
     a: (~why) ^reuse(UNCLE_EVENT_5)
     #! Er haut dir auf den Po?
@@ -69,11 +69,11 @@ u: UNCLE_EVENT_4 ([~facilitator ~action ~touch ~narrate]) Er haut mir immer auf 
 u: UNCLE_EVENT_5 ([~facilitator ~action ~touch ~narrate]) Meine Mama sagt, der haut mich, weil ich immer frech zu ihm bin.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) Keine Ahnung. Nichts.
     #! Und wie findest du das?
     a: (~relationship) Das tut echt weh.
     #! Warum?
-    a: (~why)Wenn ich das nur wüsste.
+    a: (~why) Wenn ich das nur wüsste.
 #---------------------------------------------------------------------------------------------
 # Ab hier sind die Ereignisse zum sexuellen Missbrauch
 #---------------------------------------------------------------------------------------------
@@ -86,11 +86,11 @@ u: UNCLE_EVENT_6  ( [~facilitator ~action ~touch ~narrate]) Neulich waren wir sc
     a: (<<also [penis ding glied] mund>>) ^reuse(UNCLE_EVENT_7)
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) Keine Ahnung. Nichts.
     #! Sein Ding?
     a: (ding) Seinen Penis.
     #! Warum?
-    a: (~why)Wenn ich das nur wüsste.
+    a: (~why) Wenn ich das nur wüsste.
 
 #---------------------------------------------------------------------------------------------
 
@@ -100,16 +100,16 @@ u: UNCLE_EVENT_7 ([~facilitator ~action ~touch ~narrate]) Er ist in meine Kabine
     a: ([~frequency oder einmal]) Nee, nur einmal.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) Keine Ahnung. Nichts.
     #! Warum?
-    a: (~why)Wenn ich das nur wüsste.
+    a: (~why) Wenn ich das nur wüsste.
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
 u: UNCLE_EVENT_8 ([~facilitator ~action ~touch ~narrate]) Dann hat er seine Hose runtergezogen.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) Keine Ahnung. Nichts.
     #! Warum?
     a: (~why)Wenn ich das nur wüsste.
 #---------------------------------------------------------------------------------------------
@@ -117,7 +117,7 @@ u: UNCLE_EVENT_8 ([~facilitator ~action ~touch ~narrate]) Dann hat er seine Hose
 u: UNCLE_EVENT_9 ([~facilitator ~action ~touch ~narrate]) Das war voll eklig. Ich will den nicht mehr sehen.
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) Keine Ahnung. Nichts.
     #! Warum?
     a: (~why)Wenn ich das nur wüsste.
 # Spezifische Antworten-------------------------------------------------------------------------
@@ -126,7 +126,7 @@ u: UNCLE_EVENT_9 ([~facilitator ~action ~touch ~narrate]) Das war voll eklig. Ic
 u: (<<~relationship [abholen abgeholt]>>) Das ist voll blöd
     #! Und was sagt dein Vater dazu? 
     #! Wie finden deine Eltern das? 
-    a: ([was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]) Keine Ahnung. Nichts.
+    a: (<<[was wie][sagen gesagt finden fanden sagt gesagt gefunden findet] [eltern ~mother ~father]>>) Keine Ahnung. Nichts.
 
 
 #! Wie findest du das?

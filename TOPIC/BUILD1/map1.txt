@@ -818,26 +818,26 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA/mother_bio.
         rule: 18  ~mother_bio.3.1 a: 
           line: 18 0  # Sie ist schlimm krank. 
           Complexity of rule ~mother_bio.3.1- a: 1
-        rule: 21  ~mother_bio.4.0-MAMA_HOMEWORK u: 
-          line: 21 0  # Nach der Schule setze ich mich
-          Complexity of rule ~mother_bio.4.0-MAMA_HOMEWORK u: 1
-        rule: 24  ~mother_bio.5.0-MAMA_MATH u: 
-          line: 24 0  # Mama hilft mir dann immer bei 
-          Complexity of rule ~mother_bio.5.0-MAMA_MATH u: 1
-        rule: 29  ~mother_bio.6.0 u: 
-          line: 29 0  # ^reuse ( MAMA_MATH ) 
-          Complexity of rule ~mother_bio.6.0- u: 1
+        rule: 21  ~mother_bio.4.0 u: 
+          line: 21 0  # [ Ja ] [ Nein ] 
+          Complexity of rule ~mother_bio.4.0- u: 1
+        rule: 24  ~mother_bio.5.0-MAMA_HOMEWORK u: 
+          line: 24 0  # Nach der Schule setze ich mich
+          Complexity of rule ~mother_bio.5.0-MAMA_HOMEWORK u: 1
+        rule: 27  ~mother_bio.6.0-MAMA_MATH u: 
+          line: 27 0  # Mama hilft mir dann immer bei 
+          Complexity of rule ~mother_bio.6.0-MAMA_MATH u: 1
         rule: 32  ~mother_bio.7.0 u: 
-          line: 32 0  # ^reuse ( MAMA_HOMEWORK ) 
+          line: 32 0  # ^reuse ( MAMA_MATH ) 
           Complexity of rule ~mother_bio.7.0- u: 1
-        rule: 35  ~mother_bio.8.0-MAMA_RELATIONSHIP u: 
-          line: 35 0  # Ich hab meine Mama so lieb. 
-          Complexity of rule ~mother_bio.8.0-MAMA_RELATIONSHIP u: 1
-        rule: 38  ~mother_bio.9.0 u: 
-          line: 38 0  # ^reuse ( MAMA_HOMEWORK ) 
-          Complexity of rule ~mother_bio.9.0- u: 1
+        rule: 35  ~mother_bio.8.0 u: 
+          line: 35 0  # ^reuse ( MAMA_HOMEWORK ) 
+          Complexity of rule ~mother_bio.8.0- u: 1
+        rule: 38  ~mother_bio.9.0-MAMA_RELATIONSHIP u: 
+          line: 38 0  # Ich hab meine Mama so lieb. 
+          Complexity of rule ~mother_bio.9.0-MAMA_RELATIONSHIP u: 1
         rule: 41  ~mother_bio.10.0 u: 
-          line: 41 0  # [ Ja ] [ Nein ] 
+          line: 41 0  # ^reuse ( MAMA_HOMEWORK ) 
           Complexity of rule ~mother_bio.10.0- u: 1
         rule: 44  ~mother_bio.11.0 u: 
           line: 44 0  # [ Ja ] [ Nein ] 

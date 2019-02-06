@@ -13,7 +13,7 @@ u: HOBBIES_DANCE () Ich gehe immer am Dienstag in den Club, Hiphop tanzen.
 u: (~hobby) ^reuse(HOBBIES_DANCE)
 
 #! Gehst du da alleine hin?
-u: (<<~bot allein>>) [Nein mit meinen Freundinnen Mira, Verena und Lucy.][Ja.]
+u: (<<~bot [allein alleine]>>) [Nein mit meinen Freundinnen Mira, Verena und Lucy.][Ja.]
 
 #! Wie läuft es mit dem Tanzkurs? 
 #! Erzähl mir mal von den Tanzstunden. 
@@ -64,7 +64,7 @@ u: (<<sagst bescheid>>) [Ja][Nein]
 u: (übst du) [Ja][Nein]
 
 #! Können die anderen das auch so gut wie du? 
-u: (<<[andere kinder ~friend] auch gut>>) [Ja][Nein]
+u: (<<[andere anderen kinder ~friend] auch gut>>) [Ja][Nein]
 
 #! Macht dir das Spaß? 
 u: (<<~bot [spass spaß freude gefällt]>>) [Ja][Nein]
