@@ -1,4 +1,4 @@
-topic: ~school_class (~school unterricht helfen)
+topic: ~school_class (~school unterricht)
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ u: (<<mathe oder andere>>) [Ja nur in Mathe.] [Nein, auch in den anderen.]
 u: (<<~problems [aufmerksamkeit aufpassen folgen]>>) [Ja.][Nein.]
 
 #! Kann dein Lehrer dir helfen, wenn du Fragen hast? 
-u: (<<[lehrer lehrerin] [helfen unterstützen unter_die_arme]>>) [Ja]
+u: (<<[lehrer lehrerin] [helfen hilft unterstützen unter_die_arme]>>) [Ja.][Nein.]
 
 #! Macht der Matheunterricht denn auch Spaß? 
 u: (<<[mathe matheunterricht] [spass spaß freude magst]>>) [Ja.][Nein.]

@@ -240,3 +240,11 @@ Finished 5: heapusedOnEntry: 9965528 heapUsedNow: 9965528 buffers:3 stackused: 9
 BugDepth 4: heapusedOnEntry: 9965472 buffers:2 stackused: 90033832 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
 BugDepth 3: heapusedOnEntry: 9965472 buffers:2 stackused: 90034024 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
 BugDepth 2: heapusedOnEntry: 9965436 buffers:1 stackused: 90034280 ~xpostagsentence.1.0{}  - 
+entering null word to dictionary in sentence
+MinReleaseStackGap 88MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 5: heapusedOnEntry: 9965560 heapUsedNow: 9965560 buffers:4 stackused: 90033480 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9965504 buffers:3 stackused: 90033800 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9965504 buffers:3 stackused: 90033992 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9965460 buffers:2 stackused: 90034248 ~xpostagsentence.1.0{}  - 

@@ -9,13 +9,13 @@ topic: ~brother_bio (~brother Leon)
 u: LEON_FIFA (<<~narrate Leon>>) Wenn der Leon FIFA spielt darf ich immer zugucken.
 
 #! Erzähl mir doch mehr über Leon.
-u: LEON_FRIENDS ([<<~narrate [Leon bruder ihm]>> ~facilitator]) Wenn Leons Freunde kommen, muss ich immer alleine spielen.
+u: LEON_FRIENDS ([<<~narrate [Leon bruder ihm er]>> ~facilitator]) Wenn Leons Freunde kommen, muss ich immer alleine spielen.
 
 #! Erzähl mir doch mehr über Leon.
-u: LEON_GAMES ([<<~narrate [Leon bruder ihm]>> ~facilitator]) Die spielen dann auch so andere Spiele mit Schießen und Leon sagt, ich soll da nicht zugucken.
+u: LEON_GAMES ([<<~narrate [Leon bruder ihm er]>> ~facilitator]) Die spielen dann auch so andere Spiele mit Schießen und Leon sagt, ich soll da nicht zugucken.
 
 #! Erzähl mir doch mehr über Leon.
-u: LEON_LEAVE ([<<~narrate [Leon bruder ihm]>> ~facilitator]) Dann gehe ich raus oder zu Mira. 
+u: LEON_LEAVE ([<<~narrate [Leon bruder ihm er]>> ~facilitator]) Dann gehe ich raus oder zu Mira. 
 
 #Spezifische Antworten --------------------------------------------------------------------------------------
 
@@ -38,43 +38,43 @@ u: (~age Leon) 12.
 u: (<<~age freunde>>) So alt wie Leon.
 
 #! Verstehst du dich gut mit deinem Bruder oder streitet ihr auch schonmal? 
-u: LEON_RELATIONSHIP(<<~relationship oder ~problems>>) Ich mag Leon richtig gerne.
+u: LEON_RELATIONSHIP(<<~relationship oder ~problems>>) [Wir verstehen uns gut.] [Wir streiten uns ab und zu.]
 
 #! Und wie findest du den Leon?
 #! Wie ist euer Verhältnis?
 #! Verstehst du dich mit deinem Bruder?
-u: LEON_RELATIONSHIP(<<~relationship [Leon ~brother ihm eure]>>) ^reuse(LEON_RELATIONSHIP)
+u: LEON_RELATIONSHIP(<<~relationship [Leon ~brother ihn ihm eure]>>) 
 
 #! Was macht dein Bruder während du mit deiner Mama zusammen die Hausaufgaben machst?
-u: (was [Leon ~brother] while hausaufgaben) Fifa spielen.
+u: (<<was [Leon ~brother er] [während währenddessen wenn] hausaufgaben>>) Fifa spielen.
 
 #! Wo spielt Leon damit?
-u: (wo spielen [Leon ~brother]) In Leons Zimmer
+u: (<<wo [spielen spielt] [Leon ~brother er freunde kumpel sie]>>) In Leons Zimmer
 
 #! Was machst du denn gerne mit Leon
 #! Was machst du und der Leon sonst so zusammen? 
-u: (<< du ~action [Leon ~brother]>>) ^reuse(LEON_FIFA)
+u: (<<~action [Leon ~brother ihr du]>>) ^reuse(LEON_FIFA)
 
 #! Erzähl mir von Leons Freunden. 
-u: (~narrate freunde) ^reuse(LEON_GAMES)
+u: (<<~narrate [freunde kumpel]>>) ^reuse(LEON_GAMES)
 
 #! Wie heißen die Freunde deines Bruders?
-u: (<<~names freunde>>) Max und Cem
+u: (<<~names [freunde kumpel]>>) Max und Cem
 
 #! Was machst du dann, wenn der Leon dich rausschickt? 
-u: (was ~action rausschicken) ^reuse(LEON_LEAVE)
+u: (<<was ~action [rausschicken rausschickt]>>) ^reuse(LEON_LEAVE)
 
 #! Verbringst du viel Zeit mit deinem Bruder? 
-u: (<<verbringen ~bot viel zeit [Leon ~brother]>>) [Mhm][Nee]
+u: (<<[verbringen verbringst verbracht] ~bot [viel oft] zeit [Leon ~brother ihm er]>>) [Mhm][Nee]
 
 #! Kommen Leons Freunde öfters zu Besuch? 
-u: (<<freunde ~often [besuch vorbei euch]>>) [Ja][Nö]
+u: (<<[freunde kumpel] ~often [besuch vorbei euch]>>) [Ja][Nö]
 
 #! Spielst du auch manchmal mit? 
-u: (<<[spielen mitmachen] ~bot>>) [Ja][Nee]
+u: (<<[spielen spielst machst mitspielen mitmachen] ~bot>>) [Ja][Nee]
 
 #! Kam es schonmal vor, dass du trotzdem im Zimmer geblieben bist und zugesehen hast? 
-u: (<<trotzdem [geblieben bleiben]>>) [Mhm][Nee]
+u: (<<trotzdem [geblieben bleibst bleiben]>>) [Mhm][Nee]
 
 # Weiterleitung aus dem Topic-Roulette
 u: ($narrative=1) $narrative=0 ^reuse(LEON_FIFA)

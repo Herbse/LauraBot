@@ -20,7 +20,7 @@ u: UNCLE_NAME (<<~names [onkel onkels]>>) Der heißt Dirk.
 u: (<<~names freund [eltern ~father ~mother]>>) ^reuse(UNCLE_NAME)
 
 #! Wie heißt du?
-u: BOT_NAME(<<~names [du dein]>>) Laura.
+u: BOT_NAME(<<~names ~bot>>) Laura.
 
 u: (<<~names>>) Wessen Name nochmal?
   #! Bruder

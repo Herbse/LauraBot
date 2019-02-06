@@ -268,7 +268,7 @@
 #GERMAN concept: ~NONVERBAL_COMMUNICATION_VERBS ( ~ANIMALSOUNDS ~EMOTIONAL_VERBS ~GESTURES        )
 #GERMAN concept: ~OBEDIENCE_VERBS ( ~ACCEPT_OBEY ~DECLINE_OBEY ~FORCE_OBEY        )
 #GERMAN concept: ~OPINION_VERBS ( ~DISLIKE ~WANT      glauben Zweifel beweisen Grund reflektieren lösen Vermutung denken   )
-#GERMAN concept: ~OWN (      gehören schwingen Schließe Kupplung greifen Griff Griff Griff haben hast halt "halten das Eigentum an" behalten besitzen besitzen behalten ausüben   )
+#GERMAN concept: ~OWN (      gehören schwingen Schließe Kupplung greifen Griff Griff Griff haben hast halt "halten das Eigentum an" behalten besitzen besitzt besitzen behalten ausüben   )
 #GERMAN concept: ~POSSESS ( ~own      meine Bergwerk seine ihres unser unsere ihr ihre Ihre deine   )
 #GERMAN concept: ~PARENT (      babysitten pflegen verteidigen Futter nähren schützen sichern Schäfer Schild   )
 #GERMAN concept: ~PAUSE (      Pause aussetzen   )

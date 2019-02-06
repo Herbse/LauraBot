@@ -1,4 +1,4 @@
-topic: ~mother_bio (~mother Hausaufgaben)
+topic: ~mother_bio (~mother hausaufgaben)
 
 
 
@@ -7,21 +7,21 @@ topic: ~mother_bio (~mother Hausaufgaben)
 u: MAMA_SICK () Meine Mama ist immer zu Hause. Sie ist schlimm krank.
 
 #! Was hat sie denn?
-u: ([~why was]) ^reuse(MAMA_BACK)
+u: ([~why los]) ^reuse(MAMA_BACK)
 
 #! Erzähl mal was die Mama dann tagsüber macht.
-u: (<<~narrate ~mother activity>>) ^reuse(MAMA_BACK)
+u: (<<~narrate [~mother sie] ~activity>>) ^reuse(MAMA_BACK)
 
 #! Erzähl mir mehr über deine Mama!
-u: MAMA_BACK (<<~narrate ~mother>>) Sie muss im Bett liegen, wegen ihrem Rücken.
+u: MAMA_BACK (<<~narrate [~mother sie]>>) Sie muss im Bett liegen, wegen ihrem Rücken.
   #! Warum muss sie denn im Bett liegen?
   a: ([~why was]) Sie ist schlimm krank.
 
 #! Und was machst du gerne mit deiner Mama?
-u: MAMA_HOMEWORK (<<~action ~bot ~mother>>) Nach der Schule setze ich mich zu Mama und mache Hausaufgaben.
+u: MAMA_HOMEWORK (<<~activity ~bot [~mother sie]>>) Nach der Schule setze ich mich zu Mama und mache Hausaufgaben.
 
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
-u: MAMA_MATH (<< ~narrate [hausaufgaben ~mother] >>) Mama hilft mir dann immer bei Mathe.
+u: MAMA_MATH (<< ~narrate [hausaufgaben ~mother sie] >>) Mama hilft mir dann immer bei Mathe.
 
 # Spezifische Antworten------------------------------------------------------------------------------
 
@@ -29,26 +29,26 @@ u: MAMA_MATH (<< ~narrate [hausaufgaben ~mother] >>) Mama hilft mir dann immer b
 u: (<<~narrate helfen>>) ^reuse(MAMA_MATH)
 
 #! Erzähl mir ruhig mehr von deiner Mama. 
-u: (<<~narrate ~mother>>) ^reuse(MAMA_HOMEWORK)
+u: (<<~narrate [~mother sie]>>) ^reuse(MAMA_HOMEWORK)
 
 #! Beziehung
-u: MAMA_RELATIONSHIP (~relationship ~mother) Ich hab meine Mama so lieb.
+u: MAMA_RELATIONSHIP (<<~relationship [~mother sie]>>) Ich hab meine Mama so lieb.
 
 #! Sie liegt also im Bett und du? 
-u: (<<sie bett ~bot also>> ^incontext(MAMA_BACK)) ^reuse(MAMA_HOMEWORK)
+u: (<<[sie ~mother] bett ~bot also>> ^incontext(MAMA_BACK)) ^reuse(MAMA_HOMEWORK)
 
 #! Machst du die Hausaufgaben auch manchmal ohne deine Mama? 
-u: (<<Hausaufgaben ohne ~mother>>) [Ja][Nein]
+u: (<<hausaufgaben ohne [~mother sie]>>) [Ja][Nein]
 
 #! Ist das anstrengend für deine Mama, wenn sie dir dann hilft? 
-u: (<<anstrengend ~mother helfen>>) [Ja][Nein]
+u: (<<anstrengend [~mother sie] [helfen hilft geholfen hilfst]>>) [Ja][Nein]
 
 #! Kann sie dir da gut helfen? 
-u: (<<helfen gut>>) [Ja][Nein]
+u: (<<[helfen hilft geholfen] gut>>) [Ja][Nein]
 
 #! Seit wann ist deine Mutter zuhause?
 #! Wie lange ist sie schon krank?
-u: (<<[seit_wann wie_lange][~home krank Rücken]>>) Schon ganz lang.
+u: (<<[seit_wann wie_lange][~home krank rücken]>>) Schon ganz lang.
 
 #! Geht es ihr nicht gut?
 u: (<<geht nicht gut>>) [Ja][Nein]

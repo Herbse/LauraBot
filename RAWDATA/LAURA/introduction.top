@@ -1,8 +1,8 @@
-topic: ~introduction keep (hallo hi ~emohow_open ~emohow_closed ~speak_verbs ~narrate ~happening familie ~home tag)
+topic: ~introduction keep (~greetings ~emohow_open ~emohow_closed ~speak_verbs ~narrate ~happening familie ~home tag)
 
 t: $event_state=0 [Hallo!][Hey!][Grüß Gott!]
 
-u: ([hallo hi]) Ich bin Laura und möchte dir etwas erzählen.
+u: (~greetings) Ich bin Laura und möchte dir etwas erzählen.
 
 #! Wie geht es dir?
 #! Ist alles in Ordnung?
@@ -16,14 +16,14 @@ u: OPENLY_SITUATION(<<~emohow_open ~bot>>) $narrative=1 ^respond(~topic_roulette
 
 #! Worüber möchtest du heute mit mir sprechen? 
 #(PLACEHOLDER CHECKEN)
-u: (<~why * ~speak_verbs) ^reuse(OPENLY_SITUATION)
+u: (<~why * ~narrate) ^reuse(OPENLY_SITUATION)
 
 #! Erzähl mir von deinem Tag.
 #! Erzähl mir doch mal, wie sieht ein typischer Tag bei dir aus?
 u: (<<~narrate tag>>) ^reuse(OPENLY_SITUATION)
 
 #! Möchtest du über deine Eltern sprechen?
-u: TOPIC_CHOICE(über *1 _*1 ~speak_verbs) ^refine()
+u: TOPIC_CHOICE(über *1 _*1 ~narrate) ^refine()
   a:(_0?~parents) $topic = parents ^respond(~topic_roulette)
   a:(_0==onkel) $topic = uncle ^respond(~topic_roulette)
   a:(_0==bruder) $topic = brother ^respond(~topic_roulette)
@@ -52,6 +52,9 @@ u: (<<~narrate familie>>) ^reuse(OPENLY_SITUATION_HOME)
 
 #! Verbringst du gerne Zeit mit deiner Familie?
 u: (<<~like ~activity familie>>) [Ja][Nein]
+
+#! Möchtest du mir was erzählen?
+u: (<<was ~narrate) $narrative=1 ^respond(~topic_roulette)
 
 #! Was unternimmst du zusammen mit deiner Familie, z.B. am Wochenende? 
 u: (<<~activity familie>>) ^reuse(OPENLY_SITUATION_HOME)

@@ -6,7 +6,8 @@ topic: ~friends_bio (~friend Mira)
 u: FRIEND_INTRO () Mira und ich sind beste Freundinnen.
 
 #! Hast du eine Freundin?
-u: (<<[wer haben] [~friend Mira]>>) ^reuse(FRIEND_INTRO)
+#! Wer ist Mira
+u: (<<[wer ~own] [~friend Mira]>>) ^reuse(FRIEND_INTRO)
 
 #! Was macht ihr so zusammen?
 u: FRIEND_DANCE(<< ~activity [ihr ~friend Mira]>>) Wir tanzen zusammen im Club.
@@ -54,14 +55,14 @@ u: (<<[tanzgruppe gruppe team gemeinsam] oder [einzelunterricht einzeln alleine]
 u: (<<[schule klasse] oder [tanzen club tanz]>>) [Wir sind auf der selben Schule][Wir kennn uns vom Tanzen]
 
 #! Übernachtest du mal bei deinen Freundinnen oder sie bei dir?
-u: (<<übernachten [~friend freundinnen] oder >>) [Ich übernachte manchmal dort][Manchmal bei mir.]
+u: (<<[übernachten übernachtest übernachtet] [~friend] oder >>) [Ich übernachte manchmal dort][Manchmal bei mir.]
 
 #! Übernachtet ihr schonmal beieinander?
-u: (<<übernachten [ihr ~friend freundinnen]>>) [Ja][Nein]
+u: (<<[übernachten übernachtest übernachtet] [ihr ~friend ]>>) [Ja][Nein]
 
 #! Kommt Mira manchmal auch zu dir nach Hause? 
 #! Spielt ihr auch manchmal bei dir zuhause? 
-u: (<<[Mira ~friend freundinnen ihr] [zu bei] dir>>)[Ja][Nein]
+u: (<<[Mira ~friend ihr] [zu bei] dir>>)[Ja][Nein]
 
 #! Hast du Freunde, mit denen du dich außerhalb der Schule manchmal triffst? 
 u: (hast du * ~friend) [Ja] [Nein]
@@ -69,10 +70,10 @@ u: (hast du * ~friend) [Ja] [Nein]
     a: (~narrate) ^reuse(FRIEND_INTRO)
 
 #! Sind Miras Eltern dann auch zuhause?
-u: (<< [Miras ihre] eltern ~home >>) [Ja][Nein]
+u: (<< [Miras ihre] ~parents [~home dort]>>) [Ja][Nein]
 
 #! Dürft ihr mit dem auch schonmal Gassi gehen? 
-u: (<<[geht dürft] [gassi raus spazieren]>>) [Ja][Nein]
+u: (<<[geht gehst dürft] [gassi raus spaziert spazieren]>>) [Ja][Nein]
 # Weiterleitung aus dem Topic-Roulette
 u: ($narrative=1) $narrative=0 ^reuse(FRIEND_INTRO)
 

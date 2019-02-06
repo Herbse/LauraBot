@@ -5,7 +5,7 @@ topic: ~hobbies_bio (~hobby ~dance tanzkurs tanz)
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 
-u: HOBBIES_DANCE () Ich gehe immer am Dienstags in den Club, Hiphop tanzen.
+u: HOBBIES_DANCE () Ich gehe immer am Dienstag in den Club, Hiphop tanzen.
     #! Was für ein Club?
     a: (<<[was welcher] club>>) Der Jugendclub hier bei der Schule.
 
@@ -17,7 +17,7 @@ u: (<<~bot allein>>) [Nein mit meinen Freundinnen Mira, Verena und Lucy.][Ja.]
 
 #! Wie läuft es mit dem Tanzkurs? 
 #! Erzähl mir mal von den Tanzstunden. 
-u: (<<~narrate [tanzen tanzkurs tanzstunden tanz]>>) ^reuse(HOBBIES_BEYONCE)
+u: (<<~narrate [tanzen getanzt tanzt tanzkurs tanzstunden tanz]>>) ^reuse(HOBBIES_BEYONCE)
 
 #! Erzähl mir mehr übers das Tanzen.
 u: HOBBIES_TEACHER (<<[~narrate ~facilitator] {~hobby}>>) Der Martin ist total süß. Das ist unser Tanzlehrer
@@ -34,16 +34,16 @@ u: HOBBIES_SOLO (<<[~narrate ~facilitator] {~hobby}>>) Die Mira ist so supercool
 # Spezifische Antworten------------------------------------------------------------------------------
 
 #! Wie findest du den Martin?
-u: TEACHER_RELATIONSHIP (~relationship [Martin tanzlehrer]) Der ist so süß.
+u: TEACHER_RELATIONSHIP (<<~relationship [Martin tanzlehrer]>>) Der ist so süß.
 
 #! Du tanzt also einmal die Woche.
-u: (<<[tanzen club tanzclub] also [woche dienstag einmal]>>) ^reuse(HOBBIES_BEYONCE)
+u: (<<[tanzen tanzt club tanzclub] also [woche dienstag einmal]>>) ^reuse(HOBBIES_BEYONCE)
 
 #! Gibt es noch andere Kinder, die auch ein solo tanzen? 
-u: (<<andere solo>>) [Ja][Nein]
+u: (<<andere [solo allein]>>) [Ja][Nein]
 
 #! Wie oft in der Woche bist du im Jugendzentrum? 
-u: (<<~frequency [jugendclub jugendzentrum club tanzkurs tanzen tanz]>>) Immer dienstags.
+u: (<<~frequency [jugendclub jugendzentrum club tanzkurs tanzen tanzt tanz]>>) Immer dienstags.
 
 #! Wie heißen deine Freundinnen beim Tanzen? 
 u: (<<~names freundinnen>>) Mira, Verena und Lucy.
@@ -52,10 +52,10 @@ u: (<<~names freundinnen>>) Mira, Verena und Lucy.
 u: ([wie_lange wielang seit_wann]) Schon lange.
 
 #! Wer bringt dich zum Tanzkurs, dein Papa oder auch der Onkel? 
-u: (<<bringen onkel oder ~father>>) [Onkel Dirk.][Papa.]
+u: (<<[bringen bringt fährt gebracht gefahren] [onkel Dirk er] oder [~father Stefan er]>>) [Onkel Dirk.][Papa.]
 
 #! Wirst du vom Tanzen abgeholt oder gehst du alleine nach Hause? 
-u: (<<[abholen abgeholt] oder alleine>>) [Ich werde abgeholt.][Ich gehe alleine.]
+u: (<<[abholen holt abgeholt] oder alleine>>) [Ich werde abgeholt.][Ich gehe alleine.]
 
 #! Sagst du jemandem Bescheid, wenn du dorthin gehst? 
 u: (<<sagst bescheid>>) [Ja][Nein]
@@ -64,7 +64,7 @@ u: (<<sagst bescheid>>) [Ja][Nein]
 u: (übst du) [Ja][Nein]
 
 #! Können die anderen das auch so gut wie du? 
-u: (<<[andere kinder freundinnen ~friend] auch gut>>) [Ja][Nein]
+u: (<<[andere kinder ~friend] auch gut>>) [Ja][Nein]
 
 #! Macht dir das Spaß? 
 u: (<<~bot [spass spaß freude gefällt]>>) [Ja][Nein]

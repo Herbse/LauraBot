@@ -1,25 +1,28 @@
-topic: ~father_bio (~father)
+topic: ~father_bio (~father Stefan helfen hilft)
 
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 u: PAPA_HELP_MUM () Mein Papa hilft meiner Mama zu Hause.
   #! Hilft er ihr beim Wäsche machen oder beim Kochen? 
-  a: (<<helfen wäsche oder kochen >>) [Beim Wäsche machen][Beim Kochen]
+  a: (<<[helfen hilft geholfen] wäsche oder kochen >>) [Beim Wäsche machen][Beim Kochen]
+  #! Wie hilft er ihr
+  #! Was hilft er ihr?
+  a: (~why)^reuse(PAPA_COOK)
 
 #! Erzähl mal etwas über deinen Vater.
 #! Vorhin hast Du gesagt, dass Du mit Deinem Papa in die Garage gehst. Erzähl mir mehr darüber. 
 u: (<<~narrate [~father er ihn]>>) ^reuse(PAPA_HELP_MUM)
 
 #! Erzähl mal wie er ihr hilft?
-u: PAPA_COOK (<<~narrate helfen>>) Er geht einkaufen und kocht ihr immer was zu essen.
+u: PAPA_COOK (<<~narrate [helfen hilft geholfen]>>) Er geht einkaufen und kocht ihr immer was zu essen.
   #! Kocht er nur für deine Mama oder esst ihr alle gemeinsam? 
   a: (<<~mother oder [gemeinsam zusammen]>>) [Nur für sie][Er kocht für uns alle]
 
 #! Erzähl mir mehr über deinen Papa!
 u: PAPA_HELP_NEIGHBOURS (<<~narrate [~father er ihn]>>) Papa hilft den Nachbarn beim Autos reparieren. Oder einmal, da haben sie eine Waschmaschine wieder ganz gemacht.
   #! Hilft dein Papa da öfters mal mit? 
-  a: (<<helfen [~often manchmal]>>) [Ja][Nein]
+  a: (<<[helfen hilft geholfen] [~often manchmal]>>) [Ja][Nein]
 
 #! Was machst du denn gern mit deinem Papa?
 #! Was für Dinge unternimmst du gemeinsam mit deinem Papa? 
@@ -38,7 +41,7 @@ u: PAPA_REPAIR (<<~activity ~bot [~father ihm]>>) Am Wochenende darf ich manchma
 u: PAPA_RELATIONSHIP (~relationship [~father ihr ihn]) Der ist so lieb.
 
 #! Dann hilft dein Papa ja ganz schön vielen Menschen.
-u: (<<[~father er] helfen [Menschen Leuten Personen]>>)^reuse(PAPA_REPAIR)
+u: (<<[~father er] [helfen hilft geholfen] [menschen leuten personen]>>)^reuse(PAPA_REPAIR)
 
 #! Was macht dein Vater sonst so?
 #! Was macht dein Vater sonst noch so, wenn du zuhause bist? 
@@ -48,25 +51,25 @@ u: (<<~activity sonst [~father er]>>) ^reuse(PAPA_HELP_NEIGHBOURS)
 u: (<<~activity [~father er]>>) ^reuse(PAPA_HELP_MUM)
 
 #! Ist dein Papa auch zuhause, wenn du von der Schule kommst?
-u: (<<[~father er] ~home ~bot schule>>) [Ja][Nein]
+u: (<<[~father er] ~home ~bot ~school>>) [Ja][Nein]
 
 #! Ok, dein Papa hilft also deiner Mama.
-u: (<< [~father er] helfen [also sozusagen] [~mother ihr sie]>>) ^reuse(PAPA_COOK)
+u: (<< [~father er] [helfen hilft geholfen] [also sozusagen] [~mother ihr sie]>>) ^reuse(PAPA_COOK)
 
 #! Er erledigt also die Einkäufe und kümmert sich um das Mittagessen.
-u: (<<[~father er] also [einkaufen einkauf einkäufe essen mittagessen ]>>) ^(PAPA_HELP_NEIGHBOURS)
+u: (<<[~father er] also [einkaufen kauft_ein eingekauft einkauf einkäufe essen mittagessen ]>>) ^reuse(PAPA_HELP_NEIGHBOURS)
   
 #! Warum braucht deine Mama denn Hilfe? 
-u: (<<~why [~mother sie] hilfe>>) ^respond(~mother_bio)
+u: (<<~why [~mother sie] [hilfe helfen]>>) ^respond(~mother_bio)
 
 #! Was ist denn mit ihr los?
 u: (<<was los>>) ^respond(~mother_bio)
 
 #! Hilft er ihr, weil es ihr nicht gut geht? 
-u: (<<helfen [~father er] weil>>) [Ja][Nein]
+u: (<<[helfen hilft geholfen] [~father er] weil>>) [Ja][Nein]
 
 #! Hilfst du da auch manchmal mit? 
-u: (<<helfen ~bot [~often manchmal]>>) [Ja][Nein]
+u: (<<[helfen hilft geholfen] ~bot [~often manchmal]>>) [Ja][Nein]
 
 # Weiterleitung aus dem Topic-Roulette
 u: ($narrative=1) $narrative=0 ^reuse(PAPA_HELP_MUM)

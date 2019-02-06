@@ -425,7 +425,7 @@
 #GERMAN concept: ~FORMAT_WORDS (      Audio DVD ebook Ausgabe EPUB Format "gebundene Ausgabe" Hardcover "ich buche" entzünden Entzünden Massenmarkt-Taschenbuch Mobipocket MP3 Taschenbuch PDF soft "weiche Abdeckung" Broschiert Version VHS   )
 #GERMAN concept: ~FRENCHWORDS FOREIGN_WORD (      bon bonsoir je jour parle parlez quelle soir suis voulez vous   )
 #GERMAN concept: ~FREQUENCY_WORDS (      Jahres "alle zwei Jahre" Zweihundertjahrfeier zweimonatlich zweiwöchentlich centennial Täglich tagaktiv "alle zwei Wochen" häufig stündlich unmittelbar "unmittelbar bevor" monatlich gelegentlich Staude vierteljährlich rezidivierenden wiederkehrend halbjährlich "alle drei Jahre" wöchentlich jährlich   )
-#GERMAN concept: ~FRIEND PROBABLE_NOUN (      Bekanntschaft Verbündete beau Freund Kumpel Kumpel "enger Freund" Kollege Genosse Vertraute Freund Freundin kith Liebhaber Kumpel Partner Kumpel Swain   )
+#GERMAN concept: ~FRIEND PROBABLE_NOUN (      Bekanntschaft Verbündete beau Freund Kumpel Kumpel "enger Freund" Kollege Genosse Vertraute Freund Freundin kith Liebhaber Kumpel Partner Kumpel Swain freundinnen freunde   )
 #GERMAN concept: ~FUNCTIONS ( ~burnable ~carryable ~closeable ~contains ~eatable ~enterable ~flammable ~immovable ~lockable ~noisy ~rideable ~shootable ~supports ~switchable ~throwable ~toyable ~unreachable ~wearable        )
 #GERMAN concept: ~SALAD (      "Grüner Salat" Tomaten Gurke Rettich Zwiebeln Sellerie "Rote Beete" Eisbergsalat "Grüner Salat" Frühlingszwiebel  )
 #GERMAN concept: ~FUNGI ANIMATE_BEING (      "Pilz Familie" Pilz   )

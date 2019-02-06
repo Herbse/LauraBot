@@ -1,6 +1,6 @@
 ﻿T~school_class ( helfen unterricht ~school )
 ~school ( Hort Schule )
-~narrate ( erzählen beschreiben beschreib beschreibe wie_läuft erzähl_ruhig erzähl_mir erzähl_mal Erzähl_mal )
+~narrate ( erzähle erzählen beschreiben beschreib beschreibe wie_läuft erzähl_ruhig erzähl_mir erzähl_mal Erzähl_mal )
 ~problems ( zoffen streiten Streitigkeiten Ungereimtheit Streit Zwist Probleme Schwierigkeiten Problem Stress )
 T~mother_bio ( Hausaufgaben ~mother )
 T~school_soz ( unterricht ~classmates ~school )
