@@ -1,8 +1,0 @@
-﻿Start: user:guest bot:test ip: rand:333 (~introductions) 0 ==> Hallo!  When:May03'18-14:44:11 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May03'18-11:17:42 0:May03'18-14:44:11 F:0 P:0 Why:~introductions.0.0.~control.0.0 
-entering null word to dictionary in sentence1 Thu May 03 14:44:16 2018 in sentence: howdy 
-    
-Respond: user:guest bot:test ip: (~introductions) 1   howdy ==> Wie heißt du?  When:May03'18-14:44:16 Why:~introductions.1.0.~control.1.0   F:1166 
-Respond: user:guest bot:test ip: (~introductions) 2   Hartmt ==> Freut mich dich kennenzulernen, unknown-word. Wie kann ich dir helfen?  When:May03'18-14:44:23 Why:~introductions.1.1=USER_NAME.~introductions.1.4   F:0 
-Respond: user:guest bot:test ip: (~courses_of_studies) 3   Fachrichtung ==> Möchtest wissen, welcher Studiengang zu dir passt?  When:May03'18-14:44:31 Why:~courses_of_studies.0.0.~control.1.0   F:0 
-Respond: user:guest bot:test ip: (~questions_interests) 4   Ja ==> In welcher Fachrichtung möchtest du studieren?  When:May03'18-14:44:38 Why:~questions_interests.8.0=SUBJECT.~courses_of_studies.0.1   F:0 
-Respond: user:guest bot:test ip: (~questions_design) 5   Kreativ ==> Wie sehr interessierst du dich für Technik? (Sehr, geht so, wenig, gar nicht)  When:May03'18-14:44:42 Why:~questions_design.9.0=TECH.~questions_interests.3.0   F:0 

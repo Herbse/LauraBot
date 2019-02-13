@@ -1,19 +1,22 @@
 ﻿ChatScript Version 8.2  compiled Jun 19 2018 14:20:20
 
->>Reading folder RAWDATA/LAURA/
+>>Reading folder RAWDATA/LAURA_A/
+
+----Reading file laura_a_control.top
+Rename @9 as @chatoutput
+Reading outputmacro: ^laura
+Reading topic ~xrejoinder
+Reading table ^tbl:defaultbot
+Reading topic ~control
+
+----Reading file event_uncle.top
+Reading topic ~event_uncle
 
 ----Reading file school_class.top
 Reading topic ~school_class
 
 ----Reading file school_soz.top
 Reading topic ~school_soz
-
-----Reading file z_simplecontrol.top
-Rename @9 as @chatoutput
-Reading outputmacro: ^laura
-Reading topic ~xrejoinder
-Reading table ^tbl:defaultbot
-Reading topic ~control
 
 ----Reading file father_bio.top
 Reading topic ~father_bio
@@ -39,9 +42,6 @@ Reading topic ~xpostagsentence
 
 ----Reading file yes_no_questions.top
 Reading topic ~yes_no_questions
-
-----Reading file event_uncle.top
-Reading topic ~event_uncle
 
 ----Reading file b_answer_roulette.top
 Reading topic ~answer_roulette
@@ -99,7 +99,7 @@ Reading topic ~topic_roulette
 ----Reading file keywordless.top
 Reading topic ~keywordless
 
-<<end folder RAWDATA/LAURA
+<<end folder RAWDATA/LAURA_A
 No errors or warnings
 
 

@@ -16,3 +16,21 @@ Command: :build laura
 Start: user:sdf bot:laura ip: rand:2403 (~personal) 0 ==> Prima. Was möchstest du denn wissen?  When:Jun19'18-16:18:01 Version:8.2 Build0:Jun16'18-13:34:54 Build1:Jun19'18-16:17:54 0:Jun16'18-18:51:54 F:0 P:Jun16'18-18:53:18 Why:~personal.0.0.~control.1.0 
 Respond: user:sdf bot:laura ip: (~personal) 1   wie geht es dir ==> Naja, es geht so.  When:Jun19'18-16:29:58 Why:~personal.3.0.~control.1.0   F:28 
 Respond: user:sdf bot:laura ip: (~personal) 2   und sonst wie geht ==> Naja, es geht so.  When:Jun19'18-16:30:06 Why:~personal.3.0.~control.1.0   F:3 
+Start: user:sdf bot:laura_b ip: rand:2403 (~introduction) 0 ==> Hallo!  When:Feb13'19-17:11:25 Version:8.2 Build0:Feb13'19-17:04:37 Build1:Feb13'19-17:06:44 0:Feb13'19-17:11:25 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdf bot:laura_b ip: (~introduction) 1   berichte von deiner katze ==> Keine Ahnung.  When:Feb13'19-17:11:37 Why:~keywordless.1.0.~control.2.0   F:271 
+Command: :reset
+Start: user:sdf bot:laura_b ip: rand:2403 (~introduction) 0 ==> Hallo!  When:Feb13'19-17:12:10 Version:8.2 Build0:Feb13'19-17:04:37 Build1:Feb13'19-17:06:44 0:Feb13'19-17:11:25 F:0 P:Feb13'19-17:11:37 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdf bot:laura_b ip: (~introduction) 1   beschreibe katze ==> Keine Ahnung.  When:Feb13'19-17:12:14 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura_b ip: (~introduction) 2   katze ==> Weiß nicht...  When:Feb13'19-17:12:16 Why:~keywordless.5.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura_b ip: (~introduction) 3   beschreibe onkel ==> Was meinen sie damit genau?  When:Feb13'19-17:12:26 Why:~keywordless.4.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura_b ip: (~father_bio) 4   beschreibe familie ==> Mein Papa hilft meiner Mama zu Hause.  When:Feb13'19-17:12:32 Why:~father_bio.0.0=PAPA_HELP_MUM.~topic_roulette.4.0   F:2 
+Command: :reset
+Start: user:sdf bot:laura_b ip: rand:2403 (~introduction) 0 ==> Hallo!  When:Feb13'19-17:12:34 Version:8.2 Build0:Feb13'19-17:04:37 Build1:Feb13'19-17:06:44 0:Feb13'19-17:11:25 F:0 P:Feb13'19-17:12:32 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdf bot:laura_b ip: (~introduction) 1   beschreibe katze ==> Keine Ahnung.  When:Feb13'19-17:13:03 Why:~keywordless.1.0.~control.2.0   F:1 
+Respond: user:sdf bot:laura_b ip: (~introduction) 2   beschreibe onkel ==> Weiß nicht...  When:Feb13'19-17:13:32 Why:~keywordless.5.0.~control.2.0   F:2 
+Respond: user:sdf bot:laura_b ip: (~introduction) 3   wie geht es dir ==> Weiß nicht  When:Feb13'19-17:13:38 Why:~answer_roulette.1.0.~introduction.2.0=CLOSED_SITUATION   F:1 
+Command: :reset
+Start: user:sdf bot:laura_b ip: rand:2403 (~introduction) 0 ==> Hallo!  When:Feb13'19-17:13:41 Version:8.2 Build0:Feb13'19-17:04:37 Build1:Feb13'19-17:06:44 0:Feb13'19-17:11:25 F:0 P:Feb13'19-17:13:38 Why:~introduction.0.0.~control.0.0 
+Respond: user:sdf bot:laura_b ip: (~introduction) 1   wie geht es dir ==> Ganz okay.  When:Feb13'19-17:13:43 Why:~answer_roulette.1.0.~introduction.2.0=CLOSED_SITUATION   F:1 
+Respond: user:sdf bot:laura_b ip: (~introduction) 2   warum ==> Weiß nicht...  When:Feb13'19-17:13:45 Why:~keywordless.5.0.~control.2.0   F:1 
+Command: :build laura

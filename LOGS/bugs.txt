@@ -284,3 +284,57 @@ No system variable %input<%userfirstline
 MinReleaseStackGap 85MB MinHeapAvailable 89MB
 MaxBuffers used 10 of 80
 
+Not expecting PRE to generate a response
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+BUG in topic_hans_laura_b_GERMAN.txt at 0:  topic system failed to clear out topic stack
+
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Not expecting PRE to generate a response
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+BUG in topic_hans_laura_b_GERMAN.txt at 0:  topic system failed to clear out topic stack
+
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Not expecting PRE to generate a response
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+BUG in topic_hans_laura_b_GERMAN.txt at 0:  topic system failed to clear out topic stack
+
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Not expecting PRE to generate a response
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+BUG in topic_hans_laura_b_GERMAN.txt at 0:  topic system failed to clear out topic stack
+
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Not expecting PRE to generate a response
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+BUG in topic_hans_laura_b_GERMAN.txt at 0:  topic system failed to clear out topic stack
+
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Not expecting PRE to generate a response
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+BUG in topic_hans_laura_b_GERMAN.txt at 0:  topic system failed to clear out topic stack
+
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+

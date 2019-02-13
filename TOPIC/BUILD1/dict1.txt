@@ -6,7 +6,7 @@
 + abgelaufen PATTERN_WORD 
 + gefunden PATTERN_WORD 
 + @chatoutput 9
-+ laura 
++ laura_b 
 + defaultbot 
 + was_macht 
 + was_geht 
