@@ -5950,3 +5950,36 @@ Free 131MB: dict 1,948,261 fact 729,996 stack/heap 96,745KB
 
 ======== Began EV server pid 68070 8.2 compiled Jun 19 2018 14:20:20 on host local port 1024 at Wed Nov 28 12:03:06 2018 serverlog:1 userlog: 1
 evserver: parent ready (pid = 68070), fork=0
+evserver child fork requests: 0
+  evserver: running pid: 16574
+System startup createsystem Thu Feb 14 09:07:41 2019
+Server ChatScript EVSERVER Version 8.2 pid: 16574 64 bit MACH compiled Jun 19 2018 14:20:20 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=106719  fact=127083  heap=1606648 Compiled:Feb13'19-17:18:53 by version 8.2 "0"
+Build1:  dict=330  fact=305  heap=32612 Compiled:Feb13'19-17:33:36 by version 8.2 "laura"
+Used 71MB: dict 500,680 (44059kb) hashdepths 27538.51261.51382.38063.22878.12529.6081.3012.1379.589.258.102.37.11.5.1.2. words 500680 unusedbuckets 27538 fact 128,152 (6151kb) heap 9967kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,596,470 fact 671,848 stack/heap 90,032KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 16574 8.2 compiled Jun 19 2018 14:20:20 on host local port 1024 at Thu Feb 14 09:07:46 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 16574), fork=0
+ServerPre: pid: 16574 guest (Laura) :build Laura Feb 14 09:07:50 2019
+System startup Laura Thu Feb 14 09:07:50 2019
+System startup createsystem Thu Feb 14 09:07:50 2019
+Server ChatScript EVSERVER Version 8.2 pid: 16574 64 bit MACH compiled Jun 19 2018 14:20:20 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=106719  fact=127083  heap=1606648 Compiled:Feb13'19-17:18:53 by version 8.2 "0"
+Build1:  dict=330  fact=305  heap=32612 Compiled:Feb14'19-09:07:50 by version 8.2 "Laura"
+Used 71MB: dict 500,680 (44059kb) hashdepths 27538.51261.51382.38063.22878.12529.6081.3012.1379.589.258.102.37.11.5.1.2. words 500680 unusedbuckets 27538 fact 128,152 (6151kb) heap 9967kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,596,470 fact 671,848 stack/heap 90,032KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:guest bot:Laura ip:127.0.0.1 () 0 :build Laura  ==> System startup Laura Thu Feb 14 09:07:50 2019  ChatScript Version 8.2  compiled Jun 19 2018 14:20:20  No errors or warnings        Finished compile    System startup createsystem Thu Feb 14 09:07:50 2019  Server ChatScript EVSERVER Version 8.2 pid: 16574 64 bit MACH compiled Jun 19 2018 14:20:20 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=106719  fact=127083  heap=1606648 Compiled:Feb13'19-17:18:53 by version 8.2 "0"  Build1:  dict=330  fact=305  heap=32612 Compiled:Feb14'19-09:07:50 by version 8.2 "Laura"  Used 71MB: dict 500,680 (44059kb) hashdepths 27538.51261.51382.38063.22878.12529.6081.3012.1379.589.258.102.37.11.5.1.2. words 500680 unusedbuckets 27538 fact 128,152 (6151kb) heap 9967kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,596,470 fact 671,848 stack/heap 90,032KB         *** Server WIDE OPEN to :command use.    When:Feb14 09:07:55 4853ms 
+ServerPre: pid: 16574 guest (Laura) [][][][] Hallo Feb 14 09:08:03 2019
+Respond: user:guest bot:Laura ip:127.0.0.1 (~introduction) 1 [][][][] Hallo  ==> Ich bin Laura und möchte dir etwas erzählen.  When:Feb14 09:08:03 169ms Why:~introduction.1.0.~control.2.0 

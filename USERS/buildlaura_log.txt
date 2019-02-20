@@ -2,21 +2,18 @@
 
 >>Reading folder RAWDATA/LAURA_A/
 
+----Reading file school_class.top
+Reading topic ~school_class
+
+----Reading file school_soz.top
+Reading topic ~school_soz
+
 ----Reading file laura_a_control.top
 Rename @9 as @chatoutput
 Reading outputmacro: ^laura
 Reading topic ~xrejoinder
 Reading table ^tbl:defaultbot
 Reading topic ~control
-
-----Reading file event_uncle.top
-Reading topic ~event_uncle
-
-----Reading file school_class.top
-Reading topic ~school_class
-
-----Reading file school_soz.top
-Reading topic ~school_soz
 
 ----Reading file father_bio.top
 Reading topic ~father_bio
@@ -42,6 +39,9 @@ Reading topic ~xpostagsentence
 
 ----Reading file yes_no_questions.top
 Reading topic ~yes_no_questions
+
+----Reading file event_uncle.top
+Reading topic ~event_uncle
 
 ----Reading file b_answer_roulette.top
 Reading topic ~answer_roulette
