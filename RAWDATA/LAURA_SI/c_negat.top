@@ -1,0 +1,10 @@
+topic: ~negat keep repeat nostay()
+
+
+r: $$answerCategory = negation $$actionType = shake Nein. ^keep() ^repeat()
+
+r: $$answerCategory = negation $$actionType = shake Nee. ^keep() ^repeat()
+
+r: $$answerCategory = negation $$actionType = shake Nö. ^keep() ^repeat()
+
+r: $$answerCategory = negation $$actionType = shake Mh-Mh. ^keep() ^repeat()

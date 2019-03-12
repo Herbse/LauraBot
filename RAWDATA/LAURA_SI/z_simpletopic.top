@@ -1,0 +1,53 @@
+outputmacro: ^myfunc(^data) ($$concept)
+	$$wordindex += 1			# count words in each sentence
+	_0 = ^burst(^data ^"\t")	# Treetagger returns a tabbed triple of original word, tag, lemma
+	$$concept = ^join(~ _1)		# we turn tag into a concept
+	^settag($$wordindex $$concept )	# set the tag concept
+	^setcanon($$wordindex _2 )	# set the canonical form to ChatScript
+
+#outputmacro: ^oob(^value)
+	#$$oob = ^join($$oob " " ^value)
+
+
+outputmacro: ^oob()
+ 
+ $_topic = %topic
+ $_revelationState = $$revelationState
+ $_rapportCounter = $rapportCounter
+ $_aCategory = $$answerCategory
+ $_probFormat= $$prob_format
+ $_actionType = $$actionType
+ $_emoType = $$emoType 
+ #$_topicSwitch = $$topicSwitch
+ $_randomNumber = $$random_number
+
+ $_item1name = topic
+ $_item1value = $_topic
+ $_item2name = answerCategory
+ $_item2value = $_aCategory
+ $_item3name = probFormat
+ $_item3value = $_probFormat
+ $_item4name = randomNumber
+ $_item4value = $_randomNumber
+ $_item5name = emoType
+ $_item5value = $_emoType
+ $_item6name = actionType
+ $_item6value = $_actionType
+ $_item7name = rapportCounter        
+ $_item7value = $_rapportCounter
+ $_item8name = revelationState
+ $_item8value = $_revelationState
+
+ # join it all together for a string output using pipe '|' between items and using ':' between item name and value
+ $$oob = ^join( $_item1name : $_item1value \| $_item2name : $_item2value \| $_item3name : $_item3value \| $_item4name : $_item4value \| $_item5name : $_item5value \| $_item6name : $_item6value \| $_item7name : $_item7value \| $_item8name : $_item8value)
+
+
+
+topic: ~xPOSTAGSENTENCE system()
+t: (_* )  # memorize sentence to pass to tagger
+t: ( ) 
+	$$wordindex = 0					# need to start over for each sentence, used to locate word in sentence
+	^log(FILE  chat.txt NEW '_0 )	# non-commercial version reads a file, so write our sentence to a file
+#	^popen("tag-english chat.txt" '^myfunc)
+	^popen("tree-tagger-german chat.txt" '^myfunc) # invoke local copy of TreeTagger german
+

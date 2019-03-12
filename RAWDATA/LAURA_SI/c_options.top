@@ -1,0 +1,10 @@
+topic: ~options keep repeat nostay ()
+
+r: $answerCategory = options Das erstgenannte. ^keep() ^repeat()
+
+r: $answerCategory = options Das zweitgenannte. ^keep() ^repeat()
+
+r: $answerCategory = options Das erste. ^keep() ^repeat()
+
+r: $answerCategory = options Das zweite. ^keep() ^repeat()
+

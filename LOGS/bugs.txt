@@ -338,3 +338,745 @@ BUG in topic_hans_laura_b_GERMAN.txt at 0:  topic system failed to clear out top
 MinReleaseStackGap 85MB MinHeapAvailable 90MB
 MaxBuffers used 10 of 80
 
+BUG in topic_fff_laura_oob_GERMAN.txt at 0: ^laura_oob No such bot  fff -  -  status: laura_oob
+BUG in topic_fff_laura_oob_GERMAN.txt at 0: ^laura_oob No such bot  fff -  -  status: laura_oob
+BUG in topic_fff_laura_oob_GERMAN.txt at 1: ^laura_oob No such bot  fff -  - qwe status: laura_oob
+BUG in topic_fff_laura_oob_GERMAN.txt at 1: ^laura_oob No such bot  fff -  - qe status: laura_oob
+BUG in handle_oob.top at 24: u: (yes_no_question) ^gambit(~affirmation) ^gambit(~negat)] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in topic_fff_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 09:25:26 2019: input:0 No such bot  fff -  -  status: defaultbot word not found caller:fff callee: at  in sentence: [choice_question]
+No such bot  fff -  -  status: defaultbot word not found
+BUG in handle_oob.top at 24: u: (yes_no_question) ^gambit(~affirmation) ^gambit(~negat)] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in topic_fff_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 09:25:39 2019: input:0 No such bot  fff -  -  status: defaultbot word not found caller:fff callee: at  in sentence: [choice_question]
+No such bot  fff -  -  status: defaultbot word not found
+BUG in c_reactance.top at 4: r: Das ist die Reaktanz. \[reactance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_notAnswering.top at 3: r: Hm. \[notAnswering\] \[shrug\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 3: r: Hää. \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 8: r: Was meinen sie damit? \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 3: r: Das erstgenannte. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 7: r: Das erste. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 3: r: Ich weiß nicht. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 8: r: Keine Ahnung. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 3: r: Ja. \[affirmation\] \[nod\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 5: r: Mhm. \[affirmation\] \[nod\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 4: r: Nein. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 6: r: Nee. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 8: r: Nö. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 11: r: Mh-Mh.\[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in b_handle_oob.top at 44: else {$$answer = \[sobbing\])}  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_adsdd_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 17:01:54 2019: input:0 No such bot  adsdd -  -  status: defaultbot word not found caller:adsdd callee: at  in sentence: [suggestive_specific]
+No such bot  adsdd -  -  status: defaultbot word not found
+BUG in c_reactance.top at 4: r: Das ist die Reaktanz. \[reactance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_notAnswering.top at 3: r: Hm. \[notAnswering\] \[shrug\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 3: r: Hää. \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 8: r: Was meinen sie damit? \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 3: r: Das erstgenannte. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 7: r: Das erste. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 3: r: Ich weiß nicht. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 8: r: Keine Ahnung. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 3: r: \[affirmation\] \[nod\] Ja.  
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 5: r: \[affirmation\] \[nod\] Mhm.  
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 4: r: Nein. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 6: r: Nee. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 8: r: Nö. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 11: r: Mh-Mh.\[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in b_handle_oob.top at 44: else {$$answer = \[sobbing\])}  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_adsdd_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 17:02:37 2019: input:0 No such bot  adsdd -  -  status: defaultbot word not found caller:adsdd callee: at  in sentence: [suggestive_specific]
+No such bot  adsdd -  -  status: defaultbot word not found
+BUG in c_reactance.top at 4: r: Das ist die Reaktanz. \[reactance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_notAnswering.top at 3: r: Hm. \[notAnswering\] \[shrug\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 3: r: Hää. \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 8: r: Was meinen sie damit? \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 3: r: Das erstgenannte. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 7: r: Das erste. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 3: r: Ich weiß nicht. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 8: r: Keine Ahnung. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 3: r: \[affirmation\] Ja.  
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 5: r: \[affirmation\] \[nod\] Mhm.  
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 4: r: Nein. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 6: r: Nee. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 8: r: Nö. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 11: r: Mh-Mh.\[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in b_handle_oob.top at 44: else {$$answer = \[sobbing\])}  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_adsdd_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 17:05:03 2019: input:0 No such bot  adsdd -  -  status: defaultbot word not found caller:adsdd callee: at  in sentence: [suggestive_specific]
+No such bot  adsdd -  -  status: defaultbot word not found
+BUG in c_reactance.top at 4: r: Das ist die Reaktanz. \[reactance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_notAnswering.top at 3: r: Hm. \[notAnswering\] \[shrug\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 3: r: Hää. \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 8: r: Was meinen sie damit? \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 3: r: Das erstgenannte. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 7: r: Das erste. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 3: r: Ich weiß nicht. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 8: r: Keine Ahnung. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 3: u: () \[affirmation\] Ja.  
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 5: r: \[affirmation\] \[nod\] Mhm.  
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 4: r: Nein. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 6: r: Nee. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 8: r: Nö. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 11: r: Mh-Mh.\[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in b_handle_oob.top at 44: else {$$answer = \[sobbing\])}  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_adsdd_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 17:05:34 2019: input:0 No such bot  adsdd -  -  status: defaultbot word not found caller:adsdd callee: at  in sentence: [suggestive_specific]
+No such bot  adsdd -  -  status: defaultbot word not found
+BUG in c_reactance.top at 4: r: Das ist die Reaktanz. \[reactance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_notAnswering.top at 3: r: Hm. \[notAnswering\] \[shrug\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 3: r: Hää. \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 8: r: Was meinen sie damit? \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 3: r: Das erstgenannte. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 7: r: Das erste. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 3: r: Ich weiß nicht. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 8: r: Keine Ahnung. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_affirmation.top at 5: r: \[affirmation\] \[nod\] Mhm.  
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 4: r: Nein. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 6: r: Nee. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 8: r: Nö. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 11: r: Mh-Mh.\[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in b_handle_oob.top at 44: else {$$answer = \[sobbing\])}  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_adsdd_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 17:08:53 2019: input:0 No such bot  adsdd -  -  status: defaultbot word not found caller:adsdd callee: at  in sentence: [suggestive_specific]
+No such bot  adsdd -  -  status: defaultbot word not found
+BUG in c_reactance.top at 4: r: Das ist die Reaktanz. \[reactance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_notAnswering.top at 3: r: Hm. \[notAnswering\] \[shrug\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 3: r: Hää. \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_incomprehension.top at 8: r: Was meinen sie damit? \[incomprehension\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 3: r: Das erstgenannte. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_options.top at 7: r: Das erste. \[options\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 3: r: Ich weiß nicht. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_ignorance.top at 8: r: Keine Ahnung. \[ignorance\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 4: r: Nein. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 6: r: Nee. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 8: r: Nö. \[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in c_negat.top at 11: r: Mh-Mh.\[negation\] \[shake\] 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in b_handle_oob.top at 44: else {$$answer = \[sobbing\])}  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_adsdd_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 17:11:07 2019: input:0 No such bot  adsdd -  -  status: defaultbot word not found caller:adsdd callee: at  in sentence: [suggestive_specific]
+No such bot  adsdd -  -  status: defaultbot word not found
+BUG in b_handle_oob.top at 44: else {$$answer = \[sobbing\])}  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_adsdd_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 17:11:39 2019: input:0 No such bot  adsdd -  -  status: defaultbot word not found caller:adsdd callee: at  in sentence: [suggestive_specific]
+No such bot  adsdd -  -  status: defaultbot word not found
+BUG in b_handle_oob.top at 45: $$answer 
+RULE-3 Missing pattern for responder
+
+BUG in topic_adsdd_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Feb 26 17:12:46 2019: input:0 No such bot  adsdd -  -  status: defaultbot word not found caller:adsdd callee: at  in sentence: [suggestive_specific]
+No such bot  adsdd -  -  status: defaultbot word not found
+BUG in c_narrative.top at 5: r: \[ narrative shrug\] Hier werden später die narrativen Antworten verarbeitet.  ^keep() ^repeat() 
+OUTPUT-3 Unbalanced ] in 
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Mon Mar 11 19:15:51 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [facilitator test test1]
+No such bot  jhjhg -  -  status: defaultbot word not found
+BUG in z_laura_si_control.top at 117:  *** Error- Function ^oob wrong argument count 1 expected 0 given 
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Mon Mar 11 19:56:09 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
+No such bot  jhjhg -  -  status: defaultbot word not found
+BUG in z_laura_si_control.top at 117:  *** Error- Function ^oob wrong argument count 1 expected 0 given 
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Mon Mar 11 19:57:55 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
+No such bot  jhjhg -  -  status: defaultbot word not found
+BUG in b_handle_oob.top at 77: ^oob(A_Category: repetition) 
+CALL-60 Incorrect argument count to macro ^oob- given 2 instead of required 1
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous No such bot  jhjhg -  -  status: defaultbot word not found
+
+BUG: Mon Mar 11 20:03:47 2019: input:1 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451780 heapUsedNow: 9451780 buffers:2 stackused: 90547900 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451768 buffers:1 stackused: 90548156 ~addposthoc.0.0{}  - 
+BUG in z_laura_si_control.top at 41:     $_responseCount = %response 
+Bad numeric # constant #if
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Mon Mar 11 20:05:28 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
+No such bot  jhjhg -  -  status: defaultbot word not found
+
+BUG: Mon Mar 11 20:05:35 2019: input:2 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451764 heapUsedNow: 9451764 buffers:2 stackused: 90547916 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451752 buffers:1 stackused: 90548172 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:05:39 2019: input:1 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451716 heapUsedNow: 9451716 buffers:2 stackused: 90547964 stackusedNow:488 ^repeat{}  - t:"( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451704 buffers:1 stackused: 90548220 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:07:28 2019: input:1 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451716 heapUsedNow: 9451716 buffers:2 stackused: 90547964 stackusedNow:488 ^repeat{}  - t:#( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451704 buffers:1 stackused: 90548220 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:11:54 2019: input:2 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451816 heapUsedNow: 9451816 buffers:2 stackused: 90547864 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451796 buffers:1 stackused: 90548120 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:12:52 2019: input:3 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451812 heapUsedNow: 9451812 buffers:2 stackused: 90547868 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451792 buffers:1 stackused: 90548124 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:13:39 2019: input:4 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451812 heapUsedNow: 9451812 buffers:2 stackused: 90547868 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451800 buffers:1 stackused: 90548124 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:13:41 2019: input:5 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451828 heapUsedNow: 9451828 buffers:2 stackused: 90547852 stackusedNow:488 ^repeat{}  - t:"( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451816 buffers:1 stackused: 90548108 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:13:42 2019: input:6 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451828 heapUsedNow: 9451828 buffers:2 stackused: 90547852 stackusedNow:488 ^repeat{}  - t:#( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451816 buffers:1 stackused: 90548108 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:13:43 2019: input:7 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451844 heapUsedNow: 9451844 buffers:2 stackused: 90547836 stackusedNow:488 ^repeat{}  - t:$( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451832 buffers:1 stackused: 90548092 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:13:43 2019: input:8 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451828 heapUsedNow: 9451828 buffers:2 stackused: 90547852 stackusedNow:488 ^repeat{}  - t:%( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451816 buffers:1 stackused: 90548108 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:13:44 2019: input:9 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451844 heapUsedNow: 9451844 buffers:2 stackused: 90547836 stackusedNow:488 ^repeat{}  - t:&( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451832 buffers:1 stackused: 90548092 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:20:05 2019: input:1 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451756 heapUsedNow: 9451756 buffers:2 stackused: 90547924 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451732 buffers:1 stackused: 90548180 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:21:54 2019: input:2 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451900 heapUsedNow: 9451900 buffers:2 stackused: 90547780 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451844 buffers:1 stackused: 90548036 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:22:23 2019: input:3 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451924 heapUsedNow: 9451924 buffers:2 stackused: 90547756 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451864 buffers:1 stackused: 90548012 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:04 2019: input:4 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451884 heapUsedNow: 9451884 buffers:2 stackused: 90547796 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451852 buffers:1 stackused: 90548052 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:11 2019: input:5 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451900 heapUsedNow: 9451900 buffers:2 stackused: 90547780 stackusedNow:488 ^repeat{}  - t:"( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451868 buffers:1 stackused: 90548036 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:11 2019: input:6 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451884 heapUsedNow: 9451884 buffers:2 stackused: 90547796 stackusedNow:488 ^repeat{}  - t:#( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451852 buffers:1 stackused: 90548052 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:12 2019: input:7 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451900 heapUsedNow: 9451900 buffers:2 stackused: 90547780 stackusedNow:488 ^repeat{}  - t:$( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451868 buffers:1 stackused: 90548036 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:12 2019: input:8 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451900 heapUsedNow: 9451900 buffers:2 stackused: 90547780 stackusedNow:488 ^repeat{}  - t:%( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451868 buffers:1 stackused: 90548036 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:12 2019: input:9 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451916 heapUsedNow: 9451916 buffers:2 stackused: 90547764 stackusedNow:488 ^repeat{}  - t:&( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451884 buffers:1 stackused: 90548020 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:12 2019: input:10 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451900 heapUsedNow: 9451900 buffers:2 stackused: 90547780 stackusedNow:488 ^repeat{}  - t:'( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451868 buffers:1 stackused: 90548036 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:13 2019: input:11 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451916 heapUsedNow: 9451916 buffers:2 stackused: 90547764 stackusedNow:488 ^repeat{}  - t:(( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451884 buffers:1 stackused: 90548020 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:13 2019: input:12 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451916 heapUsedNow: 9451916 buffers:2 stackused: 90547764 stackusedNow:488 ^repeat{}  - t:)( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451884 buffers:1 stackused: 90548020 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:13 2019: input:13 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451932 heapUsedNow: 9451932 buffers:2 stackused: 90547748 stackusedNow:488 ^repeat{}  - t:*( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451900 buffers:1 stackused: 90548004 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:13 2019: input:14 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451916 heapUsedNow: 9451916 buffers:2 stackused: 90547764 stackusedNow:488 ^repeat{}  - t:+( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451884 buffers:1 stackused: 90548020 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:14 2019: input:15 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451932 heapUsedNow: 9451932 buffers:2 stackused: 90547748 stackusedNow:488 ^repeat{}  - t:,( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451900 buffers:1 stackused: 90548004 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:14 2019: input:16 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451932 heapUsedNow: 9451932 buffers:2 stackused: 90547748 stackusedNow:488 ^repeat{}  - t:-( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451900 buffers:1 stackused: 90548004 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:29:14 2019: input:17 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451948 heapUsedNow: 9451948 buffers:2 stackused: 90547732 stackusedNow:488 ^repeat{}  - t:.( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451916 buffers:1 stackused: 90547988 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:09 2019: input:18 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451964 heapUsedNow: 9451964 buffers:2 stackused: 90547716 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451932 buffers:1 stackused: 90547972 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:11 2019: input:19 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451964 heapUsedNow: 9451964 buffers:2 stackused: 90547716 stackusedNow:488 ^repeat{}  - t:"( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451932 buffers:1 stackused: 90547972 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:11 2019: input:20 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451996 heapUsedNow: 9451996 buffers:2 stackused: 90547684 stackusedNow:488 ^repeat{}  - t:#( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451964 buffers:1 stackused: 90547940 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:12 2019: input:21 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451980 heapUsedNow: 9451980 buffers:2 stackused: 90547700 stackusedNow:488 ^repeat{}  - t:$( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451948 buffers:1 stackused: 90547956 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:12 2019: input:22 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451996 heapUsedNow: 9451996 buffers:2 stackused: 90547684 stackusedNow:488 ^repeat{}  - t:%( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451964 buffers:1 stackused: 90547940 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:13 2019: input:23 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451980 heapUsedNow: 9451980 buffers:2 stackused: 90547700 stackusedNow:488 ^repeat{}  - t:&( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451948 buffers:1 stackused: 90547956 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:13 2019: input:24 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9452012 heapUsedNow: 9452012 buffers:2 stackused: 90547668 stackusedNow:488 ^repeat{}  - t:'( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451980 buffers:1 stackused: 90547924 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:13 2019: input:25 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451996 heapUsedNow: 9451996 buffers:2 stackused: 90547684 stackusedNow:488 ^repeat{}  - t:(( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451964 buffers:1 stackused: 90547940 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:14 2019: input:26 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9452012 heapUsedNow: 9452012 buffers:2 stackused: 90547668 stackusedNow:488 ^repeat{}  - t:)( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451980 buffers:1 stackused: 90547924 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:14 2019: input:27 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451836 heapUsedNow: 9451836 buffers:2 stackused: 90547844 stackusedNow:488 ^repeat{}  - t:*( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451804 buffers:1 stackused: 90548100 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:14 2019: input:28 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451852 heapUsedNow: 9451852 buffers:2 stackused: 90547828 stackusedNow:488 ^repeat{}  - t:+( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451820 buffers:1 stackused: 90548084 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:15 2019: input:29 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451852 heapUsedNow: 9451852 buffers:2 stackused: 90547828 stackusedNow:488 ^repeat{}  - t:,( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451820 buffers:1 stackused: 90548084 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:15 2019: input:30 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451868 heapUsedNow: 9451868 buffers:2 stackused: 90547812 stackusedNow:488 ^repeat{}  - t:-( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451836 buffers:1 stackused: 90548068 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:15 2019: input:31 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451852 heapUsedNow: 9451852 buffers:2 stackused: 90547828 stackusedNow:488 ^repeat{}  - t:.( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451820 buffers:1 stackused: 90548084 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:15 2019: input:32 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451820 heapUsedNow: 9451820 buffers:2 stackused: 90547860 stackusedNow:488 ^repeat{}  - t:/( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451788 buffers:1 stackused: 90548116 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:17 2019: input:33 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451804 heapUsedNow: 9451804 buffers:2 stackused: 90547876 stackusedNow:488 ^repeat{}  - t:0( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451772 buffers:1 stackused: 90548132 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:21 2019: input:1 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451788 heapUsedNow: 9451788 buffers:2 stackused: 90547892 stackusedNow:488 ^repeat{}  - t:1( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451756 buffers:1 stackused: 90548148 ~addposthoc.0.0{}  - 
+
+BUG: Mon Mar 11 20:30:55 2019: input:2 Illegal to use ^Repeat during postprocessing caller:jhjhg callee:laura_si at  script: ~addposthoc.0.0 in sentence: [request]
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 7 of 80
+
+Finished 3: heapusedOnEntry: 9451888 heapUsedNow: 9451888 buffers:2 stackused: 90547792 stackusedNow:488 ^repeat{}  - t:!( $$oob ) ^postprintbefore ( \[ $$oob \] ) $$oo
+BugDepth 2: heapusedOnEntry: 9451840 buffers:1 stackused: 90548048 ~addposthoc.0.0{}  - 
+BUG in b_handle_oob.top at 77: ^oob(A_type:repetition) ^oob(counter : $testcounter)  
+CALL-60 Incorrect argument count to macro ^oob- given 3 instead of required 1
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Mar 12 07:15:51 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
+No such bot  jhjhg -  -  status: defaultbot word not found
+BUG in z_simpletopic.top at 9:  $$oob = ^join($$oob " " ^value) 
+^value is either a function missing arguments or an undefined function variable.
+
+BUG in b_handle_oob.top at 85: ^oob(A_type:repetition) ^oob(counter : $testcounter)  
+CALL-60 Incorrect argument count to macro ^oob- given 1 instead of required 0
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Mar 12 07:17:00 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
+No such bot  jhjhg -  -  status: defaultbot word not found
+BUG in z_simpletopic.top at 9:  $$oob = ^join($$oob " " ^value) 
+^value is either a function missing arguments or an undefined function variable.
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Mar 12 07:17:17 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
+No such bot  jhjhg -  -  status: defaultbot word not found
+BUG in z_laura_li_control.top at 118:    ^postprintbefore(  \[ $$oob\]) $$oob = null  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Mar 12 15:44:59 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
+No such bot  jhjhg -  -  status: defaultbot word not found
+BUG in z_laura_li_control.top at 118: $$lastOutput = ^response() 
+CALL-60 Incorrect argument count to system function ^response- given 0 instead of required 1
+
+BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
+BUG: Tue Mar 12 16:49:34 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
+No such bot  jhjhg -  -  status: defaultbot word not found

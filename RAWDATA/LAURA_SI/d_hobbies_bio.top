@@ -1,0 +1,78 @@
+topic: ~hobbies_bio (~hobby ~dance tanzkurs tanz)
+# Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach dem Tanzen  unterschiedliche Antworten generiert
+
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+
+u: HOBBIES_DANCE () Ich gehe immer am Dienstag in den Club, Hiphop tanzen.
+    #! Was für ein Club?
+    a: (<<[was welcher] club>>) Der Jugendclub hier bei der Schule.
+
+#! Hast du Hobbies?
+u: (~hobby) ^reuse(HOBBIES_DANCE)
+
+#! Gehst du da alleine hin?
+u: (<<~bot [allein alleine]>>) [Nein mit meinen Freundinnen Mira, Verena und Lucy.][Ja.]
+
+#! Wie läuft es mit dem Tanzkurs? 
+#! Erzähl mir mal von den Tanzstunden. 
+u: (<<~narrate [tanzen getanzt tanzt tanzkurs tanzstunden tanz]>>) ^reuse(HOBBIES_BEYONCE)
+
+#! Erzähl mir mehr übers das Tanzen.
+u: HOBBIES_TEACHER (<<[~narrate ~facilitator] {~hobby}>>) Der Martin ist total süß. Das ist unser Tanzlehrer
+  
+#! Erzähl mal mehr.
+u: HOBBIES_BEYONCE(<<[~narrate ~facilitator] {~hobby}>>) Wir tanzen was tolles von Beyoncé. Ich kann das schon voll gut.
+    #! Wow, ihr tanzt zu Beyoncé.
+    a: (wow) ^reuse(HOBBIES_SOLO)
+
+
+#!  Erzähl mir mehr übers das Tanzen.
+u: HOBBIES_SOLO (<<[~narrate ~facilitator] {~hobby}>>) Die Mira ist so supercool, die darf ein Solo tanzen.
+
+# Spezifische Antworten------------------------------------------------------------------------------
+
+#! Wie findest du den Martin?
+u: TEACHER_RELATIONSHIP (<<~relationship [Martin tanzlehrer]>>) Der ist so süß.
+
+#! Du tanzt also einmal die Woche.
+u: (<<[tanzen tanzt club tanzclub] also [woche dienstag einmal]>>) ^reuse(HOBBIES_BEYONCE)
+
+#! Gibt es noch andere Kinder, die auch ein solo tanzen? 
+u: (<<andere [solo allein]>>) [Ja][Nein]
+
+#! Wie oft in der Woche bist du im Jugendzentrum? 
+u: (<<~frequency [jugendclub jugendzentrum club tanzkurs tanzen tanzt tanz]>>) Immer dienstags.
+
+#! Wie heißen deine Freundinnen beim Tanzen? 
+u: (<<~names freundinnen>>) Mira, Verena und Lucy.
+
+#! Wie lange machst du das schon? 
+u: ([wie_lange wielang seit_wann]) Schon lange.
+
+#! Wer bringt dich zum Tanzkurs, dein Papa oder auch der Onkel? 
+u: (<<[bringen bringt fährt gebracht gefahren] [onkel Dirk er] oder [~father Stefan er]>>) [Onkel Dirk.][Papa.]
+
+#! Wirst du vom Tanzen abgeholt oder gehst du alleine nach Hause? 
+u: (<<[abholen holt abgeholt] oder alleine>>) [Ich werde abgeholt.][Ich gehe alleine.]
+
+#! Sagst du jemandem Bescheid, wenn du dorthin gehst? 
+u: (<<sagst bescheid>>) [Ja][Nein]
+
+#! Übst du viel dafür? 
+u: (übst du) [Ja][Nein]
+
+#! Können die anderen das auch so gut wie du? 
+u: (<<[andere anderen kinder ~friend] auch gut>>) [Ja][Nein]
+
+#! Macht dir das Spaß? 
+u: (<<~bot [spass spaß freude gefällt]>>) [Ja][Nein]
+
+#! Habt ihr gemeinsam angefangen, dort zu tanzen? 
+u: (<<[gemeinsam zusammen] [anfangen angefangen][tanzen hingehen]>>) [Ja][Nein]
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(HOBBIES_DANCE)
+
+

@@ -1,0 +1,94 @@
+topic: ~handle_oob keep repeat nostay()
+
+# SI: 80% narrative | 10% non-answer | 10 % ignorance
+u: (invitation_to_tell) 
+$$prob_format = narrative:80_notAnswering:10_ignorance:10
+$$random_number = %rand
+if ($$random_number < 80) {^gambit(~narrative)}
+else if ($$random_number < 90) {^gambit(~notAnswering)}
+else {^gambit(~ignorance)}
+
+
+
+# SI: 60% narrative(same topic) | 20% affirmation? | 20% non-answer ->WENN ERSCHÖPFT 75% ignorance | 25% non-answer
+u: (facilitator) 
+$$prob_format = narrative:60_affirmation:20_notAnswering:10
+$$random_number = %rand
+if ($$random_number < 60) {$$answer = ^gambit(~narrative)}
+else if ($$random_number < 80) {$$answer = ^gambit(~affirmation)}
+else {$$answer = ^gambit(~notAnswering)}
+
+
+# rapport: 100% affirmation + rapport counter
+u: (rapport)
+$$prob_format = affirmation:100
+$rapportCounter += 1
+^gambit(~affirmation)
+
+
+
+# SI: 80% specific answer | 10% non-answer | 10% ignorance
+# !!!SPECIFIC NOCH KODIEREN!!! UND VOR ALLEM GEHT BEI SPECIFIC EHER KEIN ^GAMBIT?
+u: (w_question)
+$$prob_format = specific:80_notAnswering:10_ignorance:10
+$$random_number = %rand
+if ($$random_number < 80) {$$answer = ^gambit(~specific)}
+else if ($$random_number < 90) {$$answer = ^gambit(~notAnswering)}
+else {$$answer = ^gambit(~ignorance))
+
+
+# 80% option-choosen | 10% non-answer | 10% ignorance
+u: (choice_question)
+$$prob_format = option_chossen:80_notAnswering:10_ignorance:10
+$$random_number = %rand 
+if ($$random_number < 80){$$answer = ^gambit(~options)} 
+else if ($$random_number < 90){$$answer = ^gambit(~notAnswering)} 
+else {$$answer = ^gambit(~ignorance)} 
+
+
+# 50% affirmation | 30% negation | 20% ignorance
+u: (yes_no_question) 
+$$prob_format = affirmation:50_negation:30_ignorance:20
+$$random_number = %rand
+if (%$$random_number < 50){$$answer = ^gambit(~affirmation)} 
+else if ($$random_number < 80){$$answer = ^gambit(~negat)} 
+else {$$answer = ^gambit(~ignorance)} 
+
+
+# 90% incomprehension | 10% reactance 
+u: (unknowable_question) 
+$$prob_format = incomprehension:90_reactance:10
+$$random_number = %rand
+if ($$random_number < 90){$$answer = ^gambit(~incomprehension)} 
+else {$$answer = ^gambit(~reactance)} 
+
+# 100% repetition of given answer (how many volleys back?)
+u: (request) 
+$$lastOutput=%lastoutput
+$$lastOutput
+
+
+# 40% ignorance | 30% reactance | 30% sobbing
+u: (suggestive_unspecific) 
+$$prob_format = ignorance:40_reactance:30_sobbing:30
+$$random_number = %rand
+if ($$random_number < 40){$$answer = ^gambit(~ignorance)} 
+else if ($$random_number < 70){$$answer = ^gambit(~reactance)} 
+else {$$answer = ^gambit(~sobbing)} 
+
+
+
+# 70% affirmation | 20% negation | 5% ignorance | 5% non-answer
+u: (suggestive_specific)
+$$prob_format = affirmation:70_negation:20_ignorance:5_notAnswering:5
+$$random_number = %rand
+if ($$random_number < 70){$$answer = ^gambit(~affirmation)} 
+else if ($$random_number < 90){$$answer = ^gambit(~negation)} 
+else if ($$random_number < 95){$$answer = ^gambit(~ignorance)} 
+else {$$answer = ^gambit(~notAnswering)} 
+
+
+u: (NA)
+
+
+
