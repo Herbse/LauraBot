@@ -5983,3 +5983,20 @@ Free 122MB: dict 1,596,470 fact 671,848 stack/heap 90,032KB
 Respond: user:guest bot:Laura ip:127.0.0.1 () 0 :build Laura  ==> System startup Laura Thu Feb 14 09:07:50 2019  ChatScript Version 8.2  compiled Jun 19 2018 14:20:20  No errors or warnings        Finished compile    System startup createsystem Thu Feb 14 09:07:50 2019  Server ChatScript EVSERVER Version 8.2 pid: 16574 64 bit MACH compiled Jun 19 2018 14:20:20 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=106719  fact=127083  heap=1606648 Compiled:Feb13'19-17:18:53 by version 8.2 "0"  Build1:  dict=330  fact=305  heap=32612 Compiled:Feb14'19-09:07:50 by version 8.2 "Laura"  Used 71MB: dict 500,680 (44059kb) hashdepths 27538.51261.51382.38063.22878.12529.6081.3012.1379.589.258.102.37.11.5.1.2. words 500680 unusedbuckets 27538 fact 128,152 (6151kb) heap 9967kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,596,470 fact 671,848 stack/heap 90,032KB         *** Server WIDE OPEN to :command use.    When:Feb14 09:07:55 4853ms 
 ServerPre: pid: 16574 guest (Laura) [][][][] Hallo Feb 14 09:08:03 2019
 Respond: user:guest bot:Laura ip:127.0.0.1 (~introduction) 1 [][][][] Hallo  ==> Ich bin Laura und möchte dir etwas erzählen.  When:Feb14 09:08:03 169ms Why:~introduction.1.0.~control.2.0 
+evserver child fork requests: 0
+  evserver: running pid: 20928
+System startup createsystem Tue Apr 02 13:27:12 2019
+Server ChatScript EVSERVER Version 8.2 pid: 20928 64 bit MACH compiled Jun 19 2018 14:20:20 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=73962  fact=68881  heap=1082744 Compiled:Mar27'19-09:31:06 by version 8.2 "0"
+Build1:  dict=356  fact=304  heap=41092 Compiled:Mar27'19-10:26:57 by version 8.2 "laura_si"
+Used 65MB: dict 467,949 (41179kb) hashdepths 31498.54670.51698.36179.20794.10902.5075.2506.1052.457.191.66.25.11.2.0.2. words 467949 unusedbuckets 31498 fact 69,949 (3357kb) heap 9451kb
+           buffer (6400kb) cache (5000kb)
+Free 125MB: dict 1,629,201 fact 730,051 stack/heap 90,548KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 20928 8.2 compiled Jun 19 2018 14:20:20 on host local port 1024 at Tue Apr 02 13:27:14 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 20928), fork=0

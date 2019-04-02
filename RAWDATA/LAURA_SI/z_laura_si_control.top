@@ -29,7 +29,7 @@ u: ( %input<%userfirstline)
 
 #! [ question: open]
 u: (\[ * \])
-    ^respond(~handle_oob)
+    ^respond(~prob_answer)
     ^end(SENTENCE)
 
 
@@ -113,6 +113,8 @@ u: () # main per-sentence processing
 	}
 	
 topic: ~addposthoc system () # should be called for post processing
-	
+
+t: () ^emoHandler()
+
 t: () ^oob()
    ^postprintbefore(  \[ $$oob \]) $$oob = null 

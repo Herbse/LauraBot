@@ -9,7 +9,7 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_school_soz.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_school_soz.top
     topic: 1  ~school_soz
         rule: 6  ~school_soz.0.0-SCHOOL_KIDS u: 
           line: 6 0  # Mit den anderen Kindern ist al
@@ -34,11 +34,11 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_school
           Complexity of rule ~school_soz.6.0- u: 1
         rule: 29  ~school_soz.7.0 u: 
           Complexity of rule ~school_soz.7.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_reactance.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_reactance.top
     topic: 1  ~reactance
         rule: 3  ~reactance.0.0- r: 
           Complexity of rule ~reactance.0.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_school_class.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_school_class.top
     topic: 1  ~school_class
         rule: 6  ~school_class.0.0-SCHOOL_MATH u: 
           line: 6 0  # Mathe ist voll schwer, da mach
@@ -69,11 +69,39 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_school
           Complexity of rule ~school_class.7.0- u: 1
         rule: 34  ~school_class.8.0 u: 
           Complexity of rule ~school_class.8.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_notAnswering.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/z_emohandler.top
+    macro: 2  ^emohandler
+          if 5 4  
+          line: 5 0  # ^if 00s( $$chatphase == start 
+          if 6 41  
+          line: 6 37  # ^if 00y( $$answercontent = cri
+          else 7 111  
+          ifend 7 148  
+          line: 7 106  # else ( 1 ) 00v { $$emotype = n
+          elseif 8 160  
+          line: 8 155  # else 00r( $$chatphase == main 
+          if 9 196  
+          line: 9 192  # ^if 00y( $$answercontent = cri
+          elseif 10 266  
+          line: 10 261  # else 00z( $$answercontent = cr
+          elseif 11 333  
+          ifend 11 396  
+          line: 11 328  # else 00x( $$answercontent = ge
+          elseif 12 408  
+          line: 12 403  # else 00q( $$chatphase == end )
+          if 13 443  
+          line: 13 439  # ^if 00r( $$critrevealed == 1 )
+          else 14 507  
+          ifend 14 549  
+          line: 14 502  # else ( 1 ) 00A { $$emotype = d
+          else 15 561  
+          ifend 16 598  
+          Complexity of ^emohandler: 9
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_notAnswering.top
     topic: 1  ~notanswering
         rule: 3  ~notanswering.0.0- r: 
           Complexity of rule ~notanswering.0.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_names_bio.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_names_bio.top
     topic: 1  ~names_bio
         rule: 5  ~names_bio.0.0-BROTHER_NAME u: 
           line: 5 0  # Er heißt Leon. 
@@ -116,8 +144,123 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_names_
           Complexity of rule ~names_bio.7.5- a: 1
         rule: 39  ~names_bio.7.6 a: 
           Complexity of rule ~names_bio.7.6- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/z_laura_li_control.top
-    macro: 4  ^laura_li
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/b_prob_answer.top
+    topic: 1  ~prob_answer
+        rule: 4  ~prob_answer.0.0 u: 
+          line: 5 0  # $$probformat = narrative:80_no
+          line: 6 57  # $$randnum = %rand 
+          if 7 79  
+          line: 7 75  # ^if 00m( $$randnum < 80 ) 00y{
+          elseif 8 140  
+          line: 8 135  # else 00m( $$randnum < 90 ) 00B
+          else 9 204  
+          ifend 9 244  
+          line: 9 199  # else ( 1 ) 00y { ^gambit ( ~ig
+          Complexity of rule ~prob_answer.0.0- u: 3
+        rule: 14  ~prob_answer.1.0 u: 
+          line: 15 0  # $$probformat = narrative:60_af
+          line: 16 59  # $$randnum = %rand 
+          if 17 81  
+          line: 17 77  # ^if 00m( $$randnum < 60 ) 00J{
+          elseif 18 153  
+          line: 18 148  # else 00m( $$randnum < 80 ) 00L
+          else 19 227  
+          ifend 19 281  
+          line: 19 222  # else ( 1 ) 00M { $$answer = ^g
+          Complexity of rule ~prob_answer.1.0- u: 3
+        rule: 23  ~prob_answer.2.0 u: 
+          line: 24 0  # $$probformat = affirmation:100
+          line: 25 31  # $rapportcounter += 1 
+          line: 26 52  # ^gambit ( ~affirmation ) 
+          Complexity of rule ~prob_answer.2.0- u: 1
+        rule: 32  ~prob_answer.3.0 u: 
+          line: 33 0  # $$probformat = specific:80_not
+          line: 34 56  # $$randnum = %rand 
+          if 35 78  
+          line: 35 74  # ^if 00m( $$randnum < 80 ) 00I{
+          elseif 36 149  
+          line: 36 144  # else 00m( $$randnum < 90 ) 00M
+          else 37 224  
+          ifend 37 275  
+          line: 37 219  # else ( 1 ) 00J { $$answer = ^g
+          Complexity of rule ~prob_answer.3.0- u: 3
+        rule: 41  ~prob_answer.4.0 u: 
+          line: 42 0  # $$probformat = option_chossen:
+          line: 43 62  # $$randnum = %rand 
+          if 44 84  
+          line: 44 80  # ^if 00m( $$randnum < 80 ) 00H{
+          elseif 45 154  
+          line: 45 149  # else 00m( $$randnum < 90 ) 00M
+          else 46 229  
+          ifend 46 280  
+          line: 46 224  # else ( 1 ) 00J { $$answer = ^g
+          Complexity of rule ~prob_answer.4.0- u: 3
+        rule: 50  ~prob_answer.5.0 u: 
+          line: 51 0  # $$probformat = affirmation:50_
+          line: 52 55  # $$randnum = %rand 
+          if 53 77  
+          line: 53 73  # ^if 00n( %$$randnum < 50 ) 00L
+          elseif 54 152  
+          line: 54 147  # else 00m( $$randnum < 80 ) 00F
+          else 55 220  
+          ifend 55 271  
+          line: 55 215  # else ( 1 ) 00J { $$answer = ^g
+          Complexity of rule ~prob_answer.5.0- u: 3
+        rule: 59  ~prob_answer.6.0 u: 
+          line: 60 0  # $$probformat = incomprehension
+          line: 61 47  # $$randnum = %rand 
+          if 62 69  
+          line: 62 65  # ^if 00m( $$randnum < 90 ) 00P{
+          else 63 147  
+          ifend 63 198  
+          line: 63 142  # else ( 1 ) 00J { $$answer = ^g
+          Complexity of rule ~prob_answer.6.0- u: 2
+        rule: 66  ~prob_answer.7.0 u: 
+          line: 67 0  # $$lastoutput = %lastoutput 
+          line: 68 27  # $$lastoutput 
+          Complexity of rule ~prob_answer.7.0- u: 1
+        rule: 72  ~prob_answer.8.0 u: 
+          line: 73 0  # $$probformat = ignorance:40_re
+          line: 74 52  # $$randnum = %rand 
+          if 75 74  
+          line: 75 70  # ^if 00m( $$randnum < 40 ) 00J{
+          elseif 76 146  
+          line: 76 141  # else 00m( $$randnum < 70 ) 00J
+          else 77 218  
+          ifend 77 267  
+          line: 77 213  # else ( 1 ) 00H { $$answer = ^g
+          Complexity of rule ~prob_answer.8.0- u: 3
+        rule: 82  ~prob_answer.9.0 u: 
+          line: 83 0  # $$probformat = affirmation:70_
+          line: 84 69  # $$randnum = %rand 
+          if 85 91  
+          line: 85 87  # ^if 00m( $$randnum < 70 ) 00L{
+          elseif 86 165  
+          line: 86 160  # else 00m( $$randnum < 90 ) 00I
+          elseif 87 236  
+          line: 87 231  # else 00m( $$randnum < 95 ) 00J
+          else 88 308  
+          ifend 88 362  
+          line: 88 303  # else ( 1 ) 00M { $$answer = ^g
+          Complexity of rule ~prob_answer.9.0- u: 4
+        rule: 91  ~prob_answer.10.0 u: 
+          Complexity of rule ~prob_answer.10.0- u: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_sobbing.top
+    topic: 1  ~sobbing
+        rule: 3  ~sobbing.0.0- r: 
+          Complexity of rule ~sobbing.0.0- r: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_incomprehension.top
+    topic: 1  ~incomprehension
+        rule: 3  ~incomprehension.0.0- r: 
+          line: 3 0  # $$answercategory = incomprehen
+          Complexity of rule ~incomprehension.0.0- r: 1
+        rule: 5  ~incomprehension.1.0- r: 
+          line: 5 0  # $$answercategory = incomprehen
+          Complexity of rule ~incomprehension.1.0- r: 1
+        rule: 7  ~incomprehension.2.0- r: 
+          Complexity of rule ~incomprehension.2.0- r: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/z_laura_si_control.top
+    macro: 4  ^laura_si
           line: 5 0  # ^addtopic ( ~introduction ) 
           line: 6 28  # $cs_control_main = ~control 
           line: 7 56  # $cs_control_post = ~addposthoc
@@ -126,7 +269,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/z_laura_
           line: 10 144  # $userprompt = ^"%user: >" 
           line: 11 170  # $botprompt = ^"LAURA: " 
           line: 13 194  # $cs_token = 512 | 131072 | 102
-          Complexity of ^laura_li: 1
+          Complexity of ^laura_si: 1
     topic: 14  ~xrejoinder
         rule: 17  ~xrejoinder.0.0 u: 
           line: 17 0  # ^nofail ( topic ^rejoinder ( )
@@ -136,8 +279,8 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/z_laura_
           line: 27 0  # ^gambit ( ~introduction ) 
           Complexity of rule ~control.0.0- u: 1
         rule: 31  ~control.1.0 u: 
-          line: 32 0  # ^respond ( ~handle_oob ) 
-          line: 33 25  # ^end ( SENTENCE ) 
+          line: 32 0  # ^respond ( ~prob_answer ) 
+          line: 33 26  # ^end ( SENTENCE ) 
           Complexity of rule ~control.1.0- u: 1
         rule: 38  ~control.2.0 u: 
           line: 39 0  # $$currenttopic = %topic 
@@ -239,40 +382,26 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/z_laura_
           Complexity of rule ~control.2.0- u: 15
     topic: 115  ~addposthoc
         rule: 117  ~addposthoc.0.0 t: 
-          line: 118 0  # $lastoutput = ^response ( 1 ) 
+          line: 117 0  # ^emohandler ( ) 
           Complexity of rule ~addposthoc.0.0- t: 1
-        rule: 120  ~addposthoc.1.0 t: 
-          line: 120 0  # ^oob ( ) 
-          line: 121 9  # ^postprintbefore ( \[ $$oob \]
+        rule: 119  ~addposthoc.1.0 t: 
+          line: 119 0  # ^oob ( ) 
+          line: 120 9  # ^postprintbefore ( \[ $$oob \]
           Complexity of rule ~addposthoc.1.0- t: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_sobbing.top
-    topic: 1  ~sobbing
-        rule: 3  ~sobbing.0.0- r: 
-          Complexity of rule ~sobbing.0.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_incomprehension.top
-    topic: 1  ~incomprehension
-        rule: 3  ~incomprehension.0.0- r: 
-          line: 3 0  # $$answercategory = incomprehen
-          Complexity of rule ~incomprehension.0.0- r: 1
-        rule: 5  ~incomprehension.1.0- r: 
-          line: 5 0  # $$answercategory = incomprehen
-          Complexity of rule ~incomprehension.1.0- r: 1
-        rule: 7  ~incomprehension.2.0- r: 
-          Complexity of rule ~incomprehension.2.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_options.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_options.top
     topic: 1  ~options
         rule: 3  ~options.0.0- r: 
-          line: 3 0  # $$answercategory = options Das
+          line: 3 0  # $answercategory = options Das 
           Complexity of rule ~options.0.0- r: 1
         rule: 5  ~options.1.0- r: 
-          line: 5 0  # $$answercategory = options Das
+          line: 5 0  # $answercategory = options Das 
           Complexity of rule ~options.1.0- r: 1
         rule: 7  ~options.2.0- r: 
-          line: 7 0  # $$answercategory = options Das
+          line: 7 0  # $answercategory = options Das 
           Complexity of rule ~options.2.0- r: 1
         rule: 9  ~options.3.0- r: 
           Complexity of rule ~options.3.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_father_bio.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_father_bio.top
     topic: 1  ~father_bio
         rule: 6  ~father_bio.0.0-PAPA_HELP_MUM u: 
           line: 6 0  # Mein Papa hilft meiner Mama zu
@@ -345,7 +474,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_father
           Complexity of rule ~father_bio.15.0- u: 1
         rule: 75  ~father_bio.16.0 u: 
           Complexity of rule ~father_bio.16.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_ignorance.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_ignorance.top
     topic: 1  ~ignorance
         rule: 3  ~ignorance.0.0- r: 
           line: 3 0  # $$answercategory = ignorance I
@@ -355,18 +484,18 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_ignora
           Complexity of rule ~ignorance.1.0- r: 1
         rule: 7  ~ignorance.2.0- r: 
           Complexity of rule ~ignorance.2.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_keywordless.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_keywordless.top
     topic: 1  ~keywordless
         rule: 3  ~keywordless.0.0- r: 
           Complexity of rule ~keywordless.0.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_affirmation.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_affirmation.top
     topic: 1  ~affirmation
         rule: 3  ~affirmation.0.0- r: 
           line: 3 0  # $$answercategory = affirmation
           Complexity of rule ~affirmation.0.0- r: 1
         rule: 5  ~affirmation.1.0- r: 
           Complexity of rule ~affirmation.1.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_hobbies_bio.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_hobbies_bio.top
     topic: 1  ~hobbies_bio
         rule: 8  ~hobbies_bio.0.0-HOBBIES_DANCE u: 
           line: 8 0  # Ich gehe immer am Dienstag in 
@@ -436,10 +565,10 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_hobbie
           Complexity of rule ~hobbies_bio.19.0- u: 1
         rule: 76  ~hobbies_bio.20.0 u: 
           Complexity of rule ~hobbies_bio.20.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_introduction.top
     topic: 1  ~introduction
         rule: 3  ~introduction.0.0- t: 
-          line: 3 0  # $rapportcounter = 0 $revelatio
+          line: 3 0  # $event_state = 0 $$chatphase =
           Complexity of rule ~introduction.0.0- t: 1
         rule: 6  ~introduction.1.0 u: 
           line: 6 0  # Ich bin Laura und möchte dir 
@@ -503,7 +632,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_introd
           Complexity of rule ~introduction.14.0- u: 1
         rule: 61  ~introduction.15.0 u: 
           Complexity of rule ~introduction.15.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_negat.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_negat.top
     topic: 1  ~negat
         rule: 4  ~negat.0.0- r: 
           line: 4 0  # $$answercategory = negation $$
@@ -516,53 +645,11 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_negat.
           Complexity of rule ~negat.2.0- r: 1
         rule: 10  ~negat.3.0- r: 
           Complexity of rule ~negat.3.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/z_simpletopic.top
-    macro: 1  ^myfunc
-          line: 2 0  # $$wordindex += 1 
-          line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
-          line: 4 42  # $$concept = ^join ( ~ _1 ) 
-          line: 5 69  # ^settag ( $$wordindex $$concep
-          line: 6 103  # ^setcanon ( $$wordindex _2 ) 
-          Complexity of ^myfunc: 1
-    macro: 12  ^oob
-          line: 13 0  # $_topic = %topic 
-          line: 14 17  # $_revelationstate = $revelatio
-          line: 15 54  # $_rapportcounter = $rapportcou
-          line: 16 89  # $_acategory = $$answercategory
-          line: 17 120  # $_probformat = $$prob_format 
-          line: 18 149  # $_actiontype = $$actiontype 
-          line: 19 177  # $_emotype = $$emotype 
-          line: 21 199  # $_randomnumber = $$random_numb
-          line: 23 232  # $_item1name = topic 
-          line: 24 252  # $_item1value = $_topic 
-          line: 25 275  # $_item2name = answerCategory 
-          line: 26 304  # $_item2value = $_acategory 
-          line: 27 331  # $_item3name = probFormat 
-          line: 28 356  # $_item3value = $_probformat 
-          line: 29 384  # $_item4name = randomNumber 
-          line: 30 411  # $_item4value = $_randomnumber 
-          line: 31 441  # $_item5name = emoType 
-          line: 32 463  # $_item5value = $_emotype 
-          line: 33 488  # $_item6name = actionType 
-          line: 34 513  # $_item6value = $_actiontype 
-          line: 35 541  # $_item7name = rapportCounter 
-          line: 36 570  # $_item7value = $_rapportcounte
-          line: 37 602  # $_item8name = revelationState 
-          line: 38 632  # $_item8value = $_revelationsta
-          line: 41 665  # $$oob = ^join ( $_item1name : 
-          Complexity of ^oob: 1
-    topic: 46  ~xpostagsentence
-        rule: 47  ~xpostagsentence.0.0 t: 
-          Complexity of rule ~xpostagsentence.0.0- t: 1
-        rule: 48  ~xpostagsentence.1.0 t: 
-          line: 50 0  # $$wordindex = 0 
-          line: 51 16  # ^log ( FILE chat.txt NEW '_0 )
-          Complexity of rule ~xpostagsentence.1.0- t: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_specific.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_specific.top
     topic: 1  ~specific
         rule: 3  ~specific.0.0- r: 
           Complexity of rule ~specific.0.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_parents_bio.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_parents_bio.top
     topic: 1  ~parents_bio
         rule: 3  ~parents_bio.0.0-PARENTS_RELATIONSHIP u: 
           line: 3 0  # Ich liebe meine Eltern. 
@@ -572,17 +659,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_parent
           Complexity of rule ~parents_bio.1.0- u: 1
         rule: 9  ~parents_bio.2.0 u: 
           Complexity of rule ~parents_bio.2.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/b_answer_roulette.top
-    topic: 1  ~answer_roulette
-        rule: 3  ~answer_roulette.0.0 u: 
-          line: 3 0  # $closed_question = 0 [ Ja ] [ 
-          Complexity of rule ~answer_roulette.0.0- u: 1
-        rule: 4  ~answer_roulette.1.0 u: 
-          line: 4 0  # $closed_question_emo = 0 [ Naj
-          Complexity of rule ~answer_roulette.1.0- u: 1
-        rule: 5  ~answer_roulette.2.0 u: 
-          Complexity of rule ~answer_roulette.2.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_mother_bio.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_mother_bio.top
     topic: 1  ~mother_bio
         rule: 7  ~mother_bio.0.0-MAMA_SICK u: 
           line: 7 0  # Meine Mama ist immer zu Hause.
@@ -634,7 +711,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_mother
           Complexity of rule ~mother_bio.14.0- u: 1
         rule: 57  ~mother_bio.15.0 u: 
           Complexity of rule ~mother_bio.15.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/a_concepts.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/a_concepts.top
     topic: 1  ~own_concepts
     concept: 3  ~action
     concept: 4  ~activity
@@ -668,7 +745,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/a_concep
     concept: 32  ~yes_no
     concept: 33  ~while
     concept: 34  ~why
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_personal.top
     topic: 1  ~personal
         rule: 4  ~personal.0.0 u: 
           line: 4 0  # Ich bin 14 Jahre alt. Sagt zum
@@ -676,7 +753,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_person
         rule: 6  ~personal.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~personal.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_friends_bio.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_friends_bio.top
     topic: 1  ~friends_bio
         rule: 6  ~friends_bio.0.0-FRIEND_INTRO u: 
           line: 6 0  # Mira und ich sind beste Freund
@@ -755,11 +832,65 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_friend
           Complexity of rule ~friends_bio.18.0- u: 1
         rule: 78  ~friends_bio.19.0 u: 
           Complexity of rule ~friends_bio.19.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/c_narrative.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/z_debug.top
+    macro: 1  ^myfunc
+          line: 2 0  # $$wordindex += 1 
+          line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
+          line: 4 42  # $$concept = ^join ( ~ _1 ) 
+          line: 5 69  # ^settag ( $$wordindex $$concep
+          line: 6 103  # ^setcanon ( $$wordindex _2 ) 
+          Complexity of ^myfunc: 1
+    macro: 12  ^oob
+          line: 14 0  # $_topic = %topic 
+          line: 15 17  # $_revelationstate = $$revelati
+          line: 16 55  # $_rapportcounter = $rapportcou
+          line: 17 90  # $_answercontent = $$answercont
+          line: 18 124  # $_probformat = $$probformat 
+          line: 19 152  # $_answertype = $$answertype 
+          line: 20 180  # $_actiontype = $$actiontype 
+          line: 21 208  # $_emotype = $$emotype 
+          line: 22 230  # $_topicswitch = $$topicswitch 
+          line: 23 260  # $_randomnumber = $$random_numb
+          line: 24 293  # $_chatphase = $$chatphase 
+          line: 25 319  # $_critrevealed = $$critreveale
+          line: 27 351  # $_item1name = topic 
+          line: 28 371  # $_item1value = $_topic 
+          line: 29 394  # $_item2name = answerCategory 
+          line: 30 423  # $_item2value = $_answercategor
+          line: 31 455  # $_item3name = probFormat 
+          line: 32 480  # $_item3value = $_probformat 
+          line: 33 508  # $_item4name = answerContent 
+          line: 34 536  # $_item4value = $_answercontent
+          line: 35 567  # $_item5name = emoType 
+          line: 36 589  # $_item5value = $_emotype 
+          line: 37 614  # $_item6name = actionType 
+          line: 38 639  # $_item6value = $_actiontype 
+          line: 39 667  # $_item7name = rapportCounter 
+          line: 40 696  # $_item7value = $_rapportcounte
+          line: 41 728  # $_item8name = revelationState 
+          line: 42 758  # $_item8value = $_revelationsta
+          line: 43 791  # $_item9name = chatPhase 
+          line: 44 815  # $_item9value = $_chatphase 
+          line: 45 842  # $_item10name = randomNumber 
+          line: 46 870  # $_item10value = $_randomnumber
+          line: 47 901  # $_item11name = topicSwitch 
+          line: 48 928  # $_item11value = $_topicswitch 
+          line: 49 958  # $_item12name = critRevealed 
+          line: 50 986  # $_item12value = $_critrevealed
+          line: 56 1017  # $$oob = ^join ( $_item1name : 
+          Complexity of ^oob: 1
+    topic: 60  ~xpostagsentence
+        rule: 61  ~xpostagsentence.0.0 t: 
+          Complexity of rule ~xpostagsentence.0.0- t: 1
+        rule: 62  ~xpostagsentence.1.0 t: 
+          line: 63 0  # $$wordindex = 0 
+          line: 64 16  # ^log ( FILE chat.txt NEW '_0 )
+          Complexity of rule ~xpostagsentence.1.0- t: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_narrative.top
     topic: 1  ~narrative
         rule: 3  ~narrative.0.0- r: 
           Complexity of rule ~narrative.0.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_brother_bio.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_brother_bio.top
     topic: 1  ~brother_bio
         rule: 7  ~brother_bio.0.0-LEON_FIFA u: 
           line: 7 0  # Wenn der Leon FIFA spielt darf
@@ -828,7 +959,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_brothe
           Complexity of rule ~brother_bio.21.0- u: 1
         rule: 78  ~brother_bio.22.0 u: 
           Complexity of rule ~brother_bio.22.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/b_topic_roulette.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/b_topic_roulette.top
     topic: 1  ~topic_roulette
         rule: 4  ~topic_roulette.0.0 u: 
           line: 4 0  # $narrative = 1 [ ^respond ( ~f
@@ -844,184 +975,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/b_topic_
           Complexity of rule ~topic_roulette.3.0- u: 1
         rule: 12  ~topic_roulette.4.0 u: 
           Complexity of rule ~topic_roulette.4.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/b_handle_oob.top
-    topic: 1  ~handle_oob
-        rule: 6  ~handle_oob.0.0 u: 
-          line: 6 0  # ^refine ( ) 
-          Complexity of rule ~handle_oob.0.0- u: 1
-        rule: 7  ~handle_oob.0.1 a: 
-          line: 8 0  # $$prob_format = narrative:60_n
-          line: 9 71  # $$random_number = %rand 
-          if 10 99  
-          line: 10 95  # ^if 00s( $$random_number < 60 
-          elseif 11 166  
-          line: 11 161  # else 00s( $$random_number < 80
-          elseif 12 236  
-          line: 12 231  # else 00s( $$random_number < 90
-          else 13 303  
-          ifend 13 343  
-          line: 13 298  # else ( 1 ) 00y { ^gambit ( ~re
-          Complexity of rule ~handle_oob.0.1- a: 4
-        rule: 14  ~handle_oob.0.2 a: 
-          line: 15 0  # $$prob_format = narrative:64_n
-          line: 16 69  # $$random_number = %rand 
-          if 17 97  
-          line: 17 93  # ^if 00s( $$random_number < 64 
-          elseif 18 164  
-          line: 18 159  # else 00s( $$random_number < 82
-          elseif 19 234  
-          line: 19 229  # else 00s( $$random_number < 91
-          else 20 301  
-          ifend 20 341  
-          line: 20 296  # else ( 1 ) 00y { ^gambit ( ~re
-          Complexity of rule ~handle_oob.0.2- a: 4
-        rule: 21  ~handle_oob.0.3 a: 
-          line: 22 0  # $$prob_format = narrative:68_n
-          line: 23 69  # $$random_number = %rand 
-          if 24 97  
-          line: 24 93  # ^if 00s( $$random_number < 64 
-          elseif 25 164  
-          line: 25 159  # else 00s( $$random_number < 84
-          elseif 26 234  
-          line: 26 229  # else 00s( $$random_number < 92
-          else 27 301  
-          ifend 27 341  
-          line: 27 296  # else ( 1 ) 00y { ^gambit ( ~re
-          Complexity of rule ~handle_oob.0.3- a: 4
-        rule: 28  ~handle_oob.0.4 a: 
-          line: 29 0  # $$prob_format = narrative:72_n
-          line: 30 69  # $$random_number = %rand 
-          if 31 97  
-          line: 31 93  # ^if 00s( $$random_number < 64 
-          elseif 32 164  
-          line: 32 159  # else 00s( $$random_number < 86
-          elseif 33 234  
-          line: 33 229  # else 00s( $$random_number < 93
-          else 34 301  
-          ifend 34 341  
-          line: 34 296  # else ( 1 ) 00y { ^gambit ( ~re
-          Complexity of rule ~handle_oob.0.4- a: 4
-        rule: 35  ~handle_oob.0.5 a: 
-          line: 36 0  # $$prob_format = narrative:76_n
-          line: 37 69  # $$random_number = %rand 
-          if 38 97  
-          line: 38 93  # ^if 00s( $$random_number < 64 
-          elseif 39 164  
-          line: 39 159  # else 00s( $$random_number < 88
-          elseif 40 234  
-          line: 40 229  # else 00s( $$random_number < 94
-          else 41 301  
-          ifend 41 341  
-          line: 41 296  # else ( 1 ) 00y { ^gambit ( ~re
-          Complexity of rule ~handle_oob.0.5- a: 4
-        rule: 42  ~handle_oob.0.6 a: 
-          line: 43 0  # $$prob_format = narrative:80_n
-          line: 44 69  # $$random_number = %rand 
-          if 45 97  
-          line: 45 93  # ^if 00s( $$random_number < 64 
-          elseif 46 164  
-          line: 46 159  # else 00s( $$random_number < 90
-          elseif 47 234  
-          line: 47 229  # else 00s( $$random_number < 95
-          else 48 301  
-          ifend 48 341  
-          line: 48 296  # else ( 1 ) 00y { ^gambit ( ~re
-          Complexity of rule ~handle_oob.0.6- a: 4
-        rule: 53  ~handle_oob.1.0 u: 
-          line: 54 0  # $$prob_format = narrative:40_a
-          line: 55 73  # $$random_number = %rand 
-          if 56 101  
-          line: 56 97  # ^if 00s( $$random_number < 40 
-          elseif 57 179  
-          line: 57 174  # else 00s( $$random_number < 65
-          elseif 58 259  
-          line: 58 254  # else 00s( $$random_number < 90
-          else 59 340  
-          ifend 59 380  
-          line: 59 335  # else ( 1 ) 00y { ^gambit ( ~re
-          Complexity of rule ~handle_oob.1.0- u: 4
-        rule: 62  ~handle_oob.2.0 u: 
-          line: 63 0  # $$prob_format = affirmation:10
-          line: 64 32  # $rapportcounter += 1 
-          line: 66 53  # ^gambit ( ~affirmation ) 
-          Complexity of rule ~handle_oob.2.0- u: 1
-        rule: 73  ~handle_oob.3.0 u: 
-          line: 74 0  # $$prob_format = specific:60_no
-          line: 75 70  # $$random_number = %rand 
-          if 76 98  
-          line: 76 94  # ^if 00s( $$random_number < 60 
-          elseif 77 175  
-          line: 77 170  # else 00s( $$random_number < 80
-          elseif 78 256  
-          line: 78 251  # else 00s( $$random_number < 90
-          else 79 334  
-          ifend 79 385  
-          line: 79 329  # else ( 1 ) 00J { $$answer = ^g
-          Complexity of rule ~handle_oob.3.0- u: 4
-        rule: 83  ~handle_oob.4.0 u: 
-          line: 84 0  # $$prob_format = option_chossen
-          line: 85 63  # $$random_number = %rand 
-          if 86 91  
-          line: 86 87  # ^if 00s( $$random_number < 80 
-          elseif 87 167  
-          line: 87 162  # else 00s( $$random_number < 90
-          else 88 248  
-          ifend 88 299  
-          line: 88 243  # else ( 1 ) 00J { $$answer = ^g
-          Complexity of rule ~handle_oob.4.0- u: 3
-        rule: 92  ~handle_oob.5.0 u: 
-          line: 93 0  # $$prob_format = affirmation:50
-          line: 94 56  # $$random_number = %rand 
-          if 95 84  
-          line: 95 80  # ^if 00t( %$$random_number < 50
-          elseif 96 165  
-          line: 96 160  # else 00s( $$random_number < 80
-          else 97 239  
-          ifend 97 290  
-          line: 97 234  # else ( 1 ) 00J { $$answer = ^g
-          Complexity of rule ~handle_oob.5.0- u: 3
-        rule: 101  ~handle_oob.6.0 u: 
-          line: 102 0  # $$prob_format = incomprehensio
-          line: 103 48  # $$random_number = %rand 
-          if 104 76  
-          line: 104 72  # ^if 00s( $$random_number < 90 
-          else 105 160  
-          ifend 105 211  
-          line: 105 155  # else ( 1 ) 00J { $$answer = ^g
-          Complexity of rule ~handle_oob.6.0- u: 2
-        rule: 108  ~handle_oob.7.0 u: 
-          line: 108 0  # $lastoutput 
-          Complexity of rule ~handle_oob.7.0- u: 1
-        rule: 111  ~handle_oob.8.0 u: 
-          line: 112 0  # $$prob_format = ignorance:40_r
-          line: 113 53  # $$random_number = %rand 
-          if 114 81  
-          line: 114 77  # ^if 00s( $$random_number < 40 
-          elseif 115 159  
-          line: 115 154  # else 00s( $$random_number < 70
-          else 116 237  
-          ifend 116 286  
-          line: 116 232  # else ( 1 ) 00H { $$answer = ^g
-          Complexity of rule ~handle_oob.8.0- u: 3
-        rule: 121  ~handle_oob.9.0 u: 
-          line: 122 0  # $$prob_format = affirmation:70
-          line: 123 70  # $$random_number = %rand 
-          if 124 98  
-          line: 124 94  # ^if 00s( $$random_number < 70 
-          elseif 125 178  
-          line: 125 173  # else 00s( $$random_number < 90
-          elseif 126 255  
-          line: 126 250  # else 00s( $$random_number < 95
-          else 127 333  
-          ifend 127 387  
-          line: 127 328  # else ( 1 ) 00M { $$answer = ^g
-          Complexity of rule ~handle_oob.9.0- u: 4
-        rule: 130  ~handle_oob.10.0 u: 
-          line: 130 0  # ^refine ( ) 
-          Complexity of rule ~handle_oob.10.0- u: 1
-        rule: 131  ~handle_oob.10.1 a: 
-          Complexity of rule ~handle_oob.10.1- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/d_event_uncle.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/d_event_uncle.top
     topic: 1  ~event_uncle
         rule: 8  ~event_uncle.0.0-UNCLE_EVENT u: 
           line: 8 0  # Mein Onkel schläft jetzt imme

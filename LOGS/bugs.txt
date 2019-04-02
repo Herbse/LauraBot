@@ -1080,3 +1080,40 @@ CALL-60 Incorrect argument count to system function ^response- given 0 instead o
 BUG in topic_jhjhg_anonymous_GERMAN.txt at 0: ^anonymous 
 BUG: Tue Mar 12 16:49:34 2019: input:0 No such bot  jhjhg -  -  status: defaultbot word not found caller:jhjhg callee: at  in sentence: [request]
 No such bot  jhjhg -  -  status: defaultbot word not found
+BUG in z_laura_si_control.top at 119:  *** Error- Undefined function ^oob 
+
+BUG in topic_ghk_anonymous_GERMAN.txt at 0: ^anonymous No such bot  ghk -  -  status: defaultbot word not found
+BUG in topic_ghk_laura_si_GERMAN.txt at 0:  Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Finished 8: heapusedOnEntry: 9975808 heapUsedNow: 9975808 buffers:6 stackused: 90023296 stackusedNow:1064 ^repeat{}  - r:! $$answercategory = specificAnswer $$actiontype
+BugDepth 7: heapusedOnEntry: 9975696 buffers:5 stackused: 90023488 ~specific.0.0{}  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 6: heapusedOnEntry: 9975696 buffers:5 stackused: 90023616 ~specific  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 5: heapusedOnEntry: 9975696 buffers:5 stackused: 90023744 ^gambit{}  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 4: heapusedOnEntry: 9975696 buffers:3 stackused: 90023872 If{}  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 3: heapusedOnEntry: 9975696 buffers:2 stackused: 90024000 ^emohandler{}  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 2: heapusedOnEntry: 9975696 buffers:1 stackused: 90024128 ~addposthoc.0.0{}  - 
+BUG in z_laura_si_control.top at 120:    ^postprintbefore(  \[ $$oob\]) $$oob = null  
+OUTPUT-3 Unbalanced ) in 
+
+BUG in topic_ghk_anonymous_GERMAN.txt at 0: ^anonymous No such bot  ghk -  -  status: defaultbot word not found
+Illegal to use ^Repeat during postprocessing
+MinReleaseStackGap 85MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Finished 8: heapusedOnEntry: 9975888 heapUsedNow: 9975888 buffers:6 stackused: 90023216 stackusedNow:1064 ^repeat{}  - r:! $$answercategory = notAnswering $$actiontype =
+BugDepth 7: heapusedOnEntry: 9975824 buffers:5 stackused: 90023408 ~notanswering.0.0{}  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 6: heapusedOnEntry: 9975824 buffers:5 stackused: 90023536 ~notanswering  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 5: heapusedOnEntry: 9975824 buffers:5 stackused: 90023664 ^gambit{}  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 4: heapusedOnEntry: 9975824 buffers:3 stackused: 90023792 If{}  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 3: heapusedOnEntry: 9975824 buffers:2 stackused: 90023920 ^emohandler{}  - t:!( ) ^emohandler ( ) `00% t: ( ) ^oob ( ) ^postp
+BugDepth 2: heapusedOnEntry: 9975824 buffers:1 stackused: 90024048 ~addposthoc.0.0{}  - 
+BUG in z_emohandler.top at 6:  if ($$answerContent=crit_1_2) {$$emoType = serious} 
+IF-13 body must start with { instead of (  -- saw pattern  if ($$answerContent=crit_1_2) {$$emoType = serious}
+
+BUG in topic_ghk_anonymous_GERMAN.txt at 0: ^anonymous No such bot  ghk -  -  status: defaultbot word not found
+BUG in z_emohandler.top at 11:  else if ($$answerContent= general) {$$emoType=neutral}} 
+FILE-1 Unknown top-level declaration } in RAWDATA/LAURA_SI/z_emohandler.top
+
+BUG in topic_ghk_anonymous_GERMAN.txt at 0: ^anonymous No such bot  ghk -  -  status: defaultbot word not found

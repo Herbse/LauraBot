@@ -1,5 +1,12 @@
-﻿+ @chatoutput 9
-+ laura_li 
+﻿+ why PATTERN_WORD 
++ aufpassen PATTERN_WORD 
++ hingehen PATTERN_WORD 
++ einzeln PATTERN_WORD 
++ bett PATTERN_WORD 
++ abgelaufen PATTERN_WORD 
++ gefunden PATTERN_WORD 
++ @chatoutput 9
++ laura_si 
 + defaultbot 
 + was_macht 
 + was_geht 
