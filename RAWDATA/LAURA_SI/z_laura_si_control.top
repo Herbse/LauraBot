@@ -118,3 +118,6 @@ t: () ^emoHandler()
 
 t: () ^oob()
    ^postprintbefore(  \[ $$oob \]) $$oob = null 
+
+t: ()  
+	$lastOutput = ^response(1)

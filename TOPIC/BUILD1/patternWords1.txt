@@ -85,7 +85,6 @@ bringt
 fährt
 gebracht
 gefahren
-Stefan
 holt
 sagst
 bescheid
@@ -107,8 +106,6 @@ anstrengend
 hilfst
 krank
 geht
-machst
-macht
 vertreibst
 arbeite
 arbeitest
@@ -116,7 +113,6 @@ arbeitet
 arbeit
 arbeitete
 gearbeitet
-alter
 jahre
 mitschüler
 klassenkamerad
@@ -128,18 +124,12 @@ aha
 ok
 okay
 testi
-hallo
-hi
-hey
-hello
 howdy
-abgelaufen
 dahoam
 gern
 arg
 mittel
 bisschen
-null
 stimmung
 name
 heißen
@@ -152,7 +142,6 @@ beschreibe
 beschreib
 erzähle
 erzähl
-sag
 sage
 erziehungsberechtigte
 erziehungsberechtigter
@@ -185,7 +174,6 @@ fandest
 verstandest
 schule
 hort
-Mira
 euch
 kennengelernt
 kennenlernen
@@ -215,6 +203,7 @@ kumpel
 rausschickt
 besuch
 spielst
+machst
 mitspielen
 mitmachen
 geblieben

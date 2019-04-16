@@ -185,7 +185,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/b_prob_a
           line: 37 219  # else ( 1 ) 00J { $$answer = ^g
           Complexity of rule ~prob_answer.3.0- u: 3
         rule: 41  ~prob_answer.4.0 u: 
-          line: 42 0  # $$probformat = option_chossen:
+          line: 42 0  # $$probformat = option_choosen:
           line: 43 62  # $$randnum = %rand 
           if 44 84  
           line: 44 80  # ^if 00m( $$randnum < 80 ) 00H{
@@ -216,34 +216,33 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/b_prob_a
           line: 63 142  # else ( 1 ) 00J { $$answer = ^g
           Complexity of rule ~prob_answer.6.0- u: 2
         rule: 66  ~prob_answer.7.0 u: 
-          line: 67 0  # $$lastoutput = %lastoutput 
-          line: 68 27  # $$lastoutput 
+          line: 66 0  # $lastoutput 
           Complexity of rule ~prob_answer.7.0- u: 1
-        rule: 72  ~prob_answer.8.0 u: 
-          line: 73 0  # $$probformat = ignorance:40_re
-          line: 74 52  # $$randnum = %rand 
-          if 75 74  
-          line: 75 70  # ^if 00m( $$randnum < 40 ) 00J{
-          elseif 76 146  
-          line: 76 141  # else 00m( $$randnum < 70 ) 00J
-          else 77 218  
-          ifend 77 267  
-          line: 77 213  # else ( 1 ) 00H { $$answer = ^g
+        rule: 70  ~prob_answer.8.0 u: 
+          line: 71 0  # $$probformat = ignorance:40_re
+          line: 72 52  # $$randnum = %rand 
+          if 73 74  
+          line: 73 70  # ^if 00m( $$randnum < 40 ) 00J{
+          elseif 74 146  
+          line: 74 141  # else 00m( $$randnum < 70 ) 00J
+          else 75 218  
+          ifend 75 267  
+          line: 75 213  # else ( 1 ) 00H { $$answer = ^g
           Complexity of rule ~prob_answer.8.0- u: 3
-        rule: 82  ~prob_answer.9.0 u: 
-          line: 83 0  # $$probformat = affirmation:70_
-          line: 84 69  # $$randnum = %rand 
-          if 85 91  
-          line: 85 87  # ^if 00m( $$randnum < 70 ) 00L{
-          elseif 86 165  
-          line: 86 160  # else 00m( $$randnum < 90 ) 00I
-          elseif 87 236  
-          line: 87 231  # else 00m( $$randnum < 95 ) 00J
-          else 88 308  
-          ifend 88 362  
-          line: 88 303  # else ( 1 ) 00M { $$answer = ^g
+        rule: 80  ~prob_answer.9.0 u: 
+          line: 81 0  # $$probformat = affirmation:70_
+          line: 82 69  # $$randnum = %rand 
+          if 83 91  
+          line: 83 87  # ^if 00m( $$randnum < 70 ) 00L{
+          elseif 84 165  
+          line: 84 160  # else 00m( $$randnum < 90 ) 00I
+          elseif 85 236  
+          line: 85 231  # else 00m( $$randnum < 95 ) 00J
+          else 86 308  
+          ifend 86 362  
+          line: 86 303  # else ( 1 ) 00M { $$answer = ^g
           Complexity of rule ~prob_answer.9.0- u: 4
-        rule: 91  ~prob_answer.10.0 u: 
+        rule: 89  ~prob_answer.10.0 u: 
           Complexity of rule ~prob_answer.10.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_sobbing.top
     topic: 1  ~sobbing
@@ -388,6 +387,8 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/z_laura_
           line: 119 0  # ^oob ( ) 
           line: 120 9  # ^postprintbefore ( \[ $$oob \]
           Complexity of rule ~addposthoc.1.0- t: 1
+        rule: 122  ~addposthoc.2.0 t: 
+          Complexity of rule ~addposthoc.2.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/c_options.top
     topic: 1  ~options
         rule: 3  ~options.0.0- r: 
@@ -850,34 +851,34 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_SI/z_debug.
           line: 20 180  # $_actiontype = $$actiontype 
           line: 21 208  # $_emotype = $$emotype 
           line: 22 230  # $_topicswitch = $$topicswitch 
-          line: 23 260  # $_randomnumber = $$random_numb
-          line: 24 293  # $_chatphase = $$chatphase 
-          line: 25 319  # $_critrevealed = $$critreveale
-          line: 27 351  # $_item1name = topic 
-          line: 28 371  # $_item1value = $_topic 
-          line: 29 394  # $_item2name = answerCategory 
-          line: 30 423  # $_item2value = $_answercategor
-          line: 31 455  # $_item3name = probFormat 
-          line: 32 480  # $_item3value = $_probformat 
-          line: 33 508  # $_item4name = answerContent 
-          line: 34 536  # $_item4value = $_answercontent
-          line: 35 567  # $_item5name = emoType 
-          line: 36 589  # $_item5value = $_emotype 
-          line: 37 614  # $_item6name = actionType 
-          line: 38 639  # $_item6value = $_actiontype 
-          line: 39 667  # $_item7name = rapportCounter 
-          line: 40 696  # $_item7value = $_rapportcounte
-          line: 41 728  # $_item8name = revelationState 
-          line: 42 758  # $_item8value = $_revelationsta
-          line: 43 791  # $_item9name = chatPhase 
-          line: 44 815  # $_item9value = $_chatphase 
-          line: 45 842  # $_item10name = randomNumber 
-          line: 46 870  # $_item10value = $_randomnumber
-          line: 47 901  # $_item11name = topicSwitch 
-          line: 48 928  # $_item11value = $_topicswitch 
-          line: 49 958  # $_item12name = critRevealed 
-          line: 50 986  # $_item12value = $_critrevealed
-          line: 56 1017  # $$oob = ^join ( $_item1name : 
+          line: 23 260  # $_randomnumber = $$randnum 
+          line: 24 287  # $_chatphase = $$chatphase 
+          line: 25 313  # $_critrevealed = $$critreveale
+          line: 27 345  # $_item1name = topic 
+          line: 28 365  # $_item1value = $_topic 
+          line: 29 388  # $_item2name = answerCategory 
+          line: 30 417  # $_item2value = $_answercategor
+          line: 31 449  # $_item3name = probFormat 
+          line: 32 474  # $_item3value = $_probformat 
+          line: 33 502  # $_item4name = answerContent 
+          line: 34 530  # $_item4value = $_answercontent
+          line: 35 561  # $_item5name = emoType 
+          line: 36 583  # $_item5value = $_emotype 
+          line: 37 608  # $_item6name = actionType 
+          line: 38 633  # $_item6value = $_actiontype 
+          line: 39 661  # $_item7name = rapportCounter 
+          line: 40 690  # $_item7value = $_rapportcounte
+          line: 41 722  # $_item8name = revelationState 
+          line: 42 752  # $_item8value = $_revelationsta
+          line: 43 785  # $_item9name = chatPhase 
+          line: 44 809  # $_item9value = $_chatphase 
+          line: 45 836  # $_item10name = randomNumber 
+          line: 46 864  # $_item10value = $_randomnumber
+          line: 47 895  # $_item11name = topicSwitch 
+          line: 48 922  # $_item11value = $_topicswitch 
+          line: 49 952  # $_item12name = critRevealed 
+          line: 50 980  # $_item12value = $_critrevealed
+          line: 56 1011  # $$oob = ^join ( $_item1name : 
           Complexity of ^oob: 1
     topic: 60  ~xpostagsentence
         rule: 61  ~xpostagsentence.0.0 t: 

@@ -20,7 +20,7 @@ outputmacro: ^oob()
  $_actionType = $$actionType
  $_emoType = $$emoType 
  $_topicSwitch = $$topicSwitch
- $_randomNumber = $$random_number
+ $_randomNumber = $$randNum
  $_chatPhase = $$chatPhase
  $_critRevealed = $$critRevealed
 
@@ -53,7 +53,7 @@ outputmacro: ^oob()
 
 
  # join it all together for a string output using pipe '|' between items and using ':' between item name and value
- $$oob = ^join( $_item1name : $_item1value \| $_item2name : $_item2value \| $_item3name : $_item3value \| $_item4name : $_item4value \| $_item5name : $_item5value \| $_item6name : $_item6value \| $_item7name : $_item7value \| $_item8name : $_item8value \| $_item9name : $_item9value \| $_item10name : $_item10value \| $_item11name : $_item11value \| $_item12name : $_item12value)
+ $$oob = ^join( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value " " \| " " $_item4name : $_item4value " " \| " " $_item5name : $_item5value " " \| " " $_item6name : $_item6value " " \| " " $_item7name : $_item7value " " \| " " $_item8name : $_item8value " " \|  " " $_item9name : $_item9vale " " \| " " $_item10name : $_item10value " " \| " " $_item11name : $_item11value " " \| " " $_item12name : $_item12value)
 
 
 

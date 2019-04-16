@@ -35,3 +35,53 @@ Command: :why
 Respond: user:asd bot:oob ip: (~introduction) 8   frage ==> Das ist der Test.  When:Jan09'19-11:46:30 Why:~introduction.1.0.~control.3.0   F:1 
 Respond: user:asd bot:oob ip: (~introduction) 9   frage ==> Das ist der Test.  When:Jan09'19-11:46:34 Why:~introduction.1.0.~control.3.0   F:1 
 Command: :build laura
+No such bot  asd -  -  status: defaultbot word not found   in topic_asd_anonymous_GERMAN.txt at 3: ^anonymous
+    Command: :build laura_li
+No such bot  asd -  -  status: defaultbot word not found   in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_li
+No such bot  asd -  -  status: defaultbot word not found   in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_li
+No such bot  asd -  -  status: defaultbot word not found   in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_si
+Start: user:asd bot:laura_si ip: rand:3774 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr10'19-19:17:14 Version:8.2 Build0:Mar27'19-09:31:06 Build1:Apr10'19-19:17:12 0:Apr10'19-19:17:14 F:0 P:0 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 
+Command: :build laura_li
+No such bot  asd -  -  status: defaultbot word not found   in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build 0
+No such bot  asd -  -  status: defaultbot word not found   in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_li
+No such bot  asd -  -  status: defaultbot word not found   in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_li
+Start: user:asd bot:laura_li ip: rand:3774 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:0 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr10'19-19:20:14 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-19:20:11 0:Apr10'19-19:20:14 F:0 P:0 Why:~addposthoc.2.0 ~introduction.0.0.~control.0.0 
+entering null word to dictionary in sentence1 Wed Apr 10 19:21:34 2019 in sentence: [rapport] 
+    entering null word to dictionary in sentence1 Wed Apr 10 19:21:34 2019 in sentence: [rapport] 
+    entering null word to dictionary in sentence1 Wed Apr 10 19:21:34 2019 in sentence: [rapport] 
+    
+Respond: user:asd bot:laura_li ip: (~introduction) 1   [rapport] ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:nod | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Ja.  When:Apr10'19-19:21:34 Why:~addposthoc.2.0 ~affirmation.0.0.~prob_answer.2.0   F:2867 
+Command: :show oob
+ oob set to 1
+Respond: user:asd bot:laura_li ip: (~introduction) 2   [rapport] ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:nod | rapportCounter:2 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Mhm.  When:Apr10'19-19:21:49 Why:~addposthoc.2.0 ~affirmation.1.0.~prob_answer.2.0   F:2 
+Respond: user:asd bot:laura_li ip: (~introduction) 3   \[rapport \] ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:2 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Das ist die Reaktanz.  When:Apr10'19-19:22:14 Why:~addposthoc.2.0 ~reactance.0.0.~control.2.0   F:2 
+Command: :reset
+Start: user:asd bot:laura_li ip: rand:3774 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:0 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr10'19-19:29:31 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-19:20:11 0:Apr10'19-19:20:14 F:0 P:Apr10'19-19:22:14 Why:~addposthoc.2.0 ~introduction.0.0.~control.0.0 
+Command: :reset
+Start: user:asd bot:laura_li ip: rand:3774 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:0 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr10'19-19:31:12 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-19:20:11 0:Apr10'19-19:20:14 F:0 P:Apr10'19-19:22:14 Why:~addposthoc.2.0 ~introduction.0.0.~control.0.0 
+Respond: user:asd bot:laura_li ip: (~introduction) 1   [rapport] ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:nod | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Ja.  When:Apr10'19-19:41:19 Why:~addposthoc.2.0 ~affirmation.0.0.~prob_answer.2.0   F:6 
+Command: :reset
+Start: user:asd bot:laura_li ip: rand:3774 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:0 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr10'19-19:41:25 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-19:20:11 0:Apr10'19-19:20:14 F:0 P:Apr10'19-19:41:19 Why:~addposthoc.2.0 ~introduction.0.0.~control.0.0 
+Command: :build laura_li
+Start: user:asd bot:laura_li ip: rand:3774 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:sobbing | rapportCounter:0 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Damit soll eine Schluchzanimation ausgelöst werden.  When:Apr10'19-19:46:46 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-19:46:43 0:Apr10'19-19:20:14 F:0 P:Apr10'19-19:41:19 Why:~addposthoc.2.0 ~sobbing.0.0.~control.2.0 
+Command: :reset
+Start: user:asd bot:laura_li ip: rand:3774 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:0 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr10'19-19:46:49 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-19:46:43 0:Apr10'19-19:20:14 F:0 P:Apr10'19-19:41:19 Why:~addposthoc.2.0 ~introduction.0.0.~control.0.0 
+Respond: user:asd bot:laura_li ip: (~introduction) 1   [rapport] ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:nod | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Ja.  When:Apr10'19-19:46:58 Why:~addposthoc.2.0 ~affirmation.0.0.~prob_answer.2.0   F:1 
+Command: :build laura_si
+Start: user:asd bot:laura_si ip: rand:3774 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:sobbing | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Damit soll eine Schluchzanimation ausgelöst werden.  When:Apr10'19-19:47:09 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-19:47:05 0:Apr10'19-19:17:14 F:0 P:0 Why:~addposthoc.1.0 ~sobbing.0.0.~control.2.0 
+Respond: user:asd bot:laura_si ip: (~introduction) 1   [rapport] ==> [topic:~introduction | answerCategory: | probFormat:affirmation:100 | answerContent: | emoType:neutral | actionType:nod | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Ja.  When:Apr10'19-19:47:15 Why:~addposthoc.1.0 ~affirmation.0.0.~prob_answer.2.0   F:1 
+Command: :build laura_lis
+Start: user:asd bot:laura_li ip: rand:3776 (~introduction) 1 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:shake | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Nein.  When:Apr10'19-19:56:52 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-19:56:06 0:Apr10'19-19:20:14 F:0 P:Apr10'19-19:46:58 Why:~addposthoc.2.0 ~negat.0.0.~control.2.0 
+Respond: user:asd bot:laura_li ip: (~introduction) 2   [rapport] ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:nod | rapportCounter:2 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Mhm.  When:Apr10'19-19:57:08 Why:~addposthoc.2.0 ~affirmation.1.0.~prob_answer.2.0   F:1 
+Respond: user:asd bot:laura_li ip: (~introduction) 3   [invitation_to_tell] ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:2 | revelationState: | chatPhase: | randomNumber:93 | topicSwitch: | critRevealed: ]`Das ist die Reaktanz.  When:Apr10'19-19:57:26 Why:~addposthoc.2.0 ~reactance.0.0.~prob_answer.0.3   F:1 
+Respond: user:asd bot:laura_li ip: (~introduction) 4   [rapport] ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:nod | rapportCounter:3 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Ja.  When:Apr10'19-20:05:07 Why:~addposthoc.2.0 ~affirmation.0.0.~prob_answer.2.0   F:3 
+Command: :why
+~addposthoc.2.0  t:  ( ) ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = null 
+~affirmation.0.0.6.2.0  r:  $$answercategory = affirmation $$actiontype = nod Ja. ^keep ( ) ^repeat ( ) 
+ via ~prob_answer.6.2.0  u:  ( rapport ) $$prob_format = affirmation:100 $rapportcounter += 1 ^gambit ( ~affirmation ) ...   

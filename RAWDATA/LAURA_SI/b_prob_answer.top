@@ -39,7 +39,7 @@ else {$$answer = ^gambit(~ignorance))
 
 # 80% option-choosen | 10% non-answer | 10% ignorance
 u: (choice_question)
-$$probFormat = option_chossen:80_notAnswering:10_ignorance:10
+$$probFormat = option_choosen:80_notAnswering:10_ignorance:10
 $$randNum = %rand 
 if ($$randNum < 80){$$answer = ^gambit(~options)} 
 else if ($$randNum < 90){$$answer = ^gambit(~notAnswering)} 
@@ -63,9 +63,7 @@ if ($$randNum < 90){$$answer = ^gambit(~incomprehension)}
 else {$$answer = ^gambit(~reactance)} 
 
 # 100% repetition of given answer (how many volleys back?)
-u: (request) 
-$$lastOutput=%lastoutput
-$$lastOutput
+u: (request) $lastOutput
 
 
 # 40% ignorance | 30% reactance | 30% sobbing

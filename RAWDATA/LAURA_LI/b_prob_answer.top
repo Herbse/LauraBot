@@ -1,0 +1,129 @@
+topic: ~prob_answer keep repeat nostay()
+
+
+# LI: BASIS | 60% narrative | 20% non-answer | 10% ignorance | 10% reactance
+# LI: MAX   | 80% narrative | 10% non-answer |  5% ignorance |  5% reactance
+u: (invitation_to_tell) ^refine() 
+    a: ($rapportCounter==0)
+        $$probFormat = narrative:60_notAnswering:20_ignorance:10_reactance:10
+        $$randNum = %rand
+        if ($$randNum < 60) {^gambit(~narrative)}
+        else if ($$randNum < 80) {^gambit(~notAnswering)}
+        else if ($$randNum < 90) {^gambit(~ignorance)}
+        else {^gambit(~reactance)}
+    a: ($rapportCounter==1)
+        $$probFormat = narrative:64_notAnswering:18_ignorance:9_reactance:9
+        $$randNum = %rand
+        if ($$randNum < 64) {^gambit(~narrative)}
+        else if ($$randNum < 82) {^gambit(~notAnswering)}
+        else if ($$randNum < 91) {^gambit(~ignorance)}
+        else {^gambit(~reactance)}
+    a: ($rapportCounter==2)
+        $$probFormat = narrative:68_notAnswering:16_ignorance:8_reactance:8
+        $$randNum = %rand
+        if ($$randNum < 68) {^gambit(~narrative)}
+        else if ($$randNum < 84) {^gambit(~notAnswering)}
+        else if ($$randNum < 92) {^gambit(~ignorance)}
+        else {^gambit(~reactance)}
+    a: ($rapportCounter==3)
+        $$probFormat = narrative:72_notAnswering:14_ignorance:7_reactance:7
+        $$randNum = %rand
+        if ($$randNum < 72) {^gambit(~narrative)}
+        else if ($$randNum < 86) {^gambit(~notAnswering)}
+        else if ($$randNum < 93) {^gambit(~ignorance)}
+        else {^gambit(~reactance)}
+    a: ($rapportCounter==4)
+        $$probFormat = narrative:76_notAnswering:12_ignorance:6_reactance:6
+        $$randNum = %rand
+        if ($$randNum < 76) {^gambit(~narrative)}
+        else if ($$randNum < 88) {^gambit(~notAnswering)}
+        else if ($$randNum < 94) {^gambit(~ignorance)}
+        else {^gambit(~reactance)}
+    a: ($rapportCounter==5)
+        $$probFormat = narrative:80_notAnswering:10_ignorance:5_reactance:5
+        $$randNum = %rand
+        if ($$randNum < 80) {^gambit(~narrative)}
+        else if ($$randNum < 90) {^gambit(~notAnswering)}
+        else if ($$randNum < 95) {^gambit(~ignorance)}
+        else {^gambit(~reactance)}
+
+
+# LI: 40% narrative(same topic) | 25% affirmation? | 25% non-answer | 10% reactance ->WENN ERSCHÖPFT 50% ignorance | 25% non-answer | 25% reactance
+# HIER NOCH DIE KODIERUNG FÜR SAME UND DIFFERENT TOPIC EINBAUEN
+u: (facilitator) 
+$$probFormat = narrative:40_affirmation:25_notAnswering:25_reactance:10
+$$randNum = %rand
+if ($$randNum < 40) {$$answer = ^gambit(~narrative)}
+else if ($$randNum < 65) {$$answer = ^gambit(~affirmation)}
+else if ($$randNum < 90) {$$answer = ^gambit(~notAnswering)}
+else {^gambit(~reactance)}
+
+# rapport: 100% affirmation + rapport counter
+u: (rapport)
+$$probFormat = affirmation:100
+$rapportCounter += 1
+^gambit(~affirmation)
+
+
+
+
+# LI: 60% specific answer | 20% non-answer | 10% ignorance | 10% reactance
+# !!!SPECIFIC NOCH KODIEREN!!! UND VOR ALLEM GEHT BEI SPECIFIC EHER KEIN ^GAMBIT?
+u: (w_question)
+$$probFormat = specific:60_notAnswering:20_ignorance:10_reactance:10
+$$randNum = %rand
+if ($$randNum < 60) {$$answer = ^gambit(~specific)}
+else if ($$randNum < 80) {$$answer = ^gambit(~notAnswering)}
+else if ($$randNum < 90) {$$answer = ^gambit(~ignorance))
+else {$$answer = ^gambit(~reactance))
+
+
+# 80% option-choosen | 10% non-answer | 10% ignorance
+u: (choice_question)
+$$probFormat = option_chosen:80_notAnswering:10_ignorance:10
+$$randNum = %rand 
+if ($$randNum < 80){$$answer = ^gambit(~options)} 
+else if ($$randNum < 90){$$answer = ^gambit(~notAnswering)} 
+else {$$answer = ^gambit(~ignorance)} 
+
+
+# 50% affirmation | 30% negation | 20% ignorance
+u: (yes_no_question) 
+$$probFormat = affirmation:50_negation:30_ignorance:20
+$$randNum = %rand
+if (%$$randNum < 50){$$answer = ^gambit(~affirmation)} 
+else if ($$randNum < 80){$$answer = ^gambit(~negat)} 
+else {$$answer = ^gambit(~ignorance)} 
+
+
+# 90% incomprehension | 10% reactance 
+u: (unknowable_question) 
+$$probFormat = incomprehension:90_reactance:10
+$$randNum = %rand
+if ($$randNum < 90){$$answer = ^gambit(~incomprehension)} 
+else {$$answer = ^gambit(~reactance)} 
+
+# 100% repetition of given answer (how many volleys back?)
+u: (request) $lastOutput
+
+# 40% ignorance | 30% reactance | 30% sobbing
+u: (suggestive_unspecific) 
+$$probFormat = ignorance:40_reactance:30_sobbing:30
+$$randNum = %rand
+if ($$randNum < 40){$$answer = ^gambit(~ignorance)} 
+else if ($$randNum < 70){$$answer = ^gambit(~reactance)} 
+else {$$answer = ^gambit(~sobbing)} 
+
+
+
+# 70% affirmation | 20% negation | 5% ignorance | 5% non-answer
+u: (suggestive_specific)
+$$probFormat = affirmation:70_negation:20_ignorance:5_notAnswering:5
+$$randNum = %rand
+if ($$randNum < 70){$$answer = ^gambit(~affirmation)} 
+else if ($$randNum < 90){$$answer = ^gambit(~negation)} 
+else if ($$randNum < 95){$$answer = ^gambit(~ignorance)} 
+else {$$answer = ^gambit(~notAnswering)} 
+
+
+

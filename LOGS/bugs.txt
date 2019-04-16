@@ -1117,3 +1117,86 @@ BUG in z_emohandler.top at 11:  else if ($$answerContent= general) {$$emoType=ne
 FILE-1 Unknown top-level declaration } in RAWDATA/LAURA_SI/z_emohandler.top
 
 BUG in topic_ghk_anonymous_GERMAN.txt at 0: ^anonymous No such bot  ghk -  -  status: defaultbot word not found
+
+BUG: Tue Apr 02 15:31:51 2019: input:1 entering null word to dictionary in sentence caller:khb callee:laura_si at  script: ~xpostagsentence.1.0 in sentence: asd
+entering null word to dictionary in sentence
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 6 of 80
+
+Finished 5: heapusedOnEntry: 9452680 heapUsedNow: 9452680 buffers:3 stackused: 90546360 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9452624 buffers:2 stackused: 90546680 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9452624 buffers:2 stackused: 90546872 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9452580 buffers:1 stackused: 90547128 ~xpostagsentence.1.0{}  - 
+BUG in topic__:1_GERMAN.txt at 1: ^:1 No such bot  ::1 -  - iugizg status: laura_si
+BUG in topic__:1_GERMAN.txt at 0: ^:1 No such bot  ::1 -  - hallo status: laura_si
+
+BUG: Wed Apr 03 11:48:03 2019: input:1 entering null word to dictionary in sentence caller:sdfsdf callee:laura_si at  script: ~xpostagsentence.1.0 in sentence: sdf
+entering null word to dictionary in sentence
+MinReleaseStackGap 89MB MinHeapAvailable 90MB
+MaxBuffers used 6 of 80
+
+Finished 5: heapusedOnEntry: 9452680 heapUsedNow: 9452680 buffers:3 stackused: 90546360 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9452624 buffers:2 stackused: 90546680 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9452624 buffers:2 stackused: 90546872 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9452588 buffers:1 stackused: 90547128 ~xpostagsentence.1.0{}  - 
+BUG in b_prob_answer.top at 38:         if ($$random_number < 76 {^gambit(~narrative)} 
+IF-12 comparison must close with ) -{ .. Did you make a function call as 1st argument? that's illegal
+
+BUG in z_laura_li_control.top at 118: t: () ^emoHandler() 
+CALL-1 Default call to function not yet defined ^emohandler
+
+BUG in topic_asd_anonymous_GERMAN.txt at 3: ^anonymous No such bot  asd -  -  status: defaultbot word not found
+BUG in b_prob_answer.top at 38:         if ($$random_number < 76 {^gambit(~narrative)} 
+IF-12 comparison must close with ) -{ .. Did you make a function call as 1st argument? that's illegal
+
+BUG in z_laura_li_control.top at 118: t: () ^emoHandler() 
+CALL-1 Default call to function not yet defined ^emohandler
+
+BUG in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous No such bot  asd -  -  status: defaultbot word not found
+BUG in z_laura_li_control.top at 122: t: () ^oob() 
+CALL-1 Default call to function not yet defined ^oob
+
+BUG in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous No such bot  asd -  -  status: defaultbot word not found
+BUG in z_laura_li_control.top at 122: t: () ^oob() 
+CALL-1 Default call to function not yet defined ^oob
+
+BUG in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous No such bot  asd -  -  status: defaultbot word not found
+BUG in z_laura_li_control.top at 122: t: () ^oob() 
+CALL-1 Default call to function not yet defined ^oob
+
+BUG in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous No such bot  asd -  -  status: defaultbot word not found
+BUG in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous No such bot  asd -  -  status: defaultbot word not found
+BUG in z_laura_li_control.top at 122: t: () ^oob() 
+CALL-1 Default call to function not yet defined ^oob
+
+BUG in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous No such bot  asd -  -  status: defaultbot word not found
+
+BUG: Wed Apr 10 19:21:34 2019: input:1 entering null word to dictionary in sentence caller:asd callee:laura_li at  script: ~xpostagsentence.1.0 in sentence: [rapport]
+entering null word to dictionary in sentence
+MinReleaseStackGap 84MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Finished 5: heapusedOnEntry: 9979720 heapUsedNow: 9979720 buffers:3 stackused: 90019320 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9979664 buffers:2 stackused: 90019640 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9979664 buffers:2 stackused: 90019832 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9979616 buffers:1 stackused: 90020088 ~xpostagsentence.1.0{}  - 
+
+BUG: Wed Apr 10 19:21:34 2019: input:1 entering null word to dictionary in sentence caller:asd callee:laura_li at  script: ~xpostagsentence.1.0 in sentence: [rapport]
+entering null word to dictionary in sentence
+MinReleaseStackGap 84MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Finished 5: heapusedOnEntry: 9979756 heapUsedNow: 9979756 buffers:3 stackused: 90019284 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9979740 buffers:2 stackused: 90019604 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9979664 buffers:2 stackused: 90019796 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9979616 buffers:1 stackused: 90020052 ~xpostagsentence.1.0{}  - 
+
+BUG: Wed Apr 10 19:21:34 2019: input:1 entering null word to dictionary in sentence caller:asd callee:laura_li at  script: ~xpostagsentence.1.0 in sentence: [rapport]
+entering null word to dictionary in sentence
+MinReleaseStackGap 84MB MinHeapAvailable 90MB
+MaxBuffers used 10 of 80
+
+Finished 5: heapusedOnEntry: 9979772 heapUsedNow: 9979772 buffers:3 stackused: 90019268 stackusedNow:1133 ^setcanon{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 4: heapusedOnEntry: 9979756 buffers:2 stackused: 90019588 ^myfunc{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 3: heapusedOnEntry: 9979664 buffers:2 stackused: 90019780 ^popen{}  - t:!( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_
+BugDepth 2: heapusedOnEntry: 9979616 buffers:1 stackused: 90020036 ~xpostagsentence.1.0{}  - 
