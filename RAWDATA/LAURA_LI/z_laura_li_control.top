@@ -9,7 +9,7 @@ $cs_language = german
 $cs_externaltag = ~xPOSTAGSENTENCE 
 $userprompt = ^"%user: >"
 $botprompt = ^"LAURA: "
-# $singleResponse = 1 # issue only 1 output message    
+$singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 topic: ~xrejoinder system repeat ()
 
@@ -30,7 +30,7 @@ u: ( %input<%userfirstline)
 #! [ question: open]
 u: (\[ * \])
     ^respond(~prob_answer)
-    ^end(SENTENCE)
+    # ^end(SENTENCE)
 
 
 # get a master copy of input then do our normal copies
@@ -38,7 +38,7 @@ u: (\[ * \])
 u: () # main per-sentence processing
 	$$currenttopic = %topic		# get the current topic at start of volley
     $_responseCount = %response
-	# if ($singleResponse) {$_responseCount = 0} # disable this to respond to each sentence in a volley
+	if ($singleResponse) {$_responseCount = 0} # disable this to respond to each sentence in a volley
 
 
 
