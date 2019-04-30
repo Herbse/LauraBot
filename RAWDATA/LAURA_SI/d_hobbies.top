@@ -4,7 +4,7 @@ topic: ~hobbies_t ()
 #t: specific test to hobbies topic ^keep() ^repeat() 
 
 #specific questions/answers depending on what narrative answer was given before
-t: ^keep() ^refine()
+u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) ^refine()
         b: ($hobbiesCounter==1) Voll cool.

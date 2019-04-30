@@ -1,11 +1,11 @@
 topic: ~narrative keep repeat nostay ()
 
-
-u: (~mother) ^respond(~mother_t)
-u: (~father) ^respond(~father_t)
-u: ([~brother leon]) ^respond(~brother_t)
-u: ([onkel dirk]) ^respond(~event_t)
-u: (~friend) ^respond(~friends_t)
-u: (~hobby) ^respond(~hobbies_t)
-u: (~school) ^respond(~school_t)
-a: () Keine Ahnung
+u:  (%more) ^next(INPUT) ^refine() $$actionType = shrug  ^keep() ^repeat() 
+    a: (~mother) ^respond(~mother_t)
+    a: (~father) ^respond(~father_t)
+    a: ([~brother leon]) ^respond(~brother_t)
+    a: ([onkel dirk]) ^respond(~event_t)
+    a: (~friend) ^respond(~friends_t)
+    a: (~hobby) ^respond(~hobbies_t)
+    a: (~school) ^respond(~school_t)
+    a: () Keine Ahnung
