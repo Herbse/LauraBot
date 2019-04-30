@@ -34,3 +34,40 @@ Start: user:sdf bot:laura_b ip: rand:2403 (~introduction) 0 ==> Hallo!  When:Feb
 Respond: user:sdf bot:laura_b ip: (~introduction) 1   wie geht es dir ==> Ganz okay.  When:Feb13'19-17:13:43 Why:~answer_roulette.1.0.~introduction.2.0=CLOSED_SITUATION   F:1 
 Respond: user:sdf bot:laura_b ip: (~introduction) 2   warum ==> Weiß nicht...  When:Feb13'19-17:13:45 Why:~keywordless.5.0.~control.2.0   F:1 
 Command: :build laura
+Start: user:sdf bot:laura_si ip: rand:2403 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Hallo!  When:Apr25'19-22:43:16 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-20:18:25 0:Apr25'19-22:43:16 F:0 P:0 Why:~addposthoc.2.0 ~introduction_t.0.0.~control.0.0 
+Command: :prepare f  r
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: f  r
+Tokenized into: f  r  
+Actual used input: f r 
+
+entering null word to dictionary in sentenceentering null word to dictionary in sentence
+Concepts: 
+
+1: f (raw):
+   +~
+       +~temperature_quantity
+         +~measurement
+           +~quantity
+             +~attributes
+               +~nounlist
+   +f
+ // 
+1: F (canonical):        +~notpropername
+       +~letters
+   +F^
+ //  
+
+2: r (raw):
+   +~
+   +r
+ // 
+2: R (canonical):        +~letters
+   +R^
+ //  
+
+Sequences:
+
+After parse TokenFlags: USERINPUT 

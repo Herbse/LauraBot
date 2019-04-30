@@ -1,7 +1,3 @@
 topic: ~incomprehension keep repeat nostay ()
 
-r: $$answerCategory = incomprehension  Hää. ^keep() ^repeat()
-
-r: $$answerCategory = incomprehension Wie bitte? ^keep() ^repeat()
-
-r: $$answerCategory = incomprehension Was meinen sie damit? ^keep() ^repeat()
+u: ($$answerCategory==incomprehension)  [Hää.][Wie bitte?][Was meinen sie damit?] ^keep() ^repeat()

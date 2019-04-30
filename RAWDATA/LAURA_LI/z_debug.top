@@ -12,17 +12,19 @@ outputmacro: ^myfunc(^data) ($$concept)
 outputmacro: ^oob()
  
  $_topic = %topic
- $_revelationState = $$revelationState
+ $_revelationState = $revelationState
  $_rapportCounter = $rapportCounter
- $_answerContent = $$answerContent
+ $_goodQuestion = $goodQuestion
  $_probFormat= $$probFormat
- $_answerType= $$answerType
+ $_answerCategory= $$answerCategory
  $_actionType = $$actionType
  $_emoType = $$emoType 
  $_topicSwitch = $$topicSwitch
  $_randomNumber = $$randNum
- $_chatPhase = $$chatPhase
+ $_chatPhase = $chatPhase
  $_critRevealed = $$critRevealed
+ $_noncritTopic = $noncritTopic
+
 
  $_item1name = topic
  $_item1value = $_topic
@@ -30,8 +32,8 @@ outputmacro: ^oob()
  $_item2value = $_answerCategory
  $_item3name = probFormat
  $_item3value = $_probFormat
- $_item4name = answerContent
- $_item4value = $_answerContent
+ $_item4name = goodQuestion
+ $_item4value = $_goodQuestion
  $_item5name = emoType
  $_item5value = $_emoType
  $_item6name = actionType
@@ -48,12 +50,13 @@ outputmacro: ^oob()
  $_item11value = $_topicSwitch
  $_item12name = critRevealed
  $_item12value = $_critRevealed
-
+ $_item13name = noncritTopic
+ $_item13value = $_noncritTopic
 
 
 
  # join it all together for a string output using pipe '|' between items and using ':' between item name and value
- $$oob = ^join( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value " " \| " " $_item4name : $_item4value " " \| " " $_item5name : $_item5value " " \| " " $_item6name : $_item6value " " \| " " $_item7name : $_item7value " " \| " " $_item8name : $_item8value " " \|  " " $_item9name : $_item9vale " " \| " " $_item10name : $_item10value " " \| " " $_item11name : $_item11value " " \| " " $_item12name : $_item12value)
+ $$oob = ^join( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value " " \| " " $_item4name : $_item4value " " \| " " $_item5name : $_item5value " " \| " " $_item6name : $_item6value " " \| " " $_item7name : $_item7value " " \| " " $_item8name : $_item8value " " \|  " " $_item9name : $_item9value " " \| " " $_item10name : $_item10value " " \| " " $_item11name : $_item11value " " \| " " $_item12name : $_item12value " " \| " " $_item13name : $_item13value)
 
 
 

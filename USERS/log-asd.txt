@@ -85,3 +85,353 @@ Command: :why
 ~addposthoc.2.0  t:  ( ) ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = null 
 ~affirmation.0.0.6.2.0  r:  $$answercategory = affirmation $$actiontype = nod Ja. ^keep ( ) ^repeat ( ) 
  via ~prob_answer.6.2.0  u:  ( rapport ) $$prob_format = affirmation:100 $rapportcounter += 1 ^gambit ( ~affirmation ) ...   
+Start: user:asd bot:laura_si ip: rand:3776 (~introduction) 1 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType:shake | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Nein.  When:Apr17'19-20:34:19 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-20:18:12 0:Apr10'19-19:17:14 F:0 P:Apr10'19-19:47:15 Why:~addposthoc.1.0 ~negat.0.0.~control.2.0 
+Command: :prepare freunde
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: freunde
+Tokenized into: freunde  
+Actual used input: freunde 
+
+entering null word to dictionary in sentence
+Concepts: 
+
+1: freunde (raw):
+   +~
+       +~people
+       +~friend
+        +T~friends_bio 
+         +~role_ally
+           +~role
+             +~styles
+               +~attributes
+                 +~nounlist
+             +~beings
+               +~tool
+               +~animate_thing
+                 +~objects
+   +freunde
+ // 
+1: freunde (canonical):  //  
+
+Sequences:
+       +~societal_data
+         +~human_data
+   +Freunde^
+
+After parse TokenFlags: USERINPUT 
+Command: :prepare freund
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: freund
+Tokenized into: freund  
+Actual used input: freund 
+
+
+Concepts: 
+
+1: freund (raw):
+       +~people
+   +freund
+ // 
+1: freund (canonical):  //  
+
+Sequences:
+       +~goodness
+       +~befriend
+         +~role_verbs
+           +~social_verbs
+             +~animate_verbs
+               +~verblist
+       +~unknownsexhuman
+       +~role_ally
+         +~role
+           +~styles
+             +~attributes
+               +~nounlist
+           +~beings
+             +~tool
+             +~animate_thing
+               +~objects
+       +~male
+         +~gendernoun
+         +~he
+           +~gender
+           +~age_gender
+       +~friend
+        +T~friends_bio 
+       +~dating_friend
+         +~role_romantic
+       +~family_adult_male
+         +~family_adult
+           +~family_members
+             +~role_family
+         +~adult
+           +~aged_adults
+             +~agenoun
+               +~age_reference
+   +Freund^
+
+After parse TokenFlags: USERINPUT 
+Command: :concept ~friend
+Respond: user:asd bot:laura_si ip: (~friends_bio) 2   :concept ~friend ==> [topic:~friends_bio | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Mira und ich sind beste Freundinnen.  When:Apr17'19-20:35:05 Why:~addposthoc.1.0 ~friends_bio.0.0=FRIEND_INTRO.~control.2.0   F:3 
+Command: :prepare dance
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: dance
+Tokenized into: dance  
+Actual used input: dance 
+
+
+Concepts: 
+
+1: dance (raw):
+   +dance
+ // 
+1: dancen (canonical):    +dancen
+ //  
+
+Sequences:
+   +Dance^
+
+After parse TokenFlags: USERINPUT 
+Command: :prepare tanzen
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: tanzen
+Tokenized into: tanzen  
+Actual used input: tanzen 
+
+
+Concepts: 
+
+1: tanzen (raw):
+       +~places
+        +T~event_uncle 
+       +~goodness
+       +~remain_stationary
+         +~body_verbs
+           +~animate_verbs
+             +~verblist
+           +~active_verbs
+             +~use_intentionverbs
+       +~videogame_genre
+       +~performlist
+         +~performing_arts
+           +~art_stuff
+             +~entertainment_stuff
+               +~artifacts
+                 +~objects
+                   +~nounlist
+                 +~human_data
+       +~hobby
+        +T~hobbies_bio 
+       +~dance
+         +~dance_stuff
+   +tanzen
+ // 
+1: tanzen (canonical):  //  
+
+Sequences:
+       +~hobbies_performing
+       +~exerciselist
+   +Tanzen^
+
+After parse TokenFlags: USERINPUT 
+Start: user:asd bot:laura_si ip: rand:3776 (~friends_bio) 2 ==> [topic:~friends_bio | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Das ist die Reaktanz.  When:Apr23'19-06:50:23 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-20:18:12 0:Apr10'19-19:17:14 F:0 P:Apr17'19-20:35:05 Why:~addposthoc.1.0 ~reactance.0.0.~control.2.0 
+Command: :build laura_si
+No such bot  asd -  -  status: defaultbot word not found   in topic_asd_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_si
+User data file CONTEXT inconsistent
+User data file inconsistent
+Start: user:asd bot:laura_si ip: rand:3774 (~father_t) 2 ==> [topic:~father_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Specific test to father topic  When:Apr23'19-06:54:52 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-06:54:49 0:Apr10'19-19:17:14 F:0 P:Apr17'19-20:35:05 Why:~addposthoc.1.0 ~father_t.0.0.~control.2.0 
+Command: :build laura_si
+Start: user:asd bot:laura_si ip: rand:3775 (~father_t) 2 ==> [topic:~father_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Mein Papa hilft meiner Mama zu Hause.  When:Apr23'19-06:57:43 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-06:57:40 0:Apr10'19-19:17:14 F:0 P:Apr17'19-20:35:05 Why:~addposthoc.1.0 ~father_t.1.0=PAPA_HELP_MUM.~control.2.0 
+Command: :build laura_si
+Start: user:asd bot:laura_si ip: rand:3776 (~introduction_t) 2 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Hey!  When:Apr23'19-06:59:05 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-06:59:02 0:Apr10'19-19:17:14 F:0 P:Apr17'19-20:35:05 Why:~addposthoc.1.0 ~introduction_t.0.0.~control.0.0 
+entering null word to dictionary in sentence3 Tue Apr 23 06:59:21 2019 in sentence: [specific] mama 
+    entering null word to dictionary in sentence3 Tue Apr 23 06:59:21 2019 in sentence: [specific] mama 
+    entering null word to dictionary in sentence3 Tue Apr 23 06:59:21 2019 in sentence: [specific] mama 
+    
+Respond: user:asd bot:laura_si ip: (~mother_t) 3   [specific] mama ==> [topic:~mother_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter:1 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Meine Mama ist immer zu Hause. Sie ist schlimm krank.  When:Apr23'19-06:59:21 Why:~addposthoc.1.0 ~mother_t.1.0=MAMA_SICK.~control.2.0   F:2840 
+Command: :reset
+Start: user:asd bot:laura_si ip: rand:3774 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr23'19-06:59:26 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-06:59:02 0:Apr10'19-19:17:14 F:0 P:Apr23'19-06:59:21 Why:~addposthoc.1.0 ~introduction_t.0.0.~control.0.0 
+Respond: user:asd bot:laura_si ip: (~mother_t) 1   [specific] mama ==> [topic:~mother_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Meine Mama ist immer zu Hause. Sie ist schlimm krank.  When:Apr23'19-06:59:28 Why:~addposthoc.1.0 ~mother_t.1.0=MAMA_SICK.~control.2.0   F:1 
+Command: :why
+~addposthoc.1.0  t:  ( ) ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = null 
+~mother_t.1.0.11.2.0  u: MAMA_SICK ( ) Meine Mama ist immer zu Hause. Sie ist schlimm krank. 
+ via ~control.11.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00A( %response  $_responseco...   
+Respond: user:asd bot:laura_si ip: (~mother_t) 2   [w_question] mama ==> [topic:~mother_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:24 | topicSwitch: | critRevealed: ]`Specific test to mother topic  When:Apr23'19-07:00:26 Why:~addposthoc.1.0 ~mother_t.0.0.~control.2.0   F:1 
+Respond: user:asd bot:laura_si ip: (~father_t) 3   [w_question] papa ==> [topic:~father_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:93 | topicSwitch: | critRevealed: ]`Ich erinnere mich nicht.`Mein Papa hilft meiner Mama zu Hause.  When:Apr23'19-07:00:31 Why:~addposthoc.1.0 ~ignorance.1.0.~prob_answer.3.0 ~father_t.1.0=PAPA_HELP_MUM.~control.2.0   F:2 
+Command: :why
+~addposthoc.1.0  t:  ( ) ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = null 
+~ignorance.1.0.5.3.0  r:  $$answercategory = ignorance Ich erinnere mich nicht. ^keep ( ) ^repeat ( ) 
+ via ~prob_answer.5.3.0  u:  ( w_question ) $$probformat = specific:80_notAnswering:10_ignorance:10 $$randnum = %rand ^...   
+~father_t.1.0.11.2.0  u: PAPA_HELP_MUM ( ) Mein Papa hilft meiner Mama zu Hause. 
+ via ~control.11.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00A( %response  $_responseco...   
+Command: :reset
+Start: user:asd bot:laura_si ip: rand:3774 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr23'19-07:01:10 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-06:59:02 0:Apr10'19-19:17:14 F:0 P:Apr23'19-07:00:31 Why:~addposthoc.1.0 ~introduction_t.0.0.~control.0.0 
+Respond: user:asd bot:laura_si ip: (~father_t) 1   [w_question] papa ==> [topic:~father_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:59 | topicSwitch: | critRevealed: ]`Mein Papa hilft meiner Mama zu Hause.  When:Apr23'19-07:01:12 Why:~addposthoc.1.0 ~father_t.1.0=PAPA_HELP_MUM.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~brother_t) 2   [w_question] bruder ==> [topic:~brother_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:24 | topicSwitch: | critRevealed: ]`Specific test to brother topic  When:Apr23'19-07:01:19 Why:~addposthoc.1.0 ~brother_t.0.0.~control.2.0   F:3 
+Respond: user:asd bot:laura_si ip: (~father_t) 3   [w_question] vater ==> [topic:~father_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:93 | topicSwitch: | critRevealed: ]`Ich erinnere mich nicht.`Specific test to father topic  When:Apr23'19-07:01:50 Why:~addposthoc.1.0 ~ignorance.1.0.~prob_answer.3.0 ~father_t.0.0.~control.2.0   F:1 
+Respond: user:asd bot:laura_si ip: (~father_t) 4   [w_question] vater ==> [topic:~father_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType:nod | rapportCounter: | revelationState: | chatPhase: | randomNumber:87 | topicSwitch: | critRevealed: ]`Hm.`Ja.  When:Apr23'19-07:01:56 Why:~addposthoc.1.0 ~notanswering.0.0.~prob_answer.3.0 ~affirmation.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~father_t) 5   [w_question] vater ==> [topic:~father_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType:shrug | rapportCounter: | revelationState: | chatPhase: | randomNumber:30 | topicSwitch: | critRevealed: ]`Hm.  When:Apr23'19-07:01:58 Why:~addposthoc.1.0 ~notanswering.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~father_t) 6   [w_question] vater ==> [topic:~father_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType:shake | rapportCounter: | revelationState: | chatPhase: | randomNumber:37 | topicSwitch: | critRevealed: ]`Nee.  When:Apr23'19-07:01:59 Why:~addposthoc.1.0 ~negat.1.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~father_t) 7   [w_question] vater ==> [topic:~father_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:72 | topicSwitch: | critRevealed: ]`Das erste.  When:Apr23'19-07:01:59 Why:~addposthoc.1.0 ~options.2.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~father_t) 8   [w_question] vater ==> [topic:~father_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:78 | topicSwitch: | critRevealed: ]`Hier werden später die narrativen Antworten verarbeitet.  When:Apr23'19-07:01:59 Why:~addposthoc.1.0 ~narrative.0.0.~control.2.0   F:2 
+Command: :build laura_si
+Start: user:asd bot:laura_si ip: rand:3781 (~father_t) 8 ==> [topic:~father_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Specific test to father topic  When:Apr23'19-07:09:25 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-07:09:22 0:Apr10'19-19:17:14 F:0 P:Apr23'19-07:01:59 Why:~addposthoc.1.0 ~father_t.0.0.~control.2.0 
+Command: :reset
+Start: user:asd bot:laura_si ip: rand:3774 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Grüß Gott!  When:Apr23'19-07:09:28 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-07:09:22 0:Apr10'19-19:17:14 F:0 P:Apr23'19-07:01:59 Why:~addposthoc.1.0 ~introduction_t.0.0.~control.0.0 
+Respond: user:asd bot:laura_si ip: (~school_t) 1   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:59 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:09:32 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~brother_t) 2   [w_question] bruder ==> [topic:~brother_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:24 | topicSwitch: | critRevealed: ]`Specific test to brother topic  When:Apr23'19-07:09:38 Why:~addposthoc.1.0 ~brother_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 3   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:93 | topicSwitch: | critRevealed: ]`Ich erinnere mich nicht.`Specific test to school topic  When:Apr23'19-07:09:46 Why:~addposthoc.1.0 ~ignorance.1.0.~prob_answer.3.0 ~school_t.0.0.~control.2.0   F:2 
+Command: :why
+~addposthoc.1.0  t:  ( ) ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = null 
+~ignorance.1.0.5.3.0  r:  $$answercategory = ignorance Ich erinnere mich nicht. ^keep ( ) ^repeat ( ) 
+ via ~prob_answer.5.3.0  u:  ( w_question ) $$probformat = specific:80_notAnswering:10_ignorance:10 $$randnum = %rand ^...   
+~school_t.0.0.11.2.0  t:  specific test to school topic ^keep ( ) ^repeat ( ) 
+ via ~control.11.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00A( %response  $_responseco...   
+Respond: user:asd bot:laura_si ip: (~school_t) 4   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType:shrug | rapportCounter: | revelationState: | chatPhase: | randomNumber:87 | topicSwitch: | critRevealed: ]`Hm.`Specific test to school topic  When:Apr23'19-07:10:10 Why:~addposthoc.1.0 ~notanswering.0.0.~prob_answer.3.0 ~school_t.0.0.~control.2.0   F:1 
+Respond: user:asd bot:laura_si ip: (~school_t) 5   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:30 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:12 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:1 
+Respond: user:asd bot:laura_si ip: (~school_t) 6   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:37 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:14 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 7   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:72 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:15 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 8   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:78 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:15 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 9   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:7 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:15 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 10   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:32 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:16 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 11   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:1 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:16 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 12   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:41 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:16 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 13   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:32 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:16 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 14   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:19 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:16 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:3 
+Respond: user:asd bot:laura_si ip: (~school_t) 15   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:26 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:17 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 16   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:44 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:17 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 17   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:77 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:17 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 18   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:90 | topicSwitch: | critRevealed: ]`Keine Ahnung.`Specific test to school topic  When:Apr23'19-07:10:17 Why:~addposthoc.1.0 ~ignorance.2.0.~prob_answer.3.0 ~school_t.0.0.~control.2.0   F:3 
+Respond: user:asd bot:laura_si ip: (~school_t) 19   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:3 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:17 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 20   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:50 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:18 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:3 
+Respond: user:asd bot:laura_si ip: (~school_t) 21   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType:shrug | rapportCounter: | revelationState: | chatPhase: | randomNumber:83 | topicSwitch: | critRevealed: ]`Hm.`Specific test to school topic  When:Apr23'19-07:10:18 Why:~addposthoc.1.0 ~notanswering.0.0.~prob_answer.3.0 ~school_t.0.0.~control.2.0   F:3 
+Respond: user:asd bot:laura_si ip: (~school_t) 22   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:24 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:18 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 23   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:61 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:19 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:3 
+Respond: user:asd bot:laura_si ip: (~school_t) 24   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:23 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:19 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 25   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:14 | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:19 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0   F:2 
+Respond: user:asd bot:laura_si ip: (~school_t) 26   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:97 | topicSwitch: | critRevealed: ]`Keine Ahnung.`Specific test to school topic  When:Apr23'19-07:10:19 Why:~addposthoc.1.0 ~ignorance.2.0.~prob_answer.3.0 ~school_t.0.0.~control.2.0   F:2 
+Command: :build laura_si
+Start: user:asd bot:laura_si ip: rand:3799 (~school_t) 26 ==> [topic:~school_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:10:43 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-07:10:40 0:Apr10'19-19:17:14 F:1555996217-3.0.0.11.2.0 P:Apr23'19-07:10:19 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0 
+Respond: user:asd bot:laura_si ip: (~school_t) 27   [w_question] schule ==> [topic:~school_t | answerCategory: | probFormat:specific:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType:shrug | rapportCounter: | revelationState: | chatPhase: | randomNumber:80 | topicSwitch: | critRevealed: ]`Hm.`Specific test to school topic  When:Apr23'19-07:10:50 Why:~addposthoc.1.0 ~notanswering.0.0.~prob_answer.3.0 ~school_t.0.0.~control.2.0   F:3 
+Command: :why
+~addposthoc.1.0  t:  ( ) ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = null 
+~notanswering.0.0.5.3.0  r:  $$answercategory = notAnswering $$actiontype = shrug Hm. ^keep ( ) ^repeat ( ) 
+ via ~prob_answer.5.3.0  u:  ( w_question ) $$probformat = specific:80_notAnswering:10_ignorance:10 $$randnum = %rand ^...   
+~school_t.0.0.11.2.0  t:  specific test to school topic ^keep ( ) ^repeat ( ) 
+ via ~control.11.2.0  u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00A( %response  $_responseco...   
+Command: :build laura_si
+Start: user:asd bot:laura_si ip: rand:3800 (~school_t) 27 ==> [topic:~school_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Specific test to school topic  When:Apr23'19-07:13:28 Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr23'19-07:13:25 0:Apr10'19-19:17:14 F:1555996217-3.0.0.11.2.0 P:Apr23'19-07:10:50 Why:~addposthoc.1.0 ~school_t.0.0.~control.2.0 
+PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    PushOutputBuffer limit reached28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 1
+Allocated extra buffer 1
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 2
+Allocated extra buffer 2
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 3
+Allocated extra buffer 3
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 4
+Allocated extra buffer 4
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 5
+Allocated extra buffer 5
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 6
+Allocated extra buffer 6
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 7
+Allocated extra buffer 7
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 8
+Allocated extra buffer 8
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 9
+Allocated extra buffer 9
+
+ d28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 10
+Allocated extra buffer 10
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 11
+Allocated extra buffer 11
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 12
+Allocated extra buffer 12
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 13
+Allocated extra buffer 13
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 14
+Allocated extra buffer 14
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 15
+Allocated extra buffer 15
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 16
+Allocated extra buffer 16
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 17
+Allocated extra buffer 17
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 18
+Allocated extra buffer 18
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    Allocated extra buffer 19
+Allocated extra buffer 19
+
+ 28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
+    

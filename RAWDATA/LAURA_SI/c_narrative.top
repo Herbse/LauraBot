@@ -1,4 +1,11 @@
 topic: ~narrative keep repeat nostay ()
 
-r: $$answerCategory = narrative Hier werden später die narrativen Antworten verarbeitet.  ^keep() ^repeat()
 
+u: (~mother) ^respond(~mother_t)
+u: (~father) ^respond(~father_t)
+u: ([~brother leon]) ^respond(~brother_t)
+u: ([onkel dirk]) ^respond(~event_t)
+u: (~friend) ^respond(~friends_t)
+u: (~hobby) ^respond(~hobbies_t)
+u: (~school) ^respond(~school_t)
+a: () Keine Ahnung
