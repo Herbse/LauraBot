@@ -1,10 +1,5 @@
 topic: ~options keep repeat nostay ()
 
-r: $$answerCategory = options Das erstgenannte. ^keep() ^repeat()
+u: ($$answerCategory==options) [Das erstgenannte.][Das zweitgenannte.][Das erste.][Das zweite.] ^keep() ^repeat()
 
-r: $$answerCategory = options Das zweitgenannte. ^keep() ^repeat()
-
-r: $$answerCategory = options Das erste. ^keep() ^repeat()
-
-r: $$answerCategory = options Das zweite. ^keep() ^repeat()
 

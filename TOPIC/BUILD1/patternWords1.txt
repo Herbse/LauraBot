@@ -37,6 +37,7 @@ euer
 verhältnis
 kommst
 mit
+klar
 aus
 euch
 wie_oft
@@ -52,10 +53,10 @@ choice_question
 yes_no_question
 unknowable_question
 request
+crit_asked
 suggestive_unspecific
 suggestive_specific
-relevance
-frequency
+familie
 leon
 onkel
 dirk

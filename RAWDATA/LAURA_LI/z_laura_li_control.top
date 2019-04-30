@@ -115,6 +115,7 @@ u: () # main per-sentence processing
 topic: ~addposthoc system () # should be called for post processing
 
 t: () ^emoHandler()
+t: () ^revelationHandler()
 t: ()  
 		$lastOutput = ^response(1)
 		

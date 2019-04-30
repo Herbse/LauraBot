@@ -1,6 +1,7 @@
 topic: ~narrative keep repeat nostay ()
 
-u:  (%more) ^next(INPUT) ^refine() $$actionType = shrug  ^keep() ^repeat() 
+# Topicwechsel bei bestimmten Stichworten bzw. letztes Topic wenn kein bestimmtes Stichwort
+u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat() 
     a: (~mother) ^respond(~mother_t)
     a: (~father) ^respond(~father_t)
     a: ([~brother leon]) ^respond(~brother_t)
@@ -8,4 +9,4 @@ u:  (%more) ^next(INPUT) ^refine() $$actionType = shrug  ^keep() ^repeat()
     a: (~friend) ^respond(~friends_t)
     a: (~hobby) ^respond(~hobbies_t)
     a: (~school) ^respond(~school_t)
-    a: () Keine Ahnung
+    a: () ^respond(~)

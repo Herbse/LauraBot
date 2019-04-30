@@ -1,7 +1,7 @@
 topic: ~specific keep repeat nostay ()
 
 # Topicwechsel bei bestimmten Stichworten bzw. letztes Topic wenn kein bestimmtes Stichwort
-u:  (%more) ^next(INPUT) ^refine() $$actionType = shrug  ^keep() ^repeat() 
+u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat() 
     a: (~mother) ^respond(~mother_t)
     a: (~father) ^respond(~father_t)
     a: ([~brother leon]) ^respond(~brother_t)
