@@ -30,7 +30,7 @@ u: ( %input<%userfirstline)
 # [ question: open]
 u: (\[ * \])
     ^respond(~prob_answer)
-	 # ^end(SENTENCE)
+	^end(SENTENCE)
 
     
 

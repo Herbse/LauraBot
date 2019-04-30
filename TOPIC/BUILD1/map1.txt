@@ -568,7 +568,8 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/z_laura_
           line: 9 109  # $cs_externaltag = ~xpostagsent
           line: 10 144  # $userprompt = ^"%user: >" 
           line: 11 170  # $botprompt = ^"LAURA: " 
-          line: 13 194  # $cs_token = 512 | 131072 | 102
+          line: 12 194  # $singleresponse = 1 
+          line: 13 214  # $cs_token = 512 | 131072 | 102
           Complexity of ^laura_li: 1
     topic: 14  ~xrejoinder
         rule: 17  ~xrejoinder.0.0 u: 
@@ -585,101 +586,104 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/LAURA_LI/z_laura_
         rule: 38  ~control.2.0 u: 
           line: 39 0  # $$currenttopic = %topic 
           line: 40 24  # $_responsecount = %response 
-          if 45 56  
-          ifend 45 135  
-          line: 45 52  # ^if 00A( %response == $_respon
-          if 47 140  
-          line: 47 136  # ^if 00R( %length == 0 and %res
-          line: 48 196  # { 
-          line: 49 198  # ^nofail ( TOPIC ^gambit ( $$cu
-          ifend 50 248  
-          line: 50 243  # } 004 
-          if 52 253  
-          ifend 52 345  
-          line: 52 249  # ^if 00A( %response == $_respon
-          if 54 350  
-          line: 54 346  # ^if 00A( %response == $_respon
-          line: 55 389  # { 
-          line: 56 391  # @8 = ^keywordtopics ( ) 
-          loop 57 421  
-          line: 57 415  # ^loop ( -1 ) aaa 
-          line: 58 432  # { 
-          line: 59 434  # $$topic = ^first ( @8subject )
-          line: 60 465  # ^nofail ( TOPIC ^respond ( $$t
-          if 61 508  
-          line: 61 504  # ^if 00m( %response != 0 ) aaa
-          line: 62 533  # { 
-          line: 63 535  # ^end ( RULE ) 
-          ifend 64 554  
-          line: 64 549  # } 004 
-          loopend 65 557  
-          line: 65 555  # } 
-          ifend 66 562  
-          line: 66 557  # } 004 
-          if 68 567  
-          line: 68 563  # ^if 00A( %response == $_respon
-          line: 69 606  # { 
-          line: 70 608  # ^nofail ( TOPIC ^respond ( ~ke
-          ifend 71 657  
-          line: 71 652  # } 004 
-          if 74 662  
-          line: 74 658  # ^if 00F( %outputrejoinder or %
-          line: 75 706  # { 
-          line: 76 708  # ^end ( TOPIC ) 
-          ifend 77 728  
-          line: 77 723  # } 004 
-          if 79 733  
-          ifend 79 855  
-          line: 79 729  # ^if 00%( %response == $_respon
-          if 81 860  
-          line: 81 856  # ^if 00A( %response == $_respon
-          line: 82 899  # { 
-          line: 83 901  # @8 = ^keywordtopics ( ) 
-          loop 84 931  
-          line: 84 925  # ^loop ( -1 ) aaa 
-          line: 85 942  # { 
-          line: 86 944  # $$topic = ^first ( @8subject )
-          line: 87 975  # ^nofail ( TOPIC ^gambit ( $$to
-          if 88 1017  
-          line: 88 1013  # ^if 00m( %response != 0 ) aaa
-          line: 89 1042  # { 
-          line: 90 1044  # ^end ( RULE ) 
-          ifend 91 1063  
-          line: 91 1058  # } 004 
-          loopend 92 1066  
-          line: 92 1064  # } 
-          ifend 93 1071  
-          line: 93 1066  # } 004 
-          if 94 1076  
-          ifend 94 1167  
-          line: 94 1072  # ^if 00A( %response == $_respon
-          if 96 1172  
-          line: 96 1168  # ^if 00A( %response == $_respon
-          line: 97 1211  # { 
-          line: 98 1213  # @8 = ^gambittopics ( ) 
-          loop 99 1242  
-          line: 99 1236  # ^loop ( -1 ) aaa 
-          line: 100 1253  # { 
-          line: 101 1255  # $$topic = ^pick ( @8subject ) 
-          line: 102 1285  # ^nofail ( TOPIC ^gambit ( $$to
-          if 103 1327  
-          line: 103 1323  # ^if 00A( %response != $_respon
-          line: 104 1366  # { 
-          line: 105 1368  # ^end ( RULE ) 
-          ifend 106 1387  
-          line: 106 1382  # } 004 
-          loopend 107 1390  
-          line: 107 1388  # } 
-          ifend 108 1395  
-          line: 108 1390  # } 004 
-          if 109 1400  
-          line: 109 1396  # ^if 00A( %response == $_respon
-          line: 110 1439  # { 
-          line: 111 1441  # ^repeat ( ) 
-          line: 112 1453  # I don't know what to say. 
-          ifend 113 1484  
-          line: 113 1479  # } 004 
-          Complexity of rule ~control.2.0- u: 15
+          if 41 56  
+          ifend 41 109  
+          line: 41 52  # ^if 00n( $singleresponse ) 00v
+          if 45 114  
+          ifend 45 193  
+          line: 45 110  # ^if 00A( %response == $_respon
+          if 47 198  
+          line: 47 194  # ^if 00R( %length == 0 and %res
+          line: 48 254  # { 
+          line: 49 256  # ^nofail ( TOPIC ^gambit ( $$cu
+          ifend 50 306  
+          line: 50 301  # } 004 
+          if 52 311  
+          ifend 52 403  
+          line: 52 307  # ^if 00A( %response == $_respon
+          if 54 408  
+          line: 54 404  # ^if 00A( %response == $_respon
+          line: 55 447  # { 
+          line: 56 449  # @8 = ^keywordtopics ( ) 
+          loop 57 479  
+          line: 57 473  # ^loop ( -1 ) aaa 
+          line: 58 490  # { 
+          line: 59 492  # $$topic = ^first ( @8subject )
+          line: 60 523  # ^nofail ( TOPIC ^respond ( $$t
+          if 61 566  
+          line: 61 562  # ^if 00m( %response != 0 ) aaa
+          line: 62 591  # { 
+          line: 63 593  # ^end ( RULE ) 
+          ifend 64 612  
+          line: 64 607  # } 004 
+          loopend 65 615  
+          line: 65 613  # } 
+          ifend 66 620  
+          line: 66 615  # } 004 
+          if 68 625  
+          line: 68 621  # ^if 00A( %response == $_respon
+          line: 69 664  # { 
+          line: 70 666  # ^nofail ( TOPIC ^respond ( ~ke
+          ifend 71 715  
+          line: 71 710  # } 004 
+          if 74 720  
+          line: 74 716  # ^if 00F( %outputrejoinder or %
+          line: 75 764  # { 
+          line: 76 766  # ^end ( TOPIC ) 
+          ifend 77 786  
+          line: 77 781  # } 004 
+          if 79 791  
+          ifend 79 913  
+          line: 79 787  # ^if 00%( %response == $_respon
+          if 81 918  
+          line: 81 914  # ^if 00A( %response == $_respon
+          line: 82 957  # { 
+          line: 83 959  # @8 = ^keywordtopics ( ) 
+          loop 84 989  
+          line: 84 983  # ^loop ( -1 ) aaa 
+          line: 85 1000  # { 
+          line: 86 1002  # $$topic = ^first ( @8subject )
+          line: 87 1033  # ^nofail ( TOPIC ^gambit ( $$to
+          if 88 1075  
+          line: 88 1071  # ^if 00m( %response != 0 ) aaa
+          line: 89 1100  # { 
+          line: 90 1102  # ^end ( RULE ) 
+          ifend 91 1121  
+          line: 91 1116  # } 004 
+          loopend 92 1124  
+          line: 92 1122  # } 
+          ifend 93 1129  
+          line: 93 1124  # } 004 
+          if 94 1134  
+          ifend 94 1225  
+          line: 94 1130  # ^if 00A( %response == $_respon
+          if 96 1230  
+          line: 96 1226  # ^if 00A( %response == $_respon
+          line: 97 1269  # { 
+          line: 98 1271  # @8 = ^gambittopics ( ) 
+          loop 99 1300  
+          line: 99 1294  # ^loop ( -1 ) aaa 
+          line: 100 1311  # { 
+          line: 101 1313  # $$topic = ^pick ( @8subject ) 
+          line: 102 1343  # ^nofail ( TOPIC ^gambit ( $$to
+          if 103 1385  
+          line: 103 1381  # ^if 00A( %response != $_respon
+          line: 104 1424  # { 
+          line: 105 1426  # ^end ( RULE ) 
+          ifend 106 1445  
+          line: 106 1440  # } 004 
+          loopend 107 1448  
+          line: 107 1446  # } 
+          ifend 108 1453  
+          line: 108 1448  # } 004 
+          if 109 1458  
+          line: 109 1454  # ^if 00A( %response == $_respon
+          line: 110 1497  # { 
+          line: 111 1499  # ^repeat ( ) 
+          line: 112 1511  # I don't know what to say. 
+          ifend 113 1542  
+          line: 113 1537  # } 004 
+          Complexity of rule ~control.2.0- u: 16
     topic: 115  ~addposthoc
         rule: 117  ~addposthoc.0.0 t: 
           line: 117 0  # ^emohandler ( ) 
