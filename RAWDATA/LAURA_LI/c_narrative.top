@@ -9,4 +9,6 @@ u:  (%more) ^next(INPUT) ^refine() $$actionType = shrug  ^keep() ^repeat()
     a: (~friend) ^respond(~friends_t)
     a: (~hobby) ^respond(~hobbies_t)
     a: (~school) ^respond(~school_t)
+    a: ([~family ~home]) [^respond(~father_t)][^respond(~brother_t)][^respond(~mother_t)]
     a: () ^respond(~)
+    # einbauen: wenn noch kein topic aktiviert und allgemeine frage, dann zufällig in irgendein Topic

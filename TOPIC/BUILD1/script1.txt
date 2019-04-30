@@ -1,4 +1,4 @@
-﻿00030 Apr30'19-16:45:43 laura_li 8.8
+﻿00030 Apr30'19-17:11:25 laura_li 8.8
 TOPIC: ~reactance 0x13 1289705124 1 0 198 c_reactance.top
 " all " 02y u: ( =i$$answercategory==reactance ) [ Kann ich jetzt gehen? ] [ Sind wir fertig? ] [ Ich will darüber nicht sprechen. ] [ Lassen sie mich damit in Ruhe. ] ^keep ( ) ^repeat ( ) `000 
 TOPIC: ~hobbies_t 0x0 -1756977462 6 0 2338 d_hobbies.top
