@@ -1,4 +1,4 @@
-﻿00029 Apr30'19-14:15:14 laura_si 8.8
+﻿00029 Apr30'19-15:39:37 laura_si 8.8
 TOPIC: ~reactance 0x13 1330036624 1 0 100 c_reactance.top
 " all " 01b u: ( =i$$answercategory==reactance ) Das ist die Reaktanz. ^keep ( ) ^repeat ( ) `000 
 TOPIC: ~hobbies_t 0x0 -800258218 6 1 2335 d_hobbies.top

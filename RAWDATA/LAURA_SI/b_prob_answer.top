@@ -22,7 +22,7 @@ else {$$answerCategory = notAnswering ^respond(~notAnswering)}
 # rapport: 100% affirmation + rapport counter
 u: (rapport)
 $$probFormat = affirmation:100
-$rapportCounter -= 1
+$rapportCounter += 1
 $$answerCategory = affirmation
 ^respond(~affirmation)
 

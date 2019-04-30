@@ -1586,15 +1586,6 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/a
     concept: 2  ~weakbadness
     concept: 3  ~strongbadness
     concept: 4  ~goodness
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/PARSER/parsedata.top
-    concept: 1  ~misc_parsedata
-    concept: 2  ~causal_to_infinitive_verbs
-    concept: 3  ~verbs_of_perception
-    concept: 4  ~completeness_adjectives
-    concept: 5  ~quotableverbs
-    concept: 6  ~restrictive_adverbs
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/PARSER/timewords.top
-    concept: 1  ~timewords
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/container.tbl
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/material.tbl
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/musicbasic.tbl

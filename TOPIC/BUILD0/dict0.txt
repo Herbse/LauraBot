@@ -120,10 +120,7 @@
 + Dublin NO_PROPER_MERGE ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Dubliners NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
 + Dudley ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ denken VERB_INFINITIVE 
-+ disqualifizieren VERB_INFINITIVE 
 + dreieckig ADJECTIVE_NORMAL 
-+ drohen VERB_INFINITIVE 
 + duck NOUN NOUN_SINGULAR posdefault:NOUN 
 + Iggy NOUN_HUMAN NOUN_FIRSTNAME 
 + Ignatius NOUN_HUMAN NOUN_FIRSTNAME 
@@ -150,7 +147,6 @@
 + Israeli ADJECTIVE ADJECTIVE_NORMAL 
 + Issy NOUN_HUMAN NOUN_FIRSTNAME 
 + Ivar NOUN_TITLE_OF_WORK 
-+ induzieren VERB_INFINITIVE 
 + irgendjemand NOUN_HUMAN 
 + irregulär ADJECTIVE_NORMAL 
 + Jackpot NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
@@ -243,7 +239,6 @@
 + Liam NOUN_TITLE_OF_WORK 
 + Libby NOUN_HUMAN NOUN_FIRSTNAME 
 + Liberia ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ Liebe VERB_INFINITIVE VERB 
 + Liebestraum NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
 + Liebhaber NOUN_HUMAN 
 + Liechtenstein ALWAYS_PROPER_NAME_MERGE 
@@ -287,10 +282,7 @@
 + Lydia NOUN_TITLE_OF_WORK 
 + Lynn NOUN_HUMAN NOUN_FIRSTNAME 
 + Lyon ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ lernen VERB_INFINITIVE 
-+ locken VERB_INFINITIVE 
 + Nachfahre NOUN_HUMAN 
-+ Nachfrage VERB_INFINITIVE VERB 
 + Nachkomme NOUN_HUMAN 
 + Nachkommen NOUN_HUMAN 
 + Nachwuchs NOUN_HUMAN 
@@ -298,7 +290,6 @@
 + Nadja NOUN_TITLE_OF_WORK 
 + Nagasaki ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Nairobi NO_PROPER_MERGE ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ Name VERB_INFINITIVE VERB 
 + Namibia ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Nana NOUN_TITLE_OF_WORK 
 + Nancy NOUN_HUMAN NOUN_SHE 
@@ -310,7 +301,6 @@
 + Nathan NOUN_HUMAN NOUN_FIRSTNAME 
 + Nazar NOUN_TITLE_OF_WORK 
 + Nebraska ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ Neigung VERB_INFINITIVE VERB 
 + Neil NOUN_HUMAN NOUN_FIRSTNAME 
 + Nepal ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Nepalese ADJECTIVE ADJECTIVE_NORMAL 
@@ -341,7 +331,6 @@
 + Nottingham ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + November NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
 + Nurses NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
-+ nehmen VERB_INFINITIVE 
 + niemand NOUN_HUMAN 
 + OK NOUN_PROPER_SINGULAR 
 + Octavia NOUN_TITLE_OF_WORK 
@@ -381,7 +370,6 @@
 + Raspel VERB 
 + Rassel VERB 
 + Rasseln VERB 
-+ Rat VERB_INFINITIVE VERB 
 + Ratboy NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
 + Ratking NOUN_TITLE_OF_WORK 
 + Rats NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
@@ -515,7 +503,6 @@
 + Tülle VERB 
 + tiger NOUN NOUN_SINGULAR posdefault:NOUN 
 + transparent NOUN NOUN_SINGULAR 
-+ trotzen VERB_INFINITIVE 
 + turtle posdefault:NOUN 
 + Uganda ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Ukraine ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
@@ -526,7 +513,6 @@
 + Urals ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Uranus NOUN_TITLE_OF_WORK ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Urbania NOUN_TITLE_OF_WORK 
-+ Ursache VERB_INFINITIVE VERB 
 + Uruguay ALWAYS_PROPER_NAME_MERGE 
 + Utah ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Utopia NOUN_PROPER_SINGULAR ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
@@ -544,7 +530,6 @@
 + Venezuela ALWAYS_PROPER_NAME_MERGE 
 + Venus NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Veronica NOUN_HUMAN NOUN_FIRSTNAME 
-+ Vertrauen VERB_INFINITIVE 
 + Verwandtschaft NOUN_HUMAN 
 + Verzweigung ADJECTIVE ADJECTIVE_NORMAL 
 + Vic NOUN_HUMAN NOUN_FIRSTNAME 
@@ -569,15 +554,6 @@
 + Vorfahr NOUN_HUMAN 
 + Voss NOUN_TITLE_OF_WORK 
 + Vuk NOUN_TITLE_OF_WORK 
-+ verfügen VERB_INFINITIVE 
-+ vergessen VERB_INFINITIVE 
-+ vermuten VERB_INFINITIVE 
-+ versichern VERB_INFINITIVE 
-+ versprechen VERB_INFINITIVE 
-+ verstehen VERB_INFINITIVE 
-+ verurteilen VERB_INFINITIVE 
-+ vorschlagen VERB_INFINITIVE 
-+ vorstellen VERB_INFINITIVE 
 + Waldo NOUN_HUMAN NOUN_FIRSTNAME 
 + Wales ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Wanda NOUN_TITLE_OF_WORK 
@@ -603,39 +579,32 @@
 + Wisconsin ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Wittgenstein NOUN_HUMAN NOUN_HE 
 + Wohnung ADJECTIVE ADJECTIVE_NORMAL 
-+ Wunsch VERB_INFINITIVE VERB 
-+ warnen VERB_INFINITIVE 
++ Wunsch VERB 
 + wellig ADJECTIVE_NORMAL 
-+ widmen VERB_INFINITIVE 
-+ wollen VERB_INFINITIVE 
-+ wählen VERB_INFINITIVE 
 + Yankees NOUN_PROPER_SINGULAR 
 + Yasmin NOUN_TITLE_OF_WORK 
 + Zagreb NO_PROPER_MERGE ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ Zahlen VERB_INFINITIVE 
 + Zeder NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
 + Zeno NOUN_HUMAN NOUN_HE 
 + Zia NOUN_TITLE_OF_WORK 
 + Zigeunerweisen NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
 + Zoya NOUN_TITLE_OF_WORK 
-+ Zug VERB_INFINITIVE VERB 
 + Zulu NOUN_TITLE_OF_WORK NOUN_PROPER_SINGULAR 
 + Zungen ADJECTIVE ADJECTIVE_NORMAL 
 + Zusammenstoß VERB 
 + Zwilling NOUN_HUMAN 
-+ zaubern VERB_INFINITIVE 
-+ zulassen VERB_INFINITIVE 
-+ zwingen VERB_INFINITIVE 
 + zylindrisch ADJECTIVE_NORMAL 
 + drink PATTERN_WORD 
 + fallen PATTERN_WORD 
 + akzeptieren PATTERN_WORD 
++ akzeptiert PATTERN_WORD 
 + allgemein PATTERN_WORD 
 + auf PATTERN_WORD 
 + beeindruckend PATTERN_WORD 
 + bestimmt PATTERN_WORD 
 + boo PATTERN_WORD 
 + falsch PATTERN_WORD 
++ fantastisch PATTERN_WORD 
 + fein PATTERN_WORD 
 + fortsetzen PATTERN_WORD 
 + ganz PATTERN_WORD 
@@ -643,14 +612,22 @@
 + genau PATTERN_WORD 
 + gerade PATTERN_WORD 
 + gut PATTERN_WORD 
++ gähnen PATTERN_WORD 
++ kaum PATTERN_WORD 
++ kichern PATTERN_WORD 
 + komisch PATTERN_WORD 
++ meist PATTERN_WORD 
 + perfekt PATTERN_WORD 
 + positiv PATTERN_WORD 
++ schmerzen PATTERN_WORD 
 + schön PATTERN_WORD 
 + selten PATTERN_WORD 
 + sicher PATTERN_WORD 
++ sicherlich PATTERN_WORD 
 + später PATTERN_WORD 
 + ständig PATTERN_WORD 
++ äußerst PATTERN_WORD 
++ überraschen PATTERN_WORD 
 + September NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
 + alt PATTERN_WORD 
 + nadelförmigem ADJECTIVE ADJECTIVE_NORMAL 
@@ -767,7 +744,7 @@
 + möglich PATTERN_WORD 
 + alte PATTERN_WORD 
 + hell PATTERN_WORD 
-+ klar VERB_INFINITIVE VERB PATTERN_WORD 
++ klar PATTERN_WORD 
 + auffällig PATTERN_WORD 
 + glasiert PATTERN_WORD 
 + gemustert PATTERN_WORD 
@@ -862,7 +839,6 @@
 + billig PATTERN_WORD 
 + magnetisch PATTERN_WORD 
 + mager PATTERN_WORD 
-+ nicht_viele 
 + knapp PATTERN_WORD 
 + sporadisch PATTERN_WORD 
 + geizig PATTERN_WORD 
@@ -1219,9 +1195,7 @@
 + pridefulness 
 + joyousness 
 + discontentedness 
-+ Hoffnung VERB_INFINITIVE VERB 
 + hopefulness 
-+ Hass VERB_INFINITIVE VERB 
 + sortenrein 
 + uninitiate 
 + erleuchtet PATTERN_WORD 
@@ -1370,7 +1344,7 @@
 + beleben PATTERN_WORD 
 + bereichern PATTERN_WORD 
 + unclutter 
-+ aktivieren VERB_INFINITIVE VERB PATTERN_WORD 
++ aktivieren PATTERN_WORD 
 + exsiccate 
 + entfeuchten PATTERN_WORD 
 + befeuchten PATTERN_WORD 
@@ -1454,7 +1428,7 @@
 + aufrollen 
 + entfalten 
 + beschleunigen PATTERN_WORD 
-+ bestätigen VERB_INFINITIVE VERB PATTERN_WORD 
++ bestätigen PATTERN_WORD 
 + auffüllen 
 + entladen PATTERN_WORD 
 + clabber 
@@ -1482,7 +1456,7 @@
 + stalinize 
 + cognize 
 + beachten PATTERN_WORD 
-+ merken VERB_INFINITIVE VERB PATTERN_WORD 
++ merken PATTERN_WORD 
 + einschließen PATTERN_WORD 
 + auslassen PATTERN_WORD 
 + spiritualize 
@@ -1492,21 +1466,20 @@
 + überschätzen PATTERN_WORD 
 + missbilligen PATTERN_WORD 
 + genehmigen PATTERN_WORD 
-+ abgeneigt_machen VERB_INFINITIVE VERB 
-+ glauben VERB_INFINITIVE VERB PATTERN_WORD 
++ abgeneigt_machen 
++ glauben PATTERN_WORD 
 + ablehnen PATTERN_WORD 
 + reprobate 
 + approbate 
 + assoziieren PATTERN_WORD 
 + abbringen 
-+ überzeugen VERB_INFINITIVE VERB PATTERN_WORD 
++ überzeugen PATTERN_WORD 
 + überreden 
 + herausreden_aus 
-+ Antlitz VERB_INFINITIVE VERB 
 + auslagern 
 + einwilligen PATTERN_WORD 
 + konfrontieren PATTERN_WORD 
-+ bekennen VERB_INFINITIVE VERB PATTERN_WORD 
++ bekennen PATTERN_WORD 
 + auseinander_nehmen 
 + hyperbolize 
 + entbinden PATTERN_WORD 
@@ -1590,7 +1563,6 @@
 + packen_zusammen 
 + entkorken 
 + verkorken 
-+ Kraft VERB_INFINITIVE VERB 
 + entführen PATTERN_WORD 
 + disarrange 
 + behindern PATTERN_WORD 
@@ -1626,7 +1598,7 @@
 + anschlagen 
 + ham_it_up 
 + aufladen PATTERN_WORD 
-+ mögen VERB_INFINITIVE VERB PATTERN_WORD 
++ mögen PATTERN_WORD 
 + entmenschlichen PATTERN_WORD 
 + berauschen PATTERN_WORD 
 + betrüben PATTERN_WORD 
@@ -1644,7 +1616,7 @@
 + still_stehen 
 + locomote 
 + einziehen 
-+ halt VERB_INFINITIVE VERB PATTERN_WORD 
++ halt PATTERN_WORD 
 + surge PATTERN_WORD 
 + gehen_unter 
 + schweben PATTERN_WORD 
@@ -1666,7 +1638,6 @@
 + bleibe PATTERN_WORD 
 + ziehen_in 
 + verschieben_in 
-+ geh_raus 
 + zusteigen,_einsteigen,_vorwärtskommen 
 + konvergieren 
 + divergieren PATTERN_WORD 
@@ -2482,7 +2453,6 @@
 + bürgerlich PATTERN_WORD 
 + unkreativ 
 + originative 
-+ nicht_zu_fassen 
 + glaubhaft PATTERN_WORD 
 + nicht_kritisch 
 + uncrossed 
@@ -2716,7 +2686,7 @@
 + spaltbar 
 + nicht_spaltbaren 
 + spaltbares 
-+ passen VERB_INFINITIVE VERB PATTERN_WORD 
++ passen PATTERN_WORD 
 + contrasty 
 + beeinträchtigen PATTERN_WORD 
 + kompromisslos 
@@ -3704,9 +3674,8 @@
 + verseift 
 + emittieren PATTERN_WORD 
 + absorbieren PATTERN_WORD 
-+ nicht_zustimmen 
 + predate 
-+ haben VERB_INFINITIVE VERB PATTERN_WORD 
++ haben PATTERN_WORD 
 + überleben PATTERN_WORD 
 + decolonise 
 + behalten PATTERN_WORD 
@@ -3718,7 +3687,7 @@
 + decertify PATTERN_WORD 
 + desorganisieren 
 + abschaffen PATTERN_WORD 
-+ mieten VERB_INFINITIVE VERB PATTERN_WORD 
++ mieten PATTERN_WORD 
 + fördern PATTERN_WORD 
 + einbüßen PATTERN_WORD 
 + profitieren 
@@ -3746,7 +3715,6 @@
 + entknoten PATTERN_WORD 
 + flechten PATTERN_WORD 
 + absatteln 
-+ Belastung VERB_INFINITIVE VERB 
 + unsnarl 
 + bringen PATTERN_WORD 
 + beitreten PATTERN_WORD 
@@ -3767,7 +3735,7 @@
 + beweisen PATTERN_WORD 
 + analysieren PATTERN_WORD 
 + jemanden_bedienen 
-+ kennt VERB_INFINITIVE VERB PATTERN_WORD 
++ kennt PATTERN_WORD 
 + orientalise 
 + occidentalise 
 + spielen PATTERN_WORD 
@@ -4085,7 +4053,6 @@
 + square_yard 
 + Geruch VERB 
 + so_tun_als_ob 
-+ Preis VERB_INFINITIVE VERB 
 + Frost NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
 + Schneesturm NOUN NOUN_PROPER_SINGULAR 
 + Bullshit NOUN 
@@ -4166,7 +4133,6 @@
 + hijab PATTERN_WORD 
 + earmuff PATTERN_WORD 
 + High_Heels NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
-+ Spitze VERB_INFINITIVE VERB 
 + geschlossenzelligen_toe 
 + hoch_tailliert 
 + gerade_geschnitten 
@@ -4222,7 +4188,6 @@
 + sich_schlecht_fühlen 
 + hat_mich_verlassen 
 + verlor_mein 
-+ Mühe VERB_INFINITIVE VERB 
 + verkauft_fuer 
 + wird_sein 
 + chi_chi 
@@ -4653,7 +4618,6 @@
 + Sansibar NOUN NOUN_PROPER_SINGULAR 
 + Knall VERB 
 + Boom VERB 
-+ Geschrei VERB_INFINITIVE VERB 
 + ungeordnete,_ohrenbetäubend 
 + Plumps VERB 
 + Die_Verbraucher-Berichte NOUN NOUN_PROPER_SINGULAR 
@@ -4770,7 +4734,6 @@
 + Paris NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR NO_PROPER_MERGE ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Penelope NOUN_HUMAN NOUN_FIRSTNAME NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
 + Pygmalion NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
-+ Anruf VERB_INFINITIVE VERB 
 + schwarz_dago 
 + cheese-eating_surrender_monkeys 
 + seitlich_cooter 
@@ -5227,7 +5190,6 @@
 + bis_vor 
 + es_sei_denn 
 + als_das 
-+ ja_wirklich 
 + nicht_nur 
 + nur_dann 
 + damit_nicht 
@@ -5241,7 +5203,6 @@
 + wen_auch_immer 
 + wer_auch_immer 
 + je_nachdem,_welcher 
-+ was_auch_immer 
 + sieht_aus_wie 
 + addieren_sich_zu 
 + für_nichtig_zu_erklären 
@@ -5262,7 +5223,6 @@
 + wieder_aufzubauen 
 + Shanghai NOUN NOUN_PROPER_SINGULAR ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + sich_auflösen 
-+ Fragen VERB_INFINITIVE VERB 
 + kalt_stellen 
 + selbst_aussuchen 
 + falsch_klassifizieren 
@@ -5323,17 +5283,13 @@
 + Schwirren VERB 
 + vroom VERB 
 + schwirren VERB 
-+ Kommission VERB_INFINITIVE VERB 
 + wieder_einzusetzen 
 + wieder_öffnen 
 + Choke NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
 + rückgängig_machen 
 + sich_auseinander_setzen 
-+ Herausforderung VERB_INFINITIVE VERB 
 + sich_aufdrängen 
-+ Bedingung VERB_INFINITIVE VERB 
 + zustande_kommen 
-+ Hilfe VERB_INFINITIVE VERB 
 + kreuz_und_quer 
 + zugrunde_liegen 
 + befestigen_unten 
@@ -5354,7 +5310,6 @@
 + darauf_ankommen 
 + sich_verlassen_auf 
 + daraus_schließen 
-+ Erwägen VERB_INFINITIVE VERB 
 + darüber_nachzudenken 
 + störungs_schießen 
 + sich_aalen 
@@ -5368,17 +5323,15 @@
 + verdrücken_v! 
 + gibber PATTERN_WORD 
 + falsch_aussprechen 
-+ bekannt_geben VERB_INFINITIVE VERB 
++ bekannt_geben 
 + offen_zu_legen 
-+ darauf_bestehen VERB_INFINITIVE VERB 
-+ Bericht VERB_INFINITIVE VERB 
++ darauf_bestehen 
 + besteht_aus 
 + mit_sich_bringen 
 + sich_bewerben 
 + etwas_wünschen 
 + treiben_dahin 
 + schlecht_gelaunt 
-+ Bestechung VERB_INFINITIVE VERB 
 + schwer_zu_fassen 
 + ausnutzend_ist 
 + am_schwersten 
@@ -5412,12 +5365,6 @@
 + gut_abgerundet 
 + gut_trainiert 
 + sich_sehnen 
-+ beschwören VERB_INFINITIVE VERB 
-+ anstiften VERB_INFINITIVE VERB 
-+ Gerücht VERB_INFINITIVE VERB 
-+ berücksichtigen VERB_INFINITIVE VERB 
-+ Abstimmung VERB_INFINITIVE VERB 
-+ irgendwann_mal 
 + ink 
 + fountain_pen 
 + expected_contain 
