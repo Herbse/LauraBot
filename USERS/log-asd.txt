@@ -434,4 +434,4 @@ Allocated extra buffer 18
 Allocated extra buffer 19
 
  28 Tue Apr 23 07:13:33 2019 in sentence: [w_question] schule 
-    
+    Command: :build vicontact

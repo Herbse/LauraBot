@@ -1,0 +1,332 @@
+topic: ~event_t repeat  ()
+
+#specific questions/answers depending on general context
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Dirk
+    # age
+    a: (^age()) $$intent=age Der ist so alt wie Papa.
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job Kein Ahnung
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f ^reuse(EVENT_2)
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Der ist voll blöd.
+    # time together
+    a: (^time_together()) $$intent=time_together Nach der Schule.
+    # time relationship
+    a: (^time()) $$intent=time_relationship Weiß ich nicht, schon lange.
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^refine()
+        b: ($eventCounter>2 $eventCounter<5 )^reuse(EVENT_5)
+        b: ($eventCounter>1 $eventCounter<3 )^reuse(EVENT_3)
+        b: ($eventCounter>5) Sonst eigentlich nix mehr.
+        b: () ^reuse(EVENT_1)
+    # activity
+    a: (^activity()) $$intent=activity Weiß ich nicht.
+    # places together
+    a: (^places_together()) $$intent=places_together Zu Hause.
+
+
+# specific questions/answers depending on what narrative answer was given before
+#a u: () ^keep() ^refine() 
+    # personal_opinion
+#a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+#a        b: ($eventCounter==1) Voll doof.
+#a        b: ($eventCounter==2) Voll doof.
+#a        b: ($eventCounter==3) Voll doof.
+#a        b: ($eventCounter==4) Voll doof.
+#a        b: ($eventCounter==5) Voll doof.
+#a        b: ($eventCounter==6) Voll doof.
+#a        b: ($eventCounter==7) Total eklig.
+#a        b: ($eventCounter==8) Total eklig.
+#a        b: ($eventCounter==9) Total eklig.
+#a        b: ($eventCounter==10) Total eklig.
+#a    # other_opinion
+#a    a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
+#a    # place
+#a    a: (^place()) $$intent=place ^refine()
+#a        b: ($eventCounter==1) Im Wohnzimmer
+#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$nextAnswer = yes
+#a        b: ($eventCounter==8) In der Umkleide beim Schwimmen.
+#a        b: ($eventCounter==9) In der Umkleide beim Schwimmen.
+#a        b: ($eventCounter==10) In der Umkleide beim Schwimmen.
+#a    # individual
+#a    a: (^individual()) $$intent=individual ^refine()
+#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==3) Mein Onkel.
+#a        b: ($eventCounter==4) Mein Onkel.
+#a        b: ($eventCounter==5) Mein Onkel.
+#a        b: ($eventCounter==6) Mein Onkel.
+#a        b: ($eventCounter==7) Mein Onkel.
+#a        b: ($eventCounter==8) Mein Onkel.
+#a        b: ($eventCounter==9) Mein Onkel.
+#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a    # reason
+#a    a: (^reason()) $$intent=reason ^refine()
+#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$nextAnswer = yes
+#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$nextAnswer = yes
+#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$nextAnswer = yes
+#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a    # example
+#a    a: (^example()) $$intent=example ^refine()
+#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: () $$nextAnswer = yes
+#a    # explanation
+#a    a: (^explanation()) $$intent=explanation ^refine()
+#a        b: ($eventCounter==1) $$nextAnswer = yes
+#a        b: ($eventCounter==2) $$nextAnswer = yes
+#a        b: ($eventCounter==3) $$nextAnswer = yes
+#a        b: ($eventCounter==4) $$nextAnswer = yes
+#a        b: ($eventCounter==5) $$nextAnswer = yes
+#a        b: ($eventCounter==6) $$nextAnswer = yes
+#a        b: ($eventCounter==7) Sein Penis.
+#a        b: ($eventCounter==8) $$nextAnswer = yes
+#a        b: ($eventCounter==9) $$nextAnswer = yes
+#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a    # follow-up
+#a    a: (^follow_up()) $$intent=follow_up ^refine()
+#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: () $$nextAnswer = yes
+#a    # log questions that were not catched by macros
+#a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+#b u: () ^keep() ^refine() 
+#b    # personal_opinion
+#b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+#b        b: ($eventCounter==1) Voll doof.
+#b        b: ($eventCounter==2) Voll doof.
+#b        b: ($eventCounter==3) Voll doof.
+#b        b: ($eventCounter==4) Voll doof.
+#b        b: ($eventCounter==5) Voll doof.
+#b        b: ($eventCounter==6) Voll doof.
+#b        b: ($eventCounter==7) Das ist so gemein!
+#b        b: ($eventCounter==8) Das ist so gemein!
+#b        b: ($eventCounter==9) Das ist so gemein!
+#b        b: ($eventCounter==10) Das ist so gemein!
+#b    # other_opinion
+#b    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+#b    # place
+#b    a: (^place()) $$intent=place ^refine()
+#b        b: ($eventCounter==1) Im Wohnzimmer
+#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==7) Zu Hause.
+#b        b: ($eventCounter==8) Zu Hause.
+#b        b: ($eventCounter==9) Zu Hause.
+#b        b: ($eventCounter==10) Zu Hause.
+#b    # individual
+#b    a: (^individual()) $$intent=individual ^refine()
+#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==3) Mein Onkel.
+#b        b: ($eventCounter==4) Mein Onkel.
+#b        b: ($eventCounter==5) Mein Onkel.
+#b        b: ($eventCounter==6) Mein Onkel.
+#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b    # reason
+#b    a: (^reason()) $$intent=reason ^refine()
+#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$nextAnswer = yes
+#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$nextAnswer = yes
+#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$nextAnswer = yes
+#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$nextAnswer = yes
+#b        b: ($eventCounter==9) $$nextAnswer = yes
+#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b    # example
+#b    a: (^example()) $$intent=example ^refine()
+#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: () $$nextAnswer = yes
+#b    # explanation
+#b    a: (^explanation()) $$intent=explanation ^refine()
+#b        b: ($eventCounter==1) $$nextAnswer = yes
+#b        b: ($eventCounter==2) $$nextAnswer = yes
+#b        b: ($eventCounter==3) $$nextAnswer = yes
+#b        b: ($eventCounter==4) $$nextAnswer = yes
+#b        b: ($eventCounter==5) $$nextAnswer = yes
+#b        b: ($eventCounter==6) $$nextAnswer = yes
+#b        b: ($eventCounter==7) $$nextAnswer = yes
+#b        b: ($eventCounter==8) $$nextAnswer = yes
+#b        b: ($eventCounter==9) $$nextAnswer = yes
+#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b    # follow-up
+#b    a: (^follow_up()) $$intent=follow_up ^refine()
+#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: () $$nextAnswer = yes
+#b    # log questions that were not catched by macros
+#b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+#c u: () ^keep() ^refine() 
+#c    # personal_opinion
+#c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+#c        b: ($eventCounter==1) Voll doof.
+#c        b: ($eventCounter==2) Voll doof.
+#c        b: ($eventCounter==3) Voll doof.
+#c        b: ($eventCounter==4) Voll doof.
+#c        b: ($eventCounter==5) Voll doof.
+#c        b: ($eventCounter==6) Voll doof.
+#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c    # other_opinion
+#c    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+#c    # place
+#c    a: (^place()) $$intent=place ^refine()
+#c        b: ($eventCounter==1) Im Wohnzimmer
+#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==7) In Mamas Zimmer.
+#c        b: ($eventCounter==8) In Mamas Zimmer.
+#c        b: ($eventCounter==9) In Mamas Zimmer.
+#c        b: ($eventCounter==10) In Mamas Zimmer.
+#c    # individual
+#c    a: (^individual()) $$intent=individual ^refine()
+#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==3) Mein Onkel.
+#c        b: ($eventCounter==4) Mein Onkel.
+#c        b: ($eventCounter==5) Mein Onkel.
+#c        b: ($eventCounter==6) Mein Onkel.
+#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c    # reason
+#c    a: (^reason()) $$intent=reason ^refine()
+#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$nextAnswer = yes
+#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$nextAnswer = yes
+#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$nextAnswer = yes
+#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c    # example
+#c    a: (^example()) $$intent=example ^refine()
+#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: () $$nextAnswer = yes
+#c    # explanation
+#c    a: (^explanation()) $$intent=example ^refine()
+#c        b: ($eventCounter==1) $$nextAnswer = yes
+#c        b: ($eventCounter==2) $$nextAnswer = yes
+#c        b: ($eventCounter==3) $$nextAnswer = yes
+#c        b: ($eventCounter==4) $$nextAnswer = yes
+#c        b: ($eventCounter==5) $$nextAnswer = yes
+#c        b: ($eventCounter==6) $$nextAnswer = yes
+#c        b: ($eventCounter==7) $$nextAnswer = yes
+#c        b: ($eventCounter==8) $$nextAnswer = yes
+#c        b: ($eventCounter==9) $$nextAnswer = yes
+#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c    # follow-up
+#c    a: (^follow_up()) $$intent=follow_up ^refine()
+#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: () $$nextAnswer = yes
+#c    # log questions that were not catched by macros
+#c    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+#---------------------------------------------------------------------------------------------
+# Clue 2
+u: CLUE2 ($showClue2==1) $clue = 1 Ich will nicht, dass der Onkel mich abholen darf von der Schule.
+
+
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+#! Erzähl mir von deinem Onkel 
+u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 1  Mein Onkel schläft jetzt immer bei uns.
+    
+
+
+
+#---------------------------------------------------------------------------------------------
+#! Erzähl mir mal von deinem Onkel
+u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 2 Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+
+#---------------------------------------------------------------------------------------------
+#! Und was ist mit deinem Onkel?
+u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 3 Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
+    
+#---------------------------------------------------------------------------------------------    
+
+#! Warum willst du denn nicht, dass er in dein Zimmer kommt?
+#! Und was macht
+u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 4 Der nervt mich und sagt ich soll aufräumen.
+    
+#---------------------------------------------------------------------------------------------
+
+#! Was hat dein Onkel denn gemacht?
+u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 5 Er haut mir immer auf den Po. Das ist voll gemein!  
+
+#---------------------------------------------------------------------------------------------
+
+#! Ist noch mehr passiert?
+u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 6 Meine Mama sagt, der haut mich, weil ich immer frech zu ihm bin.
+
+#---------------------------------------------------------------------------------------------
+# Ab hier sind die Ereignisse zum A: sexuellen Übergriff, B: nicht-sexuellen Übergriff, C: andere Belastung
+#---------------------------------------------------------------------------------------------
+
+#! Erzähl noch mehr.
+#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 7 Neulich waren wir schwimmen, sollte ich sein Ding in den Mund nehmen.
+#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 7 Manchmal haut mich der Onkel auch. Einmal hat er mir eine Backpfeife gegeben. 
+#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 7 Der Onkel knutscht mit meiner Mama.  
+
+#---------------------------------------------------------------------------------------------
+
+#! wie ist das passiert?
+#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 8 Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
+#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 8 Mein Gesicht hat richtig wehgetan.    
+#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 8 Ich wollte Mama meine Hausaufgaben zeigen und da bin ich in ihr Zimmer und habs gesehen.
+
+
+#---------------------------------------------------------------------------------------------
+
+#! Ist noch mehr passiert?
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 9 Dann hat er seine Hose runtergezogen.
+#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 9 Nur weil ich kurz laut war, hat er mich gehauen. 
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 9 Mama hat so getan, als wenn sie mich nicht gesehen hat.
+
+#---------------------------------------------------------------------------------------------
+#! Ist noch mehr passiert?
+#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 10 Das war voll eklig. Ich will den nicht mehr sehen.
+#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 10 Ich hab mich mit Leon gestritten. Und da ist mein Onkel voll sauer geworden.
+#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 10 Ich glaube, Papa hat das auch gesehen. Er hat sich neulich ganz doll mit Mama gestritten!
+    
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(EVENT_1)

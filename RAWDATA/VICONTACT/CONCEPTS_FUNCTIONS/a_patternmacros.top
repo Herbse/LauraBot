@@ -1,0 +1,149 @@
+
+# patternmacros: introductory questions
+
+patternmacro: ^general_question()
+[
+    (warum bist du hier)
+    ([was worüber] [möchtest willst magst] du ~narrate)
+    (was liegt dir auf der seele)
+    (was ist los)
+    (<< wie [läuft läufts]>>)
+]
+
+patternmacro: ^general_prompt()
+[
+    (<< [erzähl erzähle berichte sage sag beschreib beschreibe] [mir mal] >>)
+    (<< fang an>>)
+]
+
+
+patternmacro: ^strict_prompt()
+
+
+# patternmacros: actions
+patternmacro: ^personal_opinion()
+    [
+        (<< wie findest du das >>)
+        (<< wie ist das für dich >>)
+        (<< wie war das für dich >>)
+        (<< wie fühlst du dich>>)
+    ]
+
+patternmacro: ^other_opinion()
+    [
+        (<< wie findet das >>)
+        (<< wie ist das für >>)
+        (<< wie war das für >>)
+        (<< wie fühlt>>)
+    ]
+
+patternmacro: ^time()
+    [
+        (<< wie lange>>)
+        (<< wie häufig>>)
+        (wann)
+    ]
+
+patternmacro: ^place()
+    [
+        (wo)
+    ]
+
+patternmacro: ^individual()
+    [
+        (wer)
+        (mit_wem)
+    ]
+
+patternmacro: ^reason()
+    [
+        (<< wie kam es >>)
+        (<< wie kommt es >>)
+        (wieso)
+        (warum)
+    ]
+patternmacro: ^example()
+    [
+        (noch)
+        (ausserdem)
+    ]
+patternmacro: ^explanation()
+    [
+        (<< was_für_ein>>)
+        (<< an_was>>)
+        (woran)
+        (<< [welcher welche] situation>>)
+        (<< was meinst du>>)
+    ]
+patternmacro: ^follow_up()
+    [
+        (<< was [passiert macht gemacht machst machen getan sagt gesagt] >>)
+       
+    ]
+
+# patternmacros: people
+
+patternmacro: ^names()
+    [   (<< wie [heisst heißt] >>)
+        (<< wie name >>)
+    ]   
+
+patternmacro: ^age()
+    [   (<< wie alt >>)
+    ]  
+
+patternmacro: ^mood()
+    [
+        (wie geht es)
+        (wie gehts)
+        (<< wie_ist so drauf >>)
+    ]
+
+patternmacro: ^activity()
+    [
+        (<< was [machen macht] >>)
+       
+    ]
+
+
+patternmacro: ^job()
+    [
+        (<< [arbeitet gearbeitet] >>)
+        (beruf)
+       
+    ]
+
+patternmacro: ^relationship_f()
+    [
+        (wer_ist)
+       
+    ]
+
+patternmacro: ^relationship_o()
+    [
+        (<< wie findest du >>)
+        (<< wie ist [dein euer] verhältnis  >>)
+        (<< wie kommst du mit [klar aus zurecht]>>)
+        (<< wie verstehst du dich>>)
+        (<< wie versteht ihr euch >>)
+       
+    ]
+
+patternmacro: ^activity_together()
+    [
+        (<< was [macht unternehmt] ihr >>)
+        (<< was [machst unternimmst] du mit>>)
+    ]
+
+patternmacro: ^places_together()
+    [
+        (<< wo ihr >>)
+        (<< wo mit >>)
+    ]
+
+patternmacro: ^time_together()
+    [
+        (<< [wann wie_oft wie_häufig wie_viel] [siehst seht] [du ihr] >>)
+        (<< [wann wie_oft wie_häufig wie_viel] zusammen >>)
+        (<< [wann wie_oft wie_häufig wie_viel] zeit mit >>)
+    ]

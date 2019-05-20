@@ -1,6 +1,8 @@
 topic: ~mother_t repeat ()
 
 #specific questions/answers depending on general context
+u: (wer) läuft
+
 u: () ^keep() ^refine()
     # name
     a: (^names()) Charlotte.
@@ -48,7 +50,7 @@ u: () ^keep() ^refine()
         b: ($motherCounter==3) In Mamas Zimmer.
         b: ($motherCounter==4) In Mamas Zimmer.
     # individual
-    a: (^individual()) ^refine()
+    a: (^individual()) $$intent=individual ^refine()
         b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($motherCounter==2) Meine Mama
         b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)

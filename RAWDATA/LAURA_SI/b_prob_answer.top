@@ -30,7 +30,7 @@ $$answerCategory = affirmation
 
 # SI: 80% specific answer | 10% non-answer | 10% ignorance
 # !!!SPECIFIC NOCH KODIEREN!!! UND VOR ALLEM GEHT BEI SPECIFIC EHER KEIN ^GAMBIT?
-u: (w_question)
+u: (specific)
 $$probFormat = specific:80_notAnswering:10_ignorance:10
 $$randNum = %rand
 if ($$randNum < 80) {$$answerCategory = specificAnswer ^respond(~specific)}

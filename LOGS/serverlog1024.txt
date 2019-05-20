@@ -7562,3 +7562,587 @@ ServerPre: pid: 10056 ::1 (laura_si) [rapport] Apr 10 20:21:25 2019
 Respond: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 2 [rapport]  ==> [topic:~introduction | answerCategory: | probFormat:affirmation:100 | answerContent: | emoType:neutral | actionType:nod | rapportCounter:2 | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ] Mhm.  When:Apr10 20:21:25 3ms Why:~addposthoc.1.0 ~affirmation.1.0.~prob_answer.2.0 
 ServerPre: pid: 10056 ::1 (laura_si) :reset Apr 10 20:21:27 2019
 Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ] Grüß Gott!  When:Apr10 20:21:27 3ms Version:8.2 Build0:Apr10'19-19:18:52 Build1:Apr10'19-20:18:12 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 
+evserver child fork requests: 0
+  evserver: running pid: 3039
+System startup createsystem Tue May 14 15:08:08 2019
+Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=291  fact=271  heap=58132 Compiled:May14'19-12:50:07 by version 8.8 "vicontact"
+Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 3039 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Tue May 14 15:08:10 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 3039), fork=0
+ServerPre: pid: 3039 ::1 (laura_si) :build vicontact #b May 14 15:08:15 2019
+System startup vicontact #b Tue May 14 15:08:15 2019
+System startup createsystem Tue May 14 15:08:15 2019
+Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58188 Compiled:May14'19-15:08:15 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Tue May 14 15:08:15 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 22 of : Undefined set or topic ~family line 12 in c_narrative.top    line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue May 14 15:08:15 2019  Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=292  fact=271  heap=58188 Compiled:May14'19-15:08:15 by version 8.8 "vicontact"  Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May14 15:08:18 2842ms 
+ServerPre: pid: 3039 ::1 (laura_si) :bot laura_li May 14 15:08:23 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott!  When:May14 15:08:23 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:08:15 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 3039 ::1 (laura_si) :build vicontact #a May 14 15:09:33 2019
+System startup vicontact #a Tue May 14 15:09:33 2019
+System startup createsystem Tue May 14 15:09:33 2019
+Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=291  fact=271  heap=58168 Compiled:May14'19-15:09:33 by version 8.8 "vicontact"
+Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Tue May 14 15:09:33 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 1 of c_negat.top: TOPIC-1 Concept already defined with this topic name ~negation    line 22 of : Undefined set or topic ~family line 12 in c_narrative.top  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue May 14 15:09:33 2019  Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=291  fact=271  heap=58168 Compiled:May14'19-15:09:33 by version 8.8 "vicontact"  Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May14 15:09:35 2873ms 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 3039 ::1 (laura_si) :bot laura_li May 14 15:09:37 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May14 15:09:37 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:09:33 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 3039 ::1 (laura_si) :bot laura_si May 14 15:09:42 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May14 15:09:42 2ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:09:33 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 3039 ::1 (laura_si) :build vicontact #a May 14 15:09:45 2019
+System startup vicontact #a Tue May 14 15:09:45 2019
+System startup createsystem Tue May 14 15:09:46 2019
+Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58180 Compiled:May14'19-15:09:45 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Tue May 14 15:09:45 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 22 of : Undefined set or topic ~family line 12 in c_narrative.top    line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue May 14 15:09:46 2019  Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=292  fact=271  heap=58180 Compiled:May14'19-15:09:45 by version 8.8 "vicontact"  Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May14 15:09:48 2852ms 
+ServerPre: pid: 3039 ::1 (laura_si) :bot laura_si May 14 15:09:48 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May14 15:09:48 6ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:09:45 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 3039 ::1 (laura_si) :build vicontact #b May 14 15:09:51 2019
+System startup vicontact #b Tue May 14 15:09:51 2019
+System startup createsystem Tue May 14 15:09:51 2019
+Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=291  fact=271  heap=58212 Compiled:May14'19-15:09:51 by version 8.8 "vicontact"
+Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Tue May 14 15:09:51 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 1 of c_negat.top: TOPIC-1 Concept already defined with this topic name ~negation    line 22 of : Undefined set or topic ~family line 12 in c_narrative.top  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue May 14 15:09:51 2019  Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=291  fact=271  heap=58212 Compiled:May14'19-15:09:51 by version 8.8 "vicontact"  Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May14 15:09:54 3051ms 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 3039 ::1 (laura_si) :bot laura_si May 14 15:09:55 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May14 15:09:55 1ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:09:51 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 3039 ::1 (laura_si) [invitation_to_tell]as ist denn mit deinem Onkel  May 14 15:12:43 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 1 [invitation_to_tell]as ist denn mit deinem Onkel   ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion: | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:5 | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.  When:May14 15:12:46 2998ms Why:~addposthoc.3.0 ~event_t.4.0=EVENT_2.~narrative.0.9 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]nd wie findest du dass der bei euch schläft? May 14 15:13:09 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 2 [specific]nd wie findest du dass der bei euch schläft?  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:1 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:62 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Hm.  When:May14 15:13:09 4ms Why:~addposthoc.3.0 ~notanswering.0.0.~prob_answer.4.0 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]ie findest du dass er bei euch schläft? May 14 15:13:31 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 3 [specific]ie findest du dass er bei euch schläft?  ==> [topic:~event_t | answerCategory:specific | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:2 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:23 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Der kommt einfach in mein Zimmer, obwohl ich das nicht will.  When:May14 15:13:31 3ms Why:~addposthoc.3.0 ~event_t.5.0=EVENT_3.~specific.0.8 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]er May 14 15:13:55 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 4 [specific]er  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:3 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:79 | topicSwitch: | critRevealed: | noncritTopic:3 | intent: ] Hm.  When:May14 15:13:55 2ms Why:~addposthoc.3.0 ~notanswering.0.0.~prob_answer.4.0 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]er May 14 15:14:01 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 5 [specific]er  ==> [topic:~event_t | answerCategory:specific | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:4 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:22 | topicSwitch: | critRevealed: | noncritTopic:4 | intent: ] Der nervt mich und sagt ich soll aufräumen.  When:May14 15:14:01 3ms Why:~addposthoc.3.0 ~event_t.6.0=EVENT_4.~specific.0.8 
+ServerPre: pid: 3039 ::1 (laura_si) :build vicontact #a May 14 15:14:37 2019
+System startup vicontact #a Tue May 14 15:14:37 2019
+System startup createsystem Tue May 14 15:14:38 2019
+Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58180 Compiled:May14'19-15:14:37 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Tue May 14 15:14:37 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 22 of : Undefined set or topic ~family line 12 in c_narrative.top    line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue May 14 15:14:38 2019  Server ChatScript EVSERVER Version 8.8 pid: 3039 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=292  fact=271  heap=58180 Compiled:May14'19-15:14:37 by version 8.8 "vicontact"  Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May14 15:14:40 2799ms 
+ServerPre: pid: 3039 ::1 (laura_si) :bot laura_si May 14 15:14:43 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May14 15:14:43 1ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:14:37 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]er May 14 15:14:52 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 1 [specific]er  ==> [topic:~event_t | answerCategory:specific | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:1 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:5 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.  When:May14 15:14:52 2ms Why:~addposthoc.3.0 ~event_t.4.0=EVENT_2.~specific.0.8 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]er May 14 15:14:59 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 2 [specific]er  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:2 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:62 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Hm.  When:May14 15:14:59 2ms Why:~addposthoc.3.0 ~notanswering.0.0.~prob_answer.4.0 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]er May 14 15:15:07 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 3 [specific]er  ==> [topic:~event_t | answerCategory:specific | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:3 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:23 | topicSwitch: | critRevealed: | noncritTopic:3 | intent: ] Der kommt einfach in mein Zimmer, obwohl ich das nicht will.  When:May14 15:15:07 2ms Why:~addposthoc.3.0 ~event_t.5.0=EVENT_3.~specific.0.8 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]eisst May 14 15:15:35 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 4 [specific]eisst  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:4 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:79 | topicSwitch: | critRevealed: | noncritTopic:4 | intent: ] Hm.  When:May14 15:15:35 2ms Why:~addposthoc.3.0 ~notanswering.0.0.~prob_answer.4.0 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]eisst May 14 15:15:41 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 5 [specific]eisst  ==> [topic:~event_t | answerCategory:specific | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:5 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:22 | topicSwitch: | critRevealed: | noncritTopic:5 | intent: ] Der nervt mich und sagt ich soll aufräumen.  When:May14 15:15:41 3ms Why:~addposthoc.3.0 ~event_t.6.0=EVENT_4.~specific.0.8 
+ServerPre: pid: 3039 ::1 (laura_si) 3Awhy May 14 15:15:49 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 6 3Awhy  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion:5 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:5 | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:15:49 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) [invitation_to_tell]utter May 14 15:16:22 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 7 [invitation_to_tell]utter  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion:5 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:4 | topicSwitch: | critRevealed: | noncritTopic:5 | intent: ] Er haut mir immer auf den Po. Das ist voll gemein!  When:May14 15:16:22 2ms Why:~addposthoc.3.0 ~event_t.7.0=EVENT_5.~narrative.0.9 
+ServerPre: pid: 3039 ::1 (laura_si) 3Areset May 14 15:16:52 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 8 3Areset  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion:5 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:5 | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:16:52 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) :reset May 14 15:17:18 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May14 15:17:18 3ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:14:37 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 3039 ::1 (laura_si) tt May 14 15:22:42 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 1 tt  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:22:42 3ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) 3Areset May 14 15:22:49 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 2 3Areset  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:22:49 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) nkel May 14 15:23:16 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 3 nkel  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:23:16 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) 20onkel May 14 15:23:28 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 4 20onkel  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:23:28 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) nkel May 14 15:23:35 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 5 nkel  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:23:35 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) aus May 14 15:23:38 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 6 aus  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:23:38 4ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) 20haus May 14 15:23:42 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 7 20haus  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:23:42 5ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) haus May 14 15:23:48 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 8 haus  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:23:48 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) [invitation_to_tell]mutter May 14 15:23:58 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 9 [invitation_to_tell]mutter  ==> [topic:~mother_t | answerCategory:narrative | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion: | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:23 | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Meine Mama ist immer zu Hause. Sie ist schlimm krank.  When:May14 15:23:58 2ms Why:~addposthoc.3.0 ~mother_t.2.0=MAMA_1.~narrative.0.1 
+ServerPre: pid: 3039 ::1 (laura_si) haus May 14 15:24:44 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 10 haus  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:24:44 4ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) aus May 14 15:24:47 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 11 aus  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:24:47 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) aus May 14 15:25:16 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 12 aus  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:25:16 3ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) [choice_question]aus May 14 15:26:15 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 13 [choice_question]aus  ==> [topic:~mother_t | answerCategory:options | probFormat:option_chosen:80_notAnswering:10_ignorance:10 | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber:57 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Das zweitgenannte.  When:May14 15:26:15 3ms Why:~addposthoc.3.0 ~options.0.0.~prob_answer.5.0 
+ServerPre: pid: 3039 ::1 (laura_si) Array May 14 15:26:26 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 14 Array  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:26:26 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) Array May 14 15:26:41 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 15 Array  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:26:41 1ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) :reset May 14 15:26:43 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May14 15:26:43 2ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:14:37 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 3039 ::1 (laura_si) Array May 14 15:26:52 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 1 Array  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:26:52 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) Array May 14 15:27:50 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 2 Array  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Das sollte eigentlich nicht passieren.  When:May14 15:27:50 5ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 3039 ::1 (laura_si) [facilitator]qweq May 14 15:28:26 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 3 [facilitator]qweq  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative:40_affirmation:25_notAnswering:25_reactance:10 | goodQuestion:1 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:23 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.  When:May14 15:28:26 2ms Why:~addposthoc.3.0 ~event_t.4.0=EVENT_2.~narrative.0.9 
+ServerPre: pid: 3039 ::1 (laura_si) [invitation_to_tell]bruder May 14 15:28:38 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~brother_t) 4 [invitation_to_tell]bruder  ==> [topic:~brother_t | answerCategory:narrative | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion:1 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:79 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Wenn der Leon FIFA spielt darf ich immer zugucken.  When:May14 15:28:38 2ms Why:~addposthoc.3.0 ~brother_t.2.0=BROTHER_1.~narrative.0.3 
+ServerPre: pid: 3039 ::1 (laura_si) [invitation_to_tell]mama May 14 15:28:57 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 5 [invitation_to_tell]mama  ==> [topic:~mother_t | answerCategory:narrative | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion:1 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:22 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Meine Mama ist immer zu Hause. Sie ist schlimm krank.  When:May14 15:28:57 3ms Why:~addposthoc.3.0 ~mother_t.2.0=MAMA_1.~narrative.0.1 
+ServerPre: pid: 3039 ::1 (laura_si) [specific]wer May 14 15:29:04 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 6 [specific]wer  ==> [topic:~mother_t | answerCategory:ignorance | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:2 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:13 | topicSwitch: | critRevealed: | noncritTopic:2 | intent:individual ] Ich weiß nicht.  When:May14 15:29:04 2ms Why:~addposthoc.3.0 ~ignorance.0.0.~mother_t.1.13 
+evserver child fork requests: 0
+  evserver: running pid: 2985
+System startup createsystem Wed May 15 14:25:47 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58180 Compiled:May14'19-15:14:37 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 2985 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Wed May 15 14:25:50 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 2985), fork=0
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:26:23 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:26:23 15ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May14'19-15:14:37 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) arum May 15 14:26:32 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 7 arum  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion:2 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Das sollte eigentlich nicht passieren.  When:May15 14:26:35 2891ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #a May 15 14:26:46 2019
+System startup vicontact #a Wed May 15 14:26:46 2019
+System startup createsystem Wed May 15 14:26:46 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=291  fact=271  heap=58168 Compiled:May15'19-14:26:46 by version 8.8 "vicontact"
+Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Wed May 15 14:26:46 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 1 of c_negat.top: TOPIC-1 Concept already defined with this topic name ~negation    line 22 of : Undefined set or topic ~family line 12 in c_narrative.top  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Wed May 15 14:26:46 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=291  fact=271  heap=58168 Compiled:May15'19-14:26:46 by version 8.8 "vicontact"  Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May15 14:26:49 2705ms 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:26:58 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:26:58 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:26:46 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #b May 15 14:27:00 2019
+System startup vicontact #b Wed May 15 14:27:00 2019
+System startup createsystem Wed May 15 14:27:01 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58224 Compiled:May15'19-14:27:01 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Wed May 15 14:27:00 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 22 of : Undefined set or topic ~family line 12 in c_narrative.top    line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Wed May 15 14:27:01 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=292  fact=271  heap=58224 Compiled:May15'19-14:27:01 by version 8.8 "vicontact"  Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May15 14:27:03 2865ms 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:41:51 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:41:51 5ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) jnadljnasd May 15 14:41:56 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 8 jnadljnasd  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion:2 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Das sollte eigentlich nicht passieren.  When:May15 14:41:56 5ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 2985 ::1 (laura_si) jknasldn May 15 14:41:59 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 9 jknasldn  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion:2 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Das sollte eigentlich nicht passieren.  When:May15 14:41:59 3ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 2985 ::1 (laura_si) ajosd May 15 14:42:00 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 10 ajosd  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion:2 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Das sollte eigentlich nicht passieren.  When:May15 14:42:00 4ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 2985 ::1 (laura_si) [invitation_to_tell]utter May 15 14:42:08 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 11 [invitation_to_tell]utter  ==> [topic:~mother_t | answerCategory:narrative | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion:2 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:49 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Sie muss im Bett liegen, wegen ihrem Rücken.  When:May15 14:42:08 4ms Why:~addposthoc.3.0 ~mother_t.3.0=MAMA_2.~narrative.0.9 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:42:46 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:42:46 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:43:26 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:43:26 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:43:56 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:43:56 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:44:00 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:44:00 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:44:55 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:44:55 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:46:23 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:46:23 5ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:46:28 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:46:28 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:46:28 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:46:28 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:46:29 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:46:29 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:46:30 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:46:30 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) [invitation_to_tell]utter May 15 14:46:57 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 12 [invitation_to_tell]utter  ==> [topic:~mother_t | answerCategory:ignorance | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion:2 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber:92 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Keine Ahnung.  When:May15 14:46:57 4ms Why:~addposthoc.3.0 ~ignorance.0.0.~prob_answer.1.0 
+ServerPre: pid: 2985 ::1 (laura_si) utter May 15 14:47:02 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 13 utter  ==> [topic:~mother_t | answerCategory: | probFormat: | goodQuestion:2 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Das sollte eigentlich nicht passieren.  When:May15 14:47:02 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 2985 ::1 (laura_si) [invitation_to_tell]utter May 15 14:47:10 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~mother_t) 14 [invitation_to_tell]utter  ==> [topic:~mother_t | answerCategory:narrative | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion:2 | emoType:serious | actionType:shrug | rapportCounter: | revelationState: | chatPhase:main | randomNumber:22 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Nach der Schule setze ich mich zu Mama und mache Hausaufgaben.  When:May15 14:47:10 5ms Why:~addposthoc.3.0 ~mother_t.4.0=MAMA_3.~narrative.0.9 
+ServerPre: pid: 2985 ::1 (laura_si) :reset May 15 14:47:25 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May15 14:47:25 3ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:47:38 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:47:38 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :reset May 15 14:47:40 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May15 14:47:40 2ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:47:53 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:47:53 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:47:55 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:47:55 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:47:58 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:47:58 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :reset May 15 14:47:59 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May15 14:47:59 3ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) [rapport] May 15 14:48:14 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 1 [rapport]  ==> [topic:~event_t | answerCategory:affirmation | probFormat:affirmation:100 | goodQuestion:1 | emoType:serious | actionType:nod | rapportCounter:1 | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Ja.  When:May15 14:48:14 3ms Why:~addposthoc.3.0 ~affirmation.0.0.~prob_answer.3.0 
+ServerPre: pid: 2985 ::1 (laura_si) [rapport] May 15 14:48:17 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 2 [rapport]  ==> [topic:~event_t | answerCategory:affirmation | probFormat:affirmation:100 | goodQuestion:2 | emoType:serious | actionType:nod | rapportCounter:2 | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Mhm.  When:May15 14:48:17 8ms Why:~addposthoc.3.0 ~affirmation.0.0.~prob_answer.3.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:48:20 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:48:20 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:51:33 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:51:33 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) [?] May 15 14:51:53 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 3 [?]  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion:2 | emoType:serious | actionType: | rapportCounter:2 | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ]  When:May15 14:51:53 2ms Why:~addposthoc.3.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:55:33 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 14:55:33 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-14:27:01 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #b May 15 14:55:35 2019
+System startup vicontact #b Wed May 15 14:55:35 2019
+System startup createsystem Wed May 15 14:55:35 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""
+Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Wed May 15 14:55:35 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45     ERROR SUMMARY:     *** Error- line 31 of z_laura_li_control.top:   Bad numeric # constant #table:      1 errors - press Enter to quit. Then fix and try again.      Finished compile    System startup createsystem Wed May 15 14:55:35 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""  Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB         *** Server WIDE OPEN to :command use.    When:May15 14:55:38 2945ms 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:55:43 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 () 0 ==>    When:May15 14:55:43 9ms  Version:8.8 Build0:May07'19-09:59:33 Build1: 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:55:48 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 () 0 ==>    When:May15 14:55:48 2ms  Version:8.8 Build0:May07'19-09:59:33 Build1: 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 14:55:57 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 () 0 ==>    When:May15 14:55:57 7ms  Version:8.8 Build0:May07'19-09:59:33 Build1: 
+ServerPre: pid: 2985 ::1 (laura_si)  May 15 14:55:59 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 () 3 ==>    When:May15 14:55:59 1ms  Version:8.8 Build0:May07'19-09:59:33 Build1: 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #a May 15 15:10:42 2019
+System startup vicontact #a Wed May 15 15:10:42 2019
+System startup createsystem Wed May 15 15:10:42 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=291  fact=271  heap=58168 Compiled:May15'19-15:10:42 by version 8.8 "vicontact"
+Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Wed May 15 15:10:42 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 1 of c_negat.top: TOPIC-1 Concept already defined with this topic name ~negation    line 22 of : Undefined set or topic ~family line 12 in c_narrative.top  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Wed May 15 15:10:42 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=291  fact=271  heap=58168 Compiled:May15'19-15:10:42 by version 8.8 "vicontact"  Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52332.51805.37903.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May15 15:10:44 2762ms 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 2985 ::1 (laura_si) :reset May 15 15:11:01 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ] Grüß Gott! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:May15 15:11:01 3ms Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:10:42 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #a May 15 15:11:46 2019
+System startup vicontact #a Wed May 15 15:11:46 2019
+System startup createsystem Wed May 15 15:11:46 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58180 Compiled:May15'19-15:11:46 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Wed May 15 15:11:46 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 22 of : Undefined set or topic ~family line 12 in c_narrative.top    line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Wed May 15 15:11:46 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=292  fact=271  heap=58180 Compiled:May15'19-15:11:46 by version 8.8 "vicontact"  Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52332.51804.37904.22439.11964.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May15 15:11:48 2716ms 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:11:58 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:11:58 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:11:46 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:12:00 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:12:00 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:11:46 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #b May 15 15:12:37 2019
+System startup vicontact #b Wed May 15 15:12:37 2019
+System startup createsystem Wed May 15 15:12:38 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=291  fact=271  heap=58212 Compiled:May15'19-15:12:37 by version 8.8 "vicontact"
+Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52331.51806.37903.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Wed May 15 15:12:37 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 1 of c_negat.top: TOPIC-1 Concept already defined with this topic name ~negation    line 22 of : Undefined set or topic ~family line 12 in c_narrative.top  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Wed May 15 15:12:38 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=291  fact=271  heap=58212 Compiled:May15'19-15:12:37 by version 8.8 "vicontact"  Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52331.51806.37903.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May15 15:12:40 2718ms 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:12:43 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:12:43 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:12:37 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:12:44 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:12:44 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:12:37 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #c May 15 15:13:11 2019
+System startup vicontact #c Wed May 15 15:13:11 2019
+System startup createsystem Wed May 15 15:13:11 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58484 Compiled:May15'19-15:13:11 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52331.51805.37904.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #c  ==> System startup vicontact #c Wed May 15 15:13:11 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 22 of : Undefined set or topic ~family line 12 in c_narrative.top    line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Wed May 15 15:13:11 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=292  fact=271  heap=58484 Compiled:May15'19-15:13:11 by version 8.8 "vicontact"  Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52331.51805.37904.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May15 15:13:13 2780ms 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:13:23 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:13:23 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:13:11 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:13:27 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:13:27 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:13:11 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #c May 15 15:15:04 2019
+System startup vicontact #c Wed May 15 15:15:04 2019
+System startup createsystem Wed May 15 15:15:04 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=291  fact=271  heap=58472 Compiled:May15'19-15:15:04 by version 8.8 "vicontact"
+Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52331.51806.37903.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #c  ==> System startup vicontact #c Wed May 15 15:15:04 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 1 of c_negat.top: TOPIC-1 Concept already defined with this topic name ~negation    line 22 of : Undefined set or topic ~family line 12 in c_narrative.top  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Wed May 15 15:15:04 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=291  fact=271  heap=58472 Compiled:May15'19-15:15:04 by version 8.8 "vicontact"  Used 70MB: dict 489,147 (43045kb) hashdepths 28358.52331.51806.37903.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489147 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,003 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May15 15:15:07 2923ms 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:15:07 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:15:07 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:16:02 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:16:02 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:16:06 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:16:06 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:16:08 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:16:08 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:16:08 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:16:08 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:16:09 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:16:09 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:20:12 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:20:12 8ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:20:15 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:20:15 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:20:36 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:20:36 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:20:59 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:20:59 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:21:03 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:21:03 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:15:04 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) [invitation_to_tell] May 15 15:22:39 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 1 [invitation_to_tell]  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative:80_notAnswering:10_ignorance:10 | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber:5 | topicSwitch: | critRevealed: | noncritTopic: | intent: ]  When:May15 15:22:39 7ms Why:~addposthoc.3.0 
+ServerPre: pid: 2985 ::1 (laura_si) :build vicontact #c May 15 15:22:47 2019
+System startup vicontact #c Wed May 15 15:22:47 2019
+System startup createsystem Wed May 15 15:22:47 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58484 Compiled:May15'19-15:22:47 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52331.51805.37904.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:laura_si ip:127.0.0.1 () 0 :build vicontact #c  ==> System startup vicontact #c Wed May 15 15:22:47 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 22 of : Undefined set or topic ~family line 12 in c_narrative.top    line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 107 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Wed May 15 15:22:47 2019  Server ChatScript EVSERVER Version 8.8 pid: 2985 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=292  fact=271  heap=58484 Compiled:May15'19-15:22:47 by version 8.8 "vicontact"  Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52331.51805.37904.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB         *** Server WIDE OPEN to :command use.    When:May15 15:22:50 2714ms 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:22:53 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:22:53 6ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) [facilitator] May 15 15:23:03 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 2 [facilitator]  ==> [topic:~event_t | answerCategory:affirmation | probFormat:narrative:40_affirmation:25_notAnswering:25_reactance:10 | goodQuestion:1 | emoType:serious | actionType:nod | rapportCounter: | revelationState: | chatPhase:main | randomNumber:62 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Ja.  When:May15 15:23:03 2ms Why:~addposthoc.3.0 ~affirmation.0.0.~prob_answer.2.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:25:10 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:25:10 6ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:25:11 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:25:11 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:25:12 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:25:12 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:25:12 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:25:12 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:25:23 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:25:23 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:25:24 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:25:24 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:25:24 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:25:24 5ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:25:25 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:25:25 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:27:09 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:27:09 7ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:27:11 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:27:11 5ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:27:13 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:27:13 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:27:14 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:27:14 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:27:16 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:27:16 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:27:35 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:27:35 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:27:36 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:27:36 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_li) :reset May 15 15:27:38 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:27:38 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) :bot laura_li May 15 15:45:47 2019
+Start: user:::1 bot:laura_si ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 15:45:47 9ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 2985 ::1 (laura_si) jkjb May 15 16:00:32 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 3 jkjb  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion:1 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Das sollte eigentlich nicht passieren.  When:May15 16:00:32 8ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 2985 ::1 (laura_si) dfsdf May 15 16:00:54 2019
+Respond: user:::1 bot:laura_si ip:127.0.0.1 (~event_t) 4 dfsdf  ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion:1 | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Das sollte eigentlich nicht passieren.  When:May15 16:00:54 3ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+ServerPre: pid: 2985 Heino (laura_li) [invitation_to_tell]jnkjn May 15 16:08:58 2019
+Respond: user:Heino bot:laura_li ip:127.0.0.1 (~introduction) 1 [invitation_to_tell]jnkjn  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 16:08:58 5ms Why:~addposthoc.3.0 ~introduction.0.0.~control.2.0 
+ServerPre: pid: 2985 Heino (laura_li) [specific]ie geht es dir May 15 16:09:50 2019
+Respond: user:Heino bot:laura_li ip:127.0.0.1 (~introduction) 2 [specific]ie geht es dir  ==> [topic:~introduction | answerCategory:specific | probFormat:specific:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:1 | emoType:serious | actionType:shrug | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber:35 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ]  When:May15 16:09:50 7ms Why:~addposthoc.3.0 
+ServerPre: pid: 2985 Heino (laura_li) [invitation_to_tell]Hallo May 15 16:10:04 2019
+Respond: user:Heino bot:laura_li ip:127.0.0.1 (~introduction) 3 [invitation_to_tell]Hallo  ==> [topic:~introduction | answerCategory:notAnswering | probFormat:narrative:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:2 | emoType:serious | actionType:shrug | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber:68 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Hm.  When:May15 16:10:04 4ms Why:~addposthoc.3.0 ~notanswering.0.0.~prob_answer.0.6 
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+ServerPre: pid: 2985 Heino (laura_li)  May 15 16:10:24 2019
+Start: user:Heino bot:laura_li ip:127.0.0.1 (~introduction) 3 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:2 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Das sollte eigentlich nicht passieren.  When:May15 16:10:24 2ms Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0 
+ServerPre: pid: 2985 Heino (laura_li) :reset May 15 16:10:44 2019
+Start: user:Heino bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May15 16:10:44 5ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May15'19-15:22:47 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+evserver child fork requests: 0
+  evserver: running pid: 7817
+System startup createsystem Thu May 16 15:47:41 2019
+Server ChatScript EVSERVER Version 8.8 pid: 7817 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=292  fact=271  heap=58484 Compiled:May15'19-15:22:47 by version 8.8 "vicontact"
+Used 70MB: dict 489,148 (43045kb) hashdepths 28358.52331.51805.37904.22440.11963.5629.2713.1183.488.212.65.27.4.3.2.1. words 489148 unusedbuckets 28358 fact 128,273 (6157kb) heap 9885kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,002 fact 671,727 stack/heap 90,114KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 7817 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Thu May 16 15:47:44 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 7817), fork=0
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+evserver: received invalid request from 6, ignoring
+ServerPre: pid: 7817 ::1 () :build vicontact #a May 16 15:50:45 2019
+System startup vicontact #a Thu May 16 15:50:45 2019
+System startup createsystem Thu May 16 15:50:45 2019
+Server ChatScript EVSERVER Version 8.8 pid: 7817 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""
+Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot: ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Thu May 16 15:50:45 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45     ERROR SUMMARY:     *** Error- line 133 of z_laura_li_control.top:   CALL-60 Incorrect argument count to system function ^callstack- given 0 instead of required 1      1 errors - press Enter to quit. Then fix and try again.      Finished compile    System startup createsystem Thu May 16 15:50:45 2019  Server ChatScript EVSERVER Version 8.8 pid: 7817 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""  Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB         *** Server WIDE OPEN to :command use.    When:May16 15:50:48 3058ms 
+ServerPre: pid: 7817 ::1 () :bot laura_li May 16 15:50:50 2019
+Start: user:::1 bot: ip:127.0.0.1 () 0 ==>    When:May16 15:50:50 1ms  Version:8.8 Build0:May07'19-09:59:33 Build1: 
+ServerPre: pid: 7817 ::1 () :bot laura_li May 16 15:50:55 2019
+Start: user:::1 bot: ip:127.0.0.1 () 0 ==>    When:May16 15:50:55 0ms  Version:8.8 Build0:May07'19-09:59:33 Build1: 
+ServerPre: pid: 7817 ::1 (laura_li) qwe May 16 15:51:01 2019
+Respond: user:::1 bot:laura_li ip:127.0.0.1 () 1 qwe  ==>    When:May16 15:51:01 9ms 
+ServerPre: pid: 7817 ::1 (laura_li) qwe May 16 15:51:12 2019
+Respond: user:::1 bot:laura_li ip:127.0.0.1 () 1 qwe  ==>    When:May16 15:51:12 4ms 
+ServerPre: pid: 7817 ::1 () :build vicontact #b May 16 15:51:53 2019
+System startup vicontact #b Thu May 16 15:51:53 2019
+System startup createsystem Thu May 16 15:51:53 2019
+Server ChatScript EVSERVER Version 8.8 pid: 7817 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""
+Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot: ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Thu May 16 15:51:53 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45     ERROR SUMMARY:     *** Error- line 133 of z_laura_li_control.top:   CALL-60 Incorrect argument count to system function ^callstack- given 0 instead of required 1      1 errors - press Enter to quit. Then fix and try again.      Finished compile    System startup createsystem Thu May 16 15:51:53 2019  Server ChatScript EVSERVER Version 8.8 pid: 7817 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""  Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB         *** Server WIDE OPEN to :command use.    When:May16 15:51:55 2763ms 
+ServerPre: pid: 7817 ::1 (laura_li) qweqwe May 16 15:52:03 2019
+Respond: user:::1 bot:laura_li ip:127.0.0.1 () 1 qweqwe  ==>    When:May16 15:52:03 2ms 
+ServerPre: pid: 7817 ::1 () :build vicontact #a May 16 15:53:15 2019
+System startup vicontact #a Thu May 16 15:53:15 2019
+System startup createsystem Thu May 16 15:53:16 2019
+Server ChatScript EVSERVER Version 8.8 pid: 7817 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""
+Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot: ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Thu May 16 15:53:15 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45     ERROR SUMMARY:     *** Error- line 133 of z_laura_li_control.top:   CALL-60 Incorrect argument count to system function ^callstack- given 0 instead of required 1      1 errors - press Enter to quit. Then fix and try again.      Finished compile    System startup createsystem Thu May 16 15:53:16 2019  Server ChatScript EVSERVER Version 8.8 pid: 7817 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""  Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB         *** Server WIDE OPEN to :command use.    When:May16 15:53:18 2727ms 
+ServerPre: pid: 7817 ::1 (laura_li) [invitation_to_tell]qweqwe May 16 15:53:37 2019
+Respond: user:::1 bot:laura_li ip:127.0.0.1 () 1 [invitation_to_tell]qweqwe  ==>    When:May16 15:53:37 2ms 

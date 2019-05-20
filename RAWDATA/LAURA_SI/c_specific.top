@@ -11,5 +11,5 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
     a: (~school) ^respond(~school_t)
     a: ([dir dein du dich]) ^respond(~personal_t)
     # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus
-    a: () ^respond(~)
+    a: () ^respond(%topic)
   

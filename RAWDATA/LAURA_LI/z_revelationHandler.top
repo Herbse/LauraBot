@@ -1,4 +1,0 @@
-outputmacro: ^revelationHandler()
-
-
-if ($goodQuestion > 1 AND $noncritTopic > 3) {$chatPhase = main $revelationState = 1}
