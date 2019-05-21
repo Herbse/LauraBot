@@ -8146,3 +8146,81 @@ Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB
 Respond: user:::1 bot: ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Thu May 16 15:53:15 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45     ERROR SUMMARY:     *** Error- line 133 of z_laura_li_control.top:   CALL-60 Incorrect argument count to system function ^callstack- given 0 instead of required 1      1 errors - press Enter to quit. Then fix and try again.      Finished compile    System startup createsystem Thu May 16 15:53:16 2019  Server ChatScript EVSERVER Version 8.8 pid: 7817 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=0  fact=0  heap=136 Compiled: by version  ""  Used 70MB: dict 488,856 (43019kb) hashdepths 28391.52344.51813.37903.22433.11943.5619.2705.1182.482.212.65.26.4.3.2.1. words 488856 unusedbuckets 28391 fact 128,002 (6144kb) heap 9827kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,294 fact 671,998 stack/heap 90,172KB         *** Server WIDE OPEN to :command use.    When:May16 15:53:18 2727ms 
 ServerPre: pid: 7817 ::1 (laura_li) [invitation_to_tell]qweqwe May 16 15:53:37 2019
 Respond: user:::1 bot:laura_li ip:127.0.0.1 () 1 [invitation_to_tell]qweqwe  ==>    When:May16 15:53:37 2ms 
+evserver child fork requests: 0
+  evserver: running pid: 14197
+System startup createsystem Tue May 21 09:57:11 2019
+Server ChatScript EVSERVER Version 8.8 pid: 14197 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=302  fact=273  heap=60016 Compiled:May20'19-13:37:46 by version 8.8 "vicontact"
+Used 70MB: dict 489,158 (43045kb) hashdepths 28357.52331.51805.37902.22440.11966.5629.2713.1182.489.212.65.27.4.3.2.1. words 489158 unusedbuckets 28357 fact 128,275 (6157kb) heap 9887kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,992 fact 671,725 stack/heap 90,112KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 14197 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Tue May 21 09:57:14 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 14197), fork=0
+ServerPre: pid: 14197 ::1 () :build vicontact #a May 21 10:00:25 2019
+System startup vicontact #a Tue May 21 10:00:25 2019
+System startup createsystem Tue May 21 10:00:25 2019
+Server ChatScript EVSERVER Version 8.8 pid: 14197 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=303  fact=273  heap=60192 Compiled:May21'19-10:00:25 by version 8.8 "vicontact"
+Used 70MB: dict 489,159 (43046kb) hashdepths 28357.52331.51804.37903.22440.11966.5629.2713.1182.489.212.65.27.4.3.2.1. words 489159 unusedbuckets 28357 fact 128,275 (6157kb) heap 9887kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,991 fact 671,725 stack/heap 90,112KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot: ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Tue May 21 10:00:25 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  1 serious warnings, 0 function warnings, 0 spelling warnings, 119 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue May 21 10:00:25 2019  Server ChatScript EVSERVER Version 8.8 pid: 14197 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=303  fact=273  heap=60192 Compiled:May21'19-10:00:25 by version 8.8 "vicontact"  Used 70MB: dict 489,159 (43046kb) hashdepths 28357.52331.51804.37903.22440.11966.5629.2713.1182.489.212.65.27.4.3.2.1. words 489159 unusedbuckets 28357 fact 128,275 (6157kb) heap 9887kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,607,991 fact 671,725 stack/heap 90,112KB         *** Server WIDE OPEN to :command use.    When:May21 10:00:27 2496ms 
+ServerPre: pid: 14197 ::1 () :bot laura_li May 21 10:00:33 2019
+Start: user:::1 bot: ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May21 10:00:33 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May21'19-10:00:25 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 14197 ::1 (laura_li) [invitation_to_tell]Testo May 21 10:00:55 2019
+Respond: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 1 [invitation_to_tell]Testo  ==> [topic:~introduction | answerCategory:narrative | probFormat:narrative:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:1 | emoType:serious | actionType:shrug | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber:5 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ]  When:May21 10:00:58 2837ms Why:~addposthoc.3.0 
+ServerPre: pid: 14197 ::1 (laura_li) [invitation_to_tell]Bruder May 21 10:01:23 2019
+Respond: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 2 [invitation_to_tell]Bruder  ==> [topic:~introduction | answerCategory:notAnswering | probFormat:narrative:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:2 | emoType:serious | actionType:shrug | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber:62 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Hm.  When:May21 10:01:23 2ms Why:~addposthoc.3.0 ~notanswering.0.0.~prob_answer.0.6 
+ServerPre: pid: 14197 ::1 () ljkdlkjsdflk May 21 10:01:51 2019
+Respond: user:::1 bot: ip:127.0.0.1 (��Why:~addposthoc.3.0 ~notanswering.0.0.~prob_answer.0.6 ) 0 ljkdlkjsdflk  ==> No such bot.    When:May21 10:01:51 0ms ion | answerCategory:notAnswering | probFormat:narrative:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:2 | emoType:serious | actionType:shrug | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber:62 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: ] Hm.
+ServerPre: pid: 14197 ::1 () :build vicontact #a May 21 10:15:34 2019
+System startup vicontact #a Tue May 21 10:15:34 2019
+System startup createsystem Tue May 21 10:15:34 2019
+Server ChatScript EVSERVER Version 8.8 pid: 14197 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=302  fact=273  heap=60180 Compiled:May21'19-10:15:34 by version 8.8 "vicontact"
+Used 70MB: dict 489,158 (43045kb) hashdepths 28357.52331.51805.37902.22440.11966.5629.2713.1182.489.212.65.27.4.3.2.1. words 489158 unusedbuckets 28357 fact 128,275 (6157kb) heap 9887kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,992 fact 671,725 stack/heap 90,112KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot: ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Tue May 21 10:15:34 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 1 of c_negat.top: TOPIC-1 Concept already defined with this topic name ~negation  1 serious warnings, 0 function warnings, 0 spelling warnings, 119 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue May 21 10:15:34 2019  Server ChatScript EVSERVER Version 8.8 pid: 14197 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=302  fact=273  heap=60180 Compiled:May21'19-10:15:34 by version 8.8 "vicontact"  Used 70MB: dict 489,158 (43045kb) hashdepths 28357.52331.51805.37902.22440.11966.5629.2713.1182.489.212.65.27.4.3.2.1. words 489158 unusedbuckets 28357 fact 128,275 (6157kb) heap 9887kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,607,992 fact 671,725 stack/heap 90,112KB         *** Server WIDE OPEN to :command use.    When:May21 10:15:36 2691ms 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 14197 ::1 (laura_li) :reset May 21 10:16:33 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May21 10:16:33 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May21'19-10:15:34 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 14197 ::1 (laura_li) :reset May 21 10:16:35 2019
+Start: user:::1 bot:laura_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May21 10:16:35 1ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May21'19-10:15:34 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 14197 ::1 () :build vicontact #b May 21 10:16:49 2019
+System startup vicontact #b Tue May 21 10:16:49 2019
+System startup createsystem Tue May 21 10:16:49 2019
+Server ChatScript EVSERVER Version 8.8 pid: 14197 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=303  fact=273  heap=60236 Compiled:May21'19-10:16:49 by version 8.8 "vicontact"
+Used 70MB: dict 489,159 (43046kb) hashdepths 28357.52331.51804.37903.22440.11966.5629.2713.1182.489.212.65.27.4.3.2.1. words 489159 unusedbuckets 28357 fact 128,275 (6157kb) heap 9887kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,991 fact 671,725 stack/heap 90,112KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot: ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Tue May 21 10:16:49 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 130 of z_laura_li_control.top: At least one duplicate topic name, i.e., ~negation, which may intended if bot restrictions differ.  1 serious warnings, 0 function warnings, 0 spelling warnings, 119 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue May 21 10:16:49 2019  Server ChatScript EVSERVER Version 8.8 pid: 14197 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=303  fact=273  heap=60236 Compiled:May21'19-10:16:49 by version 8.8 "vicontact"  Used 70MB: dict 489,159 (43046kb) hashdepths 28357.52331.51804.37903.22440.11966.5629.2713.1182.489.212.65.27.4.3.2.1. words 489159 unusedbuckets 28357 fact 128,275 (6157kb) heap 9887kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,607,991 fact 671,725 stack/heap 90,112KB         *** Server WIDE OPEN to :command use.    When:May21 10:16:52 2716ms 
+ServerPre: pid: 14197 ::1 () :bot laura_li May 21 10:16:59 2019
+Start: user:::1 bot: ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:May21 10:16:59 2ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:May21'19-10:16:49 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 14197 ::1 (laura_li) [invitation_to_tell]Erzähl doch mal warum du hier bist. May 21 10:17:46 2019
+Respond: user:::1 bot:laura_li ip:127.0.0.1 (~friends_t) 1 [invitation_to_tell]Erzähl doch mal warum du hier bist.  ==> [topic:~friends_t | answerCategory:narrative | probFormat:narrative:60_notAnswering:20_ignorance:10_reactance:10 | goodQuestion:1 | emoType:serious | actionType:shrug | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber:5 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: ] Mira und ich sind beste Freundinnen.  When:May21 10:17:46 6ms Why:~addposthoc.3.0 ~friends_t.2.0=FRIEND_1.~narrative.0.15 
