@@ -7,6 +7,7 @@ patternmacro: ^general_question()
     ([was worüber] [möchtest willst magst] du ~narrate)
     (was liegt dir auf der seele)
     (was ist los)
+    (was beschäftigt)
     (<< wie [läuft läufts]>>)
 ]
 

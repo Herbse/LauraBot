@@ -3,7 +3,7 @@ topic: ~prob_answer keep repeat nostay()
 
 # LI: BASIS | 60% narrative | 20% non-answer | 10% ignorance | 10% reactance
 # LI: MAX   | 80% narrative | 10% non-answer |  5% ignorance |  5% reactance
-u: ($cs_bot=laura_li invitation_to_tell) ^refine() $goodQuestion += 1 $noncritTopic += 1
+u: ($cs_bot=laura_li rapport invitation_to_tell) ^refine() $goodQuestion += 1 $noncritTopic += 1 $rapportCounter += 1
     
     a: ($rapportCounter==-5)
         $$probFormat = narrative:40_notAnswering:30_ignorance:15_reactance:15
@@ -83,6 +83,95 @@ u: ($cs_bot=laura_li invitation_to_tell) ^refine() $goodQuestion += 1 $noncritTo
         else if ($$randNum < 95) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
 
+u: ($cs_bot=laura_li invitation_to_tell) ^refine() $goodQuestion += 1 $noncritTopic += 1 
+    a: ($rapportCounter==-5)
+        $$probFormat = narrative:40_notAnswering:30_ignorance:15_reactance:15
+        $$randNum = %rand
+        if ($$randNum < 40) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 70) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 85) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==-4)
+        $$probFormat = narrative:44_notAnswering:28_ignorance:14_reactance:14
+        $$randNum = %rand
+        if ($$randNum < 44) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 72) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 86) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==-3)
+        $$probFormat = narrative:48_notAnswering:26_ignorance:13_reactance:13
+        $$randNum = %rand
+        if ($$randNum < 48) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 74) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 87) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==-2)
+        $$probFormat = narrative:52_notAnswering:24_ignorance:12_reactance:12
+        $$randNum = %rand
+        if ($$randNum < 52) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 76) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 88) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==-1)
+        $$probFormat = narrative:56_notAnswering:22_ignorance:11_reactance:11
+        $$randNum = %rand
+        if ($$randNum < 56) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 78) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 89) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==0)
+        $$probFormat = narrative:60_notAnswering:20_ignorance:10_reactance:10
+        $$randNum = %rand
+        if ($$randNum < 60) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 80) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 90) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==1)
+        $$probFormat = narrative:64_notAnswering:18_ignorance:9_reactance:9
+        $$randNum = %rand
+        if ($$randNum < 64) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 82) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 91) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==2)
+        $$probFormat = narrative:68_notAnswering:16_ignorance:8_reactance:8
+        $$randNum = %rand
+        if ($$randNum < 68) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 84) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 92) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==3)
+        $$probFormat = narrative:72_notAnswering:14_ignorance:7_reactance:7
+        $$randNum = %rand
+        if ($$randNum < 72) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 86) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 93) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==4)
+        $$probFormat = narrative:76_notAnswering:12_ignorance:6_reactance:6
+        $$randNum = %rand
+        if ($$randNum < 76) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 88) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 94) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+    a: ($rapportCounter==5)
+        $$probFormat = narrative:80_notAnswering:10_ignorance:5_reactance:5
+        $$randNum = %rand
+        if ($$randNum < 80) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 95) {$$answerCategory = ignorance ^respond(~ignorance)}
+        else {$$answerCategory = reactance ^respond(~reactance)}
+
+
+# SI: 80% narrative | 10% non-answer | 10 % ignorance
+u: ($cs_bot=laura_si rapport invitation_to_tell) 
+$rapportCounter += 1
+$$probFormat = narrative:80_notAnswering:10_ignorance:10
+$$randNum = %rand
+if ($$randNum < 80) {$$answerCategory = narrative ^respond(~narrative)}
+else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+else {$$answerCategory = ignorance ^respond(~ignorance)}
+
 # SI: 80% narrative | 10% non-answer | 10 % ignorance
 u: ($cs_bot=laura_si invitation_to_tell) 
 $$probFormat = narrative:80_notAnswering:10_ignorance:10
@@ -94,7 +183,8 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 # LI: 40% narrative(same topic) | 25% affirmation? | 25% non-answer | 10% reactance ->WENN ERSCHÖPFT 50% ignorance | 25% non-answer | 25% reactance
 # HIER NOCH DIE KODIERUNG FÜR SAME UND DIFFERENT TOPIC EINBAUEN
-u: (facilitator) 
+u: ($cs_bot=laura_li rapport facilitator) 
+$rapportCounter += 1
 $goodQuestion += 1
 $noncritTopic += 1
 $$probFormat = narrative:40_affirmation:25_notAnswering:25_reactance:10
@@ -104,19 +194,37 @@ else if ($$randNum < 65) {$$answerCategory = affirmation ^respond(~affirmation)}
 else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
 else {$$answerCategory = reactance ^respond(~reactance)}
 
-# rapport: 100% affirmation + rapport counter
-u: (rapport)
-$goodQuestion += 1
-$$probFormat = affirmation:100
+u: ($cs_bot=laura_si rapport facilitator) 
 $rapportCounter += 1
-$$answerCategory = affirmation ^respond(~affirmation)
+$$probFormat = narrative:60_affirmation:20_notAnswering:10
+$$randNum = %rand
+if ($$randNum < 60) {$$answerCategory = narrative ^respond(~narrative)}
+else if ($$randNum < 80) {$$answerCategory = affirmation ^respond(~affirmation)}
+else {$$answerCategory = notAnswering ^respond(~notAnswering)}
 
+u: ($cs_bot=laura_li facilitator) 
+$goodQuestion += 1
+$noncritTopic += 1
+$$probFormat = narrative:40_affirmation:25_notAnswering:25_reactance:10
+$$randNum = %rand
+if ($$randNum < 40) {$$answerCategory = narrative ^respond(~narrative)}
+else if ($$randNum < 65) {$$answerCategory = affirmation ^respond(~affirmation)}
+else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+else {$$answerCategory = reactance ^respond(~reactance)}
+
+u: ($cs_bot=laura_si facilitator) 
+$$probFormat = narrative:60_affirmation:20_notAnswering:10
+$$randNum = %rand
+if ($$randNum < 60) {$$answerCategory = narrative ^respond(~narrative)}
+else if ($$randNum < 80) {$$answerCategory = affirmation ^respond(~affirmation)}
+else {$$answerCategory = notAnswering ^respond(~notAnswering)}
 
 
 
 # LI: 60% specific answer | 20% non-answer | 10% ignorance | 10% reactance
-u: (specific)
-$goodQuestion += 1
+u: ($cs_bot=laura_li rapport specific)
+$rapportCounter += 1
+$goodQuestion +=' 1
 $noncritTopic += 1
 $$probFormat = specific:60_notAnswering:20_ignorance:10_reactance:10
 $$randNum = %rand
@@ -124,6 +232,32 @@ if ($$randNum < 60) {$$answerCategory = specific ^respond(~specific)}
 else if ($$randNum < 80) {$$answerCategory = notAnswering ^respond(~notAnswering)}
 else if ($$randNum < 90) {$$answerCategory = ignorance ^respond(~ignorance)}
 else {$$answerCategory = reactance ^respond(~reactance))
+
+u: ($cs_bot=laura_si rapport specific)
+$rapportCounter += 1
+$$probFormat = specific:80_notAnswering:10_ignorance:10
+$$randNum = %rand
+if ($$randNum < 80) {$$answerCategory = specific ^respond(~specific)}
+else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+else {$$answerCategory = ignorance ^respond(~ignorance))
+
+u: ($cs_bot=laura_li specific)
+$goodQuestion +=' 1
+$noncritTopic += 1
+$$probFormat = specific:60_notAnswering:20_ignorance:10_reactance:10
+$$randNum = %rand
+if ($$randNum < 60) {$$answerCategory = specific ^respond(~specific)}
+else if ($$randNum < 80) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+else if ($$randNum < 90) {$$answerCategory = ignorance ^respond(~ignorance)}
+else {$$answerCategory = reactance ^respond(~reactance))
+
+u: ($cs_bot=laura_si specific)
+$$probFormat = specific:80_notAnswering:10_ignorance:10
+$$randNum = %rand
+if ($$randNum < 80) {$$answerCategory = specific ^respond(~specific)}
+else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+else {$$answerCategory = ignorance ^respond(~ignorance))
+
 
 
 # 80% option-choosen | 10% non-answer | 10% ignorance
@@ -181,5 +315,26 @@ else if ($$randNum < 90){$$answerCategory = negation ^respond(~negation)}
 else if ($$randNum < 95){$$answerCategory = ignorance ^respond(~ignorance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
+u: (relevance)
+$$probFormat = specific:100
+#a $$answerCategory = specific Als wir neulich im Schwimmbad waren.
+#b $$answerCategory = specific Das letzte Mal war an Mamas Geburtstag.
+#c $$answerCategory = specific Na das war letztes Wochenende.
 
+u: (frequency)
+$$probFormat = specific:100
+#a $$answerCategory = specific Das war nur einmal.
+#b $$answerCategory = specific Wenn er sauer ist halt. Schon ein paar mal.
+#c $$answerCategory = specific Na das war letztes Wochenende.
 
+u: (information)
+$$probFormat = affirmation:100
+$$answerCategory = affirmation ^respond(~affirmation)
+
+u: (support)
+$$probFormat = negation:100
+$$answerCategory = negation ^respond(~negation)
+
+u: (revelation)
+$$probFormat = specific:100
+$$answerCategory = specific Nein, noch niemand.
