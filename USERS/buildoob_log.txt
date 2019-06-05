@@ -2,6 +2,12 @@
 
 >>Reading folder RAWDATA/OOB/
 
+----Reading file testevent2.top
+Reading topic ~event_t
+
+----Reading file testevent1.top
+Reading topic ~event_t
+
 ----Reading file simpletopic.top
 Reading outputmacro: ^myfunc
 Reading topic ~xpostagsentence
@@ -19,6 +25,7 @@ Reading topic ~handle_oob
 ----Reading file simplecontrol.top
 Rename @9 as @chatoutput
 Reading outputmacro: ^oob
+Reading outputmacro: ^oobi
 Reading topic ~xrejoinder
 Reading table ^tbl:defaultbot
 Reading topic ~control
@@ -39,10 +46,12 @@ Reading topic ~keywordless
 
 <<end folder RAWDATA/OOB
 *** Warning-  Undefined set or topic ~school line 12 in introduction.top
+*** Warning- line 19 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
 
 WARNING SUMMARY: 
   line 1 of : Undefined set or topic ~school line 12 in introduction.top
-1 serious warnings, 0 function warnings, 0 spelling warnings, 11 case warnings, 0 substitution warnings
+  line 19 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
+2 serious warnings, 0 function warnings, 0 spelling warnings, 11 case warnings, 0 substitution warnings
     
 
 Finished compile

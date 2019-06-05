@@ -1,6 +1,8 @@
 topic: ~handle_oob nostay()
 
-u: (test) Das ist der Test ^keep() ^repeat()
+u: ({_ein} test) 
+if ('_0==ein) {Test bestanden}
+Das ist der Test ^keep() ^repeat()
 
 u: (testc) $closed=1 ^keep() ^repeat()
 

@@ -1,5 +1,0 @@
-topic: ~answer_roulette keep repeat nostay()
-
-u: ($closed_question=1) $closed_question=0 [Ja][Nein][Ich weiß nicht.][Keine Ahnung.][Mhm.][Nee]
-u: ($closed_question_emo=1) $closed_question_emo=0 [Naja, es geht so.] [Nicht gut.] [Weiß nicht][Ganz okay.]
-u: ($closed_question_prob=1) $closed_question_prob=0 [Nein, da ist nichts.] [Probleme habe ich keine.]

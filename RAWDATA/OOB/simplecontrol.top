@@ -10,6 +10,16 @@ $userprompt = ^"%user: >"
 $botprompt = ^"OOB: "
 $cs_token = #NO_HYPHEN_END | #DO_INTERJECTION_SPLITTING  | #DO_SUBSTITUTE_SYSTEM   | #DO_NUMBER_MERGE | #DO_DATE_MERGE  
 
+
+outputmacro: oobi() 
+^addtopic(~introduction)
+$cs_control_main = ~control
+$cs_language = german
+$cs_externaltag = ~xPOSTAGSENTENCE 
+$userprompt = ^"%user: >"
+$botprompt = ^"OOBI: "
+$cs_token = #NO_HYPHEN_END | #DO_INTERJECTION_SPLITTING  | #DO_SUBSTITUTE_SYSTEM   | #DO_NUMBER_MERGE | #DO_DATE_MERGE  
+
 topic: ~xrejoinder system repeat ()
 
 # simple rejoinder

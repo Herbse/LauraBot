@@ -23,6 +23,83 @@ $botprompt = ^"Laura_si: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
+outputmacro: andre() 
+^addtopic(~introduction)
+$cs_control_main = ~control
+$cs_control_post = ~addposthoc # test post-processing 
+$cs_language = german
+$cs_externaltag = ~xPOSTAGSENTENCE 
+$userprompt = ^"%user: >"
+$botprompt = ^"André: "
+$singleResponse = 1 # issue only 1 output message    
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
+
+outputmacro: sara() 
+^addtopic(~introduction)
+$cs_control_main = ~control
+$cs_control_post = ~addposthoc # test post-processing 
+$cs_language = german
+$cs_externaltag = ~xPOSTAGSENTENCE 
+$userprompt = ^"%user: >"
+$botprompt = ^"Sara: "
+$singleResponse = 1 # issue only 1 output message    
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
+
+outputmacro: jason() 
+^addtopic(~introduction)
+$cs_control_main = ~control
+$cs_control_post = ~addposthoc # test post-processing 
+$cs_language = german
+$cs_externaltag = ~xPOSTAGSENTENCE 
+$userprompt = ^"%user: >"
+$botprompt = ^"Jason: "
+$singleResponse = 1 # issue only 1 output message    
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
+
+outputmacro: constantin() 
+^addtopic(~introduction)
+$cs_control_main = ~control
+$cs_control_post = ~addposthoc # test post-processing 
+$cs_language = german
+$cs_externaltag = ~xPOSTAGSENTENCE 
+$userprompt = ^"%user: >"
+$botprompt = ^"Constantin: "
+$singleResponse = 1 # issue only 1 output message    
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
+
+outputmacro: luisa() 
+^addtopic(~introduction)
+$cs_control_main = ~control
+$cs_control_post = ~addposthoc # test post-processing 
+$cs_language = german
+$cs_externaltag = ~xPOSTAGSENTENCE 
+$userprompt = ^"%user: >"
+$botprompt = ^"Luisa: "
+$singleResponse = 1 # issue only 1 output message    
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
+
+outputmacro: natalia() 
+^addtopic(~introduction)
+$cs_control_main = ~control
+$cs_control_post = ~addposthoc # test post-processing 
+$cs_language = german
+$cs_externaltag = ~xPOSTAGSENTENCE 
+$userprompt = ^"%user: >"
+$botprompt = ^"Natalia: "
+$singleResponse = 1 # issue only 1 output message    
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
+
+outputmacro: simon() 
+^addtopic(~introduction)
+$cs_control_main = ~control
+$cs_control_post = ~addposthoc # test post-processing 
+$cs_language = german
+$cs_externaltag = ~xPOSTAGSENTENCE 
+$userprompt = ^"%user: >"
+$botprompt = ^"Simon: "
+$singleResponse = 1 # issue only 1 output message    
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
+
 topic: ~xrejoinder system repeat ()
 
 # simple rejoinder

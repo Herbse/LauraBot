@@ -1,6 +1,6 @@
 topic: ~introduction  keep repeat ()
 
-t: [Hallo!][Hey!][Grüß Gott!] Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+t: [Hallo!][Hey!][Grüß Gott!] Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert. ^gambit(~event_t)
 
 u:  (*) ^refine() $$answerCategory = specificAnswer $$actionType = shrug  ^keep() ^repeat() 
     a: (~mother) 1
