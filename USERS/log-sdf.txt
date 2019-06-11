@@ -90,3 +90,17 @@ Command: :build vicontact
 Start: user:sdf bot:laura_si ip: rand:2403 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ]`Hallo! Ich bin Laura si. `Mein Onkel schläft jetzt immer bei uns.`   When:Jun11'19-14:14:52 Why:~addposthoc.3.0.~school_t~1.2.0=SCHOOL_2 ~introduction~1.1.0.~control.0.0 ~event_t.2.0=EVENT_1.~introduction~1.1.0 ~introduction~1.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-14:14:49 0:Apr25'19-22:43:16 F:0 P:0
 Command: :bot laura_li
 Start: user:sdf bot:laura_li ip: rand:2403 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ]`Hallo! Ich bin Laura li.  When:Jun11'19-14:15:02 Why:~addposthoc.3.0.~school_t~1.2.0=SCHOOL_2 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-14:14:49 0:Apr25'19-22:43:16 F:0 P:0
+Command: :build pattern
+Start: user:sdf bot:pattern ip: rand:2403 (~introduction) 0 ==> Hallo! Ich heiße OOB. Stelle mir eine Frage und schaue, ob ich sie richtig kategorisiere.  When:Jun11'19-15:09:30 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:09:27 0:Jun11'19-15:09:30 F:0 P:0
+Command: :build pattern
+Start: user:sdf bot:pattern ip: rand:2403 (~introduction) 0 ==> Hallo! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11'19-15:11:09 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:11:06 0:Jun11'19-15:09:30 F:0 P:0
+Command: :build pattern
+Start: user:sdf bot:pattern ip: rand:2403 (~introduction) 0 ==> Hallo! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11'19-15:14:44 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:14:41 0:Jun11'19-15:09:30 F:0 P:0
+Command: :build pattern
+Start: user:sdf bot:pattern ip: rand:2402 (~introduction) 0 ==> Das habe ich leider nicht erkannt.  When:Jun11'19-15:15:24 Why:~keywordless.0.0.~control.2.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:15:21 0:Jun11'19-15:09:30 F:0 P:0
+Command: :reset
+Start: user:sdf bot:pattern ip: rand:2403 (~introduction) 0 ==> Hallo! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11'19-15:15:30 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:15:21 0:Jun11'19-15:09:30 F:0 P:0
+Respond: user:sdf bot:pattern ip: (~introduction) 1   wie geht es dir ==> Mood  When:Jun11'19-15:15:35 Why:~introduction.1.3.~control.2.0   F:45 
+Respond: user:sdf bot:pattern ip: (~introduction) 2   wie lange kennt ihr euch schon ==> Time relationship  When:Jun11'19-15:15:40 Why:~introduction.1.8.~control.2.0   F:1 
+Respond: user:sdf bot:pattern ip: (~introduction) 3   wie findest du den ==> Relationship o  When:Jun11'19-15:15:45 Why:~introduction.1.6.~control.2.0   F:1 
+Respond: user:sdf bot:pattern ip: (~introduction) 4   was arbeitet der denn ==> Job  When:Jun11'19-15:16:09 Why:~introduction.1.4.~control.2.0   F:1 

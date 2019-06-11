@@ -4,10 +4,6 @@
 + hi PATTERN_WORD 
 + abgelaufen PATTERN_WORD 
 + gemacht PATTERN_WORD 
-+ support PATTERN_WORD 
-+ @chatoutput 9
-+ laura_si 
-+ defaultbot 
 + was_macht 
 + was_geht 
 + wie_fühlst 
@@ -78,3 +74,6 @@
 + kannst_du 
 + war_da 
 + habt_ihr 
++ @chatoutput 9
++ pattern 
++ defaultbot 
