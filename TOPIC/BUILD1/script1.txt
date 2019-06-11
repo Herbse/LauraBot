@@ -1,4 +1,4 @@
-﻿00006 Jun11'19-15:15:21 pattern 8.8
+﻿00006 Jun11'19-15:55:49 pattern 8.8
 TOPIC: ~xpostagsentence 0x19 693032799 2 2 130 simpletopic.top
 " all " 00f t: ( _* ) `01q t: ( ) $$wordindex = 0 ^log ( FILE chat.txt NEW '_0 ) ^popen ( "tag-german chat.txt" '^myfunc ) `000 
 TOPIC: ~introduction 0x3 -690760145 2 1 604 introduction.top

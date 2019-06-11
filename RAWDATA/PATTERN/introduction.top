@@ -25,6 +25,24 @@ u: () ^keep() ^refine()
     a: (^activity()) activity 
     # places together
     a: (^places_together()) places_together 
+    # personal_opinion
+    a: (^personal_opinion()) personal_opinion
+    # other_opinion
+    a: (^other_opinion()) other_opinion
+    # place
+    a: (^place()) place
+     # individual
+    a: (^individual()) individual
+    # reason
+    a: (^reason()) reason
+    # example
+    a: (^example()) example
+    # explanation
+    a: (^explanation()) explanation
+    # follow-up
+    a: (^follow_up()) follow_up
+
+
 
 
 
