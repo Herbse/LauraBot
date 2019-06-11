@@ -1,0 +1,99 @@
+topic: ~brother_t ()
+
+#t: specific test to brother topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Leon 
+    # age
+    a: (^age()) $$intent=age Der ist 12.
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job Schüler halt.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Der ist mein Bruder.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Leon ist so cool.
+    # time together
+    a: (^time_together()) $$intent=time_together Nach der Schule.
+    # time relationship
+    a: (^time()) $$intent=time_relationship Komische Frage.
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(BROTHER_1)
+    # activity
+    a: (^activity()) $$intent=activity Der geht zur Schule.
+    # places together
+    a: (^places_together()) $$intent=places_together In Leons Zimmer.
+    
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($brotherCounter==1) Ganz ok.
+        b: ($brotherCounter==2) Ganz ok.
+        b: ($brotherCounter==3) Ganz ok.
+        b: ($brotherCounter==4) Ganz ok.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($brotherCounter==1) In Leons Zimmer.
+        b: ($brotherCounter==2) ^respond(~ignorance)
+        b: ($brotherCounter==3) In Leons Zimmer.
+        b: ($brotherCounter==4) Das ist gar nicht weit von zu Hause.
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($brotherCounter==1) ^respond(~ignorance)
+        b: ($brotherCounter==2) ^respond(~ignorance)
+        b: ($brotherCounter==3) Leon und seine Freund.
+        b: ($brotherCounter==4) ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($brotherCounter==1) ^respond(~ignorance)
+        b: ($brotherCounter==2) $$nextAnswer = yes
+        b: ($brotherCounter==3) ^respond(~ignorance)
+        b: ($brotherCounter==4) ^respond(~ignorance)
+    # example
+     a: (^example()) $$intent=example ^refine()
+        b: ($brotherCounter==4) ^respond(~ignorance)
+        b: () ^respond(~)
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($brotherCounter==1) Ein Spiel auf der Playstation.
+        b: ($brotherCounter==2) $$nextAnswer = yes
+        b: ($brotherCounter==3) $$nextAnswer = yes
+        b: ($brotherCounter==4) ^respond(~ignorance)
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: ($brotherCounter==4) ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/brotherspecific.txt $$question \n) 
+
+
+# Narrative Antworten---------------------------------------------------------------------------------------
+
+
+#! Erzähl mal was dein Bruder währenddessen tut. 
+u: BROTHER_1 ([$$answerCategory==narrative $$answerCategory==specific]) $brotherCounter = 1  Wenn der Leon FIFA spielt darf ich immer zugucken.
+
+#! Erzähl mir doch mehr über Leon.
+u: BROTHER_2 ([$$answerCategory==narrative $$answerCategory==specific]) $brotherCounter = 2  Wenn Leons Freunde kommen, muss ich immer alleine spielen.
+
+#! Erzähl mir doch mehr über Leon.
+u: BROTHER_3 ([$$answerCategory==narrative $$answerCategory==specific]) $brotherCounter = 3  Die spielen dann auch so andere Spiele mit Schießen und Leon sagt, ich soll da nicht zugucken.
+
+#! Erzähl mir doch mehr über Leon.
+u: BROTHER_4 ([$$answerCategory==narrative $$answerCategory==specific]) $brotherCounter = 4  Dann gehe ich raus oder zu Mira. 
+
+#Spezifische Antworten --------------------------------------------------------------------------------------
+
+
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(BROTHER_1)

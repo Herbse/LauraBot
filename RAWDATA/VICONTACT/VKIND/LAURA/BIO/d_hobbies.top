@@ -1,0 +1,78 @@
+topic: ~hobbies_t ()
+# Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach dem Tanzen  unterschiedliche Antworten generiert
+
+#t: specific test to hobbies topic ^keep() ^repeat() 
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($hobbiesCounter==1) Voll cool.
+        b: ($hobbiesCounter==2) Voll cool.
+        b: ($hobbiesCounter==3) Voll cool.
+        b: ($hobbiesCounter==4) Voll cool.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($hobbiesCounter==1) Im Jugendclub.
+        b: ($hobbiesCounter==2) Im Jugendclub.
+        b: ($hobbiesCounter==3) Im Jugendclub.
+        b: ($hobbiesCounter==4) Im Jugendclub.
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($hobbiesCounter==1) Mira und ich und die anderen Mädchen.
+        b: ($hobbiesCounter==2) Mira und ich und die anderen Mädchen.
+        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+#! Erzähl mal von deinen Hobbies.
+u: HOBBIES_1 ([$$answerCategory==narrative $$answerCategory==specific]) $hobbiesCounter = 1 Ich gehe immer am Dienstag in den Club, Hiphop tanzen.
+ 
+
+  
+#! Erzähl mal mehr.
+u: HOBBIES_2 ([$$answerCategory==narrative $$answerCategory==specific]) $hobbiesCounter = 2 Wir tanzen was tolles von Beyoncé. Ich kann das schon voll gut.
+   
+ 
+
+#! Erzähl mir mehr übers das Tanzen.
+u: HOBBIES_3 ([$$answerCategory==narrative $$answerCategory==specific]) $hobbiesCounter = 3 Der Martin ist total süß. Das ist unser Tanzlehrer
+  
+
+#!  Erzähl mir mehr übers das Tanzen.
+u: HOBBIES_4 ([$$answerCategory==narrative $$answerCategory==specific]) $hobbiesCounter = 4 Die Mira ist so supercool, die darf ein Solo tanzen.
+   
+
+# Spezifische Antworten------------------------------------------------------------------------------
+
+
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(HOBBIES_1)
+
+
