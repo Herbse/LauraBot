@@ -1,0 +1,27 @@
+topic: ~introduction  keep repeat ()
+
+t: $sumcorrect=0 [Hallo!][Hey!][Grüß Gott!] Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.
+
+t: TRIAL1 () gelb
+    a: (gelb) $correct=1 $sumcorrect += 1 Das war richtig.
+    a: (_*1) $correct=0 Das war falsch. Ich habe nämlich _0 verstanden.
+
+t: TRIAL2 () grün
+    a: (grün) $correct=1 $sumcorrect += 1 Das war richtig.
+    a: (_*1) $correct=0 Das war falsch. Ich habe nämlich _0 verstanden.
+
+t: TRIAL3 () rot
+    a: (rot) $correct=1 $sumcorrect += 1 Das war richtig.
+    a: (_*1) $correct=0 Das war falsch. Ich habe nämlich _0 verstanden.
+
+t: TRIAL4 () braun
+    a: (braun) $correct=1 $sumcorrect += 1 Das war richtig.
+    a: (_*1) $correct=0 Das war falsch. Ich habe nämlich _0 verstanden.
+
+
+t: TRIAL5 () schwarz
+    a: (schwarz) $correct=1 $sumcorrect += 1 Das war richtig.
+    a: (_*1) $correct=0 Das war falsch. Ich habe nämlich _0 verstanden.
+
+
+

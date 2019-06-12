@@ -8605,3 +8605,82 @@ ServerPre: pid: 32418 ::1 (pattern) und was macht er so beruflich Jun 11 15:56:0
 Respond: user:::1 bot:pattern ip:127.0.0.1 (~introduction) 2 und was macht er so beruflich  ==> Activity  When:Jun11 15:56:04 3ms Why:~introduction.1.10.~control.2.0 
 ServerPre: pid: 32418 ::1 (pattern) wie ist das Jun 11 15:56:13 2019
 Respond: user:::1 bot:pattern ip:127.0.0.1 (~introduction) 3 wie ist das  ==> Das habe ich leider nicht erkannt.  When:Jun11 15:56:13 4ms Why:~keywordless.0.0.~control.2.0 
+ServerPre: pid: 32418 ::1 () :build vicontact #b Jun 11 16:35:17 2019
+System startup vicontact #b Tue Jun 11 16:35:17 2019
+System startup createsystem Tue Jun 11 16:35:18 2019
+Server ChatScript EVSERVER Version 8.8 pid: 32418 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=326  fact=273  heap=100376 Compiled:Jun11'19-16:35:17 by version 8.8 "vicontact"
+Used 70MB: dict 489,182 (43048kb) hashdepths 28359.52320.51809.37904.22439.11966.5633.2712.1183.489.212.65.27.4.3.2.1. words 489182 unusedbuckets 28359 fact 128,275 (6157kb) heap 9927kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,968 fact 671,725 stack/heap 90,072KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot: ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Tue Jun 11 16:35:17 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 1 of c_negat.top: TOPIC-1 Concept already defined with this topic name ~negation    line 21 of : Undefined set or topic ~sobbing line 192 in b_prob_answer.top    line 9 of d_hobbies.top: At least one duplicate topic name, i.e., ~hobbies_t, which may intended if bot restrictions differ.  3 serious warnings, 0 function warnings, 0 spelling warnings, 149 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue Jun 11 16:35:18 2019  Server ChatScript EVSERVER Version 8.8 pid: 32418 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=326  fact=273  heap=100376 Compiled:Jun11'19-16:35:17 by version 8.8 "vicontact"  Used 70MB: dict 489,182 (43048kb) hashdepths 28359.52320.51809.37904.22439.11966.5633.2712.1183.489.212.65.27.4.3.2.1. words 489182 unusedbuckets 28359 fact 128,275 (6157kb) heap 9927kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,607,968 fact 671,725 stack/heap 90,072KB         *** Server WIDE OPEN to :command use.    When:Jun11 16:35:20 2988ms 
+ServerPre: pid: 32418 ::1 () :bot laura_li Jun 11 16:35:23 2019
+Start: user:::1 bot: ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Grüß Gott! Ich bin Laura li.  When:Jun11 16:35:23 4ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-16:35:17 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 32418 ::1 (pattern) :build pattern Jun 11 16:35:37 2019
+System startup pattern Tue Jun 11 16:35:37 2019
+System startup createsystem Tue Jun 11 16:35:37 2019
+Server ChatScript EVSERVER Version 8.8 pid: 32418 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=260  fact=264  heap=9256 Compiled:Jun11'19-16:35:37 by version 8.8 "pattern"
+Used 70MB: dict 489,116 (43042kb) hashdepths 28365.52331.51804.37902.22437.11965.5629.2710.1183.488.213.64.27.4.3.2.1. words 489116 unusedbuckets 28365 fact 128,266 (6156kb) heap 9836kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,034 fact 671,734 stack/heap 90,163KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:pattern ip:127.0.0.1 () 0 :build pattern  ==> System startup pattern Tue Jun 11 16:35:37 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 5 of : Undefined set or topic ~handle_oob line 32 in simplecontrol.top  1 serious warnings, 0 function warnings, 0 spelling warnings, 109 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue Jun 11 16:35:37 2019  Server ChatScript EVSERVER Version 8.8 pid: 32418 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=260  fact=264  heap=9256 Compiled:Jun11'19-16:35:37 by version 8.8 "pattern"  Used 70MB: dict 489,116 (43042kb) hashdepths 28365.52331.51804.37902.22437.11965.5629.2710.1183.488.213.64.27.4.3.2.1. words 489116 unusedbuckets 28365 fact 128,266 (6156kb) heap 9836kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,034 fact 671,734 stack/heap 90,163KB         *** Server WIDE OPEN to :command use.    When:Jun11 16:35:40 2849ms .1. words 489182 unusedbuckets 28359 fact 128,275 (6157kb) heap 9927kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,968 fact 671,725 stack/heap 90,072KB 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 32418 ::1 (pattern) :bot pattern Jun 11 16:35:40 2019
+Start: user:::1 bot:pattern ip:127.0.0.1 (~introduction) 0 ==> Grüß Gott! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11 16:35:40 1ms Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-16:35:37 Why:~introduction.0.0.~control.0.0 
+ServerPre: pid: 32418 ::1 (pattern) asdasd Jun 11 16:35:43 2019
+Respond: user:::1 bot:pattern ip:127.0.0.1 (~introduction) 1 asdasd  ==> Das habe ich leider nicht erkannt.  When:Jun11 16:35:43 3ms Why:~keywordless.0.0.~control.2.0 
+ServerPre: pid: 32418 ::1 (pattern) :build pattern Jun 11 16:35:48 2019
+System startup pattern Tue Jun 11 16:35:48 2019
+System startup createsystem Tue Jun 11 16:35:48 2019
+Server ChatScript EVSERVER Version 8.8 pid: 32418 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=260  fact=264  heap=9256 Compiled:Jun11'19-16:35:48 by version 8.8 "pattern"
+Used 70MB: dict 489,116 (43042kb) hashdepths 28365.52331.51804.37902.22437.11965.5629.2710.1183.488.213.64.27.4.3.2.1. words 489116 unusedbuckets 28365 fact 128,266 (6156kb) heap 9836kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,034 fact 671,734 stack/heap 90,163KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:::1 bot:pattern ip:127.0.0.1 () 0 :build pattern  ==> System startup pattern Tue Jun 11 16:35:48 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 5 of : Undefined set or topic ~handle_oob line 32 in simplecontrol.top  1 serious warnings, 0 function warnings, 0 spelling warnings, 109 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue Jun 11 16:35:48 2019  Server ChatScript EVSERVER Version 8.8 pid: 32418 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=260  fact=264  heap=9256 Compiled:Jun11'19-16:35:48 by version 8.8 "pattern"  Used 70MB: dict 489,116 (43042kb) hashdepths 28365.52331.51804.37902.22437.11965.5629.2710.1183.488.213.64.27.4.3.2.1. words 489116 unusedbuckets 28365 fact 128,266 (6156kb) heap 9836kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,608,034 fact 671,734 stack/heap 90,163KB         *** Server WIDE OPEN to :command use.    When:Jun11 16:35:50 2632ms .1. words 489182 unusedbuckets 28359 fact 128,275 (6157kb) heap 9927kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,968 fact 671,725 stack/heap 90,072KB 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: 32418 ::1 (pattern) :bot pattern Jun 11 16:35:50 2019
+Start: user:::1 bot:pattern ip:127.0.0.1 (~introduction) 0 ==> Grüß Gott! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11 16:35:50 2ms Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-16:35:48 Why:~introduction.0.0.~control.0.0 
+ServerPre: pid: 32418 ::1 (pattern) asdasd Jun 11 16:35:54 2019
+Respond: user:::1 bot:pattern ip:127.0.0.1 (~introduction) 1 asdasd  ==> Das habe ich leider nicht erkannt.  When:Jun11 16:35:54 4ms Why:~keywordless.0.0.~control.2.0 
+evserver child fork requests: 0
+  evserver: running pid: 45684
+System startup createsystem Wed Jun 12 09:51:58 2019
+Server ChatScript EVSERVER Version 8.8 pid: 45684 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=260  fact=264  heap=9256 Compiled:Jun11'19-16:35:48 by version 8.8 "pattern"
+Used 70MB: dict 489,116 (43042kb) hashdepths 28365.52331.51804.37902.22437.11965.5629.2710.1183.488.213.64.27.4.3.2.1. words 489116 unusedbuckets 28365 fact 128,266 (6156kb) heap 9836kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,608,034 fact 671,734 stack/heap 90,163KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 45684 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Wed Jun 12 09:52:00 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 45684), fork=0
