@@ -224,7 +224,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/z_debug.
           line: 6 103  # ^setcanon ( $$wordindex _2 ) 
           Complexity of ^myfunc: 1
     macro: 12  ^accuracy
-          line: 15 0  # $accuracy = ( $sumcorrect / 5 
+          line: 15 0  # $accuracy = $sumcorrect / 5 * 
           Complexity of ^accuracy: 1
     macro: 18  ^oob
           line: 20 0  # $_correct = $$correct 

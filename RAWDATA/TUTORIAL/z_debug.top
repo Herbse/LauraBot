@@ -12,7 +12,7 @@ outputmacro: ^myfunc(^data) ($$concept)
 outputmacro: ^accuracy()
 
 
-$accuracy= ($sumcorrect / 5) * 100
+$accuracy = $sumcorrect / 5 * 100
 
 
 outputmacro: ^oob()

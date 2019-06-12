@@ -1,4 +1,4 @@
 ﻿^tutorial o 0 0 A( ) ^addtopic ( ~introduction ) $cs_control_main = ~control $cs_control_post = ~addposthoc $cs_language = german $cs_externaltag = ~xpostagsentence $userprompt = ^"%user: >" $botprompt = ^"Tutorial-Bot: " $cs_token = 1048576 | 4096 | 255 | 512 | 131072 `
 ^myfunc o 0 0 B( ^data $$concept ) $$wordindex += 1 _0 = ^burst ( ^0 "^\t" ) $$concept = ^join ( ~ _1 ) ^settag ( $$wordindex $$concept ) ^setcanon ( $$wordindex _2 ) `
-^accuracy o 0 0 A( ) $accuracy = ( $sumcorrect / 5 ) * 100 `
+^accuracy o 0 0 A( ) $accuracy = $sumcorrect / 5 * 100 `
 ^oob o 0 0 A( $_correct $_sumcorrect $_accuracy $_item1name $_item1value $_item2name $_item2value $_item3name $_item3value ) $_correct = $$correct $_sumcorrect = $sumcorrect $_accuracy = $accuracy $_item1name = correct $_item1value = $_correct $_item2name = sumcorrect $_item2value = $_sumcorrect $_item3name = accuracy $_item3value = $_accuracy $$oob = ^join ( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value "%" ) `
