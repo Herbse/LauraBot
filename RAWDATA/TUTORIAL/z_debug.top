@@ -17,7 +17,7 @@ $accuracy= ($sumcorrect / 5) * 100
 
 outputmacro: ^oob()
  
- $_correct = $correct
+ $_correct = $$correct
  $_sumcorrect = $sumcorrect
  $_accuracy = $accuracy
 

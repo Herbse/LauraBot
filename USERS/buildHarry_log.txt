@@ -1,21 +1,33 @@
-﻿ChatScript Version 8.2  compiled Jun 19 2018 14:20:20
+﻿ChatScript Version 8.8  compiled Nov 29 2018 14:35:45
 
 >>Reading folder RAWDATA/HARRY/
 
 ----Reading file childhood.top
 Reading topic ~childhood
+*** Warning- line 2 of childhood.top: Word "little" known in multiple spellings little Little 
+*** Warning- line 2 of childhood.top: Word "young" known in multiple spellings young Young 
 
 ----Reading file introductions.top
 Reading topic ~introductions
+*** Warning- line 2 of introductions.top: Word "name" known in multiple spellings name Name NAME 
+*** Warning- line 22 of introductions.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 22 of introductions.top: Word "name" known in multiple spellings name Name NAME 
 
 ----Reading file simplecontrol.top
 Reading table ^tbl:defaultbot
 Reading outputmacro: ^harry
 Reading topic ~control
+*** Warning- line 32 of simplecontrol.top: Word "alarm" known in multiple spellings alarm Alarm 
+*** Warning- line 33 of simplecontrol.top: Word "test" known in multiple spellings Test TEST 
+*** Warning- line 34 of simplecontrol.top: Word "test" known in multiple spellings test Test TEST 
+*** Warning- line 35 of simplecontrol.top: Word "alarm" known in multiple spellings alarm Alarm 
+*** Warning- line 35 of simplecontrol.top: Word "test" known in multiple spellings test Test TEST 
 Reading topic ~xpostprocess
 
 ----Reading file keywordless.top
 Reading topic ~keywordless
+*** Warning- line 9 of keywordless.top: Word "life" known in multiple spellings Life LIFE 
+*** Warning- line 30 of keywordless.top: Word "who" known in multiple spellings who WHO 
 
 <<end folder RAWDATA/HARRY
 
@@ -23,57 +35,1394 @@ Reading topic ~keywordless
 
 ----Reading file eliza_because.top
 Reading topic ~quibble_because
+*** Warning- line 5 of eliza_because.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 7 of eliza_because.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 12 of eliza_because.top: Word "do" known in multiple spellings Do DO 
+*** Warning- line 19 of eliza_because.top: Word "not" known in multiple spellings not Not 
 
 ----Reading file eliza_not.top
 Reading topic ~quibble_not
+*** Warning- line 2 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 2 of eliza_not.top: Word "talking" known in multiple spellings talking Talking 
+*** Warning- line 3 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 4 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 4 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 5 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 6 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 7 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 7 of eliza_not.top: Word "last" known in multiple spellings last Last 
+*** Warning- line 8 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 9 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 10 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 10 of eliza_not.top: Word "talking" known in multiple spellings talking Talking 
+*** Warning- line 11 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 12 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 14 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 14 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 15 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 16 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 17 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 17 of eliza_not.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 18 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 18 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 19 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 20 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 21 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 22 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 22 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 22 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 23 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 23 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 25 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 25 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 27 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 27 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 29 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 29 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 29 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 30 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 30 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 31 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 31 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 32 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 32 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 35 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 35 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 36 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 36 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 36 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 37 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 37 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 37 of eliza_not.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 37 of eliza_not.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 38 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 38 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 40 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 40 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 41 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 41 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 42 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 42 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 43 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 43 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 43 of eliza_not.top: Word "change" known in multiple spellings change Change 
+*** Warning- line 44 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 44 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 45 of eliza_not.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 46 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 46 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 47 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 47 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 48 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 48 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 49 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 49 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 50 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 50 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 51 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 51 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 52 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 52 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 53 of eliza_not.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 53 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 54 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 56 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 57 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 58 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 59 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 60 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 60 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 61 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 61 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 63 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 63 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 64 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 64 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 65 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 65 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 66 of eliza_not.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 66 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 67 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 67 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 68 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 68 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 69 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 69 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 70 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 70 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 70 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 71 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 71 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 71 of eliza_not.top: Word "trust" known in multiple spellings trust Trust 
+*** Warning- line 72 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 72 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 73 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 73 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 73 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 74 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 74 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 74 of eliza_not.top: Word "name" known in multiple spellings name Name NAME 
+*** Warning- line 75 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 75 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 76 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 76 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 77 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 77 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 79 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 80 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 81 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 81 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 82 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 82 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 83 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 83 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 84 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 85 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 85 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 87 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 87 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 89 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 89 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 92 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 92 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 93 of eliza_not.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 94 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 95 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 95 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 96 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 96 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 96 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 97 of eliza_not.top: Word "OK" known in multiple spellings Ok OK 
+*** Warning- line 99 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 99 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 100 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 102 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 103 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 106 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 109 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 110 of eliza_not.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 111 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 112 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 112 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 113 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 113 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 114 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 115 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 115 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 116 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 116 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 118 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 120 of eliza_not.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 120 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 126 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 127 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 130 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 139 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 144 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 145 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 149 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 153 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 154 of eliza_not.top: Word "none" known in multiple spellings none None 
+*** Warning- line 154 of eliza_not.top: Word "no_one" known in multiple spellings No_one No_One 
+*** Warning- line 155 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 156 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 157 of eliza_not.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 157 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 160 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 161 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 162 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 165 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 165 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 166 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 168 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 168 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 170 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 172 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 172 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 173 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 173 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 174 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 174 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 175 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 175 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 176 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 176 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 177 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 177 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 178 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 178 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 179 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 182 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 182 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 183 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 183 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 185 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 185 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 186 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 186 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 188 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 188 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 189 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 189 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 193 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 193 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 194 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 194 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 195 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 198 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 198 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 202 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 202 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 203 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 203 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 206 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 207 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 208 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 211 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 212 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 213 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 216 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 217 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 218 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 221 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 222 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 223 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 226 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 226 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 227 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 228 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 231 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 233 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 233 of eliza_not.top: Word "to" known in multiple spellings to To 
+*** Warning- line 235 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 237 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 241 of eliza_not.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 241 of eliza_not.top: Word "no" known in multiple spellings no NO 
+*** Warning- line 244 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 244 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 246 of eliza_not.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 248 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 248 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 250 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 252 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 255 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 255 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 255 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 255 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 257 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 257 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 257 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 257 of eliza_not.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 258 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 261 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 262 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 265 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 266 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 267 of eliza_not.top: Word "little" known in multiple spellings little Little 
+*** Warning- line 267 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 270 of eliza_not.top: Word "no" known in multiple spellings no NO 
+*** Warning- line 270 of eliza_not.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 270 of eliza_not.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 270 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 271 of eliza_not.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 271 of eliza_not.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 274 of eliza_not.top: Word "not" known in multiple spellings not Not 
 
 ----Reading file eliza_do.top
 Reading topic ~quibble_do
+*** Warning- line 4 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 5 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 5 of eliza_do.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 6 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 7 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 9 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 11 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 15 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 16 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 17 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 18 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 20 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 21 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 23 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 24 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 24 of eliza_do.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 25 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 25 of eliza_do.top: Word "difference" known in multiple spellings difference Difference 
+*** Warning- line 26 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 27 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 28 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 29 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 29 of eliza_do.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 32 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 33 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 34 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 35 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 35 of eliza_do.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 36 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 36 of eliza_do.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 36 of eliza_do.top: Word "to" known in multiple spellings to To 
+*** Warning- line 37 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 37 of eliza_do.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 38 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 39 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 39 of eliza_do.top: Word "care" known in multiple spellings care Care 
+*** Warning- line 40 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 40 of eliza_do.top: Word "care" known in multiple spellings care Care 
+*** Warning- line 41 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 43 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 44 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 45 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 45 of eliza_do.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 46 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 47 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 48 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 49 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 50 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 51 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 51 of eliza_do.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 52 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 53 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 54 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 54 of eliza_do.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 55 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 56 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 57 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 59 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 60 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 61 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 62 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 63 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 64 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 65 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 65 of eliza_do.top: Word "to" known in multiple spellings to To 
+*** Warning- line 66 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 67 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 68 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 68 of eliza_do.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 69 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 69 of eliza_do.top: Word "to" known in multiple spellings to To 
+*** Warning- line 69 of eliza_do.top: Word "change" known in multiple spellings change Change 
+*** Warning- line 70 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 71 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 72 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 72 of eliza_do.top: Word "to" known in multiple spellings to To 
+*** Warning- line 73 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 74 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 75 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 76 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 77 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 78 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 78 of eliza_do.top: Word "care" known in multiple spellings care Care 
+*** Warning- line 78 of eliza_do.top: Word "to" known in multiple spellings to To 
+*** Warning- line 79 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 80 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 80 of eliza_do.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 81 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 82 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 82 of eliza_do.top: Word "listen" known in multiple spellings listen Listen 
+*** Warning- line 83 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 84 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 85 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 86 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 87 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 88 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 89 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 90 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 91 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 92 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 92 of eliza_do.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 93 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 94 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 94 of eliza_do.top: Word "to" known in multiple spellings to To 
+*** Warning- line 95 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 96 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 97 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 98 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 99 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 100 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 101 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 103 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 104 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 105 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 106 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 107 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 108 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 109 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 110 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 111 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 112 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 113 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 114 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 115 of eliza_do.top: Word "do" known in multiple spellings do Do DO 
 
 ----Reading file eliza_where.top
 Reading topic ~quibble_where
+*** Warning- line 3 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 4 of eliza_where.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 7 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 14 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 14 of eliza_where.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 16 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 16 of eliza_where.top: Word "to" known in multiple spellings to To 
+*** Warning- line 23 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 28 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 30 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 31 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 32 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 32 of eliza_where.top: Word "to" known in multiple spellings to To 
+*** Warning- line 34 of eliza_where.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 35 of eliza_where.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 36 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 39 of eliza_where.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 39 of eliza_where.top: Word "dance" known in multiple spellings dance Dance 
+*** Warning- line 40 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 40 of eliza_where.top: Word "life" known in multiple spellings life Life LIFE 
+*** Warning- line 41 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 43 of eliza_where.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 46 of eliza_where.top: Word "time" known in multiple spellings time Time 
 
 ----Reading file eliza_how.top
 Reading topic ~quibble_howmuch
+*** Warning- line 5 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 6 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 7 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 11 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 14 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 15 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 17 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 20 of eliza_how.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 20 of eliza_how.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 20 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 20 of eliza_how.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 20 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 22 of eliza_how.top: Word "wood" known in multiple spellings wood WOOD 
+*** Warning- line 22 of eliza_how.top: Word "wood" known in multiple spellings wood WOOD 
+*** Warning- line 22 of eliza_how.top: Word "wood" known in multiple spellings wood WOOD 
+*** Warning- line 22 of eliza_how.top: Word "wood" known in multiple spellings wood WOOD 
+*** Warning- line 24 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 25 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 26 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 27 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 27 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 28 of eliza_how.top: Word "life" known in multiple spellings life Life LIFE 
+*** Warning- line 29 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 30 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 32 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 34 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
 Reading topic ~quibble_how
+*** Warning- line 38 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 41 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 44 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 46 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 51 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 52 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 53 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 54 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 56 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 58 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 59 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 60 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 61 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 62 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 62 of eliza_how.top: Word "trust" known in multiple spellings trust Trust 
+*** Warning- line 63 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 63 of eliza_how.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 63 of eliza_how.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 64 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 65 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 65 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 67 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 67 of eliza_how.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 67 of eliza_how.top: Word "difference" known in multiple spellings difference Difference 
+*** Warning- line 68 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 68 of eliza_how.top: Word "difference" known in multiple spellings difference Difference 
+*** Warning- line 69 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 69 of eliza_how.top: Word "difference" known in multiple spellings difference Difference 
+*** Warning- line 70 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 71 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 71 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 73 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 75 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 75 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 77 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 77 of eliza_how.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 78 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 78 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 78 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 78 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 79 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 80 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 82 of eliza_how.top: Word "real" known in multiple spellings real Real 
+*** Warning- line 83 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 83 of eliza_how.top: Word "define" known in multiple spellings define Define 
+*** Warning- line 88 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 89 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 93 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 93 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 93 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 94 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 95 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 96 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 97 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 97 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 97 of eliza_how.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 98 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 99 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 102 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 102 of eliza_how.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 103 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 103 of eliza_how.top: Word "real" known in multiple spellings real Real 
+*** Warning- line 104 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 104 of eliza_how.top: Word "define" known in multiple spellings define Define 
+*** Warning- line 106 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 107 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 109 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 109 of eliza_how.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 110 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 110 of eliza_how.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 111 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 116 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 117 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 120 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 121 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 121 of eliza_how.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 122 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 124 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 125 of eliza_how.top: Word "line" known in multiple spellings line Line LINE 
+*** Warning- line 126 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 127 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 128 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 129 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 131 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 134 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 135 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 136 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 139 of eliza_how.top: Word "time" known in multiple spellings time Time 
+*** Warning- line 139 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 141 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 142 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 143 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 143 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 143 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 144 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 144 of eliza_how.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 145 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 145 of eliza_how.top: Word "live" known in multiple spellings live Live 
+*** Warning- line 146 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 146 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 148 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 148 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 149 of eliza_how.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 150 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 151 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 153 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 155 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 156 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 156 of eliza_how.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 159 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 160 of eliza_how.top: Word "life" known in multiple spellings life Life LIFE 
+*** Warning- line 162 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 163 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 164 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 166 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 168 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 169 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 170 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 171 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 173 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 173 of eliza_how.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 175 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 176 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 179 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 180 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 180 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 181 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 182 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 183 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 183 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 184 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 185 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 186 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 187 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 188 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 189 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 191 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 192 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 193 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 194 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 195 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 195 of eliza_how.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 196 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 198 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 200 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 201 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 202 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 202 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 206 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 207 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 209 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 210 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 212 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 214 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 214 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 214 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 215 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 216 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 216 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 217 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 217 of eliza_how.top: Word "to" known in multiple spellings to To 
+*** Warning- line 221 of eliza_how.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 226 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 228 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 230 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 231 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 231 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 232 of eliza_how.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 233 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 234 of eliza_how.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 235 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 238 of eliza_how.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 241 of eliza_how.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 249 of eliza_how.top: Word "can" known in multiple spellings can Can 
 
 ----Reading file honest.top
 Reading topic ~intent
+*** Warning- line 90 of honest.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 90 of honest.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 93 of honest.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 93 of honest.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 96 of honest.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 125 of honest.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 131 of honest.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 131 of honest.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 131 of honest.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 134 of honest.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 137 of honest.top: Word "we" known in multiple spellings we WE 
 Reading topic ~honest_response
+*** Warning- line 202 of honest.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 257 of honest.top: Word "who" known in multiple spellings who WHO 
 
 ----Reading file eliza_when.top
 Reading topic ~quibble_when
+*** Warning- line 4 of eliza_when.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 4 of eliza_when.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 5 of eliza_when.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 12 of eliza_when.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 15 of eliza_when.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 16 of eliza_when.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 16 of eliza_when.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 19 of eliza_when.top: Word "lie" known in multiple spellings lie Lie 
+*** Warning- line 21 of eliza_when.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 21 of eliza_when.top: Word "to" known in multiple spellings to To 
+*** Warning- line 24 of eliza_when.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 29 of eliza_when.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 32 of eliza_when.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 33 of eliza_when.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 36 of eliza_when.top: Word "to" known in multiple spellings to To 
+*** Warning- line 38 of eliza_when.top: Word "talk" known in multiple spellings talk Talk 
 
 ----Reading file quibble.top
 Reading topic ~quibble_all
+*** Warning- line 5 of quibble.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 7 of quibble.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 25 of quibble.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 27 of quibble.top: Word "do" known in multiple spellings do Do DO 
 
 ----Reading file eliza_who.top
 Reading topic ~quibble_who
+*** Warning- line 5 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 6 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 6 of eliza_who.top: Word "was" known in multiple spellings was Was WAS 
+*** Warning- line 6 of eliza_who.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 7 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 8 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 10 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 11 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 13 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 14 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 15 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 16 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 16 of eliza_who.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 17 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 17 of eliza_who.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 17 of eliza_who.top: Word "on" known in multiple spellings on On 
+*** Warning- line 18 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 19 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 20 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 22 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 22 of eliza_who.top: Word "talking" known in multiple spellings talking Talking 
+*** Warning- line 23 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 24 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 25 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 26 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 26 of eliza_who.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 27 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 27 of eliza_who.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 28 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 28 of eliza_who.top: Word "care" known in multiple spellings care Care 
+*** Warning- line 29 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 30 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 30 of eliza_who.top: Word "to" known in multiple spellings to To 
+*** Warning- line 31 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 32 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 33 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 34 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 35 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 36 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 37 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 37 of eliza_who.top: Word "to" known in multiple spellings to To 
+*** Warning- line 38 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 39 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 40 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 41 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 43 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 44 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 44 of eliza_who.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 45 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 45 of eliza_who.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 46 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 46 of eliza_who.top: Word "talking" known in multiple spellings talking Talking 
+*** Warning- line 46 of eliza_who.top: Word "to" known in multiple spellings to To 
+*** Warning- line 47 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 47 of eliza_who.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 48 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 48 of eliza_who.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 49 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 50 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 51 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 52 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 52 of eliza_who.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 53 of eliza_who.top: Word "name" known in multiple spellings name Name NAME 
+*** Warning- line 54 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 54 of eliza_who.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 55 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 56 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 56 of eliza_who.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 57 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 58 of eliza_who.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 59 of eliza_who.top: Word "who" known in multiple spellings who WHO 
 
 ----Reading file eliza_can.top
 Reading topic ~quibble_will
 Reading topic ~quibble_can
+*** Warning- line 10 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 10 of eliza_can.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 11 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 12 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 13 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 14 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 14 of eliza_can.top: Word "drink" known in multiple spellings drink Drink 
+*** Warning- line 15 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 16 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 16 of eliza_can.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 16 of eliza_can.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 17 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 20 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 20 of eliza_can.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 21 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 21 of eliza_can.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 22 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 22 of eliza_can.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 23 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 24 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 25 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 26 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 27 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 27 of eliza_can.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 28 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 28 of eliza_can.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 30 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 30 of eliza_can.top: Word "on" known in multiple spellings on On 
+*** Warning- line 31 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 31 of eliza_can.top: Word "taste" known in multiple spellings taste Taste 
+*** Warning- line 32 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 33 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 34 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 35 of eliza_can.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 36 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 36 of eliza_can.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 37 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 37 of eliza_can.top: Word "fix" known in multiple spellings fix Fix 
+*** Warning- line 38 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 38 of eliza_can.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 39 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 39 of eliza_can.top: Word "on" known in multiple spellings on On 
+*** Warning- line 39 of eliza_can.top: Word "water" known in multiple spellings water Water 
+*** Warning- line 40 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 41 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 42 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 43 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 44 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 45 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 46 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 46 of eliza_can.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 47 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 48 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 48 of eliza_can.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 48 of eliza_can.top: Word "lie" known in multiple spellings lie Lie 
+*** Warning- line 49 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 49 of eliza_can.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 50 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 50 of eliza_can.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 52 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 52 of eliza_can.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 53 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 54 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 54 of eliza_can.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 55 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 55 of eliza_can.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 56 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 57 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 58 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 59 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 60 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 61 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 61 of eliza_can.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 61 of eliza_can.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 62 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 62 of eliza_can.top: Word "fix" known in multiple spellings fix Fix 
+*** Warning- line 63 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 63 of eliza_can.top: Word "change" known in multiple spellings change Change 
+*** Warning- line 64 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 65 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 66 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 67 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 68 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 68 of eliza_can.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 69 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 70 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 71 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 72 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 72 of eliza_can.top: Word "die" known in multiple spellings die Die DIE 
+*** Warning- line 73 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 74 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 74 of eliza_can.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 74 of eliza_can.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 75 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 76 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 76 of eliza_can.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 77 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 78 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 78 of eliza_can.top: Word "live" known in multiple spellings live Live 
+*** Warning- line 79 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 79 of eliza_can.top: Word "universe" known in multiple spellings universe Universe 
+*** Warning- line 80 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 81 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 82 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 83 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 84 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 85 of eliza_can.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 86 of eliza_can.top: Word "can" known in multiple spellings can Can 
 
 ----Reading file eliza_why.top
 Reading topic ~quibble_why
+*** Warning- line 3 of eliza_why.top: Word "lie" known in multiple spellings lie Lie 
+*** Warning- line 3 of eliza_why.top: Word "to" known in multiple spellings to To 
+*** Warning- line 7 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 9 of eliza_why.top: Word "care" known in multiple spellings care Care 
+*** Warning- line 11 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 12 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 14 of eliza_why.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 16 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 16 of eliza_why.top: Word "to" known in multiple spellings to To 
+*** Warning- line 17 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 19 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 20 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 20 of eliza_why.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 22 of eliza_why.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 23 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 24 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 24 of eliza_why.top: Word "to" known in multiple spellings to To 
+*** Warning- line 28 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 28 of eliza_why.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 31 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 32 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 34 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 40 of eliza_why.top: Word "now" known in multiple spellings now NOW 
+*** Warning- line 41 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 42 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 43 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 43 of eliza_why.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 44 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 44 of eliza_why.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 45 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 45 of eliza_why.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 45 of eliza_why.top: Word "rest" known in multiple spellings rest Rest 
+*** Warning- line 45 of eliza_why.top: Word "drink" known in multiple spellings drink Drink 
+*** Warning- line 46 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 46 of eliza_why.top: Word "to" known in multiple spellings to To 
+*** Warning- line 47 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 47 of eliza_why.top: Word "lie" known in multiple spellings lie Lie 
+*** Warning- line 47 of eliza_why.top: Word "to" known in multiple spellings to To 
+*** Warning- line 48 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 49 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 51 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 52 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 54 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 55 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 56 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 57 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 62 of eliza_why.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 63 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 68 of eliza_why.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 68 of eliza_why.top: Word "talking" known in multiple spellings talking Talking 
+*** Warning- line 70 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 71 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 73 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 73 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 74 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 75 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 75 of eliza_why.top: Word "to" known in multiple spellings to To 
+*** Warning- line 75 of eliza_why.top: Word "die" known in multiple spellings die Die DIE 
+*** Warning- line 77 of eliza_why.top: Word "to" known in multiple spellings to To 
+*** Warning- line 78 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 79 of eliza_why.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 82 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 84 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 89 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 89 of eliza_why.top: Word "to" known in multiple spellings to To 
+*** Warning- line 91 of eliza_why.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 94 of eliza_why.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 100 of eliza_why.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 102 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 105 of eliza_why.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 110 of eliza_why.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 115 of eliza_why.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 115 of eliza_why.top: Word "talking" known in multiple spellings talking Talking 
 
 ----Reading file eliza_or.top
 Reading topic ~quibble_or
+*** Warning- line 4 of eliza_or.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 4 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 4 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 4 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 5 of eliza_or.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 5 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 5 of eliza_or.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 8 of eliza_or.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 8 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 8 of eliza_or.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 11 of eliza_or.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 11 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 11 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 11 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 12 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 12 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 15 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 19 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 19 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 22 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 26 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 26 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 26 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 29 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 29 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 29 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 33 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 33 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 33 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 36 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 36 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 36 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 40 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 40 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 40 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 43 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 43 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 43 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 47 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 47 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 47 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 50 of eliza_or.top: Word "desire" known in multiple spellings desire Desire 
+*** Warning- line 50 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 50 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 50 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 54 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 54 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 54 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 57 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 57 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 61 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 61 of eliza_or.top: Word "to" known in multiple spellings to To 
+*** Warning- line 64 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 67 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 70 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 73 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 76 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 79 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 81 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 83 of eliza_or.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 83 of eliza_or.top: Word "just" known in multiple spellings just Just 
 
 ----Reading file eliza_misc.top
 Reading topic ~quibble_misc
+*** Warning- line 8 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 8 of eliza_misc.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 13 of eliza_misc.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 13 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 14 of eliza_misc.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 15 of eliza_misc.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 15 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 17 of eliza_misc.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 17 of eliza_misc.top: Word "real" known in multiple spellings real Real 
+*** Warning- line 17 of eliza_misc.top: Word "life" known in multiple spellings life Life LIFE 
+*** Warning- line 19 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 23 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 24 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 29 of eliza_misc.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 32 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 33 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 33 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 34 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 34 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 36 of eliza_misc.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 37 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 37 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 41 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 41 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 44 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 46 of eliza_misc.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 46 of eliza_misc.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 47 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 47 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 48 of eliza_misc.top: Word "dog" known in multiple spellings dog Dog 
+*** Warning- line 48 of eliza_misc.top: Word "dog" known in multiple spellings dog Dog 
+*** Warning- line 53 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 56 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 57 of eliza_misc.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 59 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 59 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 60 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 64 of eliza_misc.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 65 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 66 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 66 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 66 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 67 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 67 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 67 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 68 of eliza_misc.top: Word "no" known in multiple spellings no NO 
+*** Warning- line 69 of eliza_misc.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 71 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 71 of eliza_misc.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 76 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 77 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 78 of eliza_misc.top: Word "now" known in multiple spellings now NOW 
+*** Warning- line 81 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 83 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 84 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 84 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 85 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 85 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 87 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 88 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 92 of eliza_misc.top: Word "then" known in multiple spellings then Then 
+*** Warning- line 95 of eliza_misc.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 96 of eliza_misc.top: Word "life" known in multiple spellings life Life LIFE 
+*** Warning- line 98 of eliza_misc.top: Word "dollar" known in multiple spellings dollar Dollar 
+*** Warning- line 101 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 101 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 102 of eliza_misc.top: Word "no" known in multiple spellings no NO 
+*** Warning- line 105 of eliza_misc.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 107 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 107 of eliza_misc.top: Word "on" known in multiple spellings on On 
+*** Warning- line 110 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 112 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 113 of eliza_misc.top: Word "us" known in multiple spellings us Us US 
+*** Warning- line 116 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 118 of eliza_misc.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 124 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 130 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 130 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 130 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 132 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 135 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 141 of eliza_misc.top: Word "was" known in multiple spellings was Was WAS 
+*** Warning- line 144 of eliza_misc.top: Word "was" known in multiple spellings was Was WAS 
+*** Warning- line 149 of eliza_misc.top: Word "was" known in multiple spellings was Was WAS 
+*** Warning- line 150 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 156 of eliza_misc.top: Word "lot" known in multiple spellings Lot LOT 
+*** Warning- line 175 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 178 of eliza_misc.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 184 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 192 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 194 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 215 of eliza_misc.top: Word "difference" known in multiple spellings difference Difference 
+*** Warning- line 299 of eliza_misc.top: Word "no" known in multiple spellings no NO 
+*** Warning- line 360 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 366 of eliza_misc.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 366 of eliza_misc.top: Word "time" known in multiple spellings time Time 
+*** Warning- line 384 of eliza_misc.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 387 of eliza_misc.top: Word "time" known in multiple spellings time Time 
+*** Warning- line 389 of eliza_misc.top: Word "time" known in multiple spellings time Time 
+*** Warning- line 394 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 417 of eliza_misc.top: Word "no_one" known in multiple spellings no_one No_one No_One 
+*** Warning- line 417 of eliza_misc.top: Word "no_one" known in multiple spellings no_one No_one No_One 
+*** Warning- line 418 of eliza_misc.top: Word "no_one" known in multiple spellings no_one No_one No_One 
+*** Warning- line 418 of eliza_misc.top: Word "no_one" known in multiple spellings no_one No_one No_One 
+*** Warning- line 433 of eliza_misc.top: Word "us" known in multiple spellings us Us US 
+*** Warning- line 436 of eliza_misc.top: Word "these" known in multiple spellings these These 
+*** Warning- line 443 of eliza_misc.top: Word "no_one" known in multiple spellings no_one No_one No_One 
+*** Warning- line 443 of eliza_misc.top: Word "none" known in multiple spellings none None 
+*** Warning- line 444 of eliza_misc.top: Word "was" known in multiple spellings was Was WAS 
+*** Warning- line 445 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 452 of eliza_misc.top: Word "none" known in multiple spellings none None 
+*** Warning- line 454 of eliza_misc.top: Word "none" known in multiple spellings none None 
+*** Warning- line 462 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 477 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 477 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 478 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 484 of eliza_misc.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 500 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 502 of eliza_misc.top: Word "last" known in multiple spellings last Last 
+*** Warning- line 503 of eliza_misc.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 504 of eliza_misc.top: Word "then" known in multiple spellings then Then 
+*** Warning- line 505 of eliza_misc.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 505 of eliza_misc.top: Word "time" known in multiple spellings time Time 
+*** Warning- line 526 of eliza_misc.top: Word "no" known in multiple spellings no NO 
+*** Warning- line 529 of eliza_misc.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 534 of eliza_misc.top: Word "dollar" known in multiple spellings dollar Dollar 
+*** Warning- line 543 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 544 of eliza_misc.top: Word "war" known in multiple spellings war WAR 
+*** Warning- line 549 of eliza_misc.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 613 of eliza_misc.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 614 of eliza_misc.top: Word "computer" known in multiple spellings computer Computer 
+*** Warning- line 616 of eliza_misc.top: Word "now" known in multiple spellings now NOW 
+*** Warning- line 618 of eliza_misc.top: Word "now" known in multiple spellings now NOW 
+*** Warning- line 624 of eliza_misc.top: Word "real" known in multiple spellings real Real 
+*** Warning- line 637 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 642 of eliza_misc.top: Word "once" known in multiple spellings once Once 
+*** Warning- line 642 of eliza_misc.top: Word "time" known in multiple spellings time Time 
+*** Warning- line 643 of eliza_misc.top: Word "us" known in multiple spellings us Us US 
+*** Warning- line 651 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 674 of eliza_misc.top: Word "time" known in multiple spellings time Time 
+*** Warning- line 679 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 688 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 690 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 701 of eliza_misc.top: Word "live" known in multiple spellings live Live 
+*** Warning- line 701 of eliza_misc.top: Word "long" known in multiple spellings long Long 
+*** Warning- line 708 of eliza_misc.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 711 of eliza_misc.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 713 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 717 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 720 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 721 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 727 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 735 of eliza_misc.top: Word "just" known in multiple spellings just Just 
+*** Warning- line 737 of eliza_misc.top: Word "no" known in multiple spellings no NO 
+*** Warning- line 738 of eliza_misc.top: Word "none" known in multiple spellings none None 
+*** Warning- line 746 of eliza_misc.top: Word "on" known in multiple spellings on On 
+*** Warning- line 760 of eliza_misc.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 764 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 772 of eliza_misc.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 783 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 788 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 791 of eliza_misc.top: Word "lie" known in multiple spellings lie Lie 
+*** Warning- line 794 of eliza_misc.top: Word "tell" known in multiple spellings tell Tell 
+*** Warning- line 812 of eliza_misc.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 814 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 816 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 818 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 822 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 823 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 824 of eliza_misc.top: Word "or" known in multiple spellings or OR 
+*** Warning- line 826 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 829 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 830 of eliza_misc.top: Word "to" known in multiple spellings to To 
+*** Warning- line 861 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 861 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 863 of eliza_misc.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 864 of eliza_misc.top: Word "now" known in multiple spellings now NOW 
+*** Warning- line 874 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 874 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 888 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 894 of eliza_misc.top: Word "then" known in multiple spellings then Then 
+*** Warning- line 895 of eliza_misc.top: Word "then" known in multiple spellings then Then 
+*** Warning- line 896 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 896 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 897 of eliza_misc.top: Word "then" known in multiple spellings then Then 
+*** Warning- line 898 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 898 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 901 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 902 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 902 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 903 of eliza_misc.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 903 of eliza_misc.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 904 of eliza_misc.top: Word "no" known in multiple spellings no NO 
+*** Warning- line 914 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 914 of eliza_misc.top: Word "new" known in multiple spellings New NEW 
+*** Warning- line 925 of eliza_misc.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 928 of eliza_misc.top: Word "we" known in multiple spellings we WE 
+*** Warning- line 930 of eliza_misc.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 930 of eliza_misc.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 931 of eliza_misc.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 933 of eliza_misc.top: Word "than" known in multiple spellings than Than 
 
 ----Reading file eliza_what.top
 Reading topic ~quibble_what
+*** Warning- line 3 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 4 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 5 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 5 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 6 of eliza_what.top: Word "cents" known in multiple spellings cents Cents 
+*** Warning- line 8 of eliza_what.top: Word "difference" known in multiple spellings difference Difference 
+*** Warning- line 17 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 20 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 20 of eliza_what.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 26 of eliza_what.top: Word "difference" known in multiple spellings difference Difference 
+*** Warning- line 26 of eliza_what.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 29 of eliza_what.top: Word "life" known in multiple spellings life Life LIFE 
+*** Warning- line 32 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 32 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 35 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 35 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 38 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 41 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 44 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 47 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 53 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 53 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 53 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 56 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 56 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 59 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 62 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 65 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 65 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 69 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 72 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 75 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 78 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 78 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 81 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 81 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 81 of eliza_what.top: Word "drink" known in multiple spellings drink Drink 
+*** Warning- line 84 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 84 of eliza_what.top: Word "friends" known in multiple spellings friends Friends 
+*** Warning- line 84 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 87 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 90 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 90 of eliza_what.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 90 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 93 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 93 of eliza_what.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 96 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 99 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 99 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 102 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 106 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 107 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 107 of eliza_what.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 107 of eliza_what.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 108 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 108 of eliza_what.top: Word "life" known in multiple spellings life Life LIFE 
+*** Warning- line 109 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 110 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 110 of eliza_what.top: Word "drink" known in multiple spellings drink Drink 
+*** Warning- line 111 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 112 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 113 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 113 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 113 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 118 of eliza_what.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 118 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 119 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 120 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 121 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 122 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 123 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 124 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 124 of eliza_what.top: Word "taste" known in multiple spellings taste Taste 
+*** Warning- line 125 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 125 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 126 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 126 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 127 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 127 of eliza_what.top: Word "life" known in multiple spellings life Life LIFE 
+*** Warning- line 128 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 128 of eliza_what.top: Word "listen" known in multiple spellings listen Listen 
+*** Warning- line 128 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 131 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 131 of eliza_what.top: Word "taste" known in multiple spellings taste Taste 
+*** Warning- line 132 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 133 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 133 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 133 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 133 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 134 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 134 of eliza_what.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 136 of eliza_what.top: Word "tennis" known in multiple spellings tennis Tennis 
+*** Warning- line 137 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 138 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 139 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 140 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 141 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 142 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 143 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 143 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 143 of eliza_what.top: Word "on" known in multiple spellings on On 
+*** Warning- line 144 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 144 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 145 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 146 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 146 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 147 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 148 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 149 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 149 of eliza_what.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 149 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 150 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 153 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 153 of eliza_what.top: Word "computers" known in multiple spellings computers Computers 
+*** Warning- line 154 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 155 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 155 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 156 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 156 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 156 of eliza_what.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 157 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 157 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 158 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 158 of eliza_what.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 159 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 160 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 161 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 161 of eliza_what.top: Word "in" known in multiple spellings in In IN 
+*** Warning- line 164 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 165 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 165 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 165 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 165 of eliza_what.top: Word "now" known in multiple spellings now NOW 
+*** Warning- line 166 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 167 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 167 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 167 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 168 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 169 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 171 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 172 of eliza_what.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 176 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 177 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 179 of eliza_what.top: Word "who" known in multiple spellings who WHO 
+*** Warning- line 186 of eliza_what.top: Word "not" known in multiple spellings not Not 
+*** Warning- line 187 of eliza_what.top: Word "is" known in multiple spellings is Is 
+*** Warning- line 187 of eliza_what.top: Word "difference" known in multiple spellings difference Difference 
+*** Warning- line 190 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 190 of eliza_what.top: Word "it" known in multiple spellings it IT 
+*** Warning- line 193 of eliza_what.top: Word "talk" known in multiple spellings talk Talk 
+*** Warning- line 195 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 195 of eliza_what.top: Word "to" known in multiple spellings to To 
+*** Warning- line 195 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
+*** Warning- line 199 of eliza_what.top: Word "can" known in multiple spellings can Can 
+*** Warning- line 199 of eliza_what.top: Word "do" known in multiple spellings do Do DO 
 
 <<end folder RAWDATA/QUIBBLE
 *** Warning-  Undefined set or topic ~emohowzit line 2 in introductions.top
+*** Warning-  Undefined set or topic ~like line 38 in eliza_do.top
 *** Warning-  Undefined set or topic ~why line 42 in eliza_where.top
 
 WARNING SUMMARY: 
-  line 1 of : Undefined set or topic ~emohowzit line 2 in introductions.top
-  line 5 of : Undefined set or topic ~why line 42 in eliza_where.top
-2 serious warnings, 0 function warnings, 0 spelling warnings, 0 case warnings, 0 substitution warnings
+3 serious warnings, 0 function warnings, 0 spelling warnings, 1350 case warnings, 0 substitution warnings
     
 
 Finished compile

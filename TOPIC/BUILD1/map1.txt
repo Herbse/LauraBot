@@ -18,46 +18,46 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/introduc
           line: 5 0  # gelb 
           Complexity of rule ~introduction.1.0-TRIAL1 t: 1
         rule: 6  ~introduction.1.1 a: 
-          line: 6 0  # $correct = 1 $sumcorrect += 1 
+          line: 6 0  # $$correct = 1 $sumcorrect += 1
           Complexity of rule ~introduction.1.1- a: 1
         rule: 7  ~introduction.1.2 a: 
-          line: 7 0  # $correct = 0 Das war falsch. I
+          line: 7 0  # $$correct = 0 Das war falsch. 
           Complexity of rule ~introduction.1.2- a: 1
         rule: 9  ~introduction.2.0-TRIAL2 t: 
           line: 9 0  # grün 
           Complexity of rule ~introduction.2.0-TRIAL2 t: 1
         rule: 10  ~introduction.2.1 a: 
-          line: 10 0  # $correct = 1 $sumcorrect += 1 
+          line: 10 0  # $$correct = 1 $sumcorrect += 1
           Complexity of rule ~introduction.2.1- a: 1
         rule: 11  ~introduction.2.2 a: 
-          line: 11 0  # $correct = 0 Das war falsch. I
+          line: 11 0  # $$correct = 0 Das war falsch. 
           Complexity of rule ~introduction.2.2- a: 1
         rule: 13  ~introduction.3.0-TRIAL3 t: 
           line: 13 0  # rot 
           Complexity of rule ~introduction.3.0-TRIAL3 t: 1
         rule: 14  ~introduction.3.1 a: 
-          line: 14 0  # $correct = 1 $sumcorrect += 1 
+          line: 14 0  # $$correct = 1 $sumcorrect += 1
           Complexity of rule ~introduction.3.1- a: 1
         rule: 15  ~introduction.3.2 a: 
-          line: 15 0  # $correct = 0 Das war falsch. I
+          line: 15 0  # $$correct = 0 Das war falsch. 
           Complexity of rule ~introduction.3.2- a: 1
         rule: 17  ~introduction.4.0-TRIAL4 t: 
           line: 17 0  # braun 
           Complexity of rule ~introduction.4.0-TRIAL4 t: 1
         rule: 18  ~introduction.4.1 a: 
-          line: 18 0  # $correct = 1 $sumcorrect += 1 
+          line: 18 0  # $$correct = 1 $sumcorrect += 1
           Complexity of rule ~introduction.4.1- a: 1
         rule: 19  ~introduction.4.2 a: 
-          line: 19 0  # $correct = 0 Das war falsch. I
+          line: 19 0  # $$correct = 0 Das war falsch. 
           Complexity of rule ~introduction.4.2- a: 1
         rule: 22  ~introduction.5.0-TRIAL5 t: 
           line: 22 0  # schwarz 
           Complexity of rule ~introduction.5.0-TRIAL5 t: 1
         rule: 23  ~introduction.5.1 a: 
-          line: 23 0  # $correct = 1 $sumcorrect += 1 
+          line: 23 0  # $$correct = 1 $sumcorrect += 1
           Complexity of rule ~introduction.5.1- a: 1
         rule: 24  ~introduction.5.2 a: 
-          line: 24 0  # $correct = 0 Das war falsch. I
+          line: 24 0  # $$correct = 0 Das war falsch. 
           Complexity of rule ~introduction.5.2- a: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/a_concepts.top
     topic: 1  ~own_concepts
@@ -227,16 +227,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/z_debug.
           line: 15 0  # $accuracy = ( $sumcorrect / 5 
           Complexity of ^accuracy: 1
     macro: 18  ^oob
-          line: 20 0  # $_correct = $correct 
-          line: 21 21  # $_sumcorrect = $sumcorrect 
-          line: 22 48  # $_accuracy = $accuracy 
-          line: 26 71  # $_item1name = correct 
-          line: 27 93  # $_item1value = $_correct 
-          line: 28 118  # $_item2name = sumcorrect 
-          line: 29 143  # $_item2value = $_sumcorrect 
-          line: 30 171  # $_item3name = accuracy 
-          line: 31 194  # $_item3value = $_accuracy 
-          line: 37 220  # $$oob = ^join ( $_item1name : 
+          line: 20 0  # $_correct = $$correct 
+          line: 21 22  # $_sumcorrect = $sumcorrect 
+          line: 22 49  # $_accuracy = $accuracy 
+          line: 26 72  # $_item1name = correct 
+          line: 27 94  # $_item1value = $_correct 
+          line: 28 119  # $_item2name = sumcorrect 
+          line: 29 144  # $_item2value = $_sumcorrect 
+          line: 30 172  # $_item3name = accuracy 
+          line: 31 195  # $_item3value = $_accuracy 
+          line: 37 221  # $$oob = ^join ( $_item1name : 
           Complexity of ^oob: 1
     topic: 41  ~xpostagsentence
         rule: 42  ~xpostagsentence.0.0 t: 
