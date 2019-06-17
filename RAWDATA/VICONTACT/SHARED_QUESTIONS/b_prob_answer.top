@@ -107,7 +107,7 @@ else if ($$randNum < 65) {$$answerCategory = affirmation ^respond(~affirmation)}
 else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
 else {$$answerCategory = reactance ^respond(~reactance)}
 
-u: ($cs_bot=laura_si {_rapport} facilitator) 
+u: ($cs_bot=laura_si facilitator) 
 if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = narrative:60_affirmation:20_notAnswering:10
 $$randNum = %rand
@@ -148,7 +148,8 @@ else {$$answerCategory = ignorance ^respond(~ignorance))
 
 
 # 80% option-choosen | 10% non-answer | 10% ignorance
-u: (choice_question)
+u: ({_rapport} choice_question)
+if ('_0==rapport){$rapportCounter += 1}
 $noncritTopic += 1
 $$probFormat = option_chosen:80_notAnswering:10_ignorance:10
 $$randNum = %rand 
@@ -158,7 +159,8 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 
 # 50% affirmation | 30% negation | 20% ignorance
-u: (yes_no_question) 
+u: ({_rapport} yes_no_question) 
+if ('_0==rapport){$rapportCounter += 1}
 $noncritTopic += 1
 $$probFormat = affirmation:50_negation:30_ignorance:20
 $$randNum = %rand
@@ -169,6 +171,7 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 # 90% incomprehension | 10% reactance 
 u: (unknowable_question) 
+if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = incomprehension:90_reactance:10
 $$randNum = %rand
 if ($$randNum < 90){$$answerCategory = incomprehension ^respond(~incomprehension)} 
@@ -180,8 +183,7 @@ u: (request) $lastOutput
 # Nachfrage zum kritischen Ereignis bei noch nicht vorhandener Offenbarungsbereitschaft
 u: (crit_asked)
 $critAsked = 1
-$rapportCounter -= 1
-if ($revelationState==0) {$$answerCategory = reactance ^respond(~reactance)}
+if ($revelationState==0) {$rapportCounter -= 1 $$answerCategory = reactance ^respond(~reactance)}
 
 # 40% ignorance | 30% reactance | 30% sobbing
 u: (suggestive_unspecific) 
@@ -202,31 +204,37 @@ else if ($$randNum < 90){$$answerCategory = negation ^respond(~negation)}
 else if ($$randNum < 95){$$answerCategory = ignorance ^respond(~ignorance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
-u: (relevance)
+u: ({_rapport} relevance)
+if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = specific:100
 #a $$answerCategory = specific Als wir neulich im Schwimmbad waren.
 #b $$answerCategory = specific Das letzte Mal war an Mamas Geburtstag.
 #c $$answerCategory = specific Na das war letztes Wochenende.
 
-u: (frequency)
+u: ({_rapport} frequency)
+if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = specific:100
 #a $$answerCategory = specific Das war nur einmal.
 #b $$answerCategory = specific Wenn er sauer ist halt. Schon ein paar mal.
 #c $$answerCategory = specific Na das war letztes Wochenende.
 
-u: (information)
+u: ({_rapport} information)
+if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = affirmation:100
 $$answerCategory = affirmation ^respond(~affirmation)
 
-u: (support)
+u: ({_rapport} support)
+if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = negation:100
 $$answerCategory = negation ^respond(~negation)
 
-u: (revelation)
+u: ({_rapport} revelation)
+if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = specific:100
 $$answerCategory = specific Nein, noch niemand.
 
-u: (intro)
+u: ({_rapport} intro)
+if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = greetings:100
 $$answerCategory = greetings Hm. 
 

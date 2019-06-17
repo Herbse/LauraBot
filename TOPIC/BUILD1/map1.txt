@@ -9,57 +9,134 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/PATTERN/a_patternmacros.top
+    macro: 4  ^general_question
+          Complexity of ^general_question: 1
+    macro: 14  ^general_prompt
+          Complexity of ^general_prompt: 1
+    macro: 21  ^strict_prompt
+          Complexity of ^strict_prompt: 1
+    macro: 25  ^personal_opinion
+          Complexity of ^personal_opinion: 1
+    macro: 33  ^other_opinion
+          Complexity of ^other_opinion: 1
+    macro: 41  ^time
+          Complexity of ^time: 1
+    macro: 48  ^place
+          Complexity of ^place: 1
+    macro: 53  ^individual
+          Complexity of ^individual: 1
+    macro: 59  ^reason
+          Complexity of ^reason: 1
+    macro: 66  ^example
+          Complexity of ^example: 1
+    macro: 71  ^explanation
+          Complexity of ^explanation: 1
+    macro: 79  ^follow_up
+          Complexity of ^follow_up: 1
+    macro: 87  ^names
+          Complexity of ^names: 1
+    macro: 92  ^age
+          Complexity of ^age: 1
+    macro: 96  ^mood
+          Complexity of ^mood: 1
+    macro: 103  ^activity
+          Complexity of ^activity: 1
+    macro: 110  ^job
+          Complexity of ^job: 1
+    macro: 117  ^relationship_f
+          Complexity of ^relationship_f: 1
+    macro: 123  ^relationship_o
+          Complexity of ^relationship_o: 1
+    macro: 133  ^activity_together
+          Complexity of ^activity_together: 1
+    macro: 139  ^places_together
+          Complexity of ^places_together: 1
+    macro: 145  ^time_together
+          Complexity of ^time_together: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/PATTERN/simpletopic.top
+    macro: 1  ^myfunc
+          line: 2 0  # $$wordindex += 1 
+          line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
+          line: 4 42  # $$concept = ^join ( ~ _1 ) 
+          line: 5 69  # ^settag ( $$wordindex $$concep
+          line: 6 103  # ^setcanon ( $$wordindex _2 ) 
+          Complexity of ^myfunc: 1
+    topic: 8  ~xpostagsentence
+        rule: 9  ~xpostagsentence.0.0 t: 
+          Complexity of rule ~xpostagsentence.0.0- t: 1
+        rule: 10  ~xpostagsentence.1.0 t: 
+          line: 11 0  # $$wordindex = 0 
+          line: 12 16  # ^log ( FILE chat.txt NEW '_0 )
+          Complexity of rule ~xpostagsentence.1.0- t: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/PATTERN/introduction.top
     topic: 1  ~introduction
-        rule: 3  ~introduction.0.0- t: 
-          line: 3 0  # $sumcorrect = 0 [ Hallo! ] [ H
+        rule: 3  ~introduction.0.0 t: 
+          line: 3 0  # [ Hallo! ] [ Hey! ] [ Grüß G
           Complexity of rule ~introduction.0.0- t: 1
-        rule: 5  ~introduction.1.0-TRIAL1 t: 
-          line: 5 0  # gelb 
-          Complexity of rule ~introduction.1.0-TRIAL1 t: 1
-        rule: 6  ~introduction.1.1 a: 
-          line: 6 0  # $$correct = 1 $sumcorrect += 1
-          Complexity of rule ~introduction.1.1- a: 1
-        rule: 7  ~introduction.1.2 a: 
-          line: 7 0  # $$correct = 0 Das war falsch. 
-          Complexity of rule ~introduction.1.2- a: 1
-        rule: 9  ~introduction.2.0-TRIAL2 t: 
-          line: 9 0  # grün 
-          Complexity of rule ~introduction.2.0-TRIAL2 t: 1
-        rule: 10  ~introduction.2.1 a: 
-          line: 10 0  # $$correct = 1 $sumcorrect += 1
+        rule: 4  ~introduction.1.0 t: 
+          line: 4 0  # $$intro = 1 $chatphase = main 
+          Complexity of rule ~introduction.1.0- t: 1
+        rule: 6  ~introduction.2.0 u: 
+          line: 6 0  # ^keep ( ) ^refine ( ) 
+          Complexity of rule ~introduction.2.0- u: 1
+        rule: 8  ~introduction.2.1 a: 
+          line: 8 0  # names 
           Complexity of rule ~introduction.2.1- a: 1
-        rule: 11  ~introduction.2.2 a: 
-          line: 11 0  # $$correct = 0 Das war falsch. 
+        rule: 10  ~introduction.2.2 a: 
+          line: 10 0  # age 
           Complexity of rule ~introduction.2.2- a: 1
-        rule: 13  ~introduction.3.0-TRIAL3 t: 
-          line: 13 0  # rot 
-          Complexity of rule ~introduction.3.0-TRIAL3 t: 1
-        rule: 14  ~introduction.3.1 a: 
-          line: 14 0  # $$correct = 1 $sumcorrect += 1
-          Complexity of rule ~introduction.3.1- a: 1
-        rule: 15  ~introduction.3.2 a: 
-          line: 15 0  # $$correct = 0 Das war falsch. 
-          Complexity of rule ~introduction.3.2- a: 1
-        rule: 17  ~introduction.4.0-TRIAL4 t: 
-          line: 17 0  # braun 
-          Complexity of rule ~introduction.4.0-TRIAL4 t: 1
-        rule: 18  ~introduction.4.1 a: 
-          line: 18 0  # $$correct = 1 $sumcorrect += 1
-          Complexity of rule ~introduction.4.1- a: 1
-        rule: 19  ~introduction.4.2 a: 
-          line: 19 0  # $$correct = 0 Das war falsch. 
-          Complexity of rule ~introduction.4.2- a: 1
-        rule: 22  ~introduction.5.0-TRIAL5 t: 
-          line: 22 0  # schwarz 
-          Complexity of rule ~introduction.5.0-TRIAL5 t: 1
-        rule: 23  ~introduction.5.1 a: 
-          line: 23 0  # $$correct = 1 $sumcorrect += 1
-          Complexity of rule ~introduction.5.1- a: 1
-        rule: 24  ~introduction.5.2 a: 
-          line: 24 0  # $$correct = 0 Das war falsch. 
-          Complexity of rule ~introduction.5.2- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/a_concepts.top
+        rule: 12  ~introduction.2.3 a: 
+          line: 12 0  # mood 
+          Complexity of rule ~introduction.2.3- a: 1
+        rule: 14  ~introduction.2.4 a: 
+          line: 14 0  # job 
+          Complexity of rule ~introduction.2.4- a: 1
+        rule: 16  ~introduction.2.5 a: 
+          line: 16 0  # relationship_f 
+          Complexity of rule ~introduction.2.5- a: 1
+        rule: 18  ~introduction.2.6 a: 
+          line: 18 0  # relationship_o 
+          Complexity of rule ~introduction.2.6- a: 1
+        rule: 20  ~introduction.2.7 a: 
+          line: 20 0  # time_together 
+          Complexity of rule ~introduction.2.7- a: 1
+        rule: 22  ~introduction.2.8 a: 
+          line: 22 0  # time_relationship 
+          Complexity of rule ~introduction.2.8- a: 1
+        rule: 24  ~introduction.2.9 a: 
+          line: 24 0  # activity_together 
+          Complexity of rule ~introduction.2.9- a: 1
+        rule: 26  ~introduction.2.10 a: 
+          line: 26 0  # activity 
+          Complexity of rule ~introduction.2.10- a: 1
+        rule: 28  ~introduction.2.11 a: 
+          line: 28 0  # places_together 
+          Complexity of rule ~introduction.2.11- a: 1
+        rule: 30  ~introduction.2.12 a: 
+          line: 30 0  # personal_opinion 
+          Complexity of rule ~introduction.2.12- a: 1
+        rule: 32  ~introduction.2.13 a: 
+          line: 32 0  # other_opinion 
+          Complexity of rule ~introduction.2.13- a: 1
+        rule: 34  ~introduction.2.14 a: 
+          line: 34 0  # place 
+          Complexity of rule ~introduction.2.14- a: 1
+        rule: 36  ~introduction.2.15 a: 
+          line: 36 0  # individual 
+          Complexity of rule ~introduction.2.15- a: 1
+        rule: 38  ~introduction.2.16 a: 
+          line: 38 0  # reason 
+          Complexity of rule ~introduction.2.16- a: 1
+        rule: 40  ~introduction.2.17 a: 
+          line: 40 0  # example 
+          Complexity of rule ~introduction.2.17- a: 1
+        rule: 42  ~introduction.2.18 a: 
+          line: 42 0  # explanation 
+          Complexity of rule ~introduction.2.18- a: 1
+        rule: 44  ~introduction.2.19 a: 
+          Complexity of rule ~introduction.2.19- a: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/PATTERN/a_concepts.top
     topic: 1  ~own_concepts
     concept: 3  ~action
     concept: 4  ~activity
@@ -93,159 +170,134 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/a_concep
     concept: 32  ~yes_no
     concept: 33  ~while
     concept: 34  ~why
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/simplecontrol.top
-    macro: 4  ^tutorial
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/PATTERN/simplecontrol.top
+    macro: 4  ^pattern
           line: 5 0  # ^addtopic ( ~introduction ) 
           line: 6 28  # $cs_control_main = ~control 
-          line: 7 56  # $cs_control_post = ~addposthoc
-          line: 8 87  # $cs_language = german 
-          line: 9 109  # $cs_externaltag = ~xpostagsent
-          line: 10 144  # $userprompt = ^"%user: >" 
-          line: 11 170  # $botprompt = ^"Tutorial-Bot: "
-          line: 12 201  # $cs_token = 1048576 | 4096 | 2
+          line: 7 56  # $cs_language = german 
+          line: 8 78  # $cs_externaltag = ~xpostagsent
+          line: 9 113  # $userprompt = ^"%user: >" 
+          line: 10 139  # $botprompt = ^"Pattern-Bot: " 
+          line: 11 169  # $cs_token = 1048576 | 4096 | 2
+          Complexity of ^pattern: 1
+    macro: 13  ^tutorial
+          line: 14 0  # ^addtopic ( ~introduction ) 
+          line: 15 28  # $cs_control_main = ~control 
+          line: 16 56  # $cs_control_post = ~addposthoc
+          line: 17 87  # $cs_language = german 
+          line: 18 109  # $cs_externaltag = ~xpostagsent
+          line: 19 144  # $userprompt = ^"%user: >" 
+          line: 20 170  # $botprompt = ^"Tutorial-Bot: "
+          line: 21 201  # $cs_token = 1048576 | 4096 | 5
           Complexity of ^tutorial: 1
-    topic: 16  ~xrejoinder
-        rule: 19  ~xrejoinder.0.0 u: 
-          line: 19 0  # ^nofail ( topic ^rejoinder ( )
+    topic: 24  ~xrejoinder
+        rule: 27  ~xrejoinder.0.0 u: 
+          line: 27 0  # ^nofail ( topic ^rejoinder ( )
           Complexity of rule ~xrejoinder.0.0- u: 1
-    topic: 26  ~control
-        rule: 28  ~control.0.0 u: 
-          line: 29 0  # ^gambit ( ~introduction ) 
+    topic: 34  ~control
+        rule: 36  ~control.0.0 u: 
+          line: 37 0  # ^gambit ( ~introduction ) 
           Complexity of rule ~control.0.0- u: 1
-        rule: 35  ~control.1.0 u: 
-          line: 36 0  # $$currenttopic = %topic 
-          line: 37 24  # $$response = %response 
-          if 38 51  
-          ifend 38 125  
-          line: 38 47  # ^if 00v( %response == $$respon
-          if 40 130  
-          line: 40 126  # ^if 00M( %length == 0 and %res
-          line: 41 181  # { 
-          line: 42 183  # ^nofail ( TOPIC ^gambit ( $$cu
-          ifend 43 233  
-          line: 43 228  # } 004 
-          if 45 238  
-          ifend 45 325  
-          line: 45 234  # ^if 00v( %response == $$respon
-          if 47 330  
-          line: 47 326  # ^if 00v( %response == $$respon
-          line: 48 364  # { 
-          line: 49 366  # @8 = ^keywordtopics ( ) 
-          loop 50 396  
-          line: 50 390  # ^loop ( -1 ) aaa 
-          line: 51 407  # { 
-          line: 52 409  # $$topic = ^first ( @8subject )
-          line: 53 440  # ^nofail ( TOPIC ^respond ( $$t
-          if 54 483  
-          line: 54 479  # ^if 00m( %response != 0 ) aaa
-          line: 55 508  # { 
-          line: 56 510  # ^end ( RULE ) 
-          ifend 57 529  
-          line: 57 524  # } 004 
-          loopend 58 532  
-          line: 58 530  # } 
-          ifend 59 537  
-          line: 59 532  # } 004 
-          if 61 542  
-          ifend 61 626  
-          line: 61 538  # ^if 00v( %response == $$respon
-          if 64 631  
-          line: 64 627  # ^if 00F( %outputrejoinder or %
-          line: 65 675  # { 
-          line: 66 677  # ^end ( TOPIC ) 
-          ifend 67 697  
-          line: 67 692  # } 004 
-          if 69 702  
-          ifend 69 819  
-          line: 69 698  # ^if 00~( %response == $$respon
-          if 71 824  
-          line: 71 820  # ^if 00v( %response == $$respon
-          line: 72 858  # { 
-          line: 73 860  # @8 = ^keywordtopics ( ) 
-          loop 74 890  
-          line: 74 884  # ^loop ( -1 ) aaa 
-          line: 75 901  # { 
-          line: 76 903  # $$topic = ^first ( @8subject )
-          line: 77 934  # ^nofail ( TOPIC ^gambit ( $$to
-          if 78 976  
-          line: 78 972  # ^if 00m( %response != 0 ) aaa
-          line: 79 1001  # { 
-          line: 80 1003  # ^end ( RULE ) 
-          ifend 81 1022  
-          line: 81 1017  # } 004 
-          loopend 82 1025  
-          line: 82 1023  # } 
-          ifend 83 1030  
-          line: 83 1025  # } 004 
-          if 84 1035  
-          ifend 84 1121  
-          line: 84 1031  # ^if 00v( %response == $$respon
-          if 86 1126  
-          line: 86 1122  # ^if 00v( %response == $$respon
-          line: 87 1160  # { 
-          line: 88 1162  # @8 = ^gambittopics ( ) 
-          loop 89 1191  
-          line: 89 1185  # ^loop ( -1 ) aaa 
-          line: 90 1202  # { 
-          line: 91 1204  # $$topic = ^pick ( @8subject ) 
-          line: 92 1234  # ^nofail ( TOPIC ^gambit ( $$to
-          if 93 1276  
-          line: 93 1272  # ^if 00v( %response != $$respon
-          line: 94 1310  # { 
-          line: 95 1312  # ^end ( RULE ) 
-          ifend 96 1331  
-          line: 96 1326  # } 004 
-          loopend 97 1334  
-          line: 97 1332  # } 
-          ifend 98 1339  
-          line: 98 1334  # } 004 
-          if 99 1344  
-          line: 99 1340  # ^if 00v( %response == $$respon
-          line: 100 1378  # { 
-          line: 101 1380  # ^repeat ( ) 
-          line: 102 1392  # I don't know what to say. 
-          ifend 103 1423  
-          line: 103 1418  # } 004 
-          Complexity of rule ~control.1.0- u: 15
-    topic: 105  ~addposthoc
-        rule: 107  ~addposthoc.0.0 t: 
-          line: 107 0  # ^accuracy ( ) 
-          Complexity of rule ~addposthoc.0.0- t: 1
-        rule: 109  ~addposthoc.1.0 t: 
-          line: 109 0  # ^oob ( ) 
-          line: 110 9  # ^postprintbefore ( \[ $$oob \]
-          Complexity of rule ~addposthoc.1.0- t: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/z_debug.top
-    macro: 1  ^myfunc
-          line: 2 0  # $$wordindex += 1 
-          line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
-          line: 4 42  # $$concept = ^join ( ~ _1 ) 
-          line: 5 69  # ^settag ( $$wordindex $$concep
-          line: 6 103  # ^setcanon ( $$wordindex _2 ) 
-          Complexity of ^myfunc: 1
-    macro: 12  ^accuracy
-          line: 15 0  # $accuracy = $sumcorrect / 5 * 
-          Complexity of ^accuracy: 1
-    macro: 18  ^oob
-          line: 20 0  # $_correct = $$correct 
-          line: 21 22  # $_sumcorrect = $sumcorrect 
-          line: 22 49  # $_accuracy = $accuracy 
-          line: 26 72  # $_item1name = correct 
-          line: 27 94  # $_item1value = $_correct 
-          line: 28 119  # $_item2name = sumcorrect 
-          line: 29 144  # $_item2value = $_sumcorrect 
-          line: 30 172  # $_item3name = accuracy 
-          line: 31 195  # $_item3value = $_accuracy 
-          line: 37 221  # $$oob = ^join ( $_item1name : 
-          Complexity of ^oob: 1
-    topic: 41  ~xpostagsentence
-        rule: 42  ~xpostagsentence.0.0 t: 
-          Complexity of rule ~xpostagsentence.0.0- t: 1
-        rule: 43  ~xpostagsentence.1.0 t: 
-          line: 44 0  # $$wordindex = 0 
-          line: 45 16  # ^log ( FILE chat.txt NEW '_0 )
-          Complexity of rule ~xpostagsentence.1.0- t: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/TUTORIAL/keywordless.top
+        rule: 40  ~control.1.0 u: 
+          line: 41 0  # ^respond ( ~handle_oob ) 
+          line: 42 25  # ^end ( SENTENCE ) 
+          Complexity of rule ~control.1.0- u: 1
+        rule: 46  ~control.2.0 u: 
+          line: 47 0  # $$currenttopic = %topic 
+          line: 48 24  # $$response = %response 
+          if 49 51  
+          ifend 49 125  
+          line: 49 47  # ^if 00v( %response == $$respon
+          if 51 130  
+          line: 51 126  # ^if 00M( %length == 0 and %res
+          line: 52 181  # { 
+          line: 53 183  # ^nofail ( TOPIC ^gambit ( $$cu
+          ifend 54 233  
+          line: 54 228  # } 004 
+          if 56 238  
+          ifend 56 325  
+          line: 56 234  # ^if 00v( %response == $$respon
+          if 58 330  
+          line: 58 326  # ^if 00v( %response == $$respon
+          line: 59 364  # { 
+          line: 60 366  # @8 = ^keywordtopics ( ) 
+          loop 61 396  
+          line: 61 390  # ^loop ( -1 ) aaa 
+          line: 62 407  # { 
+          line: 63 409  # $$topic = ^first ( @8subject )
+          line: 64 440  # ^nofail ( TOPIC ^respond ( $$t
+          if 65 483  
+          line: 65 479  # ^if 00m( %response != 0 ) aaa
+          line: 66 508  # { 
+          line: 67 510  # ^end ( RULE ) 
+          ifend 68 529  
+          line: 68 524  # } 004 
+          loopend 69 532  
+          line: 69 530  # } 
+          ifend 70 537  
+          line: 70 532  # } 004 
+          if 72 542  
+          ifend 72 626  
+          line: 72 538  # ^if 00v( %response == $$respon
+          if 75 631  
+          line: 75 627  # ^if 00F( %outputrejoinder or %
+          line: 76 675  # { 
+          line: 77 677  # ^end ( TOPIC ) 
+          ifend 78 697  
+          line: 78 692  # } 004 
+          if 80 702  
+          ifend 80 819  
+          line: 80 698  # ^if 00~( %response == $$respon
+          if 82 824  
+          line: 82 820  # ^if 00v( %response == $$respon
+          line: 83 858  # { 
+          line: 84 860  # @8 = ^keywordtopics ( ) 
+          loop 85 890  
+          line: 85 884  # ^loop ( -1 ) aaa 
+          line: 86 901  # { 
+          line: 87 903  # $$topic = ^first ( @8subject )
+          line: 88 934  # ^nofail ( TOPIC ^gambit ( $$to
+          if 89 976  
+          line: 89 972  # ^if 00m( %response != 0 ) aaa
+          line: 90 1001  # { 
+          line: 91 1003  # ^end ( RULE ) 
+          ifend 92 1022  
+          line: 92 1017  # } 004 
+          loopend 93 1025  
+          line: 93 1023  # } 
+          ifend 94 1030  
+          line: 94 1025  # } 004 
+          if 95 1035  
+          ifend 95 1121  
+          line: 95 1031  # ^if 00v( %response == $$respon
+          if 97 1126  
+          line: 97 1122  # ^if 00v( %response == $$respon
+          line: 98 1160  # { 
+          line: 99 1162  # @8 = ^gambittopics ( ) 
+          loop 100 1191  
+          line: 100 1185  # ^loop ( -1 ) aaa 
+          line: 101 1202  # { 
+          line: 102 1204  # $$topic = ^pick ( @8subject ) 
+          line: 103 1234  # ^nofail ( TOPIC ^gambit ( $$to
+          if 104 1276  
+          line: 104 1272  # ^if 00v( %response != $$respon
+          line: 105 1310  # { 
+          line: 106 1312  # ^end ( RULE ) 
+          ifend 107 1331  
+          line: 107 1326  # } 004 
+          loopend 108 1334  
+          line: 108 1332  # } 
+          ifend 109 1339  
+          line: 109 1334  # } 004 
+          if 110 1344  
+          line: 110 1340  # ^if 00v( %response == $$respon
+          line: 111 1378  # { 
+          line: 112 1380  # ^repeat ( ) 
+          line: 113 1392  # I don't know what to say. 
+          line: 114 1418  # } aaa 
+          ifend 116 1423  
+          Complexity of rule ~control.2.0- u: 15
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/PATTERN/keywordless.top
     topic: 1  ~keywordless
         rule: 3  ~keywordless.0.0- r: 
           Complexity of rule ~keywordless.0.0- r: 1

@@ -1,4 +1,25 @@
-﻿^tutorial o 0 0 A( ) ^addtopic ( ~introduction ) $cs_control_main = ~control $cs_control_post = ~addposthoc $cs_language = german $cs_externaltag = ~xpostagsentence $userprompt = ^"%user: >" $botprompt = ^"Tutorial-Bot: " $cs_token = 1048576 | 4096 | 255 | 512 | 131072 `
+﻿^general_question p 0 0 A( ) [ ( warum bist du hier ) ( [ was worüber ] [ möchtest willst magst ] du ~narrate ) ( was liegt dir auf der seele ) ( was ist los ) ( was beschäftigt ) ( << wie [ läuft läufts ] >> ) ] `
+^general_prompt p 0 0 A( ) [ ( << [ erzähl erzähle berichte sage sag beschreib beschreibe ] [ mir mal ] >> ) ( << fang an >> ) ] `
+^strict_prompt p 0 0 A( ) `
+^personal_opinion p 0 0 A( ) [ ( << wie findest du das >> ) ( << wie ist das für dich >> ) ( << wie war das für dich >> ) ( << wie fühlst du dich >> ) ] `
+^other_opinion p 0 0 A( ) [ ( << wie findet das >> ) ( << wie ist das für >> ) ( << wie war das für >> ) ( << wie fühlt >> ) ] `
+^time p 0 0 A( ) [ ( << wie lange >> ) ( << wie häufig >> ) ( wann ) ] `
+^place p 0 0 A( ) [ ( wo ) ] `
+^individual p 0 0 A( ) [ ( wer ) ( mit_wem ) ] `
+^reason p 0 0 A( ) [ ( << wie kam es >> ) ( << wie kommt es >> ) ( wieso ) ( warum ) ] `
+^example p 0 0 A( ) [ ( noch ) ( ausserdem ) ] `
+^explanation p 0 0 A( ) [ ( << was_für_ein >> ) ( << an_was >> ) ( woran ) ( << [ welcher welche ] situation >> ) ( << was meinst du >> ) ] `
+^follow_up p 0 0 A( ) [ ( << was [ passiert macht gemacht machst machen getan sagt gesagt ] >> ) ] `
+^names p 0 0 A( ) [ ( << wie [ heisst heißt ] >> ) ( << wie name >> ) ] `
+^age p 0 0 A( ) [ ( << wie alt >> ) ] `
+^mood p 0 0 A( ) [ ( wie geht es ) ( wie gehts ) ( << wie_ist so drauf >> ) ] `
+^activity p 0 0 A( ) [ ( << was [ machen macht ] >> ) ] `
+^job p 0 0 A( ) [ ( << [ arbeitet gearbeitet ] >> ) ( beruf ) ] `
+^relationship_f p 0 0 A( ) [ ( wer_ist ) ] `
+^relationship_o p 0 0 A( ) [ ( << wie findest du >> ) ( << wie ist [ dein euer ] verhältnis >> ) ( << wie kommst du mit [ klar aus zurecht ] >> ) ( << wie verstehst du dich >> ) ( << wie versteht ihr euch >> ) ] `
+^activity_together p 0 0 A( ) [ ( << was [ macht unternehmt ] ihr >> ) ( << was [ machst unternimmst ] du mit >> ) ] `
+^places_together p 0 0 A( ) [ ( << wo ihr >> ) ( << wo mit >> ) ] `
+^time_together p 0 0 A( ) [ ( << [ wann wie_oft wie_häufig wie_viel ] [ siehst seht ] [ du ihr ] >> ) ( << [ wann wie_oft wie_häufig wie_viel ] zusammen >> ) ( << [ wann wie_oft wie_häufig wie_viel ] zeit mit >> ) ] `
 ^myfunc o 0 0 B( ^data $$concept ) $$wordindex += 1 _0 = ^burst ( ^0 "^\t" ) $$concept = ^join ( ~ _1 ) ^settag ( $$wordindex $$concept ) ^setcanon ( $$wordindex _2 ) `
-^accuracy o 0 0 A( ) $accuracy = $sumcorrect / 5 * 100 `
-^oob o 0 0 A( $_correct $_sumcorrect $_accuracy $_item1name $_item1value $_item2name $_item2value $_item3name $_item3value ) $_correct = $$correct $_sumcorrect = $sumcorrect $_accuracy = $accuracy $_item1name = correct $_item1value = $_correct $_item2name = sumcorrect $_item2value = $_sumcorrect $_item3name = accuracy $_item3value = $_accuracy $$oob = ^join ( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value "%" ) `
+^pattern o 0 0 A( ) ^addtopic ( ~introduction ) $cs_control_main = ~control $cs_language = german $cs_externaltag = ~xpostagsentence $userprompt = ^"%user: >" $botprompt = ^"Pattern-Bot: " $cs_token = 1048576 | 4096 | 255 | 512 | 131072 `
+^tutorial o 0 0 A( ) ^addtopic ( ~introduction ) $cs_control_main = ~control $cs_control_post = ~addposthoc $cs_language = german $cs_externaltag = ~xpostagsentence $userprompt = ^"%user: >" $botprompt = ^"Tutorial-Bot: " $cs_token = 1048576 | 4096 | 512 | 131072 | 2097152 | 4194304 | 8388608 | 16777216 `

@@ -1,6 +1,7 @@
 topic: ~introduction  keep repeat ()
 
-t: [Hallo!][Hey!][Grüß Gott!] Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.
+t: ($cs_bot=pattern) [Hallo!][Hey!][Grüß Gott!] Ich bin Patttern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.
+t: ($cs_bot=tutorial) $$intro = 1 $chatPhase=main [Hallo!][Hey!][Grüß Gott!] Ich bin tutorial
 
 u: () ^keep() ^refine()
     # name
