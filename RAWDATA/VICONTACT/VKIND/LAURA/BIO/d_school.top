@@ -50,16 +50,16 @@ t: ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! 
-u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific]) $schoolCounter = 1  Mathe ist voll schwer, da machen wir schriftliche Division.
+u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  Mathe ist voll schwer, da machen wir schriftliche Division.
    
 #! 
-u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific]) $schoolCounter = 2  Gestern musste ich was an der Tafel rechnen, das war falsch und alle haben dann gelacht.
+u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  Gestern musste ich was an der Tafel rechnen, das war falsch und alle haben dann gelacht.
 
 #! 
-u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific]) $schoolCounter = 3  Manchmal sind die anderen Mädchen schon blöd, einfach so.
+u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  Manchmal sind die anderen Mädchen schon blöd, einfach so.
 
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
-u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific]) $schoolCounter = 4  Ich finde das doof, wenn die anderen über mich lachen.
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Ich finde das doof, wenn die anderen über mich lachen.
 
 # Spezifische Antworten----------------------------------------------------------------------------------
 

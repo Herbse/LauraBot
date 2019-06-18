@@ -78,19 +78,19 @@ t: ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: FRIEND_1([$$answerCategory==narrative $$answerCategory==specific]) $friendCounter = 1 Mira und ich sind beste Freundinnen.
+u: FRIEND_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 Mira und ich sind beste Freundinnen.
   
 
 #! Was macht ihr so zusammen?
-u: FRIEND_2([$$answerCategory==narrative $$answerCategory==specific]) $friendCounter = 2 Wir tanzen zusammen im Club.
+u: FRIEND_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 Wir tanzen zusammen im Club.
 
 
 #! Erzähl mir ruhig von Miras zu Hause.
-u: FRIEND_3([$$answerCategory==narrative $$answerCategory==specific]) $friendCounter = 3 Bei Mira zu Hause spielen wir Let´s Dance.
+u: FRIEND_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 Bei Mira zu Hause spielen wir Let´s Dance.
 
 
 #! Erzähl mir mehr über Mira!
-u: FRIEND_4([$$answerCategory==narrative $$answerCategory==specific]) $friendCounter = 4 Mira hat einen Hund. der ist soo süß, der will mich immer ablecken.
+u: FRIEND_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Mira hat einen Hund. der ist soo süß, der will mich immer ablecken.
 
 
 

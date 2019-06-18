@@ -77,18 +77,18 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific]) $fatherCounter = 1 Mein Papa hilft meiner Mama zu Hause.
+u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 Mein Papa hilft meiner Mama zu Hause.
  
 
 #! Erzähl mal wie er ihr hilft?
-u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific]) $fatherCounter = 2 Er geht einkaufen und kocht ihr immer was zu essen.
+u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 Er geht einkaufen und kocht ihr immer was zu essen.
 
 #! Erzähl mir mehr über deinen Papa!
-u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific]) $fatherCounter = 3 Papa hilft den Nachbarn beim Autos reparieren. Oder einmal, da haben sie eine Waschmaschine wieder ganz gemacht.
+u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 3 Papa hilft den Nachbarn beim Autos reparieren. Oder einmal, da haben sie eine Waschmaschine wieder ganz gemacht.
  
 #! Was machst du denn gern mit deinem Papa?
 
-u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific]) $fatherCounter = 4 Am Wochenende darf ich manchmal mitkommen und Papa in der Garage helfen, ihm das Werkzeug geben und so.
+u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 Am Wochenende darf ich manchmal mitkommen und Papa in der Garage helfen, ihm das Werkzeug geben und so.
 
   
 

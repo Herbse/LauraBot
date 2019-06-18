@@ -268,64 +268,64 @@ u: CLUE2 ($showClue2==1) $clue = 1 Ich will nicht, dass der Onkel mich abholen d
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mir von deinem Onkel 
-u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 1  Mein Onkel schläft jetzt immer bei uns.
+u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1  Mein Onkel schläft jetzt immer bei uns.
     
 
 
 
 #---------------------------------------------------------------------------------------------
 #! Erzähl mir mal von deinem Onkel
-u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 2 Also, das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 Also, das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?
-u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 3 Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
+u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 3 Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
     
 #---------------------------------------------------------------------------------------------    
 
 #! Warum willst du denn nicht, dass er in dein Zimmer kommt?
 #! Und was macht
-u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 4 Der nervt mich und sagt ich soll aufräumen.
+u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 4 Der nervt mich und sagt ich soll aufräumen.
     
 #---------------------------------------------------------------------------------------------
 
 #! Was hat dein Onkel denn gemacht?
-u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 5 Er schreit mich immer an. Das ist voll gemein!  
+u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 5 Er schreit mich immer an. Das ist voll gemein!  
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 6 Meine Mama sagt, der schimpft mit mir, weil ich immer frech zu ihm bin.
+u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 6 Meine Mama sagt, der schimpft mit mir, weil ich immer frech zu ihm bin.
 
 #---------------------------------------------------------------------------------------------
 # Ab hier sind die Ereignisse zum A: sexuellen Übergriff, B: nicht-sexuellen Übergriff, C: andere Belastung
 #---------------------------------------------------------------------------------------------
 
 #! Erzähl noch mehr.
-#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 7 Neulich waren wir schwimmen, sollte ich sein Ding in den Mund nehmen.
-#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 7 Manchmal haut mich der Onkel auch. Einmal hat er mir eine Backpfeife gegeben. 
-#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 7 Der Onkel knutscht mit meiner Mama.  
+#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 Neulich waren wir schwimmen, sollte ich sein Ding in den Mund nehmen.
+#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 Manchmal haut mich der Onkel auch. Einmal hat er mir eine Backpfeife gegeben. 
+#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 Der Onkel knutscht mit meiner Mama.  
 
 #---------------------------------------------------------------------------------------------
 
 #! wie ist das passiert?
-#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 8 Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
-#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 8 Mein Gesicht hat richtig wehgetan.    
-#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 8 Ich wollte Mama meine Hausaufgaben zeigen und da bin ich in ihr Zimmer und habs gesehen.
+#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
+#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 Mein Gesicht hat richtig wehgetan.    
+#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 Ich wollte Mama meine Hausaufgaben zeigen und da bin ich in ihr Zimmer und habs gesehen.
 
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 9 Dann hat er seine Hose runtergezogen.
-#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 9 Nur weil ich kurz laut war, hat er mich gehauen. 
-#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 9 Mama hat so getan, als wenn sie mich nicht gesehen hat.
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 Dann hat er seine Hose runtergezogen.
+#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 Nur weil ich kurz laut war, hat er mich gehauen. 
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 Mama hat so getan, als wenn sie mich nicht gesehen hat.
 
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?
-#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 10 Das war voll eklig. Ich will den nicht mehr sehen.
-#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 10 Ich hab mich mit Leon gestritten. Und da ist mein Onkel voll sauer geworden.
-#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 10 Ich glaube, Papa hat das auch gesehen. Er hat sich neulich ganz doll mit Mama gestritten!
+#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 Das war voll eklig. Ich will den nicht mehr sehen.
+#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 Ich hab mich mit Leon gestritten. Und da ist mein Onkel voll sauer geworden.
+#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 Ich glaube, Papa hat das auch gesehen. Er hat sich neulich ganz doll mit Mama gestritten!
     
 
 # Weiterleitung aus dem Topic-Roulette

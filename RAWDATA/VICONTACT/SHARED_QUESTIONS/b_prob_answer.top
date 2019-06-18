@@ -107,7 +107,7 @@ else if ($$randNum < 65) {$$answerCategory = affirmation ^respond(~affirmation)}
 else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
 else {$$answerCategory = reactance ^respond(~reactance)}
 
-u: ($cs_bot=laura_si facilitator) 
+u: ($cs_bot=laura_si {_rapport}  facilitator) 
 if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = narrative:60_affirmation:20_notAnswering:10
 $$randNum = %rand

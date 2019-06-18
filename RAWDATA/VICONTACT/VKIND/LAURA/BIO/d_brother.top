@@ -80,16 +80,16 @@ u: () ^keep() ^refine()
 
 
 #! Erzähl mal was dein Bruder währenddessen tut. 
-u: BROTHER_1 ([$$answerCategory==narrative $$answerCategory==specific]) $brotherCounter = 1  Wenn der Leon FIFA spielt darf ich immer zugucken.
+u: BROTHER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 1  Wenn der Leon FIFA spielt darf ich immer zugucken.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_2 ([$$answerCategory==narrative $$answerCategory==specific]) $brotherCounter = 2  Wenn Leons Freunde kommen, muss ich immer alleine spielen.
+u: BROTHER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 2  Wenn Leons Freunde kommen, muss ich immer alleine spielen.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_3 ([$$answerCategory==narrative $$answerCategory==specific]) $brotherCounter = 3  Die spielen dann auch so andere Spiele mit Schießen und Leon sagt, ich soll da nicht zugucken.
+u: BROTHER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 3  Die spielen dann auch so andere Spiele mit Schießen und Leon sagt, ich soll da nicht zugucken.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_4 ([$$answerCategory==narrative $$answerCategory==specific]) $brotherCounter = 4  Dann gehe ich raus oder zu Mira. 
+u: BROTHER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 4  Dann gehe ich raus oder zu Mira. 
 
 #Spezifische Antworten --------------------------------------------------------------------------------------
 

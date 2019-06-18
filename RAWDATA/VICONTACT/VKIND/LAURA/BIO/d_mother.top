@@ -77,16 +77,16 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific]) $motherCounter = 1 Meine Mama ist immer zu Hause. Sie ist schlimm krank.
+u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 Meine Mama ist immer zu Hause. Sie ist schlimm krank.
 
 #! Erzähl mir mehr über deine Mama!
-u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific]) $motherCounter = 2 Sie muss im Bett liegen, wegen ihrem Rücken.
+u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 Sie muss im Bett liegen, wegen ihrem Rücken.
 
 #! Und was machst du gerne mit deiner Mama?
-u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific]) $motherCounter = 3 Nach der Schule setze ich mich zu Mama und mache Hausaufgaben.
+u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 Nach der Schule setze ich mich zu Mama und mache Hausaufgaben.
 
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
-u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific]) $motherCounter = 4 Mama hilft mir dann immer bei Mathe.
+u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Mama hilft mir dann immer bei Mathe.
 
 # Spezifische Antworten------------------------------------------------------------------------------
 
