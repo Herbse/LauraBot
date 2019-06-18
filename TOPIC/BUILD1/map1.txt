@@ -797,7 +797,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 271 0  # $eventcounter = 1 Mein Onkel s
           Complexity of rule ~event_t.3.0-EVENT_1 u: 1
         rule: 278  ~event_t.4.0-EVENT_2 u: 
-          line: 278 0  # $eventcounter = 2 Das ist nich
+          line: 278 0  # $eventcounter = 2 Also, das is
           Complexity of rule ~event_t.4.0-EVENT_2 u: 1
         rule: 282  ~event_t.5.0-EVENT_3 u: 
           line: 282 0  # $eventcounter = 3 Der kommt ei
@@ -806,7 +806,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 288 0  # $eventcounter = 4 Der nervt mi
           Complexity of rule ~event_t.6.0-EVENT_4 u: 1
         rule: 293  ~event_t.7.0-EVENT_5 u: 
-          line: 293 0  # $eventcounter = 5 Er haut mir 
+          line: 293 0  # $eventcounter = 5 Er schreit m
           Complexity of rule ~event_t.7.0-EVENT_5 u: 1
         rule: 298  ~event_t.8.0-EVENT_6 u: 
           line: 298 0  # $eventcounter = 6 Meine Mama s
@@ -2138,7 +2138,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 271 0  # $eventcounter = 1 Mein Onkel s
           Complexity of rule ~event_t~1.3.0-EVENT_1 u: 1
         rule: 278  ~event_t~1.4.0-EVENT_2 u: 
-          line: 278 0  # $eventcounter = 2 Das ist nich
+          line: 278 0  # $eventcounter = 2 Also, das is
           Complexity of rule ~event_t~1.4.0-EVENT_2 u: 1
         rule: 282  ~event_t~1.5.0-EVENT_3 u: 
           line: 282 0  # $eventcounter = 3 Der kommt ei
@@ -2147,7 +2147,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 288 0  # $eventcounter = 4 Der nervt mi
           Complexity of rule ~event_t~1.6.0-EVENT_4 u: 1
         rule: 293  ~event_t~1.7.0-EVENT_5 u: 
-          line: 293 0  # $eventcounter = 5 Er haut mir 
+          line: 293 0  # $eventcounter = 5 Er schreit m
           Complexity of rule ~event_t~1.7.0-EVENT_5 u: 1
         rule: 298  ~event_t~1.8.0-EVENT_6 u: 
           line: 298 0  # $eventcounter = 6 Meine Mama s
@@ -3259,21 +3259,23 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_
           line: 125 361  # else ( 1 ) 00* { $$answercateg
           Complexity of rule ~prob_answer.4.0- u: 4
         rule: 129  ~prob_answer.5.0 u: 
-          line: 130 0  # $if ( '_0==rapport ) { $rappor
-          line: 131 46  # $goodquestion +=' 1 
-          line: 132 66  # $noncrittopic += 1 
-          line: 133 85  # $$probformat = specific:60_not
-          line: 134 154  # $$randnum = %rand 
-          if 135 176  
-          line: 135 172  # ^if 00m( $$randnum < 60 ) 00~{
-          elseif 136 265  
-          line: 136 260  # else 00m( $$randnum < 80 ) 00*
-          elseif 137 362  
-          line: 137 357  # else 00m( $$randnum < 90 ) 00@
-          else 138 453  
-          ifend 138 523  
-          line: 138 448  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.0- u: 4
+          if 130 4  
+          ifend 130 57  
+          line: 130 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 131 58  # $goodquestion +=' 1 
+          line: 132 78  # $noncrittopic += 1 
+          line: 133 97  # $$probformat = specific:60_not
+          line: 134 166  # $$randnum = %rand 
+          if 135 188  
+          line: 135 184  # ^if 00m( $$randnum < 60 ) 00~{
+          elseif 136 277  
+          line: 136 272  # else 00m( $$randnum < 80 ) 00*
+          elseif 137 374  
+          line: 137 369  # else 00m( $$randnum < 90 ) 00@
+          else 138 465  
+          ifend 138 535  
+          line: 138 460  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.0- u: 5
         rule: 140  ~prob_answer.6.0 u: 
           if 141 4  
           ifend 141 57  

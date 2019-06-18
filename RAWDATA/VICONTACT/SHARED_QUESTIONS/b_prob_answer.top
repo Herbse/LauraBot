@@ -127,7 +127,7 @@ else {$$answerCategory = notAnswering ^respond(~notAnswering)}
 
 # LI: 60% specific answer | 20% non-answer | 10% ignorance | 10% reactance
 u: ($cs_bot=laura_li {_rapport} specific)
-$if ('_0==rapport){$rapportCounter += 1}
+if ('_0==rapport){$rapportCounter += 1}
 $goodQuestion +=' 1
 $noncritTopic += 1
 $$probFormat = specific:60_notAnswering:20_ignorance:10_reactance:10
