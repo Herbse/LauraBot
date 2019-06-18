@@ -275,7 +275,7 @@ u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific])
 
 #---------------------------------------------------------------------------------------------
 #! Erzähl mir mal von deinem Onkel
-u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 2 Das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 2 Also, das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?
@@ -290,12 +290,12 @@ u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCoun
 #---------------------------------------------------------------------------------------------
 
 #! Was hat dein Onkel denn gemacht?
-u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 5 Er haut mir immer auf den Po. Das ist voll gemein!  
+u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 5 Er schreit mich immer an. Das ist voll gemein!  
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 6 Meine Mama sagt, der haut mich, weil ich immer frech zu ihm bin.
+u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific]) $eventCounter = 6 Meine Mama sagt, der schimpft mit mir, weil ich immer frech zu ihm bin.
 
 #---------------------------------------------------------------------------------------------
 # Ab hier sind die Ereignisse zum A: sexuellen Übergriff, B: nicht-sexuellen Übergriff, C: andere Belastung
