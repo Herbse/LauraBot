@@ -170,7 +170,7 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 
 # 90% incomprehension | 10% reactance 
-u: (unknowable_question) 
+u: ({_rapport} unknowable_question) 
 if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = incomprehension:90_reactance:10
 $$randNum = %rand
