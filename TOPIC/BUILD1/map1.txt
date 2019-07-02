@@ -592,239 +592,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 30  ~event_t.0.15 a: 
           line: 30 0  # $$intent = places_together $$s
           Complexity of rule ~event_t.0.15- a: 1
-        rule: 110  ~event_t.1.0 u: 
-          line: 110 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t.1.0- u: 1
-        rule: 112  ~event_t.1.1 a: 
-          line: 112 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t.1.1- a: 1
-        rule: 113  ~event_t.1.2 b: 
-          line: 113 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t.1.2- b: 1
-        rule: 114  ~event_t.1.3 b: 
-          line: 114 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t.1.3- b: 1
-        rule: 115  ~event_t.1.4 b: 
-          line: 115 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t.1.4- b: 1
-        rule: 116  ~event_t.1.5 b: 
-          line: 116 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t.1.5- b: 1
-        rule: 117  ~event_t.1.6 b: 
-          line: 117 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t.1.6- b: 1
-        rule: 118  ~event_t.1.7 b: 
-          line: 118 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t.1.7- b: 1
-        rule: 119  ~event_t.1.8 b: 
-          line: 119 0  # $$sound_file = event12b Das is
-          Complexity of rule ~event_t.1.8- b: 1
-        rule: 120  ~event_t.1.9 b: 
-          line: 120 0  # $$sound_file = event12b Das is
-          Complexity of rule ~event_t.1.9- b: 1
-        rule: 121  ~event_t.1.10 b: 
-          line: 121 0  # $$sound_file = event12b Das is
-          Complexity of rule ~event_t.1.10- b: 1
-        rule: 122  ~event_t.1.11 b: 
-          line: 122 0  # $$sound_file = event12b Das is
-          Complexity of rule ~event_t.1.11- b: 1
-        rule: 124  ~event_t.1.12 a: 
-          line: 124 0  # $$intent = other_opinion $$ans
-          Complexity of rule ~event_t.1.12- a: 1
-        rule: 126  ~event_t.1.13 a: 
-          line: 126 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t.1.13- a: 1
-        rule: 127  ~event_t.1.14 b: 
-          line: 127 0  # $$sound_file = event13b Im Woh
-          Complexity of rule ~event_t.1.14- b: 1
-        rule: 128  ~event_t.1.15 b: 
-          line: 128 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.15- b: 1
-        rule: 129  ~event_t.1.16 b: 
-          line: 129 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.16- b: 1
-        rule: 130  ~event_t.1.17 b: 
-          line: 130 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.17- b: 1
-        rule: 131  ~event_t.1.18 b: 
-          line: 131 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.18- b: 1
-        rule: 132  ~event_t.1.19 b: 
-          line: 132 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.19- b: 1
-        rule: 133  ~event_t.1.20 b: 
-          line: 133 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.20- b: 1
-        rule: 134  ~event_t.1.21 b: 
-          line: 134 0  # $$sound_file = event10 Zu Haus
-          Complexity of rule ~event_t.1.21- b: 1
-        rule: 135  ~event_t.1.22 b: 
-          line: 135 0  # $$sound_file = event10 Zu Haus
-          Complexity of rule ~event_t.1.22- b: 1
-        rule: 136  ~event_t.1.23 b: 
-          line: 136 0  # $$sound_file = event10 Zu Haus
-          Complexity of rule ~event_t.1.23- b: 1
-        rule: 137  ~event_t.1.24 b: 
-          line: 137 0  # $$sound_file = event10 Zu Haus
-          Complexity of rule ~event_t.1.24- b: 1
-        rule: 139  ~event_t.1.25 a: 
-          line: 139 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t.1.25- a: 1
-        rule: 140  ~event_t.1.26 b: 
-          line: 140 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.26- b: 1
-        rule: 141  ~event_t.1.27 b: 
-          line: 141 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.27- b: 1
-        rule: 142  ~event_t.1.28 b: 
-          line: 142 0  # $$sound_file = event13b Mein O
-          Complexity of rule ~event_t.1.28- b: 1
-        rule: 143  ~event_t.1.29 b: 
-          line: 143 0  # $$sound_file = event13b Mein O
-          Complexity of rule ~event_t.1.29- b: 1
-        rule: 144  ~event_t.1.30 b: 
-          line: 144 0  # $$sound_file = event13b Mein O
-          Complexity of rule ~event_t.1.30- b: 1
-        rule: 145  ~event_t.1.31 b: 
-          line: 145 0  # $$sound_file = event13b Mein O
-          Complexity of rule ~event_t.1.31- b: 1
-        rule: 146  ~event_t.1.32 b: 
-          line: 146 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.32- b: 1
-        rule: 147  ~event_t.1.33 b: 
-          line: 147 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.33- b: 1
-        rule: 148  ~event_t.1.34 b: 
-          line: 148 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.34- b: 1
-        rule: 149  ~event_t.1.35 b: 
-          line: 149 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.35- b: 1
-        rule: 151  ~event_t.1.36 a: 
-          line: 151 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t.1.36- a: 1
-        rule: 152  ~event_t.1.37 b: 
-          line: 152 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.37- b: 1
-        rule: 153  ~event_t.1.38 b: 
-          line: 153 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.38- b: 1
-        rule: 154  ~event_t.1.39 b: 
-          line: 154 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.39- b: 1
-        rule: 155  ~event_t.1.40 b: 
-          line: 155 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.40- b: 1
-        rule: 156  ~event_t.1.41 b: 
-          line: 156 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.41- b: 1
-        rule: 157  ~event_t.1.42 b: 
-          line: 157 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.42- b: 1
-        rule: 158  ~event_t.1.43 b: 
-          line: 158 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.43- b: 1
-        rule: 159  ~event_t.1.44 b: 
-          line: 159 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.44- b: 1
-        rule: 160  ~event_t.1.45 b: 
-          line: 160 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.45- b: 1
-        rule: 161  ~event_t.1.46 b: 
-          line: 161 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.46- b: 1
-        rule: 162  ~event_t.1.47 b: 
-          line: 162 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.47- b: 1
-        rule: 164  ~event_t.1.48 a: 
-          line: 164 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t.1.48- a: 1
-        rule: 165  ~event_t.1.49 b: 
-          line: 165 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.49- b: 1
-        rule: 166  ~event_t.1.50 b: 
-          line: 166 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.50- b: 1
-        rule: 168  ~event_t.1.51 a: 
-          line: 168 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t.1.51- a: 1
-        rule: 169  ~event_t.1.52 b: 
-          line: 169 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.52- b: 1
-        rule: 170  ~event_t.1.53 b: 
-          line: 170 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.53- b: 1
-        rule: 171  ~event_t.1.54 b: 
-          line: 171 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.54- b: 1
-        rule: 172  ~event_t.1.55 b: 
-          line: 172 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.55- b: 1
-        rule: 173  ~event_t.1.56 b: 
-          line: 173 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.56- b: 1
-        rule: 174  ~event_t.1.57 b: 
-          line: 174 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.57- b: 1
-        rule: 175  ~event_t.1.58 b: 
-          line: 175 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.58- b: 1
-        rule: 176  ~event_t.1.59 b: 
-          line: 176 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.59- b: 1
-        rule: 177  ~event_t.1.60 b: 
-          line: 177 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.60- b: 1
-        rule: 178  ~event_t.1.61 b: 
-          line: 178 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.61- b: 1
-        rule: 180  ~event_t.1.62 a: 
-          line: 180 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t.1.62- a: 1
-        rule: 181  ~event_t.1.63 b: 
-          line: 181 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.1.63- b: 1
-        rule: 182  ~event_t.1.64 b: 
-          line: 182 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.1.64- b: 1
-        rule: 184  ~event_t.1.65 a: 
-          line: 184 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t.1.65- a: 1
-        rule: 269  ~event_t.2.0-EVENT_1 u: 
+        rule: 269  ~event_t.1.0-EVENT_1 u: 
           line: 269 0  # $eventcounter = 1 $$sound_file
-          Complexity of rule ~event_t.2.0-EVENT_1 u: 1
-        rule: 276  ~event_t.3.0-EVENT_2 u: 
+          Complexity of rule ~event_t.1.0-EVENT_1 u: 1
+        rule: 276  ~event_t.2.0-EVENT_2 u: 
           line: 276 0  # $eventcounter = 2 $$sound_file
-          Complexity of rule ~event_t.3.0-EVENT_2 u: 1
-        rule: 280  ~event_t.4.0-EVENT_3 u: 
+          Complexity of rule ~event_t.2.0-EVENT_2 u: 1
+        rule: 280  ~event_t.3.0-EVENT_3 u: 
           line: 280 0  # $eventcounter = 3 $$sound_file
-          Complexity of rule ~event_t.4.0-EVENT_3 u: 1
-        rule: 286  ~event_t.5.0-EVENT_4 u: 
+          Complexity of rule ~event_t.3.0-EVENT_3 u: 1
+        rule: 286  ~event_t.4.0-EVENT_4 u: 
           line: 286 0  # $eventcounter = 4 $$sound_file
-          Complexity of rule ~event_t.5.0-EVENT_4 u: 1
-        rule: 291  ~event_t.6.0-EVENT_5 u: 
+          Complexity of rule ~event_t.4.0-EVENT_4 u: 1
+        rule: 291  ~event_t.5.0-EVENT_5 u: 
           line: 291 0  # $eventcounter = 5 $$sound_file
-          Complexity of rule ~event_t.6.0-EVENT_5 u: 1
-        rule: 296  ~event_t.7.0-EVENT_6 u: 
+          Complexity of rule ~event_t.5.0-EVENT_5 u: 1
+        rule: 296  ~event_t.6.0-EVENT_6 u: 
           line: 296 0  # $eventcounter = 6 $$sound_file
-          Complexity of rule ~event_t.7.0-EVENT_6 u: 1
-        rule: 304  ~event_t.8.0-EVENT_7 u: 
-          line: 304 0  # $eventcounter = 7 $$sound_file
-          Complexity of rule ~event_t.8.0-EVENT_7 u: 1
-        rule: 311  ~event_t.9.0-EVENT_8 u: 
-          line: 311 0  # $eventcounter = 8 $$sound_file
-          Complexity of rule ~event_t.9.0-EVENT_8 u: 1
-        rule: 319  ~event_t.10.0-EVENT_9 u: 
-          line: 319 0  # $eventcounter = 9 $$sound_file
-          Complexity of rule ~event_t.10.0-EVENT_9 u: 1
-        rule: 325  ~event_t.11.0-EVENT_10 u: 
-          line: 325 0  # $eventcounter = 10 $$sound_fil
-          Complexity of rule ~event_t.11.0-EVENT_10 u: 1
-        rule: 329  ~event_t.12.0-CLUE2 u: 
+          Complexity of rule ~event_t.6.0-EVENT_6 u: 1
+        rule: 329  ~event_t.7.0-CLUE2 u: 
           line: 329 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t.12.0-CLUE2 u: 1
-        rule: 332  ~event_t.13.0 u: 
-          Complexity of rule ~event_t.13.0- u: 1
+          Complexity of rule ~event_t.7.0-CLUE2 u: 1
+        rule: 332  ~event_t.8.0 u: 
+          Complexity of rule ~event_t.8.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA/BIO/d_introduction.top
     topic: 1  ~introduction
         rule: 3  ~introduction.0.0 t: 
@@ -1933,239 +1723,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 30  ~event_t~1.0.15 a: 
           line: 30 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~1.0.15- a: 1
-        rule: 110  ~event_t~1.1.0 u: 
-          line: 110 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~1.1.0- u: 1
-        rule: 112  ~event_t~1.1.1 a: 
-          line: 112 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~1.1.1- a: 1
-        rule: 113  ~event_t~1.1.2 b: 
-          line: 113 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t~1.1.2- b: 1
-        rule: 114  ~event_t~1.1.3 b: 
-          line: 114 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t~1.1.3- b: 1
-        rule: 115  ~event_t~1.1.4 b: 
-          line: 115 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t~1.1.4- b: 1
-        rule: 116  ~event_t~1.1.5 b: 
-          line: 116 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t~1.1.5- b: 1
-        rule: 117  ~event_t~1.1.6 b: 
-          line: 117 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t~1.1.6- b: 1
-        rule: 118  ~event_t~1.1.7 b: 
-          line: 118 0  # $$sound_file = event11b Voll d
-          Complexity of rule ~event_t~1.1.7- b: 1
-        rule: 119  ~event_t~1.1.8 b: 
-          line: 119 0  # $$sound_file = event12b Das is
-          Complexity of rule ~event_t~1.1.8- b: 1
-        rule: 120  ~event_t~1.1.9 b: 
-          line: 120 0  # $$sound_file = event12b Das is
-          Complexity of rule ~event_t~1.1.9- b: 1
-        rule: 121  ~event_t~1.1.10 b: 
-          line: 121 0  # $$sound_file = event12b Das is
-          Complexity of rule ~event_t~1.1.10- b: 1
-        rule: 122  ~event_t~1.1.11 b: 
-          line: 122 0  # $$sound_file = event12b Das is
-          Complexity of rule ~event_t~1.1.11- b: 1
-        rule: 124  ~event_t~1.1.12 a: 
-          line: 124 0  # $$intent = other_opinion $$ans
-          Complexity of rule ~event_t~1.1.12- a: 1
-        rule: 126  ~event_t~1.1.13 a: 
-          line: 126 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~1.1.13- a: 1
-        rule: 127  ~event_t~1.1.14 b: 
-          line: 127 0  # $$sound_file = event13b Im Woh
-          Complexity of rule ~event_t~1.1.14- b: 1
-        rule: 128  ~event_t~1.1.15 b: 
-          line: 128 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.15- b: 1
-        rule: 129  ~event_t~1.1.16 b: 
-          line: 129 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.16- b: 1
-        rule: 130  ~event_t~1.1.17 b: 
-          line: 130 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.17- b: 1
-        rule: 131  ~event_t~1.1.18 b: 
-          line: 131 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.18- b: 1
-        rule: 132  ~event_t~1.1.19 b: 
-          line: 132 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.19- b: 1
-        rule: 133  ~event_t~1.1.20 b: 
-          line: 133 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.20- b: 1
-        rule: 134  ~event_t~1.1.21 b: 
-          line: 134 0  # $$sound_file = event10 Zu Haus
-          Complexity of rule ~event_t~1.1.21- b: 1
-        rule: 135  ~event_t~1.1.22 b: 
-          line: 135 0  # $$sound_file = event10 Zu Haus
-          Complexity of rule ~event_t~1.1.22- b: 1
-        rule: 136  ~event_t~1.1.23 b: 
-          line: 136 0  # $$sound_file = event10 Zu Haus
-          Complexity of rule ~event_t~1.1.23- b: 1
-        rule: 137  ~event_t~1.1.24 b: 
-          line: 137 0  # $$sound_file = event10 Zu Haus
-          Complexity of rule ~event_t~1.1.24- b: 1
-        rule: 139  ~event_t~1.1.25 a: 
-          line: 139 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~1.1.25- a: 1
-        rule: 140  ~event_t~1.1.26 b: 
-          line: 140 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.26- b: 1
-        rule: 141  ~event_t~1.1.27 b: 
-          line: 141 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.27- b: 1
-        rule: 142  ~event_t~1.1.28 b: 
-          line: 142 0  # $$sound_file = event13b Mein O
-          Complexity of rule ~event_t~1.1.28- b: 1
-        rule: 143  ~event_t~1.1.29 b: 
-          line: 143 0  # $$sound_file = event13b Mein O
-          Complexity of rule ~event_t~1.1.29- b: 1
-        rule: 144  ~event_t~1.1.30 b: 
-          line: 144 0  # $$sound_file = event13b Mein O
-          Complexity of rule ~event_t~1.1.30- b: 1
-        rule: 145  ~event_t~1.1.31 b: 
-          line: 145 0  # $$sound_file = event13b Mein O
-          Complexity of rule ~event_t~1.1.31- b: 1
-        rule: 146  ~event_t~1.1.32 b: 
-          line: 146 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.32- b: 1
-        rule: 147  ~event_t~1.1.33 b: 
-          line: 147 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.33- b: 1
-        rule: 148  ~event_t~1.1.34 b: 
-          line: 148 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.34- b: 1
-        rule: 149  ~event_t~1.1.35 b: 
-          line: 149 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.35- b: 1
-        rule: 151  ~event_t~1.1.36 a: 
-          line: 151 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~1.1.36- a: 1
-        rule: 152  ~event_t~1.1.37 b: 
-          line: 152 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.37- b: 1
-        rule: 153  ~event_t~1.1.38 b: 
-          line: 153 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.38- b: 1
-        rule: 154  ~event_t~1.1.39 b: 
-          line: 154 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.39- b: 1
-        rule: 155  ~event_t~1.1.40 b: 
-          line: 155 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.40- b: 1
-        rule: 156  ~event_t~1.1.41 b: 
-          line: 156 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.41- b: 1
-        rule: 157  ~event_t~1.1.42 b: 
-          line: 157 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.42- b: 1
-        rule: 158  ~event_t~1.1.43 b: 
-          line: 158 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.43- b: 1
-        rule: 159  ~event_t~1.1.44 b: 
-          line: 159 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.44- b: 1
-        rule: 160  ~event_t~1.1.45 b: 
-          line: 160 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.45- b: 1
-        rule: 161  ~event_t~1.1.46 b: 
-          line: 161 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.46- b: 1
-        rule: 162  ~event_t~1.1.47 b: 
-          line: 162 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.47- b: 1
-        rule: 164  ~event_t~1.1.48 a: 
-          line: 164 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~1.1.48- a: 1
-        rule: 165  ~event_t~1.1.49 b: 
-          line: 165 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.49- b: 1
-        rule: 166  ~event_t~1.1.50 b: 
-          line: 166 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.50- b: 1
-        rule: 168  ~event_t~1.1.51 a: 
-          line: 168 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~1.1.51- a: 1
-        rule: 169  ~event_t~1.1.52 b: 
-          line: 169 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.52- b: 1
-        rule: 170  ~event_t~1.1.53 b: 
-          line: 170 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.53- b: 1
-        rule: 171  ~event_t~1.1.54 b: 
-          line: 171 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.54- b: 1
-        rule: 172  ~event_t~1.1.55 b: 
-          line: 172 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.55- b: 1
-        rule: 173  ~event_t~1.1.56 b: 
-          line: 173 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.56- b: 1
-        rule: 174  ~event_t~1.1.57 b: 
-          line: 174 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.57- b: 1
-        rule: 175  ~event_t~1.1.58 b: 
-          line: 175 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.58- b: 1
-        rule: 176  ~event_t~1.1.59 b: 
-          line: 176 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.59- b: 1
-        rule: 177  ~event_t~1.1.60 b: 
-          line: 177 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.60- b: 1
-        rule: 178  ~event_t~1.1.61 b: 
-          line: 178 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.61- b: 1
-        rule: 180  ~event_t~1.1.62 a: 
-          line: 180 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~1.1.62- a: 1
-        rule: 181  ~event_t~1.1.63 b: 
-          line: 181 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.1.63- b: 1
-        rule: 182  ~event_t~1.1.64 b: 
-          line: 182 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.1.64- b: 1
-        rule: 184  ~event_t~1.1.65 a: 
-          line: 184 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~1.1.65- a: 1
-        rule: 269  ~event_t~1.2.0-EVENT_1 u: 
+        rule: 269  ~event_t~1.1.0-EVENT_1 u: 
           line: 269 0  # $eventcounter = 1 $$sound_file
-          Complexity of rule ~event_t~1.2.0-EVENT_1 u: 1
-        rule: 276  ~event_t~1.3.0-EVENT_2 u: 
+          Complexity of rule ~event_t~1.1.0-EVENT_1 u: 1
+        rule: 276  ~event_t~1.2.0-EVENT_2 u: 
           line: 276 0  # $eventcounter = 2 $$sound_file
-          Complexity of rule ~event_t~1.3.0-EVENT_2 u: 1
-        rule: 280  ~event_t~1.4.0-EVENT_3 u: 
+          Complexity of rule ~event_t~1.2.0-EVENT_2 u: 1
+        rule: 280  ~event_t~1.3.0-EVENT_3 u: 
           line: 280 0  # $eventcounter = 3 $$sound_file
-          Complexity of rule ~event_t~1.4.0-EVENT_3 u: 1
-        rule: 286  ~event_t~1.5.0-EVENT_4 u: 
+          Complexity of rule ~event_t~1.3.0-EVENT_3 u: 1
+        rule: 286  ~event_t~1.4.0-EVENT_4 u: 
           line: 286 0  # $eventcounter = 4 $$sound_file
-          Complexity of rule ~event_t~1.5.0-EVENT_4 u: 1
-        rule: 291  ~event_t~1.6.0-EVENT_5 u: 
+          Complexity of rule ~event_t~1.4.0-EVENT_4 u: 1
+        rule: 291  ~event_t~1.5.0-EVENT_5 u: 
           line: 291 0  # $eventcounter = 5 $$sound_file
-          Complexity of rule ~event_t~1.6.0-EVENT_5 u: 1
-        rule: 296  ~event_t~1.7.0-EVENT_6 u: 
+          Complexity of rule ~event_t~1.5.0-EVENT_5 u: 1
+        rule: 296  ~event_t~1.6.0-EVENT_6 u: 
           line: 296 0  # $eventcounter = 6 $$sound_file
-          Complexity of rule ~event_t~1.7.0-EVENT_6 u: 1
-        rule: 304  ~event_t~1.8.0-EVENT_7 u: 
-          line: 304 0  # $eventcounter = 7 $$sound_file
-          Complexity of rule ~event_t~1.8.0-EVENT_7 u: 1
-        rule: 311  ~event_t~1.9.0-EVENT_8 u: 
-          line: 311 0  # $eventcounter = 8 $$sound_file
-          Complexity of rule ~event_t~1.9.0-EVENT_8 u: 1
-        rule: 319  ~event_t~1.10.0-EVENT_9 u: 
-          line: 319 0  # $eventcounter = 9 $$sound_file
-          Complexity of rule ~event_t~1.10.0-EVENT_9 u: 1
-        rule: 325  ~event_t~1.11.0-EVENT_10 u: 
-          line: 325 0  # $eventcounter = 10 $$sound_fil
-          Complexity of rule ~event_t~1.11.0-EVENT_10 u: 1
-        rule: 329  ~event_t~1.12.0-CLUE2 u: 
+          Complexity of rule ~event_t~1.6.0-EVENT_6 u: 1
+        rule: 329  ~event_t~1.7.0-CLUE2 u: 
           line: 329 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~1.12.0-CLUE2 u: 1
-        rule: 332  ~event_t~1.13.0 u: 
-          Complexity of rule ~event_t~1.13.0- u: 1
+          Complexity of rule ~event_t~1.7.0-CLUE2 u: 1
+        rule: 332  ~event_t~1.8.0 u: 
+          Complexity of rule ~event_t~1.8.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA/BIO/d_introduction.top
     topic: 1  ~introduction~1
         rule: 3  ~introduction~1.0.0 t: 
@@ -3222,198 +2802,458 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_
           line: 94 320  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.1.0- u: 4
         rule: 99  ~prob_answer.2.0 u: 
-          if 100 4  
-          ifend 100 57  
-          line: 100 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 101 58  # $goodquestion += 1 
-          line: 102 77  # $noncrittopic += 1 
-          line: 103 96  # $$probformat = narrative:40_af
-          line: 104 168  # $$randnum = %rand 
-          if 105 190  
-          line: 105 186  # ^if 00m( $$randnum < 40 ) 00@{
-          elseif 106 281  
-          line: 106 276  # else 00m( $$randnum < 65 ) 00^
-          elseif 107 376  
-          line: 107 371  # else 00m( $$randnum < 90 ) 00*
-          else 108 473  
-          ifend 108 543  
-          line: 108 468  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.0- u: 5
-        rule: 110  ~prob_answer.3.0 u: 
-          if 111 4  
-          ifend 111 57  
-          line: 111 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 112 58  # $$probformat = narrative:60_af
-          line: 113 117  # $$randnum = %rand 
-          if 114 139  
-          line: 114 135  # ^if 00m( $$randnum < 60 ) 00@{
-          elseif 115 230  
-          line: 115 225  # else 00m( $$randnum < 80 ) 00^
-          else 116 325  
-          ifend 116 401  
-          line: 116 320  # else ( 1 ) 00* { $$answercateg
+          line: 99 0  # ^refine ( ) $goodquestion += 1
+          if 100 54  
+          ifend 100 107  
+          line: 100 50  # ^if 00m( '_0 == rapport ) 00w{
+          Complexity of rule ~prob_answer.2.0- u: 2
+        rule: 101  ~prob_answer.2.1 a: 
+          line: 102 0  # $$probformat = narrative:20_af
+          line: 103 72  # $$randnum = %rand 
+          if 104 94  
+          line: 104 90  # ^if 00m( $$randnum < 20 ) 00@{
+          elseif 105 185  
+          line: 105 180  # else 00m( $$randnum < 50 ) 00^
+          elseif 106 280  
+          line: 106 275  # else 00m( $$randnum < 80 ) 00*
+          else 107 377  
+          ifend 107 447  
+          line: 107 372  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.1- a: 4
+        rule: 108  ~prob_answer.2.2 a: 
+          line: 109 0  # $$probformat = narrative:24_af
+          line: 110 72  # $$randnum = %rand 
+          if 111 94  
+          line: 111 90  # ^if 00m( $$randnum < 24 ) 00@{
+          elseif 112 185  
+          line: 112 180  # else 00m( $$randnum < 53 ) 00^
+          elseif 113 280  
+          line: 113 275  # else 00m( $$randnum < 82 ) 00*
+          else 114 377  
+          ifend 114 447  
+          line: 114 372  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.2- a: 4
+        rule: 115  ~prob_answer.2.3 a: 
+          line: 116 0  # $$probformat = narrative:28_af
+          line: 117 72  # $$randnum = %rand 
+          if 118 94  
+          line: 118 90  # ^if 00m( $$randnum < 28 ) 00@{
+          elseif 119 185  
+          line: 119 180  # else 00m( $$randnum < 56 ) 00^
+          elseif 120 280  
+          line: 120 275  # else 00m( $$randnum < 84 ) 00*
+          else 121 377  
+          ifend 121 447  
+          line: 121 372  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.3- a: 4
+        rule: 122  ~prob_answer.2.4 a: 
+          line: 123 0  # $$probformat = narrative:32_af
+          line: 124 72  # $$randnum = %rand 
+          if 125 94  
+          line: 125 90  # ^if 00m( $$randnum < 32 ) 00@{
+          elseif 126 185  
+          line: 126 180  # else 00m( $$randnum < 59 ) 00^
+          elseif 127 280  
+          line: 127 275  # else 00m( $$randnum < 86 ) 00*
+          else 128 377  
+          ifend 128 447  
+          line: 128 372  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.4- a: 4
+        rule: 129  ~prob_answer.2.5 a: 
+          line: 130 0  # $$probformat = narrative:36_af
+          line: 131 72  # $$randnum = %rand 
+          if 132 94  
+          line: 132 90  # ^if 00m( $$randnum < 36 ) 00@{
+          elseif 133 185  
+          line: 133 180  # else 00m( $$randnum < 62 ) 00^
+          elseif 134 280  
+          line: 134 275  # else 00m( $$randnum < 88 ) 00*
+          else 135 377  
+          ifend 135 447  
+          line: 135 372  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.5- a: 4
+        rule: 136  ~prob_answer.2.6 a: 
+          line: 137 0  # $$probformat = narrative:40_af
+          line: 138 72  # $$randnum = %rand 
+          if 139 94  
+          line: 139 90  # ^if 00m( $$randnum < 40 ) 00@{
+          elseif 140 185  
+          line: 140 180  # else 00m( $$randnum < 65 ) 00^
+          elseif 141 280  
+          line: 141 275  # else 00m( $$randnum < 90 ) 00*
+          else 142 377  
+          ifend 142 447  
+          line: 142 372  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.6- a: 4
+        rule: 143  ~prob_answer.2.7 a: 
+          line: 144 0  # $$probformat = narrative:44_af
+          line: 145 71  # $$randnum = %rand 
+          if 146 93  
+          line: 146 89  # ^if 00m( $$randnum < 44 ) 00@{
+          elseif 147 184  
+          line: 147 179  # else 00m( $$randnum < 68 ) 00^
+          elseif 148 279  
+          line: 148 274  # else 00m( $$randnum < 92 ) 00*
+          else 149 376  
+          ifend 149 446  
+          line: 149 371  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.7- a: 4
+        rule: 150  ~prob_answer.2.8 a: 
+          line: 151 0  # $$probformat = narrative:48_af
+          line: 152 71  # $$randnum = %rand 
+          if 153 93  
+          line: 153 89  # ^if 00m( $$randnum < 48 ) 00@{
+          elseif 154 184  
+          line: 154 179  # else 00m( $$randnum < 71 ) 00^
+          elseif 155 279  
+          line: 155 274  # else 00m( $$randnum < 94 ) 00*
+          else 156 376  
+          ifend 156 446  
+          line: 156 371  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.8- a: 4
+        rule: 157  ~prob_answer.2.9 a: 
+          line: 158 0  # $$probformat = narrative:52_af
+          line: 159 71  # $$randnum = %rand 
+          if 160 93  
+          line: 160 89  # ^if 00m( $$randnum < 52 ) 00@{
+          elseif 161 184  
+          line: 161 179  # else 00m( $$randnum < 74 ) 00^
+          elseif 162 279  
+          line: 162 274  # else 00m( $$randnum < 96 ) 00*
+          else 163 376  
+          ifend 163 446  
+          line: 163 371  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.9- a: 4
+        rule: 164  ~prob_answer.2.10 a: 
+          line: 165 0  # $$probformat = narrative:56_af
+          line: 166 71  # $$randnum = %rand 
+          if 167 93  
+          line: 167 89  # ^if 00m( $$randnum < 56 ) 00@{
+          elseif 168 184  
+          line: 168 179  # else 00m( $$randnum < 77 ) 00^
+          elseif 169 279  
+          line: 169 274  # else 00m( $$randnum < 98 ) 00*
+          else 170 376  
+          ifend 170 446  
+          line: 170 371  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.10- a: 4
+        rule: 171  ~prob_answer.2.11 a: 
+          line: 172 0  # $$probformat = narrative:60_af
+          line: 173 71  # $$randnum = %rand 
+          if 174 93  
+          line: 174 89  # ^if 00m( $$randnum < 60 ) 00@{
+          elseif 175 184  
+          line: 175 179  # else 00m( $$randnum < 80 ) 00^
+          elseif 176 279  
+          line: 176 274  # else 00n( $$randnum < 100 ) 00
+          else 177 377  
+          ifend 177 447  
+          line: 177 372  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.2.11- a: 4
+        rule: 179  ~prob_answer.3.0 u: 
+          if 180 4  
+          ifend 180 57  
+          line: 180 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 181 58  # $$probformat = narrative:60_af
+          line: 182 117  # $$randnum = %rand 
+          if 183 139  
+          line: 183 135  # ^if 00m( $$randnum < 60 ) 00@{
+          elseif 184 230  
+          line: 184 225  # else 00m( $$randnum < 80 ) 00^
+          else 185 325  
+          ifend 185 401  
+          line: 185 320  # else ( 1 ) 00* { $$answercateg
           Complexity of rule ~prob_answer.3.0- u: 4
-        rule: 119  ~prob_answer.4.0 u: 
-          line: 120 0  # $$probformat = affirmation:70_
-          line: 121 69  # $$randnum = %rand 
-          if 122 91  
-          line: 122 87  # ^if 00m( $$randnum < 70 ) 00^{
-          elseif 123 186  
-          line: 123 181  # else 00m( $$randnum < 90 ) 00~
-          elseif 124 275  
-          line: 124 270  # else 00m( $$randnum < 95 ) 00@
-          else 125 366  
-          ifend 125 442  
-          line: 125 361  # else ( 1 ) 00* { $$answercateg
+        rule: 188  ~prob_answer.4.0 u: 
+          line: 189 0  # $$probformat = affirmation:70_
+          line: 190 69  # $$randnum = %rand 
+          if 191 91  
+          line: 191 87  # ^if 00m( $$randnum < 70 ) 00^{
+          elseif 192 186  
+          line: 192 181  # else 00m( $$randnum < 90 ) 00~
+          elseif 193 275  
+          line: 193 270  # else 00m( $$randnum < 95 ) 00@
+          else 194 366  
+          ifend 194 442  
+          line: 194 361  # else ( 1 ) 00* { $$answercateg
           Complexity of rule ~prob_answer.4.0- u: 4
-        rule: 129  ~prob_answer.5.0 u: 
-          if 130 4  
-          ifend 130 57  
-          line: 130 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 131 58  # $goodquestion +=' 1 
-          line: 132 78  # $noncrittopic += 1 
-          line: 133 97  # $$probformat = specific:60_not
-          line: 134 166  # $$randnum = %rand 
-          if 135 188  
-          line: 135 184  # ^if 00m( $$randnum < 60 ) 00~{
-          elseif 136 277  
-          line: 136 272  # else 00m( $$randnum < 80 ) 00*
-          elseif 137 374  
-          line: 137 369  # else 00m( $$randnum < 90 ) 00@
-          else 138 465  
-          ifend 138 535  
-          line: 138 460  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.0- u: 5
-        rule: 140  ~prob_answer.6.0 u: 
-          if 141 4  
-          ifend 141 57  
-          line: 141 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 142 58  # $$probformat = specific:80_not
-          line: 143 114  # $$randnum = %rand 
-          if 144 136  
-          line: 144 132  # ^if 00m( $$randnum < 80 ) 00~{
-          elseif 145 225  
-          line: 145 220  # else 00m( $$randnum < 90 ) 00*
-          else 146 322  
-          ifend 146 392  
-          line: 146 317  # else ( 1 ) 00@ { $$answercateg
+        rule: 198  ~prob_answer.5.0 u: 
+          line: 198 0  # ^refine ( ) $goodquestion += 1
+          if 199 54  
+          ifend 199 107  
+          line: 199 50  # ^if 00m( '_0 == rapport ) 00w{
+          Complexity of rule ~prob_answer.5.0- u: 2
+        rule: 200  ~prob_answer.5.1 a: 
+          line: 201 0  # $$probformat = specific:40_not
+          line: 202 69  # $$randnum = %rand 
+          if 203 91  
+          line: 203 87  # ^if 00m( $$randnum < 40 ) 00~{
+          elseif 204 180  
+          line: 204 175  # else 00m( $$randnum < 70 ) 00*
+          elseif 205 277  
+          line: 205 272  # else 00m( $$randnum < 85 ) 00@
+          else 206 368  
+          ifend 206 438  
+          line: 206 363  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.1- a: 4
+        rule: 207  ~prob_answer.5.2 a: 
+          line: 208 0  # $$probformat = specific:44_not
+          line: 209 69  # $$randnum = %rand 
+          if 210 91  
+          line: 210 87  # ^if 00m( $$randnum < 44 ) 00~{
+          elseif 211 180  
+          line: 211 175  # else 00m( $$randnum < 72 ) 00*
+          elseif 212 277  
+          line: 212 272  # else 00m( $$randnum < 86 ) 00@
+          else 213 368  
+          ifend 213 438  
+          line: 213 363  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.2- a: 4
+        rule: 214  ~prob_answer.5.3 a: 
+          line: 215 0  # $$probformat = specific:48_not
+          line: 216 69  # $$randnum = %rand 
+          if 217 91  
+          line: 217 87  # ^if 00m( $$randnum < 48 ) 00~{
+          elseif 218 180  
+          line: 218 175  # else 00m( $$randnum < 74 ) 00*
+          elseif 219 277  
+          line: 219 272  # else 00m( $$randnum < 87 ) 00@
+          else 220 368  
+          ifend 220 438  
+          line: 220 363  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.3- a: 4
+        rule: 221  ~prob_answer.5.4 a: 
+          line: 222 0  # $$probformat = specific:52_not
+          line: 223 69  # $$randnum = %rand 
+          if 224 91  
+          line: 224 87  # ^if 00m( $$randnum < 52 ) 00~{
+          elseif 225 180  
+          line: 225 175  # else 00m( $$randnum < 76 ) 00*
+          elseif 226 277  
+          line: 226 272  # else 00m( $$randnum < 88 ) 00@
+          else 227 368  
+          ifend 227 438  
+          line: 227 363  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.4- a: 4
+        rule: 228  ~prob_answer.5.5 a: 
+          line: 229 0  # $$probformat = specific:56_not
+          line: 230 69  # $$randnum = %rand 
+          if 231 91  
+          line: 231 87  # ^if 00m( $$randnum < 56 ) 00~{
+          elseif 232 180  
+          line: 232 175  # else 00m( $$randnum < 78 ) 00*
+          elseif 233 277  
+          line: 233 272  # else 00m( $$randnum < 89 ) 00@
+          else 234 368  
+          ifend 234 438  
+          line: 234 363  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.5- a: 4
+        rule: 235  ~prob_answer.5.6 a: 
+          line: 236 0  # $$probformat = specific:60_not
+          line: 237 69  # $$randnum = %rand 
+          if 238 91  
+          line: 238 87  # ^if 00m( $$randnum < 60 ) 00~{
+          elseif 239 180  
+          line: 239 175  # else 00m( $$randnum < 80 ) 00*
+          elseif 240 277  
+          line: 240 272  # else 00m( $$randnum < 90 ) 00@
+          else 241 368  
+          ifend 241 438  
+          line: 241 363  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.6- a: 4
+        rule: 242  ~prob_answer.5.7 a: 
+          line: 243 0  # $$probformat = specific:64_not
+          line: 244 67  # $$randnum = %rand 
+          if 245 89  
+          line: 245 85  # ^if 00m( $$randnum < 64 ) 00~{
+          elseif 246 178  
+          line: 246 173  # else 00m( $$randnum < 82 ) 00*
+          elseif 247 275  
+          line: 247 270  # else 00m( $$randnum < 91 ) 00@
+          else 248 366  
+          ifend 248 436  
+          line: 248 361  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.7- a: 4
+        rule: 249  ~prob_answer.5.8 a: 
+          line: 250 0  # $$probformat = specific:68_not
+          line: 251 67  # $$randnum = %rand 
+          if 252 89  
+          line: 252 85  # ^if 00m( $$randnum < 68 ) 00~{
+          elseif 253 178  
+          line: 253 173  # else 00m( $$randnum < 84 ) 00*
+          elseif 254 275  
+          line: 254 270  # else 00m( $$randnum < 92 ) 00@
+          else 255 366  
+          ifend 255 436  
+          line: 255 361  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.8- a: 4
+        rule: 256  ~prob_answer.5.9 a: 
+          line: 257 0  # $$probformat = specific:72_not
+          line: 258 67  # $$randnum = %rand 
+          if 259 89  
+          line: 259 85  # ^if 00m( $$randnum < 72 ) 00~{
+          elseif 260 178  
+          line: 260 173  # else 00m( $$randnum < 86 ) 00*
+          elseif 261 275  
+          line: 261 270  # else 00m( $$randnum < 93 ) 00@
+          else 262 366  
+          ifend 262 436  
+          line: 262 361  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.9- a: 4
+        rule: 263  ~prob_answer.5.10 a: 
+          line: 264 0  # $$probformat = specific:76_not
+          line: 265 67  # $$randnum = %rand 
+          if 266 89  
+          line: 266 85  # ^if 00m( $$randnum < 76 ) 00~{
+          elseif 267 178  
+          line: 267 173  # else 00m( $$randnum < 88 ) 00*
+          elseif 268 275  
+          line: 268 270  # else 00m( $$randnum < 94 ) 00@
+          else 269 366  
+          ifend 269 436  
+          line: 269 361  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.10- a: 4
+        rule: 270  ~prob_answer.5.11 a: 
+          line: 271 0  # $$probformat = specific:80_not
+          line: 272 67  # $$randnum = %rand 
+          if 273 89  
+          line: 273 85  # ^if 00m( $$randnum < 80 ) 00~{
+          elseif 274 178  
+          line: 274 173  # else 00m( $$randnum < 90 ) 00*
+          elseif 275 275  
+          line: 275 270  # else 00m( $$randnum < 95 ) 00@
+          else 276 366  
+          ifend 276 436  
+          line: 276 361  # else ( 1 ) 00@ { $$answercateg
+          Complexity of rule ~prob_answer.5.11- a: 4
+        rule: 278  ~prob_answer.6.0 u: 
+          if 279 4  
+          ifend 279 57  
+          line: 279 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 280 58  # $$probformat = specific:80_not
+          line: 281 114  # $$randnum = %rand 
+          if 282 136  
+          line: 282 132  # ^if 00m( $$randnum < 80 ) 00~{
+          elseif 283 225  
+          line: 283 220  # else 00m( $$randnum < 90 ) 00*
+          else 284 322  
+          ifend 284 392  
+          line: 284 317  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.6.0- u: 4
-        rule: 151  ~prob_answer.7.0 u: 
-          if 152 4  
-          ifend 152 57  
-          line: 152 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 153 58  # $noncrittopic += 1 
-          line: 154 77  # $$probformat = option_chosen:8
-          line: 155 138  # $$randnum = %rand 
-          if 156 160  
-          line: 156 156  # ^if 00m( $$randnum < 80 ) 00Y{
-          elseif 157 247  
-          line: 157 242  # else 00m( $$randnum < 90 ) 00?
-          else 158 345  
-          ifend 158 415  
-          line: 158 340  # else ( 1 ) 00@ { $$answercateg
+        rule: 289  ~prob_answer.7.0 u: 
+          if 290 4  
+          ifend 290 57  
+          line: 290 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 291 58  # $noncrittopic += 1 
+          line: 292 77  # $$probformat = option_chosen:8
+          line: 293 138  # $$randnum = %rand 
+          if 294 160  
+          line: 294 156  # ^if 00m( $$randnum < 80 ) 00Y{
+          elseif 295 247  
+          line: 295 242  # else 00m( $$randnum < 90 ) 00?
+          else 296 345  
+          ifend 296 415  
+          line: 296 340  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.7.0- u: 4
-        rule: 162  ~prob_answer.8.0 u: 
-          if 163 4  
-          ifend 163 57  
-          line: 163 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 164 58  # $noncrittopic += 1 
-          line: 165 77  # $$probformat = affirmation:50_
-          line: 166 132  # $$randnum = %rand 
-          if 167 154  
-          line: 167 150  # ^if 00n( %$$randnum < 50 ) 00^
-          elseif 168 250  
-          line: 168 245  # else 00m( $$randnum < 80 ) 00+
-          else 169 350  
-          ifend 169 420  
-          line: 169 345  # else ( 1 ) 00@ { $$answercateg
+        rule: 300  ~prob_answer.8.0 u: 
+          if 301 4  
+          ifend 301 57  
+          line: 301 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 302 58  # $noncrittopic += 1 
+          line: 303 77  # $$probformat = affirmation:50_
+          line: 304 132  # $$randnum = %rand 
+          if 305 154  
+          line: 305 150  # ^if 00n( %$$randnum < 50 ) 00^
+          elseif 306 250  
+          line: 306 245  # else 00m( $$randnum < 80 ) 00+
+          else 307 350  
+          ifend 307 420  
+          line: 307 345  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.8.0- u: 4
-        rule: 173  ~prob_answer.9.0 u: 
-          if 174 4  
-          ifend 174 57  
-          line: 174 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 175 58  # $$probformat = incomprehension
-          line: 176 105  # $$randnum = %rand 
-          if 177 127  
-          line: 177 123  # ^if 00m( $$randnum < 90 ) 011{
-          else 178 230  
-          ifend 178 300  
-          line: 178 225  # else ( 1 ) 00@ { $$answercateg
+        rule: 311  ~prob_answer.9.0 u: 
+          if 312 4  
+          ifend 312 57  
+          line: 312 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 313 58  # $$probformat = incomprehension
+          line: 314 105  # $$randnum = %rand 
+          if 315 127  
+          line: 315 123  # ^if 00m( $$randnum < 90 ) 011{
+          else 316 230  
+          ifend 316 300  
+          line: 316 225  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.9.0- u: 3
-        rule: 181  ~prob_answer.10.0 u: 
-          line: 181 0  # $lastoutput 
+        rule: 319  ~prob_answer.10.0 u: 
+          line: 319 0  # $lastoutput 
           Complexity of rule ~prob_answer.10.0- u: 1
-        rule: 184  ~prob_answer.11.0 u: 
-          line: 185 0  # $critasked = 1 
-          if 186 19  
-          ifend 186 132  
-          line: 186 15  # ^if 00t( $revelationstate == 0
+        rule: 322  ~prob_answer.11.0 u: 
+          line: 323 0  # $critasked = 1 
+          if 324 19  
+          ifend 324 132  
+          line: 324 15  # ^if 00t( $revelationstate == 0
           Complexity of rule ~prob_answer.11.0- u: 2
-        rule: 189  ~prob_answer.12.0 u: 
-          line: 190 0  # $$probformat = ignorance:40_re
-          line: 191 52  # $$randnum = %rand 
-          if 192 74  
-          line: 192 70  # ^if 00m( $$randnum < 40 ) 00@{
-          elseif 193 165  
-          line: 193 160  # else 00m( $$randnum < 70 ) 00@
-          else 194 256  
-          ifend 194 322  
-          line: 194 251  # else ( 1 ) 00Y { $$answercateg
+        rule: 327  ~prob_answer.12.0 u: 
+          line: 328 0  # $$probformat = ignorance:40_re
+          line: 329 52  # $$randnum = %rand 
+          if 330 74  
+          line: 330 70  # ^if 00m( $$randnum < 40 ) 00@{
+          elseif 331 165  
+          line: 331 160  # else 00m( $$randnum < 70 ) 00@
+          else 332 256  
+          ifend 332 322  
+          line: 332 251  # else ( 1 ) 00Y { $$answercateg
           Complexity of rule ~prob_answer.12.0- u: 3
-        rule: 199  ~prob_answer.13.0 u: 
-          line: 200 0  # $$probformat = affirmation:70_
-          line: 201 69  # $$randnum = %rand 
-          if 202 91  
-          line: 202 87  # ^if 00m( $$randnum < 70 ) 00^{
-          elseif 203 186  
-          line: 203 181  # else 00m( $$randnum < 90 ) 00~
-          elseif 204 275  
-          line: 204 270  # else 00m( $$randnum < 95 ) 00@
-          else 205 366  
-          ifend 205 442  
-          line: 205 361  # else ( 1 ) 00* { $$answercateg
+        rule: 337  ~prob_answer.13.0 u: 
+          line: 338 0  # $$probformat = affirmation:70_
+          line: 339 69  # $$randnum = %rand 
+          if 340 91  
+          line: 340 87  # ^if 00m( $$randnum < 70 ) 00^{
+          elseif 341 186  
+          line: 341 181  # else 00m( $$randnum < 90 ) 00~
+          elseif 342 275  
+          line: 342 270  # else 00m( $$randnum < 95 ) 00@
+          else 343 366  
+          ifend 343 442  
+          line: 343 361  # else ( 1 ) 00* { $$answercateg
           Complexity of rule ~prob_answer.13.0- u: 4
-        rule: 207  ~prob_answer.14.0 u: 
-          if 208 4  
-          ifend 208 57  
-          line: 208 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 209 58  # $$probformat = specific:100 
-          line: 211 86  # $$answercategory = specific Da
+        rule: 345  ~prob_answer.14.0 u: 
+          if 346 4  
+          ifend 346 57  
+          line: 346 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 347 58  # $$probformat = specific:100 
           Complexity of rule ~prob_answer.14.0- u: 2
-        rule: 214  ~prob_answer.15.0 u: 
-          if 215 4  
-          ifend 215 57  
-          line: 215 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 216 58  # $$probformat = specific:100 
-          line: 218 86  # $$answercategory = specific We
+        rule: 352  ~prob_answer.15.0 u: 
+          if 353 4  
+          ifend 353 57  
+          line: 353 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 354 58  # $$probformat = specific:100 
           Complexity of rule ~prob_answer.15.0- u: 2
-        rule: 221  ~prob_answer.16.0 u: 
-          if 222 4  
-          ifend 222 57  
-          line: 222 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 223 58  # $$probformat = affirmation:100
-          line: 224 89  # $$answercategory = affirmation
+        rule: 359  ~prob_answer.16.0 u: 
+          if 360 4  
+          ifend 360 57  
+          line: 360 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 361 58  # $$probformat = affirmation:100
+          line: 362 89  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.16.0- u: 2
-        rule: 226  ~prob_answer.17.0 u: 
-          if 227 4  
-          ifend 227 57  
-          line: 227 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 228 58  # $$probformat = negation:100 
-          line: 229 86  # $$answercategory = negation ^r
+        rule: 364  ~prob_answer.17.0 u: 
+          if 365 4  
+          ifend 365 57  
+          line: 365 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 366 58  # $$probformat = negation:100 
+          line: 367 86  # $$answercategory = negation ^r
           Complexity of rule ~prob_answer.17.0- u: 2
-        rule: 231  ~prob_answer.18.0 u: 
-          if 232 4  
-          ifend 232 57  
-          line: 232 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 233 58  # $$probformat = specific:100 
-          line: 234 86  # $$answercategory = specific Ne
+        rule: 369  ~prob_answer.18.0 u: 
+          if 370 4  
+          ifend 370 57  
+          line: 370 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 371 58  # $$probformat = specific:100 
+          line: 372 86  # $$answercategory = specific Ne
           Complexity of rule ~prob_answer.18.0- u: 2
-        rule: 236  ~prob_answer.19.0 u: 
-          if 237 4  
-          ifend 237 57  
-          line: 237 0  # ^if 00m( '_0 == rapport ) 00w{
-          line: 238 58  # $$probformat = greetings:100 
-          line: 239 87  # $$answercategory = greetings 
+        rule: 374  ~prob_answer.19.0 u: 
+          if 375 4  
+          ifend 375 57  
+          line: 375 0  # ^if 00m( '_0 == rapport ) 00w{
+          line: 376 58  # $$probformat = greetings:100 
+          line: 377 87  # $$answercategory = greetings 
           Complexity of rule ~prob_answer.19.0- u: 2
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_incomprehension.top
     topic: 1  ~incomprehension
@@ -3436,9 +3276,9 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_
         rule: 3  ~affirmation.0.0 u: 
           Complexity of rule ~affirmation.0.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_negat.top
-    topic: 1  ~negation~1
-        rule: 4  ~negation~1.0.0 u: 
-          Complexity of rule ~negation~1.0.0- u: 1
+    topic: 1  ~negation
+        rule: 4  ~negation.0.0 u: 
+          Complexity of rule ~negation.0.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_patternmacros.top
     macro: 4  ^general_question
           Complexity of ^general_question: 1
