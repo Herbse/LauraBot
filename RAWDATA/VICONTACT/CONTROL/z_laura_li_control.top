@@ -100,6 +100,8 @@ $botprompt = ^"Simon: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
+outputmacro: ^sound()
+
 topic: ~xrejoinder system repeat ()
 
 # simple rejoinder
@@ -208,6 +210,8 @@ t: ($cs_bot==laura_li) ^revelationHandler()
 t: ()  
 		$lastOutput = ^response(1)
 # t: ^callstack()
+# t: () popen(^"afplay soundfiles/Laura/$$sound_file\.mp3" '^sound) 
 
 t: () ^oob()
    ^postprintbefore(  \[ $$oob \]) $$oob = null 
+

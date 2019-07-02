@@ -14,7 +14,7 @@ Reading topic ~xpostagsentence
 
 ----Reading file introduction.top
 Reading topic ~introduction
-*** Warning- line 9 of introduction.top: Word "dirk" known in multiple spellings Dirk DIRK 
+*** Warning- line 12 of introduction.top: Word "dirk" known in multiple spellings Dirk DIRK 
 *** Warning- line 28 of introduction.top: Word "frage" known in multiple spellings frage Frage 
 *** Warning- line 30 of introduction.top: Word "frage" known in multiple spellings frage Frage 
 
@@ -26,6 +26,7 @@ Reading topic ~handle_oob
 Rename @9 as @chatoutput
 Reading outputmacro: ^oob
 Reading outputmacro: ^oobi
+Reading outputmacro: ^sound
 Reading topic ~xrejoinder
 Reading table ^tbl:defaultbot
 Reading topic ~control
@@ -45,11 +46,11 @@ Reading patternmacro: ^opinion
 Reading topic ~keywordless
 
 <<end folder RAWDATA/OOB
-*** Warning-  Undefined set or topic ~school line 12 in introduction.top
+*** Warning-  Undefined set or topic ~school line 15 in introduction.top
 *** Warning- line 19 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
 
 WARNING SUMMARY: 
-  line 1 of : Undefined set or topic ~school line 12 in introduction.top
+  line 1 of : Undefined set or topic ~school line 15 in introduction.top
   line 19 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
 2 serious warnings, 0 function warnings, 0 spelling warnings, 11 case warnings, 0 substitution warnings
     

@@ -237,37 +237,37 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 6 0  # ^keep ( ) ^refine ( ) 
           Complexity of rule ~brother_t.0.0- u: 1
         rule: 8  ~brother_t.0.1 a: 
-          line: 8 0  # $$intent = names Leon 
+          line: 8 0  # $$intent = names $$sound_file 
           Complexity of rule ~brother_t.0.1- a: 1
         rule: 10  ~brother_t.0.2 a: 
-          line: 10 0  # $$intent = age Der ist 12. 
+          line: 10 0  # $$intent = age $$sound_file = 
           Complexity of rule ~brother_t.0.2- a: 1
         rule: 12  ~brother_t.0.3 a: 
-          line: 12 0  # $$intent = mood Gut. 
+          line: 12 0  # $$intent = mood $$sound_file =
           Complexity of rule ~brother_t.0.3- a: 1
         rule: 14  ~brother_t.0.4 a: 
-          line: 14 0  # $$intent = job Schüler halt. 
+          line: 14 0  # $$intent = job $$sound_file = 
           Complexity of rule ~brother_t.0.4- a: 1
         rule: 16  ~brother_t.0.5 a: 
-          line: 16 0  # $$intent = relationship_f Der 
+          line: 16 0  # $$intent = relationship_f $$so
           Complexity of rule ~brother_t.0.5- a: 1
         rule: 18  ~brother_t.0.6 a: 
-          line: 18 0  # $$intent = relationship_o Leon
+          line: 18 0  # $$intent = relationship_o $$so
           Complexity of rule ~brother_t.0.6- a: 1
         rule: 20  ~brother_t.0.7 a: 
-          line: 20 0  # $$intent = time_together Nach 
+          line: 20 0  # $$intent = time_together $$sou
           Complexity of rule ~brother_t.0.7- a: 1
         rule: 22  ~brother_t.0.8 a: 
-          line: 22 0  # $$intent = time_relationship K
+          line: 22 0  # $$intent = time_relationship ^
           Complexity of rule ~brother_t.0.8- a: 1
         rule: 24  ~brother_t.0.9 a: 
           line: 24 0  # $$intent = activity_together ^
           Complexity of rule ~brother_t.0.9- a: 1
         rule: 26  ~brother_t.0.10 a: 
-          line: 26 0  # $$intent = activity Der geht z
+          line: 26 0  # $$intent = activity $$sound_fi
           Complexity of rule ~brother_t.0.10- a: 1
         rule: 28  ~brother_t.0.11 a: 
-          line: 28 0  # $$intent = places_together In 
+          line: 28 0  # $$intent = places_together $$s
           Complexity of rule ~brother_t.0.11- a: 1
         rule: 32  ~brother_t.1.0 u: 
           line: 32 0  # ^keep ( ) ^refine ( ) 
@@ -276,16 +276,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 34 0  # $$intent = personal_opinion ^r
           Complexity of rule ~brother_t.1.1- a: 1
         rule: 35  ~brother_t.1.2 b: 
-          line: 35 0  # Ganz ok. 
+          line: 35 0  # $$sound_file = brother10 Ganz 
           Complexity of rule ~brother_t.1.2- b: 1
         rule: 36  ~brother_t.1.3 b: 
-          line: 36 0  # Ganz ok. 
+          line: 36 0  # $$sound_file = brother10 Ganz 
           Complexity of rule ~brother_t.1.3- b: 1
         rule: 37  ~brother_t.1.4 b: 
-          line: 37 0  # Ganz ok. 
+          line: 37 0  # $$sound_file = brother10 Ganz 
           Complexity of rule ~brother_t.1.4- b: 1
         rule: 38  ~brother_t.1.5 b: 
-          line: 38 0  # Ganz ok. 
+          line: 38 0  # $$sound_file = brother10 Ganz 
           Complexity of rule ~brother_t.1.5- b: 1
         rule: 41  ~brother_t.1.6 a: 
           line: 41 0  # $$intent = other_opinion ^resp
@@ -294,16 +294,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 43 0  # $$intent = place ^refine ( ) 
           Complexity of rule ~brother_t.1.7- a: 1
         rule: 44  ~brother_t.1.8 b: 
-          line: 44 0  # In Leons Zimmer. 
+          line: 44 0  # $$sound_file = brother9 In Leo
           Complexity of rule ~brother_t.1.8- b: 1
         rule: 45  ~brother_t.1.9 b: 
           line: 45 0  # ^respond ( ~ignorance ) 
           Complexity of rule ~brother_t.1.9- b: 1
         rule: 46  ~brother_t.1.10 b: 
-          line: 46 0  # In Leons Zimmer. 
+          line: 46 0  # $$sound_file = brother9 In Leo
           Complexity of rule ~brother_t.1.10- b: 1
         rule: 47  ~brother_t.1.11 b: 
-          line: 47 0  # Das ist gar nicht weit von zu 
+          line: 47 0  # $$sound_file = brother11 Das i
           Complexity of rule ~brother_t.1.11- b: 1
         rule: 49  ~brother_t.1.12 a: 
           line: 49 0  # $$intent = individual ^refine 
@@ -315,7 +315,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 51 0  # ^respond ( ~ignorance ) 
           Complexity of rule ~brother_t.1.14- b: 1
         rule: 52  ~brother_t.1.15 b: 
-          line: 52 0  # Leon und seine Freund. 
+          line: 52 0  # $$sound_file = brother12 Leon 
           Complexity of rule ~brother_t.1.15- b: 1
         rule: 53  ~brother_t.1.16 b: 
           line: 53 0  # ^respond ( ~ignorance ) 
@@ -348,7 +348,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 65 0  # $$intent = explanation ^refine
           Complexity of rule ~brother_t.1.25- a: 1
         rule: 66  ~brother_t.1.26 b: 
-          line: 66 0  # Ein Spiel auf der Playstation.
+          line: 66 0  # $$sound_file = brother13 Ein S
           Complexity of rule ~brother_t.1.26- b: 1
         rule: 67  ~brother_t.1.27 b: 
           line: 67 0  # $$nextanswer = yes 
@@ -372,16 +372,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 76 0  # $$question = '_0 ^log ( FILE U
           Complexity of rule ~brother_t.1.33- a: 1
         rule: 83  ~brother_t.2.0-BROTHER_1 u: 
-          line: 83 0  # $brothercounter = 1 Wenn der L
+          line: 83 0  # $brothercounter = 1 $$sound_fi
           Complexity of rule ~brother_t.2.0-BROTHER_1 u: 1
         rule: 86  ~brother_t.3.0-BROTHER_2 u: 
-          line: 86 0  # $brothercounter = 2 Wenn Leons
+          line: 86 0  # $brothercounter = 2 $$sound_fi
           Complexity of rule ~brother_t.3.0-BROTHER_2 u: 1
         rule: 89  ~brother_t.4.0-BROTHER_3 u: 
-          line: 89 0  # $brothercounter = 3 Die spiele
+          line: 89 0  # $brothercounter = 3 $$sound_fi
           Complexity of rule ~brother_t.4.0-BROTHER_3 u: 1
         rule: 92  ~brother_t.5.0-BROTHER_4 u: 
-          line: 92 0  # $brothercounter = 4 Dann gehe 
+          line: 92 0  # $brothercounter = 4 $$sound_fi
           Complexity of rule ~brother_t.5.0-BROTHER_4 u: 1
         rule: 99  ~brother_t.6.0 u: 
           Complexity of rule ~brother_t.6.0- u: 1
@@ -548,28 +548,28 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 4 0  # ^keep ( ) ^refine ( ) 
           Complexity of rule ~event_t.0.0- u: 1
         rule: 6  ~event_t.0.1 a: 
-          line: 6 0  # $$intent = names Dirk 
+          line: 6 0  # $$intent = names $$sound_file 
           Complexity of rule ~event_t.0.1- a: 1
         rule: 8  ~event_t.0.2 a: 
-          line: 8 0  # $$intent = age Der ist so alt 
+          line: 8 0  # $$intent = age $$sound_file = 
           Complexity of rule ~event_t.0.2- a: 1
         rule: 10  ~event_t.0.3 a: 
-          line: 10 0  # $$intent = mood Gut. 
+          line: 10 0  # $$intent = mood $$sound_file =
           Complexity of rule ~event_t.0.3- a: 1
         rule: 12  ~event_t.0.4 a: 
-          line: 12 0  # $$intent = job Kein Ahnung 
+          line: 12 0  # $$intent = job $$sound_file = 
           Complexity of rule ~event_t.0.4- a: 1
         rule: 14  ~event_t.0.5 a: 
           line: 14 0  # $$intent = relationship_f ^reu
           Complexity of rule ~event_t.0.5- a: 1
         rule: 16  ~event_t.0.6 a: 
-          line: 16 0  # $$intent = relationship_o Der 
+          line: 16 0  # $$intent = relationship_o $$so
           Complexity of rule ~event_t.0.6- a: 1
         rule: 18  ~event_t.0.7 a: 
-          line: 18 0  # $$intent = time_together Nach 
+          line: 18 0  # $$intent = time_together $$sou
           Complexity of rule ~event_t.0.7- a: 1
         rule: 20  ~event_t.0.8 a: 
-          line: 20 0  # $$intent = time_relationship W
+          line: 20 0  # $$intent = time_relationship $
           Complexity of rule ~event_t.0.8- a: 1
         rule: 22  ~event_t.0.9 a: 
           line: 22 0  # $$intent = activity_together ^
@@ -581,16 +581,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 24 0  # ^reuse ( EVENT_3 ) 
           Complexity of rule ~event_t.0.11- b: 1
         rule: 25  ~event_t.0.12 b: 
-          line: 25 0  # Sonst eigentlich nix mehr. 
+          line: 25 0  # $$sound_file = event8 Sonst ei
           Complexity of rule ~event_t.0.12- b: 1
         rule: 26  ~event_t.0.13 b: 
           line: 26 0  # ^reuse ( EVENT_1 ) 
           Complexity of rule ~event_t.0.13- b: 1
         rule: 28  ~event_t.0.14 a: 
-          line: 28 0  # $$intent = activity Weiß ich 
+          line: 28 0  # $$intent = activity $$sound_fi
           Complexity of rule ~event_t.0.14- a: 1
         rule: 30  ~event_t.0.15 a: 
-          line: 30 0  # $$intent = places_together Zu 
+          line: 30 0  # $$intent = places_together $$s
           Complexity of rule ~event_t.0.15- a: 1
         rule: 110  ~event_t.1.0 u: 
           line: 110 0  # ^keep ( ) ^refine ( ) 
@@ -599,34 +599,34 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 112 0  # $$intent = personal_opinion ^r
           Complexity of rule ~event_t.1.1- a: 1
         rule: 113  ~event_t.1.2 b: 
-          line: 113 0  # Voll doof. 
+          line: 113 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t.1.2- b: 1
         rule: 114  ~event_t.1.3 b: 
-          line: 114 0  # Voll doof. 
+          line: 114 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t.1.3- b: 1
         rule: 115  ~event_t.1.4 b: 
-          line: 115 0  # Voll doof. 
+          line: 115 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t.1.4- b: 1
         rule: 116  ~event_t.1.5 b: 
-          line: 116 0  # Voll doof. 
+          line: 116 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t.1.5- b: 1
         rule: 117  ~event_t.1.6 b: 
-          line: 117 0  # Voll doof. 
+          line: 117 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t.1.6- b: 1
         rule: 118  ~event_t.1.7 b: 
-          line: 118 0  # Voll doof. 
+          line: 118 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t.1.7- b: 1
         rule: 119  ~event_t.1.8 b: 
-          line: 119 0  # Das ist so gemein! 
+          line: 119 0  # $$sound_file = event12b Das is
           Complexity of rule ~event_t.1.8- b: 1
         rule: 120  ~event_t.1.9 b: 
-          line: 120 0  # Das ist so gemein! 
+          line: 120 0  # $$sound_file = event12b Das is
           Complexity of rule ~event_t.1.9- b: 1
         rule: 121  ~event_t.1.10 b: 
-          line: 121 0  # Das ist so gemein! 
+          line: 121 0  # $$sound_file = event12b Das is
           Complexity of rule ~event_t.1.10- b: 1
         rule: 122  ~event_t.1.11 b: 
-          line: 122 0  # Das ist so gemein! 
+          line: 122 0  # $$sound_file = event12b Das is
           Complexity of rule ~event_t.1.11- b: 1
         rule: 124  ~event_t.1.12 a: 
           line: 124 0  # $$intent = other_opinion $$ans
@@ -635,7 +635,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 126 0  # $$intent = place ^refine ( ) 
           Complexity of rule ~event_t.1.13- a: 1
         rule: 127  ~event_t.1.14 b: 
-          line: 127 0  # Im Wohnzimmer 
+          line: 127 0  # $$sound_file = event13b Im Woh
           Complexity of rule ~event_t.1.14- b: 1
         rule: 128  ~event_t.1.15 b: 
           line: 128 0  # $$answercategory = ignorance ^
@@ -656,16 +656,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 133 0  # $$answercategory = ignorance ^
           Complexity of rule ~event_t.1.20- b: 1
         rule: 134  ~event_t.1.21 b: 
-          line: 134 0  # Zu Hause. 
+          line: 134 0  # $$sound_file = event10 Zu Haus
           Complexity of rule ~event_t.1.21- b: 1
         rule: 135  ~event_t.1.22 b: 
-          line: 135 0  # Zu Hause. 
+          line: 135 0  # $$sound_file = event10 Zu Haus
           Complexity of rule ~event_t.1.22- b: 1
         rule: 136  ~event_t.1.23 b: 
-          line: 136 0  # Zu Hause. 
+          line: 136 0  # $$sound_file = event10 Zu Haus
           Complexity of rule ~event_t.1.23- b: 1
         rule: 137  ~event_t.1.24 b: 
-          line: 137 0  # Zu Hause. 
+          line: 137 0  # $$sound_file = event10 Zu Haus
           Complexity of rule ~event_t.1.24- b: 1
         rule: 139  ~event_t.1.25 a: 
           line: 139 0  # $$intent = individual ^refine 
@@ -677,16 +677,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 141 0  # $$answercategory = ignorance ^
           Complexity of rule ~event_t.1.27- b: 1
         rule: 142  ~event_t.1.28 b: 
-          line: 142 0  # Mein Onkel. 
+          line: 142 0  # $$sound_file = event13b Mein O
           Complexity of rule ~event_t.1.28- b: 1
         rule: 143  ~event_t.1.29 b: 
-          line: 143 0  # Mein Onkel. 
+          line: 143 0  # $$sound_file = event13b Mein O
           Complexity of rule ~event_t.1.29- b: 1
         rule: 144  ~event_t.1.30 b: 
-          line: 144 0  # Mein Onkel. 
+          line: 144 0  # $$sound_file = event13b Mein O
           Complexity of rule ~event_t.1.30- b: 1
         rule: 145  ~event_t.1.31 b: 
-          line: 145 0  # Mein Onkel. 
+          line: 145 0  # $$sound_file = event13b Mein O
           Complexity of rule ~event_t.1.31- b: 1
         rule: 146  ~event_t.1.32 b: 
           line: 146 0  # $$answercategory = ignorance ^
@@ -790,39 +790,39 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 184  ~event_t.1.65 a: 
           line: 184 0  # $$question = '_0 ^log ( FILE U
           Complexity of rule ~event_t.1.65- a: 1
-        rule: 264  ~event_t.2.0-CLUE2 u: 
-          line: 264 0  # $clue = 1 Ich will nicht, dass
-          Complexity of rule ~event_t.2.0-CLUE2 u: 1
-        rule: 271  ~event_t.3.0-EVENT_1 u: 
-          line: 271 0  # $eventcounter = 1 Mein Onkel s
-          Complexity of rule ~event_t.3.0-EVENT_1 u: 1
-        rule: 278  ~event_t.4.0-EVENT_2 u: 
-          line: 278 0  # $eventcounter = 2 Also, das is
-          Complexity of rule ~event_t.4.0-EVENT_2 u: 1
-        rule: 282  ~event_t.5.0-EVENT_3 u: 
-          line: 282 0  # $eventcounter = 3 Der kommt ei
-          Complexity of rule ~event_t.5.0-EVENT_3 u: 1
-        rule: 288  ~event_t.6.0-EVENT_4 u: 
-          line: 288 0  # $eventcounter = 4 Der nervt mi
-          Complexity of rule ~event_t.6.0-EVENT_4 u: 1
-        rule: 293  ~event_t.7.0-EVENT_5 u: 
-          line: 293 0  # $eventcounter = 5 Er schreit m
-          Complexity of rule ~event_t.7.0-EVENT_5 u: 1
-        rule: 298  ~event_t.8.0-EVENT_6 u: 
-          line: 298 0  # $eventcounter = 6 Meine Mama s
-          Complexity of rule ~event_t.8.0-EVENT_6 u: 1
-        rule: 306  ~event_t.9.0-EVENT_7 u: 
-          line: 306 0  # $eventcounter = 7 Manchmal hau
-          Complexity of rule ~event_t.9.0-EVENT_7 u: 1
-        rule: 313  ~event_t.10.0-EVENT_8 u: 
-          line: 313 0  # $eventcounter = 8 Mein Gesicht
-          Complexity of rule ~event_t.10.0-EVENT_8 u: 1
-        rule: 321  ~event_t.11.0-EVENT_9 u: 
-          line: 321 0  # $eventcounter = 9 Nur weil ich
-          Complexity of rule ~event_t.11.0-EVENT_9 u: 1
-        rule: 327  ~event_t.12.0-EVENT_10 u: 
-          line: 327 0  # $eventcounter = 10 Ich hab mic
-          Complexity of rule ~event_t.12.0-EVENT_10 u: 1
+        rule: 269  ~event_t.2.0-EVENT_1 u: 
+          line: 269 0  # $eventcounter = 1 $$sound_file
+          Complexity of rule ~event_t.2.0-EVENT_1 u: 1
+        rule: 276  ~event_t.3.0-EVENT_2 u: 
+          line: 276 0  # $eventcounter = 2 $$sound_file
+          Complexity of rule ~event_t.3.0-EVENT_2 u: 1
+        rule: 280  ~event_t.4.0-EVENT_3 u: 
+          line: 280 0  # $eventcounter = 3 $$sound_file
+          Complexity of rule ~event_t.4.0-EVENT_3 u: 1
+        rule: 286  ~event_t.5.0-EVENT_4 u: 
+          line: 286 0  # $eventcounter = 4 $$sound_file
+          Complexity of rule ~event_t.5.0-EVENT_4 u: 1
+        rule: 291  ~event_t.6.0-EVENT_5 u: 
+          line: 291 0  # $eventcounter = 5 $$sound_file
+          Complexity of rule ~event_t.6.0-EVENT_5 u: 1
+        rule: 296  ~event_t.7.0-EVENT_6 u: 
+          line: 296 0  # $eventcounter = 6 $$sound_file
+          Complexity of rule ~event_t.7.0-EVENT_6 u: 1
+        rule: 304  ~event_t.8.0-EVENT_7 u: 
+          line: 304 0  # $eventcounter = 7 $$sound_file
+          Complexity of rule ~event_t.8.0-EVENT_7 u: 1
+        rule: 311  ~event_t.9.0-EVENT_8 u: 
+          line: 311 0  # $eventcounter = 8 $$sound_file
+          Complexity of rule ~event_t.9.0-EVENT_8 u: 1
+        rule: 319  ~event_t.10.0-EVENT_9 u: 
+          line: 319 0  # $eventcounter = 9 $$sound_file
+          Complexity of rule ~event_t.10.0-EVENT_9 u: 1
+        rule: 325  ~event_t.11.0-EVENT_10 u: 
+          line: 325 0  # $eventcounter = 10 $$sound_fil
+          Complexity of rule ~event_t.11.0-EVENT_10 u: 1
+        rule: 329  ~event_t.12.0-CLUE2 u: 
+          line: 329 0  # $clue = 1 $$sound_file = event
+          Complexity of rule ~event_t.12.0-CLUE2 u: 1
         rule: 332  ~event_t.13.0 u: 
           Complexity of rule ~event_t.13.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA/BIO/d_introduction.top
@@ -831,7 +831,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction.0.0- t: 1
         rule: 4  ~introduction.1.0 t: 
-          line: 4 0  # $$intro = 1 $chatphase = main 
+          line: 4 0  # $rapportcounter = 0 $$intro = 
           Complexity of rule ~introduction.1.0- t: 1
         rule: 6  ~introduction.2.0 u: 
           Complexity of rule ~introduction.2.0- u: 1
@@ -1578,37 +1578,37 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 6 0  # ^keep ( ) ^refine ( ) 
           Complexity of rule ~brother_t~1.0.0- u: 1
         rule: 8  ~brother_t~1.0.1 a: 
-          line: 8 0  # $$intent = names Leon 
+          line: 8 0  # $$intent = names $$sound_file 
           Complexity of rule ~brother_t~1.0.1- a: 1
         rule: 10  ~brother_t~1.0.2 a: 
-          line: 10 0  # $$intent = age Der ist 12. 
+          line: 10 0  # $$intent = age $$sound_file = 
           Complexity of rule ~brother_t~1.0.2- a: 1
         rule: 12  ~brother_t~1.0.3 a: 
-          line: 12 0  # $$intent = mood Gut. 
+          line: 12 0  # $$intent = mood $$sound_file =
           Complexity of rule ~brother_t~1.0.3- a: 1
         rule: 14  ~brother_t~1.0.4 a: 
-          line: 14 0  # $$intent = job Schüler halt. 
+          line: 14 0  # $$intent = job $$sound_file = 
           Complexity of rule ~brother_t~1.0.4- a: 1
         rule: 16  ~brother_t~1.0.5 a: 
-          line: 16 0  # $$intent = relationship_f Der 
+          line: 16 0  # $$intent = relationship_f $$so
           Complexity of rule ~brother_t~1.0.5- a: 1
         rule: 18  ~brother_t~1.0.6 a: 
-          line: 18 0  # $$intent = relationship_o Leon
+          line: 18 0  # $$intent = relationship_o $$so
           Complexity of rule ~brother_t~1.0.6- a: 1
         rule: 20  ~brother_t~1.0.7 a: 
-          line: 20 0  # $$intent = time_together Nach 
+          line: 20 0  # $$intent = time_together $$sou
           Complexity of rule ~brother_t~1.0.7- a: 1
         rule: 22  ~brother_t~1.0.8 a: 
-          line: 22 0  # $$intent = time_relationship K
+          line: 22 0  # $$intent = time_relationship ^
           Complexity of rule ~brother_t~1.0.8- a: 1
         rule: 24  ~brother_t~1.0.9 a: 
           line: 24 0  # $$intent = activity_together ^
           Complexity of rule ~brother_t~1.0.9- a: 1
         rule: 26  ~brother_t~1.0.10 a: 
-          line: 26 0  # $$intent = activity Der geht z
+          line: 26 0  # $$intent = activity $$sound_fi
           Complexity of rule ~brother_t~1.0.10- a: 1
         rule: 28  ~brother_t~1.0.11 a: 
-          line: 28 0  # $$intent = places_together In 
+          line: 28 0  # $$intent = places_together $$s
           Complexity of rule ~brother_t~1.0.11- a: 1
         rule: 32  ~brother_t~1.1.0 u: 
           line: 32 0  # ^keep ( ) ^refine ( ) 
@@ -1617,16 +1617,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 34 0  # $$intent = personal_opinion ^r
           Complexity of rule ~brother_t~1.1.1- a: 1
         rule: 35  ~brother_t~1.1.2 b: 
-          line: 35 0  # Ganz ok. 
+          line: 35 0  # $$sound_file = brother10 Ganz 
           Complexity of rule ~brother_t~1.1.2- b: 1
         rule: 36  ~brother_t~1.1.3 b: 
-          line: 36 0  # Ganz ok. 
+          line: 36 0  # $$sound_file = brother10 Ganz 
           Complexity of rule ~brother_t~1.1.3- b: 1
         rule: 37  ~brother_t~1.1.4 b: 
-          line: 37 0  # Ganz ok. 
+          line: 37 0  # $$sound_file = brother10 Ganz 
           Complexity of rule ~brother_t~1.1.4- b: 1
         rule: 38  ~brother_t~1.1.5 b: 
-          line: 38 0  # Ganz ok. 
+          line: 38 0  # $$sound_file = brother10 Ganz 
           Complexity of rule ~brother_t~1.1.5- b: 1
         rule: 41  ~brother_t~1.1.6 a: 
           line: 41 0  # $$intent = other_opinion ^resp
@@ -1635,16 +1635,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 43 0  # $$intent = place ^refine ( ) 
           Complexity of rule ~brother_t~1.1.7- a: 1
         rule: 44  ~brother_t~1.1.8 b: 
-          line: 44 0  # In Leons Zimmer. 
+          line: 44 0  # $$sound_file = brother9 In Leo
           Complexity of rule ~brother_t~1.1.8- b: 1
         rule: 45  ~brother_t~1.1.9 b: 
           line: 45 0  # ^respond ( ~ignorance ) 
           Complexity of rule ~brother_t~1.1.9- b: 1
         rule: 46  ~brother_t~1.1.10 b: 
-          line: 46 0  # In Leons Zimmer. 
+          line: 46 0  # $$sound_file = brother9 In Leo
           Complexity of rule ~brother_t~1.1.10- b: 1
         rule: 47  ~brother_t~1.1.11 b: 
-          line: 47 0  # Das ist gar nicht weit von zu 
+          line: 47 0  # $$sound_file = brother11 Das i
           Complexity of rule ~brother_t~1.1.11- b: 1
         rule: 49  ~brother_t~1.1.12 a: 
           line: 49 0  # $$intent = individual ^refine 
@@ -1656,7 +1656,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 51 0  # ^respond ( ~ignorance ) 
           Complexity of rule ~brother_t~1.1.14- b: 1
         rule: 52  ~brother_t~1.1.15 b: 
-          line: 52 0  # Leon und seine Freund. 
+          line: 52 0  # $$sound_file = brother12 Leon 
           Complexity of rule ~brother_t~1.1.15- b: 1
         rule: 53  ~brother_t~1.1.16 b: 
           line: 53 0  # ^respond ( ~ignorance ) 
@@ -1689,7 +1689,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 65 0  # $$intent = explanation ^refine
           Complexity of rule ~brother_t~1.1.25- a: 1
         rule: 66  ~brother_t~1.1.26 b: 
-          line: 66 0  # Ein Spiel auf der Playstation.
+          line: 66 0  # $$sound_file = brother13 Ein S
           Complexity of rule ~brother_t~1.1.26- b: 1
         rule: 67  ~brother_t~1.1.27 b: 
           line: 67 0  # $$nextanswer = yes 
@@ -1713,16 +1713,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 76 0  # $$question = '_0 ^log ( FILE U
           Complexity of rule ~brother_t~1.1.33- a: 1
         rule: 83  ~brother_t~1.2.0-BROTHER_1 u: 
-          line: 83 0  # $brothercounter = 1 Wenn der L
+          line: 83 0  # $brothercounter = 1 $$sound_fi
           Complexity of rule ~brother_t~1.2.0-BROTHER_1 u: 1
         rule: 86  ~brother_t~1.3.0-BROTHER_2 u: 
-          line: 86 0  # $brothercounter = 2 Wenn Leons
+          line: 86 0  # $brothercounter = 2 $$sound_fi
           Complexity of rule ~brother_t~1.3.0-BROTHER_2 u: 1
         rule: 89  ~brother_t~1.4.0-BROTHER_3 u: 
-          line: 89 0  # $brothercounter = 3 Die spiele
+          line: 89 0  # $brothercounter = 3 $$sound_fi
           Complexity of rule ~brother_t~1.4.0-BROTHER_3 u: 1
         rule: 92  ~brother_t~1.5.0-BROTHER_4 u: 
-          line: 92 0  # $brothercounter = 4 Dann gehe 
+          line: 92 0  # $brothercounter = 4 $$sound_fi
           Complexity of rule ~brother_t~1.5.0-BROTHER_4 u: 1
         rule: 99  ~brother_t~1.6.0 u: 
           Complexity of rule ~brother_t~1.6.0- u: 1
@@ -1889,28 +1889,28 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 4 0  # ^keep ( ) ^refine ( ) 
           Complexity of rule ~event_t~1.0.0- u: 1
         rule: 6  ~event_t~1.0.1 a: 
-          line: 6 0  # $$intent = names Dirk 
+          line: 6 0  # $$intent = names $$sound_file 
           Complexity of rule ~event_t~1.0.1- a: 1
         rule: 8  ~event_t~1.0.2 a: 
-          line: 8 0  # $$intent = age Der ist so alt 
+          line: 8 0  # $$intent = age $$sound_file = 
           Complexity of rule ~event_t~1.0.2- a: 1
         rule: 10  ~event_t~1.0.3 a: 
-          line: 10 0  # $$intent = mood Gut. 
+          line: 10 0  # $$intent = mood $$sound_file =
           Complexity of rule ~event_t~1.0.3- a: 1
         rule: 12  ~event_t~1.0.4 a: 
-          line: 12 0  # $$intent = job Kein Ahnung 
+          line: 12 0  # $$intent = job $$sound_file = 
           Complexity of rule ~event_t~1.0.4- a: 1
         rule: 14  ~event_t~1.0.5 a: 
           line: 14 0  # $$intent = relationship_f ^reu
           Complexity of rule ~event_t~1.0.5- a: 1
         rule: 16  ~event_t~1.0.6 a: 
-          line: 16 0  # $$intent = relationship_o Der 
+          line: 16 0  # $$intent = relationship_o $$so
           Complexity of rule ~event_t~1.0.6- a: 1
         rule: 18  ~event_t~1.0.7 a: 
-          line: 18 0  # $$intent = time_together Nach 
+          line: 18 0  # $$intent = time_together $$sou
           Complexity of rule ~event_t~1.0.7- a: 1
         rule: 20  ~event_t~1.0.8 a: 
-          line: 20 0  # $$intent = time_relationship W
+          line: 20 0  # $$intent = time_relationship $
           Complexity of rule ~event_t~1.0.8- a: 1
         rule: 22  ~event_t~1.0.9 a: 
           line: 22 0  # $$intent = activity_together ^
@@ -1922,16 +1922,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 24 0  # ^reuse ( EVENT_3 ) 
           Complexity of rule ~event_t~1.0.11- b: 1
         rule: 25  ~event_t~1.0.12 b: 
-          line: 25 0  # Sonst eigentlich nix mehr. 
+          line: 25 0  # $$sound_file = event8 Sonst ei
           Complexity of rule ~event_t~1.0.12- b: 1
         rule: 26  ~event_t~1.0.13 b: 
           line: 26 0  # ^reuse ( EVENT_1 ) 
           Complexity of rule ~event_t~1.0.13- b: 1
         rule: 28  ~event_t~1.0.14 a: 
-          line: 28 0  # $$intent = activity Weiß ich 
+          line: 28 0  # $$intent = activity $$sound_fi
           Complexity of rule ~event_t~1.0.14- a: 1
         rule: 30  ~event_t~1.0.15 a: 
-          line: 30 0  # $$intent = places_together Zu 
+          line: 30 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~1.0.15- a: 1
         rule: 110  ~event_t~1.1.0 u: 
           line: 110 0  # ^keep ( ) ^refine ( ) 
@@ -1940,34 +1940,34 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 112 0  # $$intent = personal_opinion ^r
           Complexity of rule ~event_t~1.1.1- a: 1
         rule: 113  ~event_t~1.1.2 b: 
-          line: 113 0  # Voll doof. 
+          line: 113 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t~1.1.2- b: 1
         rule: 114  ~event_t~1.1.3 b: 
-          line: 114 0  # Voll doof. 
+          line: 114 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t~1.1.3- b: 1
         rule: 115  ~event_t~1.1.4 b: 
-          line: 115 0  # Voll doof. 
+          line: 115 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t~1.1.4- b: 1
         rule: 116  ~event_t~1.1.5 b: 
-          line: 116 0  # Voll doof. 
+          line: 116 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t~1.1.5- b: 1
         rule: 117  ~event_t~1.1.6 b: 
-          line: 117 0  # Voll doof. 
+          line: 117 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t~1.1.6- b: 1
         rule: 118  ~event_t~1.1.7 b: 
-          line: 118 0  # Voll doof. 
+          line: 118 0  # $$sound_file = event11b Voll d
           Complexity of rule ~event_t~1.1.7- b: 1
         rule: 119  ~event_t~1.1.8 b: 
-          line: 119 0  # Das ist so gemein! 
+          line: 119 0  # $$sound_file = event12b Das is
           Complexity of rule ~event_t~1.1.8- b: 1
         rule: 120  ~event_t~1.1.9 b: 
-          line: 120 0  # Das ist so gemein! 
+          line: 120 0  # $$sound_file = event12b Das is
           Complexity of rule ~event_t~1.1.9- b: 1
         rule: 121  ~event_t~1.1.10 b: 
-          line: 121 0  # Das ist so gemein! 
+          line: 121 0  # $$sound_file = event12b Das is
           Complexity of rule ~event_t~1.1.10- b: 1
         rule: 122  ~event_t~1.1.11 b: 
-          line: 122 0  # Das ist so gemein! 
+          line: 122 0  # $$sound_file = event12b Das is
           Complexity of rule ~event_t~1.1.11- b: 1
         rule: 124  ~event_t~1.1.12 a: 
           line: 124 0  # $$intent = other_opinion $$ans
@@ -1976,7 +1976,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 126 0  # $$intent = place ^refine ( ) 
           Complexity of rule ~event_t~1.1.13- a: 1
         rule: 127  ~event_t~1.1.14 b: 
-          line: 127 0  # Im Wohnzimmer 
+          line: 127 0  # $$sound_file = event13b Im Woh
           Complexity of rule ~event_t~1.1.14- b: 1
         rule: 128  ~event_t~1.1.15 b: 
           line: 128 0  # $$answercategory = ignorance ^
@@ -1997,16 +1997,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 133 0  # $$answercategory = ignorance ^
           Complexity of rule ~event_t~1.1.20- b: 1
         rule: 134  ~event_t~1.1.21 b: 
-          line: 134 0  # Zu Hause. 
+          line: 134 0  # $$sound_file = event10 Zu Haus
           Complexity of rule ~event_t~1.1.21- b: 1
         rule: 135  ~event_t~1.1.22 b: 
-          line: 135 0  # Zu Hause. 
+          line: 135 0  # $$sound_file = event10 Zu Haus
           Complexity of rule ~event_t~1.1.22- b: 1
         rule: 136  ~event_t~1.1.23 b: 
-          line: 136 0  # Zu Hause. 
+          line: 136 0  # $$sound_file = event10 Zu Haus
           Complexity of rule ~event_t~1.1.23- b: 1
         rule: 137  ~event_t~1.1.24 b: 
-          line: 137 0  # Zu Hause. 
+          line: 137 0  # $$sound_file = event10 Zu Haus
           Complexity of rule ~event_t~1.1.24- b: 1
         rule: 139  ~event_t~1.1.25 a: 
           line: 139 0  # $$intent = individual ^refine 
@@ -2018,16 +2018,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 141 0  # $$answercategory = ignorance ^
           Complexity of rule ~event_t~1.1.27- b: 1
         rule: 142  ~event_t~1.1.28 b: 
-          line: 142 0  # Mein Onkel. 
+          line: 142 0  # $$sound_file = event13b Mein O
           Complexity of rule ~event_t~1.1.28- b: 1
         rule: 143  ~event_t~1.1.29 b: 
-          line: 143 0  # Mein Onkel. 
+          line: 143 0  # $$sound_file = event13b Mein O
           Complexity of rule ~event_t~1.1.29- b: 1
         rule: 144  ~event_t~1.1.30 b: 
-          line: 144 0  # Mein Onkel. 
+          line: 144 0  # $$sound_file = event13b Mein O
           Complexity of rule ~event_t~1.1.30- b: 1
         rule: 145  ~event_t~1.1.31 b: 
-          line: 145 0  # Mein Onkel. 
+          line: 145 0  # $$sound_file = event13b Mein O
           Complexity of rule ~event_t~1.1.31- b: 1
         rule: 146  ~event_t~1.1.32 b: 
           line: 146 0  # $$answercategory = ignorance ^
@@ -2131,39 +2131,39 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 184  ~event_t~1.1.65 a: 
           line: 184 0  # $$question = '_0 ^log ( FILE U
           Complexity of rule ~event_t~1.1.65- a: 1
-        rule: 264  ~event_t~1.2.0-CLUE2 u: 
-          line: 264 0  # $clue = 1 Ich will nicht, dass
-          Complexity of rule ~event_t~1.2.0-CLUE2 u: 1
-        rule: 271  ~event_t~1.3.0-EVENT_1 u: 
-          line: 271 0  # $eventcounter = 1 Mein Onkel s
-          Complexity of rule ~event_t~1.3.0-EVENT_1 u: 1
-        rule: 278  ~event_t~1.4.0-EVENT_2 u: 
-          line: 278 0  # $eventcounter = 2 Also, das is
-          Complexity of rule ~event_t~1.4.0-EVENT_2 u: 1
-        rule: 282  ~event_t~1.5.0-EVENT_3 u: 
-          line: 282 0  # $eventcounter = 3 Der kommt ei
-          Complexity of rule ~event_t~1.5.0-EVENT_3 u: 1
-        rule: 288  ~event_t~1.6.0-EVENT_4 u: 
-          line: 288 0  # $eventcounter = 4 Der nervt mi
-          Complexity of rule ~event_t~1.6.0-EVENT_4 u: 1
-        rule: 293  ~event_t~1.7.0-EVENT_5 u: 
-          line: 293 0  # $eventcounter = 5 Er schreit m
-          Complexity of rule ~event_t~1.7.0-EVENT_5 u: 1
-        rule: 298  ~event_t~1.8.0-EVENT_6 u: 
-          line: 298 0  # $eventcounter = 6 Meine Mama s
-          Complexity of rule ~event_t~1.8.0-EVENT_6 u: 1
-        rule: 306  ~event_t~1.9.0-EVENT_7 u: 
-          line: 306 0  # $eventcounter = 7 Manchmal hau
-          Complexity of rule ~event_t~1.9.0-EVENT_7 u: 1
-        rule: 313  ~event_t~1.10.0-EVENT_8 u: 
-          line: 313 0  # $eventcounter = 8 Mein Gesicht
-          Complexity of rule ~event_t~1.10.0-EVENT_8 u: 1
-        rule: 321  ~event_t~1.11.0-EVENT_9 u: 
-          line: 321 0  # $eventcounter = 9 Nur weil ich
-          Complexity of rule ~event_t~1.11.0-EVENT_9 u: 1
-        rule: 327  ~event_t~1.12.0-EVENT_10 u: 
-          line: 327 0  # $eventcounter = 10 Ich hab mic
-          Complexity of rule ~event_t~1.12.0-EVENT_10 u: 1
+        rule: 269  ~event_t~1.2.0-EVENT_1 u: 
+          line: 269 0  # $eventcounter = 1 $$sound_file
+          Complexity of rule ~event_t~1.2.0-EVENT_1 u: 1
+        rule: 276  ~event_t~1.3.0-EVENT_2 u: 
+          line: 276 0  # $eventcounter = 2 $$sound_file
+          Complexity of rule ~event_t~1.3.0-EVENT_2 u: 1
+        rule: 280  ~event_t~1.4.0-EVENT_3 u: 
+          line: 280 0  # $eventcounter = 3 $$sound_file
+          Complexity of rule ~event_t~1.4.0-EVENT_3 u: 1
+        rule: 286  ~event_t~1.5.0-EVENT_4 u: 
+          line: 286 0  # $eventcounter = 4 $$sound_file
+          Complexity of rule ~event_t~1.5.0-EVENT_4 u: 1
+        rule: 291  ~event_t~1.6.0-EVENT_5 u: 
+          line: 291 0  # $eventcounter = 5 $$sound_file
+          Complexity of rule ~event_t~1.6.0-EVENT_5 u: 1
+        rule: 296  ~event_t~1.7.0-EVENT_6 u: 
+          line: 296 0  # $eventcounter = 6 $$sound_file
+          Complexity of rule ~event_t~1.7.0-EVENT_6 u: 1
+        rule: 304  ~event_t~1.8.0-EVENT_7 u: 
+          line: 304 0  # $eventcounter = 7 $$sound_file
+          Complexity of rule ~event_t~1.8.0-EVENT_7 u: 1
+        rule: 311  ~event_t~1.9.0-EVENT_8 u: 
+          line: 311 0  # $eventcounter = 8 $$sound_file
+          Complexity of rule ~event_t~1.9.0-EVENT_8 u: 1
+        rule: 319  ~event_t~1.10.0-EVENT_9 u: 
+          line: 319 0  # $eventcounter = 9 $$sound_file
+          Complexity of rule ~event_t~1.10.0-EVENT_9 u: 1
+        rule: 325  ~event_t~1.11.0-EVENT_10 u: 
+          line: 325 0  # $eventcounter = 10 $$sound_fil
+          Complexity of rule ~event_t~1.11.0-EVENT_10 u: 1
+        rule: 329  ~event_t~1.12.0-CLUE2 u: 
+          line: 329 0  # $clue = 1 $$sound_file = event
+          Complexity of rule ~event_t~1.12.0-CLUE2 u: 1
         rule: 332  ~event_t~1.13.0 u: 
           Complexity of rule ~event_t~1.13.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA/BIO/d_introduction.top
@@ -2172,7 +2172,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction~1.0.0- t: 1
         rule: 4  ~introduction~1.1.0 t: 
-          line: 4 0  # $$intro = 1 $chatphase = main 
+          line: 4 0  # $rapportcounter = 0 $$intro = 
           Complexity of rule ~introduction~1.1.0- t: 1
         rule: 6  ~introduction~1.2.0 u: 
           Complexity of rule ~introduction~1.2.0- u: 1
@@ -2849,132 +2849,134 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 100 194  # $singleresponse = 1 
           line: 101 214  # $cs_token = 512 | 131072 | 102
           Complexity of ^simon: 1
-    topic: 103  ~xrejoinder
-        rule: 106  ~xrejoinder.0.0 u: 
-          line: 106 0  # ^nofail ( topic ^rejoinder ( )
+    macro: 103  ^sound
+          Complexity of ^sound: 1
+    topic: 105  ~xrejoinder
+        rule: 108  ~xrejoinder.0.0 u: 
+          line: 108 0  # ^nofail ( topic ^rejoinder ( )
           Complexity of rule ~xrejoinder.0.0- u: 1
-    topic: 113  ~control
-        rule: 115  ~control.0.0 u: 
-          line: 116 0  # ^gambit ( ~introduction ) 
+    topic: 115  ~control
+        rule: 117  ~control.0.0 u: 
+          line: 118 0  # ^gambit ( ~introduction ) 
           Complexity of rule ~control.0.0- u: 1
-        rule: 120  ~control.1.0 u: 
-          line: 121 0  # ^respond ( ~prob_answer ) 
-          line: 122 26  # ^end ( SENTENCE ) 
+        rule: 122  ~control.1.0 u: 
+          line: 123 0  # ^respond ( ~prob_answer ) 
+          line: 124 26  # ^end ( SENTENCE ) 
           Complexity of rule ~control.1.0- u: 1
-        rule: 127  ~control.2.0 u: 
-          line: 128 0  # $$currenttopic = %topic 
-          line: 129 24  # $_responsecount = %response 
-          if 130 56  
-          ifend 130 109  
-          line: 130 52  # ^if 00n( $singleresponse ) 00v
-          if 134 114  
-          ifend 134 193  
-          line: 134 110  # ^if 00A( %response == $_respon
-          if 136 198  
-          line: 136 194  # ^if 00R( %length == 0 and %res
-          line: 137 254  # { 
-          line: 138 256  # ^nofail ( TOPIC ^gambit ( $$cu
-          ifend 139 306  
-          line: 139 301  # } 004 
-          if 141 311  
-          ifend 141 403  
-          line: 141 307  # ^if 00A( %response == $_respon
-          if 143 408  
-          line: 143 404  # ^if 00A( %response == $_respon
-          line: 144 447  # { 
-          line: 145 449  # @8 = ^keywordtopics ( ) 
-          loop 146 479  
-          line: 146 473  # ^loop ( -1 ) aaa 
-          line: 147 490  # { 
-          line: 148 492  # $$topic = ^first ( @8subject )
-          line: 149 523  # ^nofail ( TOPIC ^respond ( $$t
-          if 150 566  
-          line: 150 562  # ^if 00m( %response != 0 ) aaa
-          line: 151 591  # { 
-          line: 152 593  # ^end ( RULE ) 
-          ifend 153 612  
-          line: 153 607  # } 004 
-          loopend 154 615  
-          line: 154 613  # } 
-          ifend 155 620  
-          line: 155 615  # } 004 
-          if 157 625  
-          line: 157 621  # ^if 00A( %response == $_respon
-          line: 158 664  # { 
-          line: 159 666  # ^nofail ( TOPIC ^respond ( ~ke
-          ifend 160 715  
-          line: 160 710  # } 004 
-          if 163 720  
-          line: 163 716  # ^if 00F( %outputrejoinder or %
-          line: 164 764  # { 
-          line: 165 766  # ^end ( TOPIC ) 
-          ifend 166 786  
-          line: 166 781  # } 004 
-          if 168 791  
-          ifend 168 913  
-          line: 168 787  # ^if 00%( %response == $_respon
-          if 170 918  
-          line: 170 914  # ^if 00A( %response == $_respon
-          line: 171 957  # { 
-          line: 172 959  # @8 = ^keywordtopics ( ) 
-          loop 173 989  
-          line: 173 983  # ^loop ( -1 ) aaa 
-          line: 174 1000  # { 
-          line: 175 1002  # $$topic = ^first ( @8subject )
-          line: 176 1033  # ^nofail ( TOPIC ^gambit ( $$to
-          if 177 1075  
-          line: 177 1071  # ^if 00m( %response != 0 ) aaa
-          line: 178 1100  # { 
-          line: 179 1102  # ^end ( RULE ) 
-          ifend 180 1121  
-          line: 180 1116  # } 004 
-          loopend 181 1124  
-          line: 181 1122  # } 
-          ifend 182 1129  
-          line: 182 1124  # } 004 
-          if 183 1134  
-          ifend 183 1225  
-          line: 183 1130  # ^if 00A( %response == $_respon
-          if 185 1230  
-          line: 185 1226  # ^if 00A( %response == $_respon
-          line: 186 1269  # { 
-          line: 187 1271  # @8 = ^gambittopics ( ) 
-          loop 188 1300  
-          line: 188 1294  # ^loop ( -1 ) aaa 
-          line: 189 1311  # { 
-          line: 190 1313  # $$topic = ^pick ( @8subject ) 
-          line: 191 1343  # ^nofail ( TOPIC ^gambit ( $$to
-          if 192 1385  
-          line: 192 1381  # ^if 00A( %response != $_respon
-          line: 193 1424  # { 
-          line: 194 1426  # ^end ( RULE ) 
-          ifend 195 1445  
-          line: 195 1440  # } 004 
-          loopend 196 1448  
-          line: 196 1446  # } 
-          ifend 197 1453  
-          line: 197 1448  # } 004 
-          if 198 1458  
-          line: 198 1454  # ^if 00A( %response == $_respon
-          line: 199 1497  # { 
-          line: 200 1499  # ^repeat ( ) 
-          line: 201 1511  # I don't know what to say. 
-          ifend 202 1542  
-          line: 202 1537  # } 004 
+        rule: 129  ~control.2.0 u: 
+          line: 130 0  # $$currenttopic = %topic 
+          line: 131 24  # $_responsecount = %response 
+          if 132 56  
+          ifend 132 109  
+          line: 132 52  # ^if 00n( $singleresponse ) 00v
+          if 136 114  
+          ifend 136 193  
+          line: 136 110  # ^if 00A( %response == $_respon
+          if 138 198  
+          line: 138 194  # ^if 00R( %length == 0 and %res
+          line: 139 254  # { 
+          line: 140 256  # ^nofail ( TOPIC ^gambit ( $$cu
+          ifend 141 306  
+          line: 141 301  # } 004 
+          if 143 311  
+          ifend 143 403  
+          line: 143 307  # ^if 00A( %response == $_respon
+          if 145 408  
+          line: 145 404  # ^if 00A( %response == $_respon
+          line: 146 447  # { 
+          line: 147 449  # @8 = ^keywordtopics ( ) 
+          loop 148 479  
+          line: 148 473  # ^loop ( -1 ) aaa 
+          line: 149 490  # { 
+          line: 150 492  # $$topic = ^first ( @8subject )
+          line: 151 523  # ^nofail ( TOPIC ^respond ( $$t
+          if 152 566  
+          line: 152 562  # ^if 00m( %response != 0 ) aaa
+          line: 153 591  # { 
+          line: 154 593  # ^end ( RULE ) 
+          ifend 155 612  
+          line: 155 607  # } 004 
+          loopend 156 615  
+          line: 156 613  # } 
+          ifend 157 620  
+          line: 157 615  # } 004 
+          if 159 625  
+          line: 159 621  # ^if 00A( %response == $_respon
+          line: 160 664  # { 
+          line: 161 666  # ^nofail ( TOPIC ^respond ( ~ke
+          ifend 162 715  
+          line: 162 710  # } 004 
+          if 165 720  
+          line: 165 716  # ^if 00F( %outputrejoinder or %
+          line: 166 764  # { 
+          line: 167 766  # ^end ( TOPIC ) 
+          ifend 168 786  
+          line: 168 781  # } 004 
+          if 170 791  
+          ifend 170 913  
+          line: 170 787  # ^if 00%( %response == $_respon
+          if 172 918  
+          line: 172 914  # ^if 00A( %response == $_respon
+          line: 173 957  # { 
+          line: 174 959  # @8 = ^keywordtopics ( ) 
+          loop 175 989  
+          line: 175 983  # ^loop ( -1 ) aaa 
+          line: 176 1000  # { 
+          line: 177 1002  # $$topic = ^first ( @8subject )
+          line: 178 1033  # ^nofail ( TOPIC ^gambit ( $$to
+          if 179 1075  
+          line: 179 1071  # ^if 00m( %response != 0 ) aaa
+          line: 180 1100  # { 
+          line: 181 1102  # ^end ( RULE ) 
+          ifend 182 1121  
+          line: 182 1116  # } 004 
+          loopend 183 1124  
+          line: 183 1122  # } 
+          ifend 184 1129  
+          line: 184 1124  # } 004 
+          if 185 1134  
+          ifend 185 1225  
+          line: 185 1130  # ^if 00A( %response == $_respon
+          if 187 1230  
+          line: 187 1226  # ^if 00A( %response == $_respon
+          line: 188 1269  # { 
+          line: 189 1271  # @8 = ^gambittopics ( ) 
+          loop 190 1300  
+          line: 190 1294  # ^loop ( -1 ) aaa 
+          line: 191 1311  # { 
+          line: 192 1313  # $$topic = ^pick ( @8subject ) 
+          line: 193 1343  # ^nofail ( TOPIC ^gambit ( $$to
+          if 194 1385  
+          line: 194 1381  # ^if 00A( %response != $_respon
+          line: 195 1424  # { 
+          line: 196 1426  # ^end ( RULE ) 
+          ifend 197 1445  
+          line: 197 1440  # } 004 
+          loopend 198 1448  
+          line: 198 1446  # } 
+          ifend 199 1453  
+          line: 199 1448  # } 004 
+          if 200 1458  
+          line: 200 1454  # ^if 00A( %response == $_respon
+          line: 201 1497  # { 
+          line: 202 1499  # ^repeat ( ) 
+          line: 203 1511  # I don't know what to say. 
+          ifend 204 1542  
+          line: 204 1537  # } 004 
           Complexity of rule ~control.2.0- u: 16
-    topic: 204  ~addposthoc
-        rule: 206  ~addposthoc.0.0 t: 
-          line: 206 0  # ^emohandler ( ) 
+    topic: 206  ~addposthoc
+        rule: 208  ~addposthoc.0.0 t: 
+          line: 208 0  # ^emohandler ( ) 
           Complexity of rule ~addposthoc.0.0- t: 1
-        rule: 207  ~addposthoc.1.0 t: 
-          line: 207 0  # ^revelationhandler ( ) 
+        rule: 209  ~addposthoc.1.0 t: 
+          line: 209 0  # ^revelationhandler ( ) 
           Complexity of rule ~addposthoc.1.0- t: 1
-        rule: 208  ~addposthoc.2.0 t: 
-          line: 209 0  # $lastoutput = ^response ( 1 ) 
+        rule: 210  ~addposthoc.2.0 t: 
+          line: 211 0  # $lastoutput = ^response ( 1 ) 
           Complexity of rule ~addposthoc.2.0- t: 1
-        rule: 212  ~addposthoc.3.0 t: 
-          line: 212 0  # ^oob ( ) 
-          line: 213 9  # ^postprintbefore ( \[ $$oob \]
+        rule: 215  ~addposthoc.3.0 t: 
+          line: 215 0  # ^oob ( ) 
+          line: 216 9  # ^postprintbefore ( \[ $$oob \]
           Complexity of rule ~addposthoc.3.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_revelationHandler.top
     macro: 1  ^revelationhandler
@@ -2991,54 +2993,60 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 6 103  # ^setcanon ( $$wordindex _2 ) 
           Complexity of ^myfunc: 1
     macro: 12  ^oob
-          line: 14 0  # $_topic = %topic 
-          line: 15 17  # $_revelationstate = $revelatio
-          line: 16 54  # $_rapportcounter = $rapportcou
-          line: 17 89  # $_goodquestion = $goodquestion
-          line: 18 120  # $_probformat = $$probformat 
-          line: 19 148  # $_answercategory = $$answercat
-          line: 20 184  # $_actiontype = $$actiontype 
-          line: 21 212  # $_emotype = $$emotype 
-          line: 22 234  # $_topicswitch = $$topicswitch 
-          line: 23 264  # $_randomnumber = $$randnum 
-          line: 24 291  # $_chatphase = $chatphase 
-          line: 25 316  # $_critrevealed = $$critreveale
-          line: 26 348  # $_noncrittopic = $noncrittopic
-          line: 27 379  # $_intent = $$intent 
-          line: 30 399  # $_item1name = topic 
-          line: 31 419  # $_item1value = $_topic 
-          line: 32 442  # $_item2name = answerCategory 
-          line: 33 471  # $_item2value = $_answercategor
-          line: 34 503  # $_item3name = probFormat 
-          line: 35 528  # $_item3value = $_probformat 
-          line: 36 556  # $_item4name = goodQuestion 
-          line: 37 583  # $_item4value = $_goodquestion 
-          line: 38 613  # $_item5name = emoType 
-          line: 39 635  # $_item5value = $_emotype 
-          line: 40 660  # $_item6name = rapportCounter 
-          line: 41 689  # $_item6value = $_rapportcounte
-          line: 42 721  # $_item7name = revelationState 
-          line: 43 751  # $_item7value = $_revelationsta
-          line: 44 784  # $_item8name = chatPhase 
-          line: 45 808  # $_item8value = $_chatphase 
-          line: 46 835  # $_item9name = randomNumber 
-          line: 47 862  # $_item9value = $_randomnumber 
-          line: 48 892  # $_item10name = topicSwitch 
-          line: 49 919  # $_item10value = $_topicswitch 
-          line: 50 949  # $_item11name = critRevealed 
-          line: 51 977  # $_item11value = $_critrevealed
-          line: 52 1008  # $_item12name = noncritTopic 
-          line: 53 1036  # $_item12value = $_noncrittopic
-          line: 54 1067  # $_item13name = intent 
-          line: 55 1089  # $_item13value = $_intent 
-          line: 60 1114  # $$oob = ^join ( $_item1name : 
-          Complexity of ^oob: 1
-    topic: 64  ~xpostagsentence
-        rule: 65  ~xpostagsentence.0.0 t: 
+          if 14 4  
+          ifend 14 61  
+          line: 14 0  # ^if 00r( $rapportcounter > 5 )
+          if 16 66  
+          ifend 16 126  
+          line: 16 62  # ^if 00t( $rapportcounter == -6
+          line: 19 127  # $_topic = %topic 
+          line: 20 144  # $_revelationstate = $revelatio
+          line: 21 181  # $_rapportcounter = $rapportcou
+          line: 22 216  # $_goodquestion = $goodquestion
+          line: 23 247  # $_probformat = $$probformat 
+          line: 24 275  # $_answercategory = $$answercat
+          line: 25 311  # $_actiontype = $$actiontype 
+          line: 26 339  # $_emotype = $$emotype 
+          line: 27 361  # $_topicswitch = $$topicswitch 
+          line: 28 391  # $_randomnumber = $$randnum 
+          line: 29 418  # $_chatphase = $chatphase 
+          line: 30 443  # $_critrevealed = $$critreveale
+          line: 31 475  # $_noncrittopic = $noncrittopic
+          line: 32 506  # $_intent = $$intent 
+          line: 35 526  # $_item1name = topic 
+          line: 36 546  # $_item1value = $_topic 
+          line: 37 569  # $_item2name = answerCategory 
+          line: 38 598  # $_item2value = $_answercategor
+          line: 39 630  # $_item3name = probFormat 
+          line: 40 655  # $_item3value = $_probformat 
+          line: 41 683  # $_item4name = goodQuestion 
+          line: 42 710  # $_item4value = $_goodquestion 
+          line: 43 740  # $_item5name = emoType 
+          line: 44 762  # $_item5value = $_emotype 
+          line: 45 787  # $_item6name = rapportCounter 
+          line: 46 816  # $_item6value = $_rapportcounte
+          line: 47 848  # $_item7name = revelationState 
+          line: 48 878  # $_item7value = $_revelationsta
+          line: 49 911  # $_item8name = chatPhase 
+          line: 50 935  # $_item8value = $_chatphase 
+          line: 51 962  # $_item9name = randomNumber 
+          line: 52 989  # $_item9value = $_randomnumber 
+          line: 53 1019  # $_item10name = topicSwitch 
+          line: 54 1046  # $_item10value = $_topicswitch 
+          line: 55 1076  # $_item11name = critRevealed 
+          line: 56 1104  # $_item11value = $_critrevealed
+          line: 57 1135  # $_item12name = noncritTopic 
+          line: 58 1163  # $_item12value = $_noncrittopic
+          line: 59 1194  # $_item13name = intent 
+          line: 60 1216  # $_item13value = $_intent 
+          line: 65 1241  # $$oob = ^join ( $_item1name : 
+          Complexity of ^oob: 3
+    topic: 69  ~xpostagsentence
+        rule: 70  ~xpostagsentence.0.0 t: 
           Complexity of rule ~xpostagsentence.0.0- t: 1
-        rule: 66  ~xpostagsentence.1.0 t: 
-          line: 67 0  # $$wordindex = 0 
-          line: 68 16  # ^log ( FILE chat.txt NEW '_0 )
+        rule: 71  ~xpostagsentence.1.0 t: 
+          line: 72 0  # $$wordindex = 0 
+          line: 73 16  # ^log ( FILE chat.txt NEW '_0 )
           Complexity of rule ~xpostagsentence.1.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_reactance.top
     topic: 1  ~reactance

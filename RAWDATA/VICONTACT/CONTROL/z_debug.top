@@ -10,7 +10,12 @@ outputmacro: ^myfunc(^data) ($$concept)
 
 
 outputmacro: ^oob()
+
+if ($rapportCounter > 5) {$rapportCounter = 5}
+
+if ($rapportCounter == -6) {$rapportCounter = -5}
  
+
  $_topic = %topic
  $_revelationState = $revelationState
  $_rapportCounter = $rapportCounter

@@ -9645,3 +9645,40 @@ Free 122MB: dict 1,607,969 fact 671,734 stack/heap 90,072KB
 
     *** Server WIDE OPEN to :command use.
 Respond: user:alfons bot: ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Tue Jun 18 13:50:05 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 17 of : Undefined set or topic ~sobbing line 194 in b_prob_answer.top    line 9 of d_hobbies.top: At least one duplicate topic name, i.e., ~hobbies_t, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 149 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue Jun 18 13:50:05 2019  Server ChatScript EVSERVER Version 8.8 pid: 59696 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=325  fact=264  heap=100476 Compiled:Jun18'19-13:50:05 by version 8.8 "vicontact"  Used 70MB: dict 489,181 (43048kb) hashdepths 28359.52322.51806.37905.22439.11966.5633.2712.1183.489.212.65.27.4.3.2.1. words 489181 unusedbuckets 28359 fact 128,266 (6156kb) heap 9927kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,607,969 fact 671,734 stack/heap 90,072KB         *** Server WIDE OPEN to :command use.    When:Jun18 13:50:08 3318ms 
+evserver child fork requests: 0
+  evserver: running pid: 28972
+System startup createsystem Tue Jul 02 08:14:18 2019
+Server ChatScript EVSERVER Version 8.8 pid: 28972 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=325  fact=264  heap=100988 Compiled:Jun26'19-14:28:42 by version 8.8 "vicontact"
+Used 70MB: dict 489,181 (43048kb) hashdepths 28359.52321.51808.37904.22439.11966.5633.2712.1183.489.212.65.27.4.3.2.1. words 489181 unusedbuckets 28359 fact 128,266 (6156kb) heap 9928kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,969 fact 671,734 stack/heap 90,071KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 28972 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Tue Jul 02 08:14:21 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 28972), fork=0
+ServerPre: pid: 28972 alfons () :build vicontact #b Jul 02 08:40:45 2019
+System startup vicontact #b Tue Jul 02 08:40:45 2019
+System startup createsystem Tue Jul 02 08:40:45 2019
+Server ChatScript EVSERVER Version 8.8 pid: 28972 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"
+Build1:  dict=326  fact=264  heap=103636 Compiled:Jul02'19-08:40:45 by version 8.8 "vicontact"
+Used 70MB: dict 489,182 (43048kb) hashdepths 28359.52321.51807.37905.22439.11966.5633.2712.1183.489.212.65.27.4.3.2.1. words 489182 unusedbuckets 28359 fact 128,266 (6156kb) heap 9930kb
+           buffer (6400kb) cache (5000kb)
+Free 122MB: dict 1,607,968 fact 671,734 stack/heap 90,069KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:alfons bot: ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Tue Jul 02 08:40:45 2019  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:     line 17 of : Undefined set or topic ~sobbing line 194 in b_prob_answer.top    line 9 of d_hobbies.top: At least one duplicate topic name, i.e., ~hobbies_t, which may intended if bot restrictions differ.  2 serious warnings, 0 function warnings, 0 spelling warnings, 150 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue Jul 02 08:40:45 2019  Server ChatScript EVSERVER Version 8.8 pid: 28972 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=94841  fact=126709  heap=1491520 Compiled:May07'19-09:59:33 by version 8.8 "0"  Build1:  dict=326  fact=264  heap=103636 Compiled:Jul02'19-08:40:45 by version 8.8 "vicontact"  Used 70MB: dict 489,182 (43048kb) hashdepths 28359.52321.51807.37905.22439.11966.5633.2712.1183.489.212.65.27.4.3.2.1. words 489182 unusedbuckets 28359 fact 128,266 (6156kb) heap 9930kb             buffer (6400kb) cache (5000kb)  Free 122MB: dict 1,607,968 fact 671,734 stack/heap 90,069KB         *** Server WIDE OPEN to :command use.    When:Jul02 08:40:47 2899ms 
+ServerPre: pid: 28972 alfons () :bot laura_li Jul 02 08:40:49 2019
+Start: user:alfons bot: ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Hallo! Ich bin Laura li.  When:Jul02 08:40:49 3ms Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jul02'19-08:40:45 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0 
+ServerPre: pid: 28972 alfons (laura_li) [crit_asked] Jul 02 08:41:03 2019
+Respond: user:alfons bot:laura_li ip:127.0.0.1 (~introduction) 1 [crit_asked]  ==> [topic:~introduction | answerCategory:reactance | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:-1 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Sind wir fertig?  When:Jul02 08:41:07 3205ms Why:~addposthoc.3.0 ~reactance.0.0.~prob_answer.11.0 
+ServerPre: pid: 28972 alfons (laura_li) [crit_asked] Jul 02 08:41:15 2019
+Respond: user:alfons bot:laura_li ip:127.0.0.1 (~introduction) 2 [crit_asked]  ==> [topic:~introduction | answerCategory:reactance | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:-2 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Ich will darüber nicht sprechen.  When:Jul02 08:41:15 2ms Why:~addposthoc.3.0 ~reactance.0.0.~prob_answer.11.0 
