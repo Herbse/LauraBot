@@ -5,3 +5,142 @@ c:/users/admin/documents/chatscript-8.2/rawdata/harry/childhood.top
 c:/users/admin/documents/chatscript-8.2/rawdata/harry/introductions.top
 c:/users/admin/documents/chatscript-8.2/rawdata/harry/keywordless.top
 c:/users/admin/documents/chatscript-8.2/rawdata/harry/simplecontrol.top
+Start: user:ll bot:laura_si ip: rand:2206 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Hey!  When:Apr24'19-14:48:45 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-11:33:36 0:Apr24'19-14:48:45 F:0 P:0 Why:~addposthoc.1.0 ~introduction_t.0.0.~control.0.0 
+entering null word to dictionary in sentence1 Wed Apr 24 14:49:06 2019 in sentence: hallo 
+    
+Respond: user:ll bot:laura_si ip: (~introduction_t) 1   hallo ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Ich bin Laura und möchte dir etwas erzählen.  When:Apr24'19-14:49:06 Why:~addposthoc.1.0 ~introduction_t.1.0.~control.2.0   F:2833 
+Command: :build OOB
+Start: user:ll bot:oob ip: rand:2206 (~introduction) 0 ==> Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Apr24'19-14:51:45 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-14:51:42 0:Apr24'19-14:51:45 F:0 P:0 Why:~introduction.0.0.~control.0.0 
+Respond: user:ll bot:oob ip: (~introduction) 1   bongo ==> Kann ich Sonst noch was für dich tun?  When:Apr24'19-14:51:48 Why:~keywordless.1.0.~control.2.0   F:2 
+Command: :build OOB #a
+Start: user:ll bot:oob ip: rand:2207 (~introduction) 1 ==> Hey! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Apr24'19-14:51:57 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-14:51:54 0:Apr24'19-14:51:45 F:0 P:Apr24'19-14:51:48 Why:~introduction.0.0.~control.0.0 
+Respond: user:ll bot:oob ip: (~introduction) 2   bongo ==> Das ist die Bedingung A.  When:Apr24'19-14:51:59 Why:~introduction.6.0.~control.2.0   F:0 
+Command: :build OOB #c
+Start: user:ll bot:oob ip: rand:2208 (~introduction) 2 ==> Grüß Gott! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Apr24'19-14:52:07 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-14:52:04 0:Apr24'19-14:51:45 F:0 P:Apr24'19-14:51:59 Why:~introduction.0.0.~control.0.0 
+Respond: user:ll bot:oob ip: (~introduction) 3   bongo ==> Das ist die Bedingung C.  When:Apr24'19-14:52:09 Why:~introduction.6.0.~control.2.0   F:1 
+Command: :build laura_si #A
+No such bot  ll -  -  status: defaultbot word not found   in topic_ll_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_si #a
+No such bot  ll -  -  status: defaultbot word not found   in topic_ll_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_si #a
+No such bot  ll -  -  status: defaultbot word not found   in topic_ll_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_si #a
+No such bot  ll -  -  status: defaultbot word not found   in topic_ll_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_si #a
+No such bot  ll -  -  status: defaultbot word not found   in topic_ll_anonymous_GERMAN.txt at 0: ^anonymous
+    Command: :build laura_si #a
+Start: user:ll bot:laura_si ip: rand:2207 (~brother_t) 1 ==> [topic:~brother_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Specific test to brother topic  When:Apr24'19-16:42:25 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-16:42:21 0:Apr24'19-14:48:45 F:0 P:Apr24'19-14:49:06 Why:~addposthoc.1.0 ~brother_t.0.0.~control.2.0 
+Command: :reset
+Start: user:ll bot:laura_si ip: rand:2206 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Hey!  When:Apr24'19-16:42:28 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-16:42:21 0:Apr24'19-14:48:45 F:0 P:Apr24'19-14:49:06 Why:~addposthoc.1.0 ~introduction_t.0.0.~control.0.0 
+Command: :build laura_si #a
+Start: user:ll bot:laura_si ip: rand:2206 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Das ist die Reaktanz.  When:Apr24'19-16:44:23 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-16:44:20 0:Apr24'19-14:48:45 F:0 P:Apr24'19-14:49:06 Why:~addposthoc.1.0 ~reactance.0.0.~control.2.0 
+Respond: user:ll bot:laura_si ip: (~introduction_t) 1   [invitation_to_tell] mutter ==> [topic:~introduction_t | answerCategory: | probFormat:narrative:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType:shrug | rapportCounter: | revelationState: | chatPhase: | randomNumber:81 | topicSwitch: | critRevealed: ]`Hm.  When:Apr24'19-16:44:45 Why:~addposthoc.1.0 ~notanswering.0.0.~prob_answer.0.0   F:1 
+Command: :reset
+Start: user:ll bot:laura_si ip: rand:2206 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Hey!  When:Apr24'19-16:44:50 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-16:44:20 0:Apr24'19-14:48:45 F:0 P:Apr24'19-16:44:45 Why:~addposthoc.1.0 ~introduction_t.0.0.~control.0.0 
+Respond: user:ll bot:laura_si ip: (~introduction_t) 1   [invitation_to_tell] mutter ==> [topic:~introduction_t | answerCategory: | probFormat:narrative:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType:shrug | rapportCounter: | revelationState: | chatPhase: | randomNumber:81 | topicSwitch: | critRevealed: ]`Hm.  When:Apr24'19-16:44:51 Why:~addposthoc.1.0 ~notanswering.0.0.~prob_answer.0.0   F:2 
+Respond: user:ll bot:laura_si ip: (~mother_t) 2   [invitation_to_tell] mutter ==> [topic:~mother_t | answerCategory: | probFormat:narrative:80_notAnswering:10_ignorance:10 | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber:30 | topicSwitch: | critRevealed: ]`Meine Mama ist immer zu Hause. Sie ist schlimm krank.  When:Apr24'19-16:44:56 Why:~addposthoc.1.0 ~mother_t.2.0=MAMA_1.~control.2.0   F:1 
+PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    PushOutputBuffer limit reached3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 1
+Allocated extra buffer 1
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 2
+Allocated extra buffer 2
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 3
+Allocated extra buffer 3
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 4
+Allocated extra buffer 4
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 5
+Allocated extra buffer 5
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 6
+Allocated extra buffer 6
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 7
+Allocated extra buffer 7
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 8
+Allocated extra buffer 8
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 9
+Allocated extra buffer 9
+
+ d3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 10
+Allocated extra buffer 10
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 11
+Allocated extra buffer 11
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 12
+Allocated extra buffer 12
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 13
+Allocated extra buffer 13
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 14
+Allocated extra buffer 14
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 15
+Allocated extra buffer 15
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 16
+Allocated extra buffer 16
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 17
+Allocated extra buffer 17
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 18
+Allocated extra buffer 18
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    Allocated extra buffer 19
+Allocated extra buffer 19
+
+ 3 Wed Apr 24 16:46:12 2019 in sentence: [w_question] wie findest du das die mama krank ist 
+    

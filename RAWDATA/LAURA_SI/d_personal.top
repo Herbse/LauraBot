@@ -1,13 +1,28 @@
-topic: ~personal keep repeat (~alter) 
+topic: ~personal_t keep repeat () 
 
-
-u: (<<~age ~bot>>) Ich bin 14 Jahre alt. Sagt zumindest das Skript.
-
-u: (~emohow_closed) Naja, es geht so.
-
-
-
-
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) Laura.
+    # age
+    a: (^age()) Zehn Jahre.
+    # mood
+    a: (^mood()) Gut.
+    # job
+    a: (^job()) Schüler halt.
+    # relationship_f
+    a: (^relationship_f()) 
+    # relationship_o
+    a: (^relationship_o()) 
+    # time together
+    a: (^time_together()) 
+    # time relationship
+    a: (^time()) 
+    # activity together
+    a: (^activity_together()) [^respond(~friends_t) ^respond(~hobbies_t)]
+    # activity
+    a: (^activity()) Ich gehe zur Schule.
+    # places together
+    a: (^places_together()) [^respond(~friends_t) ^respond(~hobbies_t)]
 
 
 

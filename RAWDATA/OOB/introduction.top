@@ -1,6 +1,22 @@
-topic: ~introduction  keep repeat ()
+topic: ~introduction  keep repeat (sound)
 
-t: [Hallo!][Hey!][Grüß Gott!] Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.
+t: [Hallo!][Hey!][Grüß Gott!] Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert. ^gambit(~event_t)
+
+
+u: (sound) $$sound_file = test popen(^"afplay soundfiles/$$sound_file\.mp3" '^sound) Läuft! 
+
+u:  (*) ^refine() $$answerCategory = specificAnswer $$actionType = shrug  ^keep() ^repeat() 
+    a: (~mother) 1
+    a: (~father) 2
+    a: ([~brother leon]) 3
+    a: ([onkel dirk]) 4
+    a: (~friend) 5
+    a: (~hobby) 6
+    a: (~school) 7
+    a: () Testwurst
+
+
+u: ( ^opinion() ) Das hat funktioniert. ^keep() ^repeat()
 
 u: ($test=1) $test=0 Das ist der Test.
 #u: (\[ testc \]) Das ist der Testc.
@@ -9,8 +25,14 @@ u: ($test=1) $test=0 Das ist der Test.
 #u: (\[ testc \]) $closed=1 
 #u: (\[ testo \]) $open=1
 u: ($closed=1 frage) $closed=0 Das war eine geschlossene Frage. Die Antwort darauf ist trivial.
-u: ($open=1 frage )$open=0 Das war eine offene Frage. Die Antwort darauf ist qualitativ hochwertig.
+u: ($open=1 frage )$open=0 Das war 
+eine offene Frage. Die Antwort darauf ist qualitativ hochwertig.
 u: (frage) Das ist die Frage.
+
+#a u: (bongo) Das ist die Bedingung A.
+#b u: (bongo) Das ist die Bedingung B.
+#c u: (bongo) Das ist die Bedingung C.
+
 
 u: (pinga) \[ pong \] ...
 

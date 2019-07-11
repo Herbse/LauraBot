@@ -32,3 +32,10 @@ Command: :reset
 Start: user:as bot:laura ip: rand:1850 (~introduction) 0 ==> Grüß Gott!  When:Nov29'18-13:53:59 Version:8.2 Build0:Nov29'18-12:21:31 Build1:Nov29'18-13:53:31 0:Nov29'18-11:57:56 F:0 P:0 Why:~introduction.0.0.~control.0.0 
 Respond: user:as bot:laura ip: (~personal) 1   asd ==> Prima. Was möchstest du denn wissen?  When:Nov29'18-13:54:01 Why:~personal.0.0.~control.2.0   F:1 
 Respond: user:as bot:laura ip: (~personal) 2   wie geht es dir? ==> Naja, es geht so.  When:Nov29'18-13:54:13 Why:~personal.3.0.~control.2.0   F:2 
+Start: user:as bot:pattern ip: rand:1850 (~introduction) 0 ==> Grüß Gott! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11'19-15:48:39 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:47:58 0:Jun11'19-15:48:39 F:0 P:0
+Command: :build pattern
+Start: user:as bot:pattern ip: rand:1849 (~introduction) 0 ==> Das habe ich leider nicht erkannt.  When:Jun11'19-15:48:47 Why:~keywordless.0.0.~control.2.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:48:44 0:Jun11'19-15:48:39 F:0 P:0
+Command: :reset
+Start: user:as bot:pattern ip: rand:1850 (~introduction) 0 ==> Grüß Gott! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11'19-15:48:51 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:48:44 0:Jun11'19-15:48:39 F:0 P:0
+Command: :build vicontact
+Start: user:as bot:laura_si ip: rand:1850 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ]`Grüß Gott! Ich bin Laura si. `Mein Onkel schläft jetzt immer bei uns.`   When:Jun11'19-16:30:35 Why:~addposthoc.3.0 ~introduction~1.1.0.~control.0.0 ~event_t.2.0=EVENT_1.~introduction~1.1.0 ~introduction~1.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-16:30:32 0:Jun11'19-16:30:35 F:0 P:0

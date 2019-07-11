@@ -1,6 +1,12 @@
-﻿ChatScript Version 8.2  compiled Jun 19 2018 14:20:20
+﻿ChatScript Version 8.8  compiled Nov 29 2018 14:35:45
 
 >>Reading folder RAWDATA/OOB/
+
+----Reading file testevent2.top
+Reading topic ~event_t
+
+----Reading file testevent1.top
+Reading topic ~event_t
 
 ----Reading file simpletopic.top
 Reading outputmacro: ^myfunc
@@ -8,24 +14,46 @@ Reading topic ~xpostagsentence
 
 ----Reading file introduction.top
 Reading topic ~introduction
+*** Warning- line 12 of introduction.top: Word "dirk" known in multiple spellings Dirk DIRK 
+*** Warning- line 28 of introduction.top: Word "frage" known in multiple spellings frage Frage 
+*** Warning- line 30 of introduction.top: Word "frage" known in multiple spellings frage Frage 
 
 ----Reading file handle_oob.top
 Reading topic ~handle_oob
+*** Warning- line 3 of handle_oob.top: Word "test" known in multiple spellings Test TEST 
 
 ----Reading file simplecontrol.top
 Rename @9 as @chatoutput
 Reading outputmacro: ^oob
+Reading outputmacro: ^oobi
+Reading outputmacro: ^sound
 Reading topic ~xrejoinder
 Reading table ^tbl:defaultbot
 Reading topic ~control
+
+----Reading file patternmacros.top
+Reading topic ~patternmacros
+Reading patternmacro: ^opinion
+*** Warning- line 5 of patternmacros.top: Word "wie" known in multiple spellings wie Wie WIE 
+*** Warning- line 5 of patternmacros.top: Word "du" known in multiple spellings du Du 
+*** Warning- line 5 of patternmacros.top: Word "das" known in multiple spellings das Das DAS 
+*** Warning- line 6 of patternmacros.top: Word "wie" known in multiple spellings wie Wie WIE 
+*** Warning- line 6 of patternmacros.top: Word "war" known in multiple spellings war WAR 
+*** Warning- line 6 of patternmacros.top: Word "das" known in multiple spellings das Das DAS 
+*** Warning- line 6 of patternmacros.top: Word "dich" known in multiple spellings dich Dich 
 
 ----Reading file keywordless.top
 Reading topic ~keywordless
 
 <<end folder RAWDATA/OOB
-No errors or warnings
+*** Warning-  Undefined set or topic ~school line 15 in introduction.top
+*** Warning- line 19 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
 
-
+WARNING SUMMARY: 
+  line 1 of : Undefined set or topic ~school line 15 in introduction.top
+  line 19 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
+2 serious warnings, 0 function warnings, 0 spelling warnings, 11 case warnings, 0 substitution warnings
+    
 
 Finished compile
 

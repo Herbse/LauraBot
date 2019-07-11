@@ -1,7 +1,0 @@
-topic: ~ignorance keep repeat nostay ()
-
-r: $$answerCategory = ignorance Ich weiß nicht. ^keep() ^repeat()
-
-r: $$answerCategory = ignorance  Ich erinnere mich nicht. ^keep() ^repeat()
-
-r: $$answerCategory = ignorance  Keine Ahnung. ^keep() ^repeat()

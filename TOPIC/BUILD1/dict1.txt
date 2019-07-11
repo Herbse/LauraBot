@@ -1,10 +1,10 @@
-﻿+ why PATTERN_WORD 
-+ aufpassen PATTERN_WORD 
-+ hingehen PATTERN_WORD 
-+ einzeln PATTERN_WORD 
-+ bett PATTERN_WORD 
+﻿+ hallo PATTERN_WORD 
++ hello PATTERN_WORD 
++ hey PATTERN_WORD 
++ hi PATTERN_WORD 
 + abgelaufen PATTERN_WORD 
-+ gefunden PATTERN_WORD 
++ gemacht PATTERN_WORD 
++ support PATTERN_WORD 
 + @chatoutput 9
 + laura_si 
 + defaultbot 
@@ -19,14 +19,11 @@
 + was_ist_heute_los 
 + was_ist_los 
 + was_beschäftigt 
-+ alles_klar 
 + verstehe_ich 
 + kann_ich_verstehen 
 + kann_ich_mir_vorstellen 
 + dann_passiert 
 + und_dann 
-+ wie_oft 
-+ wie_häufig 
 + grüß_gott 
 + früße_dich 
 + zu_hause 

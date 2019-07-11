@@ -4,3 +4,20 @@ Respond: user:sd bot:laura ip: (~personal) 2    [A ==> Prima. Was möchstest du 
 Respond: user:sd bot:laura ip: (~personal) 3   wie geht es dir ==> Naja, es geht so.  When:Nov29'18-14:03:54 Why:~personal.3.0.~control.2.0   F:1 
 Respond: user:sd bot:laura ip: (~personal) 4    [A ==> Kann ich noch was für dich tun?  When:Nov29'18-14:03:55 Why:~keywordless.0.0.~control.2.0   F:1 
 Respond: user:sd bot:laura ip: (~personal) 5    [A ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov29'18-14:03:58 Why:~keywordless.1.0.~control.2.0   F:1 
+Start: user:sd bot:laura_li ip: rand:2429 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 ]`Grüß Gott!  When:May07'19-09:21:32 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:Apr30'19-15:39:48 Build1:Apr30'19-17:11:25 0:May07'19-09:21:32 F:0 P:0
+Command: :build laura_li 
+Start: user:sd bot:laura_li ip: rand:2430 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 ]`Das sollte eigentlich nicht passieren.  When:May07'19-09:28:53 Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0  Version:8.8 Build0:Apr30'19-15:39:48 Build1:May07'19-09:28:50 0:May07'19-09:21:32 F:0 P:0
+Command: :reset
+Start: user:sd bot:laura_li ip: rand:2429 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 ]`Grüß Gott!  When:May07'19-09:28:57 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:Apr30'19-15:39:48 Build1:May07'19-09:28:50 0:May07'19-09:21:32 F:0 P:0
+entering null word to dictionary in sentence1 Tue May 07 09:29:09 2019 in sentence: bot=arnold 
+    
+Respond: user:sd bot:laura_li ip: (~introduction) 1   bot=arnold ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 ]`Das sollte eigentlich nicht passieren.  When:May07'19-09:29:09 Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0   F:2974 
+Command: :build laura_li 
+Start: user:sd bot:laura_li ip: rand:2431 (~introduction) 1 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 ]`Das sollte eigentlich nicht passieren.  When:May07'19-09:29:25 Why:~addposthoc.3.0 ~keywordless.0.0.~control.2.0  Version:8.8 Build0:Apr30'19-15:39:48 Build1:May07'19-09:29:22 0:May07'19-09:21:32 F:0 P:May07'19-09:29:09
+Command: :build laura_li 
+Command: :build laura_li 
+Command: :build laura_li 
+Command: :build laura_li 
+Command: :build 0
+Command: :build laura_li 
+Command: :build laura_li 

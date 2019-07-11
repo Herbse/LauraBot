@@ -1,5 +1,0 @@
-topic: ~affirmation keep repeat nostay ()
-
-r: $$answerCategory = affirmation  $$actionType = nod Ja. ^keep() ^repeat()
-
-r: $$answerCategory = affirmation  $$actionType = nod Mhm. ^keep() ^repeat()

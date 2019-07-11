@@ -2,14 +2,14 @@
 outputmacro: ^emoHandler()
 
 
-if ($$chatPhase==start) {
-	if ($$answerContent=crit_1_2) {$$emoType = serious}
-	else {$$emoType=neutral}}
-else if ($$chatPhase==main) {
-	if ($$answerContent=crit_3_6) {$$emoType=neutral}
-	else if ($$answerContent=crit_7_10) {$$emoType=sad}
-	else if ($$answerContent=general) {$$emoType=neutral}}
-else if ($$chatPhase==end){
-	if ($$critRevealed==1){$$emoType = relieved}
-	else {$$emoType=disappointed}}
-else {$$emoType=neutral}
+if ($chatPhase==main) {
+	if ($eventCounter < 7) {$$emoType = serious}
+	else if ($eventCounter < 10) {$$emoType = sad}
+	else if ($eventCounter==10) {$$emoType = relieved}}
+else if ($chatPhase==end){
+	if ($eventCounter < 7) {$$emoType = disappointed}
+	else if ($eventCounter < 10) {$$emoType = sad}
+	else if ($eventCounter==10) {$$emoType = relieved}}
+
+
+

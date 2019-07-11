@@ -34,3 +34,73 @@ Start: user:sdf bot:laura_b ip: rand:2403 (~introduction) 0 ==> Hallo!  When:Feb
 Respond: user:sdf bot:laura_b ip: (~introduction) 1   wie geht es dir ==> Ganz okay.  When:Feb13'19-17:13:43 Why:~answer_roulette.1.0.~introduction.2.0=CLOSED_SITUATION   F:1 
 Respond: user:sdf bot:laura_b ip: (~introduction) 2   warum ==> Weiß nicht...  When:Feb13'19-17:13:45 Why:~keywordless.5.0.~control.2.0   F:1 
 Command: :build laura
+Start: user:sdf bot:laura_si ip: rand:2403 (~introduction_t) 0 ==> [topic:~introduction_t | answerCategory: | probFormat: | answerContent: | emoType:neutral | actionType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: ]`Hallo!  When:Apr25'19-22:43:16 Version:8.2 Build0:Apr23'19-11:46:22 Build1:Apr24'19-20:18:25 0:Apr25'19-22:43:16 F:0 P:0 Why:~addposthoc.2.0 ~introduction_t.0.0.~control.0.0 
+Command: :prepare f  r
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: f  r
+Tokenized into: f  r  
+Actual used input: f r 
+
+entering null word to dictionary in sentenceentering null word to dictionary in sentence
+Concepts: 
+
+1: f (raw):
+   +~
+       +~temperature_quantity
+         +~measurement
+           +~quantity
+             +~attributes
+               +~nounlist
+   +f
+ // 
+1: F (canonical):        +~notpropername
+       +~letters
+   +F^
+ //  
+
+2: r (raw):
+   +~
+   +r
+ // 
+2: R (canonical):        +~letters
+   +R^
+ //  
+
+Sequences:
+
+After parse TokenFlags: USERINPUT 
+Start: user:sdf bot:laura_si ip: rand:2403 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ]`Hallo! Ich bin Laura si. `Mein Onkel schläft jetzt immer bei uns.`   When:Jun04'19-17:52:56 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~event_t.3.0=EVENT_1.~introduction.1.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun04'19-16:58:59 0:Apr25'19-22:43:16 F:0 P:0
+Command: :bot laura_li
+Start: user:sdf bot:laura_li ip: rand:2403 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ]`Hallo! Ich bin Laura li.  When:Jun04'19-17:53:03 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun04'19-16:58:59 0:Apr25'19-22:43:16 F:0 P:0
+Command: :build vicontact #a
+Start: user:sdf bot:laura_si ip: rand:2403 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion: | emoType:serious | actionType: | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ]`Hallo! Ich bin Laura si. `   When:Jun04'19-17:53:41 Why:~addposthoc.3.0 ~introduction.1.0.~control.0.0 ~introduction.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun04'19-17:53:38 0:Apr25'19-22:43:16 F:0 P:0
+Command: :bot laura_li
+Start: user:sdf bot:laura_li ip: rand:2403 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | actionType: | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ]`Hallo! Ich bims Lauraa li.  When:Jun04'19-17:53:55 Why:~addposthoc.3.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun04'19-17:53:38 0:Apr25'19-22:43:16 F:0 P:0
+Start: user:sdf bot:laura_si ip: rand:2402 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion: | emoType:serious | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ]`Das sollte eigentlich nicht passieren.  When:Jun11'19-14:05:01 Why:~addposthoc.3.0.~control.2.0 ~keywordless.0.0.~control.2.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-13:49:47 0:Apr25'19-22:43:16 F:0 P:0
+Command: :why
+~addposthoc.3.0  t:  ( ) ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = null 
+ via ~control.2.0 u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+~keywordless.0.0  r:  Das sollte eigentlich nicht passieren. ^keep ( ) ^repeat ( ) 
+ via ~control.2.0 u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+Command: :reset
+Start: user:sdf bot:laura_si ip: rand:2402 () 0 ==> [topic: | answerCategory: | probFormat: | goodQuestion: | emoType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ]`Das sollte eigentlich nicht passieren.  When:Jun11'19-14:14:22 Why:~addposthoc.3.0.~control.2.0 ~keywordless.0.0.~control.2.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-13:49:47 0:Apr25'19-22:43:16 F:0 P:0
+Command: :build vicontact
+Start: user:sdf bot:laura_si ip: rand:2403 (~event_t) 0 ==> [topic:~event_t | answerCategory: | probFormat: | goodQuestion: | emoType:serious | rapportCounter: | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: ]`Hallo! Ich bin Laura si. `Mein Onkel schläft jetzt immer bei uns.`   When:Jun11'19-14:14:52 Why:~addposthoc.3.0.~school_t~1.2.0=SCHOOL_2 ~introduction~1.1.0.~control.0.0 ~event_t.2.0=EVENT_1.~introduction~1.1.0 ~introduction~1.1.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-14:14:49 0:Apr25'19-22:43:16 F:0 P:0
+Command: :bot laura_li
+Start: user:sdf bot:laura_li ip: rand:2403 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ]`Hallo! Ich bin Laura li.  When:Jun11'19-14:15:02 Why:~addposthoc.3.0.~school_t~1.2.0=SCHOOL_2 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-14:14:49 0:Apr25'19-22:43:16 F:0 P:0
+Command: :build pattern
+Start: user:sdf bot:pattern ip: rand:2403 (~introduction) 0 ==> Hallo! Ich heiße OOB. Stelle mir eine Frage und schaue, ob ich sie richtig kategorisiere.  When:Jun11'19-15:09:30 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:09:27 0:Jun11'19-15:09:30 F:0 P:0
+Command: :build pattern
+Start: user:sdf bot:pattern ip: rand:2403 (~introduction) 0 ==> Hallo! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11'19-15:11:09 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:11:06 0:Jun11'19-15:09:30 F:0 P:0
+Command: :build pattern
+Start: user:sdf bot:pattern ip: rand:2403 (~introduction) 0 ==> Hallo! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11'19-15:14:44 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:14:41 0:Jun11'19-15:09:30 F:0 P:0
+Command: :build pattern
+Start: user:sdf bot:pattern ip: rand:2402 (~introduction) 0 ==> Das habe ich leider nicht erkannt.  When:Jun11'19-15:15:24 Why:~keywordless.0.0.~control.2.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:15:21 0:Jun11'19-15:09:30 F:0 P:0
+Command: :reset
+Start: user:sdf bot:pattern ip: rand:2403 (~introduction) 0 ==> Hallo! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun11'19-15:15:30 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-15:15:21 0:Jun11'19-15:09:30 F:0 P:0
+Respond: user:sdf bot:pattern ip: (~introduction) 1   wie geht es dir ==> Mood  When:Jun11'19-15:15:35 Why:~introduction.1.3.~control.2.0   F:45 
+Respond: user:sdf bot:pattern ip: (~introduction) 2   wie lange kennt ihr euch schon ==> Time relationship  When:Jun11'19-15:15:40 Why:~introduction.1.8.~control.2.0   F:1 
+Respond: user:sdf bot:pattern ip: (~introduction) 3   wie findest du den ==> Relationship o  When:Jun11'19-15:15:45 Why:~introduction.1.6.~control.2.0   F:1 
+Respond: user:sdf bot:pattern ip: (~introduction) 4   was arbeitet der denn ==> Job  When:Jun11'19-15:16:09 Why:~introduction.1.4.~control.2.0   F:1 

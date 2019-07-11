@@ -7,3 +7,144 @@ Start: user:w bot:laura ip: rand:1565 (~introduction) 0 ==> Hallo!  When:Nov21'1
 Command: :rest
 Respond: user:w bot:laura ip: (~introduction) 1   :rest ==> Ich glaube das hab ich nicht ganz verstanden.  When:Nov21'18-15:22:34 Why:~keywordless.2.0.~control.1.0   F:24 
 Respond: user:w bot:laura ip: (~personal) 2   asd ==> Prima. Was möchstest du denn wissen?  When:Nov21'18-15:22:37 Why:~personal.0.0.~control.1.0   F:1 
+Start: user:w bot:pattern ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Pattern-Bot. Stelle mir eine Frage und schaue, ob ich deren Bedeutung verstehe.  When:Jun12'19-09:52:11 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun11'19-16:35:48 0:Jun12'19-09:52:11 F:0 P:0
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:52:20 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:52:17 0:Jun12'19-09:52:20 F:0 P:0
+Respond: user:w bot:tutorial ip: (~introduction) 1   ok ==> Grün  When:Jun12'19-09:52:28 Why:~introduction.1.0=TRIAL1.~control.1.0   F:5 
+Respond: user:w bot:tutorial ip: (~introduction) 2   blau ==> Das war richtig.  When:Jun12'19-09:52:32 Why:~introduction.1.2   F:1 
+Command: :why
+~introduction.1.2  a:  ( ) Das war richtig. 
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:52:45 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:52:17 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:52:32
+Respond: user:w bot:tutorial ip: (~introduction) 1   ok ==> Grün  When:Jun12'19-09:52:51 Why:~introduction.1.0=TRIAL1.~control.1.0   F:0 
+Respond: user:w bot:tutorial ip: (~introduction) 2   grün ==> Das war richtig.  When:Jun12'19-09:52:54 Why:~introduction.1.2   F:0 
+Command: :why
+~introduction.1.2  a:  ( ) Das war richtig. 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1567 (~introduction) 2 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:54:26 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:54:23 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:52:54
+Respond: user:w bot:tutorial ip: (~introduction) 3   sd ==> Grün  When:Jun12'19-09:54:28 Why:~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 4   grün ==> Das war richtig.  When:Jun12'19-09:54:32 Why:~introduction.1.2   F:1 
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:54:46 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:54:23 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:54:32
+Respond: user:w bot:tutorial ip: (~introduction) 1   a ==> Grün  When:Jun12'19-09:54:47 Why:~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 2   blau ==> Das war richtig.  When:Jun12'19-09:54:48 Why:~introduction.1.2   F:0 
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:57:52 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:54:23 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:54:48
+Respond: user:w bot:tutorial ip: (~introduction) 1   a ==> Grün  When:Jun12'19-09:57:53 Why:~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 2   Grün ==> Das war richtig.  When:Jun12'19-09:57:56 Why:~introduction.1.2   F:0 
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:57:59 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:54:23 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:57:56
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:58:20 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:58:17 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:57:56
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:58:43 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:58:17 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:57:56
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:59:02 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:58:59 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:57:56
+Respond: user:w bot:tutorial ip: (~introduction) 1   s ==> Gelb  When:Jun12'19-09:59:03 Why:~introduction.1.0=TRIAL1.~control.1.0   F:0 
+Respond: user:w bot:tutorial ip: (~introduction) 2   gelb ==> Das war richtig.  When:Jun12'19-09:59:06 Why:~introduction.1.2   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1567 (~introduction) 2 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-09:59:54 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:59:52 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:59:06
+Respond: user:w bot:tutorial ip: (~introduction) 3   s ==> Gelb  When:Jun12'19-09:59:57 Why:~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 4   rot ==> Das war falsch.  When:Jun12'19-09:59:58 Why:~introduction.1.2   F:1 
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:00:04 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-09:59:52 0:Jun12'19-09:52:20 F:0 P:Jun12'19-09:59:58
+Respond: user:w bot:tutorial ip: (~introduction) 1   a ==> Gelb  When:Jun12'19-10:00:05 Why:~introduction.1.0=TRIAL1.~control.1.0   F:0 
+Respond: user:w bot:tutorial ip: (~introduction) 2   gelb ==> Das war richtig.  When:Jun12'19-10:00:08 Why:~introduction.1.1   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1567 (~introduction) 2 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:20:59 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:20:56 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:00:08
+Command: :sho oob
+Respond: user:w bot:tutorial ip: (~introduction) 3   :sho oob ==> Gelb  When:Jun12'19-10:21:03 Why:~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Command: :show oob
+ oob set to 1
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect: | accuracy:% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:21:12 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:20:56 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:21:03
+Respond: user:w bot:tutorial ip: (~introduction) 1   a ==> [correct: | sumcorrect: | accuracy:% ]`Gelb  When:Jun12'19-10:21:17 Why:~addposthoc.1.0 ~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 2   gelb ==> [correct:1 | sumcorrect:1 | accuracy:% ]`Das war richtig.  When:Jun12'19-10:21:19 Why:~addposthoc.1.0 ~introduction.1.1   F:0 
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect: | accuracy:% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:21:37 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:20:56 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:21:19
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1564 (~introduction) 0 ==> [correct: | sumcorrect: | accuracy:0% ]`Gelb  When:Jun12'19-10:26:09 Why:~addposthoc.1.0 ~introduction.1.0=TRIAL1.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:26:06 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:21:19
+Respond: user:w bot:tutorial ip: (~introduction) 1   gelb ==> [correct:1 | sumcorrect:1 | accuracy:100% ]`Das war richtig.  When:Jun12'19-10:26:12 Why:~addposthoc.1.0 ~introduction.1.1   F:1 
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect: | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:26:20 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:26:06 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:26:12
+Respond: user:w bot:tutorial ip: (~introduction) 1   a ==> [correct: | sumcorrect: | accuracy:0% ]`Gelb  When:Jun12'19-10:26:21 Why:~addposthoc.1.0 ~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 2   blau ==> [correct:0 | sumcorrect: | accuracy:0% ]`Das war falsch. Ich habe nämlich blau verstanden.  When:Jun12'19-10:26:23 Why:~addposthoc.1.0 ~introduction.1.2   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1567 (~introduction) 2 ==> [correct:0 | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:28:39 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:28:37 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:26:23
+Respond: user:w bot:tutorial ip: (~introduction) 3   a ==> [correct:0 | sumcorrect:0 | accuracy:0% ]`Gelb  When:Jun12'19-10:28:41 Why:~addposthoc.1.0 ~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 4   gelb ==> [correct:1 | sumcorrect:1 | accuracy:20% ]`Das war richtig.  When:Jun12'19-10:28:43 Why:~addposthoc.1.0 ~introduction.1.1   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 5   l ==> [correct:1 | sumcorrect:1 | accuracy:20% ]`Grün  When:Jun12'19-10:28:49 Why:~addposthoc.1.0 ~introduction.2.0=TRIAL2.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 6   rot ==> [correct:0 | sumcorrect:1 | accuracy:20% ]`Das war falsch. Ich habe nämlich rot verstanden.  When:Jun12'19-10:28:53 Why:~addposthoc.1.0 ~introduction.2.2   F:0 
+Respond: user:w bot:tutorial ip: (~introduction) 7     ==> [correct:0 | sumcorrect:1 | accuracy:20% ]`Rot  When:Jun12'19-10:29:09 Why:~addposthoc.1.0 ~introduction.3.0=TRIAL3.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 8   rot ==> [correct:1 | sumcorrect:2 | accuracy:40% ]`Das war richtig.  When:Jun12'19-10:29:11 Why:~addposthoc.1.0 ~introduction.3.1   F:0 
+Respond: user:w bot:tutorial ip: (~introduction) 9     ==> [correct:1 | sumcorrect:2 | accuracy:40% ]`Braun  When:Jun12'19-10:29:12 Why:~addposthoc.1.0 ~introduction.4.0=TRIAL4.~control.1.0   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1574 (~introduction) 9 ==> [correct:1 | sumcorrect:0 | accuracy:0% ]`Grüß Gott! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:31:15 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:31:13 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:29:12
+Respond: user:w bot:tutorial ip: (~introduction) 10   w ==> [correct:1 | sumcorrect:0 | accuracy:0% ]`Gelb  When:Jun12'19-10:31:18 Why:~addposthoc.1.0 ~introduction.1.0.~control.1.0   F:0 
+Respond: user:w bot:tutorial ip: (~introduction) 11   gelb ==> [correct:1 | sumcorrect:1 | accuracy:20% ]`Das war richtig.  When:Jun12'19-10:31:22 Why:~addposthoc.1.0 ~introduction.1.1   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1576 (~introduction) 11 ==> [correct:1 | sumcorrect:0 | accuracy:0% ]`Hey! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:33:26 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:33:23 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:31:22
+Respond: user:w bot:tutorial ip: (~introduction) 12   q ==> [correct:1 | sumcorrect:0 | accuracy:0% ]`Gelb  When:Jun12'19-10:33:27 Why:~addposthoc.1.0 ~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 13   gelb ==> [correct:1 | sumcorrect:1 | accuracy:20% ]`Das war richtig. `Gelb`   When:Jun12'19-10:33:29 Why:~addposthoc.1.0 ~introduction.1.1 ~introduction.1.0=TRIAL1.~introduction.1.1 ~introduction.1.1   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1578 (~introduction) 13 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Grüß Gott! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:55:44 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:55:41 0:Jun12'19-09:52:20 F:0 P:Jun12'19-10:33:29
+Respond: user:w bot:tutorial ip: (~introduction) 14   q ==> [correct: | sumcorrect:0 | accuracy:0% ]`Gelb  When:Jun12'19-10:55:47 Why:~addposthoc.1.0 ~introduction.1.0=TRIAL1.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 15   gelb ==> [correct:1 | sumcorrect:1 | accuracy:20% ]`Das war richtig. `Gelb`   When:Jun12'19-10:55:50 Why:~addposthoc.1.0 ~introduction.1.1 ~introduction.1.0=TRIAL1.~introduction.1.1 ~introduction.1.1   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1580 (~introduction) 15 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:56:23 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:56:20 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-10:55:50
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1580 (~introduction) 15 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jun12'19-10:56:43 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:56:40 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-10:55:50
+Command: :build harry
+Start: user:w bot:harry ip: rand:1564 (~introductions) 0 ==> Welcome to ChatScript.  When:Jun12'19-10:57:05 Why:~introductions.1.0.~control.1.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-10:57:01 0:Jun12'19-10:57:05 F:0 P:0
+Respond: user:w bot:harry ip: (~introductions) 1   hi ==> Have you been here before?  When:Jun12'19-10:57:07 Why:~introductions.2.0.~control.10.0   F:2 
+Respond: user:w bot:harry ip: (~introductions) 2   yes ==> Cool.  When:Jun12'19-10:57:22 Why:~honest_response.45.0=GRUNT.~quibble_all.12.0   F:3 
+Respond: user:w bot:harry ip: (~childhood) 3   whats up ==> Did you run away from home when you were little?  When:Jun12'19-10:57:57 Why:~childhood.0.0.~control.10.0   F:4 
+Respond: user:w bot:harry ip: (~childhood) 4   no ==> I ran away once, but my parents found me and dragged me back.  When:Jun12'19-10:58:13 Why:~childhood.1.0=RUNAWAY.~control.10.0   F:0 
+Respond: user:w bot:harry ip: (~childhood) 5   o ==> What scared you as a kid?  When:Jun12'19-10:58:32 Why:~childhood.2.0.~control.10.0   F:1 
+Respond: user:w bot:harry ip: (~childhood) 6   dark ==> Did you use a nightlite?  When:Jun12'19-10:58:37 Why:~childhood.2.1   F:1 
+Respond: user:w bot:harry ip: (~childhood) 7   no ==> I was scared of machines. I had vivid dreams of the Terminator robots.  When:Jun12'19-10:58:41 Why:~childhood.3.0=SCARE.~control.10.0   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1580 (~introduction) 15 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n`Gelb  When:Jun12'19-11:08:05 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:08:02 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-10:55:50
+Respond: user:w bot:tutorial ip: (~introduction) 16   gelb ==> [correct:1 | sumcorrect:1 | accuracy:20% ]`Das war richtig.  When:Jun12'19-11:08:11 Why:~addposthoc.1.0 ~introduction.1.1   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 17      ==> [correct: | sumcorrect:1 | accuracy:20% ]`Grün  When:Jun12'19-11:08:17 Why:~addposthoc.1.0 ~introduction.2.0=TRIAL2.~control.1.0   F:0 
+Respond: user:w bot:tutorial ip: (~introduction) 18   heollo ==> [correct:0 | sumcorrect:1 | accuracy:20% ]`Das war falsch. Ich habe nämlich unknown-word verstanden.  When:Jun12'19-11:08:22 Why:~addposthoc.1.0 ~introduction.2.2   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 19      ==> [correct: | sumcorrect:1 | accuracy:20% ]`Rot  When:Jun12'19-11:08:27 Why:~addposthoc.1.0 ~introduction.3.0=TRIAL3.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 20   opa ==> [correct:0 | sumcorrect:1 | accuracy:20% ]`Das war falsch. Ich habe nämlich unknown-word verstanden.  When:Jun12'19-11:08:31 Why:~addposthoc.1.0 ~introduction.3.2   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 21     ==> [correct: | sumcorrect:1 | accuracy:20% ]`Braun  When:Jun12'19-11:08:47 Why:~addposthoc.1.0 ~introduction.4.0=TRIAL4.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 22   Opa ==> [correct:0 | sumcorrect:1 | accuracy:20% ]`Das war falsch. Ich habe nämlich Opa verstanden.  When:Jun12'19-11:08:52 Why:~addposthoc.1.0 ~introduction.4.2   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1587 (~introduction) 22 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Grüß Gott! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n^gambit (~)  When:Jun12'19-11:09:38 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:09:36 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:08:52
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1587 (~introduction) 22 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Grüß Gott! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n`Gelb  When:Jun12'19-11:10:28 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:10:25 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:08:52
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1587 (~introduction) 22 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Grüß Gott! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n`Gelb  When:Jun12'19-11:14:15 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:14:12 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:08:52
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1587 (~introduction) 22 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Grüß Gott! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\ntest  When:Jun12'19-11:14:26 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:14:23 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:08:52
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1586 (~introduction) 22 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Gelb  When:Jun12'19-11:15:36 Why:~addposthoc.1.0 ~introduction.1.0=TRIAL1.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:15:34 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:08:52
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\ntest  When:Jun12'19-11:15:42 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:15:34 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:08:52
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n`Gelb  When:Jun12'19-11:35:16 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:35:13 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:08:52
+Respond: user:w bot:tutorial ip: (~introduction) 1   gelb ==> [correct:1 | sumcorrect:1 | accuracy:20% ]`Das war richtig.  When:Jun12'19-11:40:03 Why:~addposthoc.1.0 ~introduction.1.1   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1566 (~introduction) 1 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Grüß Gott! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen. `Gelb`   When:Jun12'19-11:43:30 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:43:27 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:40:03
+Respond: user:w bot:tutorial ip: (~introduction) 2   gelb ==> [correct:1 | sumcorrect:1 | accuracy:20% ]`Das war richtig.  When:Jun12'19-11:43:32 Why:~addposthoc.1.0 ~introduction.1.1   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 3     ==> [correct: | sumcorrect:1 | accuracy:20% ]`Grün  When:Jun12'19-11:43:34 Why:~addposthoc.1.0 ~introduction.2.0=TRIAL2.~control.1.0   F:1 
+Respond: user:w bot:tutorial ip: (~introduction) 4   grün ==> [correct:1 | sumcorrect:2 | accuracy:40% ]`Das war richtig.  When:Jun12'19-11:43:37 Why:~addposthoc.1.0 ~introduction.2.1   F:1 
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1568 (~introduction) 4 ==> [correct: | sumcorrect:2 | accuracy:40% ]`Rot  When:Jun12'19-11:53:26 Why:~addposthoc.1.0 ~introduction.3.0=TRIAL3.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:53:24 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:43:37
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen. `Gelb`   When:Jun12'19-11:53:29 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0 ~introduction.0.0.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:53:24 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:43:37
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n`Gelb  When:Jun12'19-11:53:47 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:53:44 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:43:37
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1564 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Grün  When:Jun12'19-11:54:54 Why:~addposthoc.1.0 ~introduction.2.0=TRIAL2.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:54:51 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:43:37
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n`Gelb  When:Jun12'19-11:54:56 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:54:51 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:43:37
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1564 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Grün  When:Jun12'19-11:55:20 Why:~addposthoc.1.0 ~introduction.2.0=TRIAL2.~control.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:55:18 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:43:37
+Command: :reset
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n`Gelb  When:Jun12'19-11:55:23 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-11:55:18 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:43:37
+Command: :build tutorial
+Start: user:w bot:tutorial ip: rand:1565 (~introduction) 0 ==> [correct: | sumcorrect:0 | accuracy:0% ]`Hallo! Ich bin Tutorial-Bot.\nVersuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.\n`Gelb  When:Jun12'19-12:00:25 Why:~addposthoc.1.0 ~introduction.0.0.~control.0.0 ~introduction.1.0=TRIAL1.~introduction.0.0  Version:8.8 Build0:May07'19-09:59:33 Build1:Jun12'19-12:00:22 0:Jun12'19-09:52:20 F:1560329750-1.1.1 P:Jun12'19-11:43:37

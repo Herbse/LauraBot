@@ -2,14 +2,14 @@ rename: @chatoutput @9
 
 
 outputmacro: laura_si() 
-^addtopic(~introduction)
+^addtopic(~introduction_t)
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
 $cs_externaltag = ~xPOSTAGSENTENCE 
 $userprompt = ^"%user: >"
 $botprompt = ^"LAURA: "
-# $singleResponse = 1 # issue only 1 output message    
+$singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 topic: ~xrejoinder system repeat ()
 
@@ -24,13 +24,15 @@ laura_si
 topic: ~control system ()
 # on startup, do introduction
 u: ( %input<%userfirstline) 
-	gambit(~introduction)
+	gambit(~introduction_t)
 
 
-#! [ question: open]
+# [ question: open]
 u: (\[ * \])
     ^respond(~prob_answer)
-    ^end(SENTENCE)
+	^end(SENTENCE)
+
+    
 
 
 # get a master copy of input then do our normal copies
@@ -38,7 +40,7 @@ u: (\[ * \])
 u: () # main per-sentence processing
 	$$currenttopic = %topic		# get the current topic at start of volley
     $_responseCount = %response
-	# if ($singleResponse) {$_responseCount = 0} # disable this to respond to each sentence in a volley
+	if ($singleResponse) {$_responseCount = 0} # disable this to respond to each sentence in a volley
 
 
 
@@ -116,5 +118,10 @@ topic: ~addposthoc system () # should be called for post processing
 
 t: () ^emoHandler()
 
+t: ()  
+	$lastOutput = ^response(1)
+
 t: () ^oob()
    ^postprintbefore(  \[ $$oob \]) $$oob = null 
+
+
