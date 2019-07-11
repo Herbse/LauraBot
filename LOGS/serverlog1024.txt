@@ -6000,3 +6000,19 @@ Free 125MB: dict 1,629,201 fact 730,051 stack/heap 90,548KB
 
 ======== Began EV server pid 20928 8.2 compiled Jun 19 2018 14:20:20 on host local port 1024 at Tue Apr 02 13:27:14 2019 serverlog:1 userlog: 1
 evserver: parent ready (pid = 20928), fork=0
+System startup createsystem Tue Apr 02 15:11:32 2019
+Server ChatScript Release Version 8.2 pid: 0 32 bit Windows compiled Apr  1 2018 07:33:29 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=73962  fact=68881  heap=1082744 Compiled:Mar27'19-09:31:06 by version 8.2 "0"
+Build1:  dict=356  fact=304  heap=141828 Compiled:Mar27'19-10:26:57 by version 8.2 "laura_si"
+Used 61MB: dict 467,950 (37436kb) hashdepths 31498.54670.51697.36180.20794.10902.5075.2506.1052.457.191.66.25.11.2.0.2. words 467950 unusedbuckets 31498 fact 69,949 (3357kb) heap 9552kb
+           buffer (6400kb) cache (5000kb)
+Free 125MB: dict 1,629,200 fact 730,051 stack/heap 90,447KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began server 8.2 compiled Apr  1 2018 07:33:29 on host 0.0.0.0 port 1024 at Tue Apr 02 15:11:37 2019 serverlog:1 userlog: 1
+Server ready - logfile:LOGS/serverlog1024.txt serverLog:1 userLog:1
+
