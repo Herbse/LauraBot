@@ -54,3 +54,8 @@ private/KORA/TESTS/*.swp
 !USERS/
 !LIVEDATA/
 USERS/log-.txt~parent of 07c0430... Update 15012019
+TMP/prebuild2.bin
+TMP/prebuild1.bin
+TMP/prebuild0.bin
+LOGS/startlog.txt
+LOGS/serverlog1024.txt
