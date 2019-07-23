@@ -23,7 +23,7 @@ $botprompt = ^"Laura_si: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
-outputmacro: andre() 
+outputmacro: andre_li() 
 ^addtopic(~introduction)
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
@@ -34,7 +34,7 @@ $botprompt = ^"André: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
-outputmacro: sara() 
+outputmacro: sara_li() 
 ^addtopic(~introduction)
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
@@ -45,7 +45,7 @@ $botprompt = ^"Sara: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
-outputmacro: jason() 
+outputmacro: jason_li() 
 ^addtopic(~introduction)
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
@@ -56,7 +56,7 @@ $botprompt = ^"Jason: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
-outputmacro: constantin() 
+outputmacro: constantin_si() 
 ^addtopic(~introduction)
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
@@ -67,7 +67,7 @@ $botprompt = ^"Constantin: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
-outputmacro: luisa() 
+outputmacro: luisa_si() 
 ^addtopic(~introduction)
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
@@ -78,7 +78,7 @@ $botprompt = ^"Luisa: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
-outputmacro: natalia() 
+outputmacro: natalia_si() 
 ^addtopic(~introduction)
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
@@ -89,7 +89,7 @@ $botprompt = ^"Natalia: "
 $singleResponse = 1 # issue only 1 output message    
 $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
-outputmacro: simon() 
+outputmacro: simon_si() 
 ^addtopic(~introduction)
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
@@ -110,7 +110,7 @@ u: () nofail(topic rejoinder())
  table: defaultbot (^name)
  ^createfact(^name defaultbot defaultbot)
 DATA:
-laura_si
+laura_li
 
 topic: ~control system ()
 # on startup, do introduction
@@ -206,7 +206,7 @@ u: () # main per-sentence processing
 topic: ~addposthoc system () # should be called for post processing
 
 t: () ^emoHandler()
-t: ($cs_bot==laura_li) ^revelationHandler()
+t: ($cs_bot=laura_li) ^revelationHandler()
 t: ()  
 		$lastOutput = ^response(1)
 # t: ^callstack()

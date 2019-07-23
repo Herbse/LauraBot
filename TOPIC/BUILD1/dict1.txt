@@ -6,7 +6,7 @@
 + gemacht PATTERN_WORD 
 + support PATTERN_WORD 
 + @chatoutput 9
-+ laura_si 
++ laura_li 
 + defaultbot 
 + was_macht 
 + was_geht 

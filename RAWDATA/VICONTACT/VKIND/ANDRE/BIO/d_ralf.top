@@ -1,99 +1,95 @@
-topic: ~brother_t ()
+topic: ~ralf_t ()
 
-#t: specific test to brother topic ^keep() ^repeat() 
+#t: specific test to  topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
 u: () ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = brother1 Leon 
+    a: (^names()) $$intent=names $$sound_file = 1 Ralf.
     # age
-    a: (^age()) $$intent=age $$sound_file = brother2 Der ist 12.
+    a: (^age()) $$intent=age $$sound_file = 2 31 oder so.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = brother3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = brother4 Schüler eben.
+    a: (^job()) $$intent=job $$sound_file = 4 Weiß nicht, Ralf ist immer zu Hause.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f $$sound_file = brother5 Der ist mein Bruder.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Der ist mein Onkel.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = brother6 Leon ist so cool.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Onkel Ralf ist der Beste!
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = brother7 Nach der Schule.
+    a: (^time_together()) $$intent=time_together $$sound_file = 7 ^reuse(RALF_2)
     # time relationship
-    a: (^time()) $$intent=time_relationship ^respond(~incomprehension)
+    a: (^time()) $$intent=time_relationship Schon ganz lange!
     # activity together
-    a: (^activity_together()) $$intent=activity_together ^reuse(BROTHER_1)
+    a: (^activity_together()) $$intent=activity_together ^reuse(RALF_3)
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = brother8 Der geht zur Schule.
+    a: (^activity()) $$intent=activity $$sound_file = 8 Weiß nicht, Ralf ist immer zu Hause.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = brother9 In Leons Zimmer.
+    a: (^places_together()) $$intent=places_together $$sound_file = 9 ^reuse(RALF_3)
     
 
 #specific questions/answers depending on what narrative answer was given before
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($brotherCounter==1) $$sound_file = brother10 Ganz ok.
-        b: ($brotherCounter==2) $$sound_file = brother10 Ganz ok.
-        b: ($brotherCounter==3) $$sound_file = brother10 Ganz ok.
-        b: ($brotherCounter==4) $$sound_file = brother10 Ganz ok.
+        b: ($ralfCounter==1) $$sound_file = 10 Voll cool.
+        b: ($ralfCounter==2) $$sound_file = 10 Voll cool.
+        b: ($ralfCounter==3) $$sound_file = 10 Voll cool.
+        b: ($ralfCounter==4) $$sound_file = 10 Egal.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($brotherCounter==1) $$sound_file = brother9 In Leons Zimmer.
-        b: ($brotherCounter==2) ^respond(~ignorance)
-        b: ($brotherCounter==3) $$sound_file = brother9 In Leons Zimmer.
-        b: ($brotherCounter==4) $$sound_file = brother11 Das ist gar nicht weit von zu Hause.
+        b: ($ralfCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==2) Bei uns in der Siedlung.
+        b: ($ralfCounter==3) In der Stadt.
+        b: ($ralfCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($brotherCounter==1) ^respond(~ignorance)
-        b: ($brotherCounter==2) ^respond(~ignorance)
-        b: ($brotherCounter==3) $$sound_file = brother12 Leon und seine Freunde.
-        b: ($brotherCounter==4) ^respond(~ignorance)
+        b: ($ralfCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==2) Onkel Ralf.
+        b: ($ralfCounter==3) Ich und Onkel Ralf.
+        b: ($ralfCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($brotherCounter==1) ^respond(~ignorance)
-        b: ($brotherCounter==2) $$nextAnswer = yes
-        b: ($brotherCounter==3) ^respond(~ignorance)
-        b: ($brotherCounter==4) ^respond(~ignorance)
+        b: ($ralfCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
-        b: ($brotherCounter==4) ^respond(~ignorance)
-        b: () ^respond(~)
+        b: () 
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
-        b: ($brotherCounter==1) $$sound_file = brother13 Ein Spiel auf der Playstation.
-        b: ($brotherCounter==2) $$nextAnswer = yes
-        b: ($brotherCounter==3) $$nextAnswer = yes
-        b: ($brotherCounter==4) ^respond(~ignorance)
+        b: () 
+      
     
     # follow-up
     a: (^follow_up()) $$intent=follow_up ^refine()
-        b: ($brotherCounter==4) ^respond(~ignorance)
-        b: () $$nextAnswer = yes
+        b: () 
     # log questions that were not catched by macros
-    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/brotherspecific.txt $$question \n) 
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/specific.txt $$question \n) 
 
 
 # Narrative Antworten---------------------------------------------------------------------------------------
 
 
 #! Erzähl mal was dein Bruder währenddessen tut. 
-u: BROTHER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 1 $$sound_file = brother14  Wenn der Leon FIFA spielt darf ich immer zugucken.
+u: RALF_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 1 $$sound_file = 14  Ich mag Onkel Ralf. Er ist immer so lieb zu mir.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 2 $$sound_file = brother15  Wenn Leons Freunde kommen, muss ich immer alleine spielen.
+u: RALF_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 2 $$sound_file = 15  Nach der Schule gehe ich oft zu ihm nach Hause.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 3 $$sound_file = brother16 Die spielen dann auch so andere Spiele mit Schießen und Leon sagt, ich soll da nicht zugucken.
+u: RALF_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 3 $$sound_file = 16 Wir spielen auf dem Spielplatz oder gehen spazieren. Manchmal kauft er mir dann auch ein Eis.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 4 $$sound_file = brother17 Dann gehe ich raus oder zu Mira. 
+u: RALF_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 4 $$sound_file = 17 Onkel Ralf hat nicht viel Geld, deshalb können wir nicht in den Zoo oder so. Aber das macht gar nichts.
 
 #Spezifische Antworten --------------------------------------------------------------------------------------
 
 
 
 # Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(BROTHER_1)
+u: ($narrative=1) $narrative=0 ^reuse(_1)

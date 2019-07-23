@@ -24,7 +24,7 @@ u: () ^keep() ^refine()
     # activity together
     a: (^activity_together()) $$intent=activity_together ^reuse(PAPA_2)
     # activity
-    a: (^activity()) $$intent=activity ???
+    a: (^activity()) $$intent=activity Er ist Putzmann.
     # places together
     a: (^places_together()) $$intent=places_together Wir sind immer nur zu Hause.
 

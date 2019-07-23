@@ -1,0 +1,113 @@
+topic: ~mother_t repeat ()
+
+#specific questions/answers depending on general context
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Yasemin.
+    # age
+    a: (^age()) $$intent=age Meine Mama ist 36 Jahre alt.
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job Die Mama arbeitet im Laden.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Meine Mama.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Ich liebe meine Mama.
+    # time together
+    a: (^time_together()) $$intent=time_together ^reuse(MAMA_3)
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(MAMA_2)
+    # activity
+    a: (^activity()) $$intent=activity Die Mama arbeitet im Laden.
+    # places together
+    a: (^places_together()) $$intent=places_together Zu Hause oder im Laden.
+
+
+u: ([familie Familie]) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names 
+    # age
+    a: (^age()) $$intent=age 
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job 
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Das ist meine Familie.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Ich liebe meine Familie ganz doll.
+    # time together
+    a: (^time_together()) $$intent=time_together Am Wochenende wenn alle zu Besuch kommen.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^respond(~event_t)
+    # activity
+    a: (^activity()) $$intent=activity 
+    # places together
+    a: (^places_together()) $$intent=places_together Zu hause.
+    
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($motherCounter==1) Normal.
+        b: ($motherCounter==2) Normal.
+        b: ($motherCounter==3) Normal.
+        b: ($motherCounter==4) Normal.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($motherCounter==1) Im Laden.
+        b: ($motherCounter==2) Bei uns Zuhause. Im Wohnzimmer.
+        b: ($motherCounter==3) Bei uns Zuhause.
+        b: ($motherCounter==4) Bei uns Zuhause.
+    # individual
+    a: (^individual()) $$intent=individual $$intent=individual ^refine()
+        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==2) Mama, Pappa, Amina und ich.
+        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes 
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 Meine Mama ist viel arbeiten, genau wie Papa.
+
+#! Erzähl mir mehr über deine Mama!
+u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 Abends essen wir alle zusammen.
+#! Und was machst du gerne mit deiner Mama?
+u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 Beim Tischdecken helfe ich Mama immer.
+
+#! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
+u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Mama hat eine sehr große Familie. Die besuchen uns immer am Wochenende.
+
+# Spezifische Antworten------------------------------------------------------------------------------
+
+
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(MAMA_1)
+

@@ -4,34 +4,34 @@ topic: ~hobbies_t ()
 
 
 #specific questions/answers depending on what narrative answer was given before
-t: ^keep() ^refine()
+u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($friendCounter==1) Ganz ok.
-        b: ($friendCounter==2) Ganz ok.
-        b: ($friendCounter==3) Nicht so gut.
-        b: ($friendCounter==4) Nicht so gut.
+        b: ($hobbiesCounter==1) Ganz ok.
+        b: ($hobbiesCounter==2) Ganz ok.
+        b: ($hobbiesCounter==3) Nicht so gut.
+        b: ($hobbiesCounter==4) Nicht so gut.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
@@ -48,19 +48,19 @@ t: ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 Aus meiner Klasse sind viele in meinem Handballverein.
+u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1 Aus meiner Klasse sind viele in meinem Handballverein.
   
 
 #! 
-u: HOBBIES_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 Der Trainer ist auch mein Sportlehrer.
+u: HOBBIES_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2 Der Trainer ist auch mein Sportlehrer.
 
 
 #! 
-u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 Beim Turnier letzte Woche hat mir einer ein Bein gestellt. Das war gar nicht cool.
+u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 3 Beim Turnier letzte Woche hat mir einer ein Bein gestellt. Das war gar nicht cool.
 
 
 #! 
-u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Manchmal hab ich keinen Bock auf Handball und würde lieber Fußball spielen.
+u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 Manchmal hab ich keinen Bock auf Handball und würde lieber Fußball spielen.
 
 
 

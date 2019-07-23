@@ -3,59 +3,56 @@ topic: ~mother_t repeat ()
 #specific questions/answers depending on general context
 u: () ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names Charlotte.
+    a: (^names()) $$intent=names Carmen.
     # age
-    a: (^age()) $$intent=age Die ist 42.
+    a: (^age()) $$intent=age Keine Ahnung.
     # mood
-    a: (^mood()) $$intent=mood Nicht so gut.
+    a: (^mood()) $$intent=mood Gut.
     # job
-    a: (^job()) $$intent=job Mama ist eigentlich Friseurin.
+    a: (^job()) $$intent=job Die ist Verkäuferin.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Die ist meine Mama.
+    a: (^relationship_f()) $$intent=relationship_f Das ist Papas neue Frau.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Ich hab meine Mama so lieb.
+    a: (^relationship_o()) $$intent=relationship_o Ich mag die nicht.
     # time together
-    a: (^time_together()) $$intent=time_together Nach der Schule.
+    a: (^time_together()) $$intent=time_together Weiß nicht. Abends zum Beispiel.
     # time relationship
-    a: (^time()) $$intent=time_relationship Komische Frage.
+    a: (^time()) $$intent=time_relationship Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^refine()
-        b: ($motherCounter==3) ^reuse(MAMA_4)
-        b: ($motherCounter<3) ^reuse(MAMA_3)
-        b: () Sonst eigentlich nix.
+        b: () ^reuse(MAMA_3)
     # activity
-    a: (^activity()) $$intent=activity ^reuse(MAMA_1)
+    a: (^activity()) $$intent=activity ^reuse(MAMA_4)
     # places together
-    a: (^places_together()) $$intent=places_together $$intent=places_together In Mamas Zimmer.
-
+    a: (^places_together()) $$intent=places_together Zu Hause.
 
 
 #specific questions/answers depending on what narrative answer was given before
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($motherCounter==1) Voll traurig.
-        b: ($motherCounter==2) Voll traurig.
-        b: ($motherCounter==3) Ganz ok.
-        b: ($motherCounter==4) Ganz ok.
+        b: ($motherCounter==1) So gemein.
+        b: ($motherCounter==2) So gemein.
+        b: ($motherCounter==3) Doof.
+        b: ($motherCounter==4) Ich weiß nicht.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==2) Zu Hause in Mamas Zimmer.
-        b: ($motherCounter==3) In Mamas Zimmer.
-        b: ($motherCounter==4) In Mamas Zimmer.
+        b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) In der Stadt.
     # individual
     a: (^individual()) $$intent=individual $$intent=individual ^refine()
         b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==2) Meine Mama
+        b: ($motherCounter==2) Die Carmen.
         b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) Die Carmen.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($motherCounter==1) $$nextAnswer = yes
+        b: ($motherCounter==1) ^reuse(MAMA_2)
         b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
@@ -77,16 +74,15 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 Meine Mama ist immer zu Hause. Sie ist schlimm krank.
+u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 Carmen ist voll streng zu mir und erlaubt mir fast nichts.
 
 #! Erzähl mir mehr über deine Mama!
-u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 Sie muss im Bett liegen, wegen ihrem Rücken.
-
+u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 Wenn ich sie nach Süßigkeiten frage, sagt sie immer nein.
 #! Und was machst du gerne mit deiner Mama?
-u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 Nach der Schule setze ich mich zu Mama und mache Hausaufgaben.
+u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 Ich mag Carmen nicht. Sie unternimmt nie was mit mir.
 
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
-u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Mama hilft mir dann immer bei Mathe.
+u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Sie arbeitet auch am Wochenende. In einem Kosmetikladen.
 
 # Spezifische Antworten------------------------------------------------------------------------------
 

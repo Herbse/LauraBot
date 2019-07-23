@@ -1,0 +1,117 @@
+topic: ~father_t ()
+
+#specific questions/answers depending on general context
+u: (familie) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Christina, Konrad, Clemens und Johannes.
+    # age
+    a: (^age()) $$intent=age 
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job 
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Das ist meine Familie.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Mama ist so streng, Papa ist der Beste und meinen Brüdern bin ich egal.
+    # time together
+    a: (^time_together()) $$intent=time_together In meiner Freizeit und am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(~mother_t.MAMA_3)
+    # activity
+    a: (^activity()) $$intent=activity 
+    # places together
+    a: (^places_together()) $$intent=places_together Zu Hause oder in der Kirche.
+
+#specific questions/answers depending on general context
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Konrad.
+    # age
+    a: (^age()) $$intent=age Papa ist 51 Jahre alt.
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job Weiß nicht.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Der ist mein Pappa.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Pappa ist der Beste.
+    # time together
+    a: (^time_together()) $$intent=time_together In meiner Freizeit.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(PAPA_3)
+    # activity
+    a: (^activity()) $$intent=activity Weiß nicht.
+    # places together
+    a: (^places_together()) $$intent=places_together Der ist mein Papa.
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($fatherCounter==1) Weiß nicht.
+        b: ($fatherCounter==2) Weiß nicht.
+        b: ($fatherCounter==3) Voll cool.
+        b: ($fatherCounter==4) Voll cool.
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==3) In der Stadt.
+        b: ($fatherCounter==4) Im Kino.
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==2) Papa.
+        b: ($fatherCounter==3) Papa und ich.
+        b: ($fatherCounter==4) Papa und ich.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($fatherCounter==1) ^reuse(PAPA_2)
+        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($fatherCounter==4) Das ist ein Film.
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 Pappa ist viel cooler als Mama.
+ 
+
+#! Erzähl mal wie er ihr hilft?
+u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 Der geht nicht in die Kirche. Wegen der Kirche hat er sich immer mit Mama gestritten.
+
+#! Erzähl mir mehr über deinen PAPA!
+u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 3 Am liebsten geh ich mit Papa ins Kino.
+ 
+#! Was machst du denn gern mit deinem PAPA?
+
+u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 Letztens haben wir Hotel Transilvanien 3 geguckt.
+
+  
+
+# Spezifische Antworten--------------------------------------------------------------------------------------
+
+
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(PAPA_1)

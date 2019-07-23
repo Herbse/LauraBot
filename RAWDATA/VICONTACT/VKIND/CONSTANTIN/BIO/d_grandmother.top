@@ -1,0 +1,119 @@
+topic: ~grandmother_t ()
+
+
+#specific questions/answers depending on general context
+u: (familie) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Sabine, Clara und Oma Ute.
+    # age
+    a: (^age()) $$intent=age 
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job 
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Das ist meine Familie.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Mama arbeitet bei Penny, Oma ist immer zu Hause und Clara geht in den Kindergarten.
+    # time together
+    a: (^time_together()) $$intent=time_together In meiner Freizeit oder am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together Zu Hause oder bei Oma.
+    # activity
+    a: (^activity()) $$intent=activity Mama arbeitet bei Penny, Oma ist immer zu Hause und Clara geht in den Kindergarten.
+    # places together
+    a: (^places_together()) $$intent=places_together Zu Hause oder bei Oma.
+
+
+#specific questions/answers depending on general context
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Ute.
+    # age
+    a: (^age()) $$intent=age Die ist 67 Jahre alt.
+    # mood
+    a: (^mood()) $$intent=mood Geht so.
+    # job
+    a: (^job()) $$intent=job Gar nichts.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Das ist mein Oma.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Meine Oma ist langweilig. 
+    # time together
+    a: (^time_together()) $$intent=time_together Am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(OMA_4)
+    # activity
+    a: (^activity()) $$intent=activity Weiß ich nicht, Oma ist immer zu Hause.
+    # places together
+    a: (^places_together()) $$intent=places_together Bei Oma.
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($grandmotherCounter==1) Voll doof. 
+        b: ($grandmotherCounter==2) Voll doof. 
+        b: ($grandmotherCounter==3) Voll doof. 
+        b: ($grandmotherCounter==4) Langweilig.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($grandmotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($grandmotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==4) Oma, Mama, Clara und ich.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($grandmotherCounter==1) ^reuse(OMA_2)
+        b: ($grandmotherCounter==2) ^reuse(OMA_3)
+        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: OMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $grandmotherCounter = 1 Oma kann nicht mehr so viel laufen.
+ 
+
+#! Erzähl mal wie er ihr hilft?
+u: OMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $grandmotherCounter = 2 Sie ist immer so langsam. Das macht gar keinen Spaß mit ihr.
+
+#! Erzähl mir mehr über deinen OMA!
+u: OMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $grandmotherCounter = 3 Sie erzählt immer nur, was ihr alles weh tut.
+ 
+#! Was machst du denn gern mit deinem OMA?
+
+u: OMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $grandmotherCounter = 4 Bei ihr zu Hause sitzen wir auf dem Sofa und es gibt Tee und Kekse.
+
+  
+
+# Spezifische Antworten--------------------------------------------------------------------------------------
+
+
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(OMA_1)
