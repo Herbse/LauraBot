@@ -9700,3 +9700,35 @@ Respond: user:alfons bot:laura_li ip:127.0.0.1 (~introduction) 1 [crit_asked]  =
 ServerPre: pid: 28972 alfons (laura_li) [crit_asked] Jul 02 08:41:15 2019
 Respond: user:alfons bot:laura_li ip:127.0.0.1 (~introduction) 2 [crit_asked]  ==> [topic:~introduction | answerCategory:reactance | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:-2 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: ] Ich will darüber nicht sprechen.  When:Jul02 08:41:15 2ms Why:~addposthoc.3.0 ~reactance.0.0.~prob_answer.11.0 
 >>>>>>> 777c6df48830cd1ce421af89b258e103ff747aef
+System startup createsystem Tue Jul 23 14:13:43 2019
+Server ChatScript Release Version 8.2 pid: 0 32 bit Windows compiled Apr  1 2018 07:33:29 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=106694  fact=126709  heap=1606332 Compiled:Jul03'19-14:16:09 by version 8.8 "0"
+Build1:  dict=389  fact=264  heap=410432 Compiled:Jul23'19-13:40:57 by version 8.8 "vicontact"
+Used 67MB: dict 500,715 (40057kb) hashdepths 27529.51248.51392.38077.22881.12521.6095.2997.1381.591.256.105.36.11.5.1.2. words 500715 unusedbuckets 27529 fact 127,737 (6131kb) heap 10344kb
+           buffer (6400kb) cache (5000kb)
+Free 121MB: dict 1,596,435 fact 672,263 stack/heap 89,655KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began server 8.2 compiled Apr  1 2018 07:33:29 on host 0.0.0.0 port 1024 at Tue Jul 23 14:13:48 2019 serverlog:1 userlog: 1
+Server ready - logfile:LOGS/serverlog1024.txt serverLog:1 userLog:1
+
+ServerPre: testo ( ) :build vicontact #c Jul 23 14:14:16 2019
+System startup vicontact #c Tue Jul 23 14:14:16 2019
+System startup createsystem Tue Jul 23 14:14:18 2019
+Server ChatScript Release Version 8.2 pid: 0 32 bit Windows compiled Apr  1 2018 07:33:29 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=106694  fact=126709  heap=1606332 Compiled:Jul03'19-14:16:09 by version 8.8 "0"
+Build1:  dict=390  fact=264  heap=410960 Compiled:Jul23'19-14:14:16 by version 8.2 "vicontact"
+Used 67MB: dict 500,716 (40057kb) hashdepths 27529.51248.51391.38078.22881.12521.6095.2997.1381.591.256.105.36.11.5.1.2. words 500716 unusedbuckets 27529 fact 127,737 (6131kb) heap 10345kb
+           buffer (6400kb) cache (5000kb)
+Free 121MB: dict 1,596,434 fact 672,263 stack/heap 89,654KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:testo bot:  ip:127.0.0.1 () 0 :build vicontact #c  ==> System startup vicontact #c Tue Jul 23 14:14:16 2019  ChatScript Version 8.2  compiled Apr  1 2018 07:33:29    WARNING SUMMARY:     line 1 of : Undefined set or topic ~event_6 line 259 in d_event.top    line 12 of : Undefined set or topic ~event_5 line 203 in d_event.top    line 22 of : Undefined set or topic ~sobbing line 331 in b_prob_answer.top    line 11 of missingLabel.txt: Missing cross-topic label ~EVENT_6. for reuse in File: d_event.top Line: 259    line 30 of missingLabel.txt: Missing cross-topic label ~EVENT_6. for reuse in File: d_event.top Line: 250    line 55 of missingLabel.txt: Missing cross-topic label ~EVENT_5. for reuse in File: d_event.top Line: 203    line 147 of missingLabel.txt: Missing cross-topic label ~DOGS_T.PAPA_1 for reuse in File: d_dogs.top Line: 93    line 6 of d_event.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.  8 serious warnings, 0 function warnings, 0 spelling warnings, 0 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Tue Jul 23 14:14:18 2019  Server ChatScript Release Version 8.2 pid: 0 32 bit Windows compiled Apr  1 2018 07:33:29 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=106694  fact=126709  heap=1606332 Compiled:Jul03'19-14:16:09 by version 8.8 "0"  Build1:  dict=390  fact=264  heap=410960 Compiled:Jul23'19-14:14:16 by version 8.2 "vicontact"  Used 67MB: dict 500,716 (40057kb) hashdepths 27529.51248.51391.38078.22881.12521.6095.2997.1381.591.256.105.36.11.5.1.2. words 500716 unusedbuckets 27529 fact 127,737 (6131kb) heap 10345kb             buffer (6400kb) cache (5000kb)  Free 121MB: dict 1,596,434 fact 672,263 stack/heap 89,654KB         *** Server WIDE OPEN to :command use.    When:Jul23 14:14:23 29411ms 
+ServerPre: testo ( ) :bot Laura_si Jul 23 14:14:26 2019
+Respond: user:testo bot:  ip:127.0.0.1 () 0 :bot Laura_si  ==> [topic:~event_t~4 | answerCategory: | probFormat: | goodQuestion: | emoType:serious | rapportCounter:0 | revelationState: | chatPhase:main | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: | soundFile:event16 ] Intro Hallo! Ich bin Laura si. Mein Onkel schläft jetzt immer bei uns.  When:Jul23 14:14:26 12ms 
