@@ -1,0 +1,12 @@
+
+outputmacro: ^trialdata()
+#$counter+=1
+
+$trial=^jsoncreate(object)
+$trial.inputword = ^wordatindex(original $counter)
+$trial.matchword = "test"
+$trial.correct = "false"
+$trial.trialnr = $counter
+
+^jsonarrayinsert($tutorial $trial)
+

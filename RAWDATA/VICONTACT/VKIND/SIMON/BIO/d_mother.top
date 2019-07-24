@@ -1,0 +1,93 @@
+topic: ~mother_t repeat ()
+
+#specific questions/answers depending on general context
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Saskia. 
+    # age
+    a: (^age()) $$intent=age Meine Mama ist 43.
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job Die arbeitet in der Schule.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Meine Mama.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Ich hab Mama lieb.
+    # time together
+    a: (^time_together()) $$intent=time_together Nach der Schule oder am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^refine()
+        b: ($motherCounter==1) ^reuse(MAMA_2)
+        b: ($motherCounter==2) ^reuse(MAMA_3)
+    # activity
+    a: (^activity()) $$intent=activity Die ist Lehrerin. 
+    # places together
+    a: (^places_together()) $$intent=places_together Zuhause. 
+
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($motherCounter==1) Gut.
+        b: ($motherCounter==2) Das macht Spaß!
+        b: ($motherCounter==3) Das macht Spaß!
+        b: ($motherCounter==4) Voll cool.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($motherCounter==1) In einer anderen Schule. 
+        b: ($motherCounter==2) Zuhause. 
+        b: ($motherCounter==3) ^reuse(MAMA_4)
+        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual $$intent=individual ^refine()
+        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==2) Mama und ich. 
+        b: ($motherCounter==3) Mama und ich. 
+        b: ($motherCounter==4) Mama und ich. 
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$nextAnswer = yes 
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($motherCounter==2) Das sind so Bilder zum Ausmalen. 
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1  Mama unterrichtet Englisch und Geschichte.
+
+#! Erzähl mir mehr über deine Mama!
+u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 Wir malen manchmal zusammen Mandalas aus.
+#! Und was machst du gerne mit deiner Mama?
+u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 In den Ferien hat Mama auch frei und wir fahren manchmal dann in' Urlaub.
+
+#! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
+u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Nach Frankreich. Da machen wir gerne Urlaub, weil es da so schön ist.
+
+# Spezifische Antworten------------------------------------------------------------------------------
+
+
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(MAMA_1)
+

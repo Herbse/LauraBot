@@ -1,0 +1,6 @@
+topic: ~introduction keep repeat ()
+
+t: ($cs_bot=tutorial) $sumcorrect=0 Hey ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen. ^gambit(~)
+
+
+t: ^respond(~tutorial)

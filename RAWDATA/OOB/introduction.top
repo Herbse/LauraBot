@@ -1,7 +1,14 @@
-topic: ~introduction  keep repeat (sound)
+topic: ~introduction  keep repeat (sound besuch zoo)
 
-t: [Hallo!][Hey!][Grüß Gott!] Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert. ^gambit(~event_t)
+t: $counter=0 $tutorial=^jsoncreate(array)
 
+Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert. 
+
+
+u: BESUCH (zoo) 
+^trialdata()
+#loop(^burst(count %originalinput)){^trialdata()}
+^jsontree( $tutorial ) \n
 
 u: (sound) $$sound_file = test popen(^"afplay soundfiles/$$sound_file\.mp3" '^sound) Läuft! 
 

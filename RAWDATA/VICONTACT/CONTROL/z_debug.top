@@ -9,6 +9,13 @@ outputmacro: ^myfunc(^data) ($$concept)
 	#$$oob = ^join($$oob " " ^value)
 
 
+outputmacro: ^accuracy()
+
+
+$accuracy = $sumcorrect / 5 * 100
+
+
+
 outputmacro: ^oob()
 
 if ($rapportCounter > 5) {$rapportCounter = 5}
@@ -30,7 +37,9 @@ if ($rapportCounter == -6) {$rapportCounter = -5}
  $_critRevealed = $$critRevealed
  $_noncritTopic = $noncritTopic
  $_intent = $$intent
-$_soundFile = $$sound_file
+ $_soundFile = $$sound_file
+ $_sumCorrect = $sumcorrect
+ $_accuracy = $accuracy
 
  $_item1name = topic
  $_item1value = $_topic
@@ -60,11 +69,15 @@ $_soundFile = $$sound_file
  $_item13value = $_intent
  $_item14name = soundFile
  $_item14value = $_soundFile
+ $_item15name = sumCorrect
+ $_item15value = $_sumCorrect
+ $_item16name = accuracy
+ $_item16value = $_accuracy
 
 
 
  # join it all together for a string output using pipe '|' between items and using ':' between item name and value
- $$oob = ^join( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value " " \| " " $_item4name : $_item4value " " \| " " $_item5name : $_item5value " " \| " " $_item6name : $_item6value " " \| " " $_item7name : $_item7value " " \| " " $_item8name : $_item8value " " \|  " " $_item9name : $_item9value " " \| " " $_item10name : $_item10value " " \| " " $_item11name : $_item11value " " \| " " $_item12name : $_item12value " " \| " " $_item13name : $_item13value " " \| " " $_item14name : $_item14value)
+ $$oob = ^join( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value " " \| " " $_item4name : $_item4value " " \| " " $_item5name : $_item5value " " \| " " $_item6name : $_item6value " " \| " " $_item7name : $_item7value " " \| " " $_item8name : $_item8value " " \|  " " $_item9name : $_item9value " " \| " " $_item10name : $_item10value " " \| " " $_item11name : $_item11value " " \| " " $_item12name : $_item12value " " \| " " $_item13name : $_item13value " " \| " " $_item14name : $_item14value " " \| " " $_item15name : $_item15value " " \| " " $_item16name : $_item16value)
 
 
 
