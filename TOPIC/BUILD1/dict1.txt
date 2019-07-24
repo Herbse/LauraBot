@@ -1,33 +1,13 @@
-<<<<<<< HEAD
-﻿+ sound PATTERN_WORD 
-=======
-﻿+ leben PATTERN_WORD 
-+ weniger PATTERN_WORD 
-+ wollte PATTERN_WORD 
-+ auf VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ es VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ so VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ für VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ alt VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ klar VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ beschäftigt VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ aus VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ häufig VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ freunde VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ mal VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ mit VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ machen VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ red PATTERN_WORD 
-+ Familie VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ gemacht VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ abgelaufen PATTERN_WORD VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
-+ support PATTERN_WORD VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE 
->>>>>>> aeaeaa063d0633462cb7611efec7a87b6adf7a5d
+﻿+ hallo PATTERN_WORD 
++ hello PATTERN_WORD 
++ hey PATTERN_WORD 
++ hi PATTERN_WORD 
++ abgelaufen PATTERN_WORD 
++ gemacht PATTERN_WORD 
++ support PATTERN_WORD 
 + @chatoutput 9
-+ oob 
++ laura_li 
 + defaultbot 
-<<<<<<< HEAD
-=======
 + was_macht 
 + was_geht 
 + wie_fühlst 
@@ -39,7 +19,6 @@
 + was_ist_heute_los 
 + was_ist_los 
 + was_beschäftigt 
-+ alles_klar 
 + verstehe_ich 
 + kann_ich_verstehen 
 + kann_ich_mir_vorstellen 
@@ -99,4 +78,3 @@
 + kannst_du 
 + war_da 
 + habt_ihr 
->>>>>>> aeaeaa063d0633462cb7611efec7a87b6adf7a5d

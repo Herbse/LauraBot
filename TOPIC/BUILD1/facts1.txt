@@ -1,3 +1,4 @@
 ﻿$cs_trace=0
+$cs_time=0
 #`end variables
-( oob defaultbot defaultbot x100000 )
+( laura_li defaultbot defaultbot x100000 )

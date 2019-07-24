@@ -1150,3 +1150,9 @@ Start: user:asd bot:oob ip: rand:3774 (~introduction) 1 ==> Testwurst  When:Jul2
 Command: :reset
 Start: user:asd bot:oob ip: rand:3773 (~introduction) 0 ==> Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert.  When:Jul24'19-15:18:54 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:Jul03'19-14:16:09 Build1:Jul24'19-15:18:49 0:Jan09'19-11:42:27 F:0 P:Jul24'19-15:14:35
 Respond: user:asd bot:oob ip: (~introduction) 1   zoo ==> Testwurst  When:Jul24'19-15:18:56 Why:~introduction.3.8.~control.2.0   F:0 
+Command: :build vicontact
+Command: :build vicontact
+Command: :build vicontact
+Start: user:asd bot:laura_li ip: rand:3776 (~introduction~3) 2 ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | revelationState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile: | sumCorrect: | accuracy: ]`Wie bitte?  When:Jul24'19-15:27:32 Why:~addposthoc.4.0 ~incomprehension.0.0.~introduction~3.2.0  Version:8.8 Build0:Jul03'19-14:16:09 Build1:Jul24'19-15:27:29 0:Apr10'19-19:17:14 F:1555996217-3.0.0.11.2.0 P:Jun18'19-12:08:44
+Command: :bot tutorial
+Start: user:asd bot:tutorial ip: rand:3773 (~introduction~9) 0 ==> [topic:~introduction~9 | answerCategory: | probFormat: | goodQuestion: | emoType: | rapportCounter: | revelationState: | chatPhase: | randomNumber: | topicSwitch: | critRevealed: | noncritTopic: | intent: | soundFile: | sumCorrect:0 | accuracy:0 ]`Hey ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen. `   When:Jul24'19-15:27:39 Why:~addposthoc.4.0 ~introduction~9.0.0.~control.0.0 ~introduction~9.0.0.~control.0.0  Version:8.8 Build0:Jul03'19-14:16:09 Build1:Jul24'19-15:27:29 0:Apr10'19-19:17:14 F:1555996217-3.0.0.11.2.0 P:Jun18'19-12:08:44
