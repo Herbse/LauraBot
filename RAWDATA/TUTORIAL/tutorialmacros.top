@@ -1,0 +1,43 @@
+outputmacro: ^tutorialstart()
+$counter=0 
+$count=0
+$trialdata=^jsoncreate(array)
+$pattern=^jsoncreate(object)
+$firsttrial= ^jsoncreate(array)
+# ^jsonarrayinsert($pattern $first)
+^jsonarrayinsert($trialdata $firsttrial)
+
+loop(){
+    $$tmp = ^Iterator(? member ~trial1)
+    $$tmp 
+    }
+
+$results=^jsoncreate(array) 
+
+^jsontree($trialdata)
+aber
+
+# outputmacro: ^createtrialarray
+
+
+
+outputmacro: ^results()
+$counter += 1
+$trial=^jsoncreate(object)
+
+$trial.inputword = ^wordatindex(original $counter)
+$trial.matchword = $trialdata.$pattern[2]
+
+if ($trial.inputword==$trial.matchword){
+    $trial.correct = "true"}
+else {
+     $trial.correct = "false"
+} 
+
+$trial.wordnr = $counter
+$trial.trialnr = $trialnr
+
+
+^jsonarrayinsert($results $trial)
+
+

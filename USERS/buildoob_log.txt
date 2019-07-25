@@ -2,9 +2,6 @@
 
 >>Reading folder RAWDATA/OOB/
 
-----Reading file trialdata.top
-Reading outputmacro: ^trialdata
-
 ----Reading file testevent2.top
 Reading topic ~event_t
 
@@ -19,10 +16,9 @@ Reading topic ~xpostagsentence
 Reading topic ~introduction
 *** Warning- line 1 of introduction.top: Word "besuch" known in multiple spellings besuch Besuch 
 *** Warning- line 1 of introduction.top: Word "zoo" known in multiple spellings zoo Zoo 
-*** Warning- line 8 of introduction.top: Word "zoo" known in multiple spellings zoo Zoo 
-*** Warning- line 19 of introduction.top: Word "dirk" known in multiple spellings Dirk DIRK 
-*** Warning- line 35 of introduction.top: Word "frage" known in multiple spellings frage Frage 
-*** Warning- line 37 of introduction.top: Word "frage" known in multiple spellings frage Frage 
+*** Warning- line 47 of introduction.top: Word "dirk" known in multiple spellings Dirk DIRK 
+*** Warning- line 63 of introduction.top: Word "frage" known in multiple spellings frage Frage 
+*** Warning- line 65 of introduction.top: Word "frage" known in multiple spellings frage Frage 
 
 ----Reading file handle_oob.top
 Reading topic ~handle_oob
@@ -52,13 +48,13 @@ Reading patternmacro: ^opinion
 Reading topic ~keywordless
 
 <<end folder RAWDATA/OOB
-*** Warning-  Undefined set or topic ~school line 22 in introduction.top
-*** Warning- line 26 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
+*** Warning-  Undefined set or topic ~school line 50 in introduction.top
+*** Warning- line 54 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
 
 WARNING SUMMARY: 
-  line 1 of : Undefined set or topic ~school line 22 in introduction.top
-  line 26 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
-2 serious warnings, 0 function warnings, 0 spelling warnings, 14 case warnings, 0 substitution warnings
+  line 1 of : Undefined set or topic ~school line 50 in introduction.top
+  line 54 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
+2 serious warnings, 0 function warnings, 0 spelling warnings, 13 case warnings, 0 substitution warnings
     
 
 Finished compile

@@ -223,7 +223,7 @@ t: ()
 # t: ^callstack()
 # t: () popen(^"afplay soundfiles/Laura/$$sound_file\.mp3" '^sound) 
 t: ($cs_bot=tutorial) ^accuracy()
-
+t: () if (!$$sound_file){$$sound_file = NaN}
 t: () ^oob()
    ^postprintbefore(  \[ $$oob \]) $$oob = null 
 

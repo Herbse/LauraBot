@@ -1,15 +1,43 @@
-topic: ~introduction  keep repeat (sound besuch zoo)
+topic: ~introduction  keep repeat (sound besuch zoo testcase)
 
 t: $counter=0 $tutorial=^jsoncreate(array)
 
 Hallo! Ich heiße OOB. Sende mir über die App eine OOB-Nachricht zusammen mit einer Frage, um zu schauen, ob das funktioniert. 
 
 
-u: BESUCH (zoo) 
-^trialdata()
-#loop(^burst(count %originalinput)){^trialdata()}
-^jsontree( $tutorial ) \n
-
+u: ( testcase4 )
+    # create a phoneBook as an array of structured items (objects)
+    $_phoneBook = ^jsoncreate(array)
+#
+# add first object in the array
+#
+$_item = ^jsoncreate(object)
+# assign values
+$_item.name = "Todd Kuebler"
+$_item.phone = "555-1212"
+^jsonarrayinsert($_phoneBook $_item)
+#
+# add a second object in the array
+#
+$_item = ^jsoncreate(object)
+# assign values
+$_item.name = "Giorgio Robino"
+$_item.phone = "111-123456789"
+^jsonarrayinsert($_phoneBook $_item)
+# display JSON tree
+^jsontree( $_phoneBook ) \n
+#
+# print formatted items in the phone book
+#
+phone book:\n
+$_i = 0
+$_size = ^length($_phoneBook)
+loop($_size)
+{
+  # print out formatted item
+  name: $_phoneBook[$_i].name, phone: $_phoneBook[$_i].phone\n
+  $_i += 1
+}
 u: (sound) $$sound_file = test popen(^"afplay soundfiles/$$sound_file\.mp3" '^sound) Läuft! 
 
 u:  (*) ^refine() $$answerCategory = specificAnswer $$actionType = shrug  ^keep() ^repeat() 
