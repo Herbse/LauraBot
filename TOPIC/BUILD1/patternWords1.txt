@@ -34,7 +34,6 @@ guter
 sound
 besuch
 zoo
-tutorial
 rapport
 invitation_to_tell
 facilitator
