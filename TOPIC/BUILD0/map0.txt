@@ -9,7 +9,7 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/adjectivehierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/adjectivehierarchy.top
     concept: 1  ~timeadjmodifier
     concept: 2  ~pretimeadjmodifier
     concept: 3  ~color_adjectives
@@ -96,9 +96,9 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMA
     concept: 84  ~transition_adjectives
     concept: 85  ~weather_adjectives
     concept: 86  ~when_adjectives
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/opposite.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/opposite.tbl
     concept: 3  ~numberoperator
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/concepts.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/concepts.top
     concept: 1  ~cartoon_character
     concept: 2  ~architect
     concept: 3  ~athlete
@@ -1164,7 +1164,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMA
     concept: 1063  ~yellow_other
     concept: 1064  ~yesanswer
     concept: 1065  ~noanswer
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/prepositionhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/prepositionhierarchy.top
     concept: 1  ~directionplacepreposition
     concept: 2  ~directionon
     concept: 3  ~directionunder
@@ -1182,7 +1182,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMA
     concept: 15  ~relationpreposition
     concept: 16  ~timepreposition
     concept: 17  ~prepositionlist
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/adverbhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/adverbhierarchy.top
     concept: 1  ~modifyabletimenoun
     concept: 2  ~timeadvmodifier
     concept: 3  ~modifyabledistancenoun
@@ -1217,7 +1217,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMA
     concept: 32  ~viewpoint_adverbs
     concept: 33  ~when_adverbs
     concept: 34  ~negative_adverb_starter
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/verbhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/verbhierarchy.top
     concept: 1  ~determinerlist
     concept: 2  ~qwords
     concept: 3  ~static_verbs
@@ -1581,7 +1581,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMA
     concept: 361  ~comment
     concept: 362  ~ask
     concept: 363  ~post
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/affect.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/affect.top
     concept: 1  ~badness
     concept: 2  ~weakbadness
     concept: 3  ~strongbadness
