@@ -1,6 +1,14 @@
-topic: ~introduction keep repeat ()
-
-t: ($cs_bot=tutorial) $sumcorrect=0 Hey ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen. ^gambit(~)
+topic: ~introduction  keep repeat (sound besuch zoo)
 
 
-t: ^respond(~tutorial)
+t: 
+^tutorialstart()
+
+Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.
+
+
+u: TRIAL1 () $trialnr=1
+^createtrialobjects(~trial1)
+^wordcomparison($trialnr)
+^buzzcomparison()
+^jsontree($trialdata)

@@ -1,0 +1,14 @@
+topic: ~patternmacros nostay()
+
+patternmacro: ^opinion()
+    [
+        ( << wie findest du das >> )
+        ( << wie war das für dich >> )
+        (gude)
+    ]
+
+
+
+
+
+

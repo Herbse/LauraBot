@@ -1,0 +1,60 @@
+topic: ~school_t ()
+
+#t: specific test to school topic ^keep() ^repeat() 
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($schoolCounter==1) Voll doof
+        b: ($schoolCounter==2) Voll doof
+        b: ($schoolCounter==3) Voll doof
+        b: ($schoolCounter==4) Voll doof
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==3) In der Schule.
+        b: ($schoolCounter==4) In Englisch.
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==3) Ein paar andere Kinder und ich.
+        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($schoolCounter==1) ^reuse(SCHOOL_2)
+        b: () $$answerCategory=ignorance ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+#! 
+u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  Schule macht mir keinen Spaß.
+   
+#! 
+u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  Mathe ist am schwersten. Das kann ich einfach nicht.
+
+#! 
+u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  Ich habe auch Matheförder. Da lerne ich gerade Mal rechnen mit Aufschreiben.
+
+#! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Deutsch ist genauso blöd, weil ich mache da immer Fehler. Ich will lieber draußen spielen.
+
+# Spezifische Antworten----------------------------------------------------------------------------------
+

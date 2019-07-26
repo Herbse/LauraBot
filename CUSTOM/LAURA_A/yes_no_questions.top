@@ -1,0 +1,6 @@
+topic: ~yes_no_questions keep repeat nostay(~yes_no)
+
+u: (<<![~why wer wo wann wovor] ~yes_no>>) [Ja.][Nein.]
+
+
+

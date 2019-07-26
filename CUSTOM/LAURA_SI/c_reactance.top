@@ -1,0 +1,3 @@
+topic: ~reactance keep repeat nostay ()
+
+u: ($$answerCategory==reactance) [Kann ich jetzt gehen?][Sind wir fertig?][Ich will darüber nicht sprechen.][Lassen sie mich damit in Ruhe.] ^keep() ^repeat()

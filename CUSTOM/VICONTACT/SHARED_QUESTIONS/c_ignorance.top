@@ -1,0 +1,3 @@
+topic: ~ignorance keep repeat nostay ()
+
+u: ($$answerCategory==ignorance) [Ich weiß nicht.][Ich erinnere mich nicht.][Keine Ahnung.] ^keep() ^repeat()

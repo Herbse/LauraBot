@@ -1,0 +1,95 @@
+topic: ~sister_t ()
+
+#t: specific test to  topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = 1 Greta.
+    # age
+    a: (^age()) $$intent=age $$sound_file = 2 Die ist 25 Jahre alt.
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = 4 Weiß nicht.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Das ist meine Stiefschwester.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Sie ist nicht meine richtige Schwester.
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = 7 In meiner Freizeit und am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship Seit ich Papa kenne.
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(SISTER_1)
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = 8 Weiß nicht.
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = 9 Zuhause oder auf dem Spielplatz. 
+    
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($sisterCounter==1) $$sound_file = 10 Keine Ahnung.
+        b: ($sisterCounter==2) $$sound_file = 10 Keine Ahnung.
+        b: ($sisterCounter==3) $$sound_file = 10 Voll doof.
+        b: ($sisterCounter==4) $$sound_file = 10 Voll doof.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($sisterCounter==1) Auf den Spielplatz bei uns zu Hause.
+        b: ($sisterCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($sisterCounter==1) ^reuse(SISTER_2)
+        b: ($sisterCounter==2) Greta.
+        b: ($sisterCounter==3) Greta.
+        b: ($sisterCounter==4) Greta.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($sisterCounter==1) ^reuse(SISTER_2)
+        b: ($sisterCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==3) ^reuse(SISTER_4)
+        b: ($sisterCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # example
+     a: (^example()) $$intent=example ^refine()
+        b: () 
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () 
+      
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () 
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/specific.txt $$question \n) 
+
+
+# Narrative Antworten---------------------------------------------------------------------------------------
+
+
+#! Erzähl mal was dein Bruder währenddessen tut. 
+u: SISTER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 1 $$sound_file = 14  Greta geht manchmal mit mir auf den Spielplatz aber ich mag sie nicht.
+
+#! Erzähl mir doch mehr über Leon.
+u: SISTER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 2 $$sound_file = 15  Sie ist ja gar nicht meine richtige Schwester!
+
+#! Erzähl mir doch mehr über Leon.
+u: SISTER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 3 $$sound_file = 16 Sie meckert mich immer an, wenn ich was falsch mache.
+
+#! Erzähl mir doch mehr über Leon.
+u: SISTER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 4 $$sound_file = 17 Nur, weil Papa mich mehr mag als sie.
+
+#Spezifische Antworten --------------------------------------------------------------------------------------
+
+
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(_1)

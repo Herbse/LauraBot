@@ -1,0 +1,98 @@
+topic: ~neighbour_t ()
+
+
+#t: specific test to neighbour topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: () ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Heinz. 
+    # age
+    a: (^age()) $$intent=age Der ist schon 70 Jahre alt!
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job Der arbeitet nicht mehr. 
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Der ist mein Nachbar. 
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Heinz ist so ein Lieber!
+    # time together
+    a: (^time_together()) $$intent=time_together ^reuse(NEIGHBOUR_3)
+    # time relationship
+    a: (^time()) $$intent=time_relationship Schon ganz lange. 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(NEIGHBOUR_1)
+    # activity
+    a: (^activity()) $$intent=activity Der Heinz ist Rentner. 
+    # places together
+    a: (^places_together()) $$intent=places_together Bei Heinz zu Hause. 
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($neighbourCounter==1) Voll cool.
+        b: ($neighbourCounter==2) Voll cool.
+        b: ($neighbourCounter==3) Voll cool.
+        b: ($neighbourCounter==4) Das macht gar nichts.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion ^refine()
+        b: ($neighbourCounter==1) Mama kennt Heinz auch schon lange. 
+        b: () ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($neighbourCounter==1) Bei Heinz zu Hause.
+        b: ($neighbourCounter==2) Bei Heinz zu Hause.
+        b: ($neighbourCounter==3) Bei Heinz zu Hause.
+        b: ($neighbourCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($neighbourCounter==1) Heinz und ich. 
+        b: ($neighbourCounter==2) Heinz.
+        b: ($neighbourCounter==3) Heinz.
+        b: ($neighbourCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($neighbourCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighbourCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighbourCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighbourCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($neighbourCounter==1) Das ist ein Spiel wo man vier Steine in einer Reihe haben muss.
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: NEIGHBOUR_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $neighbourCounter = 1 Heinz ist ein lieber Opa. Am liebsten spiele ich Vier Gewinnt mit ihm.
+ 
+
+#! Erzähl mal wie er ihr hilft?
+u: NEIGHBOUR_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $neighbourCounter = 2 Er hat auch super große Puzzel, mit 2000 Teilen.
+
+#! Erzähl mir mehr über deinen Papa!
+u: NEIGHBOUR_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $neighbourCounter = 3 Ich bin fast jeden Tag bei ihm. Bei ihm gibt's jedes Mal Kekse.
+ 
+#! Was machst du denn gern mit deinem Papa?
+
+u: NEIGHBOUR_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $neighbourCounter = 4 Heinz ist schon sehr alt. Deshalb kann er nicht mehr gut laufen.
+
+  
+
+# Spezifische Antworten--------------------------------------------------------------------------------------
+
+
+
+# Weiterleitung aus dem Topic-Roulette
+u: ($narrative=1) $narrative=0 ^reuse(PAPA_1)

@@ -1,0 +1,14 @@
+topic: ~introduction  keep repeat (sound besuch zoo)
+
+
+t: 
+^tutorialstart()
+
+Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.
+
+
+u: TRIAL1 () $trialnr=1
+^createtrialobjects(~trial1)
+^wordcomparison($trialnr)
+^buzzcomparison()
+^jsonwrite($trialdata)

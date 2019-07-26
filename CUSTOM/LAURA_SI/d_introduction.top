@@ -1,0 +1,9 @@
+topic: ~introduction_t keep repeat (~greetings)
+
+t: $chatPhase=main [Hallo!][Hey!][Grüß Gott!] ^respond(~event_t.event_1)
+
+
+u: (~greetings) Ich bin Laura und möchte dir etwas erzählen.
+
+
+

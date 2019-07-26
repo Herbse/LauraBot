@@ -1,0 +1,5 @@
+topic: ~options keep repeat nostay ()
+
+u: ($$answerCategory==options) [Das erstgenannte.][Das zweitgenannte.][Das erste.][Das zweite.] ^keep() ^repeat()
+
+
