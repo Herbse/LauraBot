@@ -1,22 +1,35 @@
 pandoc ../README.md -s -o ../README.html
 pandoc ChatScript-Advanced-User-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Advanced-User-Manual.html
+pandoc ChatScript-Advanced-Topic-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Advanced-Topic-Manual.html
+pandoc ChatScript-Advanced-Concept-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Advanced-Concept-Manual.html
+pandoc ChatScript-Advanced-Pattern-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Advanced-Pattern-Manual.html
+pandoc ChatScript-Advanced-Variable-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Advanced-Variable-Manual.html
+pandoc ChatScript-Advanced-Output-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Advanced-Output-Manual.html
 pandoc ChatScript-Basic-User-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Basic-User-Manual.html
 pandoc ChatScript-Debugging-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Debugging-Manual.html
+pandoc Practicum-ControlFlow.md -s -o ../HTMLDOCUMENTATION/Practicum-ControlFlow.html
 pandoc Practicum-rejoinders.md -s -o ../HTMLDOCUMENTATION/Practicum-rejoinders.html
+pandoc Practicum-messaging.md -s -o ../HTMLDOCUMENTATION/Practicum-messaging.html
+pandoc Practicum-Gleaning.md -s -o ../HTMLDOCUMENTATION/Practicum-Gleaning.html
+pandoc Practicum-Concepts-and-meaning.md -s -o ../HTMLDOCUMENTATION/Practicum-Concepts-and-meaning.html
+pandoc Practicum-spelling_and_interjections.md -s -o ../HTMLDOCUMENTATION/Practicum-spelling_and_interjections.html
 pandoc ChatScript-Fact-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-Fact-Manual.html
 pandoc ChatScript-Finalizing-A-Bot.md -s -o ../HTMLDOCUMENTATION/ChatScript-Finalizing-A-Bot.html
 pandoc ChatScript-Json.md -s -o ../HTMLDOCUMENTATION/ChatScript-Json.html
 pandoc ChatScript-Debugger.md -s -o ../HTMLDOCUMENTATION/ChatScript-Debugger.html
 pandoc ChatScript-Memorization.md -s -o ../HTMLDOCUMENTATION/ChatScript-Memorization.html
 pandoc ChatScript-Overview-of-Input-to-Output.md -s -o ../HTMLDOCUMENTATION/ChatScript-Overview-of-Input-to-Output.html
+pandoc ChatScript-Coding-Standards.md -s -o ../HTMLDOCUMENTATION/ChatScript-Coding-Standards.html
 pandoc ChatScript-Pattern-Redux.md -s -o ../HTMLDOCUMENTATION/ChatScript-Pattern-Redux.html
 pandoc ChatScript-Spelling-Marking.md -s -o ../HTMLDOCUMENTATION/ChatScript-Spelling-Marking.html
 pandoc ChatScript-System-Functions-Manual.md -s -o ../HTMLDOCUMENTATION/ChatScript-System-Functions-Manual.html
 pandoc ChatScript-System-Variables-and-Engine-defined-Concepts.md -s -o ../HTMLDOCUMENTATION/ChatScript-System-Variables-and-Engine-defined-Concepts.html
 pandoc ChatScript-Command-Line-Parameters.md -s -o ../HTMLDOCUMENTATION/ChatScript-Command-Line-Parameters.html
-pandoc Installing-and-Updating-ChatScript.md -s -o ../HTMLDOCUMENTATION/Installing-and-Updating-ChatScript.html
 pandoc ChatScript-Multiple-Bots.md -s -o ../HTMLDOCUMENTATION/ChatScript-Multiple-Bots.html
 pandoc ChatScript-Common-Beginner-Mistakes.md -s -o ../HTMLDOCUMENTATION/ChatScript-Common-Beginner-Mistakes.html
+pandoc Installing-and-Updating-ChatScript.md -s -o ../HTMLDOCUMENTATION/Installing-and-Updating-ChatScript.html
+pandoc Documentation-Guide.md -s -o ../HTMLDOCUMENTATION/Documentation-Guide.html
+
 
 
 pandoc README.md -s -o ../HTMLDOCUMENTATION/README.html

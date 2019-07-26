@@ -2,7 +2,7 @@
 #define _DICTIONARYSYSTEM_H
 
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -298,6 +298,10 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 // repeated internal bits
 #define HAS_SUBSTITUTE			0x00000800		//   word has substitute attached 
 
+// default values for json creation 
+#define JSON_ARRAY_UNIQUE 1
+#define JSON_OBJECT_DUPLICATE 2
+
 // flags on facts  FACT FLAGS
 
 #define FACTATTRIBUTE	    0x10000000  // fact is an attribute fact, object can vary while subject/verb should be fixed 
@@ -314,6 +318,7 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 
 // normal flags
 #define FACTAUTODELETE      0x00800000 // delete when json deletes
+#define OVERRIDE_MEMBER_FACT FACTAUTODELETE // used in ^testpattern matching
 #define ORIGINAL_ONLY       0x00400000  //  dont match on canonicals
 #define FACTBUILD2			0x00200000 
 #define FACTBUILD1	        0x00100000  // fact created during build 1 (for concepts)
@@ -325,9 +330,8 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define USER_FLAG1			0x00010000
 
 #define USER_FLAGS			0x000F0000 
-#define SYSTEM_FLAGS		0xFFF0FFF0 // system used top 12 bits and bottom 12
-// unused 0x00004000 
-// unused 0x00008000
+#define START_ONLY          0x00008000  // interjection membership fact
+// FACTBOOT 0x00004000  // FACTBOOT - user created fact migrates to boot declared not visible to script
 #define JSON_OBJECT_FACT	0x00002000 // on subject side of triple
 #define JSON_ARRAY_FACT		0x00001000	// on subject side of triple
 
@@ -342,10 +346,10 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define FACTVERB			0x00000040	//   is 1st in its bucket (transient flag for read/WriteBinary) which MIRRORS DICT BUCKETHEADER flag: 
 #define FACTOBJECT		    0x00000020  //   does not apply to canonical forms of words, only the original form - for classes and sets, means dont chase the set
 #define FACTDUPLICATE		0x00000010	//   allow repeats of this fact
-//unused		0x00000001	
-//unused		0x00000002	
+//unused		0x00000008	
 //unused		0x00000004	
-//unused		0x00000005	
+//unused		0x00000002	
+#define END_ONLY    		0x00000001	
 
 // end of fact flags
 
@@ -411,6 +415,7 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define TIME_NOUN_MODIFY_ADVERB		0x0000008000000000ULL
 #define TIME_NOUN_MODIFY_ADJECTIVE	    0x0000010000000000ULL
 #define DISTANCE_NOUN_MODIFY_ADJECTIVE	0x0000020000000000ULL
+#define PASSIVE_VERB 0x0000040000000000ULL
 // end of roles/needroles
 
 
@@ -561,7 +566,8 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define SINGULAR 37
 #define ISPROBABLE 38
 #define PLURAL 39
-#define LASTCONTROL PLURAL  // add new ops to optable as well
+#define DUALNOUN 40
+#define LASTCONTROL DUALNOUN  // add new ops to optable as well
 
 #define SKIP 1 // if it matches, move ptr along, if it doesnt DONT
 #define STAY 2
@@ -679,7 +685,7 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define RESPONSE_NOCONVERTSPECIAL			0x02000000
 #define RESPONSE_CURLYQUOTES				0x04000000
 #define ALL_RESPONSES ( RESPONSE_UPPERSTART | RESPONSE_REMOVESPACEBEFORECOMMA | RESPONSE_ALTERUNDERSCORES | RESPONSE_REMOVETILDE | RESPONSE_NOCONVERTSPECIAL ) 
-
+#define RESPONSE_NOFACTUALIZE               0x08000000
 #define ASSIGNMENT				0x01000000 //used by performassignment
 
 

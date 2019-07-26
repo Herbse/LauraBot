@@ -432,6 +432,7 @@ bool IsDate(char* original)
 			}
 		}
 		else if (!separator) separator = *original;
+		else if (*original != separator && separatorcount == 2 && !alpha) return true; //when there is already a date but still have different seperators.(eg: 18-02-2019.)
 		else if (*original != separator) return false; // cannot be
 
 		if (*original == separator) // start a new block
@@ -574,7 +575,7 @@ void ChangeSpecial(char* buffer)
 	ReleaseInfiniteStack();
 }
 
-char* AddEscapes(char* to, char* from, bool normal,int limit) // normal true means dont flag with extra markers
+char* AddEscapes(char* to, char* from, bool normal,int limit,bool addescapes) // normal true means dont flag with extra markers
 {
 	limit -= 200; // dont get close to limit
 	char* start = to;
@@ -598,10 +599,10 @@ char* AddEscapes(char* to, char* from, bool normal,int limit) // normal true mea
 			*to++ = '\\'; 
 			*to++ = 't'; // legal
 		}
-		else if (*at == '"') { // we  need to preserve that it was escaped, though we always escape it in json anyway, because writeuservars needs to know
+		else if (*at == '"' || (*at == '\\' && !addescapes)) { // we  need to preserve that it was escaped, though we always escape it in json anyway, because writeuservars needs to know
 			if (!normal) *to++ = ESCAPE_FLAG; 
 			*to++ = '\\'; 
-			*to++ = '"';
+			*to++ = *at;
 		}
 		// detect it is already escaped
 		else if (*at == '\\')
@@ -886,7 +887,7 @@ void AcquirePosMeanings(bool facts)
 uint64 FindValueByName(char* name)
 {
 	if (!*name || *name == '?') return 0; // ? is the default argument to call
-	char word[MAX_WORD_SIZE];
+    char word[MAX_WORD_SIZE * 4];
 	word[0] = ENDUNIT;
 	MakeUpperCopy(word+1,name);
 	WORDP D = FindWord(word);
@@ -924,7 +925,7 @@ bool IsModelNumber(char* word)
 uint64 FindSystemValueByName(char* name)
 {
 	if (!*name || *name == '?') return 0; // ? is the default argument to call
-	char word[MAX_WORD_SIZE];
+	char word[MAX_WORD_SIZE * 4];
 	word[0] = ENDUNIT;
 	word[1] = ENDUNIT;
 	MakeUpperCopy(word+2,name);
@@ -1030,6 +1031,24 @@ bool IsArithmeticOperator(char* word)
 		(c == '>' && word[1] == '>')
 		);
 } 
+
+bool IsArithmeticOp(char* word)
+{
+    word = SkipWhitespace(word);
+    char c = *word;
+    if (c == '+' || c == '-' || c == '*' || c == '/' || c == '&') return true;
+    return
+        ((c == '|' && (word[1] == ' ' || word[1] == '^' || word[1] == '=')) ||
+        (c == '%' && !word[1]) ||
+            (c == '%' && word[1] == ' ') ||
+            (c == '%' && word[1] == '=') ||
+            (c == '^' && !word[1]) ||
+            (c == '^' && word[1] == ' ') ||
+            (c == '^' && word[1] == '=') ||
+            (c == '<' && word[1] == '<') ||
+            (c == '>' && word[1] == '>')
+            );
+}
 
 char* IsUTF8(char* buffer,char* character) // swallow a single utf8 character (ptr past it) or return null 
 {
@@ -1367,8 +1386,8 @@ unsigned int IsNumber(char* num, int useNumberStyle, bool placeAllowed) // simpl
 		int index = numberValues[i].word;
 		if (!index) break;
 		char* w = Index2Heap(index);
-		char* num = Index2Heap(index);
-		if (len == numberValues[i].length && !strnicmp(word, num, len))
+		char* numx = Index2Heap(index);
+		if (len == numberValues[i].length && !strnicmp(word, numx, len))
 		{
 			return numberValues[i].realNumber;  // a match 
 		}
@@ -1493,7 +1512,7 @@ char* WriteFloat(char* buffer, double value, int useNumberStyle)
 	return buffer;
 }
 
-bool IsFloat(char* word, char* end, int useNumberStyle)
+char IsFloat(char* word, char* end, int useNumberStyle)
 {
 	if (*(end - 1) == '.') return false;	 // float does not end with ., that is sentence end
 	if (*word == '-' || *word == '+') ++word; // ignore sign
@@ -1517,7 +1536,9 @@ bool IsFloat(char* word, char* end, int useNumberStyle)
 			else return false; // non digit is fatal
 		}
     }
-    return (period == 1 || exponent);
+    if (period == 1) return 1;
+    if (exponent) return 'e';
+    return 0;
 }
 
 bool IsNumericDate(char* word,char* end) // 01.02.2009 or 1.02.2009 or 1.2.2009
@@ -1580,14 +1601,14 @@ bool IsUrl(char* word, char* end)
 	char* at = strchr(tmp,'@');	// check for email
 	if (at) 
 	{
-		char* dot = strchr(at+2,'.'); // must have character after @ and before .
-		if (dot && IsAlphaUTF8(dot[1])) return true;
+		char* dot = strchr(at+2,'.'); // must have character or digit after @ and before . (RFC1123 section 2.1)
+		if (dot && IsAlphaUTF8OrDigit(dot[1])) return true;
 	}
 
 	//	check domain suffix is somewhat known as a TLD
 	//	fireze.it OR www.amazon.co.uk OR amazon.com OR kore.ai
 	char* firstPeriod = strchr(tmp, '.');
-	if (!firstPeriod) return false; // not a possible url
+	if (!firstPeriod || firstPeriod[1] == '.') return false; // not a possible url
 	char* domainEnd = strchr(firstPeriod, '/');
 	if (domainEnd) *domainEnd = 0;
 	ptr = strrchr(tmp, '.'); // last period - KNOWN to exist
@@ -1598,6 +1619,70 @@ bool IsUrl(char* word, char* end)
 	// check for common suffices - https://w3techs.com/technologies/overview/top_level_domain/all
 	// most up to date list of all TLDs at http://data.iana.org/TLD/tlds-alpha-by-domain.txt
 	return (!strnicmp(ptr,(char*)"com",3) || !strnicmp(ptr,(char*)"net",3) || !strnicmp(ptr,(char*)"org",3) || !strnicmp(ptr,(char*)"edu",3) || !strnicmp(ptr,(char*)"biz",3) || !strnicmp(ptr,(char*)"gov",3) || !strnicmp(ptr,(char*)"mil",3) || !strnicmp(ptr, (char*)"info", 4));
+}
+
+bool IsFileExtension(char* word)
+{
+	// needs to be lowercase alphanumeric
+	char* ptr = word-1;
+	while (*++ptr)
+	{
+		if (IsLowerCase(*ptr) || IsDigit(*ptr) || *ptr == '.') continue;
+		return false;
+	}
+
+	size_t len = strlen(word);
+	// most extensions are 3 characters
+	if (len == 3) return true;
+
+	// other lengths are more exclusive : https://fileinfo.com/filetypes/common
+	if (len == 1) {
+		return (!strnicmp(word, (char*)"a", 1) || !strnicmp(word, (char*)"c", 1) || !strnicmp(word, (char*)"h", 1) || !strnicmp(word, (char*)"m", 1) || !strnicmp(word, (char*)"z", 1));
+	}
+	else if (len == 2) {
+		return (!strnicmp(word, (char*)"7z", 2) || !strnicmp(word, (char*)"ai", 2) || !strnicmp(word, (char*)"cs", 2) || !strnicmp(word, (char*)"db", 2) || !strnicmp(word, (char*)"gz", 2) || !strnicmp(word, (char*)"js", 2) || !strnicmp(word, (char*)"pl", 2) || !strnicmp(word, (char*)"ps", 2) || !strnicmp(word, (char*)"py", 2) || !strnicmp(word, (char*)"rm", 2) || !strnicmp(word, (char*)"sh", 2) || !strnicmp(word, (char*)"vb", 2));
+	}
+	else if (len == 4) {
+		return (!strnicmp(word, (char*)"aspx", 4) || !strnicmp(word, (char*)"docx", 4) || !strnicmp(word, (char*)"h264", 4) || !strnicmp(word, (char*)"heic", 4) || !strnicmp(word, (char*)"html", 4) || !strnicmp(word, (char*)"icns", 4) || !strnicmp(word, (char*)"indd", 4) || !strnicmp(word, (char*)"java", 4) || !strnicmp(word, (char*)"jpeg", 4) || !strnicmp(word, (char*)"mpeg", 4) || !strnicmp(word, (char*)"midi", 4) || !strnicmp(word, (char*)"pptx", 4) || !strnicmp(word, (char*)"sitx", 4) || !strnicmp(word, (char*)"tiff", 4) || !strnicmp(word, (char*)"xlsx", 4) || !strnicmp(word, (char*)"zipx", 4));
+	}
+	else {
+		return (!strnicmp(word, (char*)"class", 5) || !strnicmp(word, (char*)"gadget", 6) || !strnicmp(word, (char*)"swift", 5) || !strnicmp(word, (char*)"tar.gz", 6) || !strnicmp(word, (char*)"toast", 5) || !strnicmp(word, (char*)"xhtml", 5));
+	}
+}
+
+bool IsFileName(char* word)
+{
+	// check for a file extension
+	char* ext = strrchr(word, '.');
+	if (!ext) return false;
+
+	char* ptr = word-1;
+	char* last = ptr+strlen(word);
+	char first = *word;
+
+	// ignore wrapping quotes
+	if ((first == '"' || first == '\'') && *last == first) {
+		ptr++;
+		*last = 0;
+	}
+	else {
+		first = 0;
+	}
+
+	bool valid = IsFileExtension(ext + 1);
+	if (valid) {
+		if (ptr[1] == '*' && (ptr + 2) == ext) ptr = ext;		// *.ext
+		else if (IsAlphaUTF8(ptr[1]) && ptr[2] == ':') { ptr += 2; }	// Windows drive
+
+		while (valid && ++ptr < ext) {
+			if (IsAlphaUTF8OrDigit(*ptr) || *ptr == '/' || *ptr == '\\') continue;
+			if (first && *ptr == ' ') continue;  // spaces inside a quoted name
+			valid = false;
+		}
+	}
+
+	if (first) *last = first;
+	return valid;
 }
 
 unsigned int IsMadeOfInitials(char * word,char* end) 
@@ -1655,8 +1740,13 @@ char* ReadFlags(char* ptr,uint64& flags,bool &bad, bool &response,bool factcall)
 	if (!*ptr) return start;
 	if (*ptr != '(') // simple solo flag
 	{
-		char word[MAX_WORD_SIZE];
-		ptr = ReadCompiledWord(ptr,word);
+        char word1[MAX_WORD_SIZE];
+        char* word = word1;
+        ptr = ReadCompiledWord(ptr, word);
+		if (*word == '$') {
+			char* val = GetUserVariable(word);
+			val = ReadCompiledWord(val, word);
+		}
 		if (!strnicmp(word,(char*)"RESPONSE_",9)) response = true; // saw a response flag
 		if (IsDigit(*word) || *word == 'x') ReadInt64(word,(int64&)flags);
 		else
@@ -1985,7 +2075,7 @@ int ReadALine(char* buffer,FILE* in,unsigned int limit,bool returnEmptyLines,boo
 	currentFileLine = maxFileLine; // revert to best seen
 	if (currentFileLine == 0)
 	{
-		BOM = (BOM == BOMSET) ? BOMUTF8 : NOBOM; // start of file, set BOM to null
+		BOM = (BOM == BOMSET) ? BOMSET : NOBOM; // start of file, set BOM to null
 		hasHighChar = false; // for outside verify
 	}
 	*buffer = 0;
@@ -2274,9 +2364,9 @@ RESUME:
 	buffer[1] = 0;
 	buffer[2] = 1; //   clear ahead to make it obvious we are at end when debugging
 
-	if (hasutf && BOM)  hasbadutf = AdjustUTF8(start, start - 1); // DO NOT ADJUST BINARY FILES
+	if (hasutf && BOM == BOMUTF8)  hasbadutf = AdjustUTF8(start, start - 1); // DO NOT ADJUST BINARY FILES
 	if (hasbadutf && showBadUTF && !server)  
-		Log(STDTRACELOG,(char*)"Bad UTF-8 %s at %d in %s\r\n",start,currentFileLine,currentFilename);
+		Log(STDUSERLOG,(char*)"Bad UTF-8 %s at %d in %s\r\n",start,currentFileLine,currentFilename);
     return (buffer - start);
 }
 
@@ -2326,7 +2416,7 @@ char* ReadQuote(char* ptr, char* buffer,bool backslash,bool noblank,int limit)
 			break;
 		}
     }
-    if (n == 0 || !c) // ran dry instead of finding the end
+    if (!n  || !c) // ran dry instead of finding the end
 	{	
 		if (backslash) // probably a normal end quote with attached stuff
 		{
@@ -2337,9 +2427,8 @@ char* ReadQuote(char* ptr, char* buffer,bool backslash,bool noblank,int limit)
 			*buffer = 0;
 			return ptr;
 		}
-		*buffer = 0;
- 		if (!n) Log(STDTRACELOG,(char*)"bad double-quoting?  %s %d %s - string size exceeds limit of %d\r\n",start,currentFileLine,currentFilename,limit);
-		else Log(STDTRACELOG,(char*)"bad double-quoting1?  %s %d %s missing tail doublequote \r\n",start,currentFileLine,currentFilename);
+		*buffer = 0; 
+        WARNSCRIPT((char*)"bad double-quoting?  %s %d %s\r\n", start, currentFileLine, currentFilename);
 		return NULL;	// no closing quote... refuse
 	}
 
@@ -2415,6 +2504,42 @@ char* ReadCompiledWordOrCall(char* ptr, char* word,bool noquote,bool var)
 	return ptr;
 }
 
+char* ReadPatternToken(char* ptr, char* word)
+{
+    ptr = SkipWhitespace(ptr);
+    char* original = word;
+    bool quote = false;
+    bool fncall = false;
+    int nest = 0;
+    while (*ptr)
+    {
+        if (!quote && !fncall && (*ptr == ' ' || *ptr == '\t')) break; // end of token
+        if (*word == '"' && *(ptr-1) != '\\') quote = !quote; // unescaped quote
+        if (*ptr == '^' && !quote)
+        {
+            size_t len = 1;
+            char* check = ptr;
+            if (IsAlphaUTF8(check[1])) // ^x
+            {
+                while (*++check != ' ');
+                len = check - ptr;
+                WORDP D = FindWord(ptr, len);
+                if (D && (D->internalBits & FUNCTION_NAME)) fncall = true;
+            }
+        }
+        if (fncall && !quote && *ptr == '(') ++nest;
+        *word++ = *ptr;
+        if (fncall && !quote && *ptr == ')')
+        {
+            --nest;
+            if (!nest) break;   // ended call token
+        }
+        ptr++;
+    }
+    *word = 0;
+    return ptr;
+}
+
 char* ReadCompiledWord(char* ptr, char* word,bool noquote,bool var,bool nolimit) 
 {//   a compiled word is either characters until a blank, or a ` quoted expression ending in blank or nul. or a double-quoted on both ends or a ^double quoted on both ends
 	*word = 0;
@@ -2443,9 +2568,9 @@ char* ReadCompiledWord(char* ptr, char* word,bool noquote,bool var,bool nolimit)
 				*word++ = *ptr++;
 				continue;
 			}
-			else if (c == end && (*ptr == ' ' || nestingData[(unsigned char)*ptr] == -1 || *ptr == 0)) // a terminator followed by white space or closing bracket or end of data terminated
+			else if (c == end && (IsWhiteSpace(*ptr) || nestingData[(unsigned char)*ptr] == -1 || *ptr == 0)) // a terminator followed by white space or closing bracket or end of data terminated
 			{
-				if (*ptr == ' ') ++ptr;
+				if (IsWhiteSpace(*ptr)) ++ptr;
 				break; // blank or nul after closer
 			}
 			*word++ = c;
@@ -2455,7 +2580,7 @@ char* ReadCompiledWord(char* ptr, char* word,bool noquote,bool var,bool nolimit)
 		{
 			ptr = start;
 			word = original;
-			while ((c = *ptr++) && c != ' ') 
+			while ((c = *ptr++) && !IsWhiteSpace(c)) 
 			{
 				if ((word-original) > (MAX_WORD_SIZE - 3)) break;
 				*word++ = c; // run til nul or blank
@@ -2469,15 +2594,30 @@ char* ReadCompiledWord(char* ptr, char* word,bool noquote,bool var,bool nolimit)
 		char priorchar = 0;
 		while ((c = *ptr++) && c != ENDUNIT) 
 		{
-			if (c == ' ') break;
+			if (IsWhiteSpace(c) && !quote) break;
+            if (c == '"' && *(ptr - 2) != '\\')
+            {
+                if (!quote)
+                {
+                    if (*(ptr-2) == '^' && *(ptr-3) == '=') quote = !quote;
+                    else if (*(ptr - 2) == '=') quote = !quote;
+                }
+                else quote = !quote;
+            }
+
 			// PAY NO SPECIAL ATTENTION TO NON-STARTING QUOTEMARKS, ESP 69"
-			if (special) // try to end a variable if not utf8 char or such
+            // except when bound to pattern assignment  xxx:=^" or xxx:="
+            if (quote)
+            {
+
+            }
+			else if (special) // try to end a variable if not utf8 char or such
 			{
-				if (special == '$' && (c == '.' || c == '[') && (LegalVarChar(*ptr) || *ptr == '$' )) {;} // legal data following . or [
+				if (special == '$' && (c == '.' || c == '[') && (LegalVarChar(*ptr) || *ptr == '$' || (*ptr == '\\' && ptr[1] == '$') )) {;} // legal data following . or [
 				else if (special == '$' &&  c == ']' && bracket) {;} // allowed trailing array close
-				else if (special == '$' && c == '$' && (priorchar == '.' || priorchar == '[' || priorchar == '$' || priorchar == 0)){;} // legal start of interval variable or transient var continued
+				else if (special == '$' && c == '$' && (priorchar == '.' || priorchar == '[' || priorchar == '$' || priorchar == 0 || priorchar == '\\')){;} // legal start of interval variable or transient var continued
 				else if ((special == '%' || special == '_' || special == '@') && priorchar == 0) {;}
-				else if (!LegalVarChar(c)) 
+				else if (!LegalVarChar(c) && c != '\\') 
 					break;
 				if (c == '[' && !bracket) bracket = true;
 				else if (c == ']' && bracket) bracket = false;
@@ -2512,7 +2652,7 @@ char* BalanceParen(char* ptr,bool within,bool wildcards) // text starting with (
 			continue;
 		}
 		if (quoting) continue;	// stuff in quotes is safe 
-		if (wildcards && *ptr == '_' && !IsDigit(ptr[1]) && *(ptr-1) == ' ')
+		if (wildcards && *ptr == '_' && !IsDigit(ptr[1]) && IsWhiteSpace(*(ptr-1)))
 		{
 			SetWildCardNull();
 		}
@@ -2536,7 +2676,11 @@ char* BalanceParen(char* ptr,bool within,bool wildcards) // text starting with (
 char* SkipWhitespace(char* ptr)
 {
     if (!ptr || !*ptr) return ptr;
-    while (IsWhiteSpace(*ptr)) ++ptr;
+    while (IsWhiteSpace(*ptr))
+    {
+        if (!convertTabs && *ptr == '\t') return ptr; // leave to be seen
+        ++ptr;
+    }
     return ptr; 
 }
 
@@ -2571,8 +2715,15 @@ char* Purify(char* msg) // used for logging to remove real newline characters so
 
 size_t OutputLimit(unsigned char* data) // insert eols where limitations exist
 {
+    char* original1 = (char*)data;
 	char extra[HIDDEN_OVERLAP+1];
-	strncpy(extra,((char*)data) + strlen((char*)data),HIDDEN_OVERLAP); // preserve any hidden data on why and serverctrlz
+    char* mydata = (char*)data;
+    size_t len = strlen(mydata) + 1; // ptr to ctrlz ctrlz + why
+    char* zzwhy = mydata + len;
+    size_t len1 = strlen(zzwhy) + 1; 
+    char* active = zzwhy + len1 + 1;
+    size_t len2 = strlen(active) + 1;
+	memcpy(extra, zzwhy,HIDDEN_OVERLAP); // preserve any hidden data on why and serverctrlz
 
 	unsigned char* original = data;
 	unsigned char* lastBlank = data;
@@ -2591,7 +2742,7 @@ size_t OutputLimit(unsigned char* data) // insert eols where limitations exist
 		if (*data == ' ') lastBlank = data;
 		else if (*data == '\n') lastAt = lastBlank = data+1; // internal newlines restart checking
 	}
-	strncpy(((char*)data) + strlen((char*)data), extra, HIDDEN_OVERLAP);
+	memcpy(((char*)data) +  1, extra, HIDDEN_OVERLAP);
 	return data - original;
 }
 
@@ -3180,7 +3331,7 @@ void MakeUpperCase(char* ptr)
 			*ptr = (char)c & 0xfe;
 		}
 		else if (utfcharacter[1]) ptr = x - 1;
-		else *ptr = GetUppercaseData(*ptr);
+        else  *ptr = GetUppercaseData(*ptr);
 	}
 }
 
@@ -3432,11 +3583,11 @@ RETRY: // for sampling loopback
 	}
 
 	if (readAhead >= 6)
-		Log(STDTRACELOG,(char*)"Heavy long line? %s\r\n",documentBuffer);
-	if (autonumber) Log(ECHOSTDTRACELOG,(char*)"%d: %s\r\n",inputSentenceCount,inBuffer);
+		Log(STDUSERLOG,(char*)"Heavy long line? %s\r\n",documentBuffer);
+	if (autonumber) Log(ECHOSTDUSERLOG,(char*)"%d: %s\r\n",inputSentenceCount,inBuffer);
 	else if (docstats)
 	{
-		if ((++docSentenceCount % 1000) == 0)  Log(ECHOSTDTRACELOG,(char*)"%d: %s\r\n",docSentenceCount,inBuffer);
+		if ((++docSentenceCount % 1000) == 0)  Log(ECHOSTDUSERLOG,(char*)"%d: %s\r\n",docSentenceCount,inBuffer);
 	}
 	wasEmptyLine = false;
 	if (docOut) fprintf(docOut,(char*)"\r\n%s\r\n",inBuffer);

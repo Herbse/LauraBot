@@ -69,14 +69,14 @@ void PopOutputBuffers()
 void AllocateOutputBuffer()
 {
 	PushOutputBuffers();
-	currentRuleOutputBase = currentOutputBase = AllocateBuffer(); // cant use stack- others may allocate on it from output and we cant free them
+	currentRuleOutputBase = currentOutputBase = AllocateBuffer("allocateoutputbuffer"); // cant use stack- others may allocate on it from output and we cant free them
 	currentOutputLimit = maxBufferSize;
 	*currentOutputBase = 0;
 }
 
 void FreeOutputBuffer()
 {
-	FreeBuffer(); // presumed the current buffer allocated via AllocateOutputBuffer
+	FreeBuffer("freeoutputbuffer"); // presumed the current buffer allocated via AllocateOutputBuffer
 	PopOutputBuffers();
 }
 
@@ -263,56 +263,56 @@ void ReformatString(char starter, char* input,char*& output, FunctionResult& res
 		{
 			char* base = input; 
 			while (*++input && IsDigit(*input)){;} // find end of function variable name 
-			char* tmp = FNVAR(base+1);
+			char* tmp1 = FNVAR(base+1);
 			// if tmp turns out to be $var or _var %var, need to recurse to get it
-			if (*tmp == LCLVARDATA_PREFIX && tmp[1] == LCLVARDATA_PREFIX)
+			if (*tmp1== LCLVARDATA_PREFIX && tmp1[1] == LCLVARDATA_PREFIX)
 			{
-				strcpy(output,tmp+2);
+				strcpy(output,tmp1+2);
 				output = FixFormatOutput(output,controls); 	// is already evaled
 			}
-			else if (*tmp == USERVAR_PREFIX && !IsDigit(tmp[1])) // user variable (could be json object ref)
+			else if (*tmp1 == USERVAR_PREFIX && !IsDigit(tmp1[1])) // user variable (could be json object ref)
 			{
-				strcpy(output,GetUserVariable(tmp));
+				strcpy(output,GetUserVariable(tmp1));
 				output = FixFormatOutput(output,controls); 
 			}
-			else if (*tmp == '_' && IsDigit(tmp[1])) // canonical match variable
+			else if (*tmp1 == '_' && IsDigit(tmp1[1])) // canonical match variable
 			{
-				char* wildbase = tmp++;
-				if (IsDigit(*tmp)) ++tmp; // 2nd digit
+				char* wildbase = tmp1++;
+				if (IsDigit(*tmp)) ++tmp1; // 2nd digit
 				strcpy(output,GetwildcardText(GetWildcardID(wildbase),true));
 				output = FixFormatOutput(output,controls); 
 			}
-			else if (*tmp == '\'' && tmp[1] == '_' && IsDigit(tmp[2])) // quoted match variable
+			else if (*tmp1 == '\'' && tmp1[1] == '_' && IsDigit(tmp1[2])) // quoted match variable
 			{
-				char* wildbase = ++tmp;
-				++tmp;
-				if (IsDigit(*tmp)) ++tmp; // 2nd digit
+				char* wildbase = ++tmp1;
+				++tmp1;
+				if (IsDigit(*tmp)) ++tmp1; // 2nd digit
 				strcpy(output,GetwildcardText(GetWildcardID(wildbase),false));
 				output = FixFormatOutput(output,controls);
 			}
-			else if (*tmp == SYSVAR_PREFIX && IsAlphaUTF8(tmp[1])) // system variable
+			else if (*tmp1 == SYSVAR_PREFIX && IsAlphaUTF8(tmp1[1])) // system variable
 			{
-				char* value = SystemVariable(tmp,NULL);
+				char* value = SystemVariable(tmp1,NULL);
 				if (*value) 
 				{
 					strcpy(output,value);
 					output = FixFormatOutput(output,controls);
 				}
-				else if (!FindWord(tmp)) 
+				else if (!FindWord(tmp1)) 
 				{
-					strcpy(output,tmp);
+					strcpy(output,tmp1);
 					output = FixFormatOutput( output,controls); // not a system variable
 				}
 			}	
-			else if (*tmp == FUNCTIONSTRING && (tmp[1] == '"' || tmp[1] == '\''))
+			else if (*tmp1 == FUNCTIONSTRING && (tmp1[1] == '"' || tmp1[1] == '\''))
 			{
-				ReformatString(tmp[1],tmp+2,output,result,controls);
+				ReformatString(tmp1[1],tmp1+2,output,result,controls);
 				output += strlen(output);
 			}
-			else if (!stricmp(tmp,(char*)"null")) {;} // value is to be ignored
+			else if (!stricmp(tmp1,(char*)"null")) {;} // value is to be ignored
 			else 
 			{
-				strcpy(output,tmp);
+				strcpy(output,tmp1);
 				output = FixFormatOutput(output,controls); 
 			}
 		}
@@ -330,22 +330,22 @@ void ReformatString(char starter, char* input,char*& output, FunctionResult& res
 		else if (prior == '\\') // protected special character
 		{
 			++input;
-			if (starter == '"' && *input == 'n') 
+			if ((starter == '"' || starter == '\'') && *input == 'n')
 			{
 				strcpy(output,"\\n");
 				output += 2;
 			}
-			else if (starter == '"' && *input == 't') 
+			else if ((starter == '"' || starter == '\'') && *input == 't')
 			{
 				strcpy(output,"\\t");
 				output += 2;
 			}
-			else if (starter == '"' && *input == 'r') 
+			else if ((starter == '"' || starter == '\'') && *input == 'r')
 			{
 				strcpy(output,"\\r");
 				output += 2;
 			}
-			else if (starter == '"') *output++ = *input; // just pass along the protected char in ^"xxx" strings
+			else if ((starter == '"' || starter == '\'')) *output++ = *input; // just pass along the protected char in ^"xxx" strings
 			else // is ^'xxxx' string - other than our special ' we need, leave all other escapes alone as legal json
 			{
 				if (str) *output++ = *input;  // copy inside a string
@@ -364,14 +364,14 @@ void ReformatString(char starter, char* input,char*& output, FunctionResult& res
 	}
 	original[len] = c;
 	*output = 0; // when failures, return the null string
-	if (trace & TRACE_OUTPUT) Log(STDTRACELOG,(char*)" %s",start);
+	if (trace & TRACE_OUTPUT) Log(STDUSERLOG,(char*)" %s",start);
 }
 
 void StdNumber(char* word,char*& buffer,int controls) // text numbers may have sign and decimal
 {
 	size_t len = strlen(word);
 	char* ptr = word;
-    if ( IsAlphaUTF8(*ptr) || !IsDigitWord(word, AMERICAN_NUMBERS) || strchr(word,':')) // either its not a number or its a time - leave unchanged
+    if (IsAlphaUTF8(*ptr) || !IsDigitWord(word, AMERICAN_NUMBERS) || strchr(word,':')) // either its not a number or its a time - leave unchanged
     {
         strcpy(buffer,word);  
 		if (controls & OUTPUT_NOUNDERSCORE)
@@ -386,20 +386,32 @@ void StdNumber(char* word,char*& buffer,int controls) // text numbers may have s
 	// capture any percentage symbol
 	char* end = word + len;
 	bool percent = false;
-	if (*(end - 1) == '%')
+	if (*(end - 1) == '%' &&  !(controls & (ASSIGNMENT | OUTPUT_UNTOUCHEDSTRING)))
 	{
 		*--end = 0;
 		percent = true;
 	}
 
+    char c = IsFloat(word, end);
+    if (c == 'e') // leave exponent numbers in original form. 
+    {
+        strcpy(buffer, word);
+        return;
+    }
+    if (controls & (ASSIGNMENT | OUTPUT_UNTOUCHEDSTRING)) // make no transformation on assignment
+    {
+        strcpy(buffer, word);
+        return;
+    }
+
 	int useNumberStyle = numberStyle;
 	if (controls & OUTPUT_NOCOMMANUMBER || len < 5) useNumberStyle = NOSTYLE_NUMBERS;
 
-	if (IsFloat(word,end))
+	if (c == 1)
 	{
 		if (!fullfloat) // insure is not full
 		{
-			char c = word[len];
+			c = word[len];
 			word[len] = 0;
 			WriteFloat(buffer, atof(word), useNumberStyle);
 			word[len] = c;
@@ -485,21 +497,21 @@ static char* ProcessChoice(char* ptr,char* buffer,FunctionResult &result,int con
 	{
 		int r = random(count);
 		if (outputchoice >= 0 && outputchoice < count) r = outputchoice; // forced by user
-		char* ptr = SkipWhitespace(choiceset[r]);
-		if (*ptr == ']') break; // choice does nothing by intention
+		char* ptr1 = SkipWhitespace(choiceset[r]);
+		if (*ptr1 == ']') break; // choice does nothing by intention
 		char level = 0;
-		if (IsAlphaUTF8(*ptr) && ptr[1] == ':' && ptr[2] == ' ') 
+		if (IsAlphaUTF8(*ptr1) && ptr1[1] == ':' && IsWhiteSpace(ptr1[2])) 
 		{
-			level = *ptr;
-			ptr += 3; // skip special rejoinder
+			level = *ptr1;
+			ptr1 += 3; // skip special rejoinder
 		}
-		Output(ptr,buffer,result,controls);
+		Output(ptr1,buffer,result,controls);
 		if (result & ENDCODES) break; // declared done
 		
 		// is choice a repeat of something already said... if so try again
 		if (*buffer && HasAlreadySaid(buffer)) 
 		{
-			if (trace & TRACE_OUTPUT) Log(STDTRACELOG,(char*)"Choice %s already said\r\n",buffer);
+			if (trace & TRACE_OUTPUT) Log(STDUSERLOG,(char*)"Choice %s already said\r\n",buffer);
 			*buffer = 0;
 			choiceset[r] = choiceset[--count];
 		}
@@ -612,7 +624,7 @@ static char* Output_Function(char* word, char* ptr,  char* space,char*& buffer, 
 		if (!once && IsAssignmentOperator(ptr)) ptr = PerformAssignment(word,ptr,buffer,result); 
 		else
 		{
-			char* value = FNVAR(word+1);
+            char* value = FNVAR(word+1);
 			size_t len = strlen(value);
 			size_t size = (buffer - currentOutputBase);
 			if ((size + len) >= (currentOutputLimit-50) ) 
@@ -649,7 +661,7 @@ static char* Output_Function(char* word, char* ptr,  char* space,char*& buffer, 
 		else // we are right side (expression) indirect
 		{
 			Output(word+1,buffer,result,controls); // no leading space  - we now have the variable value from the indirection
-			if (word[1] == USERVAR_PREFIX) // direct retry to avoid json issues
+			if (word[1] == USERVAR_PREFIX && *ptr != '(') // direct retry to avoid json issues (unless function call)
 			{
 				strcpy(word,GetUserVariable(word+1));
 				Output_Dollar(word, "", space,buffer,controls,result,false,false); // allow json processing
@@ -658,8 +670,9 @@ static char* Output_Function(char* word, char* ptr,  char* space,char*& buffer, 
 		}
 	}
 	else if (!strcmp(word,(char*)"^if")) ptr = HandleIf(ptr,buffer,result);  
-	else if (!strcmp(word,(char*)"^loop")) ptr = HandleLoop(ptr,buffer,result); 
-	else if (word[1] == '^') // if and loop
+	else if (!strcmp(word,(char*)"^loop")) ptr = HandleLoop(ptr,buffer,result,false); 
+    else if (!strcmp(word, (char*)"^jsonloop")) ptr = HandleLoop(ptr, buffer, result,true);
+    else if (word[1] == '^') // if and loop
 	{
 		if (!once && IsAssignmentOperator(ptr))  
 			ptr = PerformAssignment(word,ptr,buffer,result); //   =  or *= kind of construction
@@ -863,7 +876,7 @@ static char* Output_Underscore(char* word, char* ptr, char* space,char*& buffer,
 		if (id >= 0)
 		{
 			StdNumber(wildcardCanonicalText[id],buffer,controls);
-			if (controls & OUTPUT_NOQUOTES && *buffer == '"') // remove quotes from variable data
+			if (controls & OUTPUT_NOQUOTES && *buffer == '"') // remove quotes from match variable's data
 			{
 				size_t len = strlen(buffer);
 				if (buffer[len-1] == '"')
@@ -898,10 +911,25 @@ static char* Output_Dollar(char* word, char* ptr, char* space,char*& buffer, uns
 			ptr = PerformAssignment(word,ptr,buffer,result); 
 		else
 		{
+            char* at1 = word;
+            while (*at1 == '_' || *at1 == '$') ++at1;
+            while (*++at1)
+            {
+                if (IsLegalNameCharacter(*++at1) || *at1 == '.' || *at1 == '[' || *at1 == ']' || *at1 == '$'); // find real end of var allowing json references
+                else if ((*at1 == '$') && (*(at1 - 1) == '[' || *(at1 - 1) == '.')) { ; } // allowed variable json ref
+                else break;
+            }
+            if (at1 && *at1)
+            {
+                *at1 = 0;
+                size_t len = at1 - word;
+                ptr = ptr - len;
+            }
+
 			char* value = GetUserVariable(word,nojson);
 			StdNumber(value,buffer,controls);
 			char* at = SkipWhitespace(buffer);
-			if (controls & OUTPUT_NOQUOTES && *at == '"') // remove quotes from variable data
+			if (controls & OUTPUT_NOQUOTES && *at == '"') // remove quotes from a variable's data
 			{
 				size_t len = strlen(at);
 				if (at[len-1] == '"')
@@ -1172,7 +1200,9 @@ char* Output(char* ptr,char* buffer,FunctionResult &result,int controls)
 			}
 		}
 
-		//   update location and check for overflow
+        buffer = FixFormatOutput(buffer, controls);
+
+        //   update location and check for overflow
 		buffer += strlen(buffer);
 		if (quoted && !startQuoted) startQuoted = buffer;
 		unsigned int size = (buffer - currentOutputBase);

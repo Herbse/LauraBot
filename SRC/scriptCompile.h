@@ -1,7 +1,7 @@
 #ifndef _SCRIPTCOMPILEH_
 #define _SCRIPTCOMPILEH_
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -19,16 +19,24 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 #define NOTE_KEYWORDS 4 // track keywords used
 #define NO_SUBSTITUTE_WARNING 8 // dont warn about substitutions
 #define NO_SPELL 16		// test nothing
+#define MAX_ERRORS 200
+#define MAX_WARNINGS 200
 
 #define ARGSETLIMIT 40 // ^0...^39
 extern unsigned int buildID; // build 0 or build 1
 extern char* newBuffer;
+extern char* oldBuffer;
 extern bool compiling;
-extern char botheader[MAX_WORD_SIZE];
+extern char scopeBotName[MAX_WORD_SIZE]; // current botname being compiled
 extern bool patternContext;
 extern uint64 grade;
 extern char* lastDeprecation;
 extern unsigned int buildId;
+extern char errors[MAX_ERRORS][MAX_WORD_SIZE];
+extern unsigned int errorIndex;
+extern char warnings[MAX_WARNINGS][MAX_WORD_SIZE];
+extern unsigned int warnIndex;
+extern char* tableinput;
 
 void ScriptError();
 void EraseTopicFiles(unsigned int build,char* name);
@@ -36,28 +44,29 @@ void InitScriptSystem();
 void SaveCanon(char* word, char* canon);
 
 char* ReadDisplayOutput(char* ptr,char* buffer);
-  
+void EndScriptCompiler();
+bool StartScriptCompiler(bool normal = true, bool live = false);
+
+#define BADSCRIPT(...) {ScriptError(); Log((compiling) ? BADSCRIPTLOG : STDUSERLOG , __VA_ARGS__); JumpBack();}
+
 #ifndef DISCARDSCRIPTCOMPILER
 int ReadTopicFiles(char* name,unsigned int build, int spell);
-char* ReadPattern(char* ptr, FILE* in, char* &data,bool macro,bool ifstatement, bool livecall = false);
+char* ReadPattern(char* ptr, FILE* in, char* &data,bool macro,bool ifstatement);
+char* ReadIf(char* word, char* ptr, FILE* in, char* &data, char* rejoinders);
 char* ReadOutput(bool optionalBrace,bool nested,char* ptr, FILE* in,char* &data,char* rejoinders,char* existingRead = NULL,WORDP call = NULL, bool choice = false);
 char* CompileString(char* ptr);
 void ScriptWarn();
-void EndScriptCompiler();
-bool StartScriptCompiler();
-#define WARNSCRIPT(...) {if (compiling) {ScriptWarn(); Log(STDTRACELOG, __VA_ARGS__);} } // readpattern calls from functions should not issue warnings
+#define WARNSCRIPT(...) {if (compiling) {ScriptWarn(); Log(STDUSERLOG, __VA_ARGS__);} } // readpattern calls from functions should not issue warnings
 #else
-#define WARNSCRIPT(...) {Log(STDTRACELOG, __VA_ARGS__); } // readpattern calls from functions should not issue warnings
+#define WARNSCRIPT(...) {Log(STDUSERLOG, __VA_ARGS__); } // readpattern calls from functions should not issue warnings
 #endif
 
 // ALWAYS AVAILABLE
 extern unsigned int hasErrors;
-
+void UnbindBeenHere();
 void AddWarning(char* buffer);
 void AddError(char* buffer);
 char* ReadNextSystemToken(FILE* in,char* ptr, char* word, bool separateUnderscore=true,bool peek=false);
 char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore=true);
-
-#define BADSCRIPT(...) {ScriptError(); Log((compiling) ? BADSCRIPTLOG : STDTRACELOG , __VA_ARGS__); JumpBack();}
 
 #endif

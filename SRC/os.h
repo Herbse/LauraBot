@@ -2,7 +2,7 @@
 #define _OSH_
 
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -22,6 +22,11 @@ struct FACT;
 typedef unsigned int FACTOID; //   a fact index
 typedef unsigned int FACTOID_OR_MEANING;	// a fact or a meaning (same representation)
 
+typedef unsigned int STACKREF; // stack offset reference
+typedef unsigned int HEAPREF; // heap offset reference
+typedef unsigned int HEAPLINK; //   a threaded list in the heap
+typedef unsigned int STACKLINK; //   a threaded list in the stack
+
 struct WORDENTRY;
 typedef WORDENTRY* WORDP;
 
@@ -37,7 +42,7 @@ typedef struct WORDENTRY //   a dictionary entry  - starred items are written to
 
                                     //   if you edit this, you may need to change ReadBinaryEntry and WriteBinaryEntry
     union {
-        char* botNames;				//   for topic name (start with ~) or planname (start with ^) - bot topic applies to  - only used by script compiler
+        char* topicBots;				//   for topic name (start with ~) or planname (start with ^) - bot topic applies to  - only used by script compiler
         unsigned int planArgCount;	// number of arguments in a plan
         unsigned char* fndefinition; //   for nonplan macro name (start with ^) - if FUNCTION_NAME is on and not system function, is user script - 1st byte is argument count
         char* userValue;			//   if a $uservar (start with $) OR if a search label uservar 
@@ -63,10 +68,9 @@ typedef struct WORDENTRY //   a dictionary entry  - starred items are written to
     }x;
 #ifndef DISCARDCOUNTER
     unsigned int counter;			// general storage slot
+//    unsigned int counter1;			// general storage slot
 #endif
 } WORDENTRY;
-
-
 
 typedef struct CALLFRAME
 {
@@ -84,7 +88,7 @@ typedef struct CALLFRAME
     int oldRuleID;
     int oldTopic;
     int oldRuleTopic;
-    int memindex;
+    unsigned int memindex;
     char* oldRule;
     int heapDepth;
     union  {
@@ -93,6 +97,10 @@ typedef struct CALLFRAME
     }x;
 
 }CALLFRAME;
+
+#define SAVESYSTEMSTATE()     int oldDepth = globalDepth; int oldBuffer = bufferIndex; char* oldStack = stackFree;
+#define RESTORESYSTEMSTATE()  infiniteStack = false; globalDepth = oldDepth; bufferIndex = oldBuffer; stackFree = oldStack;
+
 // EXCEPTION/ERROR
 // error recovery
 #define SERVER_RECOVERY 4
@@ -114,8 +122,12 @@ extern int ide;
 extern bool idestop;
 extern bool idekey;
 #define RECORD_SIZE 4000
+extern jmp_buf linuxCrash;
+extern bool linuxCrashSet;
 
 // MEMORY SYSTEM
+extern bool convertTabs;
+extern bool infiniteStack;
 extern CALLFRAME* releaseStackDepth[MAX_GLOBAL];
 extern unsigned int maxBufferLimit;
 extern unsigned int maxReleaseStackGap;
@@ -134,17 +146,17 @@ extern char* stackStart;
 extern char* heapEnd;
 extern unsigned long minHeapAvailable;
 extern int loglimit;
-char* Index2Heap(unsigned int offset);
-inline unsigned int Heap2Index(char* str) {return (!str) ? 0 : (unsigned int)(heapBase - str);}
-inline unsigned int Stack2Index(char* str) { return (!str) ? 0 : (unsigned int)(str - stackStart); }
-inline char* Index2Stack(unsigned int ptr) { return (!ptr) ? 0 : (stackStart + ptr); }
+char* Index2Heap(HEAPREF offset);
+inline HEAPREF Heap2Index(char* str) {return (!str) ? 0 : (unsigned int)(heapBase - str);}
+inline STACKREF Stack2Index(char* str) { return (!str) ? 0 : (unsigned int)(str - stackStart); }
+inline char* Index2Stack(STACKREF ptr) { return (!ptr) ? 0 : (stackStart + ptr); }
 
 // MEMORY SYSTEM
 void ResetBuffers();
 char* AllocateBuffer(char*name = "");
 void FreeBuffer(char*name = "");
 void CloseBuffers();
-char* AllocateStack(char* word, size_t len = 0, bool localvar = false, bool align4 = false);
+char* AllocateStack(char* word, size_t len = 0, bool localvar = false, int align = 0);
 void ReleaseInfiniteStack();
 void ReleaseStack(char* word);
 char* InfiniteStack(char*& limit,char* caller);
@@ -168,6 +180,7 @@ void EncryptInit(char* params);
 void DecryptInit(char* params);
 void EncryptRestart();
 extern unsigned int currentFileLine;
+extern unsigned int currentLineColumn;
 extern unsigned int maxFileLine;
 extern char currentFilename[MAX_WORD_SIZE];
 int FClose(FILE* file);
@@ -258,8 +271,8 @@ unsigned int GetFutureSeconds(unsigned int seconds);
 #define SERVERLOG 0
 #define STDUSERLOG 1
 #define STDDEBUGLOG 2
-#define ECHOSTDTRACELOG 3
-#define STDTRACELOG 4
+#define ECHOSTDUSERLOG 3
+// #define 4
 #define STDTIMELOG 5
 #define DBTIMELOG 6
 
@@ -277,6 +290,7 @@ extern bool oob;
 extern bool silent;
 extern uint64 logCount;
 extern char* testOutput;
+extern char crashpath[MAX_WORD_SIZE];
 
 #define ReportBug(...) { Bug(); Log(BUGLOG, __VA_ARGS__);}
 #define DebugPrint(...) Log(STDDEBUGLOG, __VA_ARGS__)
@@ -306,4 +320,10 @@ extern unsigned int randIndex,oldRandIndex;
 unsigned int random(unsigned int range);
 uint64 Hashit(unsigned char * data, int len,bool & hasUpperCharacters, bool & hasUTF8Characters);
 
+#endif
+
+
+#ifdef LINUX
+	void setSignalHandlers ();
+	void signalHandler( int signalcode );
 #endif

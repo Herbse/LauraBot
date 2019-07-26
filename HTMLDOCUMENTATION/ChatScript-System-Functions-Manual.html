@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1 id="chatscript-system-functions-manual">ChatScript System Functions Manual</h1>
-<p>© Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 2/18/2018 cs8.1</p>
+<p>© Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 7/14/2019 cs9.6</p>
 <ul>
 <li><a href="ChatScript-System-Functions-Manual.html#topic-functions">Topic Functions</a></li>
 <li><a href="ChatScript-System-Functions-Manual.html#marking-functions">Marking Functions</a></li>
@@ -24,10 +24,11 @@
 <li><a href="ChatScript-System-Functions-Manual.html#fact-functions">Facts Functions</a></li>
 </ul>
 <p>System functions are predefined and can be intermixed with direct output. Generally they are used from the output side of a rule, but in many cases nothing prevents you from invoking them from inside a pattern. When used in a pattern, they do not write out any text output to the user. But their output will be tested the same as it would from an <code>if</code> statement, meaning 0 and false are failures.</p>
-<p>You can write them with or without a <code>^</code> in front of their name. With is clearer, but you don’t have to. The only time you must is if the first thing you want to do in a gambit is call a function (unlikely).</p>
-<pre><code>t: name(xxx) </code></pre>
-<p>This is ambiguous. Is it function call or label and pattern?</p>
-<p>The above is treated as a label and pattern. You can force it to be a function call by one of these:</p>
+<p>You can write them with or without a <code>^</code> in front of their name in output. With is clearer, but you don’t have to. The only times you must is if the first thing you want to do in a gambit is call a function (unlikely) or you are in a pattern.</p>
+<pre><code>t: name(xxx) 
+u: ( [find (me go) ])</code></pre>
+<p>These are ambiguous. In the gambit is it function call or label. In the responder is find a function name or just a word?</p>
+<p>The above gambit is treated as a label and pattern. You can force it to be a function call by one of these:</p>
 <pre><code>t: ^name(xxx)   # explicilty say it is a function
 
 t: () name(xxx) # explicitly add an empty pattern</code></pre>
@@ -50,6 +51,8 @@ t: () name(xxx) # explicitly add an empty pattern</code></pre>
 <p>If value is a topic name, runs the topic in gambit mode to see if any gambits arise. If none arise from the first value, it will try the second, and so on. It does not fail unless a rule forces it to fail or the named topic doesn’t exist or is disabled. You can supply an optional last argument <code>FAIL</code>, in which case it will return <code>FAILRULE_BIT</code> if it didn't fail but it didn't generate any new output either.</p>
 <p>The value may be <code>~</code>, which means use the current topic you are within. It can also be <code>PENDING</code>, which means pick a topic from the pending topics stack (they are all pending being returned to but not including the current topic). Or it can be any other word, which will be a keyword of some topic to pick. E.g.,</p>
 <pre><code>^gambit(~ PENDING ~mygeneraltopic FAIL)</code></pre>
+<h3 id="findrule-label"><code>^findrule ( label )</code></h3>
+<p>On the assumption that you only have one occurence of a rule label in your script, if you provide that label to this function, it will find the corresponding rule anywhere in your script and return the rule tag corresponding to it. If you have more than one such labelled Rule it merely returns the first one it finds (which will be earliest rule in earliest compiled topic).</p>
 <h3 id="getrule-what-label"><code>^getrule ( what label )</code></h3>
 <p>for the given rule label or tag, return some fragment of the rule.</p>
 <p><em>what</em> can be <code>tag</code>, <code>type</code>,<code>label</code>, <code>pattern</code>, <code>output</code>,<code>topic</code>, and <code>usable</code>.</p>
@@ -131,17 +134,18 @@ It's the same if the current rule was a top level rule, but if the current rule 
 <pre><code>^setrejoinder(output %inputrejoinder)</code></pre>
 <p>this would be problematic, because it would set it to the rule after, which would be wrong. For this use the kind of &quot;copy&quot; which does not have issues with this.</p>
 <pre><code>^setrejoinder(copy %inputrejoinder)</code></pre>
-<p>If <em>kind</em> is output or copy and no tag is given or the <em>tag</em> is <code>null</code>, the output rejoinder is cleared (analogous to ^disable).</p>
-<p>If the <em>kind</em> is input and no tag is given or the <em>tag</em> is <code>null</code>, the input rejoinder is cleared.</p>
+<p>If <em>kind</em> is output or copy and the <em>tag</em> is <code>null</code>, the output rejoinder is cleared (analogous to ^disable).</p>
+<p>If the <em>kind</em> is input and the <em>tag</em> is <code>null</code>, the input rejoinder is cleared.</p>
+<p>To kill a set outputrejoinder, use ^disable(OUTPUTREJOINDER).</p>
 <h3 id="topicflags-topic"><code>^topicflags ( topic )</code></h3>
 <p>Given a topic name, return the control bits for that topic. The bits are mapped in dictionary_system.h as <code>TOPIC_*</code>.</p>
 <h3 id="sleep-milliseconds"><code>^sleep ( milliseconds )</code></h3>
 <p>This stalls the engine for that many milliseconds. If this is a server, the server is unavailable until sleep is done. Use with care. A good use is when starting up a server instance and the boot process involves reading from an API. If your machine runs 30 instances of ChatScript launched at once (to use max CPU), then all of them hitting the same API at once may be bad for the API and forcing a randomized sleep based on processid is a good use.</p>
 <h1 id="marking-functions">Marking Functions</h1>
-<h3 id="mark-single-word-location"><code>^mark ({&quot;SINGLE&quot; word location )</code></h3>
+<h3 id="mark-word-location-one-all"><code>^mark ( word location {ONE ALL})</code></h3>
 <p>Marking and unmarking words and concepts is fundamental to the pattern matching mechanism, so the system provides both an automatic marking mechanism and manual override abilities. You can manually mark or unmark something. Automatic system marking marks all concepts implied by chasing up membership in other concepts, as does this call <code>^mark</code>. <code>word</code> can be any word, which also means you can mark something with a concept name whether or not the concept actually is defined anywhere.</p>
 <p>There are two mechanisms supported using <code>^mark</code> and <code>^unmark</code>: specific and generic.</p>
-<p>With <code>specific</code>, you name words or concepts to mark or unmark, either at a particular point in the sentence or throughout the sentence.</p>
+<p>With <code>specific</code>, you name words or concepts to mark or unmark, either at a particular point in the sentence or throughout the sentence. By default or using the optional third argument <code>ALL</code>, not only the what you name marked, but anything it in turn is a part of is marked. The optional third argument <code>ONE</code> will only mark that named word/concept and none of the hierarchy implied by its membership in yet some other concept.</p>
 <p>With <code>generic</code> you disable or reenable all existing marks on a word or words in the sentence. In fact, you go beyond that because during patttern matching words you disable are invisble entirely, and matching proceeds as if they do not exist.</p>
 <p><code>Specific</code>: effects are permanent for the volley and cross over to other rules. In documentation below, use of <code>_0</code> symbolizes use of any match variable.</p>
 <h3 id="mark-meat-_0"><code>^mark ( ~meat _0 )</code></h3>
@@ -157,7 +161,7 @@ It's the same if the current rule was a top level rule, but if the current rule 
 <h3 id="mark"><code>^mark()</code></h3>
 <p>Clears all global unmarks. restore a global ^unmark(0) exactly as it was before the global unmark.</p>
 <h3 id="unmark-word-_0"><code>^unmark ( word _0 )</code></h3>
-<p>The inverse of specific <code>^mark</code>, this takes a matchvariable that was filled at the position in the sentence you want erased and removes the mark on the word or concept set or topic name given. Pattern matching for it in that position will now fail. But it is not symmetric to <code>^mark</code> because it does not remove all implied marks that mark may have set.</p>
+<p>The inverse of specific <code>^mark</code>, this takes a matchvariable that was filled at the position in the sentence you want erased and removes the mark on the word or concept set or topic name given. Pattern matching for it in that position will now fail. If the word was a phrase, then all words in that phrase have the mark removed. Thus <code>South Georgia</code> which has <code>Georgia</code> embedded within it, and both might be ~geographic_area, will have both words unmarked if you unmark ~geographic_area. But it is not symmetric to <code>^mark</code> because it does not remove all implied marks that mark may have set.</p>
 <h3 id="unmark-n"><code>^unmark ( * n )</code></h3>
 <p>Assuming <code>n</code> is within <code>1</code> and sentence word limit, this unmarks all concepts at nth word location. If n was gotten from <code>^position</code> of a match variable, it is the range of that match variable.</p>
 <h3 id="unmark-word-all"><code>^unmark ( word all )</code></h3>
@@ -165,16 +169,21 @@ It's the same if the current rule was a top level rule, but if the current rule 
 <p><code>Generic:</code> effects are transient if done inside a pattern, last the volley if done in output. When you are trying to analyze pieces of a sentence, you may want to have a pattern that finds a kind of word, notes information, then hides that kind of word and reanalyzes the input again looking for another of that ilk.</p>
 <p>Being able to temporarily hide marks can be quite useful, and this means typically you use <code>^unmark</code> of some flavor to hide words, and then <code>^mark</code> later to reenable access to those hidden words.</p>
 <h3 id="unmark-_0"><code>^unmark ( * _0 )</code></h3>
-<p>Aays turn off ALL matches on this location temporarily. The word becomes invisible. It disables matching at any of the words spanned by the match variable. This unmark will also block subsequent specific marking using <code>^mark</code> at their locations.</p>
-<h3 id="mark-_0"><code>^mark ( * _0 )</code></h3>
-<p>To restore all marks to some location.</p>
-<h3 id="unmark"><code>^unmark ( * )</code></h3>
+<p>Turns off ALL matches on this location temporarily. The word becomes invisible and takes up no space in the sentence. It disables matching at any of the words spanned by the match variable. This unmark will also block subsequent specific marking using <code>^mark</code> at their locations.</p>
+<h3 id="unmark-_0-1"><code>^unmark ( @ _0 )</code></h3>
+<p>Turns off ALL matches on this location range but keep the word visible. It cannot be matched by anything but a wildcard and takes up its space in the sentence. Often this is used before something like `mark(~city _0) where you are taking something with ambiguous meanings, like &quot;nice&quot;, and removing all wrong meanings (and right ones) and putting back just right ones. This is a way for the rest of processing to only see the correct interpretation of a word.</p>
 <p>Turns off matching on all words of the sentence.</p>
+<h3 id="mark-_0"><code>^mark ( * _0 )</code></h3>
+<p>To restore all marks to some location after having used ^unmark(* _0)</p>
+<h3 id="unmark"><code>^unmark ( * )</code></h3>
+<p>Turn off all words of the sentence. Probably not that useful.</p>
 <h3 id="mark-1"><code>^mark ( * )</code></h3>
-<p>Restores all marks of the sentence.</p>
+<p>Restores all marks of the sentence, for words that had ^unmark(* _0) performed.</p>
 <p>Reminder: If you do a generic unmark from within a pattern, it is transient and will be turned off when the pattern match finishes (so you don't ruin later rules), whereas when you do it from output, then the change persists for the rest of the volley. Furthermore it is handy to flip specific collections of generic unmarks on an off.</p>
 <p><code>^mark()</code> memorizes the set of all * unmarks (generic unmarks) and then turns them off so normal matching will occur.</p>
 <p><code>^unmark()</code> will restore the set of generic unmarks that were flipped off using <code>^mark()</code>.</p>
+<h3 id="replacewordword-_0"><code>^replaceword(word _0)</code></h3>
+<p>You can change the word itself at the location just by providing the word you want used and the location in the sentence (as a match variable). Replacing a word does not make it visible to pattern matching. It is merely what will be retrieved (for both original and canonical).</p>
 <h3 id="position-how-matchvariable"><code>^position ( how matchvariable )</code></h3>
 <p>This returns the integer representing where the named match variable is located.</p>
 <p><em>how</em> can be <code>START</code>, <code>END</code>, or <code>BOTH</code>. Both means an encoding of where the start and end of the the match was. See <code>@_n</code> in pattern matching to set a position or the <code>^setposition</code> function.</p>
@@ -209,16 +218,11 @@ It's the same if the current rule was a top level rule, but if the current rule 
 <h3 id="input"><code>^input ( … )</code></h3>
 <p>The arguments, separated by spaces, are injected back into the input stream as the next input, processed before any pending additional input. Typically this command is then followed by <code>^fail(SENTENCE)</code> to cancel current processing and move onto the revised input.</p>
 <p>Since the sentence is fed in immediately after the current input, if you want to feed in multiple sentences, you must reverse the order so the last sentence to be processed is submitted via input first. You can detect that the current sentence comes from <code>^input</code> and not from the user by <code>%revisedInput</code> (bool) being true (1).</p>
+<p>Note: the input sentence is not what the user originally typed, so don't expect it to reflect appropriately in %originalInput. Also it is tokenized on entry, so things like commas may already have been separated.</p>
 <h3 id="original-_n"><code>^original ( _n )</code></h3>
-<p>The argument is the name of a match variable. Whatever it has memorized will be used to locate the corresponding series of words in the original raw input from the user that led to this match.</p>
-<p>E.g., if the input was: <em>I lick ice crem</em>, the converted input became <em>I lick ice_create</em> and you'd memorized the food onto a match variable, then you could do <code>^original(_0)</code> and get back <em>ice crem</em>.</p>
-<p>Another example:</p>
-<pre><code># get foreign language proper name, without any CS standard processing.
-u: what&#39;s your first name?
-    #! Anna Lisa
-    a: ( _* )
-   $firstname = ^original ( _0 )
-   Nice to meet you, $firstname </code></pre>
+<p>The argument is the name of a match variable. Whatever it has memorized will be used to locate the corresponding series of words in the original raw input from the user that led to this match. That is, the value is prior to any spell correction done by ChatScript.</p>
+<pre><code>u: (my _life) ^original(_0)</code></pre>
+<p>For input &quot;my lif&quot; spell correction will change the input to &quot;life&quot;, which matches here, but ^original will return &quot;lif&quot;.</p>
 <h3 id="position-which-_var"><code>^position ( which _var )</code></h3>
 <p>If <em>which</em> is <code>start</code> this returns the starting index of the word matched in the named <code>_var</code>.</p>
 <p>If <em>which</em> is <code>end</code> this returns the ending index. E.g.,</p>
@@ -228,6 +232,7 @@ u: what&#39;s your first name?
 <h3 id="settokenflags-value"><code>^settokenflags ( value )</code></h3>
 <p>Adds these flags to the tokenflags return from the preprocessing stage. Particularly useful for setting the <code>#QUESTIONMARK</code> flag indicating the input was perceived to be a question.</p>
 <p>For example, I treat <em>tell me about cars</em> sentences as questions by marking them as such from script (equivalent to <em>what do you know about cars?</em>).</p>
+<p>Note that the change will not impact rule matching within the topic you have just done the change, because it has commited the set of rules it will try to match. So it only applies to later topics.</p>
 <h3 id="setwildcardindex-value"><code>^setwildcardindex ( value )</code></h3>
 <p>Tells the system to start at <code>value</code> for future allocations of wildcard slots. This is only useful inside some pattern where you are trying to protect data from some previous match. Eg.</p>
 <pre><code>u: (_~animals) refine()
@@ -390,6 +395,10 @@ u: what&#39;s your first name?
 <td><code>RESPONSE_CURLYQUOTES</code></td>
 <td>change simple quotes to curly quotes (starting and ending)</td>
 </tr>
+<tr class="even">
+<td><code>RESPONSE_NOFACTUALIZE</code></td>
+<td>suppresses building bot output facts (for postprocessing)</td>
+</tr>
 </tbody>
 </table>
 <h3 id="preprint-stream"><code>^preprint ( stream )</code></h3>
@@ -408,6 +417,8 @@ u: what&#39;s your first name?
 <h3 id="responseruleid-id"><code>^responseruleid ( id )</code></h3>
 <p>The rule tag generating this response from which you can get the topic. May be joined pair of rule tags if rule was relayed (reuse) from a different rule). The final rule will be first and the relay second, eg <code>~keywordless.30.0.~control.3.4</code>.</p>
 <p>If the <em>id</em> is <code>-1</code>, then all output generated will be included, analogous to what happens in the log file for <code>why</code> in the entries.</p>
+<h3 id="responsepatternresponseid"><code>^responsepattern(responseid)</code></h3>
+<p>Returns the pattern that matched inside [] of rule generating output (if it is matched that way) For a rule like: u: ([ (pattern 1) (pattern 2) ([try 3])]) It will tell you which piece of the pattern matched. Handy for debugging why a pattern matches incorrectly w/o having to read a trace log and analyzing each + and -.</p>
 <h2 id="postprocessing-functions">PostProcessing Functions</h2>
 <p>These functions are only available during postprocessing.</p>
 <h3 id="postprintbefore-stream"><code>^postprintbefore ( stream )</code></h3>
@@ -421,12 +432,14 @@ u: what&#39;s your first name?
 <p>Looks backward in the callstack for the named outputmacro, and if found returns the nth argument passed to it. Failure will be reported for n out of range or <code>^fn</code> not in the call path.</p>
 <p>This is an alterative access to function variable arguments, useful in a loop instead of having to access by variable name.</p>
 <p>If <em>n</em> is <code>0</code>, the system merely tests whether the caller exists and fails if the caller is not in the path of this call.</p>
+<h3 id="bugmsg">`^Bug(msg)</h3>
+<p>Generates a run-time bug. If you are compiling script at the time, it generates a std script bug trap. If you are not, it forces an error message into the bug log.</p>
 <h3 id="callstack-n"><code>^callstack ( @n )</code></h3>
 <p>Generates a list of transient facts into the named factset. The facts represent the callstack and have as subject the critical value (the verb is <code>callstack</code> and the object is the rule tag responsible for this entry). Items include function calls (^xxxx) and topic calls (~xxxx) and internal calls (no prefix).</p>
 <h3 id="command-args"><code>^command ( args )</code></h3>
 <p>Execute this stream of arguments through the <code>:</code> command processor. You can execute debugging commands through here. E.g.,</p>
 <pre><code>^command(:execute ^print(&quot;Hello&quot;) )</code></pre>
-<p>Note that it is hard to turn on :trace this way, because the system resets It internally at various points. The correct way to manipulate trace is to do $cs_trace = -1 in regular script, outside of ^command.</p>
+<p>Note that it is hard to turn on :trace this way, because the system resets it internally at various points. The correct way to manipulate trace is to do $cs_trace = -1 in regular script, outside of ^command.</p>
 <h3 id="end-code"><code>^end ( code )</code></h3>
 <p>Takes 1 argument and returns a code which will stop processing. Any data pending in the output stream will be shipped to the user. If <code>^end</code> is contained within the condition of an if, it merely stops it. An end rule inside a loop merely stops the loop. All other codes propagate past the loop. The codes are:</p>
 <table style="width:33%;">
@@ -474,8 +487,8 @@ u: what&#39;s your first name?
 <h3 id="eval-flags-stream"><code>^eval ( flags stream )</code></h3>
 <p>To evaluate a stream as though it were output (like to assign a variable). Can be used to execute <code>:</code>commands from script as well.</p>
 <p><em>Flags</em> are optional and match the flag capabilities of <code>^print</code>.</p>
-<p>One common flag would be <code>OUTPUT_NOQUOTES</code> if you wanted to string enclosing &quot;&quot; from a value. E.g.,</p>
-<pre><code>$$tmp = ^eval(OUTPUT_NOQUOTES ^arg1)</code></pre>
+<p>One common flag would be <code>OUTPUT_NOQUOTES</code> if you wanted to remove the enclosing &quot;&quot; from a user variable value. E.g.,</p>
+<pre><code>$$tmp = ^eval(OUTPUT_NOQUOTES $$arg1)</code></pre>
 <p><code>^eval</code> is also particularly used with variables, when you know the value of a variable is itself a variable name and you want its actual value, e.g.</p>
 <pre><code>$nox = 1
 $$tmp = join($ no x)
@@ -519,7 +532,7 @@ $$val = eval($$tmp) # $$val = 1</code></pre>
 <p>Output that has been recorded via <code>^print</code>, <code>^preprint</code>, etc is never canceled. Only pending output.</p>
 <h3 id="load-name"><code>^load ( name )</code></h3>
 <p>Normally CS takes all the data you have compiled as <code>:build 0</code> and <code>:build</code> whatever as layers 0 and 1, and loads them when CS starts up. They are then permanently resident. However, you can also compile files named <code>filesxxx2.txt</code> which will NOT be loaded automatically.</p>
-<p>You can write script that calls <code>^load</code>, naming the <code>xxx</code> part and they will be dynamically loaded, for that user only, and stay loaded for that user across all volleys until you call <code>^load</code> again. Calling load again with a different name will load that new name. Calling <code>^load(null)</code> will merely unload the dynamic layer previously loaded.</p>
+<p>You can write a script that calls <code>^load</code>, naming the <code>xxx</code> part and they will be dynamically loaded, for that user only, and stay loaded for that user across all volleys until you call <code>^load</code> again. Calling load again with a different name will load that new name. Calling <code>^load(null)</code> will merely unload the dynamic layer previously loaded.</p>
 <p><strong>WARNING</strong></p>
 <p>It's erroneous (you get whatever happens to you), if you call <code>^load</code> from within topics you have loaded via <code>^load</code>.</p>
 <h3 id="clearmatch"><code>^clearmatch()</code></h3>
@@ -614,6 +627,8 @@ if ($$newtype == $$type AND match($$newrule)) # we would match this rule</code><
 <p><em>label</em> can be a simple text label or a <code>topicname.textlabel</code>. The system tracks rule labels that generated output to the user or rules starting with the label <code>CX_</code> whether or not the rule generates output as long as it didn't fail during output.</p>
 <p><code>^inContext</code> will return how many volleys have happened since the referenced rule (normal return) if the label has output within the 5 prior volleys and will fail if not. It's like an extension of rejoinders. Rejoinders have a 1 volley context and must be placed immediately after a rule. This has a 5 volley context and are used in normal rule patterns.</p>
 <pre><code>u: (^incontext(PLAYTENNIS) why) because it was fun.</code></pre>
+<h3 id="stats-facts-dict-text"><code>^stats ( FACTS / DICT / TEXT )</code></h3>
+<p>FACTS: Returns how many free facts remain. DICT: Returns how many empty dictionary entries remain. TEXT: Returns how much space for both stack and heap remain.</p>
 <h1 id="external-access-functions">External Access Functions</h1>
 <h3 id="environment-variablename"><code>^environment ( variablename )</code></h3>
 <p>Access environment variables of the operating system. E.g.</p>
@@ -624,10 +639,10 @@ if ($$newtype == $$type AND match($$newrule)) # we would match this rule</code><
 <p>The command string is a string to pass the os shell to execute. That will return output strings (some number of them) which will have any <code>\r</code> or <code>\n</code> changed to blanks and then the string stripped of leading and trailing blanks.</p>
 <p>The string is then wrapped in double quotes so it looks like a standard ChatScript single argument string, and sent to the declared function, which must be an output macro or system function name, preceded by a quote.</p>
 <p>The function can do whatever it wants. Any output it prints to the output buffer will be concatenated together to be the output from ChatScript. If you need a doublequote in the command string, use a backslash in front of each one. They will be removed prior to sending the command. E.g.,</p>
-<pre><code>outputmacro: ^myfunc(^arg)
-^arg \n
-topic: ~test( testing )
-u: () popen( &quot;dir *.* /on&quot; &#39;^myfunc)</code></pre>
+<pre><code>    outputmacro: ^myfunc(^arg)
+    ^arg \n
+    topic: ~test( testing )
+    u: () popen( &quot;dir *.* /on&quot; &#39;^myfunc)</code></pre>
 <p>output this:</p>
 <pre><code>Volume in drive C is OS
 Volume Serial Number is 24CB-C5FC
@@ -729,6 +744,75 @@ else { $$tcpopen_error }</code></pre>
 <pre><code>^import(myfacts.txt @3).</code></pre>
 <p>If <em>set</em> is null, then facts are created but not stored into any fact-set and the subject of the first fact is returned as the answer (presumed to be a json structure).</p>
 <p>If the name includes the substring &quot;ltm&quot;, then the file will be decryptable and routes to databases if the filesystem has been overridden by Mongo, Postgres, or MySQL.</p>
+<h2 id="cs-external-api--compilepattern">CS External API- ^CompilePattern</h2>
+<p>The external API functions allow execution of rule behaviors from outside of ChatScript. This function takes in a pattern string like</p>
+<pre><code>(   [ ~bottle test] *  me)</code></pre>
+<p>and compiles it to internal format. Alternatively it accepts a std CS 'if' condition like</p>
+<pre><code>if ($var &gt;= 1 AND !$var2)</code></pre>
+<p>It returns JSON object notation in ordinary user output, e.g.</p>
+<pre><code>{ &quot;code&quot;: &quot;(....)&quot; } </code></pre>
+<p>You can take that code value and save it away somewhere and later pass it into ^testpattern. Should compilation fail, then there will be no CODE field and instead you will have an errors field.</p>
+<pre><code>{&quot;errors&quot;: [ xxx yyy ] } </code></pre>
+<p>In either case you may see a warnings field</p>
+<pre><code>{&quot;warnings&quot;: [ xxx yyy ] } </code></pre>
+<p>where xxx and yyy are warning messages.</p>
+<p>The code returned may have additional data at the start. This is used to inform spelling correction to protect words occurring in the pattern. For best results you should compile patterns in the same bot environment you expect to execute them in. The pattern won't explictly protect words it thinks the bot will already be protecting.</p>
+<h2 id="cs-external-api--testpattern">CS External API- ^TestPattern</h2>
+<p>The external API functions allow execution of rule behaviors from outside of ChatScript. ^testpattern will execute a list of patterns and tell you which one (if any) matched and possibly return match variables. The argument is a JSON object as follows</p>
+<pre><code>{ 
+&quot;input&quot;: &quot;range leak&quot;, -- required
+&quot;patterns&quot;: [  -- at least one required
+    string-returned-from-compilepattern, 
+    string-returned-from-compilepattern, 
+    ], 
+&quot;style&quot;: &quot;earliest&quot;, -- optional
+&quot;variables&quot;: { -- optional
+    &quot;$faucet&quot;: &quot;testing&quot;, 
+    &quot;$x&quot;: 1 }, 
+&quot;concepts&quot;: [  -- optional
+    { &quot;name&quot;: &quot;~stove&quot;, 
+    &quot;values&quot;: [ &quot;oven&quot;, &quot;range&quot;, &quot;cooktop&quot; ] 
+    }, 
+    { &quot;name&quot;: &quot;~leaky&quot;, 
+    &quot;values&quot;: [ &quot;&#39;leak&quot;, &quot;drip&quot;, &quot;spill&quot; ] } ] 
+}</code></pre>
+<p>Input is the user input (one or more sentences) to be matched against.</p>
+<p>Patterns is an array of pattern strings as returned by CompilePattern. They can use memorization and they can assign values. If they use memorization, you can assign those onto normal variables, which if permanent variables will be returned as &quot;newglobals&quot;. You can perform an assignment inside the pattern using something like $answer:=_0 (see Match variable assignment in Advanced patterns). The &quot;newglobals will be omitted if there are no changes.</p>
+<p>The variables and concepts fields are optional and provide context.</p>
+<p>Style is also optional and defaults to <code>first</code>. Other choices are all, best, and last. First means stop running patterns and sentences as soon as you get a match. The makes the call faster and if your patterns are ordered best first, there is no incentive to try lower priority patterns or more sentences. Last is the opposite, presumes that the patterns are ordered worst first. In addition, last will not execute any patterns earlier than the already matching one once one has been found (since it cannot improve the result). All runs all patterns on all sentences. It is good for gleaning data. Best presumes patterns are ordered best first, but once a match has been found it will move on to additional sentences to see if a better match can be found.</p>
+<p>Result is ordinary user output JSON object:</p>
+<pre><code>{ 
+    &quot;match&quot;: 1,  -- index of matching pattern
+    &quot;newglobals&quot;: { &quot;$stovetype&quot;: &quot;range&quot;, &quot;$leaktype&quot;: &quot;leak&quot; }  
+}</code></pre>
+<p>If nothing matched, the value of <code>match</code> is false. Otherwise it is the index of the matching pattern (0-based). If there are return values from matching one or more patterns, those will be listed in <code>newglobals</code>, which is omitted if there are none. Values of null are never returned.</p>
+<p>You can force ^testpattern to trace user regardless of whether tracing is on or not or whether nouserlog is set. Just prepend to your input &quot;:tracepattern&quot;</p>
+<h2 id="cs-external-api--compileoutput">CS External API- ^CompileOutput</h2>
+<p>The external API functions allow execution of rule behaviors from outside of ChatScript. This function takes in an output string like</p>
+<pre><code>if ($test) {test me}
+^callmycode($test)</code></pre>
+<p>and compiles it to internal format. It returns JSON object notation in ordinary user output, e.g.</p>
+<pre><code>{ &quot;code&quot;: &quot;(....)&quot; } </code></pre>
+<p>You can take that code value and save it away somewhere and later pass it into ^testpattern. Should compilation fail, then there will be no CODE field and instead you will have an errors field.</p>
+<pre><code>{&quot;errors&quot;: [ xxx yyy ] } </code></pre>
+<p>In either case you may see a warnings field</p>
+<pre><code>{&quot;warnings&quot;: [ xxx yyy ] } </code></pre>
+<p>where xxx and yyy are warning messages.</p>
+<h2 id="cs-external-api--testoutput">CS External API- ^TestOutput</h2>
+<p>The external API functions allow execution of rule behaviors from outside of ChatScript. The argument is a JSON object as follows</p>
+<pre><code>{ 
+&quot;output&quot;:  code-returned-from-compile-output, 
+&quot;variables&quot;: { -- optional
+    &quot;$faucet&quot;: &quot;testing&quot;, 
+    &quot;$x&quot;: 1 }, 
+}</code></pre>
+<p>If a variable value above looks like a JSON arry or object, will be transformed into the corresponding internal JSON name.</p>
+<p>The result is a JSON object</p>
+<pre><code>{
+    output: &quot;message to user&quot;, 
+    newglobals:  {&quot;$x&quot;: &quot;1&quot;, &quot;$y&quot;: &quot;testing&quot;}  -- optional
+}</code></pre>
+<p>Output may be blank if nothing is intended to be generated or the code fails in execution. Newglobals will be present if the code changes permanent global variables. Changes to transient variables $$ and local variables $_ will not be returned. If nothing is returned, the field is omitted. If a permanent variable is set to a JSON structure, the entire JSON string will BE send (and not the JSON name).</p>
 <h2 id="debugging-function-debug">Debugging Function <code>^debug ()</code></h2>
 <p>As a last ditch, you can add this function call into a pattern or the output and it will call DebugCode in <code>functionExecute.cpp</code> so you know exactly where you are and can use a debugger to follow code thereafter if you can debug c code.</p>
 <h2 id="logging-function-log-...">Logging Function <code>^log ( ... )</code></h2>
@@ -781,8 +865,9 @@ u: (%document)
 <h3 id="jsonlabel-label"><code>^jsonlabel ( label )</code></h3>
 <p>Assigns a text sequence to add to <code>jo-</code> and <code>ja-</code> items created thereafter. E.g. <code>^jsonlabel(x)</code> generates <code>jo-x1</code> and <code>ja-x1</code>. You can turn it back off again with <code>^jsonlabel(&quot;&quot;)</code></p>
 <p>This allows you to create json namespaces which will not conflict. Eg, you may load a bunch of json during a system bootup (<code>^csboot</code>) under one naming and then use a different naming for user json created later and code can determine the source of the data.</p>
-<h3 id="jsonreadcvs-tab-filepath"><code>^jsonreadcvs ( TAB filepath )</code></h3>
-<p>reads a tsv (tab delimited spreadsheet file) and returns a JSON array representing it. The lines are all objects in an array. The line is an object where non-empty fields are given as field indexes. The first field is 0. Empty fields are skipped over and their number omitted.</p>
+<h3 id="readfile-tab-filepath"><code>^readfile ( TAB filepath )</code></h3>
+<p><code>^readfile ( TAB filepath )</code> reads a tsv (tab delimited spreadsheet file) and returns a JSON array representing it. The lines are all objects in an array. The line is an object where non-empty fields are given as field indexes. The first field is 0. Empty fields are skipped over and their number omitted. <code>^readfile ( TAB filepath 'function)</code> reads tsv and spreads fields onto arguments of 'function, which it calls onceper line <code>^readfile ( LINE filepath 'function)</code> reads any file and passes each line untouched as the sole argument to the function.</p>
+<p>Fomerly called ^jsonreadcsv.</p>
 <h3 id="jsonundecodestring-string"><code>^jsonundecodestring ( string )</code></h3>
 <p>Removes all json escape markers back to normal for possible printout to a user. This translates <code>\n</code> to newline, <code>\r</code> to carriage return, <code>\t</code> to tab, and <code>\&quot;</code> to a simple quote.</p>
 <h3 id="jsonobjectinsert-duplicate-objectname-key-value"><code>^jsonobjectinsert ( {DUPLICATE} objectname key value )</code></h3>
@@ -833,17 +918,21 @@ u: (%document)
 <h3 id="extract-source-start-end"><code>^extract ( source start end )</code></h3>
 <p>Return the substring with the designated offset range (exclusive of end location). Useful for data extraction using ^popen and ^tcpopen when combined with <code>^findtext</code>.</p>
 <p>In addition to absolute unsigned values, start and end can take on offsets or relative values. A signed end is a length to extract plus a direction or shift in start:</p>
-<pre><code>^extract($$source 5 +2) # to extract 2 characters beginning at position
+<pre><code>^extract($$source 5 +2) # to extract 2 characters beginning at position 5
 
 ^extract($$source 5 -2) # to extract 2 characters ending at position 5</code></pre>
 <p>A negative start is a backwards offset from end.</p>
 <pre><code>^extract($$source -1 +1) # from end, 1 character before and get 1 character
 
-^extract($$source -5 -1) # from end, 5 characters before and get 1 character before. i.e. the 6th char from end.</code></pre>
+^extract($$source -5 -1) # from end, 5 characters before and get 1 character before. i.e. the 6th char from end.
+
+^extract($$source -5 -1000) # all characters until 5 from end</code></pre>
+<p>Note start offset is 0-based indexing, but if you used ^findtext, it was 1-based index so you probably need to subtract 1.</p>
 <h3 id="findtext-source-substring-offset-insensitive"><code>^findtext ( source substring offset {insensitive} )</code></h3>
 <p>Find case sensitive substring within source+offset and return offset starting immediately after match. Useful for data extraction using <code>^popen</code> and <code>^tcpopen</code> when combined with <code>^extract</code>. <code>$$findtext_start</code> is bound to the actual start of the match. <code>$$findtext_word</code> is bound to the word index in which the match was found where one or more blanks separate words. Indexing starts at 1 (same as sentence positional notation).</p>
 <p>An optional fourth argument <code>insensitive</code> will match insensitively.</p>
 <p>Failing to match will generate a rule failure. If the source or substring contains an <code>_</code>, these will be converted to blanks before execution, to allow that or the space notation to be considered equivalent (unless your source or substring is literally an underscore only).</p>
+<p>If you want to find a newline or tab character, then pass in the string <code>\n</code> or <code>\t</code>. That will find an actual ascii character of such. If you want to find the ascii string <code>\n</code>, then use \n and \t to find them. Normal scripts don't have ascii newline or tab in them. You wrote the backslashed characters and they are converted to the appropriate ascii characters on output to the user. But if you have read data from an external source, it will likely be the actual ascii characters.</p>
 <h3 id="flags-word"><code>^flags ( word )</code></h3>
 <p>get the 64bit systemflags of a word.</p>
 <h3 id="intersectwords-arg1-arg2-optional"><code>^intersectwords ( arg1 arg2 optional )</code></h3>
@@ -923,149 +1012,159 @@ u: (%document)
 <td>return 1 if it starts uppercase, and consists of entirely uppercase letters, hyphen, underscore and ampersand, fails otherwise</td>
 </tr>
 <tr class="odd">
+<td><code>ismixed case</code></td>
+<td>word</td>
+<td>return 1 if it has both upper and lowercase letters, fails otherwise</td>
+</tr>
+<tr class="even">
 <td><code>type</code></td>
 <td>word</td>
 <td>returns concept, number, word, or unknown</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>common</code></td>
 <td>word</td>
 <td>returns level of commonness of the word</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>verb</code></td>
 <td>verb</td>
 <td>given verb in any form, return requested form</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>present_participle</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>past_participle</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>infinitive</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>past</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>present3ps</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>present</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>verb</code></td>
 <td><code>match</code> noun</td>
 <td>returns noun form matching verb (sing./plural).<br>e.g. (<em>walk match dog</em>) -&gt; <em>walks</em></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>aux</code></td>
 <td>auxverb <code>pronoun</code></td>
 <td>returns verb form matching pronoun supplied.<br>for <em>do</em>,<em>have</em>, <em>be</em></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>pronoun</code></td>
 <td>word <code>flip</code></td>
 <td>changes person form for 1st and 2nd person</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>adjective</code></td>
 <td>word <code>more</code></td>
 <td>writes the adjective in its comparative form: <em>fast</em> -&gt; <em>faster</em></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>most</code></td>
 <td>word</td>
 <td>the superlative form. <em>beautiful</em> -&gt; <em>most beautiful</em></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>adverb</code></td>
 <td>word <code>more</code></td>
 <td>writes comparative form: <em>strong</em> -&gt; <em>strongly</em></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>noun</code></td>
 <td>word <code>proper</code></td>
 <td>return word as a proper noun (appropriately cased)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>lowercaseexist</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>uppercaseexist</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>singular</code></td>
 <td>word or a number</td>
 <td>== 1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>plural</code></td>
 <td>word or a number</td>
 <td>&gt; 1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>irregular</code></td>
 <td>word</td>
 <td>return value only for irregular nouns</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>determiner</code></td>
 <td>word <code>noun</code></td>
 <td>add a determiner &quot;a/an&quot; if it needs one</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>place</code></td>
 <td>integer</td>
 <td>return place number of integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>capitalize</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>uppercase</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>lowercase</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>allupper</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>canonical</code></td>
 <td>word</td>
 <td>see notes</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>integer</code></td>
 <td>floatnumber</td>
 <td>generate integer if float is exact integer</td>
+</tr>
+<tr class="odd">
+<td><code>preexists</code></td>
+<td>word</td>
+<td>return 1 if word in any casing was already in the dictionary before this volley, fail otherwise.</td>
 </tr>
 </tbody>
 </table>
@@ -1160,8 +1259,12 @@ u: what&#39;s your first name?
 <p>And the dictionary has some words which are composites, like <em>iced_coffee</em> and it will automatically convert the two words into a single token. If you wanted to stop this behavior, you could disable this composite word via</p>
 <pre><code> ^removeproperty(iced_coffee NOUN)</code></pre>
 <p>since it is declared as a NOUN (you can see with <code>:word iced_coffee</code>). You can do this to nouns, adjectives, adverbs.</p>
-<h3 id="walkdictionary-function"><code>^walkdictionary ( 'function )</code></h3>
+<h3 id="walkdictionary-function"><code>^walkdictionary ( '^function )</code></h3>
 <p>calls the named output macro from every word in the dictionary. The function should have 1 argument, the word.</p>
+<h3 id="walktopics-function"><code>^walktopics ( '^function )</code></h3>
+<p>calls the named output macro for every topic the current bot can access. The function should have 1 argument, the topic name.</p>
+<h3 id="walkvariables-function"><code>^walkvariables ( '^function )</code></h3>
+<p>calls the named output macro for every global permanent user variable currently non-null. The function should have 1 argument, the topic name. It does not involve $$ or $_ variables, or bot variables.</p>
 <h3 id="iterator-member-concept"><code>^Iterator ( ? member ~concept )</code></h3>
 <p>An iterator is a repeatable fact query that allows you to walk through each member of a concept, either at top level or recursively. Useful in conjunction with a <code>loop()</code>, the function is defined in the planning manual but can be used outside of planning. You can have one iterator in progress per rule.</p>
 <pre><code>loop () # unload every resource on board
@@ -1195,9 +1298,10 @@ u: what&#39;s your first name?
 <p>For a concept, if the member chosen is itself a concept, the system will recurse to pick randomly from that concept. If the argument to pick is a $var or _var, it will be evaluated and then pick will be tried on the result (but it won't recurse to try that again).</p>
 <p>If the argument is a JSON object it randomly picks a fact whose verb/object is a key-value pair. If the argument is a JSON array, it randomly picks a fact whose verb is the index and whose object is the value. The fact id returned can be used with ^field or you can use something like $result.object to get the specific object.</p>
 <h3 id="reset-what"><code>^reset ( what ? )</code></h3>
-<p>What can be user or topic or factset.</p>
+<p>What can be user or topic or factset or VARIABLES or FACTS or HISTORY.</p>
 <p>If what is user, the system drops all history and starts the user afresh from first meeting (launching a new conversation), having erased the user topic file.</p>
-<p>If what is a factset, the &quot;next&quot; pointer for walking the set is reset back to the beginning. If what is a topic, all rules are re-enabled and all last accessed values are reset to 0.</p>
+<p>If what is a factset, the &quot;next&quot; pointer for walking the set is reset back to the beginning. If what is a topic, all rules are re-enabled and all last accessed values are reset to 0. If what is VARIABLES then it sets all global user variables to NULL, leaving alone<br />
+$$, $_ and bot variables. If what is FACTS, it kills all permanent user facts If what is HISTORY it forgets what was said previously.</p>
 <h1 id="fact-functions">FACT FUNCTIONS</h1>
 <h3 id="findfact-subject-verb-object"><code>^findfact ( subject verb object )</code></h3>
 <p>The simplest fact find involves knowing all the components (meanings) and asking if the fact already exists. If it does, it returns the index of the fact. If it doesn't it returns <code>FAILRULE_BIT</code>.</p>
@@ -1383,6 +1487,7 @@ concept: ~canine (dog)</code></pre>
 <pre><code>@2 = ^intersectfact(@0 @1object)</code></pre>
 <h3 id="keywordtopics"><code>^keywordtopics ()</code></h3>
 <p>Lists topics and priority values for matching keywords in input. An optional argument if <code>gambit</code>, will ignore topics without available gambits. The verb used is: <code>^keywordtopics</code>.</p>
+<p>Note: it does not attempt to match the topic you are currently in, as the normal control scripts should already have tried that topic before coming to the more random thrashing of ^keywordtopics.</p>
 <h3 id="last-fact-set-annotated"><code>^last ( fact-set-annotated )</code></h3>
 <p>Retrieve the last fact – see <code>^first</code> for a more complete explanation.</p>
 <h3 id="length-word"><code>^length ( word )</code></h3>
@@ -1422,5 +1527,7 @@ concept: ~canine (dog)</code></pre>
 <h3 id="unpackfactref-set"><code>^unpackfactref ( set )</code></h3>
 <p>Find all facts in set which have facts as fields and then make THOSE facts be the facts of the set. The destination set will be named in an assignment statement like:</p>
 <pre><code>@1 = ^unpackfactref(@0)</code></pre>
+<h3 id="changebotbotname-botid">^changebot(botname botid)</h3>
+<p>^changebot(botname botid) allows a bot to pretend to be another bot and access its data, functions, and topics. Variables are not affected by this. The user topic file will remain as the user came into the server.</p>
 </body>
 </html>

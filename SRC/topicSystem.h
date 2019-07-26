@@ -2,7 +2,7 @@
 #define _TOPICSYSTEMH
 
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -63,6 +63,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 #define NEXTTOPLEVEL 2			// only responders and gambits
 
 #define NOMORERULES 0x0fffffff		// finished walking a rule index map
+typedef void(*TOPIC_FUNCTION)(char* topicName, uint64 data);
 
 #define MAX_TOPIC_STACK 50
 extern int currentBeforeLayer;
@@ -150,10 +151,12 @@ void AddKeep(char* ptr);
 int TopicInUse(int topic);
 int PushTopic(int topic);
 void PopTopic();
+void WalkTopics(char* function, char* buffer);
 bool CheckTopicTrace();
 bool CheckTopicTime();
 FunctionResult DoOutput(char* buffer,char* rule, unsigned int id, bool refine = false);
 unsigned int EstablishTopicTrace();
+unsigned int EstablishTopicTiming();
 char* GetRuleIDFromText(char* ptr, int & id);
 char* GetVerify(char* tag,int & topicid, int &id);//  ~topic.#.#=LABEL<~topic.#.#  is a maximally complete why
 void UnwindUserLayerProtect();
@@ -191,14 +194,14 @@ bool TopLevelStatement(char* word);
 bool TopLevelGambit(char* word);
 bool Rejoinder(char* word);
 char* GetLabel(char* rule,char* label);
-char* GetPattern(char* rule,char* label,char* pattern,int limit = MAX_WORD_SIZE); // returns start of output and modified pattern
+char* GetPattern(char* rule, char* label, char* pattern, bool friendly = false, int limit = MAX_WORD_SIZE); // returns start of output and modified pattern
 char* GetOutputCopy(char* ptr); // returns copy of output only
 bool TopLevelRule(char* word);
 char* GetTopicName(int topic,bool actual = true);
 char* GetTopicData(int topic);
 void SetTopicData(int topic,char* data);
 bool BlockedBotAccess(int topic);
-void TraceSample(int topic, int ruleID, unsigned int how = STDTRACELOG);
+void TraceSample(int topic, int ruleID, unsigned int how = STDUSERLOG);
 bool SetRuleDisableMark(int topic, int id);
 void ClearRuleDisableMark(int topic,int id);
 bool UsableRule(int topic,int n);

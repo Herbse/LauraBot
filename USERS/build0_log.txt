@@ -28,6 +28,7 @@ Reading concept ~body_light_adjectives
 Reading concept ~body_heavy_adjectives
 Reading concept ~body_weight_adjectives
 Reading concept ~character_trait_adjectives
+*** Warning- line 25 of adjectivehierarchy.top: Word "prim" known in multiple spellings prim Prim 
 Reading concept ~chemical_properties_adjectives
 Reading concept ~cleanliness_adjectives
 Reading concept ~cognition_adjectives
@@ -50,7 +51,6 @@ Reading concept ~gas_adjectives
 Reading concept ~gender_adjectives
 Reading concept ~good_appearance
 Reading concept ~good_intelligence_adjectives
-*** Warning- line 47 of adjectivehierarchy.top: Word "genial" known in multiple spellings genial Genial 
 Reading concept ~good_quality_adjectives
 Reading concept ~health_adjectives
 Reading concept ~height_adjectives
@@ -74,6 +74,7 @@ Reading concept ~perception_adjectives
 Reading concept ~permission_adjectives
 Reading concept ~physical_properties_adjectives
 Reading concept ~psychology_adjectives
+*** Warning- line 70 of adjectivehierarchy.top: Word "adorable" known in multiple spellings adorable Adorable 
 Reading concept ~quantity_adjectives
 Reading concept ~relational_adjectives
 Reading concept ~body_sensation_adjectives
@@ -170,6 +171,7 @@ Reading concept ~adult
 Reading concept ~advanced_degrees
 Reading concept ~aerial_sports
 Reading concept ~age_gender
+*** Warning- line 73 of concepts.top: Word "babys" known in multiple spellings babys Babys 
 Reading concept ~age_nouns
 Reading concept ~age_reference
 Reading concept ~age_words
@@ -180,6 +182,7 @@ Reading concept ~aids_words
 Reading concept ~air
 Reading concept ~alarm
 Reading concept ~alcoholic_beverage
+*** Warning- line 83 of concepts.top: Word "saki" known in multiple spellings saki Saki 
 Reading concept ~all_shields
 Reading concept ~americanindian
 Reading concept ~amplifiers
@@ -216,7 +219,6 @@ Reading concept ~auto_parts_store
 Reading concept ~awards
 Reading concept ~bad_weather
 Reading concept ~bad_words
-*** Warning- line 119 of concepts.top: Word "gottverdammt" known in multiple spellings gottverdammt Gottverdammt 
 Reading concept ~baked_goods
 Reading concept ~bakery
 Reading concept ~bank
@@ -263,6 +265,7 @@ Reading concept ~bridal_store
 Reading concept ~brother
 Reading concept ~brown
 Reading concept ~brown_other
+*** Warning- line 164 of concepts.top: Word "khaki" known in multiple spellings khaki Khaki 
 Reading concept ~browsers
 Reading concept ~building
 Reading concept ~building_parts
@@ -278,6 +281,7 @@ Reading concept ~candy
 Reading concept ~car
 Reading concept ~car_brands
 Reading concept ~car_vehicles
+*** Warning- line 178 of concepts.top: Word "autobus" known in multiple spellings autobus Autobus 
 Reading concept ~cardgame
 Reading concept ~carnivore
 Reading concept ~carryable
@@ -301,6 +305,7 @@ Reading concept ~cleaners
 Reading concept ~cleaning_substances
 Reading concept ~closeable
 Reading concept ~clothes
+*** Warning- line 201 of concepts.top: Word "schlüpfer" known in multiple spellings schlüpfer Schlüpfer 
 Reading concept ~clothes_for_cold
 Reading concept ~clothes_for_hot
 Reading concept ~clothes_for_limbs
@@ -312,6 +317,7 @@ Reading concept ~clothing_style_words
 Reading concept ~clothing_tophalf
 Reading concept ~cloud
 Reading concept ~cocktail
+*** Warning- line 212 of concepts.top: Word "marguerita" known in multiple spellings marguerita Marguerita 
 Reading concept ~coffee_shop
 Reading concept ~coffees
 Reading concept ~coin_shop
@@ -321,6 +327,7 @@ Reading concept ~colors
 Reading concept ~combat_sports
 Reading concept ~comic
 Reading concept ~communication_artifacts
+*** Warning- line 221 of concepts.top: Word "mic" known in multiple spellings mic Mic 
 Reading concept ~communications
 Reading concept ~communicators
 Reading concept ~company
@@ -368,6 +375,7 @@ Reading concept ~dances
 Reading concept ~dangerous_job
 Reading concept ~data
 Reading concept ~datatype
+*** Warning- line 268 of concepts.top: Word "string" known in multiple spellings string String 
 Reading concept ~dating_friend
 Reading concept ~day_care_center
 Reading concept ~dayname
@@ -396,7 +404,6 @@ Reading concept ~do_with_titles
 Reading concept ~doctor
 Reading concept ~dog_breeds
 Reading concept ~dominance_words
-*** Warning- line 295 of concepts.top: Word "passiv" known in multiple spellings passiv Passiv 
 Reading concept ~draper
 Reading concept ~drinkstuff
 Reading concept ~druglist
@@ -418,6 +425,7 @@ Reading concept ~electronic_furniture
 Reading concept ~electronic_items
 Reading concept ~element
 Reading concept ~emocurse
+*** Warning- line 316 of concepts.top: Word "fu" known in multiple spellings fu Fu FU 
 Reading concept ~emosadevent
 Reading concept ~emosurpriseevent
 Reading concept ~emotions
@@ -428,11 +436,17 @@ Reading concept ~entirety_words
 Reading concept ~equals
 Reading concept ~equestrian_sports
 Reading concept ~ethnichate
+*** Warning- line 326 of concepts.top: Word "abbo" known in multiple spellings abbo Abbo 
+*** Warning- line 326 of concepts.top: Word "gew" known in multiple spellings gew GEW 
 *** Warning- line 326 of concepts.top: Word "injun" known in multiple spellings injun Injun 
 *** Warning- line 326 of concepts.top: Word "nigar" known in multiple spellings nigar Nigar 
+*** Warning- line 326 of concepts.top: Word "spick" known in multiple spellings spick Spick 
+*** Warning- line 326 of concepts.top: Word "guido" known in multiple spellings guido Guido 
 *** Warning- line 326 of concepts.top: Word "jap" known in multiple spellings jap Jap 
 *** Warning- line 326 of concepts.top: Word "juden" known in multiple spellings juden Juden 
+*** Warning- line 326 of concepts.top: Word "mick" known in multiple spellings mick Mick 
 *** Warning- line 326 of concepts.top: Word "nazis" known in multiple spellings nazis Nazis 
+*** Warning- line 326 of concepts.top: Word "polack" known in multiple spellings polack Polack 
 Reading concept ~example
 Reading concept ~excrement
 Reading concept ~exerciselist
@@ -460,8 +474,10 @@ Reading concept ~farm_items
 Reading concept ~fashionlist
 Reading concept ~fast
 Reading concept ~fasteners
+*** Warning- line 352 of concepts.top: Word "peg" known in multiple spellings peg Peg 
 Reading concept ~fastfood_place
 Reading concept ~father
+*** Warning- line 354 of concepts.top: Word "pa" known in multiple spellings pa PA 
 Reading concept ~favorite
 Reading concept ~feeling_adequate
 Reading concept ~feeling_admiration
@@ -487,7 +503,6 @@ Reading concept ~feeling_focused
 Reading concept ~feeling_free
 Reading concept ~feeling_grateful
 Reading concept ~feeling_happy
-*** Warning- line 379 of concepts.top: Word "munter" known in multiple spellings munter Munter 
 Reading concept ~feeling_hated
 Reading concept ~feeling_independent
 Reading concept ~feeling_irristable
@@ -517,11 +532,20 @@ Reading concept ~fire_department
 Reading concept ~fire_force
 Reading concept ~firearmor
 Reading concept ~fishes
+*** Warning- line 407 of concepts.top: Word "barbu" known in multiple spellings barbu Barbu 
+*** Warning- line 407 of concepts.top: Word "brit" known in multiple spellings brit Brit 
 *** Warning- line 407 of concepts.top: Word "chinook" known in multiple spellings chinook Chinook 
+*** Warning- line 407 of concepts.top: Word "forellen" known in multiple spellings forellen Forellen 
 *** Warning- line 407 of concepts.top: Word "ling" known in multiple spellings ling Ling 
 *** Warning- line 407 of concepts.top: Word "liza" known in multiple spellings liza Liza 
 *** Warning- line 407 of concepts.top: Word "lotte" known in multiple spellings lotte Lotte 
+*** Warning- line 407 of concepts.top: Word "mademoiselle" known in multiple spellings mademoiselle Mademoiselle 
+*** Warning- line 407 of concepts.top: Word "mako" known in multiple spellings mako Mako 
+*** Warning- line 407 of concepts.top: Word "molly" known in multiple spellings molly Molly 
+*** Warning- line 407 of concepts.top: Word "pompon" known in multiple spellings pompon Pompon 
+*** Warning- line 407 of concepts.top: Word "puffer" known in multiple spellings puffer Puffer 
 *** Warning- line 407 of concepts.top: Word "sandaale" known in multiple spellings sandaale Sandaale 
+*** Warning- line 407 of concepts.top: Word "sierra" known in multiple spellings sierra Sierra 
 *** Warning- line 407 of concepts.top: Word "trigger" known in multiple spellings trigger Trigger 
 Reading concept ~fishmonger
 Reading concept ~flame_weapon
@@ -641,8 +665,10 @@ Reading concept ~immovable
 Reading concept ~industrial_substances
 Reading concept ~information_center
 Reading concept ~insects
+*** Warning- line 523 of concepts.top: Word "black" known in multiple spellings black Black 
 *** Warning- line 523 of concepts.top: Word "imago" known in multiple spellings imago Imago 
 *** Warning- line 523 of concepts.top: Word "lady" known in multiple spellings lady Lady 
+*** Warning- line 523 of concepts.top: Word "säger" known in multiple spellings säger Säger 
 Reading concept ~instrumenting
 Reading concept ~insults
 Reading concept ~insurance
@@ -704,14 +730,19 @@ Reading concept ~magic_force
 Reading concept ~magic_weapon
 Reading concept ~magicians
 Reading concept ~male
+*** Warning- line 584 of concepts.top: Word "gent" known in multiple spellings gent Gent 
 Reading concept ~malesexanimals
 Reading concept ~mammals
-*** Warning- line 586 of concepts.top: Word "ai" known in multiple spellings ai AI 
+*** Warning- line 586 of concepts.top: Word "ai" known in multiple spellings ai AI Ai 
+*** Warning- line 586 of concepts.top: Word "billy" known in multiple spellings billy Billy 
 *** Warning- line 586 of concepts.top: Word "wauwau" known in multiple spellings wauwau Wauwau 
+*** Warning- line 586 of concepts.top: Word "bronco" known in multiple spellings bronco Bronco 
 *** Warning- line 586 of concepts.top: Word "foxhound" known in multiple spellings foxhound Foxhound 
 *** Warning- line 586 of concepts.top: Word "hase" known in multiple spellings hase Hase 
 *** Warning- line 586 of concepts.top: Word "jaguarundi" known in multiple spellings jaguarundi Jaguarundi 
 *** Warning- line 586 of concepts.top: Word "jenny" known in multiple spellings jenny Jenny 
+*** Warning- line 586 of concepts.top: Word "mara" known in multiple spellings mara Mara 
+*** Warning- line 586 of concepts.top: Word "springer" known in multiple spellings springer Springer 
 *** Warning- line 586 of concepts.top: Word "teg" known in multiple spellings teg TEG 
 *** Warning- line 586 of concepts.top: Word "tom" known in multiple spellings tom Tom 
 *** Warning- line 586 of concepts.top: Word "wombat" known in multiple spellings wombat Wombat 
@@ -726,6 +757,7 @@ Reading concept ~mathematica
 Reading concept ~mathematician
 Reading concept ~meal
 Reading concept ~meaningless_praise_words
+*** Warning- line 597 of concepts.top: Word "prime" known in multiple spellings prime Prime 
 Reading concept ~measurelist
 Reading concept ~measurement
 Reading concept ~meat
@@ -737,6 +769,7 @@ Reading concept ~metal
 Reading concept ~metallic
 Reading concept ~microlife
 Reading concept ~military_groups
+*** Warning- line 608 of concepts.top: Word "posse" known in multiple spellings posse Posse 
 Reading concept ~military_man
 Reading concept ~milk
 Reading concept ~milk_drinks
@@ -754,9 +787,9 @@ Reading concept ~daysinmonth
 Reading concept ~month_proper_names
 Reading concept ~more
 Reading concept ~morningthings
-*** Warning- line 625 of concepts.top: Word "aufwachen" known in multiple spellings aufwachen Aufwachen 
 Reading concept ~mother
 *** Warning- line 626 of concepts.top: Word "ma" known in multiple spellings ma MA 
+*** Warning- line 626 of concepts.top: Word "mammy" known in multiple spellings mammy Mammy 
 Reading concept ~mountain
 Reading concept ~mountain_sports
 Reading concept ~movers
@@ -772,9 +805,12 @@ Reading concept ~music_store
 Reading concept ~music_stuff
 Reading concept ~music_subjects
 Reading concept ~musical_genres
+*** Warning- line 640 of concepts.top: Word "emo" known in multiple spellings emo EMO 
+*** Warning- line 640 of concepts.top: Word "ska" known in multiple spellings ska SKA 
 Reading concept ~musical_instrument
 Reading concept ~musical_instruments_brass
 Reading concept ~musical_instruments_percussion
+*** Warning- line 643 of concepts.top: Word "glockenspiel" known in multiple spellings glockenspiel Glockenspiel 
 Reading concept ~musical_instruments_string
 Reading concept ~musical_instruments_woodwind
 Reading concept ~musician
@@ -789,6 +825,7 @@ Reading concept ~name
 Reading concept ~nanowords
 Reading concept ~nationalityhate
 *** Warning- line 653 of concepts.top: Word "ocker" known in multiple spellings ocker Ocker 
+*** Warning- line 653 of concepts.top: Word "seppo" known in multiple spellings seppo Seppo 
 Reading concept ~natural_disasters
 Reading concept ~natural_words
 Reading concept ~negation
@@ -837,7 +874,6 @@ Reading concept ~occupation_film
 Reading concept ~occupation_food
 Reading concept ~occupation_forest
 Reading concept ~occupation_generic
-*** Warning- line 701 of concepts.top: Word "assoziieren" known in multiple spellings assoziieren Assoziieren 
 Reading concept ~occupation_insurance
 Reading concept ~occupation_inventor
 Reading concept ~occupation_jobless
@@ -876,6 +912,7 @@ Reading concept ~papercanvascraft
 Reading concept ~party_store
 Reading concept ~people_groups
 Reading concept ~penetrators
+*** Warning- line 738 of concepts.top: Word "baller" known in multiple spellings baller Baller 
 Reading concept ~performing_arts
 Reading concept ~performlist
 Reading concept ~personal_article
@@ -907,7 +944,6 @@ Reading concept ~poison
 Reading concept ~police_station
 Reading concept ~political_groups
 Reading concept ~political_parties
-*** Warning- line 767 of concepts.top: Word "konservativ" known in multiple spellings konservativ Konservativ 
 Reading concept ~political_system
 Reading concept ~politicalarea
 Reading concept ~politicalstuff
@@ -928,6 +964,7 @@ Reading concept ~probability_words
 Reading concept ~problem
 Reading concept ~processes
 Reading concept ~projectile_weapon
+*** Warning- line 787 of concepts.top: Word "fünfundvierzig" known in multiple spellings fünfundvierzig Fünfundvierzig 
 *** Warning- line 787 of concepts.top: Word "zweiundzwanzig" known in multiple spellings zweiundzwanzig Zweiundzwanzig 
 Reading concept ~protista
 Reading concept ~psychality
@@ -947,6 +984,7 @@ Reading concept ~recentwords
 Reading concept ~recorders
 Reading concept ~recreation
 Reading concept ~red
+*** Warning- line 805 of concepts.top: Word "modena" known in multiple spellings modena Modena 
 Reading concept ~red_other
 Reading concept ~region
 Reading concept ~related_list
@@ -957,7 +995,9 @@ Reading concept ~religious_buildings
 Reading concept ~religious_groups
 Reading concept ~religious_leaders
 Reading concept ~religious_sect
+*** Warning- line 815 of concepts.top: Word "heide" known in multiple spellings heide Heide 
 Reading concept ~reptiles
+*** Warning- line 816 of concepts.top: Word "skink" known in multiple spellings skink Skink 
 *** Warning- line 816 of concepts.top: Word "taipan" known in multiple spellings taipan Taipan 
 *** Warning- line 816 of concepts.top: Word "dosen" known in multiple spellings dosen Dosen 
 *** Warning- line 816 of concepts.top: Word "triton" known in multiple spellings triton Triton 
@@ -1004,6 +1044,7 @@ Reading concept ~scenery_of_transport
 Reading concept ~scenery_outer_space
 Reading concept ~scenery_water
 Reading concept ~scenery_water_bodies
+*** Warning- line 859 of concepts.top: Word "beck" known in multiple spellings beck Beck 
 Reading concept ~scent_words
 Reading concept ~school_classes
 Reading concept ~school_groups
@@ -1014,15 +1055,17 @@ Reading concept ~search_engines
 Reading concept ~seasons
 Reading concept ~sensations
 Reading concept ~sense
-*** Warning- line 869 of concepts.top: Word "hören" known in multiple spellings hören Hören 
 Reading concept ~serial_killers
 Reading concept ~service_station
 Reading concept ~sex
+*** Warning- line 872 of concepts.top: Word "kegel" known in multiple spellings kegel Kegel 
 Reading concept ~sex_shop
 Reading concept ~sex_stuff
 Reading concept ~sex_toy
+*** Warning- line 875 of concepts.top: Word "butt" known in multiple spellings butt Butt 
 Reading concept ~sexual_act
 Reading concept ~sexual_fetish
+*** Warning- line 877 of concepts.top: Word "kv" known in multiple spellings kv KV 
 Reading concept ~sexual_liquid
 Reading concept ~sexual_part
 Reading concept ~sexual_position
@@ -1044,15 +1087,14 @@ Reading concept ~similar
 Reading concept ~singinglist
 Reading concept ~singular
 Reading concept ~sister
+*** Warning- line 896 of concepts.top: Word "sis" known in multiple spellings sis SIS 
 Reading concept ~skate_sports
 Reading concept ~slow
-*** Warning- line 898 of concepts.top: Word "schleichen" known in multiple spellings schleichen Schleichen 
 Reading concept ~smoke_shop
 Reading concept ~snackgroup
 Reading concept ~soappolish
 Reading concept ~soccer_teams
 Reading concept ~social_issues
-*** Warning- line 903 of concepts.top: Word "ausbeute" known in multiple spellings ausbeute Ausbeute 
 Reading concept ~social_network_sites
 Reading concept ~social_science_subjects
 Reading concept ~societal_data
@@ -1060,7 +1102,6 @@ Reading concept ~softdrinks
 Reading concept ~solid_containers
 Reading concept ~sounds
 *** Warning- line 909 of concepts.top: Word "dong" known in multiple spellings dong Dong 
-*** Warning- line 909 of concepts.top: Word "knurren" known in multiple spellings knurren Knurren 
 Reading concept ~specialactivities
 Reading concept ~spiritpart
 Reading concept ~spirits
@@ -1085,7 +1126,6 @@ Reading concept ~stationary
 Reading concept ~stationary_store
 Reading concept ~stock_broker
 Reading concept ~stop
-*** Warning- line 933 of concepts.top: Word "halt" known in multiple spellings halt Halt 
 Reading concept ~story_character
 Reading concept ~styles
 Reading concept ~substances
@@ -1105,7 +1145,6 @@ Reading concept ~temperature_quantity
 Reading concept ~temperature_words
 Reading concept ~territory
 Reading concept ~textile_crafts
-*** Warning- line 952 of concepts.top: Word "stricken" known in multiple spellings stricken Stricken 
 Reading concept ~texture_words
 Reading concept ~than
 Reading concept ~theatrical_groups
@@ -1117,6 +1156,8 @@ Reading concept ~throwable
 Reading concept ~throwing_weapon
 Reading concept ~time_circadian_reference
 Reading concept ~time_instant
+*** Warning- line 963 of concepts.top: Word "a.m." known in multiple spellings a.m. A.M. 
+*** Warning- line 963 of concepts.top: Word "b.c." known in multiple spellings b.c. B.C. 
 Reading concept ~time_item
 Reading concept ~time_reference
 *** Warning- line 965 of concepts.top: Word "bc" known in multiple spellings bc BC 
@@ -1174,7 +1215,6 @@ Reading concept ~warstuff
 Reading concept ~water_drinks
 Reading concept ~water_force
 Reading concept ~water_sports
-*** Warning- line 1017 of concepts.top: Word "schwimmen" known in multiple spellings schwimmen Schwimmen 
 Reading concept ~weapon
 Reading concept ~weapon_ammo
 Reading concept ~weapon_biological
@@ -1201,6 +1241,7 @@ Reading concept ~white
 Reading concept ~white_hackers
 Reading concept ~wildness_words
 Reading concept ~wind_force
+*** Warning- line 1042 of concepts.top: Word "gust" known in multiple spellings gust Gust 
 Reading concept ~wine
 Reading concept ~wine_red
 Reading concept ~wine_white
@@ -1227,8 +1268,6 @@ Reading concept ~noanswer
 
 ----Reading file prepositionhierarchy.top
 Reading concept ~directionplacepreposition
-*** Warning- line 1 of prepositionhierarchy.top: Word "hinter" known in multiple spellings hinter Hinter 
-*** Warning- line 1 of prepositionhierarchy.top: Word "gegen" known in multiple spellings gegen Gegen 
 Reading concept ~directionon
 Reading concept ~directionunder
 Reading concept ~directionover
@@ -1244,8 +1283,8 @@ Reading concept ~placepreposition
 *** Warning- line 13 of prepositionhierarchy.top: Word "chez" known in multiple spellings chez Chez 
 Reading concept ~spacepreposition
 Reading concept ~relationpreposition
-*** Warning- line 15 of prepositionhierarchy.top: Word "apropos" known in multiple spellings apropos Apropos 
-*** Warning- line 15 of prepositionhierarchy.top: Word "kraft" known in multiple spellings kraft Kraft 
+*** Warning- line 15 of prepositionhierarchy.top: Word "mod" known in multiple spellings mod Mod 
+*** Warning- line 15 of prepositionhierarchy.top: Word "sans" known in multiple spellings sans Sans 
 Reading concept ~timepreposition
 *** Warning- line 16 of prepositionhierarchy.top: Word "til" known in multiple spellings til Til 
 Reading concept ~prepositionlist
@@ -1283,7 +1322,6 @@ Reading concept ~sequence_adverbs
 Reading concept ~supposition_adverbs
 Reading concept ~time_adverbs
 Reading concept ~viewpoint_adverbs
-*** Warning- line 32 of adverbhierarchy.top: Word "glücklicherweise" known in multiple spellings glücklicherweise Glücklicherweise 
 Reading concept ~when_adverbs
 Reading concept ~negative_adverb_starter
 
@@ -1294,9 +1332,7 @@ Reading concept ~static_verbs
 Reading concept ~states_of_being
 Reading concept ~sensory_states
 Reading concept ~mental_states
-*** Warning- line 6 of verbhierarchy.top: Word "glauben" known in multiple spellings glauben Glauben 
 Reading concept ~measurement_states
-*** Warning- line 7 of verbhierarchy.top: Word "machen" known in multiple spellings machen Machen MACHEN 
 Reading concept ~eternal_truths
 Reading concept ~abort
 Reading concept ~absorb
@@ -1343,7 +1379,7 @@ Reading concept ~alter_tightness_verbs
 Reading concept ~alter_vertical
 Reading concept ~alter_wiggle
 Reading concept ~animalsounds
-*** Warning- line 52 of verbhierarchy.top: Word "krächzen" known in multiple spellings krächzen Krächzen 
+*** Warning- line 52 of verbhierarchy.top: Word "glucken" known in multiple spellings glucken Glucken 
 Reading concept ~animate_move_verbs
 Reading concept ~travel_verbs
 Reading concept ~association_verbs
@@ -1353,7 +1389,6 @@ Reading concept ~arrive
 Reading concept ~attachment_verbs
 Reading concept ~auxverblist
 Reading concept ~avoid
-*** Warning- line 61 of verbhierarchy.top: Word "ausweichen" known in multiple spellings ausweichen Ausweichen 
 Reading concept ~awareof
 Reading concept ~balance
 Reading concept ~banish
@@ -1363,7 +1398,6 @@ Reading concept ~bedeacquired
 Reading concept ~befriend
 Reading concept ~begiven
 Reading concept ~block_access
-*** Warning- line 70 of verbhierarchy.top: Word "ablehnen" known in multiple spellings ablehnen Ablehnen 
 Reading concept ~block_access_containment
 Reading concept ~blood_ill
 Reading concept ~bodily_activities_verbs
@@ -1372,8 +1406,6 @@ Reading concept ~body_verbs
 Reading concept ~boss
 Reading concept ~brand
 Reading concept ~breathe
-*** Warning- line 78 of verbhierarchy.top: Word "ausatmen" known in multiple spellings ausatmen Ausatmen 
-*** Warning- line 78 of verbhierarchy.top: Word "einatmen" known in multiple spellings einatmen Einatmen 
 Reading concept ~build
 Reading concept ~buy
 Reading concept ~capture
@@ -1394,9 +1426,6 @@ Reading concept ~complete
 Reading concept ~complicate
 Reading concept ~controlling_verbs
 Reading concept ~cooking_verbs
-*** Warning- line 98 of verbhierarchy.top: Word "backen" known in multiple spellings backen Backen 
-*** Warning- line 98 of verbhierarchy.top: Word "grillen" known in multiple spellings grillen Grillen 
-*** Warning- line 98 of verbhierarchy.top: Word "kochen" known in multiple spellings kochen Kochen 
 Reading concept ~cool_verbs
 Reading concept ~copy
 *** Warning- line 100 of verbhierarchy.top: Word "xerox" known in multiple spellings xerox Xerox 
@@ -1405,7 +1434,6 @@ Reading concept ~creation_verbs
 Reading concept ~cry
 Reading concept ~cutart
 Reading concept ~damage_bend
-*** Warning- line 105 of verbhierarchy.top: Word "falten" known in multiple spellings falten Falten 
 Reading concept ~damage_burn
 Reading concept ~damage_explode
 Reading concept ~damage_fatal
@@ -1438,7 +1466,6 @@ Reading concept ~disappear
 Reading concept ~discharge
 Reading concept ~disenchant
 Reading concept ~dislike
-*** Warning- line 136 of verbhierarchy.top: Word "bedauern" known in multiple spellings bedauern Bedauern 
 Reading concept ~draw
 Reading concept ~dress
 Reading concept ~drink
@@ -1453,13 +1480,11 @@ Reading concept ~emitfire
 Reading concept ~emitgas
 Reading concept ~emitgeneric
 Reading concept ~emitlight
-*** Warning- line 150 of verbhierarchy.top: Word "glitzern" known in multiple spellings glitzern Glitzern 
 Reading concept ~emitliquid
 Reading concept ~emitsmell
 Reading concept ~emitsound
 Reading concept ~emotional_verbs
 Reading concept ~employ
-*** Warning- line 155 of verbhierarchy.top: Word "anmelden" known in multiple spellings anmelden Anmelden 
 Reading concept ~enable
 Reading concept ~enable_access_containment
 Reading concept ~endrelation
@@ -1470,7 +1495,6 @@ Reading concept ~exchange
 Reading concept ~exclusion_verbs
 Reading concept ~excrete_air
 Reading concept ~excrete_liquid
-*** Warning- line 165 of verbhierarchy.top: Word "schwitzen" known in multiple spellings schwitzen Schwitzen 
 Reading concept ~excrete_solid
 Reading concept ~excreting_verbs
 Reading concept ~exercise_verbs
@@ -1478,11 +1502,9 @@ Reading concept ~exorcize
 Reading concept ~explain
 Reading concept ~extinguish
 Reading concept ~farm
-*** Warning- line 172 of verbhierarchy.top: Word "graben" known in multiple spellings graben Graben 
 Reading concept ~fatal_other_burn
 Reading concept ~fatal_other_strangle
 Reading concept ~fatal_to_other
-*** Warning- line 175 of verbhierarchy.top: Word "blitz" known in multiple spellings blitz Blitz 
 Reading concept ~fatal_to_self
 Reading concept ~faulty_think
 Reading concept ~fight
@@ -1503,6 +1525,7 @@ Reading concept ~get_smaller
 Reading concept ~give
 Reading concept ~give_birth
 Reading concept ~golfing
+*** Warning- line 194 of verbhierarchy.top: Word "putten" known in multiple spellings putten Putten 
 Reading concept ~govern_verbs
 Reading concept ~greet
 Reading concept ~groom
@@ -1557,7 +1580,6 @@ Reading concept ~make_dirtier
 Reading concept ~make_drier
 Reading concept ~make_love
 Reading concept ~make_wetter
-*** Warning- line 248 of verbhierarchy.top: Word "einweichen" known in multiple spellings einweichen Einweichen 
 Reading concept ~marry
 Reading concept ~medical_improve
 Reading concept ~meet
@@ -1575,7 +1597,7 @@ Reading concept ~moving_generic
 *** Warning- line 261 of verbhierarchy.top: Word "wend" known in multiple spellings wend Wend 
 Reading concept ~moving_object
 Reading concept ~moving_slow_land
-*** Warning- line 263 of verbhierarchy.top: Word "klettern" known in multiple spellings klettern Klettern 
+*** Warning- line 263 of verbhierarchy.top: Word "schlafwandeln" known in multiple spellings schlafwandeln Schlafwandeln 
 Reading concept ~moving_to
 Reading concept ~moving_water
 Reading concept ~negative_social
@@ -1586,6 +1608,7 @@ Reading concept ~opinion_verbs
 Reading concept ~own
 Reading concept ~possess
 Reading concept ~parent
+*** Warning- line 273 of verbhierarchy.top: Word "babysitten" known in multiple spellings babysitten Babysitten 
 Reading concept ~pause
 Reading concept ~perception_verbs
 Reading concept ~photographing
@@ -1636,7 +1659,6 @@ Reading concept ~steal
 Reading concept ~stomach_ill
 Reading concept ~stop_verbs
 Reading concept ~strengthen
-*** Warning- line 323 of verbhierarchy.top: Word "stärken" known in multiple spellings stärken Stärken 
 Reading concept ~substitute
 Reading concept ~surprise
 Reading concept ~swallow_drink_verbs
@@ -1646,9 +1668,9 @@ Reading concept ~swallowing_verbs
 Reading concept ~swap
 Reading concept ~talkstyle
 *** Warning- line 331 of verbhierarchy.top: Word "carol" known in multiple spellings carol Carol CAROL 
+*** Warning- line 331 of verbhierarchy.top: Word "stemmer" known in multiple spellings stemmer Stemmer 
 Reading concept ~taste
 Reading concept ~tell
-*** Warning- line 333 of verbhierarchy.top: Word "spiel" known in multiple spellings spiel Spiel 
 Reading concept ~think_verbs
 Reading concept ~throw
 Reading concept ~tighten
@@ -1661,7 +1683,6 @@ Reading concept ~touch
 Reading concept ~undress
 Reading concept ~unjoin
 Reading concept ~use
-*** Warning- line 345 of verbhierarchy.top: Word "arbeiten" known in multiple spellings arbeiten Arbeiten 
 Reading concept ~vehicle_verbs
 Reading concept ~verbal_agree
 Reading concept ~verbal_disagree
@@ -1683,183 +1704,29 @@ Reading concept ~post
 
 ----Reading file affect.top
 Reading concept ~badness
+*** Warning- line 1 of affect.top: Word "keulen" known in multiple spellings keulen Keulen 
 *** Warning- line 1 of affect.top: Word "dire" known in multiple spellings dire Dire 
 *** Warning- line 1 of affect.top: Word "dodo" known in multiple spellings dodo Dodo 
-*** Warning- line 1 of affect.top: Word "eindringen" known in multiple spellings eindringen Eindringen 
-*** Warning- line 1 of affect.top: Word "spartanisch" known in multiple spellings spartanisch Spartanisch 
+*** Warning- line 1 of affect.top: Word "pummel" known in multiple spellings pummel Pummel 
+*** Warning- line 1 of affect.top: Word "selbsthass" known in multiple spellings selbsthass Selbsthass 
 Reading concept ~weakbadness
 Reading concept ~strongbadness
 *** Warning- line 3 of affect.top: Word "lunatic" known in multiple spellings lunatic Lunatic 
+*** Warning- line 3 of affect.top: Word "hung" known in multiple spellings hung Hung 
 Reading concept ~goodness
+*** Warning- line 4 of affect.top: Word "agape" known in multiple spellings agape Agape 
+*** Warning- line 4 of affect.top: Word "segens" known in multiple spellings segens Segens 
 *** Warning- line 4 of affect.top: Word "coy" known in multiple spellings coy Coy 
-*** Warning- line 4 of affect.top: Word "köstlich" known in multiple spellings köstlich Köstlich 
-*** Warning- line 4 of affect.top: Word "meister" known in multiple spellings meister Meister 
+*** Warning- line 4 of affect.top: Word "fab" known in multiple spellings fab FAB 
+*** Warning- line 4 of affect.top: Word "fond" known in multiple spellings fond Fond 
+*** Warning- line 4 of affect.top: Word "marshall" known in multiple spellings marshall Marshall 
+*** Warning- line 4 of affect.top: Word "pro-aktiv" known in multiple spellings pro-aktiv Pro-Aktiv 
+*** Warning- line 4 of affect.top: Word "profunde" known in multiple spellings profunde Profunde 
 
 <<end folder RAWDATA/ONTOLOGY/GERMAN
 
->>Reading folder RAWDATA/WORLDDATA/
-
-----Reading file container.tbl
-Reading table ^tbl:expectedcontains
-Reading table ^tbl:solidcontainer
-Reading table ^tbl:liquidcontainer
-
-----Reading file material.tbl
-Reading table ^tbl:madeof
-
-----Reading file musicbasic.tbl
-Reading table ^tbl:albums
-Reading table ^tbl:bandleader
-Reading table ^tbl:bands
-Reading table ^tbl:bands1
-Reading table ^tbl:men
-Reading table ^tbl:women
-
-----Reading file malepeople.tbl
-Reading table ^tbl:moremen
-Reading table ^tbl:mostman
-Reading table ^tbl:men
-Reading table ^tbl:males
-Reading table ^tbl:man
-Reading table ^tbl:men
-
-----Reading file animals.tbl
-Reading table ^tbl:adultchild
-Reading table ^tbl:lcthings1
-Reading concept ~animal_homes
-Reading table ^tbl:lcthings1
-
-----Reading file femalepeople.tbl
-Reading concept ~designer
-Reading table ^tbl:women
-Reading concept ~career
-Reading table ^tbl:women
-
-----Reading file music.tbl
-Reading concept ~song
-Reading concept ~celebrity
-Reading table ^tbl:celebtable
-Reading table ^tbl:celebtable
-Reading table ^tbl:celebtable
-Reading table ^tbl:men
-Reading table ^tbl:women
-
-----Reading file speed.tbl
-Reading table ^tbl:xspeed
-
-----Reading file tools.tbl
-Reading table ^tbl:tool
-
-----Reading file videogames.tbl
-Reading table ^tbl:videogames
-
-----Reading file peoplegroups.tbl
-Reading concept ~nfc-west_football_team
-Reading concept ~nfc-east_football_team
-Reading concept ~afc-west_football_team
-Reading concept ~afc-east_football_team
-Reading concept ~nfc-north_football_team
-Reading concept ~nfc-south_football_team
-Reading concept ~afc-south_football_team
-Reading concept ~afc-north_football_team
-Reading concept ~football_teams
-Reading table ^tbl:groups
-Reading table ^tbl:nickname
-
-----Reading file lifespan.tbl
-Reading table ^tbl:xlifespan
-
-----Reading file things.tbl
-Reading concept ~electronics_store
-Reading concept ~grocery
-Reading table ^tbl:storeinfo
-Reading concept ~hot_things
-Reading concept ~cold_things
-Reading table ^tbl:temperature
-Reading concept ~wherefrom
-Reading concept ~produces
-Reading table ^tbl:source
-Reading table ^tbl:shapeof
-Reading table ^tbl:sellers
-Reading concept ~soundmaker
-Reading concept ~animalsoundsissued
-Reading table ^tbl:soundmaker
-Reading table ^tbl:beings
-Reading concept ~newspaper
-Reading concept ~airline
-Reading table ^tbl:manmade
-Reading table ^tbl:items
-Reading table ^tbl:companies
-Reading concept ~use_power
-Reading concept ~use_flight
-Reading concept ~use_swim
-Reading concept ~use_fooddrink
-*** Warning- line 403 of things.tbl: Word "drink" known in multiple spellings drink Drink 
-*** Warning- line 403 of things.tbl: Word "hunger" known in multiple spellings hunger Hunger 
-Reading concept ~use_movement
-Reading concept ~use_intentionverbs
-Reading concept ~blowing
-Reading concept ~interrogate
-Reading table ^tbl:usable
-
-----Reading file basicgeography.tbl
-Reading table ^tbl:languages
-Reading table ^tbl:geofact
-Reading table ^tbl:country
-Reading table ^tbl:planet
-Reading concept ~countryadjective
-Reading table ^tbl:countryof
-Reading concept ~capital
-Reading table ^tbl:capital
-Reading concept ~state_region
-Reading table ^tbl:geography
-Reading concept ~currency
-*** Warning- line 1253 of basicgeography.tbl: Word "lira" known in multiple spellings lira Lira 
-*** Warning- line 1253 of basicgeography.tbl: Word "dinar" known in multiple spellings dinar Dinar 
-*** Warning- line 1253 of basicgeography.tbl: Word "dollar" known in multiple spellings dollar Dollar 
-Reading table ^tbl:currencies
-Reading table ^tbl:geography
-
-----Reading file color.tbl
-Reading table ^tbl:colorof
-
-----Reading file geography.tbl
-Reading table ^tbl:geofact
-
-----Reading file literature.tbl
-Reading table ^tbl:plays
-Reading table ^tbl:malebooks
-Reading table ^tbl:femalebooks
-Reading table ^tbl:women
-Reading table ^tbl:women
-Reading table ^tbl:malebooks
-
-----Reading file basicbooks.tbl
-Reading table ^tbl:men
-Reading table ^tbl:femalebooks
-Reading table ^tbl:malebooks
-
-----Reading file movies_tv.tbl
-Reading table ^tbl:roles
-Reading table ^tbl:characters
-Reading table ^tbl:movie
-Reading table ^tbl:actress
-Reading table ^tbl:actor
-
-----Reading file basicmovies_tv.tbl
-Reading table ^tbl:tv_show
-Reading table ^tbl:actor
-Reading table ^tbl:women
-Reading table ^tbl:men
-Reading table ^tbl:actress
-Reading table ^tbl:directed
-Reading table ^tbl:tv
-Reading table ^tbl:movie
-
-<<end folder RAWDATA/WORLDDATA
-
 WARNING SUMMARY: 
-0 serious warnings, 0 function warnings, 0 spelling warnings, 112 case warnings, 0 substitution warnings
+0 serious warnings, 0 function warnings, 0 spelling warnings, 135 case warnings, 0 substitution warnings
     
 
 Finished compile

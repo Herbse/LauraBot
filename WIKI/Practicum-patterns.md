@@ -162,10 +162,10 @@ The above patterns looks for a meaning about wanting food. But it will accept
 u: (I want meat) I want food too.
 ```
 
-Correspondingly the above pattern is too specific and missing tons of reasonable
+Correspondingly the above pattern is too specific and misses tons of reasonable
 inputs. 
 
-Machine Learning is at an advantage in that it always memorize the exact
+Machine Learning (ML) is at an advantage in that it will always memorize the exact
 specific training input and may generalize from that. I say may, because it may not.
 ML trained on `I have a '97 Audi` may completely not recognize `I have a 1997 Audi`.
 
@@ -178,7 +178,7 @@ Patterns should be written in the correct case. Proper names should be in upperc
 normal words in lower case. Do not try to handle capitalization for the start of a sentence.
 Likewise when you define a concept, capitalize correctly. This allows CS to echo back the
 capitalization specified in the concept set when memorizing a use of it, rather than
-what the user typed. The compile will warn you at times if it thinks your capitalization is wrong.
+what the user typed. The compiler will warn you at times if it thinks your capitalization is wrong.
 
 ```
 concept: ~carmakes (ford dodge)
@@ -701,6 +701,28 @@ u: (_blood pressure) ^unmark(* _0) ^retry(RULE)
 
 u: () ^mark(* _10)  -- refresh all hidden words
 ```
+
+## Replacing words - `^replaceword(word _n)`
+
+You can already mark and unmark words, which is what is used for pattern matching.
+But the word itself in the sentence is what is retrieved when memorizing a word.
+You can change the word itself just by providing the word you want used 
+and the location in the sentence (as a match variable).  Replacing a word does 
+not make it visible to pattern matching. It is merely what will be retrieved (for both original and canonical).
+
+This is handy, for example, for making it easy to see what was used to create an interjection.
+If the mark on a word in ~emogoodbye, Then
+```
+u: (_~emogoodbye) 
+   $_tmp = ^original(_0)
+   ^replaceword($_tmp _0)
+```
+will make it so when you do this in later patterns:
+```
+u: (_~emogoodbye) _0 is now the original text
+```
+
+
 ## Fixing CS substitutions
 
 ^unmark and ^mark can be used to "correct" the behavior of standard
@@ -807,7 +829,7 @@ And why use `?` in the pattern when you could change the rule to `?:`.
 Q2 has useless interior `( )` so it is not the clearest. 
 If you thought `( deposits are good)` should have
 been changed to `" deposits are good"`, you missed the 
-clearest answer. You don't need to use `" "` at the top level Of
+clearest answer. You don't need to use `" "` at the top level of
 a pattern.
 
 Q3 detects `bananas are fruit` and `examples of fruit are bananas and pineapple` but not `the banana is a fruit`. To do that 
@@ -825,6 +847,7 @@ pattern while generalizing further and still being clear.
 u: Q4 (!(price of liberty)
        ["how much" "what be"] *~5 [cost price fee]
       )
+```
 
 # Summary
 

@@ -2,7 +2,7 @@
 #define _TEXTUTILITIESH_
 
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -62,13 +62,6 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 
 #define LETTERMAX 40
 
-typedef struct WORDINFO
-{
-    char* word;
-    int charlen; // characters in word
-    int bytelen; // bytes in word
-} WORDINFO;
-
 // accesses to these arrays MUST use unsigned char in the face of UTF8 strings
 extern int BOM;
 extern unsigned char punctuation[];
@@ -127,7 +120,7 @@ void ConvertNL(char* ptr);
 char* IsSymbolCurrency(char* ptr);
 void ComputeWordData(char* word, WORDINFO* info);
 char* CopyRemoveEscapes(char* to, char* at,int limit,bool all = false);
-char* AddEscapes(char* to, char* from,bool normal,int limit);
+char* AddEscapes(char* to, char* from,bool normal,int limit,bool addescape=true);
 void AcquireDefines(char* fileName);
 void AcquirePosMeanings(bool facts);
 char* FindNameByValue(uint64 val); // properties
@@ -140,6 +133,8 @@ uint64 FindParseValueByName(char* name); // parse flags
 uint64 FindMiscValueByName(char* name); // misc data
 void CloseTextUtilities();
 bool IsModelNumber(char* word);
+char* ReadPatternToken(char* ptr, char* word);
+
 bool IsInteger(char* ptr, bool comma, int useNumberStyle = AMERICAN_NUMBERS);
 char* IsUTF8(char* buffer,char* character);
 char* Purify(char* msg);
@@ -154,14 +149,17 @@ bool IsFraction(char* token);
 // boolean style tests
 bool AdjustUTF8(char* start, char* buffer);
 bool IsArithmeticOperator(char* word);
+bool IsArithmeticOp(char* word);
 unsigned IsNumber(char* word,int useNumberStyle = AMERICAN_NUMBERS,bool placeAllowed = true); // returns kind of number
 bool IsPlaceNumber(char* word, int useNumberStyle = AMERICAN_NUMBERS);
 bool IsDigitWord(char* word,int useNumberStyle = AMERICAN_NUMBERS,bool comma = false);
 bool IsDigitWithNumberSuffix(char* number,int useNumberStyle = AMERICAN_NUMBERS);
 bool IsUrl(char* word, char* end);
+bool IsFileExtension(char* word);
+bool IsFileName(char* word);
 unsigned int IsMadeOfInitials(char * word,char* end);
 bool IsNumericDate(char* word,char* end);
-bool IsFloat(char* word, char* end, int useNumberStyle = AMERICAN_NUMBERS);
+char IsFloat(char* word, char* end, int useNumberStyle = AMERICAN_NUMBERS);
 char GetTemperatureLetter (char* ptr);
 char* IsTextCurrency(char* ptr, char* end);
 bool IsLegalName(char* name,bool label = false);

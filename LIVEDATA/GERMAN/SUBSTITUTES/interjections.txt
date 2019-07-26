@@ -294,6 +294,7 @@
  <in_diesem_Fall> ~yes
  <in_Ordnung ~yes
  <insbesondere ~yes
+ <ist_alles_in_Ordnung ~emohowzit
  <ja ~yes
  <ja_bitte ~yes
  <ja_definitiv ~yes
@@ -493,7 +494,13 @@
  <was_für_eine_Katastrophe ~emosad
  <was_für_eine_Schande ~emosad
  <was_für_eine_schreckliche_Schande ~emosad
+ <was_geht ~emohowzit
  <was_hast_du_gesagt ~emomisunderstand
+ <was_ist_das_letzte_Wort> ~emohowzit
+ <was_ist_das_Wort> ~emohowzit
+ <was_ist_heute_los> ~emohowzit
+ <was_ist_los> ~emohowzit
+ <was_ist_neu> ~emohowzit
  <was_meinen_Sie ~emomisunderstand
  <was_meinst_du ~emomisunderstand
  <was_war_das> ~emomisunderstand
@@ -502,6 +509,18 @@
  <wenn_du_es_sagst ~no
  <werde_ich_nicht> ~no
  <wie_bizarr ~emosad
+ <wie_fühlst_du_dich ~emohowzit
+ <wie_geht's> ~emohowzit
+ <wie_geht> ~emohowzit
+ <wie_geht_es ~emohowzit
+ <wie_geht_es_dir ~emohowzit
+ <wie_geht_es_dir> ~emohowzit
+ <wie_geht_es_Heute ~emohowzit
+ <wie_gehts ~emohowzit
+ <wie_ist_alles ~emohowzit
+ <wie_ist_das_Leben ~emohowzit
+ <wie_ist_es_dir_ergangen> ~emohowzit
+ <wie_ist_es_dir_gegangen> ~emohowzit
  <wie_sagt_man ~emoprotest
  <wie_schrecklich ~emosad
  <wie_wahr> ~yes

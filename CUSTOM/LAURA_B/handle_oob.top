@@ -1,8 +1,0 @@
-topic: ~handle_oob nostay()
-
-u: (testc) $closed=1 ^keep() ^repeat()
-
-u: (testo) $open=1 ^keep() ^repeat()
-
-
-

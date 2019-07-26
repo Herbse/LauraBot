@@ -1,3 +1,263 @@
+# Version 9.6 7/14/2019
+1. unmark(@ _0) changed to unmark the width of the match, not just the start position
+2. JSONLOOP (x y z OLD/NEW)
+	choose which way to walk a json object/array either newest first or oldest first
+3. TAB macro flag
+	Be able to treat table data using tabs to mean * for that tab
+4. ^bug()
+	be able to report a bug to system bug log (or script compiler) for runtime code (particularly in a table being compiled)
+5. %tableinput - current input line to table processing
+6. ^mark(word _0  ALL/ONE)  when marking, either propogate marks to all encompassing concept sets or just mark this one word
+
+
+
+# Version 9.5  6/26/2019
+
+1. Testoutput now returns field error: true  if code execution failed.
+2. you can force ^testpattern to trace user regardless of whether tracing is on or not or whether nouserlog is set.  Just prepend to your input ":tracepattern"
+3. unmark(@ _0) unmark everything starting there (but only at that 1 start spot, not range implied. This include sthe concepts and topics list and marks themslelf.s
+4. Serious bug fixed if you have topics in both level 0 and level 1.  CS shipping of level 0 does not have topics so almost no one noticed this bug til now.
+
+# Version 9.41 - EMERGENCY RELEASE  6/4/2019
+9.4 has a bug wherein it inadvertently writes logging data to the user log file while processing
+json parse data. This can blow out disk space in a heavily used server.  This has been fixed.
+Other changes:
+1. ~filename - words with file suffixes
+2. crashpath= names where to write about fatal signal handers in linux... writing in the cs directory might be erased by an auto redeploy
+3 %zulutime adds elapsed time at end
+4. ^jsonloop($jsonstruct $var1 $var2)
+	similar to loop but runs thru json members and is the most
+	efficient and compact way to do so
+
+
+# version - 9.4  5/27/2019
+1. You can treat a json object as an array of fields.
+    $data = ^jsoncreate(transient object)
+    $data.tablet.testit = 1
+    $cx = 0
+    $_field $data.tablet[$cx]
+    returns field name of object after which you can do
+    $data.tablet.$_field to get the value
+ 2. $data.something[-1]  is the opposite end from [0], applies to object or arrays
+    For arrays it's the highest index value. For objects its the first field name.
+ 3. ^pos(preexists word) -- was word in dictionary BEFORE this volley?
+ 4. to use a variable name AS a field name, escape it
+    $data.\$varname = hello  uses $varname as field name and not indirecting via $varname
+ 5. full := assign in pattern
+ 6. data format for testpattern simplified, now parterns is array of strings not array of objects
+ 7. Rule-based spellchecking  added to spelling practicum
+ 8. ^changebot(botname botid) change identity on the fly, allowing this bot to see facts, functions,
+ and topics of botname instead of itself.
+ 9.  updated documentation to note that RESPONSE_NOCONVERTSPECIAL on $cs_ response is default.
+
+# version 9.31 4/30/2019
+0. pattern assignment now allowed with system variables also   (_0:=%time)
+1. changes to the ^testoutput function. it does NOT erase its changes. It may return null
+    for variable assignments. It will return a text string representing the json data if
+    a returned variable is a json structure name.
+2. for both ^testinput and ^testoutput, if the value of an incoming variable looks like
+    a json structure, it will be converted into the std internal json data structure and
+    the variable set to its json name.
+3. ^testpattern matchvar returns the original text, not the canonical
+
+# version 9.3 
+0. new practicum document: Practicum-Concepts-and_meaning
+1. %factexhaustion , which can take assignment to false to turn off the flag
+
+2. assignment in patterns  _0:=  var or matchvar or 'matchvar- eg
+3. ^compilepattern
+4. ^testpattern
+5. ^compileoutput
+6. ^testoutput
+The above 4 functions allow you to synthesize a rule from its component parts. This allows some other dialog system to use CS capabilities as an external API (e.g. web-based scriptwriting). It also means you can store compiled patterns and outputs in a database and mix and match rules in synthetic topics on the fly. #2 supports ^testpattern by allowing a pattern to glean data and return values.
+
+# version 9.2 3/24/2019
+1.  replace:  blackdecker \BLACK+DECKER now allowed to prevent + 
+    from interpreting to space
+2. ChatScript Advanced Manual has been split so that main areas of cs like concepts, topics, etc
+	have their own advanced manuals and the Advanced manual itself is just a grab-bag of unique 
+	capabilities
+3. ^pos(ismixedcase $_word)  returns 1 if word is has both
+        upper and lowercase letters. Fails otherwise.
+4. $cs_json_array_defaults
+    Normal syntax:  $data.array[] = data1 
+    This will store data1 non-uniquely (you can get repeats).
+    You can use ^jsonarrayinsert(UNIQUE $data.array data1) to 
+    avoid this, but its clumsy.  So now you can define for your
+    bot $cs_json_array_defaults = #JSON_ARRAY_UNIQUE to default
+    all such assigns to be unique unless specified otherwise
+5. %serverlogfolder %userlogfolder %tmpfolder give the current
+    paths to those folders
+
+# version 9.12 2/20/2019
+1. bug fixes
+
+# version 9.11 2/13/2019
+1. bug fixes
+
+# version 9.1 2/12/2019
+1. restored USER_FLAG4 for facts
+2. command line parameter "trustpos" allows things like
+    concept: ~all(feel~n)  
+    to work. By default we dont trust pos-tagger and CS will tolerate
+    all forms. 
+3. ^responsepattern(responseid)
+    part of the ^response.. world, returns the pattern that matched inside []
+    of rule generating output (if it is matched that way)
+    For a rule like:
+        u: ([  (pattern 1) (pattern 2) ([try 3])])
+    It will tell you which piece of the pattern matched.
+    Handy for debugging why a pattern matches incorrectly w/o
+    having to read a trace log and analyzing each + and -.
+4:  replace: 'xxx  yyy
+    allows you to split during tokenization any word followed by 'xxx into two words,
+    original sans 'xxx and yyy. eg
+    replace: 've have
+    gives "companies've =>  "companies have"
+    
+# version 9.0 1/1/2019
+
+1. param inputlimit=n truncates user input to this size.
+    On a server, users have a default limit of 80K per volley
+    but malicious users abuse this. You can set this to explicitly limit
+    how much input users can actually provide.  Consequences of excess
+    input are, for example, sluggish performance because it may try to spell correct junk input.
+2. ^eval1(arg)
+    like ^eval(x) but evaluates its argument before passing into ^eval.
+3. mark ~PASSIVE_VERB on such.
+4. !~set in concept declaration - see advanced concepts: exclusion.
+    e.g., concept: ~wildanimals (!~pet_animals ~animals)
+5. "fundamental meanings" can now be used as keywords in concepts, topics, and patterns.
+    see advanced cs: advanced concepts: fundamental meaning (quoted below)
+Fundamental meaning consists of an actor, an action, and an optional actee.
+In the active voice sentence "I love you", the actor is "I", the action is "love",
+and the actee is "you". In the passive voice sentence "I was arrested", there is no actor,
+the verb is "arrested", and the actee is "I". Wherease in the passive voice sentence
+"I was arrested by the police", the actor is "police". 
+
+Fundamental meaning patterns always have a verb, which as a keyword is designated as  
+"|arrest|" or whatever word or concept you want to detect.
+A pattern which includes a fundamental actor is shown as  
+"~pronoun|arrest|". One that includes an actee is
+"|arrest|~police", whereas one that has both actor and actee is
+"~pronoun|arrest|~police".
+
+# Version 8.8 11/26/2018
+
+1. ^spellcheck(input dictionary)
+input is tokenized words separated by spaces
+dictionary is json array of words
+It outputs the input words adjusted by any spelling correction.
+Useful if you read dynamic menus from an API endpoint and then want
+to match user input against that menu, whose elements may not be
+in the main CS dictionary
+
+2. Interjections from LIVEDATA now also mark their words as a normal
+concept set entries, so you can suppress changing the words to an
+interjection and yet still match on the interjection concept. This
+make writing scripts for interjections significantly easier. See new
+document below.
+
+3.  new document Practicum- spelling and interjections
+
+4. you cannot use { or ( immediately after a bidirectional wildcard
+    and *~0b is now legal# Version 8.7 11/11/2018
+
+1. $cs_userfactlimit = * means keep all facts
+2. documented #SPLIT_QUOTE tokencontrol (removes double quotes from input)
+3. ^stats(TEXT) bytes of heap left, ^stats(DICT) dictionary entries left
+4. ^jsontext(FactId) adds quotes if object of fact is a json text 
+    FAILS if not a json fact.  CS represents json text as ordinary
+    unquoted text, but text that looks like float numbers would be
+    subject to possible float truncations or expansion of digits.
+5. ^replaceword(word location) arguments are like ^mark and ^unmark, except this changes the
+actual original word at the position (which is just 1 word of the sentence). This changes no concept
+markings (which you can do yourself with mark and unmark). With this, for example, you could unrevise a spellfix
+like this:
+	u: (_~emosad) $_tmp = ^original(_0)  ^replaceword($_tmp _0)  
+6. Parameter:  repeatLimit=n
+Servers are subject to malicious inputs, often generated as repeated words over and over.
+This detects repeated input and if the number of sequential repeats is non-zero and equal or
+greater to this parameter, such inputs will be truncated to just the initial repeats. All
+other input in this volley will be discarded.
+
+# Version 8.6 10/4/2018
+
+1. configurl=http://xxx as a command line or config file parameter allows you to 
+request additional parameters from a url. This would be important if for security reasons
+you didn't want some parameters visible in a text file or on the run command of CS.
+
+2. Normally facts created by user script only impact that user (saved in their topic file).
+Now you can create facts that can affect all users. Maybe you want to write a bot that
+learns from users like Microsoft's Tay did.
+a) (secondary) When you modify some pre-user fact (layer 0, layer 1, boot layer) the change
+will move into the boot layer and thereafter be visible to all users.
+b) (primary) When you create JSON data in a special way, it will migrate to the boot layer at the
+end of the user's turn and not be saved in the user topic file. To do this,
+merely use BOOT instead of PERMANENT or TRANSIENT on the initial args to a 
+json structure creator, eg ^jsoncreate(BOOT OBJECT). 
+Facts moved to boot will be lost if the server restarts or you call the boot
+function. A command line argument of "recordboot" will direct CS to write the
+these facts into a top level file  "bootfacts.txt" as they are migrated to boot.  You would be responsible
+for writing a boot function that reads it on execution to recover these facts on startup. Direct modification of
+system facts in (a) are not saved. You would have to write your own scripts to track
+those changes.
+
+There is no way of collecting garbage from abandoned pre-user data, so do the
+above too often and the server may run out of memory and die.
+
+3. ^stats(FACTS) returns how many free facts are left.
+
+# Version 8.5
+1. ^walktopics('^func) finds the topics current bot can access
+and calls ^func with topic name, iteratively.
+2. ^walkvariables('^func)
+3. ^reset(VARIABLES) - sets all global user variables to NULL
+4. ^reset(FACTS) - kills all permanent user facts
+5. ^reset(HISTORY) forget what was said previously
+6. not new but now documented %input = n  sets that system variable
+   Other system variables can be set as well, sometimes locking them
+   into that value until you do %xxx = .
+7. indirect function call ^$_xx()  if $_xx holds a function name
+
+# version 8.4 8/12/2018
+1. ^findrule(label) finds a rule with that label (not tag) anywhere in all topics
+    and returns the tag for it (presumes unique label)
+2. in filesxxx build file, if you name a directory with two tailing slashes, 
+	then the system will compile all files recursively within and below that folder.
+3. $cs_responseControl RESPONSE_NOFACTUALIZE to suppress fact creation of bots output
+4. script compiler directive  ignorespell:  to block some kinds of spelling warnings
+	ignorespell:  word1 word2 ...    (use lower case form of word, will not warn about upper and lower case mixtures)
+ 	ignorespell: *    turn off all spelling warnings on casing
+	ignorespell: !*   turn on all spell warnings on casing
+
+# version 8.31 6/18/2018
+1. ^readfile(line filename 'function) will read lines from the file and pass them untouched
+   as the sole argument of function. This is formerly called: ^jsonreadcvs which is legal but
+   deprecated.
+2. max match variable is now _30 instead of _20
+
+# version 8.3 6/9/2018
+1. new manual Practicum - Messaging
+2. loop now allows function call as argument:  loop( ^length(@0)) {...}
+3. new manual Practicum-ControlFlow
+4. may now use match variables and quoted match variables in json indirections:  
+    $_x[_5] = 4
+    $_x._5 = 5
+    $_x['_5) = 5
+    $_x.'_5 = 5
+    $_tmp = $_x._5
+    etc
+5. :allmembers ~concept ~nonconcept ~nonconcept dumps the members of ~concept into TMP/tmp.txt, one per line, 
+   but excludes any that are member of the ~nonconcept sets.
+6. command line param "authorize" allows all server users to use : commands, regardless of authorized.txt.
+7. new manual Practicum - Gleaning
+
+# version 8.2 4/1/2018
+1. debugger has autosizing to your screen and save/restore for size/location adjustments you make
+2. ^query(exact_svrange x y ? -1 ? ? lowvalue highvalue) Finds facts whose object is x<=object<=y numeric
+3. ^query(exact_vrange ? y ? -1 ? ? lowvalue highvalue)  see Predefined  queries section in Facts Manual
+ 
 # version 8.1 2-18-2018
 1.CS Debugger now has been released in Release mode, so maybe it works for you, and has new features-- read the manual again.
 2. new manuals: Practicum- Rejoinders and Practicum- Patterns

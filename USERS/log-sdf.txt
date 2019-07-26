@@ -104,3 +104,51 @@ Respond: user:sdf bot:pattern ip: (~introduction) 1   wie geht es dir ==> Mood  
 Respond: user:sdf bot:pattern ip: (~introduction) 2   wie lange kennt ihr euch schon ==> Time relationship  When:Jun11'19-15:15:40 Why:~introduction.1.8.~control.2.0   F:1 
 Respond: user:sdf bot:pattern ip: (~introduction) 3   wie findest du den ==> Relationship o  When:Jun11'19-15:15:45 Why:~introduction.1.6.~control.2.0   F:1 
 Respond: user:sdf bot:pattern ip: (~introduction) 4   was arbeitet der denn ==> Job  When:Jun11'19-15:16:09 Why:~introduction.1.4.~control.2.0   F:1 
+Start: user:sdf bot:laura_li ip: rand:2403 (~introduction~3) 0 ==> Hallo! Ich bin Laura li.  When:Jul26'19-12:37:28 Why:~introduction~3.0.0.~control.0.0  Version:8.8 Build0:Jul26'19-12:27:29 Build1:Jul26'19-12:27:45 0:Apr25'19-22:43:16 F:0 P:0
+Command: :build vicontact
+Start: user:sdf bot:laura_li ip: rand:2403 (~introduction~3) 0 ==> Hää.  When:Jul26'19-12:37:40 Why:~incomprehension.0.0.~introduction~3.2.0  Version:8.8 Build0:Jul26'19-12:27:29 Build1:Jul26'19-12:37:34 0:Apr25'19-22:43:16 F:0 P:0
+Command: :prepare busbahnhof
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: busbahnhof
+Tokenized into: busbahnhof  
+Actual used input: busbahnhof 
+
+entering null word to dictionary in sentence
+Concepts: 
+
+1: busbahnhof (raw):
+   +~
+   +busbahnhof
+   +~unknownword
+ // 
+1: unknown-word (canonical):    +unknown-word
+ //  
+
+Sequences:
+   +Busbahnhof^
+
+After parse TokenFlags: USERINPUT 
+Command: :prepare bahnhof
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: bahnhof
+Tokenized into: bahnhof  
+Actual used input: bahnhof 
+
+
+Concepts: 
+
+1: bahnhof (raw):
+   +bahnhof
+   +~unknownword
+ // 
+1: unknown-word (canonical):    +unknown-word
+ //  
+
+Sequences:
+   +Bahnhof^
+
+After parse TokenFlags: USERINPUT 

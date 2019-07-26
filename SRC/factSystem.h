@@ -1,7 +1,7 @@
 #ifndef _FACTSYSTEMH_
 #define _FACTSYSTEMH_
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -45,10 +45,14 @@ extern FACT* factFree;		//   end of facts - most recent fact allocated (ready fo
 extern MEANING Mmember;
 extern MEANING Mexclude;
 extern MEANING Mis;
+extern HEAPLINK botVariableThreadList;
+extern int* factThread;
 
+extern bool factsExhausted;
 extern size_t maxFacts;		// allocation limit of facts
 extern uint64 myBot;
 void SortFacts(char* set, int alpha, int setpass = -1);
+extern bool seeAllFacts;
 
 // fact index accessing
 FACTOID Fact2Index(FACT* F);
@@ -57,6 +61,7 @@ inline FACTOID currentFactIndex() { return (currentFact) ? (FACTOID)((currentFac
 FACT* FactTextIndex2Fact(char* word);
 void RipFacts(FACT* F,WORDP dictbase);
 void WeaveFacts(FACT* F);
+FACT* WeaveFact(FACT* currentFact, unsigned int properties);
 
 // fact system startup and shutdown
 void InitFacts();
@@ -79,7 +84,7 @@ char* ReadField(char* ptr,char* &field,char fieldkind,unsigned int& flags);
 char* EatFact(char* ptr,char* buffer,unsigned int flags = 0,bool attribute = false);
 FACT* ReadFact(char* &ptr,unsigned int build);
 void ReadFacts(const char* name,const char* layer,unsigned int build,bool user = false);
-char* WriteFact(FACT* F,bool comments,char* buffer,bool ignoreDead = false,bool eol = false);
+char* WriteFact(FACT* F,bool comments,char* buffer,bool ignoreDead = false,bool eol = false,bool displayonly = false);
 void WriteFacts(FILE* out,FACT* from,int flags = 0);
 bool ReadBinaryFacts(FILE* in);
 void WriteBinaryFacts(FILE* out,FACT* F);
@@ -87,6 +92,8 @@ void ClearUserFacts();
 extern char traceSubject[100];
 extern char traceVerb[100];
 extern char traceObject[100];
+extern bool recordBoot;
+extern bool bootFacts;
 
 // factset information
 char* GetSetType(char* x);
@@ -151,4 +158,8 @@ inline void SetSubjectHead(MEANING M, FACT* value) {SetSubjectHead(Meaning2Word(
 inline void SetVerbHead(MEANING M, FACT* value) {SetVerbHead(Meaning2Word(M),value);}
 inline void SetObjectHead(MEANING M, FACT* value) {SetObjectHead(Meaning2Word(M),value);}
 
+void ModBaseFact(FACT* F);
+void RedoSystemFactFields();
+void NoteBotFacts();
+void MigrateFactsToBoot(FACT* oldFactFree, FACT* F);
 #endif

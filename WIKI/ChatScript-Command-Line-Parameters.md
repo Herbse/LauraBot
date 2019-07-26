@@ -1,23 +1,34 @@
 # ChatScript Command Line Parameters
 Copyright Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com<br>
-Revision 10/22/2017 cs7.6
+<br>Revision 6/3/2019 cs9.41
 
 # Command Line Parameters
 
-You can give parameters on the run command or in a config file. The default config file is `cs_init.txt` at the top
+You can give parameters on the run command or in a config file or via a http request. 
+The default config file is `cs_init.txt` at the top
 level of CS (if the file exists). Or you can name where the file is on a command line parameter `config=xxx`.
+If you have secret information that you don't want stored in a config file or exposed on a command line then you can request the config data from a URL. 
+Use the command line parameter configurl=http://xxx to specify the address of the data. 
+Additional command line parameters, configheader=xxx, can be included to define HTTP request headers. 
+If there are several headers then use separate configheader=xxx configheader=yyy etc parameters for each header name/value pair.
+
 Config file data are command line parameters, 1 per line, like below:
+
 ```
 noboot 
 port=20
 ```
-Actual command line parameters have priority over config file values.
+
+Some parameters require a value and use the `=` format with no spaces. Other parameters
+may only require you name the parameter (they have no choices of values).
+
+Actual command line parameters have priority over config file values, and those have priority over http requested values.
 
 
 ## Memory options
 
 Chatscript statically allocates its memory and so (barring unusual circumstance) will not
-allocate memory every during its interactions with users. These parameters can control
+allocate memory ever during its interactions with users. These parameters can control
 those allocations. Done typically in a memory poor environment like a cellphone.
 
 | option       | description
@@ -89,6 +100,7 @@ so that the system can do complete logs. You are welcome to set log size lots sm
 |`userlog`      | Store a user-bot log in USERS directory (default)
 |`nouserlog`    | Don't store a user-bot log
 |`tmp=xxx`     | name relative or absolute path to where you want the TMP folder to be. Do not add trailing `/`
+|`crashpath=xxx`     | file to write about fatal Linux signals that will be outside of the cs folder `/`
 
 ## Execution options
 | option           | description
@@ -105,6 +117,15 @@ so that the system can do complete logs. You are welcome to set log size lots sm
 |`noboot`          | Do not run any boot script on engine startup
 |`logsize=n`          | When server log file exceeds n megabytes, rename it and start with a new file.
 |`defaultbot=name`   | overrides defaultbot table for what bot to default to
+|`inputlimit=n`     | truncate user input line to this size
+|`trustpos`     | obey word~n and other pos restrictions in keywords
+
+Trustpos is normally off by default because CS is only about 94% accurate in its
+built-in pos-tagging. So it prefers to wrongly match by allowing all pos values Of
+a word rather than miss a match. Ergo concept: ~all(feel~n) will match any use of "feel" rather than
+just noun meaning. But combining CS with Treetagger for english (if you license it) is better at
+pos-tagging than either alone, making it competitive with the best taggers in the world.
+    
 
 Here few command line parameters usage examples of usual edit/compile developement phase, running ChatScript from a Linux terminal console (standalone mode):
 
@@ -319,6 +340,15 @@ on a server as it slows down the server.
 servertrace
 ```
 when present, forces all users to have tracing turned on. Traces go to the user logs.
+
+```
+repeatLimit=n
+```
+
+Servers are subject to malicious inputs, often generated as repeated words over and over.
+This detects repeated input and if the number of sequential repeats is non-zero and equal or
+greater to this parameter, such inputs will be truncated to just the initial repeats. All
+other input in this volley will be discarded.
 
 ```
 erasename=myname

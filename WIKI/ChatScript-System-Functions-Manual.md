@@ -1,6 +1,6 @@
 # ChatScript System Functions Manual
 © Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com
-<br>Revision 2/18/2018 cs8.1
+<br>Revision 7/14/2019 cs9.6
 
 * [Topic Functions](ChatScript-System-Functions-Manual.md#topic-functions)
 * [Marking Functions](ChatScript-System-Functions-Manual.md#marking-functions)
@@ -19,15 +19,17 @@ they are used from the output side of a rule, but in many cases nothing prevents
 invoking them from inside a pattern.  When used in a pattern, they do not write out any text output to the user. 
 But their output will be tested the same as it would from an `if` statement, meaning 0 and false are failures.
 
-You can write them with or without a `^` in front of their name. With is clearer, but you
-don’t have to. The only time you must is if the first thing you want to do in a gambit is
-call a function (unlikely).
+You can write them with or without a `^` in front of their name in output. With is clearer, but you
+don’t have to. The only times you must is if the first thing you want to do in a gambit is
+call a function (unlikely) or you are in a pattern.
 
     t: name(xxx) 
+    u: ( [find (me go) ])
 
-This is ambiguous. Is it function call or label and pattern?
+These are ambiguous. In the gambit is it function call or label. In
+the responder is find a function name or just a word?
 
-The above is treated as a label and pattern. You can force it to be a function call by one of
+The above gambit is treated as a label and pattern. You can force it to be a function call by one of
 these:
 
     t: ^name(xxx)   # explicilty say it is a function
@@ -89,6 +91,13 @@ will be a keyword of some topic to pick. E.g.,
 
     ^gambit(~ PENDING ~mygeneraltopic FAIL)
 
+
+### `^findrule ( label )`
+
+On the assumption that you only have one occurence of a rule label in your script,
+if you provide that label to this function, it will find the corresponding rule anywhere
+in your script and return the rule tag corresponding to it. If you have more than one such labelled Rule
+it merely returns the first one it finds (which will be earliest rule in earliest compiled topic).
 
 ### `^getrule ( what label )`
 
@@ -203,7 +212,7 @@ This rule will not erase but the responding rule might.
 If the first value fails to generate an answer, it tries the second, and so on. 
 You can supply an optional last argument `FAIL`, 
 in which case it will return `FAILRULE_BIT` if it didn't fail but it didn't generate any new output either.
-You could instead supply an optiona last argument `TEST`, in which case a topic is executed to see if a rule will 
+You could instead supply an optional last argument `TEST`, in which case a topic is executed to see if a rule will 
 match. If so, the tag is returned and no output is made from the topic (and no rule is used up). 
 
 If a value designates a labelled or tagged rule (e.g., `~mytopic.mylabel` or `~mytopic.1.0`) 
@@ -249,6 +258,7 @@ or not any output was generated.
 
 When it executes the output of the other rule, that rule is credited with matching and is
 disabled if it is allowed. If not allowed, the calling rule will be disabled if it can be.
+
 ```
 t: NAME () My name is Bob.
 
@@ -258,6 +268,7 @@ t: NAME () My name is Bob.
 ?: ( << what you girlfriend name >> ) 
     ^reuse(~SARAH.NAME)
 ```
+
 Normally reuse will use the output of a rule whether or not the rule has been disabled.
 But, if you supply a 2nd argument (whatever it is), then it will ignore disabled ones and
 try to find one with the same label that is not disabled. You can also supply a `FAIL`
@@ -320,11 +331,12 @@ wrong. For this use the kind of "copy" which does not have issues with this.
 
     ^setrejoinder(copy %inputrejoinder)
 
-If _kind_ is output or copy and no tag is given or the _tag_ is `null`, the output rejoinder is
+If _kind_ is output or copy and the _tag_ is `null`, the output rejoinder is
 cleared (analogous to ^disable). 
 
-If the _kind_ is input and no tag is given or the _tag_ is `null`, the input rejoinder is cleared.
+If the _kind_ is input and the _tag_ is `null`, the input rejoinder is cleared.
 
+To kill a set outputrejoinder, use ^disable(OUTPUTREJOINDER).
 
 ### `^topicflags ( topic )`
 
@@ -342,7 +354,7 @@ hitting the same API at once may be bad for the API and forcing a randomized sle
 
 # Marking Functions
 
-### `^mark ({"SINGLE" word location )`
+### `^mark ( word location {ONE ALL})`
 
 Marking and unmarking words and concepts is fundamental to
 the pattern matching mechanism, so the system provides both an automatic marking
@@ -353,7 +365,10 @@ all concepts implied by chasing up membership in other concepts, as does this ca
 There are two mechanisms supported using `^mark` and `^unmark`: specific and generic.
 
 With `specific`, you name words or concepts to mark or unmark, either at a particular point
-in the sentence or throughout the sentence. 
+in the sentence or throughout the sentence. By default, or using the optional third argument `ALL`,
+not only is what you name marked, but anything it in turn is a part of is marked.  The optional third
+argument `ONE` will only mark that named word/concept and none of the hierarchy implied by its membership
+in yet some other concept.
 
 With `generic` you disable or reenable all existing marks on a word or words in the sentence. 
 In fact, you go beyond that because during patttern matching words you disable are invisble entirely, 
@@ -366,7 +381,6 @@ In documentation below, use of `_0` symbolizes use of any match variable.
 ### `^mark ( ~meat _0 )`
 
 This marks `~meat` as though it has been seen at whereever sentence location `_0` is bound to (start and end)
-
 
 ### `^mark ( ~meat n )`
 
@@ -403,8 +417,13 @@ the global unmark.
 The inverse of specific `^mark`, this takes a matchvariable that was
 filled at the position in the sentence you want erased and removes the mark on the word
 or concept set or topic name given. Pattern matching for it in that position will now fail.
+If the word was a phrase, then all words in that phrase have the mark removed. Thus
+`South Georgia` which has `Georgia` embedded within it, and both might be ~geographic_area, will have both words unmarked if you unmark ~geographic_area.
 But it is not symmetric to `^mark` because it does not remove all implied marks that mark
-may have set.
+may have set. 
+
+If you end up calling ^unmark with a 2nd argument of null, it will just return without failure.
+This can happen if you pass null to an outputmacro: ^myfn(^var) and then ^unmark(xxx ^var).
 
 ### `^unmark ( * n )`
 
@@ -428,24 +447,32 @@ of some flavor to hide words, and then `^mark` later to reenable access to those
 
 ### `^unmark ( * _0 )`
 
-Aays turn off ALL matches on this location temporarily. The word becomes invisible. 
+Turns off ALL matches on this location temporarily. The word becomes invisible and takes up
+no space in the sentence. 
 It disables matching at any of the words spanned by the match variable.
 This unmark will also block subsequent specific marking using `^mark` at their locations.
 
+### `^unmark ( @ _0 )`
 
-### `^mark ( * _0 )`
-
-To restore all marks to some location.
-
-
-### `^unmark ( * )`
+Turns off ALL matches on this location range but keep the word visible. It cannot be matched by 
+anything but a wildcard and takes up its space in the sentence. Often this is used before something
+like `mark(~city _0) where you are taking something with ambiguous meanings, like "nice",
+and removing all wrong meanings (and right ones) and putting back just right ones. This is a way
+for the rest of processing to only see the correct interpretation of a word.
 
 Turns off matching on all words of the sentence.
 
+### `^mark ( * _0 )`
+
+To restore all marks to some location after having used ^unmark(* _0)
+
+### `^unmark ( * )`
+
+Turn off all words of the sentence. Probably not that useful.
 
 ### `^mark ( * )` 
 
-Restores all marks of the sentence.
+Restores all marks of the sentence, for words that had ^unmark(* _0) performed.
 
 Reminder: 
 If you do a generic unmark from within a pattern, it is transient and will be
@@ -458,6 +485,11 @@ so normal matching will occur.
 
 `^unmark()` will restore the set of generic unmarks that were flipped off using `^mark()`.
 
+### `^replaceword(word _0)`
+
+You can change the word itself at the location just by providing the word you want used 
+and the location in the sentence (as a match variable).  Replacing a word does 
+not make it visible to pattern matching. It is merely what will be retrieved (for both original and canonical).
 
 ### `^position ( how matchvariable )`
 
@@ -560,24 +592,23 @@ if you want to feed in multiple sentences, you must reverse the order so the las
 be processed is submitted via input first. You can detect that the current sentence comes
 from `^input` and not from the user by `%revisedInput` (bool) being true (1).
 
+Note: the input sentence is not what the user originally typed, so don't expect it to reflect
+appropriately in %originalInput. Also it is tokenized on entry, so things like commas may already have
+been separated.
+
 
 ### `^original ( _n )`
 
 The argument is the name of a match variable.
 Whatever it has memorized will be used to locate the corresponding series of words 
-in the original raw input from the user that led to this match. 
+in the original raw input from the user that led to this match. That is, the value is prior to any spell correction done by ChatScript.
 
-E.g., if the input was: _I lick ice crem_, the converted input became _I lick ice_create_ and you'd memorized the food onto a match variable, then you could do `^original(_0)` and get back _ice crem_.
+```
+u: (my _life) ^original(_0)
+```
 
-Another example:
-
-    # get foreign language proper name, without any CS standard processing.
-    u: what's your first name?
-        #! Anna Lisa
-        a: ( _* )
-	   $firstname = ^original ( _0 )
-	   Nice to meet you, $firstname 
-
+For input "my lif" spell correction will change the input to "life", which matches here,
+but ^original will return "lif".
 
 ### `^position ( which _var )`
 
@@ -602,6 +633,9 @@ was perceived to be a question.
 
 For example, I treat _tell me about cars_ sentences as questions by marking them as such from script 
 (equivalent to _what do you know about cars?_).
+
+Note that the change will not impact rule matching within the topic you have just done the change,
+because it has commited the set of rules it will try to match. So it only applies to later topics.
 
 
 ### `^setwildcardindex ( value )`
@@ -667,7 +701,19 @@ Starting by default at `_0`, if you assign it like this:
     _3 = ^timeinfofromseconds(%fulltime)
     
 it will start at `_3`. 
-The items you get are: seconds, minutes, hours, date in month, month name, year, day name of week, month index (jan==0), dayofweek index (sun==0).
+The items you get are: 
+
+| value | offset |
+| --- | --- |
+| seconds | 0 |
+| minutes | 1 |
+| hours | 2 |
+| date in month | 3 |
+| month name | 4 |
+| year | 5 |
+| day name of week | 6 |
+| month index (jan==0) | 7 |
+| dayofweek index (sun==0) | 8 |
 
 
 ### `^timetoseconds ( seconds minutes hours date-of-month month year )`
@@ -745,6 +791,7 @@ These flags apply to output as it is sent to the user:
 | `RESPONSE_REMOVETILDE`            | remove leading ~ on class names               |
 | `RESPONSE_NOCONVERTSPECIAL`    | don't convert ecaped n, r, and t into ascii direct characters  |
 | `RESPONSE_CURLYQUOTES`    | change simple quotes to curly quotes (starting and ending)  |
+| `RESPONSE_NOFACTUALIZE`    | suppresses building bot output facts (for postprocessing)  |
 
 
 ### `^preprint ( stream )`
@@ -794,6 +841,13 @@ The final rule will be first and the relay second, eg `~keywordless.30.0.~contro
 If the _id_ is `-1`, then all output generated will be included, analogous to what happens in
 the log file for `why` in the entries.
 
+### `^responsepattern(responseid)`
+Returns the pattern that matched inside [] of rule generating output (if it is matched that way)
+For a rule like:
+        u: ([  (pattern 1) (pattern 2) ([try 3])])
+It will tell you which piece of the pattern matched.
+Handy for debugging why a pattern matches incorrectly w/o
+having to read a trace log and analyzing each + and -.
 
 ## PostProcessing Functions
 
@@ -833,6 +887,10 @@ useful in a loop instead of having to access by variable name.
 
 If _n_ is `0`, the system merely tests whether the caller exists and fails if the caller is not in the path of this call.
 
+### `^Bug(msg)
+
+Generates a run-time bug. If you are compiling script at the time, it generates a std script
+bug trap. If you are not, it forces an error message into the bug log.
 
 ### `^callstack ( @n )`
 
@@ -846,9 +904,9 @@ You can execute debugging commands through here. E.g.,
 
     ^command(:execute ^print("Hello") )
 
-Note that it is hard to turn on :trace this way, because the system resets It
+Note that it is hard to turn on :trace this way, because the system resets it
 internally at various points. The correct way to manipulate trace is 
-to do  $cs_trace = -1 in regular script, outside of ^command.
+to do  `$cs_trace = -1` in regular script, outside of ^command.
 
 
 ### `^end ( code )`
@@ -876,9 +934,9 @@ Can be used to execute `:`commands from script as well.
 
 _Flags_ are optional and match the flag capabilities of `^print`. 
 
-One common flag would be `OUTPUT_NOQUOTES` if you wanted to string enclosing "" from a value. E.g.,
+One common flag would be `OUTPUT_NOQUOTES` if you wanted to remove the enclosing "" from a user variable value. E.g.,
 
-    $$tmp = ^eval(OUTPUT_NOQUOTES ^arg1)
+    $$tmp = ^eval(OUTPUT_NOQUOTES $$arg1)
 
 `^eval` is also particularly used with variables, when you know the value of a variable is
 itself a variable name and you want its actual value, e.g.
@@ -914,7 +972,7 @@ Normally CS takes all the data you have compiled as `:build 0` and `:build` what
 and loads them when CS starts up. They are then permanently resident. 
 However, you can also compile files named `filesxxx2.txt` which will NOT be loaded automatically. 
 
-You can write script that calls `^load`, naming the `xxx` part and they
+You can write a script that calls `^load`, naming the `xxx` part and they
 will be dynamically loaded, for that user only, and stay loaded for that user across all
 volleys until you call `^load` again. 
 Calling load again with a different name will load that new name. 
@@ -933,7 +991,7 @@ This clears all match variables to empty.
 
 This does a pattern match using the contents of what (usually a variable reference). 
 It fails if the match against current input fails. It operates on the current
-analyzed sentence which is usually the current input, but since you can call ^next(input)
+analyzed sentence which is usually the current input, but since you can call `^next(input)`
 or `^analyze()` it is whatever the current analysis data is.
 
     if (%more AND ^match(^"(< ![~emocurse ~emothanks] ~interjections >)" ) )
@@ -971,7 +1029,7 @@ and later
 
 You can also just say `^match(~someconcept)` and it will test the current input for that concept.
 
-'`$$csmatch_start` and `$$csmatch_end` are assigned to provide the range of words that `^match` used.
+`$$csmatch_start` and `$$csmatch_end` are assigned to provide the range of words that `^match` used.
 
 
 ### `^matches ()` 
@@ -1083,6 +1141,11 @@ rule. This has a 5 volley context and are used in normal rule patterns.
 
     u: (^incontext(PLAYTENNIS) why) because it was fun.
 
+### `^stats ( FACTS / DICT / TEXT )`
+
+FACTS: Returns how many free facts remain.
+DICT: Returns how many empty dictionary entries remain.
+TEXT: Returns how much space for both stack and heap remain.
 
 # External Access Functions
 
@@ -1099,7 +1162,6 @@ The arguments, separated by spaces, are passed as a text string to the operating
 The function always succeeds, returning the return code of the call. You can transfer data back and forth via
 files by using `^import` and `^export` of facts.
 
-
 ### `^popen ( commandstring 'function )`
 
 The command string is a string to pass the os shell to execute. 
@@ -1112,12 +1174,12 @@ and sent to the declared function, which must be an output macro or system funct
 The function can do whatever it wants. Any output it prints to the output buffer will be concatenated together 
 to be the output from ChatScript. If you need a doublequote in the command string, use a backslash in front of
 each one.  They will be removed prior to sending the command. E.g.,
-
+```
     outputmacro: ^myfunc(^arg)
     ^arg \n
     topic: ~test( testing )
     u: () popen( "dir *.* /on" '^myfunc)
-
+```
 output this:
 ```
 Volume in drive C is OS
@@ -1299,13 +1361,149 @@ If the name includes the substring "ltm",
 then the file will  be decryptable and routes to databases 
 if the filesystem has been overridden by Mongo, Postgres, or MySQL.
 
+## CS External API- ^CompilePattern
+The external API functions allow execution of rule behaviors from outside of ChatScript.
+This function takes in a pattern string like 
+```
+(   [ ~bottle test] *  me)
+```
+and compiles it to internal format. Alternatively it accepts a std CS 'if' condition like
+```
+if ($var >= 1 AND !$var2)
+```
+
+It returns JSON object notation in ordinary user output, e.g.  
+```
+{ "code": "(....)" } 
+```
+You can take that code value and save it away somewhere and later pass it into ^testpattern.
+Should compilation fail, then there will be no CODE field and instead you will have an errors field. 
+```
+{"errors": [ xxx yyy ] } 
+```
+In either case you may see a warnings field
+```
+{"warnings": [ xxx yyy ] } 
+```
+where xxx and yyy are warning messages.
+
+The code returned may have additional data at the start. This is used to inform spelling correction
+to protect words occurring in the pattern. For best results you  should compile patterns in the same bot environment
+you expect to execute them in. The pattern won't explictly protect words it thinks the bot will already be protecting.
+
+## CS External API- ^TestPattern
+The external API functions allow execution of rule behaviors from outside of ChatScript.
+^testpattern will execute a list of patterns and tell you which one (if any) matched and possibly return match variables.
+The argument is a JSON object as follows
+```
+{ 
+"input": "range leak", -- required
+"patterns": [  -- at least one required
+    string-returned-from-compilepattern, 
+    string-returned-from-compilepattern, 
+    ], 
+"style": "earliest", -- optional
+"variables": { -- optional
+    "$faucet": "testing", 
+    "$x": 1 }, 
+"concepts": [  -- optional
+    { "name": "~stove", 
+    "values": [ "oven", "range", "cooktop" ] 
+    }, 
+    { "name": "~leaky", 
+    "values": [ "'leak", "drip", "spill" ] } ] 
+}
+```
+Input is the user input (one or more sentences) to be matched against.
+
+Patterns is an array of pattern strings as returned by CompilePattern. They can use memorization
+and they can assign values. If they use memorization,
+you can assign those onto normal variables, which if permanent variables will
+be returned as "newglobals". You can perform an assignment inside the pattern using something
+like $answer:=_0  (see Match variable assignment in Advanced patterns). 
+The "newglobals will  be omitted if there are no changes.
+
+The variables and concepts fields are optional and provide context. 
+
+Style is also optional
+and defaults to `first`. Other choices are all, best, and last. First means stop running
+patterns and sentences as soon as you get a match. The makes the call faster and if your 
+patterns are ordered best first, there is no incentive to try lower priority patterns or more
+sentences. Last is the opposite, presumes that the patterns are ordered worst first. In addition,
+last will not execute any patterns earlier than the already matching one once one has been found (since it cannot improve the result).
+All runs all patterns on all sentences. It is good for gleaning data. Best presumes patterns
+are ordered best first, but once a match has been found it will move on to additional sentences
+to see if a better match can be found. 
+
+Result is ordinary user output JSON object: 
+```
+{ 
+    "match": 1,  -- index of matching pattern
+    "newglobals": { "$stovetype": "range", "$leaktype": "leak" }  
+}
+```
+If nothing matched, the value of `match` is false. Otherwise it is the index of the matching
+pattern (0-based). If there are return values from matching one or more patterns, those will
+be listed in `newglobals`, which is omitted if there are none. Values of null are never returned.
+
+You can force ^testpattern to trace user regardless of whether tracing is on or not or whether nouserlog is set.  Just prepend to your input ":tracepattern"
+
+## CS External API- ^CompileOutput
+The external API functions allow execution of rule behaviors from outside of ChatScript.
+This function takes in an output string like 
+```
+if ($test) {test me}
+^callmycode($test)
+```
+and compiles it to internal format.
+It returns JSON object notation in ordinary user output, e.g.  
+```
+{ "code": "(....)" } 
+```
+You can take that code value and save it away somewhere and later pass it into ^testpattern.
+Should compilation fail, then there will be no CODE field and instead you will have an errors field. 
+```
+{"errors": [ xxx yyy ] } 
+```
+In either case you may see a warnings field
+```
+{"warnings": [ xxx yyy ] } 
+```
+where xxx and yyy are warning messages.
+
+## CS External API- ^TestOutput
+The external API functions allow execution of rule behaviors from outside of ChatScript.
+The argument is a JSON object as follows
+```
+{ 
+"output":  code-returned-from-compile-output, 
+"variables": { -- optional
+    "$faucet": "testing", 
+    "$x": 1 }, 
+}
+```
+
+If a variable value above looks like a JSON arry or object, will be transformed into the corresponding
+internal JSON name.
+
+The result is a JSON object
+```
+{
+    output: "message to user", 
+    newglobals:  {"$x": "1", "$y": "testing"}  -- optional
+}
+```
+Output may be blank if nothing is intended to be generated or the code fails in execution.
+Newglobals will be present if the code changes permanent global variables. Changes to transient variables $$
+and local variables  $_ will not be returned. If nothing is returned, the field is omitted.
+If a permanent variable is set to a JSON structure, the entire JSON string will BE
+send (and not the JSON name).
 
 ## Debugging Function `^debug ()`
 
 As a last ditch, you can add this function call into a pattern or the output and it will call
 DebugCode in `functionExecute.cpp` so you know exactly where you are and can use a
 debugger to follow code thereafter if you can debug c code.
-
 
 ## Logging Function `^log ( ... )`
 
@@ -1440,11 +1638,14 @@ bunch of json during a system bootup (`^csboot`) under one naming and then use a
 different naming for user json created later and code can determine the source of the data.
 
 
-### `^jsonreadcvs ( TAB filepath )`
+### `^readfile ( TAB filepath )`
 
-reads a tsv (tab delimited spreadsheet file) and returns a JSON array representing it. The lines are all objects in an array.
+`^readfile ( TAB filepath )` reads a tsv (tab delimited spreadsheet file) and returns a JSON array representing it. The lines are all objects in an array.
 The line is an object where non-empty fields are given as field indexes. The first field is 0. Empty fields are skipped over and their number omitted.
+`^readfile ( TAB filepath 'function)` reads tsv and spreads fields onto arguments of 'function, which it calls onceper line
+`^readfile ( LINE filepath 'function)` reads any file and passes each line untouched as the sole argument to the function.
 
+Fomerly called ^jsonreadcsv.
 
 ### `^jsonundecodestring ( string )`
 
@@ -1600,7 +1801,7 @@ combined with `^findtext`.
 In addition to absolute unsigned values, start and end can take on offsets or relative values. 
 A signed end is a length to extract plus a direction or shift in start:
 
-    ^extract($$source 5 +2) # to extract 2 characters beginning at position
+    ^extract($$source 5 +2) # to extract 2 characters beginning at position 5
     
     ^extract($$source 5 -2) # to extract 2 characters ending at position 5
     
@@ -1609,7 +1810,11 @@ A negative start is a backwards offset from end.
     ^extract($$source -1 +1) # from end, 1 character before and get 1 character
 
     ^extract($$source -5 -1) # from end, 5 characters before and get 1 character before. i.e. the 6th char from end.
+    
+    ^extract($$source -5 -1000) # all characters until 5 from end
 
+Note start offset is 0-based indexing, but if you used ^findtext, it was
+1-based index so you probably need to subtract 1.
 
 ### `^findtext ( source substring offset {insensitive} )`
 
@@ -1627,6 +1832,13 @@ these will be converted to blanks before execution,
 to allow that or the space notation to be considered equivalent 
 (unless your source or substring is literally an underscore only).
 
+If you want to find a newline or tab character, then pass in the string
+`\n` or `\t`.  That will find an actual ascii character of such.
+If you want to find the ascii string `\n`, then use \\n and \\t to find them.
+Normal scripts don't have ascii newline or tab in them. You wrote the backslashed 
+characters and they are converted to the appropriate ascii characters on output to the user. 
+But if you have read data from an external source, it will likely be the
+actual ascii characters.
 
 ### `^flags ( word )`
 
@@ -1686,6 +1898,7 @@ For verbs with irregular pronoun conjugation, supply 4th argument of pronoun to 
 | `isfloat`      | word | return 1 if it is float, fails otherwise
 | `isuppercase`      | word | return 1 if it begins with an uppercase letter, fails otherwise
 | `isalluppercase`      | word | return 1 if it starts uppercase, and consists of entirely uppercase letters, hyphen, underscore and ampersand, fails otherwise
+| `ismixed case`      | word | return 1 if it has both upper and lowercase letters, fails otherwise
 | `type`               | word         | returns concept, number, word, or unknown
 | `common`             | word         | returns level of commonness of the word
 | `verb`               | verb         | given verb in any form, return requested form
@@ -1715,6 +1928,8 @@ For verbs with irregular pronoun conjugation, supply 4th argument of pronoun to 
 | `allupper`           | word         |
 | `canonical`          | word         | see notes
 | `integer`            | floatnumber  | generate integer if float is exact integer
+| `preexists`            | word  | return 1 if word in any casing was already in the dictionary before this volley, fail otherwise.
+
 
 Example:
 
@@ -1972,10 +2187,21 @@ Instead call it from `^csboot` during startup. For example, in LIVEDATA interjec
  You can do this to nouns, adjectives, adverbs.
 
 
-### `^walkdictionary ( 'function )` 
+### `^walkdictionary ( '^function )` 
 
 calls the named output macro from every word in the dictionary. 
 The function should have 1 argument, the word.
+
+### `^walktopics ( '^function )` 
+
+calls the named output macro for every topic the current bot can access.
+The function should have 1 argument, the topic name.
+
+### `^walkvariables ( '^function )` 
+
+calls the named output macro for every global permanent user variable currently non-null.
+The function should have 1 argument, the topic name. It does not involve
+$$ or $_ variables, or bot variables.
 
 
 ### `^Iterator ( ? member ~concept )`
@@ -2069,14 +2295,17 @@ The fact id returned can be used with ^field or you can use something like $resu
 
 ### `^reset ( what ? )`
 
-What can be user or topic or factset. 
+What can be user or topic or factset or VARIABLES or FACTS or HISTORY. 
 
 If what is user, the system drops all history and starts the user afresh from first meeting 
 (launching a new conversation), having erased the user topic file. 
 
 If what is a factset, the "next" pointer for walking the set is reset back to the beginning. 
 If what is a topic, all rules are re-enabled and all last accessed values are reset to 0.
-
+If what is VARIABLES then it sets all global user variables to NULL, leaving alone  
+    $$, $_ and bot variables.
+If what is FACTS, it kills all permanent user facts
+If what is HISTORY it forgets what was said previously.
 
 # FACT FUNCTIONS
 
@@ -2498,6 +2727,8 @@ Lists topics and priority values for matching keywords in input.
 An optional argument if `gambit`, will ignore topics without available gambits. 
 The verb used is: `^keywordtopics`.
 
+Note: it does not attempt to match the topic you are currently in, as the normal control scripts
+should already have tried that topic before coming to the more random thrashing of ^keywordtopics.
 
 ### `^last ( fact-set-annotated )`
 
@@ -2608,3 +2839,7 @@ statement like:
 
     @1 = ^unpackfactref(@0)
 
+### ^changebot(botname botid)
+^changebot(botname botid) allows a bot to pretend to be another bot and access its data,
+functions, and topics.  Variables are not affected by this. The user topic file will remain
+as the user came into the server.

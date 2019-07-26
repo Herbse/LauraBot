@@ -412,7 +412,6 @@ static int64 ProcessNumber(int at, char* original, WORDP& revise, WORDP &entry, 
 	}
 	entry = StoreWord(original);
 	char number[MAX_WORD_SIZE];
-	char* value;
 	uint64 baseflags = (entry) ? entry->properties : 0;
 	if (kind == ROMAN_NUMBER) baseflags = 0; // ignore other meanings
 	char* br = hyphen;
@@ -469,10 +468,15 @@ static int64 ProcessNumber(int at, char* original, WORDP& revise, WORDP &entry, 
 	else if (kind == CURRENCY_NUMBER) // money
 	{
 		char copy[MAX_WORD_SIZE];
-		strcpy(copy, original);
+        char* value;
+        strcpy(copy, original);
+        value = NULL;
 		unsigned char* currency = GetCurrency((unsigned char*)copy, value);
-		if (currency > (unsigned char*)value) *currency = 0; // remove trailing currency
-		int64 n = Convert2Integer(value, numberStyle);
+        if (value && currency && currency > (unsigned char*)value) *currency = 0; // remove trailing currency
+        
+        if (!value) value = "0"; // eg 100$% faulty number
+
+        int64 n = Convert2Integer(value, numberStyle);
 		double fn = Convert2Float(value, numberStyle);
 		if ((double)n == fn)
 		{
@@ -664,6 +668,15 @@ uint64 GetPosData( int at, char* original,WORDP& revise, WORDP &entry,WORDP &can
 		properties = ProcessNumber(at, original, revise, entry, canonical, sysflags, cansysflags, firstTry, nogenerate, start,kind); // case sensitive, may add word to dictionary, will not augment flags of existing wordskind);
 	if (canonical && (IsDigit(*canonical->word) || IsNonDigitNumberStarter(*canonical->word))) return properties;
 	entry = FindWord(original, 0, PRIMARY_CASE_ALLOWED);
+    size_t x = strlen(original);
+    // if uppercase, see if lowercase singular exists
+    if (csEnglish && entry && entry->internalBits & UPPERCASE_HASH && !entry->properties & properties & (NOUN_PROPER_SINGULAR | NOUN_PROPER_PLURAL | NOUN_HUMAN | PRONOUN_SUBJECT | PRONOUN_OBJECT) && original[x - 1] == 's') // possible plural
+    {
+        WORDP singular = FindWord(original, x-1, LOWERCASE_LOOKUP);
+        if (singular) entry = singular;
+        else if (original[x-2] == 'e') singular = FindWord(original, x - 2, LOWERCASE_LOOKUP);
+        if (singular) entry = singular;
+    }
 
 	if (!csEnglish)
 	{
@@ -707,6 +720,17 @@ uint64 GetPosData( int at, char* original,WORDP& revise, WORDP &entry,WORDP &can
 		entry = canonical = StoreWord(original,PUNCTUATION);
 		return PUNCTUATION;
 	}
+
+    // x between or after number like "5 x" or "5 x 5"
+    if (at > 1 && (*original == 'x' || *original == 'X') && !original[1])
+    {
+        if (IsDigit(*wordStarts[at - 1]))
+        {
+            entry = canonical = StoreWord(original, PUNCTUATION);
+            return PUNCTUATION;
+        }
+    }
+
 	if (*original == '.')
 	{
 		if (!original[1] || !strcmp(original,(char*)"..."))  // periods we NORMALLY kill off  .   and ...
@@ -1420,19 +1444,24 @@ void SetSentenceTense(int start, int end)
 	bool subjectFound = false;
 	if ((trace & TRACE_POS || prepareMode == POS_MODE) && CheckTopicTrace()) 
 	{
-		if (  tmpPrepareMode == POS_MODE || prepareMode == POSVERIFY_MODE  || prepareMode == POSTIME_MODE ) Log(STDTRACELOG,(char*)"Not doing a parse.\r\n");
+		if (  tmpPrepareMode == POS_MODE || prepareMode == POSVERIFY_MODE  || prepareMode == POSTIME_MODE ) Log(STDUSERLOG,(char*)"Not doing a parse.\r\n");
 	}
 
 	// assign sentence type
 	if (!verbStack[MAINLEVEL] || !(roles[verbStack[MAINLEVEL]] &  MAINVERB)) // FOUND no verb, not a sentence
 	{
-		if ((trace & TRACE_POS || prepareMode == POS_MODE) && CheckTopicTrace()) Log(STDTRACELOG,(char*)"Not a sentence\r\n");
+		if ((trace & TRACE_POS || prepareMode == POS_MODE) && CheckTopicTrace()) Log(STDUSERLOG,(char*)"Not a sentence\r\n");
 		if (tokenFlags & (QUESTIONMARK|EXCLAMATIONMARK)) {;}
-		else if (posValues[startSentence] & AUX_VERB) tokenFlags |= QUESTIONMARK;// its a question because AUX starts
+		else if (posValues[startSentence] & AUX_VERB
+            && !(posValues[startSentence+1] & TO_INFINITIVE)) tokenFlags |= QUESTIONMARK;// its a question because AUX starts
 		else if (allOriginalWordBits[startSentence]  & QWORD)
 		{
-			if (!stricmp(wordStarts[startSentence],(char*)"how") && endSentence != 1 && !(posValues[startSentence+1] & (AUX_VERB | VERB_BITS)));  // not "how very american you are"
-			else tokenFlags |= QUESTIONMARK; 
+            int i = startSentence;
+            if (posValues[i + 1] & (ADVERB | ADJECTIVE)) ++i;
+            if (i < wordCount && !stricmp(wordStarts[i + 1], "much")) ++i;
+            // how
+            if (posValues[i+1] & (VERB_BITS | AUX_VERB))
+                tokenFlags |= QUESTIONMARK;
 		}
 		else if (allOriginalWordBits[startSentence] & PREPOSITION && allOriginalWordBits[startSentence+1] & QWORD) tokenFlags |= QUESTIONMARK;
 	}
@@ -1456,7 +1485,8 @@ void SetSentenceTense(int start, int end)
 			if (roles[i] & MAINVERB) foundVerb = true;
 			if (roles[i] & MAINSUBJECT) 
 			{
-				if (i == startSentence && originalLower[startSentence] && originalLower[startSentence]->properties & QWORD) tokenFlags |= QUESTIONMARK;
+				if (i == startSentence && originalLower[startSentence] && originalLower[startSentence]->properties & QWORD && posValues[startSentence+1] & (VERB_BITS & AUX_VERB_TENSES)) 
+                    tokenFlags |= QUESTIONMARK;
 				break;
 			}
 			if (phrases[i] || clauses[i] || verbals[i]) continue;
@@ -1502,8 +1532,19 @@ void SetSentenceTense(int start, int end)
 	else if (!stricmp(wordStarts[start],(char*)"how") && !stricmp(wordStarts[start+1],(char*)"many")) tokenFlags |= QUESTIONMARK; 
 	else if (posValues[start] & AUX_VERB && (!(posValues[start] & AUX_DO) || !(allOriginalWordBits[start] & AUX_VERB_PRESENT))){;} // not "didn't leave today." ommited subject
 	else if (roles[start] & MAINVERB && !stricmp(wordStarts[start],(char*)"assume")) tokenFlags |= COMMANDMARK|IMPLIED_YOU; // treat as sentence command
-	else if (roles[start] & MAINVERB && (!stricmp(wordStarts[start+1],(char*)"you") || subjectStack[MAINLEVEL])) tokenFlags |= QUESTIONMARK; 
+    // dont want "ate a cherry" to be a question so commented out rule
+    //	else if (roles[start] & MAINVERB && (!stricmp(wordStarts[start+1],(char*)"you") || subjectStack[MAINLEVEL])) tokenFlags |= QUESTIONMARK;
 	else if (roles[start] & MAINVERB && posValues[start] & VERB_INFINITIVE) tokenFlags |= COMMANDMARK|IMPLIED_YOU; 
+
+    if (start > 1 && posValues[start] & VERB_PAST_PARTICIPLE)
+    {
+         if (aux[start - 1] == AUX_BE || aux[start - 2] == AUX_BE)
+            roles[start] |= PASSIVE_VERB;
+         else if (!stricmp(wordCanonical[start - 1], "get") || (start > 2 &&  !stricmp(wordCanonical[start - 2], "get") ))
+             roles[start] |= PASSIVE_VERB;
+         if (roles[start] & MAINVERB && roles[start] & PASSIVE_VERB)
+            tokenFlags |= PASSIVE;
+    }
 
 	// determine sentence tense when not past from verb using aux (may pick wrong aux)
 	for (int i = start; i <= end; ++i)
@@ -1611,10 +1652,8 @@ void SetSentenceTense(int start, int end)
 		}
 		else if (aux[auxIndex-1] & AUX_BE && mainverbTense & VERB_PRESENT_PARTICIPLE) tokenFlags |= CONTINUOUS; 
 
-		// compute passive
 		if ((aux[auxIndex-1] & AUX_BE || (canonicalLower[auxIndex-1] && !stricmp(canonicalLower[auxIndex-1]->word,(char*)"get"))) && mainverbTense & VERB_PAST_PARTICIPLE) // "he is lost" "he got lost"
 		{
-			tokenFlags |= PASSIVE;
 			if (aux[auxIndex-1] & VERB_PRESENT_PARTICIPLE)  tokenFlags |= CONTINUOUS;	// being xxx
 		}
 		

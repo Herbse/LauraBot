@@ -121,6 +121,7 @@ static bool globalAbort = false;
 #define ID_EDITCHILD 100 // output
 #define ID_EDITCHILD1 101 //  input
 HWND hParent = NULL;
+HWND  ioWindow = NULL;
 static void RemoveBreak(char* name);
 HWND hGoButton, hStopButton, hClearButton,hNextButton, hInButton, hOutButton;
 HWND hGlobalsButton,hBackButton,hBreakMessageButton;
@@ -1266,16 +1267,17 @@ static void ReadIDECommandsMap(char* sysfile)
     FakeMapEntry("    :i xxx", "analogous to clicking on words in script window", maxlines, maxchar, sysfile);
     FakeMapEntry("    :i var = xxx", "break when var is set to xxx  can also be < or > values", maxlines, maxchar, sysfile);
     FakeMapEntry("    :xxx", "you can use various engine debug commands", maxlines, maxchar, sysfile);
+    FakeMapEntry("    :trace", "also sets default trace value when R-click on movement buttons", maxlines, maxchar, sysfile);
     FakeMapEntry("    xxx", "input to ChatScript engine", maxlines, maxchar, sysfile);
     FakeMapEntry("Output Window", "", maxlines, maxchar, sysfile);
     FakeMapEntry("Sentence Window", "", maxlines, maxchar, sysfile);
     FakeMapEntry("    L-click cycles mode", "displays: current sentence internal, sentence user typed, cannonical form of sentence", maxlines, maxchar, sysfile);
     FakeMapEntry("    R-click on word", "displays: displays marked concepts/topics of word", maxlines, maxchar, sysfile);
     FakeMapEntry("Buttons", "", maxlines, maxchar, sysfile);
-    FakeMapEntry("    Go", "resume execution", maxlines, maxchar, sysfile);
-    FakeMapEntry("    In", "go to more refined level", maxlines, maxchar, sysfile);
-    FakeMapEntry("    Out", "go to less refined level", maxlines, maxchar, sysfile);
-    FakeMapEntry("    Next", "go to next item at same level or go out", maxlines, maxchar, sysfile);
+    FakeMapEntry("    Go", "resume execution - rclick enables trace all", maxlines, maxchar, sysfile);
+    FakeMapEntry("    In", "go to more refined level - rclick enables trace", maxlines, maxchar, sysfile);
+    FakeMapEntry("    Out", "go to less refined level - rclick enables trace", maxlines, maxchar, sysfile);
+    FakeMapEntry("    Next", "go to next item at same level or go out - rclick enables trace", maxlines, maxchar, sysfile);
     FakeMapEntry("    Stop", "used during execution, stop as soon as possible", maxlines, maxchar, sysfile);
     FakeMapEntry("    Msg", "l-click: break when submitting output for user   r-click: turn off break", maxlines, maxchar, sysfile);
     FakeMapEntry("    Fail", "l-click: enable break if system function fails  r-click: turn off break   ctr-click: fail input", maxlines, maxchar, sysfile);
@@ -1889,8 +1891,20 @@ void CheckForEnter() // on input edit scriptData.window
             else if (AlignName(word));
             else 
             {
-                strcat(word, " - not found\r\n");
-                DebugOutput(word);
+                char tag[MAX_WORD_SIZE];
+                FunctionResult result = FindRuleCode1(word, tag);
+                MAPDATA* found = NULL;
+                if (result == NOPROBLEM_BIT) // found the topic
+                {
+                    char* at = strchr(tag, '.');
+                    strcpy(at + 1, word);
+                    found = AlignName(word);
+                }
+                if (!found)
+                {
+                    strcat(word, " - not found\r\n");
+                    DebugOutput(word);
+                }
             }
         }
         else
@@ -2473,16 +2487,25 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
        0, 0, 0, 0, nullptr, nullptr, hInstance, nullptr);
    if (!hParent) return FALSE;
 
+   ioWindow = CreateWindow(szWindowClass, szTitle, WS_VISIBLE  |
+     WS_HSCROLL |
+        WS_CAPTION | ES_AUTOVSCROLL | ES_AUTOHSCROLL,
+      WS_BORDER | WS_SIZEBOX  
+       | ES_MULTILINE | WS_VSCROLL   | WS_BORDER
+       | ES_LEFT, WS_MAXIMIZE | WS_SIZEBOX
+       ,0, 0, 0, 0, nullptr, nullptr, nullptr, nullptr);
+   if (!ioWindow) return FALSE;
+ 
    int xlimit = GetSystemMetrics(SM_CXMAXIMIZED);
    int ylimit = GetSystemMetrics(SM_CYMAXIMIZED);
    xlimit -= 30; // scroll
    ylimit -= 30; // scroll
    parentData.window = hParent;
-   parentData.rect.left = 00;
+   parentData.rect.left = 20;
    parentData.rect.right = xlimit;
-   parentData.rect.top = 0;
+   parentData.rect.top = 20;
    parentData.rect.bottom = ylimit;
-   MoveWindow(hParent, 0,0, parentData.rect.right, parentData.rect.bottom, true);
+   MoveWindow(hParent, parentData.rect.left, parentData.rect.top, parentData.rect.right, parentData.rect.bottom, true);
    
    hPen = CreatePen(PS_SOLID, 5, RGB(0, 0, 0));
    hBrush = CreateSolidBrush(RGB(0, 0, 0));
@@ -2547,11 +2570,12 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
    UpdateWindowMetrics(parentData);
 
-   inputData.rect.top = scriptData.rect.top;
-   inputData.rect.bottom = inputData.rect.top + 2 * butheight;
-   inputData.rect.left = scriptData.rect.right + 40;
-   inputData.rect.right = xlimit - 40;
-   inputData.window = CreateWindow(
+   inputData.rect.top = 0; // scriptData.rect.top;
+   inputData.rect.bottom = 100; // inputData.rect.top + 2 * butheight;
+   inputData.rect.left = 0; // scriptData.rect.right + 40;
+   inputData.rect.right = 400; //  xlimit - 40;
+   inputData.window = ioWindow;
+   /* CreateWindow(
        "EDIT",
        (LPCSTR) "cs input",
        WS_BORDER | WS_SIZEBOX  // | WS_CAPTION -- with this we lose edit dataentry 
@@ -2562,6 +2586,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
        (HMENU)ID_EDITCHILD1,   // edit control ID 
        (HINSTANCE)GetWindowLong(hParent, GWL_HINSTANCE),
        NULL);        // pointer not needed 
+       */
    MoveWindow(inputData.window,
        inputData.rect.left, inputData.rect.top, // starting x- and y-coordinates 
        inputData.rect.right - inputData.rect.left,  // width of client area 
@@ -2576,11 +2601,12 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    UpdateWindowMetrics(inputData);
 
    // output from cs
-   outputData.rect.top = inputData.rect.bottom + 10; 
-   outputData.rect.left = scriptData.rect.right + 40;
+   outputData.rect.top = inputData.rect.top;
+   outputData.rect.left = inputData.rect.left;
    outputData.rect.right = inputData.rect.right;
-   outputData.rect.bottom = outputData.rect.top + subwindowheight;
-   outputData.window = CreateWindow(
+   outputData.rect.bottom = inputData.rect.bottom;
+   outputData.window = ioWindow;
+     /* CreateWindow(
        "EDIT",
        (LPCSTR) "output",
        ES_READONLY | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_HSCROLL |
@@ -2589,16 +2615,17 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
        (HMENU)ID_EDITCHILD,
        (HINSTANCE)GetWindowLong(scriptData.window, GWL_HINSTANCE),
        NULL);        // pointer not needed 
+   */
    SendMessage(outputData.window, WM_SETTEXT, 0, (LPARAM)"");
    SendMessage(outputData.window, WM_SETFONT, (WPARAM)hFont, false);
    SendMessage(outputData.window, EM_SETSEL, -1, -1);
-   MoveWindow(outputData.window,
+  /* MoveWindow(outputData.window,
        outputData.rect.left, outputData.rect.top, // starting x- and y-coordinates 
        outputData.rect.right - outputData.rect.left,  // width of client area 
        outputData.rect.bottom - outputData.rect.top,   // height of client area 
-       TRUE);
-   ShowWindow(outputData.window, SW_SHOW);
-   UpdateWindow(outputData.window);
+       TRUE); */
+   //ShowWindow(outputData.window, SW_SHOW);
+   //UpdateWindow(outputData.window);
    UpdateWindowMetrics(outputData);
 
    // stats from cs
@@ -2670,7 +2697,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
     GetClientRect(scriptData.window, &scriptData.rect);
     GetClientRect(varData.window, &varData.rect);
     GetClientRect(stackData.window, &stackData.rect);
-    GetClientRect(outputData.window, &outputData.rect);
+    //GetClientRect(outputData.window, &outputData.rect);
     GetClientRect(inputData.window, &inputData.rect);
     GetClientRect(sentenceData.window, &sentenceData.rect);
     GetClientRect(statData.window, &statData.rect);
@@ -3170,7 +3197,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             debugAction = DebugAction;
 
             if (message == WM_LBUTTONDOWN) trace = 0;
-            else { trace = idetrace; }
+            else { trace = idetrace; if (!trace) trace = -1;}
             Go();
         }
         else if (hWnd == hInButton)
@@ -3180,13 +3207,13 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             debugCall = DebugCall;
             idestop = true; // break anywhere in or over or out
             if (message == WM_LBUTTONDOWN) trace = 0;
-            else { trace = idetrace; }
+            else { trace = idetrace; if (!trace) trace = -1; }
             Go();
         }
         else if (hWnd == hOutButton)
         {
             if (message == WM_LBUTTONDOWN) trace = 0;
-            else { trace = idetrace; }
+            else { trace = idetrace; if (!trace) trace = -1;}
 
             // OUT means leave either current action level or call depth and 
             // stop as soon as possible thereafter

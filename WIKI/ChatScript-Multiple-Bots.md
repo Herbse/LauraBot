@@ -1,6 +1,6 @@
 # ChatScript Multiple Bots Manual
 © Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com
-<br>Revision 6/25/2017 cs7.51
+<br>Revision 5/27/2019 cs9.4
 
 
 The system can support multiple bots cohabiting the same engine. You can restrict topics
@@ -11,11 +11,11 @@ that variants exist per bot.
 
 The simplest thing is to  restrict rules to being available only to certain bots by using something like
 ```
-?: ($bot=harry ...)
+?: (%bot=harry ...)
 
-?: (!$bot=harry ...).
+?: (%bot!=harry ...).
 
-t: ($bot=harry) My name is harry.
+t: (%bot=harry) My name is harry.
 ```
 
 You specify which bot you want when you login, by appending `:botname` to your login name, e.g., `bruce:harry`. 
@@ -66,7 +66,7 @@ be unique. A conversation between a specific bot and user results in a separate 
 bot learns the others do not.
 
 If you try to create two bots by having separate folders for each, and merely clone copies of an original folder,
-like `~control` and `~inTtroductions` and `~childhood` and you will get an error message when compiling.
+like `~control` and `~introductions` and `~childhood` and you will get an error message when compiling.
 Likely you would want only one copy of `~control` that both bots used. 
 And either they should have different topic names for `~introductions` and `~childhood` 
 OR you must put a bot restriction on things. See below
@@ -195,3 +195,9 @@ bot: 2 Harry
 private/Harry/
 bot: 4 Martha
 private/Martha/
+
+# Changing bot id on the fly
+
+^changebot(botname botid) allows a bot to pretend to be another bot and access its data,
+functions, and topics.  Variables are not affected by this. The user topic file will remain
+as the user came into the server.

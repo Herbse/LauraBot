@@ -1,4 +1,0 @@
-topic: ~negation keep repeat nostay()
-
-
-u: ($$answerCategory==negation) $$actionType = shake [Nein.][Nee.][Nö.][Mh-Mh.] ^keep() ^repeat()

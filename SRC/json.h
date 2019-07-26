@@ -1,7 +1,7 @@
 #ifndef _JSONH_
 #define _JSONH_
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -14,6 +14,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTH
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #endif
 extern int jsonOpenSize; 
+extern int jsonDefaults;
 FunctionResult JSONTreeCode(char* buffer);
 FunctionResult JSONKindCode(char* buffer);
 FunctionResult JSONPathCode(char* buffer);
@@ -26,6 +27,7 @@ FunctionResult JSONLabelCode(char* buffer) ;
 FunctionResult JSONUndecodeStringCode(char* buffer) ;
 FunctionResult JSONWriteCode(char* buffer);
 FunctionResult JSONParseCode(char* buffer);
+FunctionResult JSONTextCode(char* buffer);
 FunctionResult JSONArrayDeleteCode(char* buffer);
 FunctionResult JSONArraySizeCode(char* buffer);
 FunctionResult JSONGatherCode(char* buffer);
@@ -35,7 +37,8 @@ FunctionResult JSONDeleteCode(char* buffer);
 FunctionResult JSONCopyCode(char* buffer);
 FunctionResult JSONCreateCode(char* buffer);
 FunctionResult JSONReadCSVCode(char* buffer);
-MEANING GetUniqueJsonComposite(char* prefix);
+FunctionResult InitCurl();
+MEANING GetUniqueJsonComposite(char* prefix, unsigned int permenent = 0);
 MEANING jsonValue(char* value, unsigned int& flags);
 void JsonRenumber(FACT* F);
 void jkillfact(WORDP D);

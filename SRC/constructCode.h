@@ -1,7 +1,7 @@
 #ifndef _CONSTRUCTCODEH_
 #define _CONSTRUCTCODEH_
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -14,9 +14,10 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTH
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #endif
 
+#define ACCELLSIZE 3
 extern int impliedIf;
 extern unsigned int withinLoop;
 char* HandleIf(char* ptr, char* buffer, FunctionResult &result);
-char* HandleLoop(char* ptr, char* buffer, FunctionResult &result);
+char* HandleLoop(char* ptr, char* buffer, FunctionResult &result,bool json);
 FunctionResult HandleRelation(char* word1,char* op, char* word2,bool iflog,int& id,char* word1val, char* word2val);
 #endif

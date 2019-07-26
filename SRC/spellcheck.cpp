@@ -108,7 +108,7 @@ static int SplitWord(char* word,int i)
 {
 	size_t len1 = strlen(word);
 	// Do not split acronyms (all uppercase) unless word before or after is lowercase
-	int j;
+    size_t j;
 	for (j = 0; j < len1; ++j)
 	{
 		if (!IsUpperCase(word[j])) break;
@@ -175,12 +175,16 @@ static int SplitWord(char* word,int i)
 
 static char* SpellCheck( int i)
 {
+    char* tokens[6];
     //   on entry we will have passed over words which are KnownWord (including bases) or isInitialWord (all initials)
     //   wordstarts from 1 ... wordCount is the incoming sentence words (original). We are processing the ith word here.
     char* word = wordStarts[i];
 	if (!*word) return NULL;
 	if (!stricmp(word,loginID) || !stricmp(word,computerID)) return word; //   dont change his/our name ever
-
+    int start = derivationIndex[i] >> 8;
+    int end = derivationIndex[i] & 0x00ff;
+    if (start != end || wordStarts[i] != derivationSentence[start])
+        return word; // got here by a spellcheck so trust it.
 	size_t len = strlen(word);
 	if (len > 2 && word[len-2] == '\'') return word;	// dont do anything with ' words
 
@@ -188,7 +192,6 @@ static char* SpellCheck( int i)
     int breakAt = SplitWord(word,i);
     if (breakAt > 0)//   we found a split, insert 2nd word into word stream
     {
-		char* tokens[3];
 		WORDP D = FindWord(word,breakAt,PRIMARY_CASE_ALLOWED);
 		tokens[1] = D->word;
 		tokens[2] = word+breakAt;
@@ -200,16 +203,15 @@ static char* SpellCheck( int i)
 	// now imagine partial runtogetherness, like "talkab out fingers"
 	if (i < wordCount)
 	{
-		char tmp[MAX_WORD_SIZE*2];
-		strcpy(tmp,word);
-		strcat(tmp,wordStarts[i+1]);
-		breakAt = SplitWord(tmp,i);
-		if (breakAt > 0) // replace words with the dual pair
+		char tmpword[MAX_WORD_SIZE*2];
+		strcpy(tmpword,word);
+		strcat(tmpword,wordStarts[i+1]);
+		breakAt = SplitWord(tmpword,i);
+		if (breakAt > 0  && stricmp(tmpword+breakAt,wordStarts[i+1])) // replace words with the dual pair
 		{
-			char* tokens[3];
-			WORDP D = FindWord(tmp,breakAt,PRIMARY_CASE_ALLOWED);
+			WORDP D = FindWord(tmpword,breakAt,PRIMARY_CASE_ALLOWED);
 			tokens[1] = D->word;
-			tokens[2] = tmp+breakAt;
+			tokens[2] = tmpword +breakAt;
 			ReplaceWords("SplitWords",i,2,2,tokens);
 			fixedSpell = true;
 			return NULL;
@@ -349,6 +351,7 @@ char* ProbableKnownWord(char* word)
 bool SpellCheckSentence()
 {
 	WORDP E;
+    char* tokens[6];
 	fixedSpell = false;
     int badcount = 0;
     int goodcount = 0;
@@ -356,7 +359,27 @@ bool SpellCheckSentence()
 	for (int i = startWord; i <= wordCount; ++i)
 	{
 		char* word = wordStarts[i];
-		char* tokens[2];
+        if (strlen(word) > (MAX_WORD_SIZE - 100)) continue;
+        char hyphenword[MAX_WORD_SIZE];
+        if (i != wordCount) // merge 2 adj words w hyphen if can, even though one or both are legal words
+        {
+            WORDP X = FindWord(word);
+            WORDP Y = FindWord(wordStarts[i + 1]);
+            if (X && Y) { ; } // dont merge 2 known words
+            else
+            {
+                strcpy(hyphenword, word);
+                size_t len = strlen(hyphenword);
+                strcpy(hyphenword + len++, "-");
+                strcpy(hyphenword + len, wordStarts[i + 1]);
+                WORDP XX = FindWord(hyphenword);
+                if (XX && !IS_NEW_WORD(XX))
+                {
+                    tokens[1] = XX->word;
+                    ReplaceWords("merge to hyphenword", i, 2, 1, tokens);
+                }
+            }
+        }
 		if (spellTrace)
 		{
 			strcpy(spellCheckWord, word);
@@ -395,7 +418,20 @@ bool SpellCheckSentence()
             }
 		}
 		if (IsDate(word)) continue; // allow 1970/10/5 or similar
-        
+        if (IsUrl(word,word+strlen(word))) continue;
+
+        if (*word == '\'')
+        {
+            WORDP X = ApostropheBreak(word);
+            if (X)
+            {
+                tokens[1] = X->word;
+                ReplaceWords("' replace", i, 1, 1, tokens);
+                fixedSpell = true;
+                continue;
+            }
+        }
+
         // he's probably messing with us
         if (++badcount > 10 && !goodcount) break;
         if (badcount > 30 ) break;
@@ -426,6 +462,18 @@ bool SpellCheckSentence()
 		//  dont spell check email or other things with @ or . in them
 		if (strchr(word, '@') || strchr(word, '&') || strchr(word, '$')) continue;
 
+		//  dont spell check hashtags
+		if (word[0] == '#' && !IsDigit(word[1])) {
+			bool validHash = true;
+			for (int i = 1; i < size; ++i) {
+				if (!IsAlphaUTF8OrDigit(word[i]) && word[i] != '_') {
+					validHash = false;
+					break;
+				}
+			}
+			if (validHash) continue;
+		}
+
 		// dont spell check names of json objects or arrays
 		if (!strnicmp(word, "ja-", 3) || !strnicmp(word, "jo-", 3)) continue;
 
@@ -439,32 +487,36 @@ bool SpellCheckSentence()
 		// dont spell check abbreviations with dots, e.g. p.m.
 		char* dot = strchr(word, '.');
 		if (dot && FindWord(word, 0)) continue;
+        
+        // dont spellcheck model numbers
+        if (IsModelNumber(word)) continue;
 
 		// split conjoined sentetence Missouri.Fix  or Missouri..Fix
-		if (dot && dot != word && dot[1])
+		// but dont split float values like 0.5%
+        if (dot && dot != word && dot[1] && !IsDigit(dot[1]))
 		{
 			*dot = 0;
-			WORDP X = FindWord(word, 0);
+			// don't spell correct if this looks like a filename
 			char* rest = dot + 1;
-			while (rest[1] == '.') ++rest; // swallow all excess dots
-			WORDP Y = FindWord(rest + 1, 0);
-			if (X && Y) // we recognize the words
-			{
-				char* tokens[4];
-				char oper[10];
-				tokens[1] = word;
-				tokens[2] = oper;
-				*oper = '.';
-				oper[1] = 0;
-				tokens[3] = rest + 1;
-				ReplaceWords("dotsentence", i, 1, 3, tokens);
-				fixedSpell = true;
-				continue;
+			if (!IsFileExtension(rest)) {
+				WORDP X = FindWord(word, 0);
+				while (rest[1] == '.') ++rest; // swallow all excess dots
+				WORDP Y = FindWord(rest + 1, 0);
+				if (X && Y) // we recognize the words
+				{
+					char oper[10];
+					tokens[1] = word;
+					tokens[2] = oper;
+					*oper = '.';
+					oper[1] = 0;
+					tokens[3] = rest + 1;
+					ReplaceWords("dotsentence", i, 1, 3, tokens);
+					fixedSpell = true;
+					*dot = '.';  // restore the dot so the original is still in derivationSentence
+					continue;
+				}
 			}
-			else 
-			{
-				*dot = '.';  // restore the dot
-			}
+			*dot = '.';  // restore the dot
 		}
 
 		//  dont spell check things with . in them
@@ -481,7 +533,6 @@ bool SpellCheckSentence()
 			char first[MAX_WORD_SIZE];
 			strncpy(first, word, (at - word));
 			first[at - word] = 0;
-			char* tokens[3];
 			tokens[1] = first;
 			tokens[2] = at;
 			ReplaceWords("joined number word", i, 1, 2, tokens);
@@ -494,7 +545,6 @@ bool SpellCheckSentence()
 			WORDP X = FindWord(word, 0, UPPERCASE_LOOKUP);
 			if (IsConceptMember(X) && !strcmp(word,X->word))
 			{
-				char* tokens[2];
 				tokens[1] = X->word;
 				ReplaceWords("KnownUpperModelNumber", i, 1, 1, tokens);
 				fixedSpell = true;
@@ -508,7 +558,6 @@ bool SpellCheckSentence()
 		if (!stricmp(word, (char*)"am") && i != startWord && 
 			(IsDigit(*wordStarts[i-1]) || IsNumber(wordStarts[i-1], numberStyle) ==REAL_NUMBER) && !stricmp(language,"english")) // fails if not digit bug
 		{
-			char* tokens[2];
 			tokens[1] = (char*)"a.m.";
 			ReplaceWords("am as time", i, 1, 1, tokens);
 			fixedSpell = true;
@@ -523,7 +572,7 @@ bool SpellCheckSentence()
 			strcpy(excess, word);
 			bool change = false;
 			// refuse to believe any 3 or more repeats
-			for (int j = 0;  j < len; ++j)
+			for (size_t j = 0;  j < len; ++j)
 			{
 				if (excess[j] == excess[j + 1] && excess[j + 2] == excess[j])
 				{
@@ -536,12 +585,11 @@ bool SpellCheckSentence()
 			}
 			if (change)
 			{
-				char* tokens[2];
 				tokens[1] = excess;
 				ReplaceWords("multiple repeat letters", i, 1, 1, tokens);
 				fixedSpell = true;
 				word = wordStarts[i];
-				WORDP D = FindWord(excess);
+				D = FindWord(excess);
 				if (D && !IS_NEW_WORD(D)) continue;
 			}
 		}
@@ -559,14 +607,13 @@ bool SpellCheckSentence()
             }
 			strcpy(excess, word);
 			bool change = false;
-			for (int j = 0; j < len; ++j)
+			for (size_t j = 0; j < len; ++j)
 			{
 				if (excess[j] == excess[j + 1])
 				{
 					memmove(excess + j + 1, excess + j + 2, strlen(excess + j + 1));
 					if (FindWord(excess))
 					{
-						char* tokens[2];
 						tokens[1] = excess;
 						ReplaceWords("2 repeat letters", i, 1, 1, tokens);
 						fixedSpell = true;
@@ -581,7 +628,7 @@ bool SpellCheckSentence()
 		// split arithmetic  1+2
 		if (IsDigit(*word) && IsDigit(word[size - 1]))
 		{
-			char* at = word;
+			at = word;
 			while (IsDigit(*++at) || *at == '.' || *at == ',') { ; }
 			char* op = at;
 			if (*at == '+' || *at == '-' || *at == '*' || *at == '/')
@@ -589,7 +636,6 @@ bool SpellCheckSentence()
 				while (IsDigit(*++at) || *at == '.' || *at == ',') { ; }
 				if (!*at  && (size != 9 || *op != '-'))  // 445+455 but not zip code
 				{
-					char* tokens[4];
 					char oper[10];
 					tokens[2] = oper;
 					*oper = *op;
@@ -604,6 +650,20 @@ bool SpellCheckSentence()
 			}
 		}
 
+        // split off trailing - 
+        if (len > 1 && word[len - 1] == '-')
+        {
+            WORDP X = FindWord(word, len - 1);
+            if (X)
+            {
+                tokens[1] = X->word;
+                tokens[2] = "-";
+                ReplaceWords("trailing hyphen split", i, 1, 2, tokens);
+                fixedSpell = true;
+                continue;
+            }
+        }
+
 		// merge with next token?
 		if (i != wordCount && *wordStarts[i + 1] != '"')
 		{
@@ -611,7 +671,7 @@ bool SpellCheckSentence()
 			// direct merge as a single word
 			strcpy(join, word);
 			strcat(join, wordStarts[i + 1]);
-			WORDP D = FindWord(join, 0, (tokenControl & ONLY_LOWERCASE) ? PRIMARY_CASE_ALLOWED : STANDARD_LOOKUP);
+			D = FindWord(join, 0, (tokenControl & ONLY_LOWERCASE) ? PRIMARY_CASE_ALLOWED : STANDARD_LOOKUP);
 			if (D && D->properties & PART_OF_SPEECH && !(D->properties & AUX_VERB)) {} // merge these two, except "going to" or wordnet composites of normal words
 			else // merge with underscore?  shia tsu
 			{
@@ -631,7 +691,6 @@ bool SpellCheckSentence()
 				WORDP P2 = FindWord(wordStarts[i + 1], 0, LOWERCASE_LOOKUP);
 				if (!P1 || !P2 || !(P1->properties & PART_OF_SPEECH) || !(P2->properties & PART_OF_SPEECH))
 				{
-					char* tokens[2];
 					tokens[1] = D->word;
 					ReplaceWords("merge", i, 2, 1, tokens);
 					fixedSpell = true;
@@ -640,16 +699,35 @@ bool SpellCheckSentence()
 			}
 		}
 
+        // merge with prior token?
+        if (i != 1 && *wordStarts[i - 1] != '"') // allow piece to stand, sequences code will find it
+        {
+            char join[MAX_WORD_SIZE * 3];
+            strcpy(join, wordStarts[i - 1]);
+            strcat(join, "_");
+            strcat(join, word);
+            D = FindWord(join, 0, (tokenControl & ONLY_LOWERCASE) ? PRIMARY_CASE_ALLOWED : STANDARD_LOOKUP);
+            if (D && D->properties & PART_OF_SPEECH && !(D->properties & AUX_VERB)) 
+            {
+                ++i;
+                continue;
+            }
+            if (D && D->systemFlags & PATTERN_WORD) 
+            {
+                ++i;
+                continue;
+            }
+        }
+
 		// sloppy omitted g in lookin
 		if (word[len - 1] == 'n' && word[len - 2] == 'i')
 		{
-			WORDP D = FindWord(word, len - 2);
+			D = FindWord(word, len - 2);
 			if (D && D->properties & BASIC_POS)
 			{
 				char test[MAX_WORD_SIZE];
 				strcpy(test, word);
 				strcat(test, "g");
-				char* tokens[2];
 				tokens[1] = test;
 				ReplaceWords("omitg", i, 1, 1, tokens);
 				fixedSpell = true;
@@ -661,8 +739,7 @@ bool SpellCheckSentence()
 		if (known && !strcmp(known,word)) continue;	 // we know it
 		if (known && strcmp(known,word)) 
 		{
-			WORDP D = FindWord(known);
-			char* tokens[2];
+			D = FindWord(known);
 			if ((!D || !(D->internalBits & UPPERCASE_HASH)) && !IsUpperCase(*known)) // revised the word to lower case (avoid to upper case like "fields" to "Fields"
 			{
 				WORDP X = FindWord(known,0,LOWERCASE_LOOKUP);
@@ -722,13 +799,13 @@ bool SpellCheckSentence()
 		// see if we know the other case
 		if (!(tokenControl & (ONLY_LOWERCASE|STRICT_CASING)) || (i == startSentence && !(tokenControl & ONLY_LOWERCASE)))
 		{
-			WORDP E = FindWord(word,0,SECONDARY_CASE_ALLOWED);
+			E = FindWord(word,0,SECONDARY_CASE_ALLOWED);
 			bool useAlternateCase = false;
 			if (E && E->systemFlags & PATTERN_WORD) useAlternateCase = true;
 			if (E && E->properties & (PART_OF_SPEECH|FOREIGN_WORD))
 			{
 				// if the word we find is UPPER case, and this might be a lower case noun plural, don't change case.
-				size_t len = size;
+				len = size;
 				if (word[len-1] == 's' ) 
 				{
 					WORDP F = FindWord(word,len-1);
@@ -747,7 +824,6 @@ bool SpellCheckSentence()
 			}
 			if (useAlternateCase)
 			{
-				char* tokens[2];
 				tokens[1] = E->word;
 				ReplaceWords("Alternatecase",i,1,1,tokens);
 				fixedSpell = true;
@@ -772,11 +848,11 @@ bool SpellCheckSentence()
 			D = StoreWord(word);
 			*slash = '/';
 			E = StoreWord(slash+1);
-			char* tokens[4];
-			tokens[1] = D->word;
-			tokens[2] = "/";
-			tokens[3] = E->word;
-			ReplaceWords("Split",i,1,3,tokens);
+			char* tokenlist[4];
+            tokenlist[1] = D->word;
+            tokenlist[2] = "/";
+            tokenlist[3] = E->word;
+			ReplaceWords("Split",i,1,3, tokenlist);
 			fixedSpell = true;
 			--i;
 			continue;
@@ -799,8 +875,8 @@ bool SpellCheckSentence()
 			strcpy(first,word);
 			*hyphen = '-';
 
-			WORDP E = FindWord(test,0,LOWERCASE_LOOKUP);
-			WORDP D = FindWord(first,0,LOWERCASE_LOOKUP);
+			E = FindWord(test,0,LOWERCASE_LOOKUP);
+			D = FindWord(first,0,LOWERCASE_LOOKUP);
 			if (*first == 0) 
 			{
 				wordStarts[i] = AllocateHeap(wordStarts[i] + 1); // -pieces  want to lose the leading hypen  (2-pieces)
@@ -809,7 +885,6 @@ bool SpellCheckSentence()
 			else if (D && E) //   1st word gets replaced, we added another word after
 			{
 				if ((wordCount + 1 ) >= REAL_SENTENCE_LIMIT) continue;	// no room
-				char* tokens[3];
 				tokens[1] = D->word;
 				tokens[2] = E->word;
 				ReplaceWords("Pair",i,1,2,tokens);
@@ -821,7 +896,6 @@ bool SpellCheckSentence()
 				if ((wordCount + 1 ) >= REAL_SENTENCE_LIMIT) continue;	// no room
 				D = StoreWord(first);
 				E = StoreWord(test);
-				char* tokens[3];
 				tokens[1] = D->word;
 				tokens[2] = E->word;
 				ReplaceWords("Break old",i,1,2,tokens);
@@ -838,25 +912,24 @@ bool SpellCheckSentence()
 					wordStarts[i] = D->word;
 					fixedSpell = true;
 					--i;
+                    continue;
 				}
 			}
-			continue; // ignore hypenated errors that we couldnt solve, because no one mistypes a hypen
 		}
 
 		// see if number in front of unit split like 10mg
 		if (IsDigit(*word))
 		{
-			char* at = word;
+			at = word;
 			while (*++at && IsDigit(*at)) {;}
-			WORDP E = FindWord(at);
+			E = FindWord(at);
 			if (E && strlen(at) > 2 && *at != 'm') // number in front of known word ( but must be longer than 2 char, 5th) but allow mg
 			{
 				char token1[MAX_WORD_SIZE];
-				int len = at - word;
+				len = at - word;
 				strncpy(token1,word,len);
 				token1[len] = 0;
 				D = StoreWord(token1);
-				char* tokens[4];
 				tokens[1] = D->word;
 				tokens[2] = E->word;
 				ReplaceWords("Split",i,1,2,tokens);
@@ -870,14 +943,13 @@ bool SpellCheckSentence()
 		{
 			char lower[MAX_WORD_SIZE];
 			MakeLowerCopy(lower,word);
-			WORDP D = FindWord(lower,0,LOWERCASE_LOOKUP);
+			D = FindWord(lower,0,LOWERCASE_LOOKUP);
 			if (!D && i == startWord)
 			{
 				char* okword = SpellFix(lower,i,PART_OF_SPEECH); 
 				if (okword)
 				{
-					char* tokens[2];
-					WORDP E = StoreWord(okword);
+					E = StoreWord(okword);
 					tokens[1] = E->word;
 					ReplaceWords("Spell",i,1,1,tokens);
 					fixedSpell = true;
@@ -909,7 +981,6 @@ bool SpellCheckSentence()
 			}
 			if (word) 
 			{
-				char* tokens[2];
 				tokens[1] = word;
 				ReplaceWords("Nearest real word",i,1,1,tokens);
 				fixedSpell = true;
@@ -1291,7 +1362,7 @@ static int EditDistance(WORDINFO& dictWordData, WORDINFO& realWordData,int min)
             val += 16;  // only delete 1 letter
 
             if (*priorCharDict == *currentCharReal) val -= 14; // low cost for dropping an excess repeated letter (wherre->where not wherry)
-            else if (*currentCharReal == '-') val -= 10; //   very low cost for removing a hypen 
+            else if (*currentCharReal == '-') val -= 14; //   very low cost for removing a hypen 
 
             dictinfo = resumeDict; // skip over letter we match momentarily
             realinfo = resumeReal1; // move on past our junk letter and match letter
@@ -1303,6 +1374,8 @@ static int EditDistance(WORDINFO& dictWordData, WORDINFO& realWordData,int min)
             val += 16; // only add 1 letter
             // better to add repeated letter than to drop a letter
             if (*currentCharDict == *priorCharReal) val -= 6; // low cost for adding a repeated letter
+            else if (*currentCharDict == '-') 
+                val -= 14; // very low cost for adding a hyphen
             else if (*currentCharDict == 'e' && *nextCharDict == 'o') val -= 10; // yoman->yeoman
             dictinfo = resumeDict1; // skip over letter we match momentarily
             realinfo = resumeReal; // move on past our junk letter and match letter
@@ -1426,16 +1499,49 @@ static char* StemSpell(char* word,unsigned int i,uint64& base)
    return NULL;
 }
 
+void CheckWord(char* originalWord, WORDINFO& realWordData, WORDP D, WORDP* choices, unsigned int& index, int& min)
+{
+    WORDINFO dictWordData;
+    ComputeWordData(D->word, &dictWordData);
+    int val = EditDistance(dictWordData, realWordData, min);
+
+    // adjustments
+    size_t l = strlen(originalWord) - 1;
+    if (*D->word != *originalWord) ++val;  // starts not same
+    if (D->word[l] != originalWord[l]) ++val; // doesnt end the same
+    if (D->internalBits & UPPERCASE_HASH) ++val; // lower case should win any tie against proper name
+
+    if (val <= min) // as good or better
+    {
+       if (spellTrace) Log(STDUSERLOG, "    found: %s %d\r\n", D->word, val);
+       if (val < min)
+       {
+            if (trace == TRACE_SPELLING) Log(STDUSERLOG, (char*)"    Better: %s against %s value: %d\r\n", D->word, originalWord, val);
+            index = 0;
+            min = val;
+        }
+        else if (val == min && trace == TRACE_SPELLING) Log(STDUSERLOG, (char*)"    Equal: %s against %s value: %d\r\n", D->word, originalWord, val);
+
+        if (!(D->internalBits & BEEN_HERE))
+        {
+            choices[index++] = D;
+            AddInternalFlag(D, BEEN_HERE);
+        }
+    }
+}
+
 char* SpellFix(char* originalWord,int start,uint64 posflags)
 {
-	if (spellTrace) Log(STDTRACELOG,"Correcting: %s:\r\n", originalWord);
+	if (spellTrace) Log(STDUSERLOG,"Correcting: %s:\r\n", originalWord);
 	multichoice = false;
     char word[MAX_WORD_SIZE];
     MakeLowerCopy(word, originalWord);
 	char word1[MAX_WORD_SIZE];
 	MakeUpperCopy(word1, originalWord);
+
 	WORDINFO realWordData;
     ComputeWordData(word, &realWordData);
+
 	if (realWordData.bytelen >= 100 || realWordData.bytelen == 0) return NULL;
 	if (IsDigit(*originalWord)) return NULL; // number-based words and numbers must be treated elsewhere
     char letterLow = *word;
@@ -1443,7 +1549,7 @@ char* SpellFix(char* originalWord,int start,uint64 posflags)
 	bool hasUnderscore = (strchr(originalWord,'_')) ? true : false;
 	bool isUpper = IsUpperCase(originalWord[0]);
 	if (IsUpperCase(originalWord[1])) isUpper = false;	// not if all caps
-	if (trace == TRACE_SPELLING) Log(STDTRACELOG,(char*)"Spell: %s\r\n",originalWord);
+	if (trace == TRACE_SPELLING) Log(STDUSERLOG,(char*)"Spell: %s\r\n",originalWord);
 
 	//   Priority is to a word that looks like what the user typed, because the user probably would have noticed if it didnt and changed it. So add/delete  has priority over tranform
     WORDP choices[4000];
@@ -1457,7 +1563,7 @@ char* SpellFix(char* originalWord,int start,uint64 posflags)
     if (posflags == PART_OF_SPEECH && start < wordCount) // see if we can restrict word based on next word
     {
         D = FindWord(wordStarts[start+1],0,PRIMARY_CASE_ALLOWED);
-		uint64 flags = (D) ? D->properties : (-1ull); //   if we dont know the word, it could be anything
+		uint64 flags = (D) ? D->properties : (uint64)-1; //   if we dont know the word, it could be anything
 		if ((flags & PART_OF_SPEECH) == PREPOSITION) pos &= -1 ^ (PREPOSITION | NOUN);   //   prep cannot be preceeded by noun or prep
 		if (!(flags & (PREPOSITION | VERB | CONJUNCTION | ADVERB)) && flags & DETERMINER) pos &= -1 ^ (DETERMINER | ADJECTIVE | NOUN | ADJECTIVE_NUMBER | NOUN_NUMBER); //   determiner cannot be preceeded by noun determiner adjective
 		if (!(flags & (PREPOSITION | VERB | CONJUNCTION | DETERMINER | ADVERB)) && flags & ADJECTIVE) pos &= -1 ^ (NOUN);
@@ -1476,7 +1582,7 @@ char* SpellFix(char* originalWord,int start,uint64 posflags)
 	{
 		if (i >= 3) break;
 		MEANING offset = lengthLists[realWordData.charlen + range[i]];
-		if (trace == TRACE_SPELLING) Log(STDTRACELOG,(char*)"\r\n  Begin offset %d\r\n",i);
+		if (trace == TRACE_SPELLING) Log(STDUSERLOG,(char*)"\r\n  Begin offset %d\r\n",i);
 		while (offset)
 		{
 			D = Meaning2Word(offset);
@@ -1487,27 +1593,9 @@ char* SpellFix(char* originalWord,int start,uint64 posflags)
 			// SPELLING lists have no underscore or space words in them
 			if (hasUnderscore && !under) continue;	 // require keep any underscore
 			if (!hasUnderscore && under) continue;	 // require not have any underscore
-            WORDINFO dictWordData;
-            ComputeWordData(D->word, &dictWordData);
-            int val = EditDistance(dictWordData, realWordData, min);
-			if (val <= min) // as good or better
-			{
-				if (spellTrace) Log(STDTRACELOG,"    found: %s %d\r\n", D->word, val);
-				if (val < min)
-				{
-					if (trace == TRACE_SPELLING) Log(STDTRACELOG,(char*)"    Better: %s against %s value: %d\r\n",D->word,originalWord,val);
-					index = 0;
-					min = val;
-				}
-				else if ( val == min && trace == TRACE_SPELLING) Log(STDTRACELOG,(char*)"    Equal: %s against %s value: %d\r\n",D->word,originalWord,val);
-
-				if (!(D->internalBits & BEEN_HERE)) 
-				{
-					choices[index++] = D;
-					if (index > 3998) break; 
-					AddInternalFlag(D,BEEN_HERE);
-				}
-			}
+            
+            CheckWord(originalWord, realWordData, D, choices, index, min);
+			if (index > 3997) break; 
 		}
 	}
 	// try endings ing, s, etc
@@ -1531,7 +1619,7 @@ char* SpellFix(char* originalWord,int start,uint64 posflags)
 	for (unsigned int j = 0; j < index; ++j) RemoveInternalFlag(choices[j],BEEN_HERE);
     if (index == 1) 
 	{
-		if (trace == TRACE_SPELLING) Log(STDTRACELOG,(char*)"    Single best spell: %s\r\n",choices[0]->word);
+		if (trace == TRACE_SPELLING) Log(STDUSERLOG,(char*)"    Single best spell: %s\r\n",choices[0]->word);
 		return choices[0]->word;	// pick the one
 	}
     for (unsigned int j = 0; j < index; ++j) 
@@ -1548,6 +1636,7 @@ char* SpellFix(char* originalWord,int start,uint64 posflags)
 		if (choices[j]->internalBits & HAS_SUBSTITUTE)
 			common = 0xff10000000000000ULL;
 		common |= choices[j]->systemFlags & AGE_LEARNED;
+
         if (common < commonmin) continue;
         if (common > commonmin) // this one is more common
         {
@@ -1559,7 +1648,7 @@ char* SpellFix(char* originalWord,int start,uint64 posflags)
 	if (bestGuessindex) 
 	{
         if (bestGuessindex > 1) multichoice = true;
-		if (trace == TRACE_SPELLING) Log(STDTRACELOG,(char*)"    Pick spell: %s\r\n",bestGuess[0]->word);
+		if (trace == TRACE_SPELLING) Log(STDUSERLOG,(char*)"    Pick spell: %s\r\n",bestGuess[0]->word);
 		return bestGuess[0]->word; 
 	}
 	return NULL;

@@ -9,15 +9,15 @@
 </head>
 <body>
 <h1 id="chatscript-multiple-bots-manual">ChatScript Multiple Bots Manual</h1>
-<p>© Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 6/25/2017 cs7.51</p>
+<p>© Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 5/27/2019 cs9.4</p>
 <p>The system can support multiple bots cohabiting the same engine. You can restrict topics to be available only to certain bots. You can also restrict facts and functions, such that variants exist per bot.</p>
 <h1 id="restriction-by-rule">Restriction by Rule</h1>
 <p>The simplest thing is to restrict rules to being available only to certain bots by using something like</p>
-<pre><code>?: ($bot=harry ...)
+<pre><code>?: (%bot=harry ...)
 
-?: (!$bot=harry ...).
+?: (%bot!=harry ...).
 
-t: ($bot=harry) My name is harry.</code></pre>
+t: (%bot=harry) My name is harry.</code></pre>
 <p>You specify which bot you want when you login, by appending <code>:botname</code> to your login name, e.g., <code>bruce:harry</code>. The demo system has only one bot, Harry. If it had two bots in it,Harry and Georgia, you could get Georgia by logging in as <code>yourname:georgia</code>. And you can confirm who she is by asking <code>what is your name</code>.</p>
 <p>When you don't give a botname, you get the default bot. How does the system know what that is? It looks for a fact in the database whose subject will be the default bot name and whose verb is defaultbot. If none is found, the default bot is called anonymous, and probably nothing works at all. Defining the default bot is what a table does when you compile <code>simplecontrol.top</code>. It has:</p>
 <pre><code>table: defaultbot (^name)
@@ -35,7 +35,7 @@ harry</code></pre>
 <h2 id="multiple-bots">MULTIPLE BOTS</h2>
 <p>To have multiple bots available, one might start by making multiple folder copies of Harry and changing them to separate bots with separate <code>filesxxx.txt</code>. That's fine for building them as each stand-alone bots, but if you want them to cohabit you must have a single <code>filesxxx.txt</code> file that names the separate bot's folders- they must be built together.</p>
 <p>If all you do is create multiple <code>bot definition scripts</code>, then the bots all equally share all outputmacro definitions, all topics, and all facts created at build time. However, facts created during conversation with a user will all be unique. A conversation between a specific bot and user results in a separate USERS topic file, so what one bot learns the others do not.</p>
-<p>If you try to create two bots by having separate folders for each, and merely clone copies of an original folder, like <code>~control</code> and <code>~inTtroductions</code> and <code>~childhood</code> and you will get an error message when compiling. Likely you would want only one copy of <code>~control</code> that both bots used. And either they should have different topic names for <code>~introductions</code> and <code>~childhood</code> OR you must put a bot restriction on things. See below</p>
+<p>If you try to create two bots by having separate folders for each, and merely clone copies of an original folder, like <code>~control</code> and <code>~introductions</code> and <code>~childhood</code> and you will get an error message when compiling. Likely you would want only one copy of <code>~control</code> that both bots used. And either they should have different topic names for <code>~introductions</code> and <code>~childhood</code> OR you must put a bot restriction on things. See below</p>
 <p>You can name multiple bots separated by commas with no extra spaces. E.g. <code>topic: ~mytopic bot=harry,roman [mykeyword]</code></p>
 <h2 id="restriction-by-topic">Restriction by Topic</h2>
 <p>A topic can be restricted to specific bots. You do this at topic definition time by naming the one or more bots (separated by commas but no spaces) allowed to use the topic.</p>
@@ -81,5 +81,7 @@ set the <code>$cs_botid</code> from a table. More convenient is to use the <code
 <p>You disable ownership rules with</p>
 <pre><code>bot: 0</code></pre>
 <p>In the build file, you need to compile all bot definition macros and the default bot macro under bot: 0 ownership. All other bots can be built independently by using bot ids that are powers of two and unique bot names. ``` bot: 0 private/Mine/CONTROL/botmacro.top private/Mine1/CONTROL/botmacro.top private/Mine2/CONTROL/botmacro.top bot: 1 John private/John/ bot: 2 Harry private/Harry/ bot: 4 Martha private/Martha/</p>
+<h1 id="changing-bot-id-on-the-fly">Changing bot id on the fly</h1>
+<p>^changebot(botname botid) allows a bot to pretend to be another bot and access its data, functions, and topics. Variables are not affected by this. The user topic file will remain as the user came into the server.</p>
 </body>
 </html>

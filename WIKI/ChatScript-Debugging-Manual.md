@@ -1,12 +1,12 @@
 # ChatScript Debugging Manual
 © Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com<br>
-<br>Revision 1/31/2018 cs8.0
+<br>Revision 6/26/2018 cs9.5
 
 You've written script. It doesn't work. Now what? Now you need to debug it, fix it, and
-recompile it. Debugging is mostly a matter of tracing what the system does testpaand
+recompile it. Debugging is mostly a matter of tracing what the system does and
 finding out where it doesn't do what you expected. 
 
-If you dont have Windows, then debugging mostly done by issuing
+If you don't have Windows, then debugging mostly done by issuing
 debug commands to the engine, as opposed to chatting. If you have
 windows, you can run your program under ChatScriptIDE to debug 
 it interactively. See the ChatScript-Debugger manual.
@@ -18,9 +18,11 @@ Debugging generally requires use of some :xxxx commands. I don't always remember
 
 ## `:commands` 
 to get a list of the commands and a rough description. 
+
 ```
 :commands
 ```
+
 the above : statement show the list:
 ```
 
@@ -186,6 +188,33 @@ didn't intend it. Words it doesn't recognize arise either because you made a typ
 Words in upper case are again words it knows as lower case, 
 but you used it as upper case. Maybe right or wrong.
 
+### ignorespell: ... ###
+You can disable case spelling warnings for specific words by
+naming them in lower case like this:
+
+```
+ignorespell: me or
+```
+
+This will not warn you when the system detects `me` or `ME` (abbreviation of Maine).
+You can also globally turn off spell warnings using
+
+```
+ignorespell: *
+```
+
+which remains in effect until you do 
+
+```
+ignorespell: !*
+```
+
+You can, for example, fix all warnings you can in a file, And
+once you believe there are no more issues and the file is
+frozen, just turn ignorespell on at start of file and off at 
+end of file.
+
+
 Editing the main dictionary is not a task for the faint-hearted. But ChatScript maintains
 secondary dictionaries in the `TOPIC` folder and those are easy to adjust. To alter them,
 you can define concepts that add local dictionary entries. The names of important word
@@ -216,7 +245,7 @@ you don't submit what you think you are submitting. The substitutions files will
 words or phrases. 
 
 Spell correction will change words. Proper name and number merging will adjust words. 
-And individual words of yours will be merged into single words if WordNet lists them as a multiple-word (like _TV_star_). 
+And individual words of yours will be merged into single words if WordNet lists them as a multiple-word (like `TV_star`). 
 So you really need to see what your actual input ended up being before you can tell if your pattern was correct or not.
 Thus the most common debug command is `:prepare`.
 
@@ -237,8 +266,8 @@ If given it indicates the `$cs_token` value to use for preparation. E.g
 
     :prepare $mytoken this is a sentence.
 
-The `$cs_prepass` variable contains optional script that will be executed before the main
-control script is executed. 
+The `$cs_prepass` variable contains optional topic script that will be executed before the main
+control script is executed. The topic should be flagged SYSTEM so it does not erase itself as it gets used.
 
 The advantage of `$cs_prepass` is that it is also executed by `:prepare`, 
 so you can see traces of it there. If you want to see preparation w/o this topic
@@ -266,7 +295,7 @@ so for that I'll need typically need tracing.
 
 ### `:trace all` / `:trace always` / `:trace none`
 The ultimate debugging command dumps a trace of everything that happens during
-execution onto screen and into the log file. After entering this, you type in your chat and
+execution to the screen and into the log file. After entering this, you type in your chat and
 watch what happens (which also gets dumped into the current log file). Problem is, it's
 potentially a large trace. You really want to be more focused in your endeavor.
 
@@ -311,7 +340,7 @@ want to trace by naming trace values and then the topic.
 The above will turn on a bunch of trace values and then assign them to the topic, 
 clearing the trace values. 
 
-### `:trace input
+### `:trace input`
 :trace prepare can generate a lot of data about concept marking. If you 
 just want a simple check on what the adjusted input looks like, you can do
 `:trace input`
@@ -328,6 +357,7 @@ subject, verb, and object name values of those fields. You can use null when you
 This trace will show whenever facts matching this template are created.
 You can insert a trace command in the data of a table declaration, to trace a table being
 built (the log file will be from the build in progress). E.g.,
+
 ```
 table: ~capital (^base ^city)
 _9 = join(^city , _ ^base)
@@ -430,7 +460,7 @@ for that topic. This means you can do multiple topics and global limits in one c
 `~mytopic` gets the pattern limit, `~yourtopic` gets the pos limit, and globally you do varassign.
 
 Note: the correct way to turn on/off normal tracing from script is 
-by changing the tracing variable, e.g.,  $cs_trace = -1. 
+by changing the tracing variable, e.g.,  `$cs_trace = -1`. 
 
 ### Tracing a server
 Sometimes you do not control the user account, so you cannot do :trace from it.
@@ -701,6 +731,7 @@ Given a word pattern, find all words in the dictionary that match that
 pattern. The pattern starts with a normal word character, after which you can intermix the
 wildcard * with other normal characters. 
 For example, 
+
 * `slo*` finds _slothful_, _slower_, _sloshed_. 
 * `s*p*y` finds _supposedly_, _spendy_, and _surprizingly_.
 
@@ -770,9 +801,13 @@ Shows the dictionary hierarchy below a word or, if the word is name of a concept
 members of the concept. Since displaying down can subsume a lot of entries, you can
 specify how many levels down to display (n). The default is 1.
 
+### `:allmembers ~concept ~notconcept ~notconcept1 ...`
+Dumps the members of ~concept into TMP/tmp.txt, one per line, but excludes any that are member of the ~nonconcept sets.
+
 ### `:findwords pattern`
 This uses the pattern of characters and * to name words and phrases in the dictionary
 matching it. E.g.
+
 ```
 :findwords *_executive
 chief_executive
@@ -871,6 +906,7 @@ You may also say `:restart erase` to force the existing user to start with a new
 
 You may also give up to 4 parameters exactly as you would on the command line to alter
 startup behavior. E.g., from script:
+
 ```
 ^eval(:restart erase Vserver=app.john.com/api/1.1 )
 ```

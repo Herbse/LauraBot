@@ -56,10 +56,10 @@ char* MongoCleanEscapes(char* to, char* at,int limit)
 			*to++ = '\n'; // legal
 			++at;
 		}
-		else if (*at == '\\') // remove backslashed "
+		/*else if (*at == '\\') // remove backslashed "
 		{
 			*to++ = *++at;
-		}
+		}*/
 		else *to++ = *at;
 		if ((to-start) >= limit) // too much, kill it
 		{
@@ -86,6 +86,32 @@ eReturnValue EstablishConnection(	const char* pStrSeverUri, // eg "mongodb://loc
 	// Create a new client instance (user/script or interal/filesystem)
 	mongoc_client_t* myclient  = mongoc_client_new( pStrSeverUri );
 	if( myclient == NULL ) return eReturnValue_DATABASE_OPEN_CLIENT_CONNECTION_FAILED;
+	
+	char* enableSSL = GetUserVariable("$mongo_enable_ssl");
+#ifdef JUNK
+	if(enableSSL != NULL && (stricmp(enableSSL,(char*)"true") == 0)) {
+		
+		char* validateSSL = GetUserVariable("$mongovalidatessl");
+		char* sslCAFile = GetUserVariable("$mongosslcafile");
+		char* sslPemFile = GetUserVariable("$mongosslpemfile");
+
+		const mongoc_ssl_opt_t *ssl_default = mongoc_ssl_opt_get_default ();
+		mongoc_ssl_opt_t ssl_opts = { 0 };
+		/* optionally copy in a custom trust directory or file; otherwise the default is used. */
+		memcpy (&ssl_opts, ssl_default, sizeof ssl_opts);
+		if(sslPemFile != NULL && (stricmp(sslPemFile,(char*)"") != 0)) {
+			ssl_opts.pem_file = sslPemFile;
+		}
+		if(sslCAFile != NULL && (stricmp(sslCAFile,(char*)"") != 0)) {
+			ssl_opts.ca_file = sslCAFile;
+		}
+		if (validateSSL != NULL && stricmp(validateSSL,(char*)"true") != 0) {
+			ssl_opts.weak_cert_validation = true;
+		}
+		mongoc_client_set_ssl_opts (myclient, &ssl_opts);
+	}
+#endif
+
 	if (mycollect == &g_pCollection) g_pClient = myclient;  // script user
 	else g_filesysClient = myclient; // all 3 filesys collections use this client
 
@@ -113,7 +139,7 @@ FunctionResult MongoClose(char* buffer)
 		if (mongoShutdown) return FAILRULE_BIT;
 		char* msg = "DB is not open\r\n";
 		SetUserVariable((char*)"$$mongo_error",msg);	// pass message along the error
-		Log(STDTRACELOG,msg);
+		Log(STDUSERLOG,msg);
 		return FAILRULE_BIT;
 	}
 
@@ -147,7 +173,7 @@ FunctionResult MongoInit(char* buffer)
 	{
 		char* msg = "DB is already opened\r\n";
 		SetUserVariable((char*)"$$mongo_error",msg);	// pass message along the error
-		Log(STDTRACELOG,msg);
+		Log(STDUSERLOG,msg);
  		return FAILRULE_BIT;
 	}
 
@@ -160,7 +186,7 @@ FunctionResult MongoInit(char* buffer)
     {	
 		char* msg = "DB opening error \r\n";
 		SetUserVariable((char*)"$$mongo_error",msg);	// pass message along the error
-        Log(STDTRACELOG, "Opening connection failed with error: %d",  eRetVal);
+        Log(STDUSERLOG, "Opening connection failed with error: %d",  eRetVal);
 		if ((buffer && g_pClient) || (!buffer && g_filesysClient)) MongoClose(buffer);
 		return FAILRULE_BIT;
 	}
@@ -183,7 +209,7 @@ FunctionResult mongoGetDocument(char* key,char* buffer,int limit,bool user)
     {
         char* msg = "DB is not open\r\n";
         SetUserVariable((char*)"$$mongo_error",msg);
-        Log(STDTRACELOG,msg);
+        Log(STDUSERLOG,msg);
         return FAILRULE_BIT;
     }
     
@@ -212,17 +238,7 @@ FunctionResult mongoGetDocument(char* key,char* buffer,int limit,bool user)
     	uint64 starttime = ElapsedMilliseconds();
         
         psCursor = mongoc_collection_find(collection, MONGOC_QUERY_NONE, 0, 0, 0, psQuery, NULL, NULL);
-        uint64 endtime = ElapsedMilliseconds();
-	    unsigned int diff = (unsigned int)(endtime - starttime);
-	    unsigned int limit = 100;
-		char* val = GetUserVariable("$db_timelimit");
-		if (*val) limit = unsigned(atoi(val));
-	    if (diff <= limit){
-	    	char dbmsg[512];
-	    	struct tm ptm;
-	    	sprintf(dbmsg,"%s Mongo Find took longer than expected for %s, time taken = %ums\r\n", GetTimeInfo(&ptm),key, diff);
-	    	Log(DBTIMELOG, dbmsg);
-	    }
+        
         if( psCursor == NULL )
         {
             eRetVal = eReturnValue_DATABASE_QUERY_FAILED;
@@ -233,21 +249,27 @@ FunctionResult mongoGetDocument(char* key,char* buffer,int limit,bool user)
         {
             if (pDoc != NULL)
             {
-                pStrTemp = bson_as_json( pDoc, NULL );
-                if( pStrTemp != NULL )
-                {
-                    char* at = strstr(pStrTemp,"KeyValue");
-                    if (at) // point into the buffer to the get value
-                    {
-                        at += 8 + 5;
-                        mongoKeyValue = at;
-                        size_t len = strlen(at);
-                        at[len-3] = 0;	// remove key data
-                    }
-                    break;
-                }
+            	bson_iter_t iter;
+            	if (bson_iter_init_find(&iter, pDoc, "KeyValue")) {
+					const bson_value_t *value;
+    				value = bson_iter_value (&iter);
+    				if ( value->value_type == BSON_TYPE_UTF8){
+    					mongoKeyValue = value->value.v_utf8.str;
+    				}
+            	}
             }
         }
+		uint64 endtime = ElapsedMilliseconds();
+		unsigned int diff = (unsigned int)(endtime - starttime);
+		unsigned int limit = 100;
+		char* val = GetUserVariable("$db_timelimit");
+		if (*val) limit = unsigned(atoi(val));
+		if (diff >= limit){
+			char dbmsg[512];
+			struct tm ptm;
+			sprintf(dbmsg,"%s Mongo Find took longer than expected for %s, time taken = %ums\r\n", GetTimeInfo(&ptm),key, diff);
+			Log(DBTIMELOG, dbmsg);
+		}
     }while(false);
     
     FunctionResult result = NOPROBLEM_BIT;
@@ -255,7 +277,7 @@ FunctionResult mongoGetDocument(char* key,char* buffer,int limit,bool user)
     {
         char* msg = "Error while looking for document \r\n";
         SetUserVariable((char*)"$$mongo_error",msg);	// pass along the error
-        Log(STDTRACELOG, "Find document failed with error: %d",  eRetVal);
+        Log(STDUSERLOG, "Find document failed with error: %d",  eRetVal);
         result = FAILRULE_BIT;
     }
     else if (mongoKeyValue) 
@@ -295,7 +317,7 @@ FunctionResult mongoDeleteDocument(char* buffer)
     {
         char* msg = "DB is not open\r\n";
         SetUserVariable((char*)"$$mongo_error",msg);	// pass along the error
-        Log(STDTRACELOG,msg);
+        Log(STDUSERLOG,msg);
         return FAILRULE_BIT;
     }
     
@@ -332,7 +354,7 @@ FunctionResult mongoDeleteDocument(char* buffer)
 	    unsigned int limit = 100;
 		char* val = GetUserVariable("$db_timelimit");
 		if (*val) limit = unsigned(atoi(val));
-	    if (diff <= limit){
+	    if (diff >= limit){
 	    	char dbmsg[512];
 	    	struct tm ptm;
 	    	sprintf(dbmsg,"%s Mongo Delete took longer than expected for %s, time taken = %ums\r\n", GetTimeInfo(&ptm),keyname, diff);
@@ -346,7 +368,7 @@ FunctionResult mongoDeleteDocument(char* buffer)
     {
         char* msg = "Error while insert document \r\n";
         SetUserVariable((char*)"$$mongo_error",msg);	// pass along the error
-        Log(STDTRACELOG, "Delete document failed with error: %d",  eRetVal);
+        Log(STDUSERLOG, "Delete document failed with error: %d",  eRetVal);
         return FAILRULE_BIT;
     }
     return NOPROBLEM_BIT;
@@ -363,7 +385,7 @@ static FunctionResult MongoUpsertDoc(mongoc_collection_t* collection,char* keyna
     {
         char* msg = "DB is not open\r\n";
         SetUserVariable((char*)"$$mongo_error",msg);    // pass along the error
-        Log(STDTRACELOG,msg);
+        Log(STDUSERLOG,msg);
         return FAILRULE_BIT;
     }
     
@@ -387,7 +409,7 @@ static FunctionResult MongoUpsertDoc(mongoc_collection_t* collection,char* keyna
     unsigned int limit = 100;
 	char* val = GetUserVariable("$db_timelimit");
 	if (*val) limit = unsigned(atoi(val));
-    if (diff <= limit){
+    if (diff >= limit){
     	char dbmsg[512];
     	struct tm ptm;
     	sprintf(dbmsg,"%s Mongo Upsert took longer than expected for %s, time taken = %ums\r\n", GetTimeInfo(&ptm),keyname, diff);

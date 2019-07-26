@@ -14,11 +14,12 @@ extern int fnVarbase;
 #define FNVAR(n) callArgumentList[fnVarbase+atoi(n)+1] // ^0 is index 1
 char* ReadCompiledWord(char* ptr, char* word,bool noquote = false,bool var = false,bool nolimit = false);
 char* ReadCompiledWordOrCall(char* ptr, char* word,bool noquote = false,bool var = false);
-
 #define INPUT_BUFFER_SIZE   80000
 #define MAX_BUFFER_SIZE		80000
 
 #define NUMBER_OF_LAYERS 4
+
+#define MAX_CONFIG_LINES 200
 
 typedef unsigned int MEANING;					//   a flagged indexed dict ptr
 #define MAX_DICTIONARY	 0x001fffff				//   2M word vocabulary limit 

@@ -3,7 +3,7 @@
 
 
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -67,10 +67,13 @@ enum TestMode {
 //   argument data for system calls
 extern TestMode wasCommand;
 
+extern HEAPLINK patternwordthread;
 #define MAX_ARG_LIST 200
 #define MAX_CALL_DEPTH 400
 extern char* codeStart;
 extern int rulesExecuted;
+extern  bool testExternOutput;
+
 extern char* realCode;
 extern unsigned int callIndex;
 extern WORDP callStack[MAX_CALL_DEPTH];
@@ -90,13 +93,12 @@ extern int globalDepth;
 #ifdef WIN32
 FunctionResult InitWinsock();
 #endif
-
 FunctionResult RunJavaScript(char* definition, char* buffer,unsigned int args);
 void DeletePermanentJavaScript();
 void DeleteTransientJavaScript();
 unsigned int MACRO_ARGUMENT_COUNT(unsigned char* defn);
 void DebugConcepts(int list, int wordindex);
-
+FunctionResult FindRuleCode1(char* buffer, char* word);
 //   argument data for user calls
 char* InitDisplay(char* list);
 void RestoreDisplay(char** base, char* list);

@@ -14,15 +14,10 @@ Reading topic ~xpostagsentence
 
 ----Reading file introduction.top
 Reading topic ~introduction
-*** Warning- line 1 of introduction.top: Word "besuch" known in multiple spellings besuch Besuch 
-*** Warning- line 1 of introduction.top: Word "zoo" known in multiple spellings zoo Zoo 
-*** Warning- line 47 of introduction.top: Word "dirk" known in multiple spellings Dirk DIRK 
-*** Warning- line 63 of introduction.top: Word "frage" known in multiple spellings frage Frage 
-*** Warning- line 65 of introduction.top: Word "frage" known in multiple spellings frage Frage 
+*** Warning- line 46 of introduction.top: Word leon only known in upper case
 
 ----Reading file handle_oob.top
 Reading topic ~handle_oob
-*** Warning- line 3 of handle_oob.top: Word "test" known in multiple spellings Test TEST 
 
 ----Reading file simplecontrol.top
 Rename @9 as @chatoutput
@@ -36,13 +31,6 @@ Reading topic ~control
 ----Reading file patternmacros.top
 Reading topic ~patternmacros
 Reading patternmacro: ^opinion
-*** Warning- line 5 of patternmacros.top: Word "wie" known in multiple spellings wie Wie WIE 
-*** Warning- line 5 of patternmacros.top: Word "du" known in multiple spellings du Du 
-*** Warning- line 5 of patternmacros.top: Word "das" known in multiple spellings das Das DAS 
-*** Warning- line 6 of patternmacros.top: Word "wie" known in multiple spellings wie Wie WIE 
-*** Warning- line 6 of patternmacros.top: Word "war" known in multiple spellings war WAR 
-*** Warning- line 6 of patternmacros.top: Word "das" known in multiple spellings das Das DAS 
-*** Warning- line 6 of patternmacros.top: Word "dich" known in multiple spellings dich Dich 
 
 ----Reading file keywordless.top
 Reading topic ~keywordless
@@ -52,9 +40,10 @@ Reading topic ~keywordless
 *** Warning- line 54 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
 
 WARNING SUMMARY: 
+  line 46 of introduction.top: Word leon only known in upper case
   line 1 of : Undefined set or topic ~school line 50 in introduction.top
   line 54 of introduction.top: At least one duplicate topic name, i.e., ~event_t, which may intended if bot restrictions differ.
-2 serious warnings, 0 function warnings, 0 spelling warnings, 13 case warnings, 0 substitution warnings
+3 serious warnings, 0 function warnings, 0 spelling warnings, 0 case warnings, 0 substitution warnings
     
 
 Finished compile

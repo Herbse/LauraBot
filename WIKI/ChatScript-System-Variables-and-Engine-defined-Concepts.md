@@ -1,6 +1,6 @@
 # ChatScript System Variables and Engine-defined Concepts
 © Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com
-<br>Revision 11/29/2017 cs7.71
+<br>Revision 7/14/2019 cs9.6
 
 
 * [Engine-defined Concepts](ChatScript-System-Variables-and-Engine-defined-Concepts.md#engine-defined-concepts)
@@ -202,6 +202,8 @@ Additionally, there is
 | `~positiveinteger`     |
 | `~negativeinteger`     |
 | `~modelnumber`         | not a true number, but a word with both alpha and numeric
+| `~filename`         | looks like a filename with extension
+
 
 To can be a preposition or it can be special. When used in the infinitive phrase To go, it is
 marked `~to_infinitive` and is followed by `~noun_infinitive`.
@@ -260,7 +262,7 @@ setting them.
 | --------            | ---------------------------------------------- |
 | `%date`             | one or two digit day of the month 
 | `%day`              |Sunday, etc
-| `%daynumber`        | 0-6 where 0 = Sunday
+| `%daynumber`        | 1-7 where 1 = Sunday
 | `%fulltime`         | seconds representing the current time and date (Unix epoch time) 
 | `%hour`             |  0-23
 | `%timenumbers`      | completely consistent full time info in numbers that you can do <br>`_0 = ^burst(%timenumbers)`to get  `_0` =seconds (2digit) <br>`_1`=minutes (2digit) <br>`_2`=hours (2digit) <br>`_3`=dayinweek(0-6 Sunday=0) <br>`_4`=dateinmonth (1-31) <br>`_5`=month(0-11 January=0) <br>`_6`=year.<br>You need to get it simultaneously if you want to do accurate things with current time, since retrieving %hour %minute separately allows time to change between calls 
@@ -272,6 +274,7 @@ setting them.
 | `%second`           | 0-59
 | `%volleytime`       | number of seconds of computation since volley input started 
 | `%time`             | hh:mm in military 24-hour time 
+| `%zulutime`         | 2016-07-27T11:38:35.253Z
 | `%week`             |1-5 (week of the month) 
 | `%year`             | e.g., 2011 
 | `%rand`             | get a random number from 1 to 100 inclusive
@@ -303,6 +306,7 @@ your server is in Virginia and you are in Colorado).
 | `%question`         |  Boolean was the user input a question – same as `?` in a pattern 
 | `%quotation`        |  Boolean is current input a quotation 
 | `%sentence`         |  Boolean does it seem like a sentence (subject/verb or command) 
+| `%tableinput`       |  current line being executed in a table expansion during script compilation 
 | `%tense`            |  past , present, or future simple tense (present perfect is a past tense) 
 | `%user`             |  user login name supplied 
 | `%userfirstline`    |  value of `%input` that is at the start of this conversation start 
@@ -314,7 +318,7 @@ your server is in Virginia and you are in Colorado).
 | variable           | description 
 | --------           | ------------
 | `%inputrejoinder`  |  rule tag of any pending rejoinder for input or null if none pending
-| `%lastoutput`      |  the text of the last generated response for the current volley  
+| `%lastoutput`      |  the text of the last generated response for the current volley - always null across volleys  
 | `%lastquestion`    |  Boolean did last output end in a ?
 | `%outputrejoinder` |  rule tag if system set a rejoinder for its current output or 0
 | `%response`        |  number of committed responses that have been generated for this sentence (see Advanced User- Advanced Output: Committed Responses 
@@ -438,7 +442,7 @@ correct punctuation or casing or spelling. These block that:
 | `DO_SPELLCHECK`     |  perform internal spell checking 
 | `ONLY_LOWERCASE`    |  force all input (except "I") to be lower case, refuse to recognize uppercase forms of anything 
 | `NO_IMPERATIVE`     | 
-| `NO_WITHIN`         |  
+| `NO_WITHIN`         |  don't match fragments within a composite word
 | `NO_SENTENCE_END`   | do not break input into sentences
 
 Normally the tokenizer breaks apart some kinds of sentences into two. These
@@ -449,8 +453,8 @@ prevent that:
 | `NO_COLON_END`     |  don't break apart a sentence after a colon 
 | `NO_SEMICOLON_END` |  don't break apart a sentence after a semi-colon 
 | `UNTOUCHED_INPUT`  |  if set to this alone, will tokenize only on spaces, leaving everything but spacing untouched  
-| `LEAVE_QUOTE`      |  if input is found withing " " it will become a single token exactly as it is seen. W/o Leave_Quote, it is converted into a word without quotes and using underscores instead of spaces. So "My Fair Lady" becomes My_Fair_Lady, which would match a movie title if you had one, unlike _My Fair Lady_ becoming the resulting token and unrecognized
-
+| `LEAVE_QUOTE`      |  if input is found within " " it will become a single token exactly as it is seen. W/o Leave_Quote, it is converted into a word without quotes and using underscores instead of spaces. So "My Fair Lady" becomes My_Fair_Lady, which would match a movie title if you had one, unlike _My Fair Lady_ becoming the resulting token and unrecognized
+| `SPLIT_QUOTE`      |  if input is found within " " the quotes will be removed.
 
 Note
 
@@ -538,6 +542,25 @@ The ?_ matches a digit number followed immediately by km, like `1.2km` and will 
 with the given replacement. The input can be singular or have an 's' like `10.5dollars`. And it can be with or without abbreviation periods,
 like `10kps` or `10k.p.s`
 
+## Apostrophe Substitutions replace
+```
+replace: 'xxx  yyy
+```
+allows you to split during tokenization any word followed by 'xxx into two words,
+original sans 'xxx and yyy. eg
+```
+replace: 've have
+```
+gives "companies've =>  "companies have".
+
+## Replacing to a word with + in it
+Normally `replace:  x  y+z`  will generate 2 words, y and z.  If you need a plus
+in your word, you can escape your 2nd word:
+```
+    replace: "black and decker" \BLACK+DECKER
+```
+
+
 # Interchange Variables
 
 The following variables can be defined in a script and the engine will react to their
@@ -552,12 +575,12 @@ contents.
 | `$cs_abstract`       |  used with :abstract | 
 | `$cs_looplimit`      |  loop() defaults to 1000 iterations before stopping. You can change this default with this | 
 | `$cs_trace`          |  if this variable is defined, then whenever the user's volley is finished, the value of this variable is set to that of :trace and :trace is cleared to 0, but when the user is read back in, the :trace is set to this value. For a server, this means you can perform tracing on a user w/o making all user transactions dump trace data | 
-| `$cs_control_pre`    |  name of topic to run in gambit mode on pre-pass, set by author. Runs before any sentences of the input volley are analyzed. Good for setting up initial values | 
+| `$cs_control_pre`    |  name of topic (flag it SYSTEM) to run in gambit mode on pre-pass, set by author. Runs before any sentences of the input volley are analyzed. Good for setting up initial values | 
 | `$cs_usermessagelimit` | max number of message pairs (user input & bot output) saved in topic file | 
 | `$cs_externaltag`    |  name of a topic to use to replace existing internal English pos-parser. See bottom of ChatScript PosParser manual for details | 
-| `$cs_prepass`        |  name of a topic to run in responder mode on main volleys, which runs before $cs_control_main and after all of the above and pos-parsing is done. Used to amend preparation data coming from the engine. You can use it to add your own spin on input processing before going to your main control. I use it to, for example, label commands as questions, standardize sentence construction (like _if you see me what will you think_ to _assume you see me. What will you think?_) | 
-| `$cs_control_main`   |  name of topic to run in responder mode on main volleys, set by author | 
-| `$cs_control_post`   |  name of topic to run in gambit mode on post-pass, set by author| 
+| `$cs_prepass`        |  name of a topic  (mark it SYSTEM) to run in responder mode on main volleys, which runs before $cs_control_main and after all of the above and pos-parsing is done. Used to amend preparation data coming from the engine. You can use it to add your own spin on input processing before going to your main control. I use it to, for example, label commands as questions, standardize sentence construction (like _if you see me what will you think_ to _assume you see me. What will you think?_) | 
+| `$cs_control_main`   |  name of topic  (flag it SYSTEM) to run in responder mode on main volleys, set by author | 
+| `$cs_control_post`   |  name of topic  (flag it SYSTEM) to run in gambit mode on post-pass, set by author| 
 | `$botprompt`         |  message for console window to label bot output | 
 | `$userprompt`        |  message for console window to label user input line| 
 | `$cs_crashmsg`       |  message to use if a server crash occurs| 
@@ -566,7 +589,7 @@ contents.
 | `$cs_abstract`       |  topic used by :abstract to display facts if you want them displayed | 
 | `$cs_prepass`        |  topic used between parsing and running user control script. Useful to supplement parsing, setting the question value, and revising input idioms | 
 | `$cs_wildcardseparator` |  when a match variable covers multiple words, what should separate them- by default it's a space, but underscore is handy too. Initial system character is space, creating fidelity with what was typed. Useful if _ can be recognized in input (web addresses). Changing to _ is consistent with multi-word representation and keyword recognition for concepts. CS automatically converts _ to space on output, so internal use of _ is normal |
-| `$cs_userfactlimit`       | how many of the most recent permanent facts created by the script in response to user inputs are kept for each user. Std default is 100 | 
+| `$cs_userfactlimit`       | how many of the most recent permanent facts created by the script in response to user inputs are kept for each user. Std default is 100. * means all. | 
 | `$cs_outputchoice`    |  for regression: forces specific one of a [] [] output choice block - base 0 | 
 | `$cs_response`          |  controls some characteristics of how responses are formatted | 
 | `$cs_randIndex`         |  the random seed for this volley | 

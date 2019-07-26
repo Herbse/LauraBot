@@ -1,7 +1,7 @@
 #ifndef _VARIABLESYSTEMH_
 #define _VARIABLESYSTEMH_
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -20,11 +20,15 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 
 #define ILLEGAL_MATCHVARIABLE -1
 
-#define MAX_WILDCARDS 20  // _0 ... _20 inclusive
+#define MAX_WILDCARDS 30  // _0 ... _30 inclusive
 #define WILDCARD_START(x) (x & 0x0000ffff)
 #define WILDCARD_END(x) ( x >> 16)
+#define WILDENDSHIFT(x) (x << 16)
 extern  unsigned int modifiedTraceVal;
 extern bool	modifiedTrace;
+extern unsigned int modifiedTimingVal;
+extern bool modifiedTiming;
+extern HEAPLINK variableChangedThreadlist;
 
 extern  int wildcardIndex;
 extern char wildcardOriginalText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  //   spot wild cards can be stored
@@ -36,9 +40,10 @@ extern char impliedOp;
 extern unsigned int tracedFunctionsIndex;
 extern WORDP tracedFunctionsList[MAX_TRACED_FUNCTIONS];
 extern char wildcardSeparator[2];
-extern unsigned int userVariableThreadList;
-extern unsigned int botVariableThreadList;
-extern unsigned int kernelVariableThreadList;
+extern HEAPLINK userVariableThreadList;
+
+extern HEAPLINK botFactThreadList;
+extern HEAPLINK kernelVariableThreadList;
 // wildcard accessors
 char* GetwildcardText(unsigned int i, bool canon);
 void SetWildCard(char* value,char* canonicalVale,const char* index,unsigned int position);
@@ -46,6 +51,7 @@ void SetWildCard(int start, int end, bool inpattern = false);
 void SetWildCardGiven(int start, int end, bool inpattern, int index);
 void SetWildCardIndexStart(int);
 int GetWildcardID(char* x);
+void SetVariable(WORDP D, char* value);
 
 // Variables loaded from bot (topic system)
 void ClearBotVariables();

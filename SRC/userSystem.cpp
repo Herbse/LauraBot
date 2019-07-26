@@ -1,6 +1,5 @@
 #include "common.h"
 
-
 #ifndef USERFACTS 
 #define USERFACTS 100
 #endif
@@ -9,7 +8,6 @@ bool serverRetryOK = false;
 bool stopUserWrite = false;
 static bool verifyUserFacts = true;
 static char* backupMessages = NULL;
-static int jsonptrThreadList;
 
 #define MAX_USER_MESSAGES MAX_USED
 
@@ -116,7 +114,7 @@ void ResetUserChat()
 	for (unsigned int i = 0; i <= MAX_FIND_SETS; ++i) SET_FACTSET_COUNT(i,0);
 }
 
-static char* WriteUserFacts(char* ptr,bool sharefile,int limit,char* saveJSON)
+static char* WriteUserFacts(char* ptr,bool sharefile,unsigned int limit,char* saveJSON)
 {
 	if (!ptr) return NULL;
 	
@@ -129,14 +127,14 @@ static char* WriteUserFacts(char* ptr,bool sharefile,int limit,char* saveJSON)
     {
 		if (!(setControl & (uint64) ((uint64)1 << i))) continue; // purely transient stuff
 
-		//   remove dead references
+		//   remove dead references 
 		FACT** set = factSet[i];
         count = FACTSET_COUNT(i);
 		unsigned int j;
         for (j = 1; j <= count; ++j)
 		{
 			FACT* F = set[j];
-			if (F && F->flags & FACTDEAD)
+            if (F && F->flags & FACTDEAD)
 			{
 				memmove(&set[j],&set[j+1],sizeof(FACT*) * (count - j));
 				--count;
@@ -172,7 +170,7 @@ static char* WriteUserFacts(char* ptr,bool sharefile,int limit,char* saveJSON)
 	{
 		if (shared && !sharefile)  continue;
 		if (saveJSON && !(F->flags & MARKED_FACT2) && F->flags & (JSON_OBJECT_FACT | JSON_ARRAY_FACT)) continue; // dont write this out
-		if (!(F->flags & (FACTDEAD|FACTTRANSIENT|MARKED_FACT|FACTBUILD2))) --limit; // we will write this
+		if (!(F->flags & (FACTDEAD|FACTTRANSIENT|MARKED_FACT|FACTBUILD2| FACTBOOT))) --limit; // we will write this
 	}
 	// ends on factlocked, which is not to be written out
 	int counter = 0;
@@ -182,11 +180,18 @@ static char* WriteUserFacts(char* ptr,bool sharefile,int limit,char* saveJSON)
 		if (shared && !sharefile)  continue;
 		if (saveJSON && !(F->flags & MARKED_FACT2) && F->flags & (JSON_OBJECT_FACT | JSON_ARRAY_FACT)) continue; // dont write this out
 		if (F->flags & MARKED_FACT2) F->flags ^= MARKED_FACT2;	// turn off json marking bit
-		if (!(F->flags & (FACTDEAD|FACTTRANSIENT|MARKED_FACT|FACTBUILD2)))
+        if (F->flags & FACTBOOT && !(F->flags & (FACTDEAD | FACTTRANSIENT))) 
+            bootFacts = true;
+        if (!(F->flags & (FACTDEAD|FACTTRANSIENT|MARKED_FACT|FACTBUILD2| FACTBOOT)))
 		{
 			++counter;
 			WriteFact(F,true,ptr,false,true); // facts are escaped safe for JSON
-			if (trace & TRACE_USERFACT) Log(STDTRACELOG,(char*)"Fact Saved %s",ptr);
+            if (trace & TRACE_USERFACT)
+            {
+                char data[MAX_WORD_SIZE];
+                WriteFact(F, true, data, false, true,true);
+                Log(STDUSERLOG, (char*)"Fact Saved %s", data);
+            }
 			ptr += strlen(ptr);
 			if ((unsigned int)(ptr - userDataBase) >= (userCacheSize - OVERFLOW_SAFETY_MARGIN)) 
 			{
@@ -221,7 +226,7 @@ static bool ReadUserFacts()
         int setid;
         ptr = ReadInt(ptr,setid); 
 		SET_FACTSET_COUNT(setid,0);
-		if (trace & TRACE_USER) Log(STDTRACELOG,(char*)"Facts[%d]\r\n",setid);
+		if (trace & TRACE_USER) Log(STDUSERLOG,(char*)"Facts[%d]\r\n",setid);
 	    while (ReadALine(readBuffer, 0)>= 0) 
 		{
 			if (*readBuffer == '#') break;
@@ -413,11 +418,13 @@ char* WriteUserVariables(char* ptr,bool sharefile, bool compiled,char* saveJSON)
 {
 	if (!ptr) return NULL;
 
-	unsigned int varthread = userVariableThreadList;
+    HEAPLINK varthread = userVariableThreadList;
 	bool traceseen = false;
+	bool timingseen = false;
 	char word[MAX_WORD_SIZE];
 
 	if (modifiedTrace) trace = modifiedTraceVal; // script set the value
+	if (modifiedTiming) timing = modifiedTimingVal; // script set the value
 	while (varthread)
 	{
 		unsigned int* cell = (unsigned int*)Index2Heap(varthread);
@@ -432,7 +439,7 @@ char* WriteUserVariables(char* ptr,bool sharefile, bool compiled,char* saveJSON)
 			if (val && val[0] == 'j' && (val[1] == 'o' || val[1] == 'a') && val[2] == '-' && val[3] != 't' && saveJSON) SaveJSON(FindWord(val));
 
 			// if var is actually system var, and value is unchanged (may have edited and restored), dont save it
-			unsigned int varthread1 =  botVariableThreadList;
+			HEAPLINK varthread1 =  botVariableThreadList;
 			while (varthread1)
 			{
 				cell = (unsigned int*)Index2Heap(varthread1);
@@ -459,6 +466,12 @@ char* WriteUserVariables(char* ptr,bool sharefile, bool compiled,char* saveJSON)
 				sprintf(word,(char*)"%u",(unsigned int)trace);
 				val = word;
 			}
+			if (!stricmp(D->word, "$cs_time"))
+			{
+				timingseen = true;
+				sprintf(word, (char*)"%u", (unsigned int)timing);
+				val = word;
+			}
 			if (!val) val = ""; // for null variables being marked as traced
 			if (D->internalBits & MACRO_TRACE) 
 			{
@@ -479,6 +492,11 @@ char* WriteUserVariables(char* ptr,bool sharefile, bool compiled,char* saveJSON)
 	if (!traceseen && !traceUniversal)
 	{
 		sprintf(ptr,(char*)"$cs_trace=%d\r\n",trace);
+		ptr += strlen(ptr);
+	}
+	if (!timingseen)
+	{
+		sprintf(ptr, (char*)"$cs_time=%d\r\n", timing);
 		ptr += strlen(ptr);
 	}
 
@@ -540,7 +558,7 @@ static bool ReadUserVariables()
 			PrepareVariableChange(D,"",false); // keep it alive as long as it is traced
 			AddInternalFlag(D,MACRO_TRACE);
 		}
-		if (trace & TRACE_VARIABLE) Log(STDTRACELOG,(char*)"uservar: %s=%s\r\n",readBuffer,ptr+1);
+		if (trace & TRACE_VARIABLE) Log(STDUSERLOG,(char*)"uservar: %s=%s\r\n",readBuffer,ptr+1);
     }
 
 	if (strcmp(readBuffer,(char*)"#`end variables")) 
@@ -558,9 +576,10 @@ static bool ReadUserVariables()
 static char* GatherUserData(char* ptr,time_t curr,bool sharefile)
 {
 	// need to get fact limit variable for WriteUserFacts BEFORE writing user variables, which clears them
-	int count = userFactCount;
+	unsigned int count = userFactCount;
 	char* value = GetUserVariable("$cs_userfactlimit");
-	if (*value) count = atoi(value);
+    if (*value == '*') count = (unsigned int)-1;
+    else if (*value) count = atoi(value);
 
 	int messageCount = MAX_USER_MESSAGES;
 	value = GetUserVariable("$cs_userhistorylimit");
@@ -581,7 +600,6 @@ static char* GatherUserData(char* ptr,time_t curr,bool sharefile)
 	char* saveJSON = GetUserVariable("$cs_saveusedJson");
 	if (!*saveJSON) saveJSON = NULL;
 
-	jsonptrThreadList = 0;
 	ptr = WriteUserVariables(ptr,sharefile,false, saveJSON);  // json safe
 	if (!ptr)
 	{
@@ -722,7 +740,7 @@ static  bool ReadFileData(char* bot) // passed  buffer with file content (where 
 	}
 	else
 	{
-		if (trace & TRACE_USER) Log(STDTRACELOG,(char*)"\r\nLoading user %s bot %s\r\n",loginID, bot);
+		if (trace & TRACE_USER) Log(STDUSERLOG,(char*)"\r\nLoading user %s bot %s\r\n",loginID, bot);
 		if (!ReadUserTopics()) 
 		{
 			ReportBug((char*)"User data file TOPICS inconsistent\r\n");
@@ -753,7 +771,7 @@ static  bool ReadFileData(char* bot) // passed  buffer with file content (where 
             loadingUser = false;
             return false;
 		}
-		if (trace & TRACE_USER) Log(STDTRACELOG,(char*)"user load completed normally\r\n");
+		if (trace & TRACE_USER) Log(STDUSERLOG,(char*)"user load completed normally\r\n");
 		oldRandIndex = randIndex = atoi(GetUserVariable((char*)"$cs_randindex")) + (volleyCount % MAXRAND);	// rand base assigned to user
 	}
 	userRecordSourceBuffer = NULL;
@@ -763,7 +781,7 @@ static  bool ReadFileData(char* bot) // passed  buffer with file content (where 
 	size_t len = strlen(loginID);
 	while (*at && (at = strstr(at, loginID))) // any in list
 	{
-		if (at == traceuser || at[len] == ',' || !at[len]) trace = -1;
+		if (at == traceuser || at[len] == ',' || !at[len]) trace = (unsigned int)-1;
 		at += 1;
 	}
     loadingUser = false;
@@ -818,7 +836,7 @@ void KillShare()
 void ReadNewUser()
 {
 	if (server) trace = 0;
-	if (trace & TRACE_USER) Log(STDTRACELOG,(char*)"New User\r\n");
+	if (trace & TRACE_USER) Log(STDUSERLOG,(char*)"New User\r\n");
 	ResetUserChat();
 	ClearUserVariables();
 	ClearUserFacts();

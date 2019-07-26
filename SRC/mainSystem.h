@@ -1,7 +1,7 @@
 #ifndef MAINSYSTEMH
 #define MAINSYSTEMH
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -19,10 +19,11 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 
 typedef struct RESPONSE
 {
+    char* response;						// answer sentences, 1 or more per input line
+    char* patternchoice;
     unsigned int responseInputIndex;                        // which input sentence does this stem from?
 	int topic;										// topic of rule
 	char id[24];											// .100.30
-	char* response;						// answer sentences, 1 or more per input line
 } RESPONSE;
 
 #define SENTENCE_LIMIT 50 // how many sentence from user do we accept
@@ -43,6 +44,7 @@ extern DEBUGAPI debugOutput; // CS output to windows
 extern DEBUGAPI debugEndTurn; // about to save user file marker
 extern DEBUGLOOPAPI debugCall;
 extern unsigned int idetrace;
+extern bool dieonwritefail;
 extern DEBUGVARAPI debugVar;
 extern DEBUGVARAPI debugMark;
 extern int outputlevel;
@@ -101,9 +103,11 @@ extern char languageFolder[500];
 extern char systemFolder[500];
 extern bool rebooting;
 extern int responseIndex;
+extern bool trustpos;
 extern bool documentMode;
 extern bool assignedLogin;
 extern bool servertrace;
+extern int inputLimit;
 extern int outputchoice;
 extern int traceUniversal;
 extern char apikey[100];
@@ -126,7 +130,6 @@ extern unsigned int choiceCount;
 extern int externalTagger;
 extern bool redo;
 extern bool commandLineCompile;
-extern char websocketParam[1000];
 extern int inputCounter,totalCounter;
 extern int inputSentenceCount;  
 extern char* extraTopicData;
@@ -180,7 +183,7 @@ extern std::string interfaceKind;
 #endif
 
 // buffers
-extern char ourMainInputBuffer[INPUT_BUFFER_SIZE];
+extern char ourMainInputBuffer[INPUT_BUFFER_SIZE * 2];
 extern char* mainInputBuffer;
 extern char* ourMainOutputBuffer;
 extern char* mainOutputBuffer;

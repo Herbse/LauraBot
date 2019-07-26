@@ -20,19 +20,23 @@
 // these values of word->internalBits are NOT stored in the dictionary text files but are generated while reading in data
 
 // various sources of livedata substitions 
-//	used 	0x00000001 
-//	used	0x00000002
-//	used	0x00000004
-//	used	0x00000008
-//	used	0x00000010 
-//	used	0x00000020 
-//	used	0x00000040 
-//	used	0x00000080 
+// These are on tokencontrol, enabling substitutions
+// various sources of livedata substitions 
+// the original word will have this flag | HAS_SUBSTITUTE
+//	used 	0x00000001 # DO_ESSENTIALS
+//	used	0x00000002 # DO_SUBSTITUTES
+//	used	0x00000004 # DO_CONTRACTIONS
+//	used	0x00000008 # DO_INTERJECTIONS
+//	used	0x00000010 # DO_BRITISH
+//	used	0x00000020 # DO_SPELLING
+//	used	0x00000040 # DO_TEXTING
+//	used	0x00000080 # DO_NOISE -- without HAS_SUBSTITUTE this is a script compiler flag to disable warnings on spelling
 //	used	0x00000100 thru PRIVATE
 
 #define QUERY_KIND				0x00000200		// is a query item (from LIVEDATA or query:)
 #define LABEL					QUERY_KIND		// transient scriptcompiler use
 #define RENAMED					QUERY_KIND		// _alpha name renames _number or @name renames @n
+#define OVERRIDE_CONCEPT        QUERY_KIND      // this concept name is overridden by ^testpattern
 #define PREFER_THIS_UPPERCASE	0x00000400		// given choice of uppercases, retrieve this
 #define NOTIME_TOPIC			0x00000800		// dont time this topic (topic names)
 #define NOTIME_FN				NOTIME_TOPIC	// dont time this function (on functions only)
@@ -53,6 +57,7 @@
 #define BUILD0					0x00100000		// comes from build0 data (marker on functions, concepts, topics)
 #define BUILD1					0x00200000		// comes from build1 data
 #define HAS_EXCLUDE				0x00400000		// concept/topic has keywords to exclude
+#define TABBED                  HAS_EXCLUDE     // table macro is tabbed
 #define BUILD2					0x00800000		// comes from dynamic build layer data
 #define FUNCTION_NAME			0x01000000 	//   name of a ^function  (has non-zero ->x.codeIndex if system, else is user but can be patternmacro,outputmacro, or plan) only applicable to ^ words
 #define CONCEPT					0x02000000	// topic or concept has been read via a definition
@@ -107,6 +112,9 @@ unsigned int GETTYPERESTRICTION(MEANING x);
 #define LOWERCASE_LOOKUP 4096
 #define UPPERCASE_LOOKUP 8192
 
+
+#define FACTBOOT 0x00004000 // fact is to save with boot layer after creating during user 
+
 #define NO_EXTENDED_WRITE_FLAGS ( PATTERN_WORD  )
 
 // system flags revealed via concepts
@@ -135,7 +143,7 @@ unsigned int GETTYPERESTRICTION(MEANING x);
 #define TENSEFIELD 2
 #define PLURALFIELD 3
 
-#define Index2Word(n) (dictionaryBase+n)
+#define Index2Word(n) (dictionaryBase + (size_t)n)
 #define Word2Index(D) ((uint64) (D-dictionaryBase))
 #define GetMeanings(D) ((MEANING*) Index2Heap(D->meanings))
 MEANING GetMeaning(WORDP D, int index);
@@ -162,7 +170,7 @@ void SetCanonical(WORDP D,MEANING M);
 uint64 GetTriedMeaning(WORDP D);
 void SetTriedMeaning(WORDP D,uint64 bits);
 void ReadSubstitutes(const char* name,unsigned int build,const char* layer,unsigned int fileFlag,bool filegiven = false);
-void Add2ConceptTopicList(int list[256], WORDP D,int start,int end,bool unique);
+void Add2ConceptTopicList(HEAPLINK list[256], WORDP D,int start,int end,bool unique);
 void SuffixMeaning(MEANING T,char* at, bool withPos);
 int UTFCharSize(char* utf);
 
@@ -182,8 +190,8 @@ extern uint64 adverbFormat;
 extern MEANING posMeanings[64];
 extern MEANING sysMeanings[64];
 extern bool xbuildDictionary;
-extern unsigned int propertyRedefines;	// property changes on locked dictionary entries
-extern unsigned int flagsRedefines;		// systemflags changes on locked dictionary entries
+extern HEAPLINK propertyRedefines;	// property changes on locked dictionary entries
+extern HEAPLINK flagsRedefines;		// systemflags changes on locked dictionary entries
 
 extern FACT* factLocked;
 extern char* stringLocked;
@@ -228,7 +236,7 @@ bool TraceHierarchyTest(int x);
 void WriteDictDetailsBeforeLayer(int layer);
 WORDP StoreWord(char* word, uint64 properties = 0);
 WORDP StoreWord(char* word, uint64 properties, uint64 flags);
-WORDP FindWord(const char* word, int len = 0,uint64 caseAllowed = STANDARD_LOOKUP);
+WORDP FindWord(const char* word, unsigned int len = 0,uint64 caseAllowed = STANDARD_LOOKUP);
 WORDP FullStore(char* word, uint64 properties, uint64 flags);
 unsigned char BitCount(uint64 n);
 void ClearVolleyWordMaps();
@@ -241,7 +249,7 @@ int GetWords(char* word, WORDP* set,bool strict);
 bool StricmpUTF(char* w1, char* w2, int len);
 void ReadQueryLabels(char* file);
 void ClearWordWhere(WORDP D,int at);
-void RemoveConceptTopic(int list[256],WORDP D, int at);
+void RemoveConceptTopic(HEAPLINK list[256],WORDP D, int at);
 char* UseDictionaryFile(char* name);
 void ClearWhereInSentence();
 void ClearTriedData();
@@ -312,6 +320,7 @@ void WalkDictionary(DICTIONARY_FUNCTION func,uint64 data = 0);
 char* FindCanonical(char* word, int i, bool nonew = false);
 void VerifyEntries(WORDP D,uint64 junk);
 void NoteLanguage();
+void ClearWhereAt(int where);
 
 bool IsHelper(char* word);
 bool IsFutureHelper(char* word);

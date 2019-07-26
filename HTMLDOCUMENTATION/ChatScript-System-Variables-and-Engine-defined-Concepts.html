@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1 id="chatscript-system-variables-and-engine-defined-concepts">ChatScript System Variables and Engine-defined Concepts</h1>
-<p>© Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 11/29/2017 cs7.71</p>
+<p>© Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 7/14/2019 cs9.6</p>
 <ul>
 <li><a href="ChatScript-System-Variables-and-Engine-defined-Concepts.html#engine-defined-concepts">Engine-defined Concepts</a></li>
 <li><a href="ChatScript-System-Variables-and-Engine-defined-Concepts.html#system-variables">System Variables</a></li>
@@ -552,6 +552,10 @@
 <td><code>~modelnumber</code></td>
 <td>not a true number, but a word with both alpha and numeric</td>
 </tr>
+<tr class="even">
+<td><code>~filename</code></td>
+<td>looks like a filename with extension</td>
+</tr>
 </tbody>
 </table>
 <p>To can be a preposition or it can be special. When used in the infinitive phrase To go, it is marked <code>~to_infinitive</code> and is followed by <code>~noun_infinitive</code>.</p>
@@ -726,7 +730,7 @@
 </tr>
 <tr class="odd">
 <td><code>%daynumber</code></td>
-<td>0-6 where 0 = Sunday</td>
+<td>1-7 where 1 = Sunday</td>
 </tr>
 <tr class="even">
 <td><code>%fulltime</code></td>
@@ -773,14 +777,18 @@
 <td>hh:mm in military 24-hour time</td>
 </tr>
 <tr class="odd">
+<td><code>%zulutime</code></td>
+<td>2016-07-27T11:38:35.253Z</td>
+</tr>
+<tr class="even">
 <td><code>%week</code></td>
 <td>1-5 (week of the month)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>%year</code></td>
 <td>e.g., 2011</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>%rand</code></td>
 <td>get a random number from 1 to 100 inclusive</td>
 </tr>
@@ -869,22 +877,26 @@
 <td>Boolean does it seem like a sentence (subject/verb or command)</td>
 </tr>
 <tr class="even">
+<td><code>%tableinput</code></td>
+<td>current line being executed in a table expansion during script compilation</td>
+</tr>
+<tr class="odd">
 <td><code>%tense</code></td>
 <td>past , present, or future simple tense (present perfect is a past tense)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>%user</code></td>
 <td>user login name supplied</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>%userfirstline</code></td>
 <td>value of <code>%input</code> that is at the start of this conversation start</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>%userinput</code></td>
 <td>Boolean is the current input from the user (vs the chatbot)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>%voice</code></td>
 <td>active or passive on current input</td>
 </tr>
@@ -909,7 +921,7 @@
 </tr>
 <tr class="even">
 <td><code>%lastoutput</code></td>
-<td>the text of the last generated response for the current volley</td>
+<td>the text of the last generated response for the current volley - always null across volleys</td>
 </tr>
 <tr class="odd">
 <td><code>%lastquestion</code></td>
@@ -1206,7 +1218,7 @@
 </tr>
 <tr class="even">
 <td><code>NO_WITHIN</code></td>
-<td></td>
+<td>don't match fragments within a composite word</td>
 </tr>
 <tr class="odd">
 <td><code>NO_SENTENCE_END</code></td>
@@ -1241,7 +1253,11 @@
 </tr>
 <tr class="even">
 <td><code>LEAVE_QUOTE</code></td>
-<td>if input is found withing &quot; &quot; it will become a single token exactly as it is seen. W/o Leave_Quote, it is converted into a word without quotes and using underscores instead of spaces. So &quot;My Fair Lady&quot; becomes My_Fair_Lady, which would match a movie title if you had one, unlike <em>My Fair Lady</em> becoming the resulting token and unrecognized</td>
+<td>if input is found within &quot; &quot; it will become a single token exactly as it is seen. W/o Leave_Quote, it is converted into a word without quotes and using underscores instead of spaces. So &quot;My Fair Lady&quot; becomes My_Fair_Lady, which would match a movie title if you had one, unlike <em>My Fair Lady</em> becoming the resulting token and unrecognized</td>
+</tr>
+<tr class="odd">
+<td><code>SPLIT_QUOTE</code></td>
+<td>if input is found within &quot; &quot; the quotes will be removed.</td>
 </tr>
 </tbody>
 </table>
@@ -1285,6 +1301,14 @@ s: (name is _*)
 <p>A special kind of private substitution (equally applicable in regular substitution files) is the numeric substitution.</p>
 <pre><code>replace: ?_km kilometers</code></pre>
 <p>The ?_ matches a digit number followed immediately by km, like <code>1.2km</code> and will separate the number and replace the units with the given replacement. The input can be singular or have an 's' like <code>10.5dollars</code>. And it can be with or without abbreviation periods, like <code>10kps</code> or <code>10k.p.s</code></p>
+<h2 id="apostrophe-substitutions-replace">Apostrophe Substitutions replace</h2>
+<pre><code>replace: &#39;xxx  yyy</code></pre>
+<p>allows you to split during tokenization any word followed by 'xxx into two words, original sans 'xxx and yyy. eg</p>
+<pre><code>replace: &#39;ve have</code></pre>
+<p>gives &quot;companies've =&gt; &quot;companies have&quot;.</p>
+<h2 id="replacing-to-a-word-with-in-it">Replacing to a word with + in it</h2>
+<p>Normally <code>replace:  x  y+z</code> will generate 2 words, y and z. If you need a plus in your word, you can escape your 2nd word:</p>
+<pre><code>    replace: &quot;black and decker&quot; \BLACK+DECKER</code></pre>
 <h1 id="interchange-variables">Interchange Variables</h1>
 <p>The following variables can be defined in a script and the engine will react to their contents.</p>
 <table style="width:39%;">
@@ -1385,7 +1409,7 @@ s: (name is _*)
 </tr>
 <tr class="even">
 <td><code>$cs_userfactlimit</code></td>
-<td>how many of the most recent permanent facts created by the script in response to user inputs are kept for each user. Std default is 100</td>
+<td>how many of the most recent permanent facts created by the script in response to user inputs are kept for each user. Std default is 100. * means all.</td>
 </tr>
 <tr class="odd">
 <td><code>$cs_outputchoice</code></td>

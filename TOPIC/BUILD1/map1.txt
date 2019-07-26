@@ -9,7 +9,7 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_hobbies.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_hobbies.top
     topic: 1  ~hobbies_t
         rule: 7  ~hobbies_t.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -110,7 +110,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
         rule: 63  ~hobbies_t.4.0-HOBBIES_4 u: 
           line: 63 0  # $hobbiescounter = 4 Manchmal h
           Complexity of rule ~hobbies_t.4.0-HOBBIES_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_school.top
     topic: 1  ~school_t
         rule: 6  ~school_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -205,7 +205,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
         rule: 57  ~school_t.4.0-SCHOOL_4 u: 
           line: 57 0  # $schoolcounter = 4 Mathe und D
           Complexity of rule ~school_t.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_mother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_mother.top
     topic: 1  ~mother_t
         rule: 4  ~mother_t.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -356,7 +356,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
           Complexity of rule ~mother_t.5.0-MAMA_4 u: 1
         rule: 92  ~mother_t.6.0 u: 
           Complexity of rule ~mother_t.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_event.top
     topic: 1  ~event_t
         rule: 4  ~event_t.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -525,14 +525,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
           Complexity of rule ~event_t.9.0-CLUE2 u: 1
         rule: 390  ~event_t.10.0 u: 
           Complexity of rule ~event_t.10.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_introduction.top
     topic: 1  ~introduction
         rule: 3  ~introduction.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction.0.0- t: 1
         rule: 6  ~introduction.1.0 u: 
           Complexity of rule ~introduction.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_friends.top
     topic: 1  ~friends_t
         rule: 7  ~friends_t.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -669,7 +669,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
         rule: 91  ~friends_t.5.0-FRIENDS_4 u: 
           line: 91 0  # $friendcounter = 4 Manchmal br
           Complexity of rule ~friends_t.5.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_father.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_father.top
     topic: 1  ~father_t
         rule: 7  ~father_t.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -808,7 +808,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
           Complexity of rule ~father_t.5.0-PAPA_4 u: 1
         rule: 95  ~father_t.6.0 u: 
           Complexity of rule ~father_t.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_personal.top
     topic: 1  ~personal_t
         rule: 3  ~personal_t.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -845,7 +845,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
           Complexity of rule ~personal_t.0.10- a: 1
         rule: 25  ~personal_t.0.11 a: 
           Complexity of rule ~personal_t.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_ralf.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_ralf.top
     topic: 1  ~ralf_t
         rule: 6  ~ralf_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -981,7 +981,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
           Complexity of rule ~ralf_t.5.0-RALF_4 u: 1
         rule: 95  ~ralf_t.6.0 u: 
           Complexity of rule ~ralf_t.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_quibble.top
     topic: 1  ~quibble
         rule: 4  ~quibble.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -989,7 +989,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
         rule: 6  ~quibble.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIONS/c_specific.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIONS/c_specific.top
     topic: 1  ~specific
         rule: 4  ~specific.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -1047,7 +1047,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
           Complexity of rule ~specific.0.17- b: 1
         rule: 23  ~specific.0.18 a: 
           Complexity of rule ~specific.0.18- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIONS/c_narrative.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIONS/c_narrative.top
     topic: 1  ~narrative
         rule: 4  ~narrative.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -1105,7 +1105,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
           Complexity of rule ~narrative.0.17- b: 1
         rule: 23  ~narrative.0.18 a: 
           Complexity of rule ~narrative.0.18- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_hobbies.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~1
         rule: 7  ~hobbies_t~1.0.0- t: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -1215,7 +1215,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 66  ~hobbies_t~1.4.0-HOBBIES_4 u: 
           line: 66 0  # $hobbiescounter = 4 Ich würde
           Complexity of rule ~hobbies_t~1.4.0-HOBBIES_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_school.top
     topic: 1  ~school_t~1
         rule: 6  ~school_t~1.0.0- t: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -1307,7 +1307,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 56  ~school_t~1.4.0-SCHOOL_4 u: 
           line: 56 0  # $schoolcounter = 4 
           Complexity of rule ~school_t~1.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_mother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_mother.top
     topic: 1  ~mother_t~1
         rule: 4  ~mother_t~1.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -1482,7 +1482,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~mother_t~1.6.0-MAMA_4 u: 1
         rule: 112  ~mother_t~1.7.0 u: 
           Complexity of rule ~mother_t~1.7.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_sister.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_sister.top
     topic: 1  ~sister_t
         rule: 6  ~sister_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -1618,7 +1618,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~sister_t.5.0-SISTER_4 u: 1
         rule: 95  ~sister_t.6.0 u: 
           Complexity of rule ~sister_t.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_event.top
     topic: 1  ~event_t~1
         rule: 4  ~event_t~1.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -1751,14 +1751,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~event_t~1.9.0-CLUE2 u: 1
         rule: 381  ~event_t~1.10.0 u: 
           Complexity of rule ~event_t~1.10.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_introduction.top
     topic: 1  ~introduction~1
         rule: 3  ~introduction~1.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction~1.0.0- t: 1
         rule: 6  ~introduction~1.1.0 u: 
           Complexity of rule ~introduction~1.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_friends.top
     topic: 1  ~friends_t~1
         rule: 7  ~friends_t~1.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -1904,7 +1904,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 94  ~friends_t~1.5.0-FRIENDS_4 u: 
           line: 94 0  # $friendcounter = 4 Wenn Floria
           Complexity of rule ~friends_t~1.5.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_father.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_father.top
     topic: 1  ~father_t~1
         rule: 6  ~father_t~1.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -2046,7 +2046,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~father_t~1.5.0-PAPA_4 u: 1
         rule: 95  ~father_t~1.6.0 u: 
           Complexity of rule ~father_t~1.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_personal.top
     topic: 1  ~personal_t~1
         rule: 3  ~personal_t~1.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -2083,7 +2083,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~personal_t~1.0.10- a: 1
         rule: 25  ~personal_t~1.0.11 a: 
           Complexity of rule ~personal_t~1.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_quibble.top
     topic: 1  ~quibble~1
         rule: 4  ~quibble~1.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -2091,7 +2091,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 6  ~quibble~1.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~1.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_school.top
     topic: 1  ~school_t~2
         rule: 6  ~school_t~2.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -2186,7 +2186,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
         rule: 57  ~school_t~2.4.0-SCHOOL_4 u: 
           line: 57 0  # $schoolcounter = 4 Deutsch ist
           Complexity of rule ~school_t~2.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_therapy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_therapy.top
     topic: 1  ~therapy_t
         rule: 5  ~therapy_t.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -2326,7 +2326,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
         rule: 89  ~therapy_t.5.0-THERAPY_4 u: 
           line: 89 0  # $therapycounter = 4 Claudia is
           Complexity of rule ~therapy_t.5.0-THERAPY_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_aunt.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_aunt.top
     topic: 1  ~aunt_t
         rule: 4  ~aunt_t.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -2505,7 +2505,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
         rule: 109  ~aunt_t.6.0-AUNT_4 u: 
           line: 109 0  # $auntcounter = 4 Im Winter geh
           Complexity of rule ~aunt_t.6.0-AUNT_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_sister.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_sister.top
     topic: 1  ~sister_t~1
         rule: 6  ~sister_t~1.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -2641,7 +2641,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
           Complexity of rule ~sister_t~1.5.0-SISTER_4 u: 1
         rule: 95  ~sister_t~1.6.0 u: 
           Complexity of rule ~sister_t~1.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_event.top
     topic: 1  ~event_t~2
         rule: 4  ~event_t~2.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -2702,14 +2702,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
           Complexity of rule ~event_t~2.7.0-CLUE2 u: 1
         rule: 334  ~event_t~2.8.0 u: 
           Complexity of rule ~event_t~2.8.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_introduction.top
     topic: 1  ~introduction~2
         rule: 3  ~introduction~2.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction~2.0.0- t: 1
         rule: 6  ~introduction~2.1.0 u: 
           Complexity of rule ~introduction~2.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_friends.top
     topic: 1  ~friends_t~2
         rule: 7  ~friends_t~2.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -2852,7 +2852,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
         rule: 93  ~friends_t~2.5.0-FRIENDS_4 u: 
           line: 93 0  # $friendcounter = 4 Wir sind Te
           Complexity of rule ~friends_t~2.5.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_father.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_father.top
     topic: 1  ~father_t~2
         rule: 6  ~father_t~2.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -3000,7 +3000,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
           Complexity of rule ~father_t~2.5.0-PAPA_4 u: 1
         rule: 97  ~father_t~2.6.0 u: 
           Complexity of rule ~father_t~2.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_personal.top
     topic: 1  ~personal_t~2
         rule: 3  ~personal_t~2.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -3037,7 +3037,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
           Complexity of rule ~personal_t~2.0.10- a: 1
         rule: 25  ~personal_t~2.0.11 a: 
           Complexity of rule ~personal_t~2.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_quibble.top
     topic: 1  ~quibble~2
         rule: 4  ~quibble~2.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -3045,7 +3045,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
         rule: 6  ~quibble~2.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~2.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_hobbies.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~2
         rule: 7  ~hobbies_t~2.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -3157,7 +3157,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~hobbies_t~2.4.0-HOBBIES_4 u: 1
         rule: 76  ~hobbies_t~2.5.0 u: 
           Complexity of rule ~hobbies_t~2.5.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_school.top
     topic: 1  ~school_t~3
         rule: 6  ~school_t~3.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -3267,7 +3267,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 62  ~school_t~3.4.0-SCHOOL_4 u: 
           line: 62 0  # $schoolcounter = 4 Ich finde d
           Complexity of rule ~school_t~3.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_brother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_brother.top
     topic: 1  ~brother_t
         rule: 6  ~brother_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -3421,7 +3421,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~brother_t.5.0-BROTHER_4 u: 1
         rule: 99  ~brother_t.6.0 u: 
           Complexity of rule ~brother_t.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_mother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_mother.top
     topic: 1  ~mother_t~2
         rule: 4  ~mother_t~2.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -3578,7 +3578,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~mother_t~2.5.0-MAMA_4 u: 1
         rule: 96  ~mother_t~2.6.0 u: 
           Complexity of rule ~mother_t~2.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_event.top
     topic: 1  ~event_t~3
         rule: 4  ~event_t~3.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -3651,7 +3651,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~event_t~3.7.0-CLUE2 u: 1
         rule: 332  ~event_t~3.8.0 u: 
           Complexity of rule ~event_t~3.8.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_introduction.top
     topic: 1  ~introduction~3
         rule: 3  ~introduction~3.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
@@ -3661,7 +3661,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~introduction~3.1.0- t: 1
         rule: 6  ~introduction~3.2.0 u: 
           Complexity of rule ~introduction~3.2.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_friends.top
     topic: 1  ~friends_t~3
         rule: 5  ~friends_t~3.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -3816,7 +3816,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 93  ~friends_t~3.5.0-FRIENDS_4 u: 
           line: 93 0  # $friendcounter = 4 Mira hat ei
           Complexity of rule ~friends_t~3.5.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_father.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_father.top
     topic: 1  ~father_t~3
         rule: 7  ~father_t~3.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -3970,7 +3970,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~father_t~3.5.0-PAPA_4 u: 1
         rule: 100  ~father_t~3.6.0 u: 
           Complexity of rule ~father_t~3.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_personal.top
     topic: 1  ~personal_t~3
         rule: 3  ~personal_t~3.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -4007,7 +4007,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~personal_t~3.0.10- a: 1
         rule: 25  ~personal_t~3.0.11 a: 
           Complexity of rule ~personal_t~3.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_quibble.top
     topic: 1  ~quibble~3
         rule: 4  ~quibble~3.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -4015,7 +4015,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 6  ~quibble~3.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~3.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUESTIONS/c_specific.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUESTIONS/c_specific.top
     topic: 1  ~specific~1
         rule: 4  ~specific~1.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -4073,7 +4073,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~specific~1.0.17- b: 1
         rule: 23  ~specific~1.0.18 a: 
           Complexity of rule ~specific~1.0.18- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUESTIONS/c_narrative.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~1
         rule: 4  ~narrative~1.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -4131,7 +4131,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~narrative~1.0.17- b: 1
         rule: 23  ~narrative~1.0.18 a: 
           Complexity of rule ~narrative~1.0.18- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_hobbies.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~3
         rule: 7  ~hobbies_t~3.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -4243,7 +4243,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~hobbies_t~3.4.0-HOBBIES_4 u: 1
         rule: 76  ~hobbies_t~3.5.0 u: 
           Complexity of rule ~hobbies_t~3.5.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_school.top
     topic: 1  ~school_t~4
         rule: 6  ~school_t~4.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -4353,7 +4353,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 62  ~school_t~4.4.0-SCHOOL_4 u: 
           line: 62 0  # $schoolcounter = 4 Ich finde d
           Complexity of rule ~school_t~4.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_brother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_brother.top
     topic: 1  ~brother_t~1
         rule: 6  ~brother_t~1.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -4507,7 +4507,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~brother_t~1.5.0-BROTHER_4 u: 1
         rule: 99  ~brother_t~1.6.0 u: 
           Complexity of rule ~brother_t~1.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_mother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_mother.top
     topic: 1  ~mother_t~3
         rule: 4  ~mother_t~3.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -4664,7 +4664,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~mother_t~3.5.0-MAMA_4 u: 1
         rule: 96  ~mother_t~3.6.0 u: 
           Complexity of rule ~mother_t~3.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_event.top
     topic: 1  ~event_t~4
         rule: 4  ~event_t~4.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -4737,7 +4737,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~event_t~4.7.0-CLUE2 u: 1
         rule: 332  ~event_t~4.8.0 u: 
           Complexity of rule ~event_t~4.8.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_introduction.top
     topic: 1  ~introduction~4
         rule: 3  ~introduction~4.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
@@ -4747,7 +4747,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~introduction~4.1.0- t: 1
         rule: 6  ~introduction~4.2.0 u: 
           Complexity of rule ~introduction~4.2.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_friends.top
     topic: 1  ~friends_t~4
         rule: 5  ~friends_t~4.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -4902,7 +4902,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 93  ~friends_t~4.5.0-FRIENDS_4 u: 
           line: 93 0  # $friendcounter = 4 Mira hat ei
           Complexity of rule ~friends_t~4.5.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_father.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_father.top
     topic: 1  ~father_t~4
         rule: 7  ~father_t~4.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -5056,7 +5056,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~father_t~4.5.0-PAPA_4 u: 1
         rule: 100  ~father_t~4.6.0 u: 
           Complexity of rule ~father_t~4.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_personal.top
     topic: 1  ~personal_t~4
         rule: 3  ~personal_t~4.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -5093,7 +5093,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~personal_t~4.0.10- a: 1
         rule: 25  ~personal_t~4.0.11 a: 
           Complexity of rule ~personal_t~4.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_quibble.top
     topic: 1  ~quibble~4
         rule: 4  ~quibble~4.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -5101,7 +5101,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 6  ~quibble~4.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~4.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUESTIONS/c_specific.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUESTIONS/c_specific.top
     topic: 1  ~specific~2
         rule: 4  ~specific~2.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -5159,7 +5159,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~specific~2.0.17- b: 1
         rule: 23  ~specific~2.0.18 a: 
           Complexity of rule ~specific~2.0.18- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUESTIONS/c_narrative.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~2
         rule: 4  ~narrative~2.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -5217,7 +5217,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~narrative~2.0.17- b: 1
         rule: 23  ~narrative~2.0.18 a: 
           Complexity of rule ~narrative~2.0.18- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_school.top
     topic: 1  ~school_t~5
         rule: 6  ~school_t~5.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -5312,7 +5312,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
         rule: 57  ~school_t~5.4.0-SCHOOL_4 u: 
           line: 57 0  # $schoolcounter = 4 Wir kriegen
           Complexity of rule ~school_t~5.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_grandmother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_grandmother.top
     topic: 1  ~grandmother_t
         rule: 5  ~grandmother_t.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -5487,7 +5487,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
           Complexity of rule ~grandmother_t.6.0-OMA_4 u: 1
         rule: 119  ~grandmother_t.7.0 u: 
           Complexity of rule ~grandmother_t.7.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_mother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_mother.top
     topic: 1  ~mother_t~4
         rule: 4  ~mother_t~4.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -5627,7 +5627,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
         rule: 84  ~mother_t~4.5.0-MAMA_4 u: 
           line: 84 0  # $mothercounter = 4 Mama hat of
           Complexity of rule ~mother_t~4.5.0-MAMA_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_neighbours.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_neighbours.top
     topic: 1  ~neighbours_t
         rule: 5  ~neighbours_t.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -5767,7 +5767,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
         rule: 89  ~neighbours_t.5.0-NEIGHBOURS_4 u: 
           line: 89 0  # $neighbourscounter = 4 Mit and
           Complexity of rule ~neighbours_t.5.0-NEIGHBOURS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_sister.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_sister.top
     topic: 1  ~sister_t~2
         rule: 6  ~sister_t~2.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -5909,7 +5909,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
           Complexity of rule ~sister_t~2.5.0-SISTER_4 u: 1
         rule: 95  ~sister_t~2.6.0 u: 
           Complexity of rule ~sister_t~2.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_event.top
     topic: 1  ~event_t~5
         rule: 4  ~event_t~5.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -5970,14 +5970,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
           Complexity of rule ~event_t~5.7.0-CLUE2 u: 1
         rule: 327  ~event_t~5.8.0 u: 
           Complexity of rule ~event_t~5.8.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_introduction.top
     topic: 1  ~introduction~5
         rule: 3  ~introduction~5.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction~5.0.0- t: 1
         rule: 6  ~introduction~5.1.0 u: 
           Complexity of rule ~introduction~5.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_friends.top
     topic: 1  ~friends_t~5
         rule: 7  ~friends_t~5.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -6174,7 +6174,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
         rule: 125  ~friends_t~5.6.0-FRIENDS_4 u: 
           line: 125 0  # $friendcounter = 4 Wir spielen
           Complexity of rule ~friends_t~5.6.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_personal.top
     topic: 1  ~personal_t~5
         rule: 3  ~personal_t~5.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -6211,7 +6211,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
           Complexity of rule ~personal_t~5.0.10- a: 1
         rule: 25  ~personal_t~5.0.11 a: 
           Complexity of rule ~personal_t~5.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_quibble.top
     topic: 1  ~quibble~5
         rule: 4  ~quibble~5.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -6219,7 +6219,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
         rule: 6  ~quibble~5.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~5.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_hobbies.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~4
         rule: 5  ~hobbies_t~4.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -6362,7 +6362,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 90  ~hobbies_t~4.5.0-HOBBIES_4 u: 
           line: 90 0  # $hobbiescounter = 4 Einmal war
           Complexity of rule ~hobbies_t~4.5.0-HOBBIES_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_school.top
     topic: 1  ~school_t~6
         rule: 6  ~school_t~6.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -6451,7 +6451,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 55  ~school_t~6.4.0-SCHOOL_4 u: 
           line: 55 0  # $schoolcounter = 4 Steve und D
           Complexity of rule ~school_t~6.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_brother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_brother.top
     topic: 1  ~brother_t~2
         rule: 6  ~brother_t~2.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -6585,7 +6585,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 86  ~brother_t~2.5.0-BROTHER_4 u: 
           line: 86 0  # $brothercounter = 4 $$sound_fi
           Complexity of rule ~brother_t~2.5.0-BROTHER_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_mother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_mother.top
     topic: 1  ~mother_t~5
         rule: 4  ~mother_t~5.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -6719,7 +6719,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 82  ~mother_t~5.5.0-MAMA_4 u: 
           line: 82 0  # $mothercounter = 4 Wenn ich Ma
           Complexity of rule ~mother_t~5.5.0-MAMA_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_event.top
     topic: 1  ~event_t~6
         rule: 4  ~event_t~6.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -6780,14 +6780,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~event_t~6.7.0-CLUE2 u: 1
         rule: 333  ~event_t~6.8.0 u: 
           Complexity of rule ~event_t~6.8.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_introduction.top
     topic: 1  ~introduction~6
         rule: 3  ~introduction~6.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction~6.0.0- t: 1
         rule: 6  ~introduction~6.1.0 u: 
           Complexity of rule ~introduction~6.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_friends.top
     topic: 1  ~friends_t~6
         rule: 7  ~friends_t~6.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -6897,7 +6897,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 82  ~friends_t~6.5.0-FRIENDS_4 u: 
           line: 82 0  # $friendcounter = 4 Michelle ü
           Complexity of rule ~friends_t~6.5.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_father.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_father.top
     topic: 1  ~father_t~5
         rule: 4  ~father_t~5.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -7075,7 +7075,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~father_t~5.6.0-PAPA_4 u: 1
         rule: 117  ~father_t~5.7.0 u: 
           Complexity of rule ~father_t~5.7.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_personal.top
     topic: 1  ~personal_t~6
         rule: 3  ~personal_t~6.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -7112,7 +7112,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           Complexity of rule ~personal_t~6.0.10- a: 1
         rule: 25  ~personal_t~6.0.11 a: 
           Complexity of rule ~personal_t~6.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_quibble.top
     topic: 1  ~quibble~6
         rule: 4  ~quibble~6.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -7120,7 +7120,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 6  ~quibble~6.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~6.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_hobbies.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~5
         rule: 7  ~hobbies_t~5.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -7230,7 +7230,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
         rule: 66  ~hobbies_t~5.4.0-HOBBIES_4 u: 
           line: 66 0  # $hobbiescounter = 4 Nächstes 
           Complexity of rule ~hobbies_t~5.4.0-HOBBIES_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_school.top
     topic: 1  ~school_t~7
         rule: 6  ~school_t~7.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -7325,7 +7325,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
         rule: 57  ~school_t~7.4.0-SCHOOL_4 u: 
           line: 57 0  # $schoolcounter = 4 Ich will sp
           Complexity of rule ~school_t~7.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_mother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_mother.top
     topic: 1  ~mother_t~6
         rule: 4  ~mother_t~6.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -7459,7 +7459,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
         rule: 82  ~mother_t~6.5.0-MAMA_4 u: 
           line: 82 0  # $mothercounter = 4 Ich gehe ma
           Complexity of rule ~mother_t~6.5.0-MAMA_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_dogs.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_dogs.top
     topic: 1  ~dogs_t
         rule: 5  ~dogs_t.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -7601,7 +7601,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
           Complexity of rule ~dogs_t.5.0-DOGS_4 u: 1
         rule: 93  ~dogs_t.6.0 u: 
           Complexity of rule ~dogs_t.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_event.top
     topic: 1  ~event_t~7
         rule: 4  ~event_t~7.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -7668,14 +7668,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
           Complexity of rule ~event_t~7.7.0-CLUE2 u: 1
         rule: 330  ~event_t~7.8.0 u: 
           Complexity of rule ~event_t~7.8.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_introduction.top
     topic: 1  ~introduction~7
         rule: 3  ~introduction~7.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction~7.0.0- t: 1
         rule: 6  ~introduction~7.1.0 u: 
           Complexity of rule ~introduction~7.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_boyfriend.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_boyfriend.top
     topic: 1  ~boyfriend_t
         rule: 6  ~boyfriend_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -7812,7 +7812,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
         rule: 87  ~boyfriend_t.5.0-BOYFRIEND_4 u: 
           line: 87 0  # $boyfriendcounter = 4 $$sound_
           Complexity of rule ~boyfriend_t.5.0-BOYFRIEND_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_friends.top
     topic: 1  ~friends_t~7
         rule: 7  ~friends_t~7.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -7931,7 +7931,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
         rule: 85  ~friends_t~7.5.0-FRIENDS_4 u: 
           line: 85 0  # $friendcounter = 4 Charlotte h
           Complexity of rule ~friends_t~7.5.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_personal.top
     topic: 1  ~personal_t~7
         rule: 3  ~personal_t~7.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -7968,7 +7968,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
           Complexity of rule ~personal_t~7.0.10- a: 1
         rule: 25  ~personal_t~7.0.11 a: 
           Complexity of rule ~personal_t~7.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_quibble.top
     topic: 1  ~quibble~7
         rule: 4  ~quibble~7.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -7976,7 +7976,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
         rule: 6  ~quibble~7.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~7.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_cat.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_cat.top
     topic: 1  ~cat_t
         rule: 6  ~cat_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -8100,7 +8100,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~cat_t.5.0-CAT_4 u: 1
         rule: 91  ~cat_t.6.0 u: 
           Complexity of rule ~cat_t.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_hobbies.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~6
         rule: 7  ~hobbies_t~6.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -8201,7 +8201,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 63  ~hobbies_t~6.4.0-HOBBIES_4 u: 
           line: 63 0  # $hobbiescounter = 4 Wir sehen 
           Complexity of rule ~hobbies_t~6.4.0-HOBBIES_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_school.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_school.top
     topic: 1  ~school_t~8
         rule: 6  ~school_t~8.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -8299,7 +8299,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 58  ~school_t~8.4.0-SCHOOL_4 u: 
           line: 58 0  # $schoolcounter = 4 Jacky ist i
           Complexity of rule ~school_t~8.4.0-SCHOOL_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_mother.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_mother.top
     topic: 1  ~mother_t~7
         rule: 4  ~mother_t~7.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -8450,7 +8450,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~mother_t~7.5.0-MAMA_4 u: 1
         rule: 92  ~mother_t~7.6.0 u: 
           Complexity of rule ~mother_t~7.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_neighbour.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_neighbour.top
     topic: 1  ~neighbour_t
         rule: 7  ~neighbour_t.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -8598,7 +8598,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~neighbour_t.5.0-NEIGHBOUR_4 u: 1
         rule: 98  ~neighbour_t.6.0 u: 
           Complexity of rule ~neighbour_t.6.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_event.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_event.top
     topic: 1  ~event_t~8
         rule: 4  ~event_t~8.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -8719,14 +8719,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~event_t~8.8.0-CLUE2 u: 1
         rule: 333  ~event_t~8.9.0 u: 
           Complexity of rule ~event_t~8.9.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_introduction.top
     topic: 1  ~introduction~8
         rule: 3  ~introduction~8.0.0 t: 
           line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction~8.0.0- t: 1
         rule: 6  ~introduction~8.1.0 u: 
           Complexity of rule ~introduction~8.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_friends.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_friends.top
     topic: 1  ~friends_t~8
         rule: 7  ~friends_t~8.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -8863,7 +8863,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 91  ~friends_t~8.5.0-FRIENDS_4 u: 
           line: 91 0  # $friendcounter = 4 Jacky liest
           Complexity of rule ~friends_t~8.5.0-FRIENDS_4 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_personal.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_personal.top
     topic: 1  ~personal_t~8
         rule: 3  ~personal_t~8.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -8900,7 +8900,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~personal_t~8.0.10- a: 1
         rule: 25  ~personal_t~8.0.11 a: 
           Complexity of rule ~personal_t~8.0.11- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_quibble.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_quibble.top
     topic: 1  ~quibble~8
         rule: 4  ~quibble~8.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -8908,7 +8908,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 6  ~quibble~8.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~8.1.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorial.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/TUTORIAL/tutorial.top
     topic: 1  ~tutorial
         rule: 4  ~tutorial.0.0-TRIAL1 t: 
           line: 4 0  # blau 
@@ -8955,7 +8955,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
         rule: 23  ~tutorial.4.2 a: 
           line: 23 0  # $$correct = 0 Das war falsch. 
           Complexity of rule ~tutorial.4.2- a: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorialconcepts.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/TUTORIAL/tutorialconcepts.top
     topic: 1  ~own_concepts
     concept: 3  ~trial1
     concept: 4  ~buzz1
@@ -8969,7 +8969,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
     concept: 12  ~buzz5
     concept: 13  ~trial6
     concept: 14  ~buzz6
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIAL/d_introduction.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/TUTORIAL/d_introduction.top
     topic: 1  ~introduction~9
         rule: 5  ~introduction~9.0.0- t: 
           line: 5 0  # ^tutorialstart ( ) 
@@ -8981,7 +8981,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
           line: 12 45  # ^wordcomparison ( $trialnr ) 
           line: 13 74  # ^buzzcomparison ( ) 
           Complexity of rule ~introduction~9.1.0-TRIAL1 u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorialmacros.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/TUTORIAL/tutorialmacros.top
     macro: 1  ^tutorialstart
           line: 2 0  # $counter = 0 
           line: 3 13  # $count = 0 
@@ -9071,7 +9071,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
           line: 84 273  # $trial.wordnr = $counter 
           line: 85 298  # $trial.trialnr = $trialnr 
           Complexity of ^results: 2
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_emohandler.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/CONTROL/z_emohandler.top
     macro: 2  ^emohandler
           if 4 4  
           line: 4 0  # ^if 00q( $cs_bot = laura_si ) 
@@ -9129,7 +9129,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 29 1224  # } aaa 
           ifend 31 1229  
           Complexity of ^emohandler: 23
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_laura_li_control.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/CONTROL/z_laura_li_control.top
     macro: 4  ^laura_li
           line: 5 0  # ^addtopic ( ~introduction ) 
           line: 6 28  # $cs_control_main = ~control 
@@ -9377,13 +9377,13 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 227 0  # ^oob ( ) 
           line: 228 9  # ^postprintbefore ( \[ $$oob \]
           Complexity of rule ~addposthoc.5.0- t: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_revelationHandler.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/CONTROL/z_revelationHandler.top
     macro: 1  ^revelationhandler
           if 4 4  
           line: 4 0  # ^if 00L( $goodquestion > 1 and
           ifend 6 100  
           Complexity of ^revelationhandler: 2
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_debug.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/CONTROL/z_debug.top
     macro: 1  ^myfunc
           line: 2 0  # $$wordindex += 1 
           line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
@@ -9459,15 +9459,15 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 87 0  # $$wordindex = 0 
           line: 88 16  # ^log ( FILE chat.txt NEW '_0 )
           Complexity of rule ~xpostagsentence.1.0- t: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_reactance.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_reactance.top
     topic: 1  ~reactance
         rule: 3  ~reactance.0.0 u: 
           Complexity of rule ~reactance.0.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_notAnswering.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_notAnswering.top
     topic: 1  ~notanswering
         rule: 3  ~notanswering.0.0 u: 
           Complexity of rule ~notanswering.0.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/b_prob_answer.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/b_prob_answer.top
     topic: 1  ~prob_answer
         rule: 6  ~prob_answer.0.0 u: 
           line: 6 0  # ^refine ( ) $goodquestion += 1
@@ -10086,31 +10086,31 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_
           line: 416 58  # $$probformat = greetings-100 
           line: 417 87  # $$answercategory = greetings 
           Complexity of rule ~prob_answer.19.0- u: 2
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_incomprehension.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_incomprehension.top
     topic: 1  ~incomprehension
         rule: 3  ~incomprehension.0.0 u: 
           Complexity of rule ~incomprehension.0.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_options.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_options.top
     topic: 1  ~options
         rule: 3  ~options.0.0 u: 
           Complexity of rule ~options.0.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_ignorance.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_ignorance.top
     topic: 1  ~ignorance
         rule: 3  ~ignorance.0.0 u: 
           Complexity of rule ~ignorance.0.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_keywordless.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_keywordless.top
     topic: 1  ~keywordless
         rule: 3  ~keywordless.0.0- r: 
           Complexity of rule ~keywordless.0.0- r: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_affirmation.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_affirmation.top
     topic: 1  ~affirmation
         rule: 3  ~affirmation.0.0 u: 
           Complexity of rule ~affirmation.0.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_negat.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_negat.top
     topic: 1  ~negation
         rule: 4  ~negation.0.0 u: 
           Complexity of rule ~negation.0.0- u: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_patternmacros.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_patternmacros.top
     macro: 4  ^general_question
           Complexity of ^general_question: 1
     macro: 14  ^general_prompt
@@ -10155,7 +10155,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONCEPT
           Complexity of ^places_together: 1
     macro: 145  ^time_together
           Complexity of ^time_together: 1
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_concepts.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_concepts.top
     topic: 1  ~own_concepts~1
     concept: 3  ~action
     concept: 4  ~activity

@@ -9,7 +9,7 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/adjectivehierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/adjectivehierarchy.top
     concept: 1  ~timeadjmodifier
     concept: 2  ~pretimeadjmodifier
     concept: 3  ~color_adjectives
@@ -96,9 +96,9 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/a
     concept: 84  ~transition_adjectives
     concept: 85  ~weather_adjectives
     concept: 86  ~when_adjectives
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/opposite.tbl
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/opposite.tbl
     concept: 3  ~numberoperator
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/concepts.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/concepts.top
     concept: 1  ~cartoon_character
     concept: 2  ~architect
     concept: 3  ~athlete
@@ -1164,7 +1164,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/c
     concept: 1063  ~yellow_other
     concept: 1064  ~yesanswer
     concept: 1065  ~noanswer
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/prepositionhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/prepositionhierarchy.top
     concept: 1  ~directionplacepreposition
     concept: 2  ~directionon
     concept: 3  ~directionunder
@@ -1182,7 +1182,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/p
     concept: 15  ~relationpreposition
     concept: 16  ~timepreposition
     concept: 17  ~prepositionlist
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/adverbhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/adverbhierarchy.top
     concept: 1  ~modifyabletimenoun
     concept: 2  ~timeadvmodifier
     concept: 3  ~modifyabledistancenoun
@@ -1217,7 +1217,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/a
     concept: 32  ~viewpoint_adverbs
     concept: 33  ~when_adverbs
     concept: 34  ~negative_adverb_starter
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/verbhierarchy.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/verbhierarchy.top
     concept: 1  ~determinerlist
     concept: 2  ~qwords
     concept: 3  ~static_verbs
@@ -1581,142 +1581,8 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/v
     concept: 361  ~comment
     concept: 362  ~ask
     concept: 363  ~post
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/ONTOLOGY/GERMAN/affect.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBotneu/RAWDATA/ONTOLOGY/GERMAN/affect.top
     concept: 1  ~badness
     concept: 2  ~weakbadness
     concept: 3  ~strongbadness
     concept: 4  ~goodness
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/container.tbl
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/material.tbl
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/musicbasic.tbl
-          if 6 125  
-          ifend 6 177  
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/malepeople.tbl
-          if 43 33  
-          ifend 43 99  
-          if 44 104  
-          ifend 44 160  
-          if 505 33  
-          ifend 505 87  
-          if 506 92  
-          ifend 506 148  
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/animals.tbl
-    concept: 100  ~animal_homes
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/femalepeople.tbl
-    concept: 1  ~designer
-    concept: 55  ~career
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/music.tbl
-    concept: 1  ~song
-    concept: 3  ~celebrity
-          if 286 33  
-          ifend 286 87  
-          if 287 92  
-          ifend 287 144  
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/speed.tbl
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/tools.tbl
-          if 19 156  
-          ifend 19 210  
-          if 20 215  
-          ifend 20 269  
-          if 21 274  
-          ifend 21 330  
-          if 22 335  
-          ifend 22 388  
-          if 23 393  
-          ifend 23 446  
-          if 24 451  
-          ifend 24 502  
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/videogames.tbl
-          if 3 4  
-          if 7 96  
-          ifend 7 148  
-          ifend 8 154  
-          if 9 159  
-          ifend 13 286  
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/peoplegroups.tbl
-    concept: 2  ~nfc-west_football_team
-    concept: 3  ~nfc-east_football_team
-    concept: 4  ~afc-west_football_team
-    concept: 5  ~afc-east_football_team
-    concept: 6  ~nfc-north_football_team
-    concept: 7  ~nfc-south_football_team
-    concept: 8  ~afc-south_football_team
-    concept: 9  ~afc-north_football_team
-    concept: 10  ~football_teams
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/lifespan.tbl
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/things.tbl
-    concept: 1  ~electronics_store
-    concept: 2  ~grocery
-    concept: 32  ~hot_things
-    concept: 33  ~cold_things
-    concept: 42  ~wherefrom
-    concept: 43  ~produces
-    concept: 129  ~soundmaker
-    concept: 130  ~animalsoundsissued
-    concept: 155  ~newspaper
-    concept: 156  ~airline
-          if 185 33  
-          ifend 185 89  
-          if 263 85  
-          ifend 263 141  
-    concept: 400  ~use_power
-    concept: 401  ~use_flight
-    concept: 402  ~use_swim
-    concept: 403  ~use_fooddrink
-    concept: 404  ~use_movement
-    concept: 405  ~use_intentionverbs
-    concept: 406  ~blowing
-    concept: 407  ~interrogate
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/basicgeography.tbl
-    concept: 166  ~countryadjective
-    concept: 442  ~capital
-    concept: 714  ~state_region
-          if 719 104  
-          ifend 723 322  
-    concept: 1253  ~currency
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/color.tbl
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/geography.tbl
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/literature.tbl
-          if 13 105  
-          ifend 17 221  
-          if 18 226  
-          ifend 18 279  
-          if 19 284  
-          ifend 19 337  
-          if 1043 166  
-          ifend 1043 219  
-          if 1044 224  
-          ifend 1044 277  
-          if 1243 4  
-          ifend 1249 180  
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/basicbooks.tbl
-          if 4 33  
-          ifend 4 87  
-          if 5 92  
-          ifend 5 145  
-          if 33 107  
-          ifend 37 223  
-          if 38 228  
-          ifend 38 281  
-          if 39 286  
-          ifend 39 339  
-          if 49 105  
-          ifend 53 221  
-          if 54 226  
-          ifend 54 279  
-          if 55 284  
-          ifend 55 337  
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/movies_tv.tbl
-          if 7 4  
-          if 10 81  
-          ifend 13 163  
-          ifend 14 169  
-          if 25144 4  
-          ifend 25148 119  
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/WORLDDATA/basicmovies_tv.tbl
-          if 330 4  
-          ifend 334 119  
-          if 356 4  
-          ifend 360 121  
-          if 366 4  
-          ifend 370 119  

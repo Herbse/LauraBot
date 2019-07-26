@@ -2,23 +2,12 @@
 + hello PATTERN_WORD 
 + hey PATTERN_WORD 
 + hi PATTERN_WORD 
-+ abgelaufen PATTERN_WORD 
-+ gemacht PATTERN_WORD 
-+ sound PATTERN_WORD 
-+ support PATTERN_WORD 
 + @chatoutput 9
 + laura_li 
 + defaultbot 
 + was_macht 
-+ was_geht 
 + wie_fühlst 
-+ wie_geht's 
-+ wie_geht 
-+ wie_geht_es 
-+ wie_gehts 
 + wie_ist_es 
-+ was_ist_heute_los 
-+ was_ist_los 
 + was_beschäftigt 
 + verstehe_ich 
 + kann_ich_verstehen 

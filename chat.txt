@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-﻿a
-=======
-﻿:rest
->>>>>>> aeaeaa063d0633462cb7611efec7a87b6adf7a5d
+﻿wie geht es dir so

@@ -1,3 +1,4 @@
+#include "common.h"
 #ifndef DISCARDJAVASCRIPT
 #include "duktape/duktape.h"
 //#include "duktape/duktape.cpp"
@@ -71,13 +72,14 @@ FunctionResult RunJavaScript(char* definition, char* buffer, unsigned int args)
 	bool compile = false;
 	if (!stricmp(word,"compile")) 
 	{
-		code = ReadCompiledWord(code,word);
+		char* ptr = ReadCompiledWord(code,word);
 		compile = true; // compile vs eval
-		if (!*code) return FAILRULE_BIT; // require some code
+		if (!*ptr) return FAILRULE_BIT; // require some code
 	}
 	else if (!stricmp(word,"eval")) 
 	{
-		if (!*code) return FAILRULE_BIT; // require some code
+		char* ptr = ReadCompiledWord(code, word);
+		if (!*ptr) return FAILRULE_BIT; // require some code
 	}
 	else if (!*name) return FAILRULE_BIT;	// need to define someting, be it a compile or a call
 	
@@ -176,7 +178,7 @@ FunctionResult RunJavaScript(char* definition, char* buffer, unsigned int args)
 		if (duk_pcall(ctx, args) != 0) // call failed
 		{
 			printf("Javascript Error: %s\r\n", duk_safe_to_string(ctx, -1));
-			duk_pop(ctx);
+			duk_pop_n(ctx, 2); // have remove global object and thr function return/error val
 			*terminator = '`';
 			return FAILRULE_BIT;
 		} 
@@ -189,7 +191,7 @@ FunctionResult RunJavaScript(char* definition, char* buffer, unsigned int args)
 			}
 			else if (!stricmp(returnType,"int")) strcpy(buffer,duk_safe_to_string(ctx, -1)); // assumes there is a return string!
 			else if (!stricmp(returnType,"float")) strcpy(buffer,duk_safe_to_string(ctx, -1)); // assumes there is a return string!
-			duk_pop(ctx);
+			duk_pop_n(ctx, 2); // have remove global object and thr function return/error val
 			*terminator = '`';
 			return NOPROBLEM_BIT;
 		}

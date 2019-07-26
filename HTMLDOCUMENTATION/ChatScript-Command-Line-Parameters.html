@@ -9,12 +9,14 @@
 </head>
 <body>
 <h1 id="chatscript-command-line-parameters">ChatScript Command Line Parameters</h1>
-<p>Copyright Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com<br> Revision 10/22/2017 cs7.6</p>
+<p>Copyright Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com<br> <br>Revision 6/3/2019 cs9.41</p>
 <h1 id="command-line-parameters">Command Line Parameters</h1>
-<p>You can give parameters on the run command or in a config file. The default config file is <code>cs_init.txt</code> at the top level of CS (if the file exists). Or you can name where the file is on a command line parameter <code>config=xxx</code>. Config file data are command line parameters, 1 per line, like below:</p>
+<p>You can give parameters on the run command or in a config file or via a http request. The default config file is <code>cs_init.txt</code> at the top level of CS (if the file exists). Or you can name where the file is on a command line parameter <code>config=xxx</code>. If you have secret information that you don't want stored in a config file or exposed on a command line then you can request the config data from a URL. Use the command line parameter configurl=http://xxx to specify the address of the data. Additional command line parameters, configheader=xxx, can be included to define HTTP request headers. If there are several headers then use separate configheader=xxx configheader=yyy etc parameters for each header name/value pair.</p>
+<p>Config file data are command line parameters, 1 per line, like below:</p>
 <pre><code>noboot 
 port=20</code></pre>
-<p>Actual command line parameters have priority over config file values.</p>
+<p>Some parameters require a value and use the <code>=</code> format with no spaces. Other parameters may only require you name the parameter (they have no choices of values).s</p>
+<p>Actual command line parameters have priority over config file values, and those have priority over http requested values.</p>
 <h2 id="memory-options">Memory options</h2>
 <p>Chatscript statically allocates its memory and so (barring unusual circumstance) will not allocate memory every during its interactions with users. These parameters can control those allocations. Done typically in a memory poor environment like a cellphone.</p>
 <table>
@@ -149,6 +151,10 @@ port=20</code></pre>
 <td><code>tmp=xxx</code></td>
 <td>name relative or absolute path to where you want the TMP folder to be. Do not add trailing <code>/</code></td>
 </tr>
+<tr class="odd">
+<td><code>crashpath=xxx</code></td>
+<td>file to write about fatal Linux signals that will be outside of the cs folder <code>/</code></td>
+</tr>
 </tbody>
 </table>
 <h2 id="execution-options">Execution options</h2>
@@ -212,8 +218,17 @@ port=20</code></pre>
 <td><code>defaultbot=name</code></td>
 <td>overrides defaultbot table for what bot to default to</td>
 </tr>
+<tr class="odd">
+<td><code>inputlimit=n</code></td>
+<td>truncate user input line to this size</td>
+</tr>
+<tr class="even">
+<td><code>trustpos</code></td>
+<td>obey word~n and other pos restrictions in keywords</td>
+</tr>
 </tbody>
 </table>
+<p>Trustpos is normally off by default because CS is only about 94% accurate in its built-in pos-tagging. So it prefers to wrongly match by allowing all pos values Of a word rather than miss a match. Ergo concept: <sub>all(feel</sub>n) will match any use of &quot;feel&quot; rather than just noun meaning. But combining CS with Treetagger for english (if you license it) is better at pos-tagging than either alone, making it competitive with the best taggers in the world.</p>
 <p>Here few command line parameters usage examples of usual edit/compile developement phase, running ChatScript from a Linux terminal console (standalone mode):</p>
 <p>Rebuild <em>level0</em> (compiling system ChatScript files, listed usually in file <code>files0.txt</code>):</p>
 <pre><code>BINARIES/LinuxChatScript64 local build0=files0.txt </code></pre>
@@ -373,6 +388,8 @@ cache=20x1</code></pre>
 <p>Allows <code>:retry</code> to work from a server - don't use this except for testing a single-person on a server as it slows down the server.</p>
 <pre><code>servertrace</code></pre>
 <p>when present, forces all users to have tracing turned on. Traces go to the user logs.</p>
+<pre><code>repeatLimit=n</code></pre>
+<p>Servers are subject to malicious inputs, often generated as repeated words over and over. This detects repeated input and if the number of sequential repeats is non-zero and equal or greater to this parameter, such inputs will be truncated to just the initial repeats. All other input in this volley will be discarded.</p>
 <pre><code>erasename=myname</code></pre>
 <p>:reset, when called from running script, is unable to fully reset the system. Facts that have already been created are not destroyed and user variables that have been defined are not erased, only ones in the bot definition are changed back to their default settings. The erasename parameter is used to perform a full reset prior to loading th user topic file. The incoming input is scanned for the text given, and if found the system bypasses loading the topic file and instead just initializes a fresh bot. The actual erasename seen in input will be converted to all blanks, so it will not disturb normal behavior, either in OOB input or user input.</p>
 <p>The default value for this is: <code>csuser_erase</code> which you can change to anything else you want.</p>

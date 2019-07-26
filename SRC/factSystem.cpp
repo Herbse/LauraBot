@@ -22,14 +22,19 @@ Layer0 : facts resulting from topic system build0
     This is ReturnToDictionaryFreeze for unpeeling 3 / 4 and ReturnDictionaryToWordNet for unpeeling layer 2.
 
 #endif
+static HEAPLINK jsonptrThreadList;
+HEAPLINK botFactThreadList = 0; // facts from lock layers whose value was changed in OBJ
 int worstFactFree = 1000000;
 char traceSubject[100];
 char traceVerb[100];
 char traceObject[100];
+bool bootFacts = false;
+bool recordBoot = false;
 uint64 allowedBots = 0xffffffffffffffffULL; // default fact visibility restriction is all bots
 uint64 myBot = 0;							// default fact creation restriction
 size_t maxFacts = MAX_FACT_NODES;	// how many facts we can create at max
-
+int* factThread = 0;
+bool factsExhausted = false;
 FACT* factBase = NULL;			// start of all facts
 FACT* factEnd = NULL;			// end of all facts
 FACT* factsPreBuild[NUMBER_OF_LAYERS+1];		// end of build0 facts, start of build1 facts
@@ -40,7 +45,7 @@ FACT* currentFact = NULL;		// current fact
 MEANING Mmember;				// represents concept sets
 MEANING Mis;					// represents wordnet hierarchy
 MEANING Mexclude;				// represents restriction of word not allowed in set (blocking inheritance)
-
+bool seeAllFacts = false;
 FACT* Index2Fact(FACTOID e)
 { 
 	FACT* F = NULL;
@@ -62,7 +67,7 @@ static bool UnacceptableFact(FACT* F,bool jsonavoid)
 {
 	if (!F || F->flags & FACTDEAD) return true;
 	// if ownership flags exist (layer0 or layer1) and we have different ownership.
-	if (!compiling && F->botBits && !(F->botBits & myBot)) return true;
+	if (!seeAllFacts &&  F->botBits && !(F->botBits & myBot)) return true;
 	return false;
 }
 
@@ -252,10 +257,10 @@ void TraceFact(FACT* F,bool ignoreDead)
 {
 	char* limit;
 	char* word = InfiniteStack(limit,"TraceFact"); // short term
-	Log(STDTRACELOG,(char*)"%d: %s\r\n",Fact2Index(F),WriteFact(F,false,word,ignoreDead,false));
+	Log(STDUSERLOG,(char*)"%d: %s\r\n",Fact2Index(F),WriteFact(F,false,word,ignoreDead,false,true));
 	Log(STDTRACETABLOG,(char*)"");
 	ReleaseInfiniteStack();
-}
+} 
 
 void ClearUserFacts()
 {
@@ -341,7 +346,8 @@ FACT* SpecialFact(FACTOID_OR_MEANING verb, FACTOID_OR_MEANING object,unsigned in
 	if (++factFree == factEnd) 
 	{
 		--factFree;
-		ReportBug((char*)"out of fact space at %d",Fact2Index(factFree))
+        if (loading || compiling) ReportBug((char*)"FATAL:  out of fact space at %d", Fact2Index(factFree))
+        ReportBug((char*)"out of fact space at %d",Fact2Index(factFree))
 		(*printer)((char*)"%s",(char*)"out of fact space");
 		return factFree; // dont return null because we dont want to crash anywhere
 	}
@@ -399,60 +405,60 @@ void RipFacts(FACT* F,WORDP dictBase)
 	factFree = base;
 }
 
-FACT* WeaveFact(FACT* currentFact, unsigned int properties)
+FACT* WeaveFact(FACT* current, unsigned int properties)
 {
 	FACT* F;
-	WORDP s = (properties & FACTSUBJECT) ? NULL : Meaning2Word(currentFact->subject);
-	WORDP v = (properties & FACTVERB) ? NULL : Meaning2Word(currentFact->verb);
-	WORDP o = (properties & FACTOBJECT) ? NULL : Meaning2Word(currentFact->object);
+	WORDP s = (properties & FACTSUBJECT) ? NULL : Meaning2Word(current->subject);
+	WORDP v = (properties & FACTVERB) ? NULL : Meaning2Word(current->verb);
+	WORDP o = (properties & FACTOBJECT) ? NULL : Meaning2Word(current->object);
 
 	//   crossreference
 	if (s)
 	{
-		SetSubjectNext(currentFact, GetSubjectHead(currentFact->subject)); // dont use nondead
-		SetSubjectHead(currentFact->subject, currentFact);
+		SetSubjectNext(current, GetSubjectHead(current->subject)); // dont use nondead
+		SetSubjectHead(current->subject, current);
 	}
 	else
 	{
-		F = Index2Fact(currentFact->subject);
+		F = Index2Fact(current->subject);
 		if (F)
 		{
-			SetSubjectNext(currentFact, GetSubjectHead(F));   // dont use nondead
-			SetSubjectHead(F, currentFact);
+			SetSubjectNext(current, GetSubjectHead(F));   // dont use nondead
+			SetSubjectHead(F, current);
 		}
 		else return NULL;
 	}
 	if (v)
 	{
-		SetVerbNext(currentFact, GetVerbHead(currentFact->verb));  // dont use nondead
-		SetVerbHead(currentFact->verb, currentFact);
+		SetVerbNext(current, GetVerbHead(current->verb));  // dont use nondead
+		SetVerbHead(current->verb, current);
 	}
 	else
 	{
-		F = Index2Fact(currentFact->verb);
+		F = Index2Fact(current->verb);
 		if (F)
 		{
-			SetVerbNext(currentFact, GetVerbHead(F));  // dont use nondead
-			SetVerbHead(F, currentFact);
+			SetVerbNext(current, GetVerbHead(F));  // dont use nondead
+			SetVerbHead(F, current);
 		}
 		else return NULL;
 	}
 	if (o)
 	{
-		SetObjectNext(currentFact, GetObjectHead(currentFact->object));  // dont use nondead
-		SetObjectHead(currentFact->object, currentFact);
+		SetObjectNext(current, GetObjectHead(current->object));  // dont use nondead
+		SetObjectHead(current->object, current);
 	}
 	else
 	{
-		F = Index2Fact(currentFact->object);
+		F = Index2Fact(current->object);
 		if (F)
 		{
-			SetObjectNext(currentFact, GetObjectNext(F));   // dont use nondead
-			SetObjectHead(F, currentFact);
+			SetObjectNext(current, GetObjectNext(F));   // dont use nondead
+			SetObjectHead(F, current);
 		}
 		else return NULL;
 	}
-	return currentFact;
+	return current;
 }
 
 void WeaveFacts(FACT* F)
@@ -481,7 +487,7 @@ void KillFact(FACT* F,bool jsonrecurse, bool autoreviseArray)
 
 	if (trace & TRACE_FACT && CheckTopicTrace()) 
 	{
-		Log(STDTRACELOG,(char*)"Kill: ");
+		Log(STDUSERLOG,(char*)"Kill: ");
 		TraceFact(F);
 	}
 	if (F->flags & FACTAUTODELETE)
@@ -557,7 +563,7 @@ FACT* FindFact(FACTOID_OR_MEANING subject, FACTOID_OR_MEANING verb, FACTOID_OR_M
 		G = GetSubjectNondeadHead(F);
 		while (G)
 		{
-			if (G->verb == verb &&  G->object == object && G->flags == properties  && G->botBits == myBot) return G;
+			if (G->verb == verb &&  G->object == object && G->flags == properties  && G->botBits == myBot && !(G->flags & FACTDEAD)) return G;
 			G  = GetSubjectNondeadNext(G);
 		}
 		return NULL;
@@ -568,7 +574,7 @@ FACT* FindFact(FACTOID_OR_MEANING subject, FACTOID_OR_MEANING verb, FACTOID_OR_M
 		G = GetVerbNondeadHead(F);
 		while (G)
 		{
-			if (G->subject == subject && G->object == object &&  G->flags == properties  && G->botBits == myBot) return G;
+			if (G->subject == subject && G->object == object &&  G->flags == properties  && G->botBits == myBot && !(G->flags & FACTDEAD)) return G;
 			G  = GetVerbNondeadNext(G);
 		}
 		return NULL;
@@ -579,7 +585,7 @@ FACT* FindFact(FACTOID_OR_MEANING subject, FACTOID_OR_MEANING verb, FACTOID_OR_M
 		G = GetObjectNondeadHead(F);
 		while (G)
 		{
-			if (G->subject == subject && G->verb == verb &&  G->flags == properties && G->botBits == myBot) return G;
+			if (G->subject == subject && G->verb == verb &&  G->flags == properties && G->botBits == myBot && !(G->flags & FACTDEAD)) return G;
 			G  = GetObjectNondeadNext(G);
 		}
 		return NULL;
@@ -588,7 +594,7 @@ FACT* FindFact(FACTOID_OR_MEANING subject, FACTOID_OR_MEANING verb, FACTOID_OR_M
 	F = GetSubjectNondeadHead(Meaning2Word(subject));
     while (F)
     {
-		if ( F->subject == subject &&  F->verb ==  verb && F->object == object && properties == F->flags && F->botBits == myBot)  return F;
+		if ( F->subject == subject &&  F->verb ==  verb && F->object == object && properties == F->flags && F->botBits == myBot && !(F->flags & FACTDEAD))  return F;
 		F = GetSubjectNondeadNext(F);
     }
     return NULL;
@@ -612,7 +618,7 @@ FACT* CreateFact(FACTOID_OR_MEANING subject, FACTOID_OR_MEANING verb, FACTOID_OR
     WORDP s = (properties & FACTSUBJECT) ? NULL : Meaning2Word(subject);
     WORDP v = (properties & FACTVERB) ? NULL : Meaning2Word(verb);
 	WORDP o = (properties & FACTOBJECT) ? NULL : Meaning2Word(object);
-	if (s && *s->word == 0)
+    if (s && *s->word == 0)
 	{
 		ReportBug((char*)"bad choice in fact subject")
 		return NULL;
@@ -694,13 +700,15 @@ FACT* CreateFact(FACTOID_OR_MEANING subject, FACTOID_OR_MEANING verb, FACTOID_OR
 
 	//   insure fact is unique if requested
 	currentFact =  (properties & FACTDUPLICATE) ? NULL : FindFact(subject,verb,object,properties); 
-	if (trace & TRACE_FACT && currentFact && CheckTopicTrace())  Log(STDTRACELOG,(char*)" Found %d ", Fact2Index(currentFact));
+	if (trace & TRACE_FACT && currentFact && CheckTopicTrace())  Log(STDUSERLOG,(char*)" Found %d ", Fact2Index(currentFact));
 	if (currentFact) return currentFact;
 
 	currentFact = CreateFastFact(subject,verb,object,properties);
 	if (trace & TRACE_FACT && currentFact && CheckTopicTrace())  
 	{
-		Log(STDTRACELOG,(char*)" Created %d\r\n", Fact2Index(currentFact));
+        if (trace & TRACE_FACT && trace & TRACE_JSON && !(trace & TRACE_OUTPUT)) 
+            TraceFact(currentFact, false); // precise trace for JSON
+		Log(STDUSERLOG,(char*)" Created %d\r\n", Fact2Index(currentFact));
 		Log(STDTRACETABLOG,(char*)"");
 	}
 
@@ -968,7 +976,7 @@ char* EatFact(char* ptr,char* buffer,unsigned int flags,bool attribute)
 	}
 	else object =  MakeMeaning(StoreWord(word2,AS_IS),0);
 
-	if (trace & TRACE_OUTPUT && CheckTopicTrace()) Log(STDTRACELOG,(char*)"%s %s %s %x) = ",word,word1,word2,flags);
+	if (trace & TRACE_OUTPUT && CheckTopicTrace()) Log(STDUSERLOG,(char*)"%s %s %s %x) = ",word,word1,word2,flags);
 
 	FACT* F = FindFact(subject,verb,object,flags);
 	if (!attribute || (F && object == F->object)) {;}  // not making an attribute or already made
@@ -982,10 +990,10 @@ char* EatFact(char* ptr,char* buffer,unsigned int flags,bool attribute)
 			{
 				if (!(F->flags & FACTATTRIBUTE)) // this is a script failure. Should ONLY be an attribute
 				{
-					char word[MAX_WORD_SIZE];
-					WriteFact(F,false,word,false,true);
-					Log(STDTRACELOG,(char*)"Fact created is not an attribute. There already exists %s",word); 
-					(*printer)((char*)"Fact created is not an attribute. There already exists %s",word); 
+					char wordx[MAX_WORD_SIZE];
+					WriteFact(F,false,wordx,false,true);
+					Log(STDUSERLOG,(char*)"Fact created is not an attribute. There already exists %s",wordx); 
+					(*printer)((char*)"Fact created is not an attribute. There already exists %s",wordx); 
 					currentFact = F;
 					return (*ptr) ? (ptr + 2) : ptr; 
 				}
@@ -1071,7 +1079,7 @@ bool ImportFacts(char* buffer,char* name, char* set, char* erase, char* transien
 	userRecordSourceBuffer = NULL;
 
 	if (!stricmp(erase,(char*)"erase") || !stricmp(transient,(char*)"erase")) remove(name); // erase file after reading
-	if (trace & TRACE_OUTPUT && CheckTopicTrace()) Log(STDTRACELOG,(char*)"[%d] => ",FACTSET_COUNT(store));
+	if (trace & TRACE_OUTPUT && CheckTopicTrace()) Log(STDUSERLOG,(char*)"[%d] => ",FACTSET_COUNT(store));
 	currentFact = NULL; // we have used up the facts
 	return true;
 }
@@ -1136,8 +1144,10 @@ FACT* CreateFastFact(FACTOID_OR_MEANING subject, FACTOID_OR_MEANING verb, FACTOI
 	if (++factFree == factEnd) 
 	{
 		--factFree;
-		ReportBug((char*)"out of fact space at %d",Fact2Index(factFree))
+        if (loading || compiling) ReportBug((char*)"FATAL:  out of fact space at %d", Fact2Index(factFree))
+        ReportBug((char*)"out of fact space at %d",Fact2Index(factFree))
 		(*printer)((char*)"%s",(char*)"out of fact space");
+        factsExhausted = true;
 		return NULL;
 	}
 	currentFact = factFree;
@@ -1162,8 +1172,8 @@ FACT* CreateFastFact(FACTOID_OR_MEANING subject, FACTOID_OR_MEANING verb, FACTOI
 	{
 		char* limit;
 		char* buffer = InfiniteStack(limit,"CreateFastFact"); // fact might be big, cant use mere WORD_SIZE
-		buffer = WriteFact(currentFact,false,buffer,true,false);
-		Log(STDTRACELOG,(char*)"create %s",buffer);
+		buffer = WriteFact(currentFact,false,buffer,true,false,true);
+		Log(STDUSERLOG,(char*)"create %s",buffer);
 		ReleaseInfiniteStack();
 	}	
 	return currentFact;
@@ -1185,14 +1195,14 @@ bool ReadBinaryFacts(FILE* in) //   read binary facts
 	return true;
 }
 
-static char* WriteField(MEANING T, uint64 flags,char* buffer,bool ignoreDead) // uses no additional memory
+static char* WriteField(MEANING T, uint64 flags,char* buffer,bool ignoreDead, bool displayonly) // uses no additional memory
 {
 	char* xxstart = buffer;
 	// a field is either a contiguous mass of non-blank tokens, or a user string "xxx" or an internal string `xxx`  (internal removes its ends, user doesnt)
     if (flags ) //   fact reference
     {
 		FACT* G = Index2Fact(T);
-		if (!*WriteFact(G,false,buffer,ignoreDead)) 
+		if (!*WriteFact(G,false,buffer,ignoreDead, false,displayonly))
 		{
 			*buffer = 0;
 			return buffer;
@@ -1227,19 +1237,19 @@ static char* WriteField(MEANING T, uint64 flags,char* buffer,bool ignoreDead) //
 		if (strchr(answer,'\\') || strchr(answer,'/')) safe = false;
 		
 		// json must protect: " \ /  nl cr tab  we are not currently protecting bs ff
-		if (embeddedbacktick || !safe) // uses our own marker and can escape data
+		if ((embeddedbacktick || !safe) && !displayonly) // uses our own marker and can escape data
 		{
 			if (embeddedbacktick) strcpy(buffer,(char*)"`*^"); 
 			else strcpy(buffer,(char*)"`"); // has blanks or paren or just starts with ", use internal string notation
 			buffer += strlen(buffer);
-			AddEscapes(buffer,D->word,false,currentOutputLimit - (buffer - currentOutputBase)); // facts are not normal
+			AddEscapes(buffer,D->word,displayonly,currentOutputLimit - (buffer - currentOutputBase)); // facts are not normal
 			buffer += strlen(buffer);
 			SuffixMeaning(T,buffer, true);
 			buffer += strlen(buffer);
 			if (embeddedbacktick) strcpy(buffer,(char*)"`*^"); // add closer marker
 			else strcpy(buffer,(char*)"`");
 		}
-		else if (embeddedspace)   // has blanks, use internal string notation
+		else if (embeddedspace )   // has blanks, use internal string notation
 		{
 			*buffer++ = '`';
 			WriteMeaning(T,true,buffer);
@@ -1255,7 +1265,7 @@ static char* WriteField(MEANING T, uint64 flags,char* buffer,bool ignoreDead) //
 	return buffer;
 }
 
-char* WriteFact(FACT* F,bool comments,char* buffer,bool ignoreDead,bool eol) // uses no extra memory
+char* WriteFact(FACT* F,bool comment,char* buffer,bool ignoreDead,bool eol,bool displayonly) // uses no extra memory
 { //   if fact is junk, return the null string
 	char* start = buffer;
 	*buffer = 0;
@@ -1277,14 +1287,14 @@ char* WriteFact(FACT* F,bool comments,char* buffer,bool ignoreDead,bool eol) // 
 
 	//   do subject
 	char* base = buffer;
- 	buffer = WriteField(F->subject,F->flags & FACTSUBJECT,buffer,ignoreDead);
+ 	buffer = WriteField(F->subject,F->flags & FACTSUBJECT,buffer,ignoreDead,displayonly);
 	if (base == buffer ) 
 	{
 		*start = 0;
 		return start; //    word itself was removed from dictionary
 	}
 	base = buffer;
-	buffer = WriteField(F->verb,F->flags & FACTVERB,buffer,ignoreDead);
+	buffer = WriteField(F->verb,F->flags & FACTVERB,buffer,ignoreDead, displayonly);
 	if (base == buffer ) 
 	{
 		*start = 0;
@@ -1299,7 +1309,7 @@ char* WriteFact(FACT* F,bool comments,char* buffer,bool ignoreDead,bool eol) // 
 		autoflag = FACTOBJECT;
 		X = atoi(Meaning2Word(F->object)->word);
 	}
-	buffer = WriteField(X,autoflag,buffer,ignoreDead);
+	buffer = WriteField(X,autoflag,buffer,ignoreDead, displayonly);
 	if (base == buffer ) 
 	{
 		*start = 0;
@@ -1478,12 +1488,12 @@ void ReadFacts(const char* name,const char* layer,unsigned int build,bool user) 
 				continue;
 			}
 
-			char word[MAX_WORD_SIZE];
-			char* at = ReadCompiledWord(readBuffer+2,word); //   start at valid token past space
-			WORDP D = FindWord(word,0,PRIMARY_CASE_ALLOWED);
-			if (!D || strcmp(D->word,word)) // alternate capitalization?
+			char wordx[MAX_WORD_SIZE];
+			char* at = ReadCompiledWord(readBuffer+2,wordx); //   start at valid token past space
+			WORDP D = FindWord(wordx,0,PRIMARY_CASE_ALLOWED);
+			if (!D || strcmp(D->word,wordx)) // alternate capitalization?
 			{
-				D = StoreWord(word);
+				D = StoreWord(wordx);
 				AddInternalFlag(D,(unsigned int)build);
 			}
 			bool sign = false;
@@ -1514,8 +1524,8 @@ void ReadFacts(const char* name,const char* layer,unsigned int build,bool user) 
 		}
         else 
 		{
-			char* ptr = readBuffer;
-			ReadFact(ptr,build); // will write on top of ptr... must not be readBuffer variable
+			char* xptr = readBuffer;
+			ReadFact(xptr,build); // will write on top of ptr... must not be readBuffer variable
 		}
     }
    FClose(in);
@@ -1552,15 +1562,15 @@ void SortFacts(char* set, int alpha, int setpass) //   sort low to high ^sort(@1
         for (i = 1; i <= size-1; ++i) 
         {
 			char* word = wordValues[i];
-            double tmp = floatValues[i];
+            double tmpfloat = floatValues[i];
 			if (alpha == 1 && strcmp(word,wordValues[i+1]) > 0) {;}
 			else if (alpha == 2 && (char*)factSet[n] > (char*)factSet[n+1]) {;}
-			else if (alpha == 0 && tmp > floatValues[i+1]) {;}
+			else if (alpha == 0 && tmpfloat > floatValues[i+1]) {;}
 			else continue;
 	        wordValues[i] = wordValues[i+1];
             wordValues[i+1] = word;
             floatValues[i] = floatValues[i+1];
-            floatValues[i+1] = tmp;
+            floatValues[i+1] = tmpfloat;
             FACT* F = factSet[n][i];
 			factSet[n][i] = factSet[n][i+1];
 			factSet[n][i+1] = F;
@@ -1569,3 +1579,220 @@ void SortFacts(char* set, int alpha, int setpass) //   sort low to high ^sort(@1
         --size;
     }
 }
+
+// Handle changes to system facts done by user
+
+static int* WriteDEntry(uint64* data, WORDP D)
+{
+    *data++ = D->properties;
+    *data++ = D->systemFlags;
+    char* name = (char*)data;
+    size_t len = strlen(D->word) + 1;
+    strcpy(name, D->word);
+    name += len + 7; // align
+    uint64 base = (uint64)name;
+    base &= 0xFFFFFFFFFFFFFFF8ULL;  // 8 byte align
+    return (int*)base;
+}
+
+static int* ReadFactField(uint64* data, FACT* F, int changed)
+{
+    uint64 properties = *data++;
+    uint64 sysflags = *data++;
+    char* name = (char*)data;
+    size_t len = strlen(name) + 8;
+    WORDP D = StoreWord(name, properties, sysflags);
+    uint64 base = (uint64)(name + len);
+    base &= 0xFFFFFFFFFFFFFFF8ULL;  // 8 byte align
+    if (changed == 4) F->object = MakeMeaning(D);
+    else if (changed == 2) F->verb = MakeMeaning(D);
+    else  F->subject = MakeMeaning(D);
+    return (int*)base;
+}
+
+void NoteBotFacts() // see RedoSystemFactFields for inverse
+{
+    // system facts may have had their fields repointed to user dictionary entry
+    // Those need to be relocated into boot space
+    int* newThread = NULL; // will be in stack instead of heap
+    while (factThread) // heap list
+    {
+        FACT* F = Index2Fact(factThread[1]);
+        factThread = (int*)Index2Heap(*factThread);
+        if (!F) continue; // illegal fact reference
+        if (F->flags & MARKED_FACT) continue; // only do this once per resulting fact modification
+
+                                              // is there still something pointing to user space? Maybe was set back again
+        int changed = 0;
+        int size = 4 * sizeof(int); // list thread, fact index, fields bits, align to uint64
+                                    // write out names and prop and sysflags per word changed
+        WORDP D;
+        if (Meaning2Word(F->subject) > dictionaryFree)
+        {
+            changed |= 1;
+            D = Meaning2Word(F->subject);
+            size += (2 * sizeof(uint64)) + strlen(D->word) + sizeof(uint64); // eos + align
+        }
+        else if (Meaning2Word(F->verb) > dictionaryFree)
+        {
+            changed |= 2;
+            D = Meaning2Word(F->verb);
+            size += (2 * sizeof(uint64)) + strlen(D->word) + sizeof(uint64); // eos + align
+        }
+        else if (Meaning2Word(F->object) > dictionaryFree)
+        {
+            changed |= 4;
+            D = Meaning2Word(F->object);
+            size += (2 * sizeof(uint64)) + strlen(D->word) + sizeof(uint64); // eos + align
+        }
+        else continue; // nothing from user space here any more
+
+        F->flags |= MARKED_FACT;
+
+        int* data = (int*)AllocateStack(NULL, size, false, 8);
+        *data = Heap2Index((char*)newThread);
+        newThread = data;
+        data[1] = Fact2Index(F);
+        data[2] = changed;
+        data += 4; // data[3] = junk
+        if (changed & 1) data = WriteDEntry((uint64*)data, Meaning2Word(F->subject));
+        if (changed & 2) data = WriteDEntry((uint64*)data, Meaning2Word(F->verb));
+        if (changed & 4) data = WriteDEntry((uint64*)data, Meaning2Word(F->object));
+    }
+    factThread = newThread; // now have stack-based copy of needed data
+}
+
+void RedoSystemFactFields() // see NoteBotFacts for inverse
+{
+    while (factThread) // stack based data
+    {
+        FACT* F = Index2Fact(factThread[1]);
+        F->flags ^= MARKED_FACT;
+        int changed = factThread[2];
+        // junk = factThread[3];
+        int* data = factThread + 4;
+        factThread = (int*)Index2Stack(*factThread);
+        if (changed & 1) data = ReadFactField((uint64*)data, F, 1);
+        if (changed & 2) data = ReadFactField((uint64*)data, F, 2);
+        if (changed & 4) data = ReadFactField((uint64*)data, F, 4);
+    }
+}
+
+static char* PutBlob(WORDP D, char* base)
+{
+    uint64* val = (uint64*)base;
+    *val++ = D->properties;
+    *val++ = D->systemFlags;
+    base += 16;
+    strcpy(base, D->word);
+    uint64 align = (uint64)(base + strlen(base) + 8);
+    align &= 0xFFFFFFFFFFFFFFf8ULL;
+    if ((char*)align >= (heapFree - 50)) myexit((char*)"Out of stack space in Putblob \r\n");
+    return (char*)align;
+}
+
+static char* GetBlob(char* base, WORDP& D)
+{
+    uint64* val = (uint64*)base;
+    uint64 prop = *val++;
+    uint64 sys = *val++;
+    char* name = (char*)val;
+    D = StoreWord(name, prop, sys);
+    uint64 align = (uint64)(name + strlen(name) + sizeof(uint64));
+    align &= 0xFFFFFFFFFFFFFFf8ULL;
+    return (char*)align;
+}
+
+void MigrateFactsToBoot(FACT* endUserFacts, FACT* F)
+{
+    if (!bootFacts && !factThread) return;
+
+    UnlockLayer(LAYER_BOOT); // unlock it to add stuff
+    FILE* bootwrite = NULL;
+    char* buffer = NULL;
+    if (recordBoot)
+    {
+        bootwrite = FopenUTF8WriteAppend((char*)"bootfacts.txt"); // augmenting against system restart
+        buffer = AllocateBuffer("MigrateFactsToBoot");
+    }
+    // while facts ordering is safe to walk and overwrite, dictionary items are
+    // unreliable in order and the strings must be protected. 
+    FACT* fbase = F;
+    uint64 base = (uint64)(stackFree + 7);
+    base &= 0xFFFFFFFFFFFFFFf8ULL;
+    char* blobs = (char*)base; // 64bit aligned for storing uints and name
+    char* startblobs = blobs;
+    // facts will be simple, but perhaps involve dictionary entries that need moving
+    while (++F <= endUserFacts) // note dictionary name and data before we lose them to reuse
+    {
+        if (F->flags & FACTBOOT && !(F->flags & (FACTDEAD | FACTTRANSIENT)))
+        {
+            WORDP SD = Meaning2Word(F->subject);
+            if (SD > dictionaryFree) blobs = PutBlob(SD, blobs); // from user layer
+            WORDP VD = Meaning2Word(F->verb);
+            if (VD > dictionaryFree) blobs = PutBlob(VD, blobs);
+            WORDP OD = Meaning2Word(F->object);
+            if (OD > dictionaryFree) blobs = PutBlob(OD, blobs);
+        }
+    }
+    NoteBotFacts(); // store changes to system facts on stack as well
+
+    // now rebuild facts and dictionary items for real.
+    blobs = startblobs;
+    F = fbase;
+    while (++F <= endUserFacts) // F = user facts from before
+    {
+        // facts will be simple, but perhaps involve dictionary entries that need moving
+        if (F->flags & FACTBOOT && !(F->flags & (FACTDEAD | FACTTRANSIENT)))
+        {
+            unsigned int flags = F->flags;
+            flags &= -1 ^ (MARKED_FACT | MARKED_FACT2 | FACTTRANSIENT | FACTBOOT);
+            WORDP SD = Meaning2Word(F->subject);
+            if (SD > dictionaryFree) blobs = GetBlob(blobs, SD);
+            WORDP VD = Meaning2Word(F->verb);
+            if (VD > dictionaryFree) blobs = GetBlob(blobs, VD);
+            WORDP OD = Meaning2Word(F->object);
+            if (OD > dictionaryFree) blobs = GetBlob(blobs, OD);
+
+            FACT* X = ++factFree;
+            memset(X, 0, sizeof(FACT)); // botbits = 0 (all can see)
+            X->flags = flags;
+            X->subject = Word2Index(SD);
+            X->verb = Word2Index(VD);
+            X->object = Word2Index(OD);
+            WeaveFact(X, flags);
+
+            if (bootwrite)
+            {
+                WriteFact(F, false, buffer, false, true);
+                fprintf(bootwrite, "%s", buffer);
+            }
+        }
+    }
+    RedoSystemFactFields();
+
+    LockLayer(true);
+
+    if (buffer)
+    {
+        FreeBuffer("MigrateFactsToBoot");
+        fclose(bootwrite);
+    }
+    bootFacts = false;
+}
+
+void ModBaseFact(FACT* F) // anyone changing fields of facts calls this
+{
+    WORDP userdictstart = dictionaryPreBuild[LAYER_BOOT + 1];
+    if (F > factLocked) return; // dont care about user layer facts
+    if (Meaning2Word(F->subject) > userdictstart) {}
+    else if (Meaning2Word(F->verb) > userdictstart) {}
+    else if (Meaning2Word(F->object) > userdictstart) {}
+    else return; // nothing from user space here 
+    int* data = (int*)AllocateHeap(NULL, 8, 4, false, false);
+    *data = Heap2Index((char*)factThread);
+    data[1] = Fact2Index(F);
+    factThread = data;
+}
+
+

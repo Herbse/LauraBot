@@ -1,7 +1,7 @@
 #ifndef _MAXH_
 #define _MAXH_
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -34,18 +34,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 #define NOMAIN 1
 #endif
 
-#ifdef  LOEBNER
-#define DISCARDSERVER 1
-#define DISCARDTCPOPEN 1
-#define DISCARDMYSQL 1
-#define DISCARDPOSTGRES 1
-#define DISCARDMONGO 1
-#define DISCARDCOUNTER 1
-#define DISCARDCLIENT 1
-#define DISCARDJSONOPEN 1
-#define DISCARDJAVASCRIPT 1
-
-#elif WIN32
+#ifdef  WIN32
 //#define USERPATHPREFIX 1
 
 #elif IOS
@@ -224,4 +213,10 @@ using namespace std;
     #define GetCurrentDir getcwd
 #endif
 
+#endif
+
+#ifdef LINUX
+	// headers for error handling
+	#include <signal.h>
+	#include <execinfo.h>
 #endif

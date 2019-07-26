@@ -1,5 +1,5 @@
-#ifndef DISCARDMYSQL
 #include "common.h"
+#ifndef DISCARDMYSQL
 extern "C" {
 #include "mysql/include/mysql.h"
 }
@@ -240,7 +240,7 @@ size_t mysqlUserWrite(const void* buf,size_t size, size_t count, FILE* file)
 		// if we fail, assume it is due to a primary key violation, and try to update
 		const char * error_msg = mysql_stmt_error(mystmt_userinsert);
 		unsigned int error_num = mysql_stmt_errno(mystmt_userinsert);
-		Log(STDTRACELOG, "SQL Error: %d %s", error_num, error_msg);
+		Log(STDUSERLOG, "SQL Error: %d %s", error_num, error_msg);
 	}
 	else
 	{
@@ -358,10 +358,10 @@ FunctionResult MySQLInitCode(char* buffer)
    MYSQL_RES *res;
    MYSQL_ROW row;
    char *myserver = "localhost";
-   char *user = "root";
-   char *password = "mysql"; 
-   char *database = "mysql";
-   conn = mysql_init(NULL);
+   char *user = "bruce";
+   char *password = "bruce"; 
+   char *database = "bruce";
+   conn = mysql_init(NULL); // port 33060
 
    if (!mysql_real_connect(conn, myserver, user, password, database, 0, NULL, 0)) {
       fprintf(stderr, "%s\r\n", mysql_error(conn));

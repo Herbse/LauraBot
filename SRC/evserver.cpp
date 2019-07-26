@@ -1,6 +1,6 @@
 #ifdef INFORMATION
 Copyright (C) 2011-2012 by Outfit7
-Further modifed by Bruce Wilcox 2014-2106
+Further modifed by Bruce Wilcox 2014-2018
 
 Released under Bruce Wilcox License as follows:
 
@@ -59,6 +59,7 @@ extern char dbTimeLogfileName[200];
 extern bool serverctrlz;
 #define CLIENT_CHUNK_LENGTH 4*1024
 #define HIDDEN_OVERLAP 103	// possible concealed data
+#define HIDDEN_OFFSET 3 // past 2 ctrl z's
 
 // server stuff
 string interface_g;
@@ -102,13 +103,13 @@ struct Client_t
     ev_io ev_r;
     ev_io ev_w;
     struct ev_loop *l;
-    Buffer_t incomming;
     bool requestValid;
     string ip;
     char* bot;
     char* message;
     char* user;
     char* data = NULL;
+    Buffer_t incomming;
 
     Client_t(int fd, struct ev_loop *l_p) : fd(fd), l(l_p), requestValid(false)
     {
@@ -302,6 +303,9 @@ int fork_child(ev_child *child_watcher = 0)
 
     // child
     ev_loop_fork(l_g);
+#ifndef DISCARDJSONOPEN
+    CurlShutdown();
+#endif
     for (int i = 0; i < cur_children_g; i++)   ev_child_stop(l_g, &children_g[i]);
     cur_children_g = 0;
     parent_g = false;
@@ -463,7 +467,12 @@ int evsrv_init(const string &interfaceKind, int port, char* arg) {
     }
 #endif
 
-    if (parent_after_fork == 1 && cur_children_g > 0)  return 1; // parent of child does not accept/handle connections
+    if (parent_after_fork == 1 && cur_children_g > 0){
+        setSignalHandlers();
+        return 1; // parent of child does not accept/handle connections
+    }else{
+        setSignalHandlers();
+    }
 
     if (listen(srv_socket_g, listen_queue_length_g) < 0) {
         Log(SERVERLOG, "evserver: listen() failed, errno: %s\r\n", strerror(errno));
@@ -612,8 +621,9 @@ int evsrv_do_chat(Client_t *client)
  	uint64 starttime = ElapsedMilliseconds(); 
     client->prepare_for_chat();
 	size_t len = strlen(client->message);
-	if (len >= INPUT_BUFFER_SIZE - 100) client->message[INPUT_BUFFER_SIZE-1] = 0; // limit user input
-	echo = false;
+	if (len >= INPUT_BUFFER_SIZE - 300) client->message[INPUT_BUFFER_SIZE-300] = 0; // limit user input
+    if (inputLimit && inputLimit <= len) client->message[inputLimit] = 0;
+    echo = false;
 	bool restarted = false;
 #ifndef DISCARDPOSTGRES
 	if (*postgresparams && !postgresInited)  
@@ -626,15 +636,22 @@ int evsrv_do_chat(Client_t *client)
 	if (mysqlconf) MySQLUserFilesCode(); //Forked must hook uniquely AFTER forking
 #endif
 
-	if (!client->data) 	client->data = (char*) malloc(outputsize);
+	if (!client->data) 	client->data = (char*) malloc(outputsize+8);
 	if (!client->data) (*printer)("Malloc failed for child data\r\n");
 
 RESTART_RETRY:
 	strcpy(ourMainInputBuffer,client->message);
+    size_t test = strlen(ourMainInputBuffer);
 	struct tm ptm;
     char* dateLog = GetTimeInfo(&ptm,true)+SKIPWEEKDAY;
-	if (serverPreLog && restarted)  Log(SERVERLOG,(char*)"ServerPre: retry pid: %d %s (%s) %s %s\r\n",getpid(),client->user,client->bot,ourMainInputBuffer, dateLog);
- 	else if (serverPreLog)  Log(SERVERLOG,(char*)"ServerPre: pid: %d %s (%s) %s %s\r\n",getpid(),client->user,client->bot,ourMainInputBuffer, dateLog);
+    // remove harmful newline stuff in log
+    char* at = ourMainInputBuffer;
+    while ((at = strchr(at, '\n'))) *at = ' ';
+    at = ourMainInputBuffer;
+    while ((at = strchr(at, '\r'))) *at = ' ';
+
+	if (serverPreLog && restarted)  Log(SERVERLOG,(char*)"ServerPre: retry pid: %d %s (%s) size:%d %s %s\r\n",getpid(),client->user,client->bot,test,ourMainInputBuffer, dateLog);
+ 	else if (serverPreLog)  Log(SERVERLOG,(char*)"ServerPre: pid: %d %s (%s) size=%d %s %s\r\n",getpid(),client->user,client->bot,test,ourMainInputBuffer, dateLog);
 	int turn = PerformChat(
         client->user,
         client->bot,

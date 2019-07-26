@@ -1,5 +1,5 @@
 #ifdef INFORMATION
-Copyright (C)2011-2018 by Bruce Wilcox
+Copyright (C)2011-2019 by Bruce Wilcox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -11,7 +11,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #endif
-
+#define HIDDEN_OFFSET 3 // past 2 ctrl z's
 #define HIDDEN_OVERLAP 103	// hidden ctrlz and why data
 extern bool echoServer;
 #ifdef WIN32
@@ -32,6 +32,7 @@ extern bool echoServer;
 #endif
 
 extern char serverIP[100];
+void LogChat(uint64 starttime, char* user, char* bot, char* IP, int turn, char* input, char* output);
 
 #ifndef DISCARDCLIENT
 extern "C" {void Client(char* login);}
