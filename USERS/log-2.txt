@@ -3,3 +3,16 @@ Start: user:2 bot:laura ip:127.0.0.1 rand:1496 (~personal) 0 ==> Prima. Was möc
 Start: user:2 bot:laura ip:127.0.0.1 rand:1496 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:03:41 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:03:16 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
 Start: user:2 bot:laura ip:127.0.0.1 rand:1496 (~personal) 0 ==> Ich glaube das hab ich nicht ganz verstanden.  When:May24'18-11:05:28 Version:8.2 Build0:Apr24'18-16:46:39 Build1:May23'18-14:08:37 0:May24'18-11:03:16 F:0 P:0 Why:~keywordless.2.0.~control.1.0 
 ***127.0.0.1 client presocket failed May 24 11:05:33 2018
+Command: :build 0
+Command: :build 0
+Command: :build 0
+Command: :build vicontact
+Start: user:2 bot:laura_li ip: rand:1496 (~introduction~3) 0 ==> Grüß Gott! Ich bin Laura li.  When:Jul26'19-09:05:46 Why:~introduction~3.0.0.~control.0.0  Version:8.8 Build0:Jul26'19-09:05:26 Build1:Jul26'19-09:05:42 0:Jul26'19-09:05:46 F:0 P:0
+Command: :bot tutorial
+Start: user:2 bot:tutorial ip: rand:1495 (~introduction~9) 0 ==> Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.  When:Jul26'19-09:05:51 Why:~introduction~9.0.0.~control.0.0  Version:8.8 Build0:Jul26'19-09:05:26 Build1:Jul26'19-09:05:42 0:Jul26'19-09:05:46 F:0 P:0
+entering null word to dictionary in sentence1 Fri Jul 26 09:05:58 2019 in sentence: das ist ein test 
+    entering null word to dictionary in sentence1 Fri Jul 26 09:05:58 2019 in sentence: das ist ein test 
+    entering null word to dictionary in sentence1 Fri Jul 26 09:05:58 2019 in sentence: das ist ein test 
+    entering null word to dictionary in sentence1 Fri Jul 26 09:05:58 2019 in sentence: das ist ein test 
+    
+Respond: user:2 bot:tutorial ip: (~introduction~9) 1   das ist ein test ==> JSON=>   [    # ja-t0    {    # jo-t0      "matchword": "das",      "inputword": "das",      "correct": "true",      "wordnr": "1",      "trialnr": "1"    },    {    # jo-t1      "matchword": "hier",      "inputword": "ist",      "correct": "false",      "wordnr": "2",      "trialnr": "1"    },    {    # jo-t2      "matchword": "ist",      "inputword": "ein",      "correct": "false",      "wordnr": "3",      "trialnr": "1"    },    {    # jo-t3      "matchword": "ein",      "inputword": "test",      "correct": "false",      "wordnr": "4",      "trialnr": "1"    },    {    # jo-t4      "matchword": "test",      "correct": "false",      "wordnr": "5",      "trialnr": "1"    },    {    # jo-t5      "matchword": "satz",      "correct": "false",      "wordnr": "6",      "trialnr": "1"    },    {    # jo-t7      "buzzword1": "x",      "buzz1correct": "true",      "buzzword2": "y",      "buzz2correct": "false",      "buzzword3": "z",      "buzz3correct": "false",      "accuracy": "22%"    },    {    # jo-t8      "nextsentence": "das hier ist ein test satz"    }  ]  <=JSON     When:Jul26'19-09:05:58 Why:~introduction~9.1.0=TRIAL1.~control.2.0   F:2973 

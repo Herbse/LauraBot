@@ -11,4 +11,4 @@ u: TRIAL1 () $trialnr=1
 ^createtrialobjects(~trial1)
 ^wordcomparison($trialnr)
 ^buzzcomparison()
-^jsontree($trialdata)
+^jsonwrite($trialdata)
