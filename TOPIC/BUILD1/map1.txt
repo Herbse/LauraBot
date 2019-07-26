@@ -9025,21 +9025,21 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
     macro: 38  ^wordcomparison
           line: 39 0  # $_i = 0 
           loop 40 14  
-          line: 40 8  # ^loop ( 6 ) aaa { 
-          if 41 30  
-          line: 41 26  # ^if 00~( $trialdata[$_i].input
-          line: 42 97  # $trialdata[$_i].correct = "tru
-          else 43 141  
-          line: 43 130  # } aaa else ( 1 ) aaa { 
-          line: 44 153  # $trialdata[$_i].correct = "fal
-          ifend 45 192  
-          line: 45 187  # } 004 
-          line: 46 193  # $_wordnr = $_i + 1 
-          line: 47 212  # $trialdata[$_i].wordnr = ^"\"$
-          line: 48 253  # $trialdata[$_i].trialnr = ^"\"
-          line: 49 296  # $_i += 1 
-          loopend 50 307  
-          line: 50 305  # } 
+          line: 40 8  # ^loop ( ^length ( $trialdata )
+          if 41 51  
+          line: 41 47  # ^if 00~( $trialdata[$_i].input
+          line: 42 118  # $trialdata[$_i].correct = "tru
+          else 43 162  
+          line: 43 151  # } aaa else ( 1 ) aaa { 
+          line: 44 174  # $trialdata[$_i].correct = "fal
+          ifend 45 213  
+          line: 45 208  # } 004 
+          line: 46 214  # $_wordnr = $_i + 1 
+          line: 47 233  # $trialdata[$_i].wordnr = ^"\"$
+          line: 48 274  # $trialdata[$_i].trialnr = ^"\"
+          line: 49 317  # $_i += 1 
+          loopend 50 328  
+          line: 50 326  # } 
           Complexity of ^wordcomparison: 2
     macro: 52  ^buzzcomparison
           line: 53 0  # $buzz = ^jsoncreate ( object )

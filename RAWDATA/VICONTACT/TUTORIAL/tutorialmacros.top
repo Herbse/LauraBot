@@ -37,7 +37,7 @@ if ($_ilength>$_tlength) {
 
 outputmacro: ^wordcomparison($_trialnr)
 $_i = 0
-loop(6) {
+loop(^length($trialdata)) {
 if ($trialdata[$_i].inputword==$trialdata[$_i].matchword) {
     $trialdata[$_i].correct = "true"
 } else { 
