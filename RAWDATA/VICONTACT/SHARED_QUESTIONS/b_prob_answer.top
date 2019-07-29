@@ -188,7 +188,7 @@ u: (suggestive_specific)
 $$probFormat = affirmation-70_negation-20_ignorance-5_notAnswering-5
 $$randNum = %rand
 if ($$randNum < 70){$$answerCategory = affirmation ^respond(~affirmation)} 
-else if ($$randNum < 90){$$answerCategory = negation ^respond(~negation)} 
+else if ($$randNum < 90){$$answerCategory = negation ^respond(~negat)} 
 else if ($$randNum < 95){$$answerCategory = ignorance ^respond(~ignorance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
@@ -302,7 +302,7 @@ $noncritTopic += 1
 $$probFormat = affirmation-50_negation-30_ignorance-20
 $$randNum = %rand
 if (%$$randNum < 50){$$answerCategory = affirmation ^respond(~affirmation)} 
-else if ($$randNum < 80){$$answerCategory = negation $$answer = ^respond(~negation)} 
+else if ($$randNum < 80){$$answerCategory = negation $$answer = ^respond(~negat)} 
 else {$$answerCategory = ignorance ^respond(~ignorance)} 
 
 
@@ -324,11 +324,11 @@ if ($revelationState==0) {$rapportCounter -= 1 $$answerCategory = reactance ^res
 
 # 40% ignorance | 30% reactance | 30% sobbing
 u: (suggestive_unspecific) 
-$$probFormat = ignorance-40_reactance-30_sobbing-30
+$$probFormat = ignorance-40_reactance-30_notAnswering-30
 $$randNum = %rand
 if ($$randNum < 40){$$answerCategory = ignorance ^respond(~ignorance)} 
 else if ($$randNum < 70){$$answerCategory = reactance ^respond(~reactance)} 
-else {$$answerCategory = sobbing ^respond(~sobbing)} 
+else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
 
 
@@ -337,7 +337,7 @@ u: (suggestive_specific)
 $$probFormat = affirmation-70_negation-20_ignorance-5_notAnswering-5
 $$randNum = %rand
 if ($$randNum < 70){$$answerCategory = affirmation ^respond(~affirmation)} 
-else if ($$randNum < 90){$$answerCategory = negation ^respond(~negation)} 
+else if ($$randNum < 90){$$answerCategory = negation ^respond(~negat)} 
 else if ($$randNum < 95){$$answerCategory = ignorance ^respond(~ignorance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
@@ -404,7 +404,7 @@ $$answerCategory = affirmation ^respond(~affirmation)
 u: ({_rapport} support)
 if ('_0==rapport){$rapportCounter += 1}
 $$probFormat = negation-100
-$$answerCategory = negation ^respond(~negation)
+$$answerCategory = negation ^respond(~negat)
 
 u: ({_rapport} revelation)
 if ('_0==rapport){$rapportCounter += 1}
