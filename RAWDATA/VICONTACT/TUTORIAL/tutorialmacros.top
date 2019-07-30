@@ -10,7 +10,7 @@ loop(1){
      $_i += 1
     $sentence = ^join("$sentence" $_i)
     # $sentence
-    $_trial = ^join(\~trial $_i)
+    $_trial = ^join("~" trial $_i)
     # $_trial
     loop(){
     $$word = ^Iterator(? member $_trial)
@@ -103,7 +103,7 @@ $next = ^jsoncreate(object)
 if ($trialnr==10) {
 $next.nextsentence = end
 } else {
-   $next.nextsentence = ^join(AUTOSPACE nächster Satz)
+   $next.nextsentence = ^join(AUTOSPACE das hier ist ein test satz)
 }
 ^jsonarrayinsert($trialdata $next)
 
@@ -116,4 +116,4 @@ outputmacro: ^jsonresults($_trial $_buzz)
 ^buzzcomparison($_buzz)
 ^nexttrial()
 $trialnr += 1
-^jsontree($trialdata)
+^jsonwrite($trialdata)

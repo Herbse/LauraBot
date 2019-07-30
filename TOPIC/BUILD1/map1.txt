@@ -8990,15 +8990,16 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
           line: 9 67  # ^loop ( 1 ) aaa { 
           line: 10 85  # $_i += 1 
           line: 11 94  # $sentence = ^join ( "$sentence
-          line: 13 132  # $_trial = ^join ( \~trial $_i 
-          loop 15 170  
-          line: 15 164  # ^loop ( -1 ) aaa { 
-          line: 16 183  # $$word = ^iterator ( ? member 
-          line: 18 223  # $sentence1 = ^join ( AUTOSPACE
-          loopend 19 276  
-          line: 19 274  # } 
-          loopend 21 278  
-          line: 21 276  # } 
+          line: 13 132  # $_trial = ^join ( "~" trial $_
+          line: 14 166  # $_trial 
+          loop 15 180  
+          line: 15 174  # ^loop ( -1 ) aaa { 
+          line: 16 193  # $$word = ^iterator ( ? member 
+          line: 18 233  # $sentence1 = ^join ( AUTOSPACE
+          loopend 19 286  
+          line: 19 284  # } 
+          loopend 21 288  
+          line: 21 286  # } 
           Complexity of ^tutorialstart: 1
     macro: 23  ^createtrialobjects
           line: 26 0  # $_tlength = ^length ( $_whicht
@@ -9092,9 +9093,9 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
           else 105 98  
           line: 105 87  # } aaa else ( 1 ) aaa { 
           line: 106 110  # $next.nextsentence = ^join ( A
-          ifend 107 171  
-          line: 107 166  # } 004 
-          line: 108 172  # ^jsonarrayinsert ( $trialdata 
+          ifend 107 183  
+          line: 107 178  # } 004 
+          line: 108 184  # ^jsonarrayinsert ( $trialdata 
           Complexity of ^nexttrial: 2
     macro: 113  ^jsonresults
           line: 114 0  # ^createtrialobjects ( $_trial 
