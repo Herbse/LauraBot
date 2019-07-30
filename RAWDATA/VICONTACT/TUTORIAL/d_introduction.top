@@ -2,13 +2,37 @@ topic: ~introduction  keep repeat (sound besuch zoo)
 
 
 t: 
+$trialnr=0
 ^tutorialstart()
+^jsonresults(~trial0 ~buzz0)
 
 Hallo! Ich bin Tutorial-Bot. Versuche die folgenden Wörter und Sätze so deutlich wie möglich ins Mikrofon zu sprechen.
+# $sentence1
+# $sentence2
+# $sentence3
+# $sentence
 
 
-u: TRIAL1 () $trialnr=1
-^createtrialobjects(~trial1)
-^wordcomparison($trialnr)
-^buzzcomparison()
-^jsonwrite($trialdata)
+u: TRIAL1 ($trialnr=1) ^jsonresults(~trial1 ~buzz1)
+
+u: TRIAL2 ($trialnr=2) ^jsonresults(~trial2 ~buzz2)
+
+u: TRIAL3 ($trialnr=3) ^jsonresults(~trial3 ~buzz3)
+
+u: TRIAL4 ($trialnr=4) ^jsonresults(~trial4 ~buzz4)
+
+u: TRIAL5 ($trialnr=5) ^jsonresults(~trial5 ~buzz5)
+
+u: TRIAL6 ($trialnr=6) ^jsonresults(~trial6 ~buzz6)
+
+u: TRIAL7 ($trialnr=7) ^jsonresults(~trial7 ~buzz7)
+
+u: TRIAL8 ($trialnr=8) ^jsonresults(~trial8 ~buzz8)
+
+u: TRIAL9 ($trialnr=9) ^jsonresults(~trial9 ~buzz9)
+
+u: TRIAL10 ($trialnr=10) ^jsonresults(~trial10 ~buzz10)
+
+
+
+

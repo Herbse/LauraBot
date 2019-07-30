@@ -9,12 +9,6 @@ outputmacro: ^myfunc(^data) ($$concept)
 	#$$oob = ^join($$oob " " ^value)
 
 
-outputmacro: ^accuracy()
-
-
-$accuracy = $sumcorrect / 5 * 100
-
-
 
 outputmacro: ^oob()
 

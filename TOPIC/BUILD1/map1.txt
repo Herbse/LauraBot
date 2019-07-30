@@ -502,245 +502,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/A
         rule: 86  ~event_t.2.15 a: 
           line: 86 0  # $$intent = places_together $$s
           Complexity of rule ~event_t.2.15- a: 1
-        rule: 89  ~event_t.3.0 u: 
-          line: 89 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t.3.0- u: 1
-        rule: 91  ~event_t.3.1 a: 
-          line: 91 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t.3.1- a: 1
-        rule: 92  ~event_t.3.2 b: 
-          line: 92 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t.3.2- b: 1
-        rule: 93  ~event_t.3.3 b: 
-          line: 93 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t.3.3- b: 1
-        rule: 94  ~event_t.3.4 b: 
-          line: 94 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t.3.4- b: 1
-        rule: 95  ~event_t.3.5 b: 
-          line: 95 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t.3.5- b: 1
-        rule: 96  ~event_t.3.6 b: 
-          line: 96 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t.3.6- b: 1
-        rule: 97  ~event_t.3.7 b: 
-          line: 97 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t.3.7- b: 1
-        rule: 98  ~event_t.3.8 b: 
-          line: 98 0  # $$sound_file = event12a So kom
-          Complexity of rule ~event_t.3.8- b: 1
-        rule: 99  ~event_t.3.9 b: 
-          line: 99 0  # $$sound_file = event12a So kom
-          Complexity of rule ~event_t.3.9- b: 1
-        rule: 100  ~event_t.3.10 b: 
-          line: 100 0  # $$sound_file = event12a So kom
-          Complexity of rule ~event_t.3.10- b: 1
-        rule: 101  ~event_t.3.11 b: 
-          line: 101 0  # $$sound_file = event12a So kom
-          Complexity of rule ~event_t.3.11- b: 1
-        rule: 103  ~event_t.3.12 a: 
-          line: 103 0  # $$intent = other_opinion ^refi
-          Complexity of rule ~event_t.3.12- a: 1
-        rule: 104  ~event_t.3.13 b: 
-          line: 104 0  # ^reuse ( ~event_6 ) 
-          Complexity of rule ~event_t.3.13- b: 1
-        rule: 105  ~event_t.3.14 b: 
-          line: 105 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.14- b: 1
-        rule: 107  ~event_t.3.15 a: 
-          line: 107 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t.3.15- a: 1
-        rule: 108  ~event_t.3.16 b: 
-          line: 108 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.16- b: 1
-        rule: 109  ~event_t.3.17 b: 
-          line: 109 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.17- b: 1
-        rule: 110  ~event_t.3.18 b: 
-          line: 110 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.18- b: 1
-        rule: 111  ~event_t.3.19 b: 
-          line: 111 0  # Zu Hause. 
-          Complexity of rule ~event_t.3.19- b: 1
-        rule: 112  ~event_t.3.20 b: 
-          line: 112 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.20- b: 1
-        rule: 113  ~event_t.3.21 b: 
-          line: 113 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.21- b: 1
-        rule: 114  ~event_t.3.22 b: 
-          line: 114 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.22- b: 1
-        rule: 115  ~event_t.3.23 b: 
-          line: 115 0  # ^reuse ( EVENT_8 ) 
-          Complexity of rule ~event_t.3.23- b: 1
-        rule: 116  ~event_t.3.24 b: 
-          line: 116 0  # $$sound_file = event14a Zu Hau
-          Complexity of rule ~event_t.3.24- b: 1
-        rule: 117  ~event_t.3.25 b: 
-          line: 117 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.25- b: 1
-        rule: 118  ~event_t.3.26 b: 
-          line: 118 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.26- b: 1
-        rule: 120  ~event_t.3.27 a: 
-          line: 120 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t.3.27- a: 1
-        rule: 121  ~event_t.3.28 b: 
-          line: 121 0  # Keiner. 
-          Complexity of rule ~event_t.3.28- b: 1
-        rule: 122  ~event_t.3.29 b: 
-          line: 122 0  # Mit Carla und David. 
-          Complexity of rule ~event_t.3.29- b: 1
-        rule: 123  ~event_t.3.30 b: 
-          line: 123 0  # ^reuse ( EVENT_3 ) 
-          Complexity of rule ~event_t.3.30- b: 1
-        rule: 124  ~event_t.3.31 b: 
-          line: 124 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.31- b: 1
-        rule: 125  ~event_t.3.32 b: 
-          line: 125 0  # Carla und David. 
-          Complexity of rule ~event_t.3.32- b: 1
-        rule: 126  ~event_t.3.33 b: 
-          line: 126 0  # Carla und David. 
-          Complexity of rule ~event_t.3.33- b: 1
-        rule: 127  ~event_t.3.34 b: 
-          line: 127 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.34- b: 1
-        rule: 128  ~event_t.3.35 b: 
-          line: 128 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.35- b: 1
-        rule: 129  ~event_t.3.36 b: 
-          line: 129 0  # David. 
-          Complexity of rule ~event_t.3.36- b: 1
-        rule: 130  ~event_t.3.37 b: 
-          line: 130 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.37- b: 1
-        rule: 131  ~event_t.3.38 b: 
-          line: 131 0  # David. 
-          Complexity of rule ~event_t.3.38- b: 1
-        rule: 133  ~event_t.3.39 a: 
-          line: 133 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t.3.39- a: 1
-        rule: 134  ~event_t.3.40 b: 
-          line: 134 0  # ^reuse ( EVENT_2 ) 
-          Complexity of rule ~event_t.3.40- b: 1
-        rule: 135  ~event_t.3.41 b: 
-          line: 135 0  # ^reuse ( EVENT_2 ) 
-          Complexity of rule ~event_t.3.41- b: 1
-        rule: 136  ~event_t.3.42 b: 
-          line: 136 0  # ^reuse ( EVENT_3 ) 
-          Complexity of rule ~event_t.3.42- b: 1
-        rule: 137  ~event_t.3.43 b: 
-          line: 137 0  # ^reuse ( EVENT_4 ) 
-          Complexity of rule ~event_t.3.43- b: 1
-        rule: 138  ~event_t.3.44 b: 
-          line: 138 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.44- b: 1
-        rule: 139  ~event_t.3.45 b: 
-          line: 139 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.45- b: 1
-        rule: 140  ~event_t.3.46 b: 
-          line: 140 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.46- b: 1
-        rule: 141  ~event_t.3.47 b: 
-          line: 141 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.47- b: 1
-        rule: 142  ~event_t.3.48 b: 
-          line: 142 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.48- b: 1
-        rule: 143  ~event_t.3.49 b: 
-          line: 143 0  # ^reuse ( EVENT_9 ) 
-          Complexity of rule ~event_t.3.49- b: 1
-        rule: 144  ~event_t.3.50 b: 
-          line: 144 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.50- b: 1
-        rule: 146  ~event_t.3.51 a: 
-          line: 146 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t.3.51- a: 1
-        rule: 147  ~event_t.3.52 b: 
-          line: 147 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.52- b: 1
-        rule: 149  ~event_t.3.53 a: 
-          line: 149 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t.3.53- a: 1
-        rule: 150  ~event_t.3.54 b: 
-          line: 150 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.54- b: 1
-        rule: 151  ~event_t.3.55 b: 
-          line: 151 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.55- b: 1
-        rule: 152  ~event_t.3.56 b: 
-          line: 152 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.56- b: 1
-        rule: 153  ~event_t.3.57 b: 
-          line: 153 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.57- b: 1
-        rule: 154  ~event_t.3.58 b: 
-          line: 154 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.58- b: 1
-        rule: 155  ~event_t.3.59 b: 
-          line: 155 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.59- b: 1
-        rule: 156  ~event_t.3.60 b: 
-          line: 156 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.60- b: 1
-        rule: 157  ~event_t.3.61 b: 
-          line: 157 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.61- b: 1
-        rule: 158  ~event_t.3.62 b: 
-          line: 158 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.62- b: 1
-        rule: 159  ~event_t.3.63 b: 
-          line: 159 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.63- b: 1
-        rule: 161  ~event_t.3.64 a: 
-          line: 161 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t.3.64- a: 1
-        rule: 162  ~event_t.3.65 b: 
-          line: 162 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t.3.65- b: 1
-        rule: 163  ~event_t.3.66 b: 
-          line: 163 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t.3.66- b: 1
-        rule: 165  ~event_t.3.67 a: 
-          line: 165 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t.3.67- a: 1
-        rule: 328  ~event_t.4.0-EVENT_1 u: 
+        rule: 328  ~event_t.3.0-EVENT_1 u: 
           line: 328 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t.4.0-EVENT_1 u: 1
-        rule: 335  ~event_t.5.0-EVENT_2 u: 
+          Complexity of rule ~event_t.3.0-EVENT_1 u: 1
+        rule: 335  ~event_t.4.0-EVENT_2 u: 
           line: 335 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t.5.0-EVENT_2 u: 1
-        rule: 339  ~event_t.6.0-EVENT_3 u: 
+          Complexity of rule ~event_t.4.0-EVENT_2 u: 1
+        rule: 339  ~event_t.5.0-EVENT_3 u: 
           line: 339 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t.6.0-EVENT_3 u: 1
-        rule: 345  ~event_t.7.0-EVENT_4 u: 
+          Complexity of rule ~event_t.5.0-EVENT_3 u: 1
+        rule: 345  ~event_t.6.0-EVENT_4 u: 
           line: 345 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t.7.0-EVENT_4 u: 1
-        rule: 350  ~event_t.8.0-EVENT_5 u: 
+          Complexity of rule ~event_t.6.0-EVENT_4 u: 1
+        rule: 350  ~event_t.7.0-EVENT_5 u: 
           line: 350 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t.8.0-EVENT_5 u: 1
-        rule: 355  ~event_t.9.0-EVENT_6 u: 
+          Complexity of rule ~event_t.7.0-EVENT_5 u: 1
+        rule: 355  ~event_t.8.0-EVENT_6 u: 
           line: 355 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t.9.0-EVENT_6 u: 1
-        rule: 362  ~event_t.10.0-EVENT_7 u: 
-          line: 362 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t.10.0-EVENT_7 u: 1
-        rule: 369  ~event_t.11.0-EVENT_8 u: 
-          line: 369 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t.11.0-EVENT_8 u: 1
-        rule: 377  ~event_t.12.0-EVENT_9 u: 
-          line: 377 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t.12.0-EVENT_9 u: 1
-        rule: 383  ~event_t.13.0-EVENT_10 u: 
-          line: 383 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t.13.0-EVENT_10 u: 1
-        rule: 388  ~event_t.14.0-CLUE2 u: 
+          Complexity of rule ~event_t.8.0-EVENT_6 u: 1
+        rule: 388  ~event_t.9.0-CLUE2 u: 
           line: 388 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t.14.0-CLUE2 u: 1
-        rule: 390  ~event_t.15.0 u: 
-          Complexity of rule ~event_t.15.0- u: 1
+          Complexity of rule ~event_t.9.0-CLUE2 u: 1
+        rule: 390  ~event_t.10.0 u: 
+          Complexity of rule ~event_t.10.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_introduction.top
     topic: 1  ~introduction
         rule: 3  ~introduction.0.0 t: 
@@ -1944,245 +1728,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 75  ~event_t~1.2.11 a: 
           line: 75 0  # $$intent = places_together Zu 
           Complexity of rule ~event_t~1.2.11- a: 1
-        rule: 79  ~event_t~1.3.0 u: 
-          line: 79 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~1.3.0- u: 1
-        rule: 81  ~event_t~1.3.1 a: 
-          line: 81 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~1.3.1- a: 1
-        rule: 82  ~event_t~1.3.2 b: 
-          line: 82 0  # $$sound_file = event11a Ich we
-          Complexity of rule ~event_t~1.3.2- b: 1
-        rule: 83  ~event_t~1.3.3 b: 
-          line: 83 0  # $$sound_file = event11a Ich we
-          Complexity of rule ~event_t~1.3.3- b: 1
-        rule: 84  ~event_t~1.3.4 b: 
-          line: 84 0  # $$sound_file = event11a Ich we
-          Complexity of rule ~event_t~1.3.4- b: 1
-        rule: 85  ~event_t~1.3.5 b: 
-          line: 85 0  # $$sound_file = event11a Ich we
-          Complexity of rule ~event_t~1.3.5- b: 1
-        rule: 86  ~event_t~1.3.6 b: 
-          line: 86 0  # $$sound_file = event11a Ich we
-          Complexity of rule ~event_t~1.3.6- b: 1
-        rule: 87  ~event_t~1.3.7 b: 
-          line: 87 0  # $$sound_file = event11a Ich we
-          Complexity of rule ~event_t~1.3.7- b: 1
-        rule: 88  ~event_t~1.3.8 b: 
-          line: 88 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~1.3.8- b: 1
-        rule: 89  ~event_t~1.3.9 b: 
-          line: 89 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~1.3.9- b: 1
-        rule: 90  ~event_t~1.3.10 b: 
-          line: 90 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~1.3.10- b: 1
-        rule: 91  ~event_t~1.3.11 b: 
-          line: 91 0  # $$sound_file = event12a Dann h
-          Complexity of rule ~event_t~1.3.11- b: 1
-        rule: 93  ~event_t~1.3.12 a: 
-          line: 93 0  # $$intent = other_opinion ^refi
-          Complexity of rule ~event_t~1.3.12- a: 1
-        rule: 94  ~event_t~1.3.13 b: 
-          line: 94 0  # ^reuse ( ~event_6 ) 
-          Complexity of rule ~event_t~1.3.13- b: 1
-        rule: 95  ~event_t~1.3.14 b: 
-          line: 95 0  # ^reuse ( ~event_10 ) 
-          Complexity of rule ~event_t~1.3.14- b: 1
-        rule: 96  ~event_t~1.3.15 b: 
-          line: 96 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.15- b: 1
-        rule: 98  ~event_t~1.3.16 a: 
-          line: 98 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~1.3.16- a: 1
-        rule: 99  ~event_t~1.3.17 b: 
-          line: 99 0  # Bei uns Zuhause. 
-          Complexity of rule ~event_t~1.3.17- b: 1
-        rule: 100  ~event_t~1.3.18 b: 
-          line: 100 0  # Bei uns Zuhause. 
-          Complexity of rule ~event_t~1.3.18- b: 1
-        rule: 101  ~event_t~1.3.19 b: 
-          line: 101 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.19- b: 1
-        rule: 102  ~event_t~1.3.20 b: 
-          line: 102 0  # Bei uns Zuhause. 
-          Complexity of rule ~event_t~1.3.20- b: 1
-        rule: 103  ~event_t~1.3.21 b: 
-          line: 103 0  # Bei uns Zuhause. 
-          Complexity of rule ~event_t~1.3.21- b: 1
-        rule: 104  ~event_t~1.3.22 b: 
-          line: 104 0  # Bei uns Zuhause. 
-          Complexity of rule ~event_t~1.3.22- b: 1
-        rule: 105  ~event_t~1.3.23 b: 
-          line: 105 0  # Bei uns Zuhause. 
-          Complexity of rule ~event_t~1.3.23- b: 1
-        rule: 106  ~event_t~1.3.24 b: 
-          line: 106 0  # Bei uns Zuhause. 
-          Complexity of rule ~event_t~1.3.24- b: 1
-        rule: 107  ~event_t~1.3.25 b: 
-          line: 107 0  # ^reuse ( EVENT_9 ) 
-          Complexity of rule ~event_t~1.3.25- b: 1
-        rule: 108  ~event_t~1.3.26 b: 
-          line: 108 0  # Bei uns Zuhause. 
-          Complexity of rule ~event_t~1.3.26- b: 1
-        rule: 109  ~event_t~1.3.27 b: 
-          line: 109 0  # In meinem Zimmer. 
-          Complexity of rule ~event_t~1.3.27- b: 1
-        rule: 111  ~event_t~1.3.28 a: 
-          line: 111 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~1.3.28- a: 1
-        rule: 112  ~event_t~1.3.29 b: 
-          line: 112 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.29- b: 1
-        rule: 113  ~event_t~1.3.30 b: 
-          line: 113 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.30- b: 1
-        rule: 114  ~event_t~1.3.31 b: 
-          line: 114 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.31- b: 1
-        rule: 115  ~event_t~1.3.32 b: 
-          line: 115 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.32- b: 1
-        rule: 116  ~event_t~1.3.33 b: 
-          line: 116 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.33- b: 1
-        rule: 117  ~event_t~1.3.34 b: 
-          line: 117 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.34- b: 1
-        rule: 118  ~event_t~1.3.35 b: 
-          line: 118 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.35- b: 1
-        rule: 119  ~event_t~1.3.36 b: 
-          line: 119 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.36- b: 1
-        rule: 120  ~event_t~1.3.37 b: 
-          line: 120 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.37- b: 1
-        rule: 121  ~event_t~1.3.38 b: 
-          line: 121 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.38- b: 1
-        rule: 122  ~event_t~1.3.39 b: 
-          line: 122 0  # Tante Selma. 
-          Complexity of rule ~event_t~1.3.39- b: 1
-        rule: 124  ~event_t~1.3.40 a: 
-          line: 124 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~1.3.40- a: 1
-        rule: 125  ~event_t~1.3.41 b: 
-          line: 125 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.41- b: 1
-        rule: 126  ~event_t~1.3.42 b: 
-          line: 126 0  # ^reuse ( EVENT_2 ) 
-          Complexity of rule ~event_t~1.3.42- b: 1
-        rule: 127  ~event_t~1.3.43 b: 
-          line: 127 0  # ^reuse ( EVENT_3 ) 
-          Complexity of rule ~event_t~1.3.43- b: 1
-        rule: 128  ~event_t~1.3.44 b: 
-          line: 128 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.44- b: 1
-        rule: 129  ~event_t~1.3.45 b: 
-          line: 129 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.45- b: 1
-        rule: 130  ~event_t~1.3.46 b: 
-          line: 130 0  # ^reuse ( EVENT_6 ) 
-          Complexity of rule ~event_t~1.3.46- b: 1
-        rule: 131  ~event_t~1.3.47 b: 
-          line: 131 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.47- b: 1
-        rule: 132  ~event_t~1.3.48 b: 
-          line: 132 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.48- b: 1
-        rule: 133  ~event_t~1.3.49 b: 
-          line: 133 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.49- b: 1
-        rule: 134  ~event_t~1.3.50 b: 
-          line: 134 0  # ^reuse ( EVENT_9 ) 
-          Complexity of rule ~event_t~1.3.50- b: 1
-        rule: 135  ~event_t~1.3.51 b: 
-          line: 135 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~1.3.51- b: 1
-        rule: 137  ~event_t~1.3.52 a: 
-          line: 137 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~1.3.52- a: 1
-        rule: 138  ~event_t~1.3.53 b: 
-          line: 138 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.53- b: 1
-        rule: 140  ~event_t~1.3.54 a: 
-          line: 140 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~1.3.54- a: 1
-        rule: 141  ~event_t~1.3.55 b: 
-          line: 141 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.55- b: 1
-        rule: 142  ~event_t~1.3.56 b: 
-          line: 142 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.56- b: 1
-        rule: 143  ~event_t~1.3.57 b: 
-          line: 143 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.57- b: 1
-        rule: 144  ~event_t~1.3.58 b: 
-          line: 144 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.58- b: 1
-        rule: 145  ~event_t~1.3.59 b: 
-          line: 145 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.59- b: 1
-        rule: 146  ~event_t~1.3.60 b: 
-          line: 146 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.60- b: 1
-        rule: 147  ~event_t~1.3.61 b: 
-          line: 147 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.61- b: 1
-        rule: 148  ~event_t~1.3.62 b: 
-          line: 148 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.62- b: 1
-        rule: 149  ~event_t~1.3.63 b: 
-          line: 149 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.63- b: 1
-        rule: 150  ~event_t~1.3.64 b: 
-          line: 150 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.64- b: 1
-        rule: 152  ~event_t~1.3.65 a: 
-          line: 152 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~1.3.65- a: 1
-        rule: 153  ~event_t~1.3.66 b: 
-          line: 153 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~1.3.66- b: 1
-        rule: 155  ~event_t~1.3.67 a: 
-          line: 155 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~1.3.67- a: 1
-        rule: 319  ~event_t~1.4.0-EVENT_1 u: 
+        rule: 319  ~event_t~1.3.0-EVENT_1 u: 
           line: 319 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t~1.4.0-EVENT_1 u: 1
-        rule: 326  ~event_t~1.5.0-EVENT_2 u: 
+          Complexity of rule ~event_t~1.3.0-EVENT_1 u: 1
+        rule: 326  ~event_t~1.4.0-EVENT_2 u: 
           line: 326 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t~1.5.0-EVENT_2 u: 1
-        rule: 330  ~event_t~1.6.0-EVENT_3 u: 
+          Complexity of rule ~event_t~1.4.0-EVENT_2 u: 1
+        rule: 330  ~event_t~1.5.0-EVENT_3 u: 
           line: 330 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t~1.6.0-EVENT_3 u: 1
-        rule: 336  ~event_t~1.7.0-EVENT_4 u: 
+          Complexity of rule ~event_t~1.5.0-EVENT_3 u: 1
+        rule: 336  ~event_t~1.6.0-EVENT_4 u: 
           line: 336 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t~1.7.0-EVENT_4 u: 1
-        rule: 341  ~event_t~1.8.0-EVENT_5 u: 
+          Complexity of rule ~event_t~1.6.0-EVENT_4 u: 1
+        rule: 341  ~event_t~1.7.0-EVENT_5 u: 
           line: 341 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t~1.8.0-EVENT_5 u: 1
-        rule: 346  ~event_t~1.9.0-EVENT_6 u: 
+          Complexity of rule ~event_t~1.7.0-EVENT_5 u: 1
+        rule: 346  ~event_t~1.8.0-EVENT_6 u: 
           line: 346 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t~1.9.0-EVENT_6 u: 1
-        rule: 353  ~event_t~1.10.0-EVENT_7 u: 
-          line: 353 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t~1.10.0-EVENT_7 u: 1
-        rule: 360  ~event_t~1.11.0-EVENT_8 u: 
-          line: 360 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t~1.11.0-EVENT_8 u: 1
-        rule: 368  ~event_t~1.12.0-EVENT_9 u: 
-          line: 368 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t~1.12.0-EVENT_9 u: 1
-        rule: 374  ~event_t~1.13.0-EVENT_10 u: 
-          line: 374 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t~1.13.0-EVENT_10 u: 1
-        rule: 379  ~event_t~1.14.0-CLUE2 u: 
+          Complexity of rule ~event_t~1.8.0-EVENT_6 u: 1
+        rule: 379  ~event_t~1.9.0-CLUE2 u: 
           line: 379 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~1.14.0-CLUE2 u: 1
-        rule: 381  ~event_t~1.15.0 u: 
-          Complexity of rule ~event_t~1.15.0- u: 1
+          Complexity of rule ~event_t~1.9.0-CLUE2 u: 1
+        rule: 381  ~event_t~1.10.0 u: 
+          Complexity of rule ~event_t~1.10.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_introduction.top
     topic: 1  ~introduction~1
         rule: 3  ~introduction~1.0.0 t: 
@@ -3111,245 +2679,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/J
         rule: 26  ~event_t~2.0.11 a: 
           line: 26 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~2.0.11- a: 1
-        rule: 30  ~event_t~2.1.0 u: 
-          line: 30 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~2.1.0- u: 1
-        rule: 32  ~event_t~2.1.1 a: 
-          line: 32 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~2.1.1- a: 1
-        rule: 33  ~event_t~2.1.2 b: 
-          line: 33 0  # Voll doof. 
-          Complexity of rule ~event_t~2.1.2- b: 1
-        rule: 34  ~event_t~2.1.3 b: 
-          line: 34 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~2.1.3- b: 1
-        rule: 35  ~event_t~2.1.4 b: 
-          line: 35 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~2.1.4- b: 1
-        rule: 36  ~event_t~2.1.5 b: 
-          line: 36 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~2.1.5- b: 1
-        rule: 37  ~event_t~2.1.6 b: 
-          line: 37 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~2.1.6- b: 1
-        rule: 38  ~event_t~2.1.7 b: 
-          line: 38 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~2.1.7- b: 1
-        rule: 39  ~event_t~2.1.8 b: 
-          line: 39 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~2.1.8- b: 1
-        rule: 40  ~event_t~2.1.9 b: 
-          line: 40 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~2.1.9- b: 1
-        rule: 41  ~event_t~2.1.10 b: 
-          line: 41 0  # $$sound_file = event12a Voll d
-          Complexity of rule ~event_t~2.1.10- b: 1
-        rule: 42  ~event_t~2.1.11 b: 
-          line: 42 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~2.1.11- b: 1
-        rule: 43  ~event_t~2.1.12 b: 
-          line: 43 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~2.1.12- b: 1
-        rule: 45  ~event_t~2.1.13 a: 
-          line: 45 0  # $$intent = other_opinion ^refi
-          Complexity of rule ~event_t~2.1.13- a: 1
-        rule: 46  ~event_t~2.1.14 b: 
-          line: 46 0  # ^reuse ( ~event_5 ) 
-          Complexity of rule ~event_t~2.1.14- b: 1
-        rule: 47  ~event_t~2.1.15 b: 
-          line: 47 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.15- b: 1
-        rule: 49  ~event_t~2.1.16 a: 
-          line: 49 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~2.1.16- a: 1
-        rule: 50  ~event_t~2.1.17 b: 
-          line: 50 0  # Beim Training. 
-          Complexity of rule ~event_t~2.1.17- b: 1
-        rule: 51  ~event_t~2.1.18 b: 
-          line: 51 0  # Beim Training. 
-          Complexity of rule ~event_t~2.1.18- b: 1
-        rule: 52  ~event_t~2.1.19 b: 
-          line: 52 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.19- b: 1
-        rule: 53  ~event_t~2.1.20 b: 
-          line: 53 0  # Beim Training. 
-          Complexity of rule ~event_t~2.1.20- b: 1
-        rule: 54  ~event_t~2.1.21 b: 
-          line: 54 0  # Beim Training. 
-          Complexity of rule ~event_t~2.1.21- b: 1
-        rule: 55  ~event_t~2.1.22 b: 
-          line: 55 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.22- b: 1
-        rule: 56  ~event_t~2.1.23 b: 
-          line: 56 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.23- b: 1
-        rule: 57  ~event_t~2.1.24 b: 
-          line: 57 0  # ^reuse ( EVENT_8 ) 
-          Complexity of rule ~event_t~2.1.24- b: 1
-        rule: 58  ~event_t~2.1.25 b: 
-          line: 58 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.25- b: 1
-        rule: 59  ~event_t~2.1.26 b: 
-          line: 59 0  # In der Kabine. 
-          Complexity of rule ~event_t~2.1.26- b: 1
-        rule: 60  ~event_t~2.1.27 b: 
-          line: 60 0  # In der Kabine. 
-          Complexity of rule ~event_t~2.1.27- b: 1
-        rule: 62  ~event_t~2.1.28 a: 
-          line: 62 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~2.1.28- a: 1
-        rule: 63  ~event_t~2.1.29 b: 
-          line: 63 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.29- b: 1
-        rule: 64  ~event_t~2.1.30 b: 
-          line: 64 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.30- b: 1
-        rule: 65  ~event_t~2.1.31 b: 
-          line: 65 0  # Alleine. 
-          Complexity of rule ~event_t~2.1.31- b: 1
-        rule: 66  ~event_t~2.1.32 b: 
-          line: 66 0  # Die anderen Jungs und ich. 
-          Complexity of rule ~event_t~2.1.32- b: 1
-        rule: 67  ~event_t~2.1.33 b: 
-          line: 67 0  # Die anderen Jungs und ich. 
-          Complexity of rule ~event_t~2.1.33- b: 1
-        rule: 68  ~event_t~2.1.34 b: 
-          line: 68 0  # Gerd. 
-          Complexity of rule ~event_t~2.1.34- b: 1
-        rule: 69  ~event_t~2.1.35 b: 
-          line: 69 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.35- b: 1
-        rule: 70  ~event_t~2.1.36 b: 
-          line: 70 0  # Nur Gerd und ich. 
-          Complexity of rule ~event_t~2.1.36- b: 1
-        rule: 71  ~event_t~2.1.37 b: 
-          line: 71 0  # Nur Gerd und ich. 
-          Complexity of rule ~event_t~2.1.37- b: 1
-        rule: 72  ~event_t~2.1.38 b: 
-          line: 72 0  # Nur Gerd und ich. 
-          Complexity of rule ~event_t~2.1.38- b: 1
-        rule: 73  ~event_t~2.1.39 b: 
-          line: 73 0  # Nur Gerd und ich. 
-          Complexity of rule ~event_t~2.1.39- b: 1
-        rule: 75  ~event_t~2.1.40 a: 
-          line: 75 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~2.1.40- a: 1
-        rule: 76  ~event_t~2.1.41 b: 
-          line: 76 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.41- b: 1
-        rule: 77  ~event_t~2.1.42 b: 
-          line: 77 0  # ^reuse ( EVENT_2 ) 
-          Complexity of rule ~event_t~2.1.42- b: 1
-        rule: 78  ~event_t~2.1.43 b: 
-          line: 78 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.43- b: 1
-        rule: 79  ~event_t~2.1.44 b: 
-          line: 79 0  # ^reuse ( EVENT_4 ) 
-          Complexity of rule ~event_t~2.1.44- b: 1
-        rule: 80  ~event_t~2.1.45 b: 
-          line: 80 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.45- b: 1
-        rule: 81  ~event_t~2.1.46 b: 
-          line: 81 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.46- b: 1
-        rule: 82  ~event_t~2.1.47 b: 
-          line: 82 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.47- b: 1
-        rule: 83  ~event_t~2.1.48 b: 
-          line: 83 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.48- b: 1
-        rule: 84  ~event_t~2.1.49 b: 
-          line: 84 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.49- b: 1
-        rule: 85  ~event_t~2.1.50 b: 
-          line: 85 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.50- b: 1
-        rule: 86  ~event_t~2.1.51 b: 
-          line: 86 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~2.1.51- b: 1
-        rule: 88  ~event_t~2.1.52 a: 
-          line: 88 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~2.1.52- a: 1
-        rule: 89  ~event_t~2.1.53 b: 
-          line: 89 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.53- b: 1
-        rule: 91  ~event_t~2.1.54 a: 
-          line: 91 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~2.1.54- a: 1
-        rule: 92  ~event_t~2.1.55 b: 
-          line: 92 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.55- b: 1
-        rule: 93  ~event_t~2.1.56 b: 
-          line: 93 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.56- b: 1
-        rule: 94  ~event_t~2.1.57 b: 
-          line: 94 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.57- b: 1
-        rule: 95  ~event_t~2.1.58 b: 
-          line: 95 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.58- b: 1
-        rule: 96  ~event_t~2.1.59 b: 
-          line: 96 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.59- b: 1
-        rule: 97  ~event_t~2.1.60 b: 
-          line: 97 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.60- b: 1
-        rule: 98  ~event_t~2.1.61 b: 
-          line: 98 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.61- b: 1
-        rule: 99  ~event_t~2.1.62 b: 
-          line: 99 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.62- b: 1
-        rule: 100  ~event_t~2.1.63 b: 
-          line: 100 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.63- b: 1
-        rule: 101  ~event_t~2.1.64 b: 
-          line: 101 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.64- b: 1
-        rule: 103  ~event_t~2.1.65 a: 
-          line: 103 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~2.1.65- a: 1
-        rule: 104  ~event_t~2.1.66 b: 
-          line: 104 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~2.1.66- b: 1
-        rule: 106  ~event_t~2.1.67 a: 
-          line: 106 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~2.1.67- a: 1
-        rule: 272  ~event_t~2.2.0-EVENT_1 u: 
+        rule: 272  ~event_t~2.1.0-EVENT_1 u: 
           line: 272 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t~2.2.0-EVENT_1 u: 1
-        rule: 279  ~event_t~2.3.0-EVENT_2 u: 
+          Complexity of rule ~event_t~2.1.0-EVENT_1 u: 1
+        rule: 279  ~event_t~2.2.0-EVENT_2 u: 
           line: 279 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t~2.3.0-EVENT_2 u: 1
-        rule: 283  ~event_t~2.4.0-EVENT_3 u: 
+          Complexity of rule ~event_t~2.2.0-EVENT_2 u: 1
+        rule: 283  ~event_t~2.3.0-EVENT_3 u: 
           line: 283 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t~2.4.0-EVENT_3 u: 1
-        rule: 289  ~event_t~2.5.0-EVENT_4 u: 
+          Complexity of rule ~event_t~2.3.0-EVENT_3 u: 1
+        rule: 289  ~event_t~2.4.0-EVENT_4 u: 
           line: 289 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t~2.5.0-EVENT_4 u: 1
-        rule: 294  ~event_t~2.6.0-EVENT_5 u: 
+          Complexity of rule ~event_t~2.4.0-EVENT_4 u: 1
+        rule: 294  ~event_t~2.5.0-EVENT_5 u: 
           line: 294 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t~2.6.0-EVENT_5 u: 1
-        rule: 299  ~event_t~2.7.0-EVENT_6 u: 
+          Complexity of rule ~event_t~2.5.0-EVENT_5 u: 1
+        rule: 299  ~event_t~2.6.0-EVENT_6 u: 
           line: 299 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t~2.7.0-EVENT_6 u: 1
-        rule: 306  ~event_t~2.8.0-EVENT_7 u: 
-          line: 306 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t~2.8.0-EVENT_7 u: 1
-        rule: 313  ~event_t~2.9.0-EVENT_8 u: 
-          line: 313 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t~2.9.0-EVENT_8 u: 1
-        rule: 321  ~event_t~2.10.0-EVENT_9 u: 
-          line: 321 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t~2.10.0-EVENT_9 u: 1
-        rule: 327  ~event_t~2.11.0-EVENT_10 u: 
-          line: 327 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t~2.11.0-EVENT_10 u: 1
-        rule: 332  ~event_t~2.12.0-CLUE2 u: 
+          Complexity of rule ~event_t~2.6.0-EVENT_6 u: 1
+        rule: 332  ~event_t~2.7.0-CLUE2 u: 
           line: 332 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~2.12.0-CLUE2 u: 1
-        rule: 334  ~event_t~2.13.0 u: 
-          Complexity of rule ~event_t~2.13.0- u: 1
+          Complexity of rule ~event_t~2.7.0-CLUE2 u: 1
+        rule: 334  ~event_t~2.8.0 u: 
+          Complexity of rule ~event_t~2.8.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_introduction.top
     topic: 1  ~introduction~2
         rule: 3  ~introduction~2.0.0 t: 
@@ -4276,239 +3628,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 30  ~event_t~3.0.15 a: 
           line: 30 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~3.0.15- a: 1
-        rule: 34  ~event_t~3.1.0 u: 
-          line: 34 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~3.1.0- u: 1
-        rule: 36  ~event_t~3.1.1 a: 
-          line: 36 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~3.1.1- a: 1
-        rule: 37  ~event_t~3.1.2 b: 
-          line: 37 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~3.1.2- b: 1
-        rule: 38  ~event_t~3.1.3 b: 
-          line: 38 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~3.1.3- b: 1
-        rule: 39  ~event_t~3.1.4 b: 
-          line: 39 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~3.1.4- b: 1
-        rule: 40  ~event_t~3.1.5 b: 
-          line: 40 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~3.1.5- b: 1
-        rule: 41  ~event_t~3.1.6 b: 
-          line: 41 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~3.1.6- b: 1
-        rule: 42  ~event_t~3.1.7 b: 
-          line: 42 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~3.1.7- b: 1
-        rule: 43  ~event_t~3.1.8 b: 
-          line: 43 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~3.1.8- b: 1
-        rule: 44  ~event_t~3.1.9 b: 
-          line: 44 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~3.1.9- b: 1
-        rule: 45  ~event_t~3.1.10 b: 
-          line: 45 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~3.1.10- b: 1
-        rule: 46  ~event_t~3.1.11 b: 
-          line: 46 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~3.1.11- b: 1
-        rule: 48  ~event_t~3.1.12 a: 
-          line: 48 0  # $$intent = other_opinion $$ans
-          Complexity of rule ~event_t~3.1.12- a: 1
-        rule: 50  ~event_t~3.1.13 a: 
-          line: 50 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~3.1.13- a: 1
-        rule: 51  ~event_t~3.1.14 b: 
-          line: 51 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.14- b: 1
-        rule: 52  ~event_t~3.1.15 b: 
-          line: 52 0  # $$sound_file = event13a Im Woh
-          Complexity of rule ~event_t~3.1.15- b: 1
-        rule: 53  ~event_t~3.1.16 b: 
-          line: 53 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.16- b: 1
-        rule: 54  ~event_t~3.1.17 b: 
-          line: 54 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.17- b: 1
-        rule: 55  ~event_t~3.1.18 b: 
-          line: 55 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.18- b: 1
-        rule: 56  ~event_t~3.1.19 b: 
-          line: 56 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.19- b: 1
-        rule: 57  ~event_t~3.1.20 b: 
-          line: 57 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.20- b: 1
-        rule: 58  ~event_t~3.1.21 b: 
-          line: 58 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.21- b: 1
-        rule: 59  ~event_t~3.1.22 b: 
-          line: 59 0  # $$sound_file = event14a In der
-          Complexity of rule ~event_t~3.1.22- b: 1
-        rule: 60  ~event_t~3.1.23 b: 
-          line: 60 0  # $$sound_file = event14a In der
-          Complexity of rule ~event_t~3.1.23- b: 1
-        rule: 61  ~event_t~3.1.24 b: 
-          line: 61 0  # $$sound_file = event14a In der
-          Complexity of rule ~event_t~3.1.24- b: 1
-        rule: 63  ~event_t~3.1.25 a: 
-          line: 63 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~3.1.25- a: 1
-        rule: 64  ~event_t~3.1.26 b: 
-          line: 64 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.26- b: 1
-        rule: 65  ~event_t~3.1.27 b: 
-          line: 65 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.27- b: 1
-        rule: 66  ~event_t~3.1.28 b: 
-          line: 66 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~3.1.28- b: 1
-        rule: 67  ~event_t~3.1.29 b: 
-          line: 67 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~3.1.29- b: 1
-        rule: 68  ~event_t~3.1.30 b: 
-          line: 68 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~3.1.30- b: 1
-        rule: 69  ~event_t~3.1.31 b: 
-          line: 69 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~3.1.31- b: 1
-        rule: 70  ~event_t~3.1.32 b: 
-          line: 70 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~3.1.32- b: 1
-        rule: 71  ~event_t~3.1.33 b: 
-          line: 71 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~3.1.33- b: 1
-        rule: 72  ~event_t~3.1.34 b: 
-          line: 72 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~3.1.34- b: 1
-        rule: 73  ~event_t~3.1.35 b: 
-          line: 73 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.35- b: 1
-        rule: 75  ~event_t~3.1.36 a: 
-          line: 75 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~3.1.36- a: 1
-        rule: 76  ~event_t~3.1.37 b: 
-          line: 76 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.37- b: 1
-        rule: 77  ~event_t~3.1.38 b: 
-          line: 77 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.38- b: 1
-        rule: 78  ~event_t~3.1.39 b: 
-          line: 78 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.39- b: 1
-        rule: 79  ~event_t~3.1.40 b: 
-          line: 79 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.40- b: 1
-        rule: 80  ~event_t~3.1.41 b: 
-          line: 80 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.41- b: 1
-        rule: 81  ~event_t~3.1.42 b: 
-          line: 81 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.42- b: 1
-        rule: 82  ~event_t~3.1.43 b: 
-          line: 82 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.43- b: 1
-        rule: 83  ~event_t~3.1.44 b: 
-          line: 83 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.44- b: 1
-        rule: 84  ~event_t~3.1.45 b: 
-          line: 84 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.45- b: 1
-        rule: 85  ~event_t~3.1.46 b: 
-          line: 85 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.46- b: 1
-        rule: 86  ~event_t~3.1.47 b: 
-          line: 86 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.47- b: 1
-        rule: 88  ~event_t~3.1.48 a: 
-          line: 88 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~3.1.48- a: 1
-        rule: 89  ~event_t~3.1.49 b: 
-          line: 89 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.49- b: 1
-        rule: 90  ~event_t~3.1.50 b: 
-          line: 90 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.50- b: 1
-        rule: 92  ~event_t~3.1.51 a: 
-          line: 92 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~3.1.51- a: 1
-        rule: 93  ~event_t~3.1.52 b: 
-          line: 93 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.52- b: 1
-        rule: 94  ~event_t~3.1.53 b: 
-          line: 94 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.53- b: 1
-        rule: 95  ~event_t~3.1.54 b: 
-          line: 95 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.54- b: 1
-        rule: 96  ~event_t~3.1.55 b: 
-          line: 96 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.55- b: 1
-        rule: 97  ~event_t~3.1.56 b: 
-          line: 97 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.56- b: 1
-        rule: 98  ~event_t~3.1.57 b: 
-          line: 98 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.57- b: 1
-        rule: 99  ~event_t~3.1.58 b: 
-          line: 99 0  # $$sound_file = event16a Sein P
-          Complexity of rule ~event_t~3.1.58- b: 1
-        rule: 100  ~event_t~3.1.59 b: 
-          line: 100 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.59- b: 1
-        rule: 101  ~event_t~3.1.60 b: 
-          line: 101 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.60- b: 1
-        rule: 102  ~event_t~3.1.61 b: 
-          line: 102 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.61- b: 1
-        rule: 104  ~event_t~3.1.62 a: 
-          line: 104 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~3.1.62- a: 1
-        rule: 105  ~event_t~3.1.63 b: 
-          line: 105 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~3.1.63- b: 1
-        rule: 106  ~event_t~3.1.64 b: 
-          line: 106 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~3.1.64- b: 1
-        rule: 108  ~event_t~3.1.65 a: 
-          line: 108 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~3.1.65- a: 1
-        rule: 269  ~event_t~3.2.0-EVENT_1 u: 
+        rule: 269  ~event_t~3.1.0-EVENT_1 u: 
           line: 269 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t~3.2.0-EVENT_1 u: 1
-        rule: 276  ~event_t~3.3.0-EVENT_2 u: 
+          Complexity of rule ~event_t~3.1.0-EVENT_1 u: 1
+        rule: 276  ~event_t~3.2.0-EVENT_2 u: 
           line: 276 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t~3.3.0-EVENT_2 u: 1
-        rule: 280  ~event_t~3.4.0-EVENT_3 u: 
+          Complexity of rule ~event_t~3.2.0-EVENT_2 u: 1
+        rule: 280  ~event_t~3.3.0-EVENT_3 u: 
           line: 280 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t~3.4.0-EVENT_3 u: 1
-        rule: 286  ~event_t~3.5.0-EVENT_4 u: 
+          Complexity of rule ~event_t~3.3.0-EVENT_3 u: 1
+        rule: 286  ~event_t~3.4.0-EVENT_4 u: 
           line: 286 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t~3.5.0-EVENT_4 u: 1
-        rule: 291  ~event_t~3.6.0-EVENT_5 u: 
+          Complexity of rule ~event_t~3.4.0-EVENT_4 u: 1
+        rule: 291  ~event_t~3.5.0-EVENT_5 u: 
           line: 291 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t~3.6.0-EVENT_5 u: 1
-        rule: 296  ~event_t~3.7.0-EVENT_6 u: 
+          Complexity of rule ~event_t~3.5.0-EVENT_5 u: 1
+        rule: 296  ~event_t~3.6.0-EVENT_6 u: 
           line: 296 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t~3.7.0-EVENT_6 u: 1
-        rule: 303  ~event_t~3.8.0-EVENT_7 u: 
-          line: 303 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t~3.8.0-EVENT_7 u: 1
-        rule: 310  ~event_t~3.9.0-EVENT_8 u: 
-          line: 310 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t~3.9.0-EVENT_8 u: 1
-        rule: 318  ~event_t~3.10.0-EVENT_9 u: 
-          line: 318 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t~3.10.0-EVENT_9 u: 1
-        rule: 324  ~event_t~3.11.0-EVENT_10 u: 
-          line: 324 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t~3.11.0-EVENT_10 u: 1
-        rule: 329  ~event_t~3.12.0-CLUE2 u: 
+          Complexity of rule ~event_t~3.6.0-EVENT_6 u: 1
+        rule: 329  ~event_t~3.7.0-CLUE2 u: 
           line: 329 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~3.12.0-CLUE2 u: 1
-        rule: 332  ~event_t~3.13.0 u: 
-          Complexity of rule ~event_t~3.13.0- u: 1
+          Complexity of rule ~event_t~3.7.0-CLUE2 u: 1
+        rule: 332  ~event_t~3.8.0 u: 
+          Complexity of rule ~event_t~3.8.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_introduction.top
     topic: 1  ~introduction~3
         rule: 3  ~introduction~3.0.0 t: 
@@ -5572,239 +4714,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 30  ~event_t~4.0.15 a: 
           line: 30 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~4.0.15- a: 1
-        rule: 34  ~event_t~4.1.0 u: 
-          line: 34 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~4.1.0- u: 1
-        rule: 36  ~event_t~4.1.1 a: 
-          line: 36 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~4.1.1- a: 1
-        rule: 37  ~event_t~4.1.2 b: 
-          line: 37 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~4.1.2- b: 1
-        rule: 38  ~event_t~4.1.3 b: 
-          line: 38 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~4.1.3- b: 1
-        rule: 39  ~event_t~4.1.4 b: 
-          line: 39 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~4.1.4- b: 1
-        rule: 40  ~event_t~4.1.5 b: 
-          line: 40 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~4.1.5- b: 1
-        rule: 41  ~event_t~4.1.6 b: 
-          line: 41 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~4.1.6- b: 1
-        rule: 42  ~event_t~4.1.7 b: 
-          line: 42 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~4.1.7- b: 1
-        rule: 43  ~event_t~4.1.8 b: 
-          line: 43 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~4.1.8- b: 1
-        rule: 44  ~event_t~4.1.9 b: 
-          line: 44 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~4.1.9- b: 1
-        rule: 45  ~event_t~4.1.10 b: 
-          line: 45 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~4.1.10- b: 1
-        rule: 46  ~event_t~4.1.11 b: 
-          line: 46 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~4.1.11- b: 1
-        rule: 48  ~event_t~4.1.12 a: 
-          line: 48 0  # $$intent = other_opinion $$ans
-          Complexity of rule ~event_t~4.1.12- a: 1
-        rule: 50  ~event_t~4.1.13 a: 
-          line: 50 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~4.1.13- a: 1
-        rule: 51  ~event_t~4.1.14 b: 
-          line: 51 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.14- b: 1
-        rule: 52  ~event_t~4.1.15 b: 
-          line: 52 0  # $$sound_file = event13a Im Woh
-          Complexity of rule ~event_t~4.1.15- b: 1
-        rule: 53  ~event_t~4.1.16 b: 
-          line: 53 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.16- b: 1
-        rule: 54  ~event_t~4.1.17 b: 
-          line: 54 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.17- b: 1
-        rule: 55  ~event_t~4.1.18 b: 
-          line: 55 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.18- b: 1
-        rule: 56  ~event_t~4.1.19 b: 
-          line: 56 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.19- b: 1
-        rule: 57  ~event_t~4.1.20 b: 
-          line: 57 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.20- b: 1
-        rule: 58  ~event_t~4.1.21 b: 
-          line: 58 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.21- b: 1
-        rule: 59  ~event_t~4.1.22 b: 
-          line: 59 0  # $$sound_file = event14a In der
-          Complexity of rule ~event_t~4.1.22- b: 1
-        rule: 60  ~event_t~4.1.23 b: 
-          line: 60 0  # $$sound_file = event14a In der
-          Complexity of rule ~event_t~4.1.23- b: 1
-        rule: 61  ~event_t~4.1.24 b: 
-          line: 61 0  # $$sound_file = event14a In der
-          Complexity of rule ~event_t~4.1.24- b: 1
-        rule: 63  ~event_t~4.1.25 a: 
-          line: 63 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~4.1.25- a: 1
-        rule: 64  ~event_t~4.1.26 b: 
-          line: 64 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.26- b: 1
-        rule: 65  ~event_t~4.1.27 b: 
-          line: 65 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.27- b: 1
-        rule: 66  ~event_t~4.1.28 b: 
-          line: 66 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~4.1.28- b: 1
-        rule: 67  ~event_t~4.1.29 b: 
-          line: 67 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~4.1.29- b: 1
-        rule: 68  ~event_t~4.1.30 b: 
-          line: 68 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~4.1.30- b: 1
-        rule: 69  ~event_t~4.1.31 b: 
-          line: 69 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~4.1.31- b: 1
-        rule: 70  ~event_t~4.1.32 b: 
-          line: 70 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~4.1.32- b: 1
-        rule: 71  ~event_t~4.1.33 b: 
-          line: 71 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~4.1.33- b: 1
-        rule: 72  ~event_t~4.1.34 b: 
-          line: 72 0  # $$sound_file = event15a Mein O
-          Complexity of rule ~event_t~4.1.34- b: 1
-        rule: 73  ~event_t~4.1.35 b: 
-          line: 73 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.35- b: 1
-        rule: 75  ~event_t~4.1.36 a: 
-          line: 75 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~4.1.36- a: 1
-        rule: 76  ~event_t~4.1.37 b: 
-          line: 76 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.37- b: 1
-        rule: 77  ~event_t~4.1.38 b: 
-          line: 77 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.38- b: 1
-        rule: 78  ~event_t~4.1.39 b: 
-          line: 78 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.39- b: 1
-        rule: 79  ~event_t~4.1.40 b: 
-          line: 79 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.40- b: 1
-        rule: 80  ~event_t~4.1.41 b: 
-          line: 80 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.41- b: 1
-        rule: 81  ~event_t~4.1.42 b: 
-          line: 81 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.42- b: 1
-        rule: 82  ~event_t~4.1.43 b: 
-          line: 82 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.43- b: 1
-        rule: 83  ~event_t~4.1.44 b: 
-          line: 83 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.44- b: 1
-        rule: 84  ~event_t~4.1.45 b: 
-          line: 84 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.45- b: 1
-        rule: 85  ~event_t~4.1.46 b: 
-          line: 85 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.46- b: 1
-        rule: 86  ~event_t~4.1.47 b: 
-          line: 86 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.47- b: 1
-        rule: 88  ~event_t~4.1.48 a: 
-          line: 88 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~4.1.48- a: 1
-        rule: 89  ~event_t~4.1.49 b: 
-          line: 89 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.49- b: 1
-        rule: 90  ~event_t~4.1.50 b: 
-          line: 90 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.50- b: 1
-        rule: 92  ~event_t~4.1.51 a: 
-          line: 92 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~4.1.51- a: 1
-        rule: 93  ~event_t~4.1.52 b: 
-          line: 93 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.52- b: 1
-        rule: 94  ~event_t~4.1.53 b: 
-          line: 94 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.53- b: 1
-        rule: 95  ~event_t~4.1.54 b: 
-          line: 95 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.54- b: 1
-        rule: 96  ~event_t~4.1.55 b: 
-          line: 96 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.55- b: 1
-        rule: 97  ~event_t~4.1.56 b: 
-          line: 97 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.56- b: 1
-        rule: 98  ~event_t~4.1.57 b: 
-          line: 98 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.57- b: 1
-        rule: 99  ~event_t~4.1.58 b: 
-          line: 99 0  # $$sound_file = event16a Sein P
-          Complexity of rule ~event_t~4.1.58- b: 1
-        rule: 100  ~event_t~4.1.59 b: 
-          line: 100 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.59- b: 1
-        rule: 101  ~event_t~4.1.60 b: 
-          line: 101 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.60- b: 1
-        rule: 102  ~event_t~4.1.61 b: 
-          line: 102 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.61- b: 1
-        rule: 104  ~event_t~4.1.62 a: 
-          line: 104 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~4.1.62- a: 1
-        rule: 105  ~event_t~4.1.63 b: 
-          line: 105 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~4.1.63- b: 1
-        rule: 106  ~event_t~4.1.64 b: 
-          line: 106 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~4.1.64- b: 1
-        rule: 108  ~event_t~4.1.65 a: 
-          line: 108 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~4.1.65- a: 1
-        rule: 269  ~event_t~4.2.0-EVENT_1 u: 
+        rule: 269  ~event_t~4.1.0-EVENT_1 u: 
           line: 269 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t~4.2.0-EVENT_1 u: 1
-        rule: 276  ~event_t~4.3.0-EVENT_2 u: 
+          Complexity of rule ~event_t~4.1.0-EVENT_1 u: 1
+        rule: 276  ~event_t~4.2.0-EVENT_2 u: 
           line: 276 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t~4.3.0-EVENT_2 u: 1
-        rule: 280  ~event_t~4.4.0-EVENT_3 u: 
+          Complexity of rule ~event_t~4.2.0-EVENT_2 u: 1
+        rule: 280  ~event_t~4.3.0-EVENT_3 u: 
           line: 280 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t~4.4.0-EVENT_3 u: 1
-        rule: 286  ~event_t~4.5.0-EVENT_4 u: 
+          Complexity of rule ~event_t~4.3.0-EVENT_3 u: 1
+        rule: 286  ~event_t~4.4.0-EVENT_4 u: 
           line: 286 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t~4.5.0-EVENT_4 u: 1
-        rule: 291  ~event_t~4.6.0-EVENT_5 u: 
+          Complexity of rule ~event_t~4.4.0-EVENT_4 u: 1
+        rule: 291  ~event_t~4.5.0-EVENT_5 u: 
           line: 291 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t~4.6.0-EVENT_5 u: 1
-        rule: 296  ~event_t~4.7.0-EVENT_6 u: 
+          Complexity of rule ~event_t~4.5.0-EVENT_5 u: 1
+        rule: 296  ~event_t~4.6.0-EVENT_6 u: 
           line: 296 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t~4.7.0-EVENT_6 u: 1
-        rule: 303  ~event_t~4.8.0-EVENT_7 u: 
-          line: 303 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t~4.8.0-EVENT_7 u: 1
-        rule: 310  ~event_t~4.9.0-EVENT_8 u: 
-          line: 310 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t~4.9.0-EVENT_8 u: 1
-        rule: 318  ~event_t~4.10.0-EVENT_9 u: 
-          line: 318 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t~4.10.0-EVENT_9 u: 1
-        rule: 324  ~event_t~4.11.0-EVENT_10 u: 
-          line: 324 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t~4.11.0-EVENT_10 u: 1
-        rule: 329  ~event_t~4.12.0-CLUE2 u: 
+          Complexity of rule ~event_t~4.6.0-EVENT_6 u: 1
+        rule: 329  ~event_t~4.7.0-CLUE2 u: 
           line: 329 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~4.12.0-CLUE2 u: 1
-        rule: 332  ~event_t~4.13.0 u: 
-          Complexity of rule ~event_t~4.13.0- u: 1
+          Complexity of rule ~event_t~4.7.0-CLUE2 u: 1
+        rule: 332  ~event_t~4.8.0 u: 
+          Complexity of rule ~event_t~4.8.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_introduction.top
     topic: 1  ~introduction~4
         rule: 3  ~introduction~4.0.0 t: 
@@ -7015,239 +5947,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/C
         rule: 26  ~event_t~5.0.11 a: 
           line: 26 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~5.0.11- a: 1
-        rule: 30  ~event_t~5.1.0 u: 
-          line: 30 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~5.1.0- u: 1
-        rule: 32  ~event_t~5.1.1 a: 
-          line: 32 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~5.1.1- a: 1
-        rule: 33  ~event_t~5.1.2 b: 
-          line: 33 0  # Voll doof. 
-          Complexity of rule ~event_t~5.1.2- b: 1
-        rule: 34  ~event_t~5.1.3 b: 
-          line: 34 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~5.1.3- b: 1
-        rule: 35  ~event_t~5.1.4 b: 
-          line: 35 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~5.1.4- b: 1
-        rule: 36  ~event_t~5.1.5 b: 
-          line: 36 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~5.1.5- b: 1
-        rule: 37  ~event_t~5.1.6 b: 
-          line: 37 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~5.1.6- b: 1
-        rule: 38  ~event_t~5.1.7 b: 
-          line: 38 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~5.1.7- b: 1
-        rule: 39  ~event_t~5.1.8 b: 
-          line: 39 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~5.1.8- b: 1
-        rule: 40  ~event_t~5.1.9 b: 
-          line: 40 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~5.1.9- b: 1
-        rule: 41  ~event_t~5.1.10 b: 
-          line: 41 0  # $$sound_file = event12a Total 
-          Complexity of rule ~event_t~5.1.10- b: 1
-        rule: 42  ~event_t~5.1.11 b: 
-          line: 42 0  # $$sound_file = event12a Ich wi
-          Complexity of rule ~event_t~5.1.11- b: 1
-        rule: 43  ~event_t~5.1.12 b: 
-          line: 43 0  # $$sound_file = event12a Ich wi
-          Complexity of rule ~event_t~5.1.12- b: 1
-        rule: 45  ~event_t~5.1.13 a: 
-          line: 45 0  # $$intent = other_opinion $$ans
-          Complexity of rule ~event_t~5.1.13- a: 1
-        rule: 47  ~event_t~5.1.14 a: 
-          line: 47 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~5.1.14- a: 1
-        rule: 48  ~event_t~5.1.15 b: 
-          line: 48 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.15- b: 1
-        rule: 49  ~event_t~5.1.16 b: 
-          line: 49 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.16- b: 1
-        rule: 50  ~event_t~5.1.17 b: 
-          line: 50 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.17- b: 1
-        rule: 51  ~event_t~5.1.18 b: 
-          line: 51 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.18- b: 1
-        rule: 52  ~event_t~5.1.19 b: 
-          line: 52 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.19- b: 1
-        rule: 53  ~event_t~5.1.20 b: 
-          line: 53 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.20- b: 1
-        rule: 54  ~event_t~5.1.21 b: 
-          line: 54 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.21- b: 1
-        rule: 55  ~event_t~5.1.22 b: 
-          line: 55 0  # Im Bus. 
-          Complexity of rule ~event_t~5.1.22- b: 1
-        rule: 56  ~event_t~5.1.23 b: 
-          line: 56 0  # Im Bus. 
-          Complexity of rule ~event_t~5.1.23- b: 1
-        rule: 57  ~event_t~5.1.24 b: 
-          line: 57 0  # Im Bus. 
-          Complexity of rule ~event_t~5.1.24- b: 1
-        rule: 58  ~event_t~5.1.25 b: 
-          line: 58 0  # Im Bus. 
-          Complexity of rule ~event_t~5.1.25- b: 1
-        rule: 60  ~event_t~5.1.26 a: 
-          line: 60 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~5.1.26- a: 1
-        rule: 61  ~event_t~5.1.27 b: 
-          line: 61 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.27- b: 1
-        rule: 62  ~event_t~5.1.28 b: 
-          line: 62 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.28- b: 1
-        rule: 63  ~event_t~5.1.29 b: 
-          line: 63 0  # Ich und die anderen Kinder. 
-          Complexity of rule ~event_t~5.1.29- b: 1
-        rule: 64  ~event_t~5.1.30 b: 
-          line: 64 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.30- b: 1
-        rule: 65  ~event_t~5.1.31 b: 
-          line: 65 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.31- b: 1
-        rule: 66  ~event_t~5.1.32 b: 
-          line: 66 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.32- b: 1
-        rule: 67  ~event_t~5.1.33 b: 
-          line: 67 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.33- b: 1
-        rule: 68  ~event_t~5.1.34 b: 
-          line: 68 0  # Tobias und ich. 
-          Complexity of rule ~event_t~5.1.34- b: 1
-        rule: 69  ~event_t~5.1.35 b: 
-          line: 69 0  # Tobias und ich. 
-          Complexity of rule ~event_t~5.1.35- b: 1
-        rule: 70  ~event_t~5.1.36 b: 
-          line: 70 0  # Tobias und ich. 
-          Complexity of rule ~event_t~5.1.36- b: 1
-        rule: 71  ~event_t~5.1.37 b: 
-          line: 71 0  # Tobias und ich. 
-          Complexity of rule ~event_t~5.1.37- b: 1
-        rule: 73  ~event_t~5.1.38 a: 
-          line: 73 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~5.1.38- a: 1
-        rule: 74  ~event_t~5.1.39 b: 
-          line: 74 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.39- b: 1
-        rule: 75  ~event_t~5.1.40 b: 
-          line: 75 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.40- b: 1
-        rule: 76  ~event_t~5.1.41 b: 
-          line: 76 0  # Der fährt mich in die Schule.
-          Complexity of rule ~event_t~5.1.41- b: 1
-        rule: 77  ~event_t~5.1.42 b: 
-          line: 77 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.42- b: 1
-        rule: 78  ~event_t~5.1.43 b: 
-          line: 78 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.43- b: 1
-        rule: 79  ~event_t~5.1.44 b: 
-          line: 79 0  # ^reuse ( EVENT_6 ) 
-          Complexity of rule ~event_t~5.1.44- b: 1
-        rule: 80  ~event_t~5.1.45 b: 
-          line: 80 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.45- b: 1
-        rule: 81  ~event_t~5.1.46 b: 
-          line: 81 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.46- b: 1
-        rule: 82  ~event_t~5.1.47 b: 
-          line: 82 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.47- b: 1
-        rule: 83  ~event_t~5.1.48 b: 
-          line: 83 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.48- b: 1
-        rule: 84  ~event_t~5.1.49 b: 
-          line: 84 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~5.1.49- b: 1
-        rule: 86  ~event_t~5.1.50 a: 
-          line: 86 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~5.1.50- a: 1
-        rule: 87  ~event_t~5.1.51 b: 
-          line: 87 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.51- b: 1
-        rule: 89  ~event_t~5.1.52 a: 
-          line: 89 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~5.1.52- a: 1
-        rule: 90  ~event_t~5.1.53 b: 
-          line: 90 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.53- b: 1
-        rule: 91  ~event_t~5.1.54 b: 
-          line: 91 0  # Der fährt mich in die Schule.
-          Complexity of rule ~event_t~5.1.54- b: 1
-        rule: 92  ~event_t~5.1.55 b: 
-          line: 92 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.55- b: 1
-        rule: 93  ~event_t~5.1.56 b: 
-          line: 93 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.56- b: 1
-        rule: 94  ~event_t~5.1.57 b: 
-          line: 94 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.57- b: 1
-        rule: 95  ~event_t~5.1.58 b: 
-          line: 95 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.58- b: 1
-        rule: 96  ~event_t~5.1.59 b: 
-          line: 96 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.59- b: 1
-        rule: 97  ~event_t~5.1.60 b: 
-          line: 97 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.60- b: 1
-        rule: 98  ~event_t~5.1.61 b: 
-          line: 98 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.61- b: 1
-        rule: 99  ~event_t~5.1.62 b: 
-          line: 99 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.62- b: 1
-        rule: 101  ~event_t~5.1.63 a: 
-          line: 101 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~5.1.63- a: 1
-        rule: 102  ~event_t~5.1.64 b: 
-          line: 102 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~5.1.64- b: 1
-        rule: 104  ~event_t~5.1.65 a: 
-          line: 104 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~5.1.65- a: 1
-        rule: 265  ~event_t~5.2.0-EVENT_1 u: 
+        rule: 265  ~event_t~5.1.0-EVENT_1 u: 
           line: 265 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t~5.2.0-EVENT_1 u: 1
-        rule: 272  ~event_t~5.3.0-EVENT_2 u: 
+          Complexity of rule ~event_t~5.1.0-EVENT_1 u: 1
+        rule: 272  ~event_t~5.2.0-EVENT_2 u: 
           line: 272 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t~5.3.0-EVENT_2 u: 1
-        rule: 276  ~event_t~5.4.0-EVENT_3 u: 
+          Complexity of rule ~event_t~5.2.0-EVENT_2 u: 1
+        rule: 276  ~event_t~5.3.0-EVENT_3 u: 
           line: 276 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t~5.4.0-EVENT_3 u: 1
-        rule: 282  ~event_t~5.5.0-EVENT_4 u: 
+          Complexity of rule ~event_t~5.3.0-EVENT_3 u: 1
+        rule: 282  ~event_t~5.4.0-EVENT_4 u: 
           line: 282 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t~5.5.0-EVENT_4 u: 1
-        rule: 287  ~event_t~5.6.0-EVENT_5 u: 
+          Complexity of rule ~event_t~5.4.0-EVENT_4 u: 1
+        rule: 287  ~event_t~5.5.0-EVENT_5 u: 
           line: 287 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t~5.6.0-EVENT_5 u: 1
-        rule: 292  ~event_t~5.7.0-EVENT_6 u: 
+          Complexity of rule ~event_t~5.5.0-EVENT_5 u: 1
+        rule: 292  ~event_t~5.6.0-EVENT_6 u: 
           line: 292 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t~5.7.0-EVENT_6 u: 1
-        rule: 299  ~event_t~5.8.0-EVENT_7 u: 
-          line: 299 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t~5.8.0-EVENT_7 u: 1
-        rule: 306  ~event_t~5.9.0-EVENT_8 u: 
-          line: 306 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t~5.9.0-EVENT_8 u: 1
-        rule: 314  ~event_t~5.10.0-EVENT_9 u: 
-          line: 314 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t~5.10.0-EVENT_9 u: 1
-        rule: 320  ~event_t~5.11.0-EVENT_10 u: 
-          line: 320 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t~5.11.0-EVENT_10 u: 1
-        rule: 325  ~event_t~5.12.0-CLUE2 u: 
+          Complexity of rule ~event_t~5.6.0-EVENT_6 u: 1
+        rule: 325  ~event_t~5.7.0-CLUE2 u: 
           line: 325 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~5.12.0-CLUE2 u: 1
-        rule: 327  ~event_t~5.13.0 u: 
-          Complexity of rule ~event_t~5.13.0- u: 1
+          Complexity of rule ~event_t~5.7.0-CLUE2 u: 1
+        rule: 327  ~event_t~5.8.0 u: 
+          Complexity of rule ~event_t~5.8.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_introduction.top
     topic: 1  ~introduction~5
         rule: 3  ~introduction~5.0.0 t: 
@@ -8035,245 +6757,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
         rule: 26  ~event_t~6.0.11 a: 
           line: 26 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~6.0.11- a: 1
-        rule: 30  ~event_t~6.1.0 u: 
-          line: 30 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~6.1.0- u: 1
-        rule: 32  ~event_t~6.1.1 a: 
-          line: 32 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~6.1.1- a: 1
-        rule: 33  ~event_t~6.1.2 b: 
-          line: 33 0  # Voll doof. 
-          Complexity of rule ~event_t~6.1.2- b: 1
-        rule: 34  ~event_t~6.1.3 b: 
-          line: 34 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~6.1.3- b: 1
-        rule: 35  ~event_t~6.1.4 b: 
-          line: 35 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~6.1.4- b: 1
-        rule: 36  ~event_t~6.1.5 b: 
-          line: 36 0  # $$sound_file = event11a Voll g
-          Complexity of rule ~event_t~6.1.5- b: 1
-        rule: 37  ~event_t~6.1.6 b: 
-          line: 37 0  # $$sound_file = event11a Voll g
-          Complexity of rule ~event_t~6.1.6- b: 1
-        rule: 38  ~event_t~6.1.7 b: 
-          line: 38 0  # $$sound_file = event11a Voll g
-          Complexity of rule ~event_t~6.1.7- b: 1
-        rule: 39  ~event_t~6.1.8 b: 
-          line: 39 0  # $$sound_file = event11a Weiß 
-          Complexity of rule ~event_t~6.1.8- b: 1
-        rule: 40  ~event_t~6.1.9 b: 
-          line: 40 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~6.1.9- b: 1
-        rule: 41  ~event_t~6.1.10 b: 
-          line: 41 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~6.1.10- b: 1
-        rule: 42  ~event_t~6.1.11 b: 
-          line: 42 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~6.1.11- b: 1
-        rule: 43  ~event_t~6.1.12 b: 
-          line: 43 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~6.1.12- b: 1
-        rule: 45  ~event_t~6.1.13 a: 
-          line: 45 0  # $$intent = other_opinion ^refi
-          Complexity of rule ~event_t~6.1.13- a: 1
-        rule: 46  ~event_t~6.1.14 b: 
-          line: 46 0  # ^reuse ( EVENT_6 ) 
-          Complexity of rule ~event_t~6.1.14- b: 1
-        rule: 47  ~event_t~6.1.15 b: 
-          line: 47 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.15- b: 1
-        rule: 49  ~event_t~6.1.16 a: 
-          line: 49 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~6.1.16- a: 1
-        rule: 50  ~event_t~6.1.17 b: 
-          line: 50 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.17- b: 1
-        rule: 51  ~event_t~6.1.18 b: 
-          line: 51 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.18- b: 1
-        rule: 52  ~event_t~6.1.19 b: 
-          line: 52 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.19- b: 1
-        rule: 53  ~event_t~6.1.20 b: 
-          line: 53 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.20- b: 1
-        rule: 54  ~event_t~6.1.21 b: 
-          line: 54 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.21- b: 1
-        rule: 55  ~event_t~6.1.22 b: 
-          line: 55 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.22- b: 1
-        rule: 56  ~event_t~6.1.23 b: 
-          line: 56 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.23- b: 1
-        rule: 57  ~event_t~6.1.24 b: 
-          line: 57 0  # Im Bus. 
-          Complexity of rule ~event_t~6.1.24- b: 1
-        rule: 58  ~event_t~6.1.25 b: 
-          line: 58 0  # Im Bus. 
-          Complexity of rule ~event_t~6.1.25- b: 1
-        rule: 59  ~event_t~6.1.26 b: 
-          line: 59 0  # Im Bus. 
-          Complexity of rule ~event_t~6.1.26- b: 1
-        rule: 60  ~event_t~6.1.27 b: 
-          line: 60 0  # In der Schule. 
-          Complexity of rule ~event_t~6.1.27- b: 1
-        rule: 62  ~event_t~6.1.28 a: 
-          line: 62 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~6.1.28- a: 1
-        rule: 63  ~event_t~6.1.29 b: 
-          line: 63 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.29- b: 1
-        rule: 64  ~event_t~6.1.30 b: 
-          line: 64 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.30- b: 1
-        rule: 65  ~event_t~6.1.31 b: 
-          line: 65 0  # Die Jungs. 
-          Complexity of rule ~event_t~6.1.31- b: 1
-        rule: 66  ~event_t~6.1.32 b: 
-          line: 66 0  # ^reuse ( EVENT_4 ) 
-          Complexity of rule ~event_t~6.1.32- b: 1
-        rule: 67  ~event_t~6.1.33 b: 
-          line: 67 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.33- b: 1
-        rule: 68  ~event_t~6.1.34 b: 
-          line: 68 0  # Julian 
-          Complexity of rule ~event_t~6.1.34- b: 1
-        rule: 69  ~event_t~6.1.35 b: 
-          line: 69 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.35- b: 1
-        rule: 70  ~event_t~6.1.36 b: 
-          line: 70 0  # Nur Julian und ich. 
-          Complexity of rule ~event_t~6.1.36- b: 1
-        rule: 71  ~event_t~6.1.37 b: 
-          line: 71 0  # Nur Julian und ich. 
-          Complexity of rule ~event_t~6.1.37- b: 1
-        rule: 72  ~event_t~6.1.38 b: 
-          line: 72 0  # Nur Julian und ich. 
-          Complexity of rule ~event_t~6.1.38- b: 1
-        rule: 73  ~event_t~6.1.39 b: 
-          line: 73 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.39- b: 1
-        rule: 75  ~event_t~6.1.40 a: 
-          line: 75 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~6.1.40- a: 1
-        rule: 76  ~event_t~6.1.41 b: 
-          line: 76 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.41- b: 1
-        rule: 77  ~event_t~6.1.42 b: 
-          line: 77 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.42- b: 1
-        rule: 78  ~event_t~6.1.43 b: 
-          line: 78 0  # ^reuse ( EVENT_3 ) 
-          Complexity of rule ~event_t~6.1.43- b: 1
-        rule: 79  ~event_t~6.1.44 b: 
-          line: 79 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.44- b: 1
-        rule: 80  ~event_t~6.1.45 b: 
-          line: 80 0  # ^reuse ( EVENT_5 ) 
-          Complexity of rule ~event_t~6.1.45- b: 1
-        rule: 81  ~event_t~6.1.46 b: 
-          line: 81 0  # ^reuse ( EVENT_6 ) 
-          Complexity of rule ~event_t~6.1.46- b: 1
-        rule: 82  ~event_t~6.1.47 b: 
-          line: 82 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.47- b: 1
-        rule: 83  ~event_t~6.1.48 b: 
-          line: 83 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.48- b: 1
-        rule: 84  ~event_t~6.1.49 b: 
-          line: 84 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.49- b: 1
-        rule: 85  ~event_t~6.1.50 b: 
-          line: 85 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.50- b: 1
-        rule: 86  ~event_t~6.1.51 b: 
-          line: 86 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~6.1.51- b: 1
-        rule: 88  ~event_t~6.1.52 a: 
-          line: 88 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~6.1.52- a: 1
-        rule: 89  ~event_t~6.1.53 b: 
-          line: 89 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.53- b: 1
-        rule: 91  ~event_t~6.1.54 a: 
-          line: 91 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~6.1.54- a: 1
-        rule: 92  ~event_t~6.1.55 b: 
-          line: 92 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.55- b: 1
-        rule: 93  ~event_t~6.1.56 b: 
-          line: 93 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.56- b: 1
-        rule: 94  ~event_t~6.1.57 b: 
-          line: 94 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.57- b: 1
-        rule: 95  ~event_t~6.1.58 b: 
-          line: 95 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.58- b: 1
-        rule: 96  ~event_t~6.1.59 b: 
-          line: 96 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.59- b: 1
-        rule: 97  ~event_t~6.1.60 b: 
-          line: 97 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.60- b: 1
-        rule: 98  ~event_t~6.1.61 b: 
-          line: 98 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.61- b: 1
-        rule: 99  ~event_t~6.1.62 b: 
-          line: 99 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.62- b: 1
-        rule: 100  ~event_t~6.1.63 b: 
-          line: 100 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.63- b: 1
-        rule: 101  ~event_t~6.1.64 b: 
-          line: 101 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.64- b: 1
-        rule: 103  ~event_t~6.1.65 a: 
-          line: 103 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~6.1.65- a: 1
-        rule: 104  ~event_t~6.1.66 b: 
-          line: 104 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~6.1.66- b: 1
-        rule: 106  ~event_t~6.1.67 a: 
-          line: 106 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~6.1.67- a: 1
-        rule: 272  ~event_t~6.2.0-EVENT_1 u: 
+        rule: 272  ~event_t~6.1.0-EVENT_1 u: 
           line: 272 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t~6.2.0-EVENT_1 u: 1
-        rule: 279  ~event_t~6.3.0-EVENT_2 u: 
+          Complexity of rule ~event_t~6.1.0-EVENT_1 u: 1
+        rule: 279  ~event_t~6.2.0-EVENT_2 u: 
           line: 279 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t~6.3.0-EVENT_2 u: 1
-        rule: 283  ~event_t~6.4.0-EVENT_3 u: 
+          Complexity of rule ~event_t~6.2.0-EVENT_2 u: 1
+        rule: 283  ~event_t~6.3.0-EVENT_3 u: 
           line: 283 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t~6.4.0-EVENT_3 u: 1
-        rule: 289  ~event_t~6.5.0-EVENT_4 u: 
+          Complexity of rule ~event_t~6.3.0-EVENT_3 u: 1
+        rule: 289  ~event_t~6.4.0-EVENT_4 u: 
           line: 289 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t~6.5.0-EVENT_4 u: 1
-        rule: 294  ~event_t~6.6.0-EVENT_5 u: 
+          Complexity of rule ~event_t~6.4.0-EVENT_4 u: 1
+        rule: 294  ~event_t~6.5.0-EVENT_5 u: 
           line: 294 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t~6.6.0-EVENT_5 u: 1
-        rule: 299  ~event_t~6.7.0-EVENT_6 u: 
+          Complexity of rule ~event_t~6.5.0-EVENT_5 u: 1
+        rule: 299  ~event_t~6.6.0-EVENT_6 u: 
           line: 299 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t~6.7.0-EVENT_6 u: 1
-        rule: 306  ~event_t~6.8.0-EVENT_7 u: 
-          line: 306 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t~6.8.0-EVENT_7 u: 1
-        rule: 312  ~event_t~6.9.0-EVENT_8 u: 
-          line: 312 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t~6.9.0-EVENT_8 u: 1
-        rule: 320  ~event_t~6.10.0-EVENT_9 u: 
-          line: 320 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t~6.10.0-EVENT_9 u: 1
-        rule: 326  ~event_t~6.11.0-EVENT_10 u: 
-          line: 326 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t~6.11.0-EVENT_10 u: 1
-        rule: 331  ~event_t~6.12.0-CLUE2 u: 
+          Complexity of rule ~event_t~6.6.0-EVENT_6 u: 1
+        rule: 331  ~event_t~6.7.0-CLUE2 u: 
           line: 331 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~6.12.0-CLUE2 u: 1
-        rule: 333  ~event_t~6.13.0 u: 
-          Complexity of rule ~event_t~6.13.0- u: 1
+          Complexity of rule ~event_t~6.7.0-CLUE2 u: 1
+        rule: 333  ~event_t~6.8.0 u: 
+          Complexity of rule ~event_t~6.8.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_introduction.top
     topic: 1  ~introduction~6
         rule: 3  ~introduction~6.0.0 t: 
@@ -9139,245 +7645,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/N
         rule: 28  ~event_t~7.0.13 a: 
           line: 28 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~7.0.13- a: 1
-        rule: 32  ~event_t~7.1.0 u: 
-          line: 32 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~7.1.0- u: 1
-        rule: 34  ~event_t~7.1.1 a: 
-          line: 34 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~7.1.1- a: 1
-        rule: 35  ~event_t~7.1.2 b: 
-          line: 35 0  # Ich weiß nicht. 
-          Complexity of rule ~event_t~7.1.2- b: 1
-        rule: 36  ~event_t~7.1.3 b: 
-          line: 36 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~7.1.3- b: 1
-        rule: 37  ~event_t~7.1.4 b: 
-          line: 37 0  # $$sound_file = event11a Keine 
-          Complexity of rule ~event_t~7.1.4- b: 1
-        rule: 38  ~event_t~7.1.5 b: 
-          line: 38 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~7.1.5- b: 1
-        rule: 39  ~event_t~7.1.6 b: 
-          line: 39 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~7.1.6- b: 1
-        rule: 40  ~event_t~7.1.7 b: 
-          line: 40 0  # $$sound_file = event11a Ganz o
-          Complexity of rule ~event_t~7.1.7- b: 1
-        rule: 41  ~event_t~7.1.8 b: 
-          line: 41 0  # $$sound_file = event11a Ganz o
-          Complexity of rule ~event_t~7.1.8- b: 1
-        rule: 42  ~event_t~7.1.9 b: 
-          line: 42 0  # $$sound_file = event12a Das wa
-          Complexity of rule ~event_t~7.1.9- b: 1
-        rule: 43  ~event_t~7.1.10 b: 
-          line: 43 0  # $$sound_file = event12a Das wa
-          Complexity of rule ~event_t~7.1.10- b: 1
-        rule: 44  ~event_t~7.1.11 b: 
-          line: 44 0  # $$sound_file = event12a Das wa
-          Complexity of rule ~event_t~7.1.11- b: 1
-        rule: 45  ~event_t~7.1.12 b: 
-          line: 45 0  # $$sound_file = event12a Ich we
-          Complexity of rule ~event_t~7.1.12- b: 1
-        rule: 47  ~event_t~7.1.13 a: 
-          line: 47 0  # $$intent = other_opinion ^refi
-          Complexity of rule ~event_t~7.1.13- a: 1
-        rule: 48  ~event_t~7.1.14 b: 
-          line: 48 0  # ^reuse ( EVENT_10 ) 
-          Complexity of rule ~event_t~7.1.14- b: 1
-        rule: 49  ~event_t~7.1.15 b: 
-          line: 49 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.15- b: 1
-        rule: 51  ~event_t~7.1.16 a: 
-          line: 51 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~7.1.16- a: 1
-        rule: 52  ~event_t~7.1.17 b: 
-          line: 52 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.17- b: 1
-        rule: 53  ~event_t~7.1.18 b: 
-          line: 53 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.18- b: 1
-        rule: 54  ~event_t~7.1.19 b: 
-          line: 54 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.19- b: 1
-        rule: 55  ~event_t~7.1.20 b: 
-          line: 55 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.20- b: 1
-        rule: 56  ~event_t~7.1.21 b: 
-          line: 56 0  # In mein Zimmer. 
-          Complexity of rule ~event_t~7.1.21- b: 1
-        rule: 57  ~event_t~7.1.22 b: 
-          line: 57 0  # In meinem Zimmer. 
-          Complexity of rule ~event_t~7.1.22- b: 1
-        rule: 58  ~event_t~7.1.23 b: 
-          line: 58 0  # In meinem Zimmer. 
-          Complexity of rule ~event_t~7.1.23- b: 1
-        rule: 59  ~event_t~7.1.24 b: 
-          line: 59 0  # In meinem Zimmer. 
-          Complexity of rule ~event_t~7.1.24- b: 1
-        rule: 60  ~event_t~7.1.25 b: 
-          line: 60 0  # In meinem Zimmer. 
-          Complexity of rule ~event_t~7.1.25- b: 1
-        rule: 61  ~event_t~7.1.26 b: 
-          line: 61 0  # In meinem Zimmer. 
-          Complexity of rule ~event_t~7.1.26- b: 1
-        rule: 62  ~event_t~7.1.27 b: 
-          line: 62 0  # In meinem Zimmer. 
-          Complexity of rule ~event_t~7.1.27- b: 1
-        rule: 64  ~event_t~7.1.28 a: 
-          line: 64 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~7.1.28- a: 1
-        rule: 65  ~event_t~7.1.29 b: 
-          line: 65 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.29- b: 1
-        rule: 66  ~event_t~7.1.30 b: 
-          line: 66 0  # Oleg. 
-          Complexity of rule ~event_t~7.1.30- b: 1
-        rule: 67  ~event_t~7.1.31 b: 
-          line: 67 0  # Oleg. 
-          Complexity of rule ~event_t~7.1.31- b: 1
-        rule: 68  ~event_t~7.1.32 b: 
-          line: 68 0  # Oleg. 
-          Complexity of rule ~event_t~7.1.32- b: 1
-        rule: 69  ~event_t~7.1.33 b: 
-          line: 69 0  # Oleg. 
-          Complexity of rule ~event_t~7.1.33- b: 1
-        rule: 70  ~event_t~7.1.34 b: 
-          line: 70 0  # Oleg und ich. 
-          Complexity of rule ~event_t~7.1.34- b: 1
-        rule: 71  ~event_t~7.1.35 b: 
-          line: 71 0  # Oleg und ich. 
-          Complexity of rule ~event_t~7.1.35- b: 1
-        rule: 72  ~event_t~7.1.36 b: 
-          line: 72 0  # Oleg. 
-          Complexity of rule ~event_t~7.1.36- b: 1
-        rule: 73  ~event_t~7.1.37 b: 
-          line: 73 0  # Oleg. 
-          Complexity of rule ~event_t~7.1.37- b: 1
-        rule: 74  ~event_t~7.1.38 b: 
-          line: 74 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.38- b: 1
-        rule: 75  ~event_t~7.1.39 b: 
-          line: 75 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.39- b: 1
-        rule: 77  ~event_t~7.1.40 a: 
-          line: 77 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~7.1.40- a: 1
-        rule: 78  ~event_t~7.1.41 b: 
-          line: 78 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.41- b: 1
-        rule: 79  ~event_t~7.1.42 b: 
-          line: 79 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.42- b: 1
-        rule: 80  ~event_t~7.1.43 b: 
-          line: 80 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.43- b: 1
-        rule: 81  ~event_t~7.1.44 b: 
-          line: 81 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.44- b: 1
-        rule: 82  ~event_t~7.1.45 b: 
-          line: 82 0  # ^reuse ( EVENT_5 ) 
-          Complexity of rule ~event_t~7.1.45- b: 1
-        rule: 83  ~event_t~7.1.46 b: 
-          line: 83 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.46- b: 1
-        rule: 84  ~event_t~7.1.47 b: 
-          line: 84 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.47- b: 1
-        rule: 85  ~event_t~7.1.48 b: 
-          line: 85 0  # ^reuse ( EVENT_8 ) 
-          Complexity of rule ~event_t~7.1.48- b: 1
-        rule: 86  ~event_t~7.1.49 b: 
-          line: 86 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.49- b: 1
-        rule: 87  ~event_t~7.1.50 b: 
-          line: 87 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.50- b: 1
-        rule: 88  ~event_t~7.1.51 b: 
-          line: 88 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~7.1.51- b: 1
-        rule: 90  ~event_t~7.1.52 a: 
-          line: 90 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~7.1.52- a: 1
-        rule: 91  ~event_t~7.1.53 b: 
-          line: 91 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.53- b: 1
-        rule: 93  ~event_t~7.1.54 a: 
-          line: 93 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~7.1.54- a: 1
-        rule: 94  ~event_t~7.1.55 b: 
-          line: 94 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.55- b: 1
-        rule: 95  ~event_t~7.1.56 b: 
-          line: 95 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.56- b: 1
-        rule: 96  ~event_t~7.1.57 b: 
-          line: 96 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.57- b: 1
-        rule: 97  ~event_t~7.1.58 b: 
-          line: 97 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.58- b: 1
-        rule: 98  ~event_t~7.1.59 b: 
-          line: 98 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.59- b: 1
-        rule: 99  ~event_t~7.1.60 b: 
-          line: 99 0  # Das ist ein Zeichentrickfilm. 
-          Complexity of rule ~event_t~7.1.60- b: 1
-        rule: 100  ~event_t~7.1.61 b: 
-          line: 100 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.61- b: 1
-        rule: 101  ~event_t~7.1.62 b: 
-          line: 101 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.62- b: 1
-        rule: 102  ~event_t~7.1.63 b: 
-          line: 102 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.63- b: 1
-        rule: 103  ~event_t~7.1.64 b: 
-          line: 103 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.64- b: 1
-        rule: 105  ~event_t~7.1.65 a: 
-          line: 105 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~7.1.65- a: 1
-        rule: 106  ~event_t~7.1.66 b: 
-          line: 106 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~7.1.66- b: 1
-        rule: 108  ~event_t~7.1.67 a: 
-          line: 108 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~7.1.67- a: 1
-        rule: 269  ~event_t~7.2.0-EVENT_1 u: 
+        rule: 269  ~event_t~7.1.0-EVENT_1 u: 
           line: 269 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t~7.2.0-EVENT_1 u: 1
-        rule: 276  ~event_t~7.3.0-EVENT_2 u: 
+          Complexity of rule ~event_t~7.1.0-EVENT_1 u: 1
+        rule: 276  ~event_t~7.2.0-EVENT_2 u: 
           line: 276 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t~7.3.0-EVENT_2 u: 1
-        rule: 280  ~event_t~7.4.0-EVENT_3 u: 
+          Complexity of rule ~event_t~7.2.0-EVENT_2 u: 1
+        rule: 280  ~event_t~7.3.0-EVENT_3 u: 
           line: 280 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t~7.4.0-EVENT_3 u: 1
-        rule: 286  ~event_t~7.5.0-EVENT_4 u: 
+          Complexity of rule ~event_t~7.3.0-EVENT_3 u: 1
+        rule: 286  ~event_t~7.4.0-EVENT_4 u: 
           line: 286 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t~7.5.0-EVENT_4 u: 1
-        rule: 291  ~event_t~7.6.0-EVENT_5 u: 
+          Complexity of rule ~event_t~7.4.0-EVENT_4 u: 1
+        rule: 291  ~event_t~7.5.0-EVENT_5 u: 
           line: 291 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t~7.6.0-EVENT_5 u: 1
-        rule: 296  ~event_t~7.7.0-EVENT_6 u: 
+          Complexity of rule ~event_t~7.5.0-EVENT_5 u: 1
+        rule: 296  ~event_t~7.6.0-EVENT_6 u: 
           line: 296 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t~7.7.0-EVENT_6 u: 1
-        rule: 303  ~event_t~7.8.0-EVENT_7 u: 
-          line: 303 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t~7.8.0-EVENT_7 u: 1
-        rule: 309  ~event_t~7.9.0-EVENT_8 u: 
-          line: 309 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t~7.9.0-EVENT_8 u: 1
-        rule: 317  ~event_t~7.10.0-EVENT_9 u: 
-          line: 317 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t~7.10.0-EVENT_9 u: 1
-        rule: 323  ~event_t~7.11.0-EVENT_10 u: 
-          line: 323 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t~7.11.0-EVENT_10 u: 1
-        rule: 328  ~event_t~7.12.0-CLUE2 u: 
+          Complexity of rule ~event_t~7.6.0-EVENT_6 u: 1
+        rule: 328  ~event_t~7.7.0-CLUE2 u: 
           line: 328 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~7.12.0-CLUE2 u: 1
-        rule: 330  ~event_t~7.13.0 u: 
-          Complexity of rule ~event_t~7.13.0- u: 1
+          Complexity of rule ~event_t~7.7.0-CLUE2 u: 1
+        rule: 330  ~event_t~7.8.0 u: 
+          Complexity of rule ~event_t~7.8.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_introduction.top
     topic: 1  ~introduction~7
         rule: 3  ~introduction~7.0.0 t: 
@@ -10406,235 +8696,29 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
         rule: 58  ~event_t~8.1.15 a: 
           line: 58 0  # $$intent = places_together $$s
           Complexity of rule ~event_t~8.1.15- a: 1
-        rule: 62  ~event_t~8.2.0 u: 
-          line: 62 0  # ^keep ( ) ^refine ( ) 
-          Complexity of rule ~event_t~8.2.0- u: 1
-        rule: 64  ~event_t~8.2.1 a: 
-          line: 64 0  # $$intent = personal_opinion ^r
-          Complexity of rule ~event_t~8.2.1- a: 1
-        rule: 65  ~event_t~8.2.2 b: 
-          line: 65 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~8.2.2- b: 1
-        rule: 66  ~event_t~8.2.3 b: 
-          Complexity of rule ~event_t~8.2.3- b: 1
-        rule: 67  ~event_t~8.2.4 b: 
-          line: 67 0  # $$sound_file = event11a Das ma
-          Complexity of rule ~event_t~8.2.4- b: 1
-        rule: 68  ~event_t~8.2.5 b: 
-          line: 68 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~8.2.5- b: 1
-        rule: 69  ~event_t~8.2.6 b: 
-          line: 69 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~8.2.6- b: 1
-        rule: 70  ~event_t~8.2.7 b: 
-          line: 70 0  # $$sound_file = event11a Voll d
-          Complexity of rule ~event_t~8.2.7- b: 1
-        rule: 71  ~event_t~8.2.8 b: 
-          line: 71 0  # $$sound_file = event12a SVoll 
-          Complexity of rule ~event_t~8.2.8- b: 1
-        rule: 72  ~event_t~8.2.9 b: 
-          line: 72 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~8.2.9- b: 1
-        rule: 73  ~event_t~8.2.10 b: 
-          line: 73 0  # $$sound_file = event12a Voll e
-          Complexity of rule ~event_t~8.2.10- b: 1
-        rule: 74  ~event_t~8.2.11 b: 
-          line: 74 0  # $$sound_file = event12a Voll d
-          Complexity of rule ~event_t~8.2.11- b: 1
-        rule: 76  ~event_t~8.2.12 a: 
-          line: 76 0  # $$intent = other_opinion $$ans
-          Complexity of rule ~event_t~8.2.12- a: 1
-        rule: 78  ~event_t~8.2.13 a: 
-          line: 78 0  # $$intent = place ^refine ( ) 
-          Complexity of rule ~event_t~8.2.13- a: 1
-        rule: 79  ~event_t~8.2.14 b: 
-          line: 79 0  # In Sport. 
-          Complexity of rule ~event_t~8.2.14- b: 1
-        rule: 80  ~event_t~8.2.15 b: 
-          line: 80 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.15- b: 1
-        rule: 81  ~event_t~8.2.16 b: 
-          line: 81 0  # In Sport. 
-          Complexity of rule ~event_t~8.2.16- b: 1
-        rule: 82  ~event_t~8.2.17 b: 
-          line: 82 0  # In Sport. 
-          Complexity of rule ~event_t~8.2.17- b: 1
-        rule: 83  ~event_t~8.2.18 b: 
-          line: 83 0  # In Sport. 
-          Complexity of rule ~event_t~8.2.18- b: 1
-        rule: 84  ~event_t~8.2.19 b: 
-          line: 84 0  # In Sport. 
-          Complexity of rule ~event_t~8.2.19- b: 1
-        rule: 85  ~event_t~8.2.20 b: 
-          line: 85 0  # In Sport. 
-          Complexity of rule ~event_t~8.2.20- b: 1
-        rule: 86  ~event_t~8.2.21 b: 
-          line: 86 0  # ^reuse ( EVENT_8 ) 
-          Complexity of rule ~event_t~8.2.21- b: 1
-        rule: 87  ~event_t~8.2.22 b: 
-          line: 87 0  # In der Sporthalle. 
-          Complexity of rule ~event_t~8.2.22- b: 1
-        rule: 88  ~event_t~8.2.23 b: 
-          line: 88 0  # In der Umkleide. 
-          Complexity of rule ~event_t~8.2.23- b: 1
-        rule: 89  ~event_t~8.2.24 b: 
-          line: 89 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.24- b: 1
-        rule: 91  ~event_t~8.2.25 a: 
-          line: 91 0  # $$intent = individual ^refine 
-          Complexity of rule ~event_t~8.2.25- a: 1
-        rule: 92  ~event_t~8.2.26 b: 
-          line: 92 0  # $answercategory = ignorance ^r
-          Complexity of rule ~event_t~8.2.26- b: 1
-        rule: 93  ~event_t~8.2.27 b: 
-          line: 93 0  # $answercategory = ignorance ^r
-          Complexity of rule ~event_t~8.2.27- b: 1
-        rule: 94  ~event_t~8.2.28 b: 
-          line: 94 0  # $answercategory = ignorance ^r
-          Complexity of rule ~event_t~8.2.28- b: 1
-        rule: 95  ~event_t~8.2.29 b: 
-          line: 95 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.29- b: 1
-        rule: 96  ~event_t~8.2.30 b: 
-          line: 96 0  # $answercategory = ignorance ^r
-          Complexity of rule ~event_t~8.2.30- b: 1
-        rule: 97  ~event_t~8.2.31 b: 
-          line: 97 0  # $answercategory = ignorance ^r
-          Complexity of rule ~event_t~8.2.31- b: 1
-        rule: 98  ~event_t~8.2.32 b: 
-          line: 98 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.32- b: 1
-        rule: 99  ~event_t~8.2.33 b: 
-          line: 99 0  # Herr Moritz 
-          Complexity of rule ~event_t~8.2.33- b: 1
-        rule: 100  ~event_t~8.2.34 b: 
-          line: 100 0  # Herr Moritz 
-          Complexity of rule ~event_t~8.2.34- b: 1
-        rule: 101  ~event_t~8.2.35 b: 
-          line: 101 0  # Herr Moritz 
-          Complexity of rule ~event_t~8.2.35- b: 1
-        rule: 102  ~event_t~8.2.36 b: 
-          line: 102 0  # David. 
-          Complexity of rule ~event_t~8.2.36- b: 1
-        rule: 104  ~event_t~8.2.37 a: 
-          line: 104 0  # $$intent = reason ^refine ( ) 
-          Complexity of rule ~event_t~8.2.37- a: 1
-        rule: 105  ~event_t~8.2.38 b: 
-          line: 105 0  # ^reuse ( EVENT_2 ) 
-          Complexity of rule ~event_t~8.2.38- b: 1
-        rule: 106  ~event_t~8.2.39 b: 
-          line: 106 0  # ^reuse ( EVENT_2 ) 
-          Complexity of rule ~event_t~8.2.39- b: 1
-        rule: 107  ~event_t~8.2.40 b: 
-          line: 107 0  # ^reuse ( EVENT_3 ) 
-          Complexity of rule ~event_t~8.2.40- b: 1
-        rule: 108  ~event_t~8.2.41 b: 
-          line: 108 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.41- b: 1
-        rule: 109  ~event_t~8.2.42 b: 
-          line: 109 0  # ^reuse ( EVENT_5 ) 
-          Complexity of rule ~event_t~8.2.42- b: 1
-        rule: 110  ~event_t~8.2.43 b: 
-          line: 110 0  # ^reuse ( EVENT_6 ) 
-          Complexity of rule ~event_t~8.2.43- b: 1
-        rule: 111  ~event_t~8.2.44 b: 
-          line: 111 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.44- b: 1
-        rule: 112  ~event_t~8.2.45 b: 
-          line: 112 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.45- b: 1
-        rule: 113  ~event_t~8.2.46 b: 
-          line: 113 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.46- b: 1
-        rule: 114  ~event_t~8.2.47 b: 
-          line: 114 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.47- b: 1
-        rule: 115  ~event_t~8.2.48 b: 
-          line: 115 0  # $$answercategory = ignorance ^
-          Complexity of rule ~event_t~8.2.48- b: 1
-        rule: 117  ~event_t~8.2.49 a: 
-          line: 117 0  # $$intent = example ^refine ( )
-          Complexity of rule ~event_t~8.2.49- a: 1
-        rule: 118  ~event_t~8.2.50 b: 
-          line: 118 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.50- b: 1
-        rule: 120  ~event_t~8.2.51 a: 
-          line: 120 0  # $$intent = explanation ^refine
-          Complexity of rule ~event_t~8.2.51- a: 1
-        rule: 121  ~event_t~8.2.52 b: 
-          line: 121 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.52- b: 1
-        rule: 122  ~event_t~8.2.53 b: 
-          line: 122 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.53- b: 1
-        rule: 123  ~event_t~8.2.54 b: 
-          line: 123 0  # Da muss man die anderen abwerf
-          Complexity of rule ~event_t~8.2.54- b: 1
-        rule: 124  ~event_t~8.2.55 b: 
-          line: 124 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.55- b: 1
-        rule: 125  ~event_t~8.2.56 b: 
-          line: 125 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.56- b: 1
-        rule: 126  ~event_t~8.2.57 b: 
-          line: 126 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.57- b: 1
-        rule: 127  ~event_t~8.2.58 b: 
-          line: 127 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.58- b: 1
-        rule: 128  ~event_t~8.2.59 b: 
-          line: 128 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.59- b: 1
-        rule: 129  ~event_t~8.2.60 b: 
-          line: 129 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.60- b: 1
-        rule: 130  ~event_t~8.2.61 b: 
-          line: 130 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.61- b: 1
-        rule: 132  ~event_t~8.2.62 a: 
-          line: 132 0  # $$intent = follow_up ^refine (
-          Complexity of rule ~event_t~8.2.62- a: 1
-        rule: 133  ~event_t~8.2.63 b: 
-          line: 133 0  # $$nextanswer = yes 
-          Complexity of rule ~event_t~8.2.63- b: 1
-        rule: 135  ~event_t~8.2.64 a: 
-          line: 135 0  # $$question = '_0 ^log ( FILE U
-          Complexity of rule ~event_t~8.2.64- a: 1
-        rule: 271  ~event_t~8.3.0-EVENT_1 u: 
+        rule: 271  ~event_t~8.2.0-EVENT_1 u: 
           line: 271 0  # $eventcounter = 1 $clue = 0 $$
-          Complexity of rule ~event_t~8.3.0-EVENT_1 u: 1
-        rule: 278  ~event_t~8.4.0-EVENT_2 u: 
+          Complexity of rule ~event_t~8.2.0-EVENT_1 u: 1
+        rule: 278  ~event_t~8.3.0-EVENT_2 u: 
           line: 278 0  # $eventcounter = 2 $clue = 0 $$
-          Complexity of rule ~event_t~8.4.0-EVENT_2 u: 1
-        rule: 282  ~event_t~8.5.0-EVENT_3 u: 
+          Complexity of rule ~event_t~8.3.0-EVENT_2 u: 1
+        rule: 282  ~event_t~8.4.0-EVENT_3 u: 
           line: 282 0  # $eventcounter = 3 $clue = 0 $$
-          Complexity of rule ~event_t~8.5.0-EVENT_3 u: 1
-        rule: 288  ~event_t~8.6.0-EVENT_4 u: 
+          Complexity of rule ~event_t~8.4.0-EVENT_3 u: 1
+        rule: 288  ~event_t~8.5.0-EVENT_4 u: 
           line: 288 0  # $eventcounter = 4 $clue = 0 $$
-          Complexity of rule ~event_t~8.6.0-EVENT_4 u: 1
-        rule: 293  ~event_t~8.7.0-EVENT_5 u: 
+          Complexity of rule ~event_t~8.5.0-EVENT_4 u: 1
+        rule: 293  ~event_t~8.6.0-EVENT_5 u: 
           line: 293 0  # $eventcounter = 5 $clue = 0 $$
-          Complexity of rule ~event_t~8.7.0-EVENT_5 u: 1
-        rule: 298  ~event_t~8.8.0-EVENT_6 u: 
+          Complexity of rule ~event_t~8.6.0-EVENT_5 u: 1
+        rule: 298  ~event_t~8.7.0-EVENT_6 u: 
           line: 298 0  # $eventcounter = 6 $clue = 0 $$
-          Complexity of rule ~event_t~8.8.0-EVENT_6 u: 1
-        rule: 305  ~event_t~8.9.0-EVENT_7 u: 
-          line: 305 0  # $eventcounter = 7 $clue = 0 $$
-          Complexity of rule ~event_t~8.9.0-EVENT_7 u: 1
-        rule: 312  ~event_t~8.10.0-EVENT_8 u: 
-          line: 312 0  # $eventcounter = 8 $clue = 0 $$
-          Complexity of rule ~event_t~8.10.0-EVENT_8 u: 1
-        rule: 320  ~event_t~8.11.0-EVENT_9 u: 
-          line: 320 0  # $eventcounter = 9 $clue = 0 $$
-          Complexity of rule ~event_t~8.11.0-EVENT_9 u: 1
-        rule: 326  ~event_t~8.12.0-EVENT_10 u: 
-          line: 326 0  # $eventcounter = 10 $clue = 0 $
-          Complexity of rule ~event_t~8.12.0-EVENT_10 u: 1
-        rule: 331  ~event_t~8.13.0-CLUE2 u: 
+          Complexity of rule ~event_t~8.7.0-EVENT_6 u: 1
+        rule: 331  ~event_t~8.8.0-CLUE2 u: 
           line: 331 0  # $clue = 1 $$sound_file = event
-          Complexity of rule ~event_t~8.13.0-CLUE2 u: 1
-        rule: 333  ~event_t~8.14.0 u: 
-          Complexity of rule ~event_t~8.14.0- u: 1
+          Complexity of rule ~event_t~8.8.0-CLUE2 u: 1
+        rule: 333  ~event_t~8.9.0 u: 
+          Complexity of rule ~event_t~8.9.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_introduction.top
     topic: 1  ~introduction~8
         rule: 3  ~introduction~8.0.0 t: 
@@ -10826,167 +8910,199 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           Complexity of rule ~quibble~8.1.0- u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorial.top
     topic: 1  ~tutorial
-        rule: 4  ~tutorial.0.0-TRIAL1 t: 
-          line: 4 0  # blau 
-          Complexity of rule ~tutorial.0.0-TRIAL1 t: 1
+        rule: 4  ~tutorial.0.0-TRIALX t: 
+          line: 4 0  # Schluss 
+          Complexity of rule ~tutorial.0.0-TRIALX t: 1
         rule: 5  ~tutorial.0.1 a: 
           line: 5 0  # $$correct = 1 $sumcorrect += 1
           Complexity of rule ~tutorial.0.1- a: 1
         rule: 6  ~tutorial.0.2 a: 
           line: 6 0  # $$correct = 0 Das war falsch. 
           Complexity of rule ~tutorial.0.2- a: 1
-        rule: 8  ~tutorial.1.0-TRIAL2 t: 
-          line: 8 0  # grün 
-          Complexity of rule ~tutorial.1.0-TRIAL2 t: 1
-        rule: 9  ~tutorial.1.1 a: 
-          line: 9 0  # $$correct = 1 $sumcorrect += 1
-          Complexity of rule ~tutorial.1.1- a: 1
-        rule: 10  ~tutorial.1.2 a: 
-          line: 10 0  # $$correct = 0 Das war falsch. 
-          Complexity of rule ~tutorial.1.2- a: 1
-        rule: 12  ~tutorial.2.0-TRIAL3 t: 
-          line: 12 0  # rot 
-          Complexity of rule ~tutorial.2.0-TRIAL3 t: 1
-        rule: 13  ~tutorial.2.1 a: 
-          line: 13 0  # $$correct = 1 $sumcorrect += 1
-          Complexity of rule ~tutorial.2.1- a: 1
-        rule: 14  ~tutorial.2.2 a: 
-          line: 14 0  # $$correct = 0 Das war falsch. 
-          Complexity of rule ~tutorial.2.2- a: 1
-        rule: 16  ~tutorial.3.0-TRIAL4 t: 
-          line: 16 0  # braun 
-          Complexity of rule ~tutorial.3.0-TRIAL4 t: 1
-        rule: 17  ~tutorial.3.1 a: 
-          line: 17 0  # $$correct = 1 $sumcorrect += 1
-          Complexity of rule ~tutorial.3.1- a: 1
-        rule: 18  ~tutorial.3.2 a: 
-          line: 18 0  # $$correct = 0 Das war falsch. 
-          Complexity of rule ~tutorial.3.2- a: 1
-        rule: 21  ~tutorial.4.0-TRIAL5 t: 
-          line: 21 0  # schwarz 
-          Complexity of rule ~tutorial.4.0-TRIAL5 t: 1
-        rule: 22  ~tutorial.4.1 a: 
-          line: 22 0  # $$correct = 1 $sumcorrect += 1
-          Complexity of rule ~tutorial.4.1- a: 1
-        rule: 23  ~tutorial.4.2 a: 
-          line: 23 0  # $$correct = 0 Das war falsch. 
-          Complexity of rule ~tutorial.4.2- a: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorialconcepts.top
     topic: 1  ~own_concepts
-    concept: 3  ~trial1
-    concept: 4  ~buzz1
-    concept: 5  ~trial2
-    concept: 6  ~buzz2
-    concept: 7  ~trial3
-    concept: 8  ~buzz3
-    concept: 9  ~trial4
-    concept: 10  ~buzz4
-    concept: 11  ~trial5
-    concept: 12  ~buzz5
-    concept: 13  ~trial6
-    concept: 14  ~buzz6
+    concept: 3  ~trial0
+    concept: 4  ~buzz0
+    concept: 5  ~trial1
+    concept: 6  ~buzz1
+    concept: 7  ~trial2
+    concept: 8  ~buzz2
+    concept: 9  ~trial3
+    concept: 10  ~buzz3
+    concept: 11  ~trial4
+    concept: 12  ~buzz4
+    concept: 13  ~trial5
+    concept: 14  ~buzz5
+    concept: 15  ~trial6
+    concept: 16  ~buzz6
+    concept: 17  ~trial7
+    concept: 18  ~buzz7
+    concept: 19  ~trial8
+    concept: 20  ~buzz8
+    concept: 21  ~trial9
+    concept: 22  ~buzz9
+    concept: 23  ~trial10
+    concept: 24  ~buzz10
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIAL/d_introduction.top
     topic: 1  ~introduction~9
         rule: 5  ~introduction~9.0.0- t: 
-          line: 5 0  # ^tutorialstart ( ) 
-          line: 7 19  # Hallo! Ich bin Tutorial-Bot. V
+          line: 5 0  # $trialnr = 0 
+          line: 6 13  # ^tutorialstart ( ) 
+          line: 7 32  # ^jsonresults ( ~trial0 ~buzz0 
+          line: 9 64  # Hallo! Ich bin Tutorial-Bot. V
           Complexity of rule ~introduction~9.0.0- t: 1
-        rule: 10  ~introduction~9.1.0-TRIAL1 u: 
-          line: 10 0  # $trialnr = 1 
-          line: 11 13  # ^createtrialobjects ( ~trial1 
-          line: 12 45  # ^wordcomparison ( $trialnr ) 
-          line: 13 74  # ^buzzcomparison ( ) 
+        rule: 16  ~introduction~9.1.0-TRIAL1 u: 
+          line: 16 0  # ^jsonresults ( ~trial1 ~buzz1 
           Complexity of rule ~introduction~9.1.0-TRIAL1 u: 1
+        rule: 18  ~introduction~9.2.0-TRIAL2 u: 
+          line: 18 0  # ^jsonresults ( ~trial2 ~buzz2 
+          Complexity of rule ~introduction~9.2.0-TRIAL2 u: 1
+        rule: 20  ~introduction~9.3.0-TRIAL3 u: 
+          line: 20 0  # ^jsonresults ( ~trial3 ~buzz3 
+          Complexity of rule ~introduction~9.3.0-TRIAL3 u: 1
+        rule: 22  ~introduction~9.4.0-TRIAL4 u: 
+          line: 22 0  # ^jsonresults ( ~trial4 ~buzz4 
+          Complexity of rule ~introduction~9.4.0-TRIAL4 u: 1
+        rule: 24  ~introduction~9.5.0-TRIAL5 u: 
+          line: 24 0  # ^jsonresults ( ~trial5 ~buzz5 
+          Complexity of rule ~introduction~9.5.0-TRIAL5 u: 1
+        rule: 26  ~introduction~9.6.0-TRIAL6 u: 
+          line: 26 0  # ^jsonresults ( ~trial6 ~buzz6 
+          Complexity of rule ~introduction~9.6.0-TRIAL6 u: 1
+        rule: 28  ~introduction~9.7.0-TRIAL7 u: 
+          line: 28 0  # ^jsonresults ( ~trial7 ~buzz7 
+          Complexity of rule ~introduction~9.7.0-TRIAL7 u: 1
+        rule: 30  ~introduction~9.8.0-TRIAL8 u: 
+          line: 30 0  # ^jsonresults ( ~trial8 ~buzz8 
+          Complexity of rule ~introduction~9.8.0-TRIAL8 u: 1
+        rule: 32  ~introduction~9.9.0-TRIAL9 u: 
+          line: 32 0  # ^jsonresults ( ~trial9 ~buzz9 
+          Complexity of rule ~introduction~9.9.0-TRIAL9 u: 1
+        rule: 34  ~introduction~9.10.0-TRIAL10 u: 
+          Complexity of rule ~introduction~9.10.0-TRIAL10 u: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorialmacros.top
     macro: 1  ^tutorialstart
-          line: 2 0  # $counter = 0 
-          line: 3 13  # $count = 0 
-          line: 4 24  # $trialdata = ^jsoncreate ( arr
+          line: 3 0  # $counter = 0 
+          line: 4 13  # $count = 0 
+          line: 5 24  # $trialdata = ^jsoncreate ( arr
+          line: 8 59  # $_i = 0 
+          loop 9 73  
+          line: 9 67  # ^loop ( 1 ) aaa { 
+          line: 10 85  # $_i += 1 
+          line: 11 94  # $sentence = ^join ( "$sentence
+          line: 13 132  # $_trial = ^join ( \~trial $_i 
+          loop 15 170  
+          line: 15 164  # ^loop ( -1 ) aaa { 
+          line: 16 183  # $$word = ^iterator ( ? member 
+          line: 18 223  # $sentence1 = ^join ( AUTOSPACE
+          loopend 19 276  
+          line: 19 274  # } 
+          loopend 21 278  
+          line: 21 276  # } 
           Complexity of ^tutorialstart: 1
-    macro: 7  ^createtrialobjects
-          line: 9 0  # $_tlength = ^length ( $_whicht
-          line: 10 37  # $_ilength = ^length ( %origina
-          line: 11 76  # $_diffit = $_ilength - $_tleng
-          loop 13 115  
-          line: 13 109  # ^loop ( -1 ) aaa { 
-          line: 14 128  # $$word = ^iterator ( ? member 
-          line: 15 173  # $trial = ^jsoncreate ( object 
-          line: 16 205  # $trial.matchword = $$word 
-          line: 17 231  # ^jsonarrayinsert ( $trialdata 
-          loopend 18 272  
-          line: 18 270  # } 
-          line: 19 272  # $_i = 0 
-          line: 20 280  # $_counter = 1 
-          loop 21 300  
-          line: 21 294  # ^loop ( $_ilength ) aaa { 
-          line: 22 320  # $trialdata[$_i].inputword = ^w
-          line: 23 384  # $_i += 1 
-          line: 24 393  # $_counter += 1 
-          loopend 25 410  
-          line: 25 408  # } 
-          if 27 414  
-          line: 27 410  # ^if 00t( $_ilength > $_tlength
-          loop 28 454  
-          line: 28 448  # ^loop ( $_diffit ) aaa { 
-          line: 29 473  # $trial = ^jsoncreate ( object 
-          line: 30 505  # $trial.inputword = ^wordatinde
-          line: 31 560  # $trial.matchword = "NaN" 
-          line: 32 585  # ^jsonarrayinsert ( $trialdata 
-          line: 33 624  # $_counter += 1 
-          loopend 34 641  
-          line: 34 639  # } 
-          ifend 35 646  
-          line: 35 641  # } 004 
+    macro: 23  ^createtrialobjects
+          line: 26 0  # $_tlength = ^length ( $_whicht
+          line: 27 37  # $_ilength = ^length ( %origina
+          line: 28 76  # $_diffit = $_ilength - $_tleng
+          loop 31 115  
+          line: 31 109  # ^loop ( -1 ) aaa { 
+          line: 32 128  # $$word = ^iterator ( ? member 
+          line: 33 173  # $trial = ^jsoncreate ( object 
+          line: 34 205  # $trial.matchword = $$word 
+          line: 35 231  # ^jsonarrayinsert ( $trialdata 
+          loopend 36 272  
+          line: 36 270  # } 
+          line: 39 272  # $_i = 0 
+          line: 40 280  # $_counter = 1 
+          loop 41 300  
+          line: 41 294  # ^loop ( $_ilength ) aaa { 
+          line: 42 320  # $trialdata[$_i].inputword = ^w
+          line: 43 384  # $_i += 1 
+          line: 44 393  # $_counter += 1 
+          loopend 45 410  
+          line: 45 408  # } 
+          if 48 414  
+          line: 48 410  # ^if 00t( $_ilength > $_tlength
+          loop 49 454  
+          line: 49 448  # ^loop ( $_diffit ) aaa { 
+          line: 50 473  # $trial = ^jsoncreate ( object 
+          line: 51 505  # $trial.inputword = ^wordatinde
+          line: 52 560  # $trial.matchword = "NaN" 
+          line: 53 585  # ^jsonarrayinsert ( $trialdata 
+          line: 54 624  # $_counter += 1 
+          loopend 55 641  
+          line: 55 639  # } 
+          ifend 56 646  
+          line: 56 641  # } 004 
           Complexity of ^createtrialobjects: 2
-    macro: 38  ^wordcomparison
-          line: 39 0  # $_i = 0 
-          loop 40 14  
-          line: 40 8  # ^loop ( ^length ( $trialdata )
-          if 41 51  
-          line: 41 47  # ^if 00~( $trialdata[$_i].input
-          line: 42 118  # $trialdata[$_i].correct = "tru
-          else 43 162  
-          line: 43 151  # } aaa else ( 1 ) aaa { 
-          line: 44 174  # $trialdata[$_i].correct = "fal
-          ifend 45 213  
-          line: 45 208  # } 004 
-          line: 46 214  # $_wordnr = $_i + 1 
-          line: 47 233  # $trialdata[$_i].wordnr = ^"\"$
-          line: 48 274  # $trialdata[$_i].trialnr = ^"\"
-          line: 49 317  # $_i += 1 
-          loopend 50 328  
-          line: 50 326  # } 
-          Complexity of ^wordcomparison: 2
-    macro: 52  ^buzzcomparison
-          line: 53 0  # $buzz = ^jsoncreate ( object )
-          line: 54 31  # $buzz.buzzword1 = "x" 
-          line: 55 53  # $buzz.buzz1correct = "true" 
-          line: 56 81  # $buzz.buzzword2 = "y" 
-          line: 57 103  # $buzz.buzz2correct = "false" 
-          line: 58 132  # $buzz.buzzword3 = "z" 
-          line: 59 154  # $buzz.buzz3correct = "false" 
-          line: 60 183  # $buzz.accuracy = "22%" 
-          line: 62 206  # ^jsonarrayinsert ( $trialdata 
-          line: 64 244  # $next = ^jsoncreate ( object )
-          line: 65 275  # $next.nextsentence = "das hier
-          line: 67 325  # ^jsonarrayinsert ( $trialdata 
-          Complexity of ^buzzcomparison: 1
-    macro: 71  ^results
-          line: 72 0  # $counter += 1 
-          line: 73 14  # $trial = ^jsoncreate ( object 
-          line: 75 46  # $trial.inputword = ^wordatinde
-          line: 76 100  # $trial.matchword = $trialdata.
-          if 78 146  
-          line: 78 142  # ^if 00I( $trial.inputword == $
-          line: 79 195  # $trial.correct = "true" } aaa 
-          else 80 230  
-          line: 80 225  # else ( 1 ) aaa { 
-          line: 81 242  # $trial.correct = "false" 
-          ifend 82 272  
-          line: 82 267  # } 004 
-          line: 84 273  # $trial.wordnr = $counter 
-          line: 85 298  # $trial.trialnr = $trialnr 
-          Complexity of ^results: 2
+    macro: 59  ^wordcomparison
+          line: 60 0  # $_i = 0 
+          loop 61 14  
+          line: 61 8  # ^loop ( ^length ( $trialdata )
+          if 62 51  
+          line: 62 47  # ^if 00~( $trialdata[$_i].input
+          line: 63 118  # $trialdata[$_i].correct = "tru
+          elseif 64 162  
+          line: 64 151  # } aaa else 00F( $trialdata[$_i
+          line: 65 208  # $trialdata[$_i].inputword = "N
+          line: 66 242  # $trialdata[$_i].correct = "fal
+          else 67 287  
+          line: 67 276  # } aaa else ( 1 ) aaa { 
+          line: 68 299  # $trialdata[$_i].correct = "fal
+          ifend 69 338  
+          line: 69 333  # } 004 
+          line: 70 339  # $_wordnr = $_i + 1 
+          line: 71 358  # $trialdata[$_i].wordnr = ^"\"$
+          line: 72 399  # $trialdata[$_i].trialnr = ^"\"
+          line: 73 441  # $_i += 1 
+          loopend 74 452  
+          line: 74 450  # } 
+          Complexity of ^wordcomparison: 3
+    macro: 76  ^buzzcomparison
+          line: 79 0  # $buzz = ^jsoncreate ( object )
+          line: 80 31  # $_counter = 1 
+          line: 81 45  # $_accuracy = 0 
+          loop 83 66  
+          line: 83 60  # ^loop ( -1 ) aaa { 
+          line: 84 79  # $_buzzkey = ^join ( buzzword $
+          line: 85 120  # $_buzzcorrect = ^join ( buzz $
+          line: 86 169  # $$buzzword = ^iterator ( ? mem
+          line: 87 217  # $buzz.$_buzzkey = $$buzzword 
+          if 88 250  
+          line: 88 246  # ^if 00N( ^findtext ( %original
+          line: 89 304  # $buzz.$_buzzcorrect = "true" 
+          line: 90 333  # $_accuracy += 1 
+          else 91 360  
+          line: 91 349  # } aaa else ( 1 ) aaa { 
+          line: 92 372  # $buzz.$_buzzcorrect = "false" 
+          ifend 93 407  
+          line: 93 402  # } 004 
+          line: 94 408  # $_counter += 1 
+          loopend 95 425  
+          line: 95 423  # } 
+          line: 97 425  # $buzzaccuracy = 100 / 3 * $_ac
+          line: 98 462  # $buzz.buzzaccuracy = ^join ( \
+          line: 99 518  # ^jsonarrayinsert ( $trialdata 
+          Complexity of ^buzzcomparison: 2
+    macro: 101  ^nexttrial
+          line: 102 0  # $next = ^jsoncreate ( object )
+          if 103 35  
+          line: 103 31  # ^if 00m( $trialnr == 10 ) aaa{
+          line: 104 62  # $next.nextsentence = end 
+          else 105 98  
+          line: 105 87  # } aaa else ( 1 ) aaa { 
+          line: 106 110  # $next.nextsentence = ^join ( A
+          ifend 107 171  
+          line: 107 166  # } 004 
+          line: 108 172  # ^jsonarrayinsert ( $trialdata 
+          Complexity of ^nexttrial: 2
+    macro: 113  ^jsonresults
+          line: 114 0  # ^createtrialobjects ( $_trial 
+          line: 115 32  # ^wordcomparison ( ) 
+          line: 116 52  # ^buzzcomparison ( $_buzz ) 
+          line: 117 79  # ^nexttrial ( ) 
+          line: 118 94  # $trialnr += 1 
+          Complexity of ^jsonresults: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_emohandler.top
     macro: 2  ^emohandler
           if 4 4  
@@ -11282,17 +9398,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 222 0  # $lastoutput = ^response ( 1 ) 
           Complexity of rule ~addposthoc.2.0- t: 1
         rule: 225  ~addposthoc.3.0 t: 
-          line: 225 0  # ^accuracy ( ) 
-          Complexity of rule ~addposthoc.3.0- t: 1
+          if 225 4  
+          ifend 225 55  
+          line: 225 0  # ^if 00m( ! $$sound_file ) 00u{
+          Complexity of rule ~addposthoc.3.0- t: 2
         rule: 226  ~addposthoc.4.0 t: 
-          if 226 4  
-          ifend 226 55  
-          line: 226 0  # ^if 00m( ! $$sound_file ) 00u{
-          Complexity of rule ~addposthoc.4.0- t: 2
-        rule: 227  ~addposthoc.5.0 t: 
-          line: 227 0  # ^oob ( ) 
-          line: 228 9  # ^postprintbefore ( \[ $$oob \]
-          Complexity of rule ~addposthoc.5.0- t: 1
+          line: 226 0  # ^oob ( ) 
+          line: 227 9  # ^postprintbefore ( \[ $$oob \]
+          Complexity of rule ~addposthoc.4.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_revelationHandler.top
     macro: 1  ^revelationhandler
           if 4 4  
@@ -11307,70 +9420,67 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 5 69  # ^settag ( $$wordindex $$concep
           line: 6 103  # ^setcanon ( $$wordindex _2 ) 
           Complexity of ^myfunc: 1
-    macro: 12  ^accuracy
-          line: 15 0  # $accuracy = $sumcorrect / 5 * 
-          Complexity of ^accuracy: 1
-    macro: 19  ^oob
-          if 21 4  
-          ifend 21 61  
-          line: 21 0  # ^if 00r( $rapportcounter > 5 )
-          if 23 66  
-          ifend 23 126  
-          line: 23 62  # ^if 00t( $rapportcounter == -6
-          line: 26 127  # $_topic = %topic 
-          line: 27 144  # $_revelationstate = $revelatio
-          line: 28 181  # $_rapportcounter = $rapportcou
-          line: 29 216  # $_goodquestion = $goodquestion
-          line: 30 247  # $_probformat = $$probformat 
-          line: 31 275  # $_answercategory = $$answercat
-          line: 32 311  # $_actiontype = $$actiontype 
-          line: 33 339  # $_emotype = $$emotype 
-          line: 34 361  # $_topicswitch = $$topicswitch 
-          line: 35 391  # $_randomnumber = $$randnum 
-          line: 36 418  # $_chatphase = $chatphase 
-          line: 37 443  # $_critrevealed = $$critreveale
-          line: 38 475  # $_noncrittopic = $noncrittopic
-          line: 39 506  # $_intent = $$intent 
-          line: 40 526  # $_soundfile = $$sound_file 
-          line: 41 553  # $_sumcorrect = $sumcorrect 
-          line: 44 580  # $_item1name = topic 
-          line: 45 600  # $_item1value = $_topic 
-          line: 46 623  # $_item2name = answerCategory 
-          line: 47 652  # $_item2value = $_answercategor
-          line: 48 684  # $_item3name = probFormat 
-          line: 49 709  # $_item3value = $_probformat 
-          line: 50 737  # $_item4name = goodQuestion 
-          line: 51 764  # $_item4value = $_goodquestion 
-          line: 52 794  # $_item5name = emoType 
-          line: 53 816  # $_item5value = $_emotype 
-          line: 54 841  # $_item6name = rapportCounter 
-          line: 55 870  # $_item6value = $_rapportcounte
-          line: 56 902  # $_item7name = revelationState 
-          line: 57 932  # $_item7value = $_revelationsta
-          line: 58 965  # $_item8name = chatPhase 
-          line: 59 989  # $_item8value = $_chatphase 
-          line: 60 1016  # $_item9name = randomNumber 
-          line: 61 1043  # $_item9value = $_randomnumber 
-          line: 62 1073  # $_item10name = topicSwitch 
-          line: 63 1100  # $_item10value = $_topicswitch 
-          line: 64 1130  # $_item11name = critRevealed 
-          line: 65 1158  # $_item11value = $_critrevealed
-          line: 66 1189  # $_item12name = noncritTopic 
-          line: 67 1217  # $_item12value = $_noncrittopic
-          line: 68 1248  # $_item13name = intent 
-          line: 69 1270  # $_item13value = $_intent 
-          line: 70 1295  # $_item14name = soundFile 
-          line: 71 1320  # $_item14value = $_soundfile 
-          line: 72 1348  # $_item15name = sumCorrect 
-          line: 73 1374  # $_item15value = $_sumcorrect 
-          line: 79 1403  # $$oob = ^join ( $_item1name : 
+    macro: 13  ^oob
+          if 15 4  
+          ifend 15 61  
+          line: 15 0  # ^if 00r( $rapportcounter > 5 )
+          if 17 66  
+          ifend 17 126  
+          line: 17 62  # ^if 00t( $rapportcounter == -6
+          line: 20 127  # $_topic = %topic 
+          line: 21 144  # $_revelationstate = $revelatio
+          line: 22 181  # $_rapportcounter = $rapportcou
+          line: 23 216  # $_goodquestion = $goodquestion
+          line: 24 247  # $_probformat = $$probformat 
+          line: 25 275  # $_answercategory = $$answercat
+          line: 26 311  # $_actiontype = $$actiontype 
+          line: 27 339  # $_emotype = $$emotype 
+          line: 28 361  # $_topicswitch = $$topicswitch 
+          line: 29 391  # $_randomnumber = $$randnum 
+          line: 30 418  # $_chatphase = $chatphase 
+          line: 31 443  # $_critrevealed = $$critreveale
+          line: 32 475  # $_noncrittopic = $noncrittopic
+          line: 33 506  # $_intent = $$intent 
+          line: 34 526  # $_soundfile = $$sound_file 
+          line: 35 553  # $_sumcorrect = $sumcorrect 
+          line: 38 580  # $_item1name = topic 
+          line: 39 600  # $_item1value = $_topic 
+          line: 40 623  # $_item2name = answerCategory 
+          line: 41 652  # $_item2value = $_answercategor
+          line: 42 684  # $_item3name = probFormat 
+          line: 43 709  # $_item3value = $_probformat 
+          line: 44 737  # $_item4name = goodQuestion 
+          line: 45 764  # $_item4value = $_goodquestion 
+          line: 46 794  # $_item5name = emoType 
+          line: 47 816  # $_item5value = $_emotype 
+          line: 48 841  # $_item6name = rapportCounter 
+          line: 49 870  # $_item6value = $_rapportcounte
+          line: 50 902  # $_item7name = revelationState 
+          line: 51 932  # $_item7value = $_revelationsta
+          line: 52 965  # $_item8name = chatPhase 
+          line: 53 989  # $_item8value = $_chatphase 
+          line: 54 1016  # $_item9name = randomNumber 
+          line: 55 1043  # $_item9value = $_randomnumber 
+          line: 56 1073  # $_item10name = topicSwitch 
+          line: 57 1100  # $_item10value = $_topicswitch 
+          line: 58 1130  # $_item11name = critRevealed 
+          line: 59 1158  # $_item11value = $_critrevealed
+          line: 60 1189  # $_item12name = noncritTopic 
+          line: 61 1217  # $_item12value = $_noncrittopic
+          line: 62 1248  # $_item13name = intent 
+          line: 63 1270  # $_item13value = $_intent 
+          line: 64 1295  # $_item14name = soundFile 
+          line: 65 1320  # $_item14value = $_soundfile 
+          line: 66 1348  # $_item15name = sumCorrect 
+          line: 67 1374  # $_item15value = $_sumcorrect 
+          line: 73 1403  # $$oob = ^join ( $_item1name : 
           Complexity of ^oob: 3
-    topic: 83  ~xpostagsentence
-        rule: 84  ~xpostagsentence.0.0 t: 
+    topic: 77  ~xpostagsentence
+        rule: 78  ~xpostagsentence.0.0 t: 
           Complexity of rule ~xpostagsentence.0.0- t: 1
-        rule: 85  ~xpostagsentence.1.0 t: 
-          line: 86 0  # $$wordindex = 0 
-          line: 87 16  # ^log ( FILE chat.txt NEW '_0 )
+        rule: 79  ~xpostagsentence.1.0 t: 
+          line: 80 0  # $$wordindex = 0 
+          line: 81 16  # ^log ( FILE chat.txt NEW '_0 )
           Complexity of rule ~xpostagsentence.1.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_reactance.top
     topic: 1  ~reactance
@@ -11965,60 +10075,12 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_
           line: 345 12  # ^if 00m( '_0 == rapport ) 00w{
           line: 346 70  # $$probformat = specific-100 
           Complexity of rule ~prob_answer.14.0- u: 2
-        rule: 347  ~prob_answer.14.1 a: 
-          line: 347 0  # $$answercategory = specific Al
-          Complexity of rule ~prob_answer.14.1- a: 1
-        rule: 350  ~prob_answer.14.2 a: 
-          line: 350 0  # $$answercategory = specific We
-          Complexity of rule ~prob_answer.14.2- a: 1
-        rule: 353  ~prob_answer.14.3 a: 
-          line: 353 0  # $$answercategory = specific Vo
-          Complexity of rule ~prob_answer.14.3- a: 1
-        rule: 356  ~prob_answer.14.4 a: 
-          line: 356 0  # $$answercategory = specific Vo
-          Complexity of rule ~prob_answer.14.4- a: 1
-        rule: 359  ~prob_answer.14.5 a: 
-          line: 359 0  # $$answercategory = specific Da
-          Complexity of rule ~prob_answer.14.5- a: 1
-        rule: 362  ~prob_answer.14.6 a: 
-          line: 362 0  # $$answercategory = specific De
-          Complexity of rule ~prob_answer.14.6- a: 1
-        rule: 365  ~prob_answer.14.7 a: 
-          line: 365 0  # $$answercategory = specific Da
-          Complexity of rule ~prob_answer.14.7- a: 1
-        rule: 368  ~prob_answer.14.8 a: 
-          line: 368 0  # $$answercategory = specific Le
-          Complexity of rule ~prob_answer.14.8- a: 1
         rule: 372  ~prob_answer.15.0 u: 
           if 373 4  
           ifend 373 57  
           line: 373 0  # ^if 00m( '_0 == rapport ) 00w{
           line: 374 58  # $$probformat = specific-100 
           Complexity of rule ~prob_answer.15.0- u: 2
-        rule: 375  ~prob_answer.15.1 a: 
-          line: 375 0  # $$answercategory = specific Da
-          Complexity of rule ~prob_answer.15.1- a: 1
-        rule: 378  ~prob_answer.15.2 a: 
-          line: 378 0  # $$answercategory = specific Ei
-          Complexity of rule ~prob_answer.15.2- a: 1
-        rule: 381  ~prob_answer.15.3 a: 
-          line: 381 0  # $$answercategory = specific Ta
-          Complexity of rule ~prob_answer.15.3- a: 1
-        rule: 384  ~prob_answer.15.4 a: 
-          line: 384 0  # $$answercategory = specific Da
-          Complexity of rule ~prob_answer.15.4- a: 1
-        rule: 387  ~prob_answer.15.5 a: 
-          line: 387 0  # $$answercategory = specific Na
-          Complexity of rule ~prob_answer.15.5- a: 1
-        rule: 390  ~prob_answer.15.6 a: 
-          line: 390 0  # $$answercategory = specific Er
-          Complexity of rule ~prob_answer.15.6- a: 1
-        rule: 393  ~prob_answer.15.7 a: 
-          line: 393 0  # $$answercategory = specific Ja
-          Complexity of rule ~prob_answer.15.7- a: 1
-        rule: 396  ~prob_answer.15.8 a: 
-          line: 396 0  # $$answercategory = specific Da
-          Complexity of rule ~prob_answer.15.8- a: 1
         rule: 399  ~prob_answer.16.0 u: 
           if 400 4  
           ifend 400 57  

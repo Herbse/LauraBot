@@ -1,26 +1,10 @@
 topic: ~tutorial bot=tutorial  keep repeat ()
 
 
-t: TRIAL1 () blau
+t: TRIALX () Schluss
     a: (blau) $$correct=1 $sumcorrect += 1 Das war richtig. 
     a: (_*) $$correct=0 Das war falsch. Ich habe nämlich '_0 verstanden. 
 
-t: TRIAL2 () grün
-    a: (grün) $$correct=1 $sumcorrect += 1 Das war richtig.
-    a: (_*) $$correct=0 Das war falsch. Ich habe nämlich '_0 verstanden. 
-
-t: TRIAL3 () rot
-    a: (rot) $$correct=1 $sumcorrect += 1 Das war richtig. 
-    a: (_*) $$correct=0 Das war falsch. Ich habe nämlich '_0 verstanden. 
-
-t: TRIAL4 () braun
-    a: (braun) $$correct=1 $sumcorrect += 1 Das war richtig. 
-    a: (_*) $$correct=0 Das war falsch. Ich habe nämlich '_0 verstanden. 
-
-
-t: TRIAL5 () schwarz
-    a: (schwarz) $$correct=1 $sumcorrect += 1 Das war richtig. 
-    a: (_*) $$correct=0 Das war falsch. Ich habe nämlich '_0 verstanden. 
 
 
 
