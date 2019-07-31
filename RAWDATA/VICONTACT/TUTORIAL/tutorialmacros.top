@@ -121,4 +121,4 @@ outputmacro: ^jsonresults($_trial $_buzz)
 ^buzzcomparison($_buzz)
 ^nexttrial()
 $trialnr += 1
-^jsontree($trialdata)
+^jsonwrite($trialdata)
