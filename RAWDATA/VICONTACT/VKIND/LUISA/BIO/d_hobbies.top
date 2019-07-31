@@ -1,32 +1,6 @@
 topic: ~hobbies_t ()
 # Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
 
-#specific questions/answers depending on general context
-u: () ^keep() ^refine()
-    # name
-    a: (^names()) $$intent=names $$sound_file = 1 Claudia.
-    # age
-    a: (^age()) $$intent=age $$sound_file = 2 Weiß ich nicht.
-    # mood
-    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
-    # job
-    a: (^job()) $$intent=job $$sound_file = 4 In einer Praxis.
-    # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Das ist meine Stiefschwester.
-    # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Die ist voll witzig.
-    # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = 7 Bei der Gruppe
-    # time relationship
-    a: (^time()) $$intent=time_relationship Seit ich zur Gruppe gehe.
-    # activity together
-    a: (^activity_together()) $$intent=activity_together ^reuse(hobbies_1)
-    # activity
-    a: (^activity()) $$intent=activity $$sound_file = 8 Die macht unsere Gruppe.
-    # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = 9 Bei der Gruppe
-    
-
 
 #specific questions/answers depending on what narrative answer was given before
 u: () ^keep() ^refine()

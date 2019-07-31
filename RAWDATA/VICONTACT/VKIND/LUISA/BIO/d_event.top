@@ -11,7 +11,7 @@ u: () ^keep() ^refine()
     # job
     a: (^job()) $$intent=job $$sound_file = event4 
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Der ist der Busfahrer.
+    a: (^relationship_f()) $$intent=relationship_f Der geht in meine Klasse.
     # relationship_o
     a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Ich mag Julian nicht.
     # time together
