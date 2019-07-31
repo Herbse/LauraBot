@@ -35,13 +35,13 @@ u: () ^keep() ^refine()
     # job
     a: (^job()) $$intent=job Weiß nicht.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Seit ich Papa kenne.
+    a: (^relationship_f()) $$intent=relationship_f Das ist meine Tante.
     # relationship_o
     a: (^relationship_o()) $$intent=relationship_o Sie ist voll okay.
     # time together
     a: (^time_together()) $$intent=time_together In meiner Freizeit und am Wochenende.
     # time relationship
-    a: (^time()) $$intent=time_relationship 
+    a: (^time()) $$intent=time_relationship Seit ich Papa kenne.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^refine()
         b: ($auntCounter==1) ^reuse(AUNT_2)

@@ -12,7 +12,7 @@ u: () ^keep() ^refine()
     # job
     a: (^job()) $$intent=job $$sound_file = 4 In einer Praxis.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Das ist meine Stiefschwester.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Die macht unsere Gruppe.
     # relationship_o
     a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Die ist voll witzig.
     # time together

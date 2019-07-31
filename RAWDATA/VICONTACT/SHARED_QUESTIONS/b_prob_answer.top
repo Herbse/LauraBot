@@ -3,7 +3,11 @@ topic: ~prob_answer keep repeat nostay()
 
 # LI: BASIS | 60% narrative | 20% non-answer | 10% ignorance | 10% reactance
 # LI: MAX   | 80% narrative | 10% non-answer |  5% ignorance |  5% reactance
-u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} invitation_to_tell) ^refine() $goodQuestion += 1 $noncritTopic += 1 
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} invitation_to_tell) ^refine()
+    if ('_0==rapport){$rapportCounter += 1}
+    else if ('_1==demand){$rapportCounter += 1}
+    else if ('_2==transparency){$rapportCounter += 1}
+    $goodQuestion += 1 $noncritTopic += 1 
     if ('_0==rapport) {$rapportCounter += 1}
     a: ($rapportCounter==-5)
         $$probFormat = narrative-40_notAnswering-30_ignorance-15_reactance-15
@@ -85,8 +89,10 @@ u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rappo
 
 
 # SI: 80% narrative | 10% non-answer | 10 % ignorance
-u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} invitation_to_tell) 
+u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency} invitation_to_tell) 
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = narrative-80_notAnswering-10_ignorance-10
 $$randNum = %rand
 if ($$randNum < 80) {$$answerCategory = narrative ^respond(~narrative)}
@@ -96,7 +102,11 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 # LI: 40% narrative(same topic) | 25% affirmation? | 25% non-answer | 10% reactance ->WENN ERSCHÖPFT 50% ignorance | 25% non-answer | 25% reactance
 # HIER NOCH DIE KODIERUNG FÜR SAME UND DIFFERENT TOPIC EINBAUEN
-u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} facilitator) if ('_0==rapport){$rapportCounter += 1} ^refine() $goodQuestion += 1 $noncritTopic += 1
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} facilitator) ^refine()
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1} 
+$goodQuestion += 1 $noncritTopic += 1
     a: ($rapportCounter==-5)
         $$probFormat = narrative-20_affirmation-30_notAnswering-30_reactance-20
         $$randNum = %rand
@@ -175,8 +185,10 @@ u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rappo
         else if ($$randNum < 100) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
 
-u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport}  facilitator) 
+u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency}  facilitator) 
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = narrative-60_affirmation-20_notAnswering-20
 $$randNum = %rand
 if ($$randNum < 60) {$$answerCategory = narrative ^respond(~narrative)}
@@ -194,8 +206,10 @@ else {$$answerCategory = notAnswering ^respond(~notAnswering)}
 
 
 # LI: 60% specific answer | 20% non-answer | 10% ignorance | 10% reactance
-u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} specific) ^refine() $goodQuestion += 1 $noncritTopic += 1
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} specific) ^refine() $goodQuestion += 1 $noncritTopic += 1
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
     a: ($rapportCounter==-5)
         $$probFormat = specific-40_notAnswering-30_ignorance-15_reactance-15
         $$randNum = %rand
@@ -274,8 +288,10 @@ if ('_0==rapport){$rapportCounter += 1}
         else if ($$randNum < 95) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
 
-u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} specific)
+u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency} specific)
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = specific-80_notAnswering-10_ignorance-10
 $$randNum = %rand
 if ($$randNum < 80) {$$answerCategory = specific ^respond(~specific)}
@@ -285,8 +301,10 @@ else {$$answerCategory = ignorance ^respond(~ignorance))
 
 
 # 80% option-choosen | 10% non-answer | 10% ignorance
-u: ({_rapport} choice_question)
+u: ({_rapport} {_demand} {_transparency} choice_question)
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $noncritTopic += 1
 $$probFormat = option_chosen-80_notAnswering-10_ignorance-10
 $$randNum = %rand 
@@ -296,8 +314,10 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 
 # 50% affirmation | 30% negation | 20% ignorance
-u: ({_rapport} yes_no_question) 
+u: ({_rapport} {_demand} {_transparency} yes_no_question) 
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $noncritTopic += 1
 $$probFormat = affirmation-50_negation-30_ignorance-20
 $$randNum = %rand
@@ -307,8 +327,10 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 
 # 90% incomprehension | 10% reactance 
-u: ({_rapport} unknowable_question) 
+u: ({_rapport} {_demand} {_transparency} unknowable_question) 
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = incomprehension-90_reactance-10
 $$randNum = %rand
 if ($$randNum < 90){$$answerCategory = incomprehension ^respond(~incomprehension)} 
@@ -341,8 +363,10 @@ else if ($$randNum < 90){$$answerCategory = negation ^respond(~negat)}
 else if ($$randNum < 95){$$answerCategory = ignorance ^respond(~ignorance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
-u: ({_rapport} relevance) ^refine()
+u: ({_rapport} {_demand} {_transparency} relevance) ^refine()
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = specific-100 
 #a   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Als wir neulich im Schwimmbad waren.
 #b   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Letztes Mal war an Mamas Geburtstag.
@@ -369,8 +393,10 @@ $$probFormat = specific-100
 #b   a: ($cs_bot=simon_si) $$answerCategory = specific Vor drei Wochen oder so.
 #c   a: ($cs_bot=simon_si) $$answerCategory = specific Am Montag.
 
-u: ({_rapport} frequency)
+u: ({_rapport} {_demand} {_transparency} frequency)
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = specific-100
 #a   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Das war nur einmal.
 #b   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Wenn er sauer ist halt. Schon ein paar mal.
@@ -396,23 +422,61 @@ $$probFormat = specific-100
 #a   a: ($cs_bot=simon_si) $$answerCategory = specific Das war nur einmal.
 #b   a: ($cs_bot=simon_si) $$answerCategory = specific Das war nur einmal.
 #c   a: ($cs_bot=simon_si) $$answerCategory = specific Immer passiert mir das.
-u: ({_rapport} information)
+
+u: ({_rapport} {_demand} {_transparency} information)
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = affirmation-100
 $$answerCategory = affirmation ^respond(~affirmation)
 
-u: ({_rapport} support)
+u: ({_rapport} {_demand} {_transparency} disclosure)
 if ('_0==rapport){$rapportCounter += 1}
-$$probFormat = negation-100
-$$answerCategory = negation ^respond(~negat)
-
-u: ({_rapport} revelation)
-if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = specific-100
 $$answerCategory = specific Nein, noch niemand.
 
-u: ({_rapport} intro)
+u: ({_rapport} {_demand} {_transparency} availability)
 if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = greetings-100
 $$answerCategory = greetings Hm. 
+
+u: ({_rapport} {_demand} {_transparency} introduction)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation ^respond(~affirmation)
+
+u: ({_rapport} {_demand} {_transparency} greetings)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = greetings-100
+$$answerCategory = greetings Hallo
+
+u: ({_rapport} {_demand} {_transparency} support finish)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = negation-100
+$$answerCategory = negation ^respond(~negat)
+
+u: ({_rapport} {_demand} {_transparency} finish)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation ^respond(~affirmation)
+
+u: ({_rapport} {_demand} {_transparency} discharge)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = discharge-100
+$$answerCategory = discharge Tschüs.
+
 
