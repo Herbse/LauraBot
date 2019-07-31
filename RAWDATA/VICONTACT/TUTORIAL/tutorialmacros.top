@@ -21,9 +21,6 @@ loop(10){
     $_tmp = null
     ^jsonarrayinsert(PERMANENT $sentencedata $sentence)
 }
-$sentencedata[1]
-$sentencedata[2]
-$sentencedata[3]
 
 outputmacro: ^createtrialobjects($_whichtrial)
 
