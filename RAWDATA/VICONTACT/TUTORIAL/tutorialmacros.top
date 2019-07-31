@@ -5,20 +5,25 @@ $count=0
 $trialdata=^jsoncreate(array)
 
 # sentence data
+$sentencedata=^jsoncreate(array)
 $_i=0
-loop(1){
-     $_i += 1
-    $sentence = ^join("$sentence" $_i)
+loop(10){
+    $_i += 1
+    $sentence=^jsoncreate(PERMANENT object)
     # $sentence
-    $_trial = ^join("~" trial $_i)
-    # $_trial
+    $_trial = ^join( \~ trial $_i)
     loop(){
     $$word = ^Iterator(? member $_trial)
     # $$word
-    $sentence1 = ^join(AUTOSPACE $sentence1 $$word)
+    $_tmp = ^join(AUTOSPACE $_tmp $$word)
     }
-    
+    $sentence = $_tmp
+    $_tmp = null
+    ^jsonarrayinsert(PERMANENT $sentencedata $sentence)
 }
+$sentencedata[1]
+$sentencedata[2]
+$sentencedata[3]
 
 outputmacro: ^createtrialobjects($_whichtrial)
 
@@ -103,7 +108,7 @@ $next = ^jsoncreate(object)
 if ($trialnr==10) {
 $next.nextsentence = end
 } else {
-   $next.nextsentence = ^join(AUTOSPACE das hier ist ein test satz)
+   $next.nextsentence = $sentencedata[$trialnr]
 }
 ^jsonarrayinsert($trialdata $next)
 
@@ -116,4 +121,4 @@ outputmacro: ^jsonresults($_trial $_buzz)
 ^buzzcomparison($_buzz)
 ^nexttrial()
 $trialnr += 1
-^jsonwrite($trialdata)
+^jsontree($trialdata)

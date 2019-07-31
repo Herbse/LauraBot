@@ -19,6 +19,8 @@ moritz
 schaller
 test
 satz
+post
+wochenende
 sound
 zoo
 rapport
