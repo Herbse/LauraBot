@@ -37,13 +37,24 @@ loop(){
     ^jsonarrayinsert($trialdata $trial)
     }
 
-# put the inputword in the corresponding object of same positioned matchword
+# put the inputword in the corresponding object of same positioned matchword//get rid of <UNK> kaldi problem
 $_i = 0
 $_counter= 1
 loop($_ilength){
-$trialdata[$_i].inputword = ^wordatindex(original $_counter)
-$_i += 1
-$_counter += 1
+    $_inputword = ^wordatindex(original $_counter)
+    if ($_inputword==">") {
+        $trialdata[$_i].inputword = "unknown"
+        $_i += 1
+        $_counter += 1
+    } else if ($_inputword=="<"){
+        $_counter += 1
+    } else if ($_inputword=="UNK"){
+        $_counter += 1
+    } else {
+        $trialdata[$_i].inputword = $_inputword
+        $_i += 1
+        $_counter += 1
+    }
 }
 
 # if input is longer than the trial length, than add a "NaN"-matchword for the additional objects
@@ -87,7 +98,7 @@ loop(){
     $_buzzcorrect = ^join(buzz $_counter correct)
     $$buzzword = ^Iterator(? member $_whichbuzz)
     $buzz.$_buzzkey = $$buzzword
-    if (^findtext(%originalinput $$buzzword 0)) {
+    if (^findtext(%originalinput $$buzzword 0 insensitive)) {
         $buzz.$_buzzcorrect = "true"
         $_accuracy += 1
     } else {

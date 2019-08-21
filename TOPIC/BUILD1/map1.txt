@@ -9734,92 +9734,108 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
           line: 42 280  # $_counter = 1 
           loop 43 300  
           line: 43 294  # ^loop ( $_ilength ) aaa { 
-          line: 44 320  # $trialdata[$_i].inputword = ^w
-          line: 45 384  # $_i += 1 
-          line: 46 393  # $_counter += 1 
-          loopend 47 410  
-          line: 47 408  # } 
-          if 50 414  
-          line: 50 410  # ^if 00t( $_ilength > $_tlength
-          loop 51 454  
-          line: 51 448  # ^loop ( $_diffit ) aaa { 
-          line: 52 473  # $trial = ^jsoncreate ( object 
-          line: 53 505  # $trial.inputword = ^wordatinde
-          line: 54 560  # $trial.matchword = "NaN" 
-          line: 55 585  # ^jsonarrayinsert ( $trialdata 
-          line: 56 624  # $_counter += 1 
-          loopend 57 641  
-          line: 57 639  # } 
-          ifend 58 646  
-          line: 58 641  # } 004 
-          Complexity of ^createtrialobjects: 2
-    macro: 61  ^wordcomparison
-          line: 62 0  # $_i = 0 
-          loop 63 14  
-          line: 63 8  # ^loop ( ^length ( $trialdata )
-          if 64 51  
-          line: 64 47  # ^if 00~( $trialdata[$_i].input
-          line: 65 118  # $trialdata[$_i].correct = "tru
-          elseif 66 162  
-          line: 66 151  # } aaa else 00F( $trialdata[$_i
-          line: 67 208  # $trialdata[$_i].inputword = "N
-          line: 68 242  # $trialdata[$_i].correct = "fal
-          else 69 287  
-          line: 69 276  # } aaa else ( 1 ) aaa { 
-          line: 70 299  # $trialdata[$_i].correct = "fal
-          ifend 71 338  
-          line: 71 333  # } 004 
-          line: 72 339  # $_wordnr = $_i + 1 
-          line: 73 358  # $trialdata[$_i].wordnr = ^"\"$
-          line: 74 399  # $trialdata[$_i].trialnr = ^"\"
-          line: 75 441  # $_i += 1 
-          loopend 76 452  
-          line: 76 450  # } 
+          line: 44 320  # $_inputword = ^wordatindex ( o
+          if 45 374  
+          line: 45 370  # ^if 00q( $_inputword == ">" ) 
+          line: 46 405  # $trialdata[$_i].inputword = "u
+          line: 47 443  # $_i += 1 
+          line: 48 452  # $_counter += 1 
+          elseif 49 478  
+          line: 49 467  # } aaa else 00q( $_inputword ==
+          line: 50 509  # $_counter += 1 
+          elseif 51 535  
+          line: 51 524  # } aaa else 00s( $_inputword ==
+          line: 52 568  # $_counter += 1 
+          else 53 594  
+          line: 53 583  # } aaa else ( 1 ) aaa { 
+          line: 54 606  # $trialdata[$_i].inputword = $_
+          line: 55 646  # $_i += 1 
+          line: 56 655  # $_counter += 1 
+          ifend 57 675  
+          line: 57 670  # } 004 
+          loopend 58 678  
+          line: 58 676  # } 
+          if 61 682  
+          line: 61 678  # ^if 00t( $_ilength > $_tlength
+          loop 62 722  
+          line: 62 716  # ^loop ( $_diffit ) aaa { 
+          line: 63 741  # $trial = ^jsoncreate ( object 
+          line: 64 773  # $trial.inputword = ^wordatinde
+          line: 65 828  # $trial.matchword = "NaN" 
+          line: 66 853  # ^jsonarrayinsert ( $trialdata 
+          line: 67 892  # $_counter += 1 
+          loopend 68 909  
+          line: 68 907  # } 
+          ifend 69 914  
+          line: 69 909  # } 004 
+          Complexity of ^createtrialobjects: 5
+    macro: 72  ^wordcomparison
+          line: 73 0  # $_i = 0 
+          loop 74 14  
+          line: 74 8  # ^loop ( ^length ( $trialdata )
+          if 75 51  
+          line: 75 47  # ^if 00~( $trialdata[$_i].input
+          line: 76 118  # $trialdata[$_i].correct = "tru
+          elseif 77 162  
+          line: 77 151  # } aaa else 00F( $trialdata[$_i
+          line: 78 208  # $trialdata[$_i].inputword = "N
+          line: 79 242  # $trialdata[$_i].correct = "fal
+          else 80 287  
+          line: 80 276  # } aaa else ( 1 ) aaa { 
+          line: 81 299  # $trialdata[$_i].correct = "fal
+          ifend 82 338  
+          line: 82 333  # } 004 
+          line: 83 339  # $_wordnr = $_i + 1 
+          line: 84 358  # $trialdata[$_i].wordnr = ^"\"$
+          line: 85 399  # $trialdata[$_i].trialnr = ^"\"
+          line: 86 441  # $_i += 1 
+          loopend 87 452  
+          line: 87 450  # } 
           Complexity of ^wordcomparison: 3
-    macro: 78  ^buzzcomparison
-          line: 81 0  # $buzz = ^jsoncreate ( object )
-          line: 82 31  # $_counter = 1 
-          line: 83 45  # $_accuracy = 0 
-          loop 85 66  
-          line: 85 60  # ^loop ( -1 ) aaa { 
-          line: 86 79  # $_buzzkey = ^join ( buzzword $
-          line: 87 120  # $_buzzcorrect = ^join ( buzz $
-          line: 88 169  # $$buzzword = ^iterator ( ? mem
-          line: 89 217  # $buzz.$_buzzkey = $$buzzword 
-          if 90 250  
-          line: 90 246  # ^if 00N( ^findtext ( %original
-          line: 91 304  # $buzz.$_buzzcorrect = "true" 
-          line: 92 333  # $_accuracy += 1 
-          else 93 360  
-          line: 93 349  # } aaa else ( 1 ) aaa { 
-          line: 94 372  # $buzz.$_buzzcorrect = "false" 
-          ifend 95 407  
-          line: 95 402  # } 004 
-          line: 96 408  # $_counter += 1 
-          loopend 97 425  
-          line: 97 423  # } 
-          line: 99 425  # $buzzaccuracy = 100 / 3 * $_ac
-          line: 100 462  # $buzz.buzzaccuracy = ^join ( \
-          line: 101 518  # ^jsonarrayinsert ( $trialdata 
+    macro: 89  ^buzzcomparison
+          line: 92 0  # $buzz = ^jsoncreate ( object )
+          line: 93 31  # $_counter = 1 
+          line: 94 45  # $_accuracy = 0 
+          loop 96 66  
+          line: 96 60  # ^loop ( -1 ) aaa { 
+          line: 97 79  # $_buzzkey = ^join ( buzzword $
+          line: 98 120  # $_buzzcorrect = ^join ( buzz $
+          line: 99 169  # $$buzzword = ^iterator ( ? mem
+          line: 100 217  # $buzz.$_buzzkey = $$buzzword 
+          if 101 250  
+          line: 101 246  # ^if 00Z( ^findtext ( %original
+          line: 102 316  # $buzz.$_buzzcorrect = "true" 
+          line: 103 345  # $_accuracy += 1 
+          else 104 372  
+          line: 104 361  # } aaa else ( 1 ) aaa { 
+          line: 105 384  # $buzz.$_buzzcorrect = "false" 
+          ifend 106 419  
+          line: 106 414  # } 004 
+          line: 107 420  # $_counter += 1 
+          loopend 108 437  
+          line: 108 435  # } 
+          line: 110 437  # $buzzaccuracy = 100 / 3 * $_ac
+          line: 111 474  # $buzz.buzzaccuracy = ^join ( \
+          line: 112 530  # ^jsonarrayinsert ( $trialdata 
           Complexity of ^buzzcomparison: 2
-    macro: 103  ^nexttrial
-          line: 104 0  # $next = ^jsoncreate ( object )
-          if 105 35  
-          line: 105 31  # ^if 00m( $trialnr == 10 ) aaa{
-          line: 106 62  # $next.nextsentence = end 
-          else 107 98  
-          line: 107 87  # } aaa else ( 1 ) aaa { 
-          line: 108 110  # $next.nextsentence = $sentence
-          ifend 109 160  
-          line: 109 155  # } 004 
-          line: 110 161  # ^jsonarrayinsert ( $trialdata 
+    macro: 114  ^nexttrial
+          line: 115 0  # $next = ^jsoncreate ( object )
+          if 116 35  
+          line: 116 31  # ^if 00m( $trialnr == 10 ) aaa{
+          line: 117 62  # $next.nextsentence = end 
+          else 118 98  
+          line: 118 87  # } aaa else ( 1 ) aaa { 
+          line: 119 110  # $next.nextsentence = $sentence
+          ifend 120 160  
+          line: 120 155  # } 004 
+          line: 121 161  # ^jsonarrayinsert ( $trialdata 
           Complexity of ^nexttrial: 2
-    macro: 115  ^jsonresults
-          line: 116 0  # ^createtrialobjects ( $_trial 
-          line: 117 32  # ^wordcomparison ( ) 
-          line: 118 52  # ^buzzcomparison ( $_buzz ) 
-          line: 119 79  # ^nexttrial ( ) 
-          line: 120 94  # $trialnr += 1 
+    macro: 126  ^jsonresults
+          line: 127 0  # ^createtrialobjects ( $_trial 
+          line: 128 32  # ^wordcomparison ( ) 
+          line: 129 52  # ^buzzcomparison ( $_buzz ) 
+          line: 130 79  # ^nexttrial ( ) 
+          line: 131 94  # $trialnr += 1 
           Complexity of ^jsonresults: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_emohandler.top
     macro: 2  ^emohandler
@@ -9988,7 +10004,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 109 144  # $userprompt = ^"%user: >" 
           line: 110 170  # $botprompt = ^"Tutorial-Bot: "
           line: 111 201  # $singleresponse = 1 
-          line: 112 221  # $cs_token = 512 | 131072 | 102
+          line: 112 221  # $cs_token = 512 | 131072 
           Complexity of ^tutorial: 1
     macro: 114  ^sound
           Complexity of ^sound: 1

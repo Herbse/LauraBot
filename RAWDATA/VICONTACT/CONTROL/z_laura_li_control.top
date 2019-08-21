@@ -109,7 +109,7 @@ $cs_externaltag = ~xPOSTAGSENTENCE
 $userprompt = ^"%user: >"
 $botprompt = ^"Tutorial-Bot: "
 $singleResponse = 1 # issue only 1 output message    
-$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
+$cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  
 
 outputmacro: ^sound()
 
