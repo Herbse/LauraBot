@@ -21,7 +21,7 @@ voice = texttospeech.types.VoiceSelectionParams(
 audio_config = texttospeech.types.AudioConfig(
     pitch=6.4,
     speaking_rate=0.96,
-    audio_encoding=texttospeech.enums.AudioEncoding.MP3)
+    audio_encoding=texttospeech.enums.AudioEncoding.LINEAR16)
 
 with open("outputlaura.txt") as f:
     for line in f:
@@ -33,7 +33,7 @@ with open("outputlaura.txt") as f:
         filename = filename.replace(",","") 
         filename = filename.replace("?","") 
         filename = filename.replace("\n","") 
-        filename = filename.replace("!","") + ".mp3"
+        filename = filename.replace("!","") + ".wav"
         # Perform the text-to-speech request on the text input with the selected
         # voice parameters and audio file type
         response = client.synthesize_speech(synthesis_input, voice, audio_config)   
