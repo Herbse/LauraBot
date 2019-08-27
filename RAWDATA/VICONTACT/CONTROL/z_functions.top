@@ -80,7 +80,7 @@ $_soundfile = ^substitute(character $_soundfile "," "")
 $_soundfile = ^substitute(character $_soundfile "!" "")
 $_soundfile = ^substitute(character $_soundfile "?" "")
 $_soundfile = ^pos(lowercase $_soundfile)
-$$sound_file = ^join($_soundfile .mp3)
+$$sound_file = ^join($_soundfile .wav)
 if (!$$sound_file){$$sound_file = NaN}
 
 
