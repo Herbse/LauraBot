@@ -9837,6 +9837,88 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/TUTORIA
           line: 130 79  # ^nexttrial ( ) 
           line: 131 94  # $trialnr += 1 
           Complexity of ^jsonresults: 1
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_functions.top
+    macro: 1  ^myfunc
+          line: 2 0  # $$wordindex += 1 
+          line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
+          line: 4 42  # $$concept = ^join ( ~ _1 ) 
+          line: 5 69  # ^settag ( $$wordindex $$concep
+          line: 6 103  # ^setcanon ( $$wordindex _2 ) 
+          Complexity of ^myfunc: 1
+    macro: 13  ^oob
+          if 15 4  
+          ifend 15 61  
+          line: 15 0  # ^if 00r( $rapportcounter > 5 )
+          if 17 66  
+          ifend 17 126  
+          line: 17 62  # ^if 00t( $rapportcounter == -6
+          line: 20 127  # $_topic = %topic 
+          line: 21 144  # $_revelationstate = $revelatio
+          line: 22 181  # $_rapportcounter = $rapportcou
+          line: 23 216  # $_goodquestion = $goodquestion
+          line: 24 247  # $_probformat = $$probformat 
+          line: 25 275  # $_answercategory = $$answercat
+          line: 26 311  # $_actiontype = $$actiontype 
+          line: 27 339  # $_emotype = $$emotype 
+          line: 28 361  # $_topicswitch = $$topicswitch 
+          line: 29 391  # $_randomnumber = $$randnum 
+          line: 30 418  # $_chatphase = $chatphase 
+          line: 31 443  # $_critrevealed = $$critreveale
+          line: 32 475  # $_noncrittopic = $noncrittopic
+          line: 33 506  # $_intent = $$intent 
+          line: 34 526  # $_soundfile = $$sound_file 
+          line: 35 553  # $_sumcorrect = $sumcorrect 
+          line: 38 580  # $_item1name = topic 
+          line: 39 600  # $_item1value = $_topic 
+          line: 40 623  # $_item2name = answerCategory 
+          line: 41 652  # $_item2value = $_answercategor
+          line: 42 684  # $_item3name = probFormat 
+          line: 43 709  # $_item3value = $_probformat 
+          line: 44 737  # $_item4name = goodQuestion 
+          line: 45 764  # $_item4value = $_goodquestion 
+          line: 46 794  # $_item5name = emoType 
+          line: 47 816  # $_item5value = $_emotype 
+          line: 48 841  # $_item6name = rapportCounter 
+          line: 49 870  # $_item6value = $_rapportcounte
+          line: 50 902  # $_item7name = revelationState 
+          line: 51 932  # $_item7value = $_revelationsta
+          line: 52 965  # $_item8name = chatPhase 
+          line: 53 989  # $_item8value = $_chatphase 
+          line: 54 1016  # $_item9name = randomNumber 
+          line: 55 1043  # $_item9value = $_randomnumber 
+          line: 56 1073  # $_item10name = topicSwitch 
+          line: 57 1100  # $_item10value = $_topicswitch 
+          line: 58 1130  # $_item11name = critRevealed 
+          line: 59 1158  # $_item11value = $_critrevealed
+          line: 60 1189  # $_item12name = noncritTopic 
+          line: 61 1217  # $_item12value = $_noncrittopic
+          line: 62 1248  # $_item13name = intent 
+          line: 63 1270  # $_item13value = $_intent 
+          line: 64 1295  # $_item14name = soundFile 
+          line: 65 1320  # $_item14value = $_soundfile 
+          line: 66 1348  # $_item15name = sumCorrect 
+          line: 67 1374  # $_item15value = $_sumcorrect 
+          line: 73 1403  # $$oob = ^join ( $_item1name : 
+          Complexity of ^oob: 3
+    macro: 76  ^soundfile
+          line: 77 0  # $_soundfile = ^substitute ( ch
+          line: 78 59  # $_soundfile = ^substitute ( ch
+          line: 79 118  # $_soundfile = ^substitute ( ch
+          line: 80 177  # $_soundfile = ^substitute ( ch
+          line: 81 236  # $_soundfile = ^substitute ( ch
+          line: 82 295  # $_soundfile = ^pos ( lowercase
+          line: 83 340  # $$sound_file = ^join ( $_sound
+          if 84 386  
+          ifend 84 437  
+          line: 84 382  # ^if 00m( ! $$sound_file ) 00u{
+          Complexity of ^soundfile: 2
+    topic: 87  ~xpostagsentence
+        rule: 88  ~xpostagsentence.0.0 t: 
+          Complexity of rule ~xpostagsentence.0.0- t: 1
+        rule: 89  ~xpostagsentence.1.0 t: 
+          line: 90 0  # $$wordindex = 0 
+          line: 91 16  # ^log ( FILE chat.txt NEW '_0 )
+          Complexity of rule ~xpostagsentence.1.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_emohandler.top
     macro: 2  ^emohandler
           if 4 4  
@@ -9895,7 +9977,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 29 1224  # } aaa 
           ifend 31 1229  
           Complexity of ^emohandler: 23
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_laura_li_control.top
+file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_vicontact_control.top
     macro: 4  ^laura_li
           line: 5 0  # ^addtopic ( ~introduction ) 
           line: 6 28  # $cs_control_main = ~control 
@@ -10129,16 +10211,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 220 0  # ^revelationhandler ( ) 
           Complexity of rule ~addposthoc.1.0- t: 1
         rule: 221  ~addposthoc.2.0 t: 
-          line: 222 0  # $lastoutput = ^response ( 1 ) 
+          line: 221 0  # $lastoutput = ^response ( 1 ) 
           Complexity of rule ~addposthoc.2.0- t: 1
-        rule: 225  ~addposthoc.3.0 t: 
-          if 225 4  
-          ifend 225 55  
-          line: 225 0  # ^if 00m( ! $$sound_file ) 00u{
-          Complexity of rule ~addposthoc.3.0- t: 2
-        rule: 226  ~addposthoc.4.0 t: 
-          line: 226 0  # ^oob ( ) 
-          line: 227 9  # ^postprintbefore ( \[ $$oob \]
+        rule: 224  ~addposthoc.3.0 t: 
+          line: 224 0  # ^soundfile ( ) 
+          Complexity of rule ~addposthoc.3.0- t: 1
+        rule: 225  ~addposthoc.4.0 t: 
+          line: 225 0  # ^oob ( ) 
+          line: 226 9  # ^postprintbefore ( \[ $$oob \]
           Complexity of rule ~addposthoc.4.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_revelationHandler.top
     macro: 1  ^revelationhandler
@@ -10146,76 +10226,6 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 4 0  # ^if 00L( $goodquestion > 1 and
           ifend 6 100  
           Complexity of ^revelationhandler: 2
-file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_debug.top
-    macro: 1  ^myfunc
-          line: 2 0  # $$wordindex += 1 
-          line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
-          line: 4 42  # $$concept = ^join ( ~ _1 ) 
-          line: 5 69  # ^settag ( $$wordindex $$concep
-          line: 6 103  # ^setcanon ( $$wordindex _2 ) 
-          Complexity of ^myfunc: 1
-    macro: 13  ^oob
-          if 15 4  
-          ifend 15 61  
-          line: 15 0  # ^if 00r( $rapportcounter > 5 )
-          if 17 66  
-          ifend 17 126  
-          line: 17 62  # ^if 00t( $rapportcounter == -6
-          line: 20 127  # $_topic = %topic 
-          line: 21 144  # $_revelationstate = $revelatio
-          line: 22 181  # $_rapportcounter = $rapportcou
-          line: 23 216  # $_goodquestion = $goodquestion
-          line: 24 247  # $_probformat = $$probformat 
-          line: 25 275  # $_answercategory = $$answercat
-          line: 26 311  # $_actiontype = $$actiontype 
-          line: 27 339  # $_emotype = $$emotype 
-          line: 28 361  # $_topicswitch = $$topicswitch 
-          line: 29 391  # $_randomnumber = $$randnum 
-          line: 30 418  # $_chatphase = $chatphase 
-          line: 31 443  # $_critrevealed = $$critreveale
-          line: 32 475  # $_noncrittopic = $noncrittopic
-          line: 33 506  # $_intent = $$intent 
-          line: 34 526  # $_soundfile = $$sound_file 
-          line: 35 553  # $_sumcorrect = $sumcorrect 
-          line: 38 580  # $_item1name = topic 
-          line: 39 600  # $_item1value = $_topic 
-          line: 40 623  # $_item2name = answerCategory 
-          line: 41 652  # $_item2value = $_answercategor
-          line: 42 684  # $_item3name = probFormat 
-          line: 43 709  # $_item3value = $_probformat 
-          line: 44 737  # $_item4name = goodQuestion 
-          line: 45 764  # $_item4value = $_goodquestion 
-          line: 46 794  # $_item5name = emoType 
-          line: 47 816  # $_item5value = $_emotype 
-          line: 48 841  # $_item6name = rapportCounter 
-          line: 49 870  # $_item6value = $_rapportcounte
-          line: 50 902  # $_item7name = revelationState 
-          line: 51 932  # $_item7value = $_revelationsta
-          line: 52 965  # $_item8name = chatPhase 
-          line: 53 989  # $_item8value = $_chatphase 
-          line: 54 1016  # $_item9name = randomNumber 
-          line: 55 1043  # $_item9value = $_randomnumber 
-          line: 56 1073  # $_item10name = topicSwitch 
-          line: 57 1100  # $_item10value = $_topicswitch 
-          line: 58 1130  # $_item11name = critRevealed 
-          line: 59 1158  # $_item11value = $_critrevealed
-          line: 60 1189  # $_item12name = noncritTopic 
-          line: 61 1217  # $_item12value = $_noncrittopic
-          line: 62 1248  # $_item13name = intent 
-          line: 63 1270  # $_item13value = $_intent 
-          line: 64 1295  # $_item14name = soundFile 
-          line: 65 1320  # $_item14value = $_soundfile 
-          line: 66 1348  # $_item15name = sumCorrect 
-          line: 67 1374  # $_item15value = $_sumcorrect 
-          line: 73 1403  # $$oob = ^join ( $_item1name : 
-          Complexity of ^oob: 3
-    topic: 77  ~xpostagsentence
-        rule: 78  ~xpostagsentence.0.0 t: 
-          Complexity of rule ~xpostagsentence.0.0- t: 1
-        rule: 79  ~xpostagsentence.1.0 t: 
-          line: 80 0  # $$wordindex = 0 
-          line: 81 16  # ^log ( FILE chat.txt NEW '_0 )
-          Complexity of rule ~xpostagsentence.1.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_reactance.top
     topic: 1  ~reactance
         rule: 3  ~reactance.0.0 u: 

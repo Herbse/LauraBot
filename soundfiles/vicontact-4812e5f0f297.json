@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vicontact",
+  "private_key_id": "4812e5f0f297e21dfd3f4bb0b4c7cf19066cd4c8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCRO/LmjiEQlsBt\nJHWDsLqec2BcZrbTJjG6b7z4rybZXPC8jOJkaDltx39Wz6FLN8BtGO1RxF3l79x8\nDCL9Qy3DaXq+PjqrQq3kzv09GOg9ni5Zz42rKAzWmtdxx2ni0ZkaKdwll+835mJK\nH/YKm9ds6YVMNsIsTFEIQ94MBi8cWCQOaah6yFFrXXQz+UpF1zel2ie4sAf/toGj\nCQhYCyRmxwnHiJuoCyzQJVP7CLkfM/Cehl4NYhuQouhwgv3j8d+Kxm8G7fZgNlQ8\nHRIc22cNjMyn/Ip0AzEx2RhDHbNJUqnoY80jMG3Ru+PS8WPtVlcrt3AA5XryRjey\n/MYa06a5AgMBAAECggEADWMFN9/2uqmENL5p+cJOF7gMZ15gXVFL8oj4iV07q3vR\nnmkuBPgTMxDZP/TR3TXXJ52aLzGppgqLiQBlYtedkQ5Yus7QAZebB76JWrRZ083D\nLMWto6hRZqAz85zgU0189Nhrt/T4a9XXtK8CTGZvX1UD05gu70spib8Xth84mgtL\n1Qr1AAoawBANq9O9/fG/3ShKyWgyBh+odezfPjiOSWs9MW9js+nT23c4RLA+ZbZZ\nI3DnkRLh6dGDjJS/ZTiHqAfpTljVmzMxAA2KhpyiB0rFxW0t2DVYCgr/2cn2WqW9\n6FGePRQzo9Csnf+zJUuUgKU+Ei38rOpQjA7Emq0wcQKBgQDIQ+Zp3cP+myNUuS3P\nIHj7kdoXHgHUGNsfhDFESooLtk976cJBvEZRZGfwcH45ieqNi1bqSIp6IqPnR5/I\n2Yjl/H51m30R4uNbs3GV9VeggBMAp7fDsM5iO2jBBplI0TgFHhCgTtpEpdM9UF65\nhN/SIES2dmFQffDgMO4S8r1zxwKBgQC5p04Zok9Myd6/z6CnC+JYVOIy6N6bLFIA\nWHR7m2VgWA053ErUPOa8WFGW1wm03P5On6A4l66D+OuN3oav/ZBmh42FI5ypvAtc\nEhJoAnXzNK8uwF9aaw870Q0G69HPVolHZwsxXB2Um9euQyCaIF8vqv0Rk8TvToG5\n9oI2ZqERfwKBgFZ+RPi6SBkhxeukou1PWBFHGAtd8Wo6ZgFBpcmZ6+9NCR06g6TC\nfRhQJjgJTerp7vy9DofXVr+TUHjmTVOA6Ih0OeXvht//vzRu1wLuWK9AQXTJ+ysw\npKJ2iDK999wkSG6lYobqJ4j4mbhkitTTV5u4RhUMIdGS40LgvyI95qcnAoGBAKFO\n8/Yj6AERWaCRl8Xs9oLHZi7T1S9AiBNSyArqT2AxwXQnq0DTlavKlUGZoA5tAe1w\nlrb1XCXA73I6Cg76IzBi0R0Af0ufXsNl1GZY1QE3IotdjLw0T20qy8XaulcLmoXW\ny4vcvLr12aXJH5erTulNCUvvd+px7ReWTzdTXtmjAoGAJj8ynvYEJ1r0uhCn/xCk\nbeJcJMQrWoEzXIXuLxMEJutEL0c/KQU08fUbfWKjgHdm5tO5CeYTu1QAfCPR47kk\n05NM85J9NvX7zbOnFrVvF1eyucBQbsYolMe6QJ4OOUvCCKBqvXHMJLCM0IXZkemp\nGaMj8NnIw1LsEkxZ6+b0Vsg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-text-to-speech-sa@vicontact.iam.gserviceaccount.com",
+  "client_id": "114430650483975489090",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-text-to-speech-sa%40vicontact.iam.gserviceaccount.com"
+}
