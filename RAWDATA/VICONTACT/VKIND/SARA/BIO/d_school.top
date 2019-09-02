@@ -53,7 +53,7 @@ u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  Ich habe schon so viel gelernt. Ich kann schon auf Englisch bis 100 zählen und die Tiere auf Englisch kennen wir auch schon.
 
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
-u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  "Manchmal zeigt uns Frau Friedrich am Anfang der Stunde eine Karte mit einem Obst drauf und wir sollen die Farbe sagen. Da bin ich die Beste!"
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Manchmal zeigt uns Frau Friedrich am Anfang der Stunde eine Karte mit einem Obst drauf und wir sollen die Farbe sagen. Da bin ich die Beste!
 
 # Spezifische Antworten----------------------------------------------------------------------------------
 

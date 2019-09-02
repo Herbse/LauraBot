@@ -78,7 +78,7 @@ u: CAT_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCatego
 u: CAT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 2 $$sound_file = 15  Sie will immer kuscheln.
 
 #! Erzähl mir doch mehr über Leon.
-u: CAT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 3 $$sound_file = 16 Ich hab sie bekommen, als sie ein Baby war.
+u: CAT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 3 $$sound_file = 16 Ich habe sie bekommen, als sie ein Baby war.
 
 #! Erzähl mir doch mehr über Leon.
 u: CAT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 4 $$sound_file = 17 Jetzt ist sie schon drei Jahre alt.

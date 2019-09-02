@@ -79,7 +79,7 @@ u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 #! Erzähl mir mehr über deine Mama!
 u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 Wir malen manchmal zusammen Mandalas aus.
 #! Und was machst du gerne mit deiner Mama?
-u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 In den Ferien hat Mama auch frei und wir fahren manchmal dann in' Urlaub.
+u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 In den Ferien hat Mama auch frei und wir fahren manchmal dann in Urlaub.
 
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
 u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Nach Frankreich. Da machen wir gerne Urlaub, weil es da so schön ist.

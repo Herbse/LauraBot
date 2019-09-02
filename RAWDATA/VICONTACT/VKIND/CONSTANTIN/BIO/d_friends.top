@@ -18,7 +18,7 @@ u: ([freunde die sie]) ^keep() ^refine()
     # relationship_o
     a: (^relationship_o()) $$intent=relationship_o Die sind beide voll cool.
     # time together
-    a: (^time_together()) $$intent=time_together In meiner Freizeit oder am Wochenende.e.
+    a: (^time_together()) $$intent=time_together In meiner Freizeit oder am Wochenende.
     # time relationship
     a: (^time()) $$intent=time_relationship Ich kenne die seit dem Kindergarten.
     # activity together
