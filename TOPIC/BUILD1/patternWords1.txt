@@ -90,7 +90,7 @@ information
 disclosure
 availability
 introduction
-greetings
+greeting
 support
 finish
 discharge

@@ -13,7 +13,7 @@ u: () ^keep() ^refine()
     # relationship_f
     a: (^relationship_f()) $$intent=relationship_f Der ist der Busfahrer.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Ich mag Gerd nicht.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 ^reuse(EVENT_1)
     # time together
     a: (^time_together()) $$intent=time_together $$sound_file = event6 Beim Training.
     # time relationship

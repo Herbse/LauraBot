@@ -3,12 +3,12 @@ topic: ~prob_answer keep repeat nostay()
 
 # LI: BASIS | 60% narrative | 20% non-answer | 10% ignorance | 10% reactance
 # LI: MAX   | 80% narrative | 10% non-answer |  5% ignorance |  5% reactance
-u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} invitation_to_tell) ^refine()
-    if ('_0==rapport){$rapportCounter += 1}
-    else if ('_1==demand){$rapportCounter += 1}
-    else if ('_2==transparency){$rapportCounter += 1}
-    $goodQuestion += 1 $noncritTopic += 1 
-    if ('_0==rapport) {$rapportCounter += 1}
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} invitation_to_tell)     
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$goodQuestion += 1 $noncritTopic += 1 
+^refine()
     a: ($rapportCounter==-5)
         $$probFormat = narrative-40_notAnswering-30_ignorance-15_reactance-15
         $$randNum = %rand
@@ -102,11 +102,12 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 # LI: 40% narrative(same topic) | 25% affirmation? | 25% non-answer | 10% reactance ->WENN ERSCHÖPFT 50% ignorance | 25% non-answer | 25% reactance
 # HIER NOCH DIE KODIERUNG FÜR SAME UND DIFFERENT TOPIC EINBAUEN
-u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} facilitator) ^refine()
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} facilitator) 
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1} 
 $goodQuestion += 1 $noncritTopic += 1
+^refine()
     a: ($rapportCounter==-5)
         $$probFormat = narrative-20_affirmation-30_notAnswering-30_reactance-20
         $$randNum = %rand
@@ -206,10 +207,11 @@ else {$$answerCategory = notAnswering ^respond(~notAnswering)}
 
 
 # LI: 60% specific answer | 20% non-answer | 10% ignorance | 10% reactance
-u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} specific) ^refine() $goodQuestion += 1 $noncritTopic += 1
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} specific) $goodQuestion += 1 $noncritTopic += 1
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
+^refine() 
     a: ($rapportCounter==-5)
         $$probFormat = specific-40_notAnswering-30_ignorance-15_reactance-15
         $$randNum = %rand
@@ -363,10 +365,11 @@ else if ($$randNum < 90){$$answerCategory = negation ^respond(~negat)}
 else if ($$randNum < 95){$$answerCategory = ignorance ^respond(~ignorance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
-u: ({_rapport} {_demand} {_transparency} relevance) ^refine()
+u: ({_rapport} {_demand} {_transparency} relevance) 
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
+^refine()
 $$probFormat = specific-100 
 #a   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Als wir neulich im Schwimmbad waren.
 #b   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Letztes Mal war an Mamas Geburtstag.
@@ -451,7 +454,7 @@ else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = affirmation-100
 $$answerCategory = affirmation ^respond(~affirmation)
 
-u: ({_rapport} {_demand} {_transparency} greetings)
+u: ({_rapport} {_demand} {_transparency} greeting)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}

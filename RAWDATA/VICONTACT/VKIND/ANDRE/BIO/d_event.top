@@ -19,11 +19,7 @@ u: ([geschwister die sind_sie haben_sie]) ^keep() ^refine()
     # time relationship
     a: (^time()) $$intent=time_relationship $$sound_file = event7 Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
     # activity together
-    a: (^activity_together()) $$intent=activity_together ^refine()
-        b: ($eventCounter>2 $eventCounter<5 )^reuse(EVENT_5)
-        b: ($eventCounter>1 $eventCounter<3 )^reuse(EVENT_3)
-        b: ($eventCounter>5) $$sound_file = event8 Sonst eigentlich nix mehr.
-        b: () ^reuse(EVENT_1)
+    a: (^activity_together()) $$intent=activity_together 
     # activity
     a: (^activity()) $$intent=activity $$sound_file = event9 Die gehen auch in die Schule.
     # places together
@@ -47,11 +43,7 @@ u: ([bruder david er]) ^keep() ^refine()
     # time relationship
     a: (^time()) $$intent=time_relationship $$sound_file = event7 Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
     # activity together
-    a: (^activity_together()) $$intent=activity_together ^refine()
-        b: ($eventCounter>2 $eventCounter<5 )^reuse(EVENT_5)
-        b: ($eventCounter>1 $eventCounter<3 )^reuse(EVENT_3)
-        b: ($eventCounter>5) $$sound_file = event8 Sonst eigentlich nix mehr.
-        b: () ^reuse(EVENT_1)
+    a: (^activity_together()) $$intent=activity_together 
     # activity
     a: (^activity()) $$intent=activity $$sound_file = event9 Der geht auch in die Schule.
     # places together
@@ -67,19 +59,15 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
     # job
     a: (^job()) $$intent=job $$sound_file = event4 Die geht auch in die Schule
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f ^reuse(EVENT_2)
+    a: (^relationship_f()) $$intent=relationship_f Meine Schwester
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 ich mag die nicht.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Ich mag die nicht.
     # time together
     a: (^time_together()) $$intent=time_together $$sound_file = event6 Weiß nicht. Abends zum Beispiel.
     # time relationship
     a: (^time()) $$intent=time_relationship $$sound_file = event7 Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
     # activity together
-    a: (^activity_together()) $$intent=activity_together ^refine()
-        b: ($eventCounter>2 $eventCounter<5 )^reuse(EVENT_5)
-        b: ($eventCounter>1 $eventCounter<3 )^reuse(EVENT_3)
-        b: ($eventCounter>5) $$sound_file = event8 Sonst eigentlich nix mehr.
-        b: () ^reuse(EVENT_1)
+    a: (^activity_together()) $$intent=activity_together ^reuse(EVENT_1)
     # activity
     a: (^activity()) $$intent=activity $$sound_file = event9 Die geht auch in die Schule
     # places together
