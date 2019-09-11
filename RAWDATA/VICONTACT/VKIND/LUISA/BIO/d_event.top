@@ -13,7 +13,7 @@ u: () ^keep() ^refine()
     # relationship_f
     a: (^relationship_f()) $$intent=relationship_f Der geht in meine Klasse.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Ich mag Julian nicht.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Der ärgert mich immer.
     # time together
     a: (^time_together()) $$intent=time_together $$sound_file = event6 Im Unterricht. 
     # time relationship
@@ -54,9 +54,9 @@ u: () ^keep() ^refine()
 #a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
 #a        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
 #a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==7) ^reuse(EVENT_10)
-#a        b: ($eventCounter==8) ^reuse(EVENT_10)
-#a        b: ($eventCounter==9) ^reuse(EVENT_10)
+#a        b: ($eventCounter==7) In der Schule.
+#a        b: ($eventCounter==8) In der Schule.
+#a        b: ($eventCounter==9) In der Schule.
 #a        b: ($eventCounter==10) In der Schule.
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()

@@ -7,6 +7,8 @@ u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rappo
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
+if ($rapportCounter > 5) {$rapportCounter = 5}
+if ($rapportCounter == -6) {$rapportCounter = -5}
 $goodQuestion += 1 $noncritTopic += 1 
 ^refine()
     a: ($rapportCounter==-5)
@@ -105,7 +107,9 @@ else {$$answerCategory = ignorance ^respond(~ignorance)}
 u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} facilitator) 
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
-else if ('_2==transparency){$rapportCounter += 1} 
+else if ('_2==transparency){$rapportCounter += 1}
+if ($rapportCounter > 5) {$rapportCounter = 5}
+if ($rapportCounter == -6) {$rapportCounter = -5} 
 $goodQuestion += 1 $noncritTopic += 1
 ^refine()
     a: ($rapportCounter==-5)
@@ -211,6 +215,8 @@ u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rappo
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
+if ($rapportCounter > 5) {$rapportCounter = 5}
+if ($rapportCounter == -6) {$rapportCounter = -5}
 ^refine() 
     a: ($rapportCounter==-5)
         $$probFormat = specific-40_notAnswering-30_ignorance-15_reactance-15
