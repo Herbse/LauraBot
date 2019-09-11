@@ -217,7 +217,7 @@ u: () # main per-sentence processing
 topic: ~addposthoc system () # should be called for post processing
 
 t: () ^emoHandler()
-t: ($cs_bot=laura_li) ^revelationHandler()
+t: ($cs_bot=laura_li) ^disclosureHandler()
 t: ()  $lastOutput = ^response(1)
 # t: ^callstack()
 # t: () popen(^"afplay soundfiles/Laura/$$sound_file\.mp3" '^sound) 

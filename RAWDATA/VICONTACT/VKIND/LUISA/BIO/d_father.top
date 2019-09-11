@@ -36,9 +36,9 @@ u: () ^keep() ^refine()
     # job
     a: (^job()) $$intent=job Weiß nicht.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Der ist mein Pappa.
+    a: (^relationship_f()) $$intent=relationship_f Der ist mein Papa.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Pappa ist der Beste.
+    a: (^relationship_o()) $$intent=relationship_o Papa ist der Beste.
     # time together
     a: (^time_together()) $$intent=time_together In meiner Freizeit.
     # time relationship
@@ -94,7 +94,7 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 Pappa ist viel cooler als Mama.
+u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 Papa ist viel cooler als Mama.
  
 
 #! Erzähl mal wie er ihr hilft?

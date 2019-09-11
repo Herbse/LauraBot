@@ -12,7 +12,7 @@ outputmacro: ^myfunc(^data) ($$concept)
 outputmacro: ^oob()
  
  $_topic = %topic
- $_revelationState = $$revelationState
+ $_disclosureState = $$disclosureState
  $_rapportCounter = $rapportCounter
  $_chatPhase = $chatPhase
  $_probFormat = $$probFormat
@@ -38,8 +38,8 @@ outputmacro: ^oob()
  $_item6value = $_actionType
  $_item7name = rapportCounter        
  $_item7value = $_rapportCounter
- $_item8name = revelationState
- $_item8value = $_revelationState
+ $_item8name = disclosureState
+ $_item8value = $_disclosureState
  $_item9name = nextAnswer
  $_item9value = $_nextAnswer
  $_item10name = randomNumber

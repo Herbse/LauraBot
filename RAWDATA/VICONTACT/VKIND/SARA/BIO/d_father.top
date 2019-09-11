@@ -48,8 +48,8 @@ u: () ^keep() ^refine()
     a: (^individual()) $$intent=individual ^refine()
         b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==3) Pappa und ich.
-        b: ($fatherCounter==4) Pappa.
+        b: ($fatherCounter==3) Papa und ich.
+        b: ($fatherCounter==4) Papa.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)

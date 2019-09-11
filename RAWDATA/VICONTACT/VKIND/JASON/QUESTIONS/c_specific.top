@@ -12,13 +12,13 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
     a: (^general_question()) $$intent=intro_question ^refine()
         b: ([~home bei_euch Familie familie]) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~sister_t)]
         b: (~parents) [^respond(~father_t)]
-        b: (%topic!=~introduction) ^respond(%topic)
+        b: (%topic!=~introduction~2) ^respond(%topic)
         b: ($chatPhase==main) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
         b: () [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
     a: (^general_prompt()) $$intent=intro_prompt ^refine()
         b: ([~home bei_euch Familie familie]) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~sister_t)]
         b: (~parents) [^respond(~father_t)]
-        b: (%topic!=~introduction) ^respond(%topic)
+        b: (%topic!=~introduction~2) ^respond(%topic)
         b: ($chatPhase==main) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
         b: () [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
     # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus

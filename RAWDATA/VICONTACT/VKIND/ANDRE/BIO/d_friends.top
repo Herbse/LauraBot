@@ -8,7 +8,7 @@ u: () ^keep() ^refine()
     # name
     a: (^names()) $$intent=names Tommy.
     # age
-    a: (^age()) $$intent=age Tommy ist 10. Wie ich.
+    a: (^age()) $$intent=age Tommy ist zehn. Wie ich.
     # mood
     a: (^mood()) $$intent=mood Gut.
     # job

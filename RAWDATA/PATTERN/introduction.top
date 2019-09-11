@@ -42,7 +42,10 @@ u: () ^keep() ^refine()
     a: (^explanation()) explanation
     # follow-up
     a: (^follow_up()) follow_up
-
+    # general-question
+    a: (^general_question()) general_question
+    # general-prompt
+    a: (^general_prompt()) general_prompt
 
 
 

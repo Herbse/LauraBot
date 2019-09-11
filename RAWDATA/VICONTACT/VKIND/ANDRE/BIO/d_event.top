@@ -190,8 +190,8 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 #b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
 #b        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
 #b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==7) $$sound_file = event10 Bei de em.
-#b        b: ($eventCounter==8) $$sound_file = event10 Bei de em.
+#b        b: ($eventCounter==7) $$sound_file = event10 Bei dm.
+#b        b: ($eventCounter==8) $$sound_file = event10 Bei dm.
 #b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
 #b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
 #b    # individual
@@ -360,7 +360,7 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 
 #! Erzähl noch mehr.
 #a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22a David hat mich gefilmt, wie ich nackig aus der Dusche gekommen bin.
-#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22b Ich muss für David manchmal Sachen klauen bei de em.
+#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22b Ich muss für David manchmal Sachen klauen bei dm.
 #c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22c David war mit Carla auf dem Rummel Breakdancer fahren.
 
 #---------------------------------------------------------------------------------------------

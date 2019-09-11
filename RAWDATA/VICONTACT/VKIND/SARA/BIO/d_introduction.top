@@ -1,6 +1,6 @@
 topic: ~introduction keep repeat ()
 
-t: ($cs_bot=sara_li) $rapportCounter = 0 $goodQuestion = 0 $noncritTopic = 0 $revelationState = 0 $chatPhase = start (sara_li)
+t: ($cs_bot=sara_li) $rapportCounter = 0 $goodQuestion = 0 $noncritTopic = 0 $disclosureState = 0 $chatPhase = start (sara_li)
 
 
 u: () ^respond(~incomprehension)

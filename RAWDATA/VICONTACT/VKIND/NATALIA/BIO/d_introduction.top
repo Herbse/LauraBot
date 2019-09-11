@@ -1,6 +1,6 @@
 topic: ~introduction keep repeat ()
 
-t: ($cs_bot=natalia_si) $rapportCounter = 0 $goodQuestion = 0 $noncritTopic = 0 $revelationState = 0 $chatPhase = start (natalia_si) Haben Sie noch kurz Zeit? Ich möchte Ihnen was erzählen.Aber Sie dürfen es nicht weitersagen.
+t: ($cs_bot=natalia_si) $rapportCounter = 0 $goodQuestion = 0 $noncritTopic = 0 $disclosureState = 0 $chatPhase = start (natalia_si) Haben Sie noch kurz Zeit? Ich möchte Ihnen was erzählen.Aber Sie dürfen es nicht weitersagen.
 
 
 u: () ^respond(~incomprehension)

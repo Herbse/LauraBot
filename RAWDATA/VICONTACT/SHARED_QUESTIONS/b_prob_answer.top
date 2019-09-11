@@ -342,7 +342,7 @@ u: (request) $lastOutput
 # Nachfrage zum kritischen Ereignis bei noch nicht vorhandener Offenbarungsbereitschaft
 u: (crit_asked)
 $critAsked = 1
-if ($revelationState==0) {$rapportCounter -= 1 $$answerCategory = reactance ^respond(~reactance)}
+if ($disclosureState==0) {$rapportCounter -= 1 $$answerCategory = reactance ^respond(~reactance)}
 
 # 40% ignorance | 30% reactance | 30% sobbing
 u: (suggestive_unspecific) 

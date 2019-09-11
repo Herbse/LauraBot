@@ -316,7 +316,7 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #! Ist noch mehr passiert?
 #a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Ich fand das eklig, aber ich hab nichts gesagt.
 #b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Ich wache auf davon und dann lauf ich zu Mama, damit der Oleg aufhört.
-#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Ich hab so fremde Stimmen gehört und wie meine Mama angefangen hat zu weinen.
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Ich wache auf davon und dann lauf ich zu Mama, damit der Oleg aufhört.
 
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?

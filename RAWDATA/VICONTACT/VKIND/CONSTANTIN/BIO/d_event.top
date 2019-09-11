@@ -313,7 +313,7 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #! Ist noch mehr passiert?
 #a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Ich hab gesagt, „lass das“, aber er hat einfach weitergemacht.
 #b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Ich hatte auch einen blauen Fleck.
-#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Tobias hat nur gesagt: "Was macht ihr da für nen Quatsch?".
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Tobias hat nur gesagt: "Was macht ihr da für einen Quatsch?".
 
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?

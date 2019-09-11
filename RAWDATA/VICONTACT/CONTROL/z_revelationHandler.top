@@ -1,4 +1,4 @@
-outputmacro: ^revelationHandler()
+outputmacro: ^disclosureHandler()
 
 
-if ($goodQuestion > 1 AND $noncritTopic > 3) {$chatPhase = main $revelationState = 1}
+if ($goodQuestion > 1 AND $noncritTopic > 3) {$chatPhase = main $disclosureState = 1}

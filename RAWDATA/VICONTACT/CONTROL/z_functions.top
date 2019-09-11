@@ -18,7 +18,7 @@ if ($rapportCounter == -6) {$rapportCounter = -5}
  
 
  $_topic = %topic
- $_revelationState = $revelationState
+ $_disclosureState = $disclosureState
  $_rapportCounter = $rapportCounter
  $_goodQuestion = $goodQuestion
  $_probFormat= $$probFormat
@@ -47,8 +47,8 @@ if ($rapportCounter == -6) {$rapportCounter = -5}
  $_item5value = $_emoType
  $_item6name = rapportCounter        
  $_item6value = $_rapportCounter
- $_item7name = revelationState
- $_item7value = $_revelationState
+ $_item7name = disclosureState
+ $_item7value = $_disclosureState
  $_item8name = chatPhase
  $_item8value = $_chatPhase
  $_item9name = randomNumber

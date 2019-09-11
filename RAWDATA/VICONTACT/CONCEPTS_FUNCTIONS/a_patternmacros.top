@@ -4,7 +4,7 @@
 patternmacro: ^general_question()
 [
     (warum bist du hier)
-    ([was worüber] [möchtest willst magst] du ~narrate)
+    ([was worüber] [möchtest willst magst] du *~3 ~narrate)
     (was liegt dir auf der seele)
     (was ist los)
     (was beschäftigt)

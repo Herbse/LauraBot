@@ -68,7 +68,7 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #a        b: ($eventCounter==4) $$sound_file = event11a Voll doof.
 #a        b: ($eventCounter==5) $$sound_file = event11a Voll doof.
 #a        b: ($eventCounter==6) $$sound_file = event11a Voll doof.
-#a        b: ($eventCounter==7) $$sound_file = event12a SVoll eklig.
+#a        b: ($eventCounter==7) $$sound_file = event12a Voll eklig.
 #a        b: ($eventCounter==8) $$sound_file = event12a Voll eklig.
 #a        b: ($eventCounter==9) $$sound_file = event12a Voll eklig.
 #a        b: ($eventCounter==10) $$sound_file = event12a Voll doof.

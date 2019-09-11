@@ -13,12 +13,12 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
     a: (^general_question()) $$intent=intro_question ^refine()
         b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~sister_t)] [^respond(~neighbourhood_t)]
         b: (~parents) [^respond(~mother_t)]
-        b: (%topic!=~introduction) ^respond(%topic)
+        b: (%topic!=~introduction~5) ^respond(%topic)
         b: () [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~friends_t)][^respond(~neighbourhood_t)][^respond(~school_t)][^respond(~sister_t)]
     a: (^general_prompt()) $$intent=intro_prompt ^refine()
         b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~sister_t)][^respond(~neighbourhood_t)]
         b: (~parents) [^respond(~mother_t)]
-        b: (%topic!=~introduction) ^respond(%topic)
+        b: (%topic!=~introduction~5) ^respond(%topic)
         b: () [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~friends_t)][^respond(~neighbourhood_t)][^respond(~school_t)][^respond(~sister_t)]
     # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus
     a: () ^respond(%topic)

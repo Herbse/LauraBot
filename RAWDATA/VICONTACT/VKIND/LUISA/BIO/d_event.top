@@ -54,9 +54,9 @@ u: () ^keep() ^refine()
 #a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
 #a        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
 #a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==7) Im Bus.
-#a        b: ($eventCounter==8) Im Bus.
-#a        b: ($eventCounter==9) Im Bus.
+#a        b: ($eventCounter==7) ^reuse(EVENT_10)
+#a        b: ($eventCounter==8) ^reuse(EVENT_10)
+#a        b: ($eventCounter==9) ^reuse(EVENT_10)
 #a        b: ($eventCounter==10) In der Schule.
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()
@@ -65,7 +65,7 @@ u: () ^keep() ^refine()
 #a        b: ($eventCounter==2) Die Jungs.
 #a        b: ($eventCounter==3) ^reuse(EVENT_4)
 #a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==5) Julian
+#a        b: ($eventCounter==5) Julian.
 #a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
 #a        b: ($eventCounter==7) Nur Julian und ich.
 #a        b: ($eventCounter==8) Nur Julian und ich.
