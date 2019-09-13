@@ -72,14 +72,19 @@ if ($rapportCounter == -6) {$rapportCounter = -5}
  $$oob = ^join( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value " " \| " " $_item4name : $_item4value " " \| " " $_item5name : $_item5value " " \| " " $_item6name : $_item6value " " \| " " $_item7name : $_item7value " " \| " " $_item8name : $_item8value " " \|  " " $_item9name : $_item9value " " \| " " $_item10name : $_item10value " " \| " " $_item11name : $_item11value " " \| " " $_item12name : $_item12value " " \| " " $_item13name : $_item13value " " \| " " $_item14name : $_item14value " " \| " " $_item15name : $_item15value)
 
 
-outputmacro: ^soundFile()
-$_soundfile = ^substitute(character $lastOutput " " "")
+
+
+outputmacro: ^soundFile($_output)
+$_soundfile = ^substitute(character $_output " " "")
 $_soundfile = ^substitute(character $_soundfile "." "")
 $_soundfile = ^substitute(character $_soundfile "," "")
 $_soundfile = ^substitute(character $_soundfile "!" "")
 $_soundfile = ^substitute(character $_soundfile "?" "")
 $_soundfile = ^pos(lowercase $_soundfile)
-$$sound_file = ^join($_soundfile .wav)
+# $$sound_file = ^join($_soundfile .wav)
+# check if clue is given and if yes, join clue-filename with original soundfile-name
+if ($giveClue==1) {$$sound_file_c = $_soundfile $$sound_file = ^join($$sound_file - $$sound_file_c)}
+else {$$sound_file = $_soundfile}
 if (!$$sound_file){$$sound_file = NaN}
 
 

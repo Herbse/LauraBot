@@ -266,14 +266,14 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mir von deinem Onkel 
-u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0 $$sound_file = event16  Mein Onkel schläft jetzt immer bei uns.
+u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0  Mein Onkel schläft jetzt immer bei uns.
     
 
 
 
 #---------------------------------------------------------------------------------------------
 #! Erzähl mir mal von deinem Onkel
-u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0 $$sound_file = event17 Also, das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0  Also, das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?

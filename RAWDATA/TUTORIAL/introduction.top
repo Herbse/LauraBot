@@ -1,6 +1,9 @@
 topic: ~introduction  keep repeat (sound besuch zoo)
 
 
+u: () %fulltime
+
+
 t: 
 ^tutorialstart()
 
