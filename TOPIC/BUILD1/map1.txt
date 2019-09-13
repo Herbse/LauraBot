@@ -4993,7 +4993,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_introduction.top
     topic: 1  ~introduction~4
         rule: 3  ~introduction~4.0.0 t: 
-          line: 3 0  # $rapportcounter = 0 $$intro = 
+          line: 3 0  # $rapportcounter = 0 $goodquest
           Complexity of rule ~introduction~4.0.0- t: 1
         rule: 5  ~introduction~4.1.0 u: 
           Complexity of rule ~introduction~4.1.0- u: 1
@@ -9877,79 +9877,79 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
           line: 81 174  # $_soundfile = ^substitute ( ch
           line: 82 233  # $_soundfile = ^substitute ( ch
           line: 83 292  # $_soundfile = ^pos ( lowercase
-          if 85 341  
-          line: 85 337  # ^if 00m( $giveclue == 1 ) 01k{
-          else 86 463  
-          ifend 86 507  
-          line: 86 458  # else ( 1 ) 00C { $$sound_file 
-          if 87 512  
-          ifend 87 563  
-          line: 87 508  # ^if 00m( ! $$sound_file ) 00u{
+          if 86 341  
+          line: 86 337  # ^if 00m( $giveclue == 1 ) 01k{
+          else 87 463  
+          ifend 87 507  
+          line: 87 458  # else ( 1 ) 00C { $$sound_file 
+          if 88 512  
+          ifend 88 563  
+          line: 88 508  # ^if 00m( ! $$sound_file ) 00u{
           Complexity of ^soundfile: 3
-    topic: 90  ~xpostagsentence
-        rule: 91  ~xpostagsentence.0.0 t: 
+    topic: 91  ~xpostagsentence
+        rule: 92  ~xpostagsentence.0.0 t: 
           Complexity of rule ~xpostagsentence.0.0- t: 1
-        rule: 92  ~xpostagsentence.1.0 t: 
-          line: 93 0  # $$wordindex = 0 
-          line: 94 16  # ^log ( FILE chat.txt NEW '_0 )
+        rule: 93  ~xpostagsentence.1.0 t: 
+          line: 94 0  # $$wordindex = 0 
+          line: 95 16  # ^log ( FILE chat.txt NEW '_0 )
           Complexity of rule ~xpostagsentence.1.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_emohandler.top
     macro: 2  ^emohandler
           if 4 4  
-          line: 4 0  # ^if 00q( $cs_bot = laura_si ) 
-          if 5 39  
-          line: 5 35  # ^if 00q( $chatphase == main ) 
-          if 6 74  
-          line: 6 70  # ^if 00p( $eventcounter < 7 ) 0
-          elseif 7 135  
-          line: 7 130  # else 00q( $eventcounter < 10 )
-          elseif 8 193  
-          ifend 8 251  
-          line: 8 188  # else 00r( $eventcounter == 10 
-          elseif 9 263  
-          line: 9 258  # else 00p( $chatphase == end ) 
-          if 10 297  
-          line: 10 293  # ^if 00p( $eventcounter < 7 ) 0
-          elseif 11 363  
-          line: 11 358  # else 00q( $eventcounter < 10 )
-          elseif 12 421  
-          ifend 12 479  
-          ifend 12 485  
-          line: 12 416  # else 00r( $eventcounter == 10 
-          ifend 13 491  
-          line: 13 486  # } 004 
-          if 16 496  
-          line: 16 492  # ^if 00q( $cs_bot = laura_li ) 
-          if 17 531  
-          line: 17 527  # ^if 00r( $chatphase == start )
-          if 18 567  
-          line: 18 563  # ^if 00K( $noncrittopic < 3 and
-          elseif 19 646  
-          line: 19 641  # else 00p( $noncrittopic < 3 ) 
-          elseif 20 707  
-          ifend 20 762  
-          line: 20 702  # else 00p( $noncrittopic > 2 ) 
-          elseif 21 774  
-          line: 21 769  # else 00q( $chatphase == main )
-          if 22 809  
-          line: 22 805  # ^if 00p( $eventcounter < 7 ) 0
-          elseif 23 870  
-          line: 23 865  # else 00r( $$eventcounter < 10 
-          elseif 24 929  
-          ifend 24 988  
-          line: 24 924  # else 00s( $$eventcounter == 10
-          elseif 25 1000  
-          line: 25 995  # else 00q( $$chatphase == end )
-          if 26 1035  
-          line: 26 1031  # ^if 00p( $eventcounter < 7 ) 0
-          elseif 27 1101  
-          line: 27 1096  # else 00q( $eventcounter < 10 )
-          elseif 28 1159  
-          ifend 28 1217  
-          ifend 28 1223  
-          line: 28 1154  # else 00r( $eventcounter == 10 
-          line: 29 1224  # } aaa 
-          ifend 31 1229  
+          line: 4 0  # ^if 01K( $cs_bot = laura_si or
+          if 5 134  
+          line: 5 130  # ^if 00q( $chatphase == main ) 
+          if 6 169  
+          line: 6 165  # ^if 00p( $eventcounter < 7 ) 0
+          elseif 7 230  
+          line: 7 225  # else 00q( $eventcounter < 10 )
+          elseif 8 288  
+          ifend 8 346  
+          line: 8 283  # else 00r( $eventcounter == 10 
+          elseif 9 358  
+          line: 9 353  # else 00p( $chatphase == end ) 
+          if 10 392  
+          line: 10 388  # ^if 00p( $eventcounter < 7 ) 0
+          elseif 11 458  
+          line: 11 453  # else 00q( $eventcounter < 10 )
+          elseif 12 516  
+          ifend 12 574  
+          ifend 12 580  
+          line: 12 511  # else 00r( $eventcounter == 10 
+          ifend 13 586  
+          line: 13 581  # } 004 
+          if 16 591  
+          line: 16 587  # ^if 01g( $cs_bot = laura_li or
+          if 17 691  
+          line: 17 687  # ^if 00r( $chatphase == start )
+          if 18 727  
+          line: 18 723  # ^if 00K( $noncrittopic < 3 and
+          elseif 19 806  
+          line: 19 801  # else 00p( $noncrittopic < 3 ) 
+          elseif 20 867  
+          ifend 20 922  
+          line: 20 862  # else 00p( $noncrittopic > 2 ) 
+          elseif 21 934  
+          line: 21 929  # else 00q( $chatphase == main )
+          if 22 969  
+          line: 22 965  # ^if 00p( $eventcounter < 7 ) 0
+          elseif 23 1030  
+          line: 23 1025  # else 00r( $$eventcounter < 10 
+          elseif 24 1089  
+          ifend 24 1148  
+          line: 24 1084  # else 00s( $$eventcounter == 10
+          elseif 25 1160  
+          line: 25 1155  # else 00q( $$chatphase == end )
+          if 26 1195  
+          line: 26 1191  # ^if 00p( $eventcounter < 7 ) 0
+          elseif 27 1261  
+          line: 27 1256  # else 00q( $eventcounter < 10 )
+          elseif 28 1319  
+          ifend 28 1377  
+          ifend 28 1383  
+          line: 28 1314  # else 00r( $eventcounter == 10 
+          line: 29 1384  # } aaa 
+          ifend 31 1389  
           Complexity of ^emohandler: 23
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL/z_disclosureHandler.top
     macro: 1  ^disclosurehandler
@@ -10196,14 +10196,14 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONTROL
         rule: 224  ~addposthoc.3.0 t: 
           line: 224 0  # ^soundfile ( $lastoutput ) 
           Complexity of rule ~addposthoc.3.0- t: 1
-        rule: 225  ~addposthoc.4.0 t: 
-          if 225 4  
-          ifend 225 122  
-          line: 225 0  # ^if 00n( ^response ( 2 ) ) 01l
+        rule: 226  ~addposthoc.4.0 t: 
+          if 226 4  
+          ifend 226 122  
+          line: 226 0  # ^if 00n( ^response ( 2 ) ) 01l
           Complexity of rule ~addposthoc.4.0- t: 2
-        rule: 226  ~addposthoc.5.0 t: 
-          line: 226 0  # ^oob ( ) 
-          line: 227 9  # ^postprintbefore ( \[ $$oob \]
+        rule: 227  ~addposthoc.5.0 t: 
+          line: 227 0  # ^oob ( ) 
+          line: 228 9  # ^postprintbefore ( \[ $$oob \]
           Complexity of rule ~addposthoc.5.0- t: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_reactance.top
     topic: 1  ~reactance

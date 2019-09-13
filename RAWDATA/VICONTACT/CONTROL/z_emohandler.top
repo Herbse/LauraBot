@@ -1,7 +1,7 @@
 
 outputmacro: ^emoHandler()
 
-if ($cs_bot=laura_si){
+if ($cs_bot=laura_si OR $cs_bot=constantin_si OR $cs_bot=luisa_si OR $cs_bot=natalia_si OR $cs_bot=simon_si){
 if ($chatPhase==main) {
 	if ($eventCounter < 7) {$$emoType = serious}
 	else if ($eventCounter < 10) {$$emoType = sad}
@@ -13,7 +13,7 @@ else if ($chatPhase==end){
 }
 
 
-if ($cs_bot=laura_li){
+if ($cs_bot=laura_li OR $cs_bot=andre_li OR $cs_bot=sara_li OR $cs_bot=jason_li){
 if ($chatPhase==start) {
 	if ($noncritTopic < 3 AND $$critAsked==1) {$$emoType = nope}
 	else if ($noncritTopic < 3) {$$emoType = serious}
