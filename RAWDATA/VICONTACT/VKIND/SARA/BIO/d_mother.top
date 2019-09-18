@@ -70,7 +70,7 @@ u: () ^keep() ^refine()
     # individual
     a: (^individual()) $$intent=individual $$intent=individual ^refine()
         b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==2) Mama, Pappa, Amina und ich.
+        b: ($motherCounter==2) Mama, Papa, Amina und ich.
         b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # reason
@@ -106,8 +106,5 @@ u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 
 # Spezifische Antworten------------------------------------------------------------------------------
 
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(MAMA_1)
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

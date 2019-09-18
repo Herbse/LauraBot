@@ -13,7 +13,7 @@ from google.cloud import texttospeech
 client = texttospeech.TextToSpeechClient()
 
 # Set the text input to be synthesized
-transcribe = "die ärgern mich immer weil ich vorn sitze."
+transcribe = "zu hause"
 synthesis_input = texttospeech.types.SynthesisInput(text=transcribe)
 
 # Build the voice request, select the language code ("en-US") and the ssml
@@ -25,7 +25,7 @@ voice = texttospeech.types.VoiceSelectionParams(
 
 # Select the type of audio file you want returned
 audio_config = texttospeech.types.AudioConfig(
-    pitch=13.20,
+    pitch=12.20,
     speaking_rate=1.19,
     audio_encoding=texttospeech.enums.AudioEncoding.LINEAR16)
 

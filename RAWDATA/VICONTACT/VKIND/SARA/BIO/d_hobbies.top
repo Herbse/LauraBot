@@ -25,7 +25,7 @@ t: ^keep() ^refine()
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) Pappa.
+        b: ($hobbiesCounter==2) Papa.
         b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # reason
@@ -65,6 +65,7 @@ u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 #! 
 u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 Ich würde viel lieber Handball spielen.
 
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
 
 

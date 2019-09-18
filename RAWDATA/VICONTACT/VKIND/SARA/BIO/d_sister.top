@@ -87,9 +87,5 @@ u: SISTER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 #! Erzähl mir doch mehr über Leon.
 u: SISTER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 4 $$sound_file = 17 Nie kann ich was alleine spielen. Sie lässt mich nicht in Ruhe.
 
-#Spezifische Antworten --------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

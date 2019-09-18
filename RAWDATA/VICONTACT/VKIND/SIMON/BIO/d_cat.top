@@ -83,9 +83,5 @@ u: CAT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCatego
 #! Erzähl mir doch mehr über Leon.
 u: CAT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 4 $$sound_file = 17 Jetzt ist sie schon drei Jahre alt.
 
-#Spezifische Antworten --------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

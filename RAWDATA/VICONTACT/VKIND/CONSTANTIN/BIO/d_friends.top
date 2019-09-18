@@ -28,7 +28,7 @@ u: ([freunde die sie]) ^keep() ^refine()
     # activity
     a: (^activity()) $$intent=activity Die gehen beide in die Schule, aber in eine andere Schule als ich.
     # places together
-    a: (^places_together()) $$intent=places_together Wir gehen zusammen in der Schülerclub oder auf den Spielplatz.
+    a: (^places_together()) $$intent=places_together Wir gehen zusammen in den Schülerclub oder auf den Spielplatz.
 
 
 #specific questions/answers depending on general context
@@ -125,8 +125,8 @@ u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
 u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Wir spielen den anderen Streiche.
    
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
 
 
 

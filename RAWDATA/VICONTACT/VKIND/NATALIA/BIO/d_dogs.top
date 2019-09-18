@@ -83,11 +83,5 @@ u: DOGS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 
 u: DOGS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 4 Bella ist immer krank und dann müssen wir sie zum Tierarzt bringen. Das ist so teuer.
 
-  
-
-# Spezifische Antworten--------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(PAPA_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

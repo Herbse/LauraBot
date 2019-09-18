@@ -79,7 +79,7 @@ u: NEIGHBOUR_1 ([$$answerCategory==narrative $$answerCategory==specific $$answer
  
 
 #! Erzähl mal wie er ihr hilft?
-u: NEIGHBOUR_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $neighbourCounter = 2 Er hat auch super große Puzzel, mit 2000 Teilen.
+u: NEIGHBOUR_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $neighbourCounter = 2 Er hat auch super große Puzzle, mit 2000 Teilen.
 
 #! Erzähl mir mehr über deinen Papa!
 u: NEIGHBOUR_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $neighbourCounter = 3 Ich bin fast jeden Tag bei ihm. Bei ihm gibt's jedes Mal Kekse.
@@ -90,9 +90,5 @@ u: NEIGHBOUR_4 ([$$answerCategory==narrative $$answerCategory==specific $$answer
 
   
 
-# Spezifische Antworten--------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(PAPA_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

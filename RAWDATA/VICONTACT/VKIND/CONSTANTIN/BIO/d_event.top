@@ -311,17 +311,18 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Ich hab gesagt, „lass das“, aber er hat einfach weitergemacht.
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Ich hab gesagt, lass das, aber er hat einfach weitergemacht.
 #b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Ich hatte auch einen blauen Fleck.
-#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Tobias hat nur gesagt: "Was macht ihr da für einen Quatsch?".
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Tobias hat nur gesagt Was macht ihr da für einen Quatsch.
 
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?
 #a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Er macht das immer nur, wenn ich alleine im Bus bin.
 #b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Ich war zu langsam beim Einsteigen. Da wird er immer sauer.
 #c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Er ist weitergefahren und der Junge hat nicht aufgehört.
-    
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
+
 # Clue 2
 u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = event28 Tobias ist komisch zu mir. Ich will nicht mehr, dass er mich fährt.
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(EVENT_1)

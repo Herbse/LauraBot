@@ -63,5 +63,5 @@ u: NEIGHBOURS_3([$$answerCategory==narrative $$answerCategory==specific $$answer
 u: NEIGHBOURS_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $neighboursCounter = 4 Mit anderen Kindern spiele ich nicht.
 
 
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

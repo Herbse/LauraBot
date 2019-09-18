@@ -91,10 +91,5 @@ u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 Am Wochenende darf ich manchmal mitkommen und Papa in der Garage helfen, ihm das Werkzeug geben und so.
 
   
-
-# Spezifische Antworten--------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(PAPA_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

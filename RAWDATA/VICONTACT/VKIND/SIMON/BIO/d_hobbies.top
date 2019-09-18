@@ -62,6 +62,7 @@ u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 #! 
 u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 Wir sehen uns nur alle zwei Wochen. Da hab ich vergessen welche Pilze giftig sind und welche nicht.
 
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
 
 

@@ -85,8 +85,6 @@ u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
 u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Charlotte hat noch zwei Brüder. Die sind beide jünger als sie.
    
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
 

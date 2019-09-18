@@ -81,7 +81,6 @@ u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
 u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Wenn ich Mama erzähle, dass ich später mal Künstlerin sein will, dann sagt sie, dass man damit kein Geld verdienen kann.
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
 

@@ -91,9 +91,5 @@ u: BROTHER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
 #! Erzähl mir doch mehr über Leon.
 u: BROTHER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 4 $$sound_file = brother17 Dann gehe ich raus oder zu Mira. 
 
-#Spezifische Antworten --------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(BROTHER_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

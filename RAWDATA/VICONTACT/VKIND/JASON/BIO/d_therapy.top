@@ -89,5 +89,6 @@ u: THERAPY_3([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 u: THERAPY_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 4 Claudia ist die Therapeutin. Die ist voll witzig.
 
 
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
 

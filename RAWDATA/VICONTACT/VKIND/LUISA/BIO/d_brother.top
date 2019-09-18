@@ -85,6 +85,5 @@ u: BROTHER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
 #! Erzähl mir doch mehr über Leon.
 u: BROTHER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 4 $$sound_file = 17 Mit mir gehen sie nie raus.
 
-#Spezifische Antworten --------------------------------------------------------------------------------------
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

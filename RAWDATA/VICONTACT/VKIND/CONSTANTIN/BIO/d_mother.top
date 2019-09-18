@@ -83,7 +83,5 @@ u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
 u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Mama hat oft keine Zeit für mich. Sie hat viel zu tun.
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

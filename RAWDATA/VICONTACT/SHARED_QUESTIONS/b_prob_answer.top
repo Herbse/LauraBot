@@ -92,6 +92,7 @@ $goodQuestion += 1 $noncritTopic += 1
 
 # SI: 80% narrative | 10% non-answer | 10 % ignorance
 u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency} invitation_to_tell) 
+$goodQuestion += 1 $noncritTopic += 1
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
@@ -191,6 +192,7 @@ $goodQuestion += 1 $noncritTopic += 1
         else {$$answerCategory = reactance ^respond(~reactance)}
 
 u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency}  facilitator) 
+$goodQuestion += 1 $noncritTopic += 1
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
@@ -466,7 +468,7 @@ else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = greetings-100
 $$answerCategory = greetings 
-Hallo. ^reuse(~event_t.EVENT_2)
+Hallo. 
 
 
 

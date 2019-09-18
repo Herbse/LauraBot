@@ -92,9 +92,5 @@ u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 
   
 
-# Spezifische Antworten--------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(PAPA_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

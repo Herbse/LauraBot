@@ -86,6 +86,5 @@ u: BOYFRIEND_3 ([$$answerCategory==narrative $$answerCategory==specific $$answer
 #! Erzähl mir doch mehr über Leon.
 u: BOYFRIEND_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $boyfriendCounter = 4 $$sound_file = 17 Jeremy ist schon 13.
 
-#Spezifische Antworten --------------------------------------------------------------------------------------
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

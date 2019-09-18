@@ -317,7 +317,7 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Er hat mir die Zunge in den Mund gesteckt. Bäh.
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Er hat mir die Zunge in den Mund gesteckt.
 #b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Er hat gesagt, dass er mir damit wehtut, wenn ich was sage.
 #c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Er lacht mich aus und dann lachen alle mit.
 
@@ -326,8 +326,10 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Wir waren allein auf der Toilette. Die im zweiten Stock.
 #b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Ich hab dem Julian gesagt, dass ich ihn nicht verpetze. Ich hab Angst vor ihm.
 #c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Manchmal laufe ich dann auf die Toilette. Ich will nicht, dass die mich sehen wenn ich weine.
-    
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
+
 # Clue 2
 u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = event28 Die anderen sind gemein.
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(EVENT_1)
+

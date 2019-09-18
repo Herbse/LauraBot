@@ -57,3 +57,5 @@ u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 
 # Spezifische Antworten----------------------------------------------------------------------------------
 
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

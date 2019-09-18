@@ -14,7 +14,7 @@ u: ([freunde die sie]) ^keep() ^refine()
     # job
     a: (^job()) $$intent=job 
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das sind meine Freudinnen.
+    a: (^relationship_f()) $$intent=relationship_f Das sind meine Freundinnen.
     # relationship_o
     a: (^relationship_o()) $$intent=relationship_o Die sind cool.
     # time together
@@ -82,8 +82,5 @@ u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
 u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Michelle übernachtet auch bei Kathi. Ich darf das aber nicht.
    
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
-
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

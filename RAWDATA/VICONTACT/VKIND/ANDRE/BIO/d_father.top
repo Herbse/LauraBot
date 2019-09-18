@@ -76,7 +76,7 @@ u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
  
 
 #! Erzähl mal wie er ihr hilft?
-u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 Am Wochenende schauen wir uns manchmal unseren Lieblingsfilm an, "Der Grinch".
+u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 Am Wochenende schauen wir uns manchmal unseren Lieblingsfilm an, der Grinch.
 
 #! Erzähl mir mehr über deinen Papa!
 u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 3 Einmal, als Mama noch bei uns war, sind wir Drachensteigen gegangen. Das ist lange her.
@@ -85,11 +85,5 @@ u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 
 u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 Ich würde gerne mehr mit Papa unternehmen.
 
-  
-
-# Spezifische Antworten--------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(PAPA_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.  
+u: () ^emptyTopic()

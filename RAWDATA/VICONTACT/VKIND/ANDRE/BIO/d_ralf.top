@@ -87,9 +87,5 @@ u: RALF_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 #! Erzähl mir doch mehr über Leon.
 u: RALF_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 4 $$sound_file = 17 Onkel Ralf hat nicht viel Geld, deshalb können wir nicht in den Zoo oder so. Aber das macht gar nichts.
 
-#Spezifische Antworten --------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

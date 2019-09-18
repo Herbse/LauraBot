@@ -318,16 +318,19 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Dann hat er gesagt, „zieh deine Hose aus”. Ich hab „nein” gesagt, aber dann hat er das gemacht. 
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Dann hat er gesagt, zieh deine Hose aus. Ich hab nein gesagt, aber dann hat er das gemacht. 
 #b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Das haben sie dann getrunken nach dem Training. Voll eklig.
 #c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Im Sommer machen wir Trainingslager und nur wenn ich gewinne, darf ich mitfahren.
 
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?
-#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Jemand hat dann an der Tür geklopft und er hat gesagt „jetzt nicht". Dann hat er meine Hose ganz schnell wieder hochgezogen.
+#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Jemand hat dann an der Tür geklopft und er hat gesagt jetzt nicht. Dann hat er meine Hose ganz schnell wieder hochgezogen.
 #b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Alle haben gesagt, ich soll auch was trinken, aber das war eklig. Die Jungs finden mich jetzt uncool.
 #c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Er hat schon Jungs aus dem Team rausgeschmissen. Nur weil die nicht gut waren. Voll krass.
-    
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
+
 # Clue 2
 u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = event28 Gerd wird so schnell aggressiv.
 # Weiterleitung aus dem Topic-Roulette

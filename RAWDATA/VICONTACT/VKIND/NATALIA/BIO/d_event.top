@@ -306,7 +306,7 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #---------------------------------------------------------------------------------------------
 
 #! wie ist das passiert?
-#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event23a Da hat er mich begrapscht, da so zwischen den Beinen.
+#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event23a Da hat er mich angefasst, da so zwischen den Beinen.
 #b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event24b Er schreit laut rum und Mama weint dann immer.
 #c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event25c Die Polizei kam spät am Abend zu uns. Ich war schon im Bett.
 
@@ -323,8 +323,10 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Mama kam später ins Zimmer. Aber sie hat nichts gemerkt.
 #b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Einmal musste Mama auch ins Krankenhaus deswegen.
 #c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Oleg kam erst nach zwei Tagen wieder nach Hause.
-    
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
+
 # Clue 2
 u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = event28 Meine Mama soll mich von der Schule abholen, nicht Oleg.
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(EVENT_1)
+

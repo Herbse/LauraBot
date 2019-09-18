@@ -38,7 +38,7 @@ u: () ^keep() ^refine()
     # job
     a: (^job()) $$intent=job Gar nichts.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das ist mein Oma.
+    a: (^relationship_f()) $$intent=relationship_f Das ist meine Oma.
     # relationship_o
     a: (^relationship_o()) $$intent=relationship_o Meine Oma ist langweilig. 
     # time together
@@ -111,9 +111,5 @@ u: OMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCatego
 
   
 
-# Spezifische Antworten--------------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(OMA_1)
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

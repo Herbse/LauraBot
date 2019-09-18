@@ -108,7 +108,5 @@ u: AUNT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
 u: AUNT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $auntCounter = 4 Im Winter geht sie mit mir immer auf den Weihnachtsmarkt.
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

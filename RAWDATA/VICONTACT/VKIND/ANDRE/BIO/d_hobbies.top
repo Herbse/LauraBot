@@ -63,5 +63,5 @@ u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 Manchmal hab ich keinen Bock auf Handball und würde lieber Fußball spielen.
 
 
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

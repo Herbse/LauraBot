@@ -54,5 +54,5 @@ u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
 u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Steve und Dominik waren auch auf meiner Schule, als sie so alt waren wie ich.
 
-# Spezifische Antworten----------------------------------------------------------------------------------
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

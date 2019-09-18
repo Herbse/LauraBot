@@ -91,9 +91,7 @@ u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
 u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Jacky liest lieber Bücher. Sie geht nicht gerne im Wald spazieren.
    
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
 
 

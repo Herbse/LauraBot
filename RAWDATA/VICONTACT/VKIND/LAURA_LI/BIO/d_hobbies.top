@@ -56,7 +56,7 @@ u: HOBBIES_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
 
   
 #! Erzähl mal mehr.
-u: HOBBIES_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2 Wir tanzen was tolles von Beyoncé. Ich kann das schon voll gut.
+u: HOBBIES_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2 Wir tanzen was tolles von Beyonce. Ich kann das schon voll gut.
    
  
 
@@ -68,11 +68,5 @@ u: HOBBIES_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
 u: HOBBIES_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 Die Mira ist so supercool, die darf ein Solo tanzen.
    
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(HOBBIES_1)
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

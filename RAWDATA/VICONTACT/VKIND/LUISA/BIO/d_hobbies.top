@@ -17,8 +17,8 @@ u: () ^keep() ^refine()
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($hobbiesCounter==1) In der Schule.
-        b: ($hobbiesCounter==2) In der Kunstwerstatt.
-        b: ($hobbiesCounter==3) In der Kunstwerstatt.
+        b: ($hobbiesCounter==2) In der Kunstwerkstatt.
+        b: ($hobbiesCounter==3) In der Kunstwerkstatt.
         b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
@@ -63,6 +63,7 @@ u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 #! 
 u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 Einmal waren wir mit Frau Schulze in einem Kunstmuseum. Da will ich öfter hin!
 
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
 
 

@@ -19,7 +19,7 @@ voice = texttospeech.types.VoiceSelectionParams(
 
 # Select the type of audio file you want returned
 audio_config = texttospeech.types.AudioConfig(
-    pitch=7.6,
+    pitch=11.6,
     speaking_rate=1.11,
     audio_encoding=texttospeech.enums.AudioEncoding.LINEAR16)
 

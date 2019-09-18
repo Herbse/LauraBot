@@ -84,10 +84,6 @@ u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCateg
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
 u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Sie arbeitet auch am Wochenende. In einem Kosmetikladen.
 
-# Spezifische Antworten------------------------------------------------------------------------------
 
-
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(MAMA_1)
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

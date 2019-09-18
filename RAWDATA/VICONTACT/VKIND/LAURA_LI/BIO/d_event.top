@@ -324,9 +324,9 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Das war voll eklig. Ich will den nicht mehr sehen.
 #b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Ich hab mich mit Leon gestritten. Und da ist mein Onkel voll sauer geworden.
 #c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Ich glaube, Papa hat das auch gesehen. Er hat sich neulich ganz doll mit Mama gestritten!
-    
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic() 
+
 # Clue 2
 u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = event28 Ich will nicht, dass der Onkel mich abholen darf von der Schule.
-
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(EVENT_1)

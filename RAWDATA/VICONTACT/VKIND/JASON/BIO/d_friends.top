@@ -90,9 +90,8 @@ u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCa
   
 
 #!  Erzähl mir mehr.
-u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Wir sind Team Blau bei Pokémon. Kevin hat die besten Pokémon!
+u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Wir sind Team Blau bei Pokemon. Kevin hat die besten Pokemon!
    
 
-# Spezifische Antworten------------------------------------------------------------------------------
-
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

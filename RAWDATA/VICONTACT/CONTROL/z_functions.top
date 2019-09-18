@@ -87,6 +87,20 @@ if ($giveClue==1) {$$sound_file_c = $_soundfile $$sound_file = ^join($$sound_fil
 else {$$sound_file = $_soundfile}
 if (!$$sound_file){$$sound_file = NaN}
 
+outputmacro: ^emptyTopic()
+
+if ($disclosureState==1)) {
+$$randNum = %rand
+if ($$randNum < 75) {$$answerCategory = ignorance ^respond(~ignorance)}
+else {$$answerCategory = notAnswering ^respond(~notAnswering)}}
+
+else if ($disclosureState==0) {
+$$randNum = %rand
+if ($$randNum < 50) {$$answerCategory = ignorance ^respond(~ignorance)}
+else if ($$randNum < 75) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+else {$$answerCategory = reactance ^respond(~reactance)}}
+
+
 
 topic: ~xPOSTAGSENTENCE system()
 t: (_* )  # memorize sentence to pass to tagger

@@ -374,8 +374,9 @@ u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCate
 #a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Ich wollte nach Papa rufen, aber sie hat mir den Mund zugehalten. 
 #b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Mama sagt, sie hat sich Papa auch nicht selbst ausgesucht.
 #c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Tante Selma will auch gar nicht weggehen. Das hat sie aber nur mir gesagt!
-    
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
+
 # Clue 2
-u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = event28 Tante Selma will immer, dass ich sie umarme, wenn sie bei uns ist.
-# Weiterleitung aus dem Topic-Roulette
-u: ($narrative=1) $narrative=0 ^reuse(EVENT_1)
+u: CLUE2 ()  Tante Selma will immer, dass ich sie umarme, wenn sie bei uns ist.

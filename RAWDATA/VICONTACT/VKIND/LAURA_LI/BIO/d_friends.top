@@ -93,7 +93,5 @@ u: FRIENDS_3([$$answerCategory==narrative $$answerCategory==specific $$answerCat
 u: FRIENDS_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Mira hat einen Hund. der ist soo süß, der will mich immer ablecken.
 
 
-
-
-# Spezifische Antworten-------------------------------------------------------------------------------------
-
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

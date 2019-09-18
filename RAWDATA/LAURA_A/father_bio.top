@@ -3,7 +3,7 @@ topic: ~father_bio (~father Stefan helfen hilft)
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: PAPA_HELP_MUM () Mein pappahilft meiner Mama zu Hause.
+u: PAPA_HELP_MUM () Mein Papa hilft meiner Mama zu Hause.
   #! Hilft er ihr beim Wäsche machen oder beim Kochen? 
   a: (<<[helfen hilft geholfen] wäsche oder kochen >>) [Beim Wäsche machen][Beim Kochen]
   #! Wie hilft er ihr
@@ -11,7 +11,7 @@ u: PAPA_HELP_MUM () Mein pappahilft meiner Mama zu Hause.
   a: (~why)^reuse(PAPA_COOK)
 
 #! Erzähl mal etwas über deinen Vater.
-#! Vorhin hast Du gesagt, dass Du mit Deinem pappain die Garage gehst. Erzähl mir mehr darüber. 
+#! Vorhin hast Du gesagt, dass Du mit Deinem papa in die Garage gehst. Erzähl mir mehr darüber. 
 u: (<<~narrate [~father er ihn]>>) ^reuse(PAPA_HELP_MUM)
 
 #! Erzähl mal wie er ihr hilft?
@@ -20,13 +20,13 @@ u: PAPA_COOK (<<~narrate [helfen hilft geholfen]>>) Er geht einkaufen und kocht 
   a: (<<~mother oder [gemeinsam zusammen]>>) [Nur für sie][Er kocht für uns alle]
 
 #! Erzähl mir mehr über deinen Papa!
-u: PAPA_HELP_NEIGHBOURS (<<~narrate [~father er ihn]>>) pappahilft den Nachbarn beim Autos reparieren. Oder einmal, da haben sie eine Waschmaschine wieder ganz gemacht.
+u: PAPA_HELP_NEIGHBOURS (<<~narrate [~father er ihn]>>) papa hilft den Nachbarn beim Autos reparieren. Oder einmal, da haben sie eine Waschmaschine wieder ganz gemacht.
   #! Hilft dein Papa da öfters mal mit? 
   a: (<<[helfen hilft geholfen] [~often manchmal]>>) [Ja][Nein]
 
 #! Was machst du denn gern mit deinem Papa?
 #! Was für Dinge unternimmst du gemeinsam mit deinem Papa? 
-u: PAPA_REPAIR (<<~activity ~bot [~father ihm]>>) Am Wochenende darf ich manchmal mitkommen und pappain der Garage helfen, ihm das Werkzeug geben und so.
+u: PAPA_REPAIR (<<~activity ~bot [~father ihm]>>) Am Wochenende darf ich manchmal mitkommen und papa in der Garage helfen, ihm das Werkzeug geben und so.
   #! Hilfst nur du dem Papa dabei oder sind da auch andere Menschen mit dabei? 
   a: (<<nur du oder andere>>) [Nur ich][Auch andere]
   #! Ist der Papa da jedes Wochenende? 
