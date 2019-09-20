@@ -49,7 +49,7 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1 Bei der Kunst- AG malen wir Bilder. Mit Tusche. Das kann ich voll gut.
+u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1 Bei der Kunst AG malen wir Bilder. Mit Tusche. Das kann ich voll gut.
   
 
 #! 

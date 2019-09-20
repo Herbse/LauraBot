@@ -1,4 +1,15 @@
 
+
+# patternmacros: change topic
+patternmacro: ^change_topic()
+[
+(<<anderes ~narrate>>)
+(<<weiteres ~narrate>>)
+(<<sonst ~narrate>>)
+]
+
+
+
 # patternmacros: introductory questions
 
 patternmacro: ^general_question()

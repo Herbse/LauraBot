@@ -88,6 +88,7 @@ else {$$sound_file = $_soundfile}
 if (!$$sound_file){$$sound_file = NaN}
 
 outputmacro: ^emptyTopic()
+$$intent=emptyTopic
 
 if ($disclosureState==1)) {
 $$randNum = %rand
@@ -99,6 +100,8 @@ $$randNum = %rand
 if ($$randNum < 50) {$$answerCategory = ignorance ^respond(~ignorance)}
 else if ($$randNum < 75) {$$answerCategory = notAnswering ^respond(~notAnswering)}
 else {$$answerCategory = reactance ^respond(~reactance)}}
+
+^poptopic()
 
 
 
