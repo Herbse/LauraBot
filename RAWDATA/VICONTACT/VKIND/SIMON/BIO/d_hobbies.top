@@ -22,7 +22,7 @@ u: () ^keep() ^refine()
         b: ($hobbiesCounter==4) Im Wald bei der Schule.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($hobbiesCounter==1) Mit den Pfadis.
+        b: ($hobbiesCounter==1) Mit den Pfadies.
         b: ($hobbiesCounter==2) Bei den Pfadis.
         b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($hobbiesCounter==4) Bei den Pfadis.

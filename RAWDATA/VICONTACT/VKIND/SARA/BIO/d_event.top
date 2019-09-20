@@ -91,8 +91,8 @@ u: ([familie Familie]) ^keep() ^refine()
 #a        b: ($eventCounter==10) $$sound_file = event12a Dann hatte ich Angst.
 #a    # other_opinion
 #a    a: (^other_opinion()) $$intent=other_opinion ^refine()
-#a        b: ($eventCounter==5) ^reuse(~EVENT_6)
-#a        b: ($eventCounter==9) ^reuse(~EVENT_10)
+#a        b: ($eventCounter==5) ^reuse(EVENT_6)
+#a        b: ($eventCounter==9) ^reuse(EVENT_10)
 #a        b: () $$answerCategory=ignorance  ^respond(~ignorance)
 #a    # place
 #a    a: (^place()) $$intent=place ^refine()
@@ -247,7 +247,7 @@ u: ([familie Familie]) ^keep() ^refine()
 #c        b: ($eventCounter==10) $$sound_file = event11c Voll doof.
 #c    # other_opinion
 #c    a: (^other_opinion()) $$intent=other_opinion ^refine()
-#c        b: ($eventCounter==5) ^reuse(~EVENT_6)
+#c        b: ($eventCounter==5) ^reuse(EVENT_6)
 #c        b: () $$answerCategory=ignorance  ^respond(~ignorance)
 #c    # place
 #c    a: (^place()) $$intent=place ^refine()
