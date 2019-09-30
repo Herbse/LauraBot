@@ -9,7 +9,7 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
     a: ([~friend jacky jacki jäki]) ^respond(~friends_t)
     a: ([~hobby wald pilze pilz]) ^respond(~hobbies_t)
     a: (~school) [^respond(~school_t)][^respond(~event_t)]
-    a: (^change_topic()) $$intent=changeTopic ([^respond(~mother_t)] [^respond(~neighbour_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~cat_t)]
+    a: (^change_topic()) $$intent=changeTopic [^respond(~mother_t)] [^respond(~neighbour_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~cat_t)]
     a: (^general_question()) $$intent=intro_question ^refine()
         b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~cat_t)] [^respond(~neighbour_t)]
         b: (~parents) [^respond(~mother_t)]

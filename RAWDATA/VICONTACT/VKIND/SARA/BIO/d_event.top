@@ -43,9 +43,9 @@ u: ([sie tante selma]) ^keep() ^refine()
     # time relationship
     a: (^time()) $$intent=time_relationship $$sound_file = event7 Schon immer.
     # activity together
-    a: (^activity_together()) $$intent=activity_together ^respond(~event_t)
+    a: (^activity_together()) $$intent=activity_together 
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = event9 Der geht auch in die Schule.
+    a: (^activity()) $$intent=activity $$sound_file = event9 Sie arbeitet in einem Büro.
     # places together
     a: (^places_together()) $$intent=places_together $$sound_file = event10 Zu Hause.
 
@@ -68,7 +68,7 @@ u: ([familie Familie]) ^keep() ^refine()
     # time relationship
     a: (^time()) $$intent=time_relationship 
     # activity together
-    a: (^activity_together()) $$intent=activity_together ^respond(~event_t)
+    a: (^activity_together()) $$intent=activity_together 
     # activity
     a: (^activity()) $$intent=activity 
     # places together

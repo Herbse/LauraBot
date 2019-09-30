@@ -20,6 +20,7 @@ patternmacro: ^general_question()
     (was ist los)
     (was beschäftigt)
     (<< wie [läuft läufts]>>)
+    (worum)
 ]
 
 patternmacro: ^general_prompt()
@@ -96,7 +97,7 @@ patternmacro: ^follow_up()
 # patternmacros: people
 
 patternmacro: ^names()
-    [   (<< wie [heisst heißt] >>)
+    [   (<< wie [heisst heißt heissen heißen] >>)
         (<< wie name >>)
     ]   
 
@@ -159,3 +160,103 @@ patternmacro: ^time_together()
         (<< [wann wie_oft wie_häufig wie_viel] zusammen >>)
         (<< [wann wie_oft wie_häufig wie_viel] zeit mit >>)
     ]
+
+# patternmacros: contexts
+
+# context: school
+patternmacro: ^school_o()
+[
+(<< wie [gefällt findest läuft zurecht zu_recht] [schule mathe deutsch matheunterricht unterricht]>>)
+]
+patternmacro: ^classmates_p()
+[
+    (<< [mit_wem mit_welchem mit_welcher] [verbringst spielst bist] >>)
+]
+patternmacro: ^classmates_n()
+[
+    (<< wen [magst findest] nicht [klasse schüler mitschüler] >>)
+]
+patternmacro: ^teacher_p()
+[
+    (<< [welchen welche] [lehrer lehrerrin] [magst kommst] >>)
+]
+patternmacro: ^teacher_n()
+[
+     (<< [welchen welche] [lehrer lehrerrin] [magst kommst] nicht >>)
+]
+patternmacro: ^subject_p()
+[
+    (<< [schulfach fach schulfächer fächer] [magst spass spaß] >>
+
+]
+patternmacro: ^subject_n()
+[
+    
+]
+patternmacro: ^class_activity()
+[
+    
+]
+patternmacro: ^break_activity()
+[
+    
+]
+patternmacro: ^wayhome_peop()
+[
+    
+]
+# context: hobby
+patternmacro: ^hobby_o()
+[
+    
+]
+patternmacro: ^hobby_loc()
+[
+    
+]
+patternmacro: ^hobby_since()
+[
+    
+]
+patternmacro: ^hobby_peop()
+[
+    
+]
+patternmacro: ^hobby_time()
+[
+    
+]
+patternmacro: ^hobby_dur()
+[
+    
+]
+patternmacro: ^hobby_activity()
+[
+    
+]
+# context: freetime
+patternmacro: ^freetime_loc()
+[
+    
+]
+patternmacro: ^freetime_peop()
+[
+    
+]
+patternmacro: ^freetime_activity()
+[
+    
+]
+# context: at home
+patternmacro: ^home_o()
+[
+    
+]
+patternmacro: ^home_peop()
+[
+    
+]
+patternmacro: ^home_activity()
+[
+    
+]

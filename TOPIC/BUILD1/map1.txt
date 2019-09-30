@@ -13122,6 +13122,52 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONCEPT
           Complexity of ^places_together: 1
     macro: 156  ^time_together
           Complexity of ^time_together: 1
+    macro: 166  ^school_o
+          Complexity of ^school_o: 1
+    macro: 170  ^classmates_p
+          Complexity of ^classmates_p: 1
+    macro: 174  ^classmates_n
+          Complexity of ^classmates_n: 1
+    macro: 178  ^teacher_p
+          Complexity of ^teacher_p: 1
+    macro: 182  ^teacher_n
+          Complexity of ^teacher_n: 1
+    macro: 186  ^subject_p
+          Complexity of ^subject_p: 1
+    macro: 190  ^subject_n
+          Complexity of ^subject_n: 1
+    macro: 194  ^class_activity
+          Complexity of ^class_activity: 1
+    macro: 198  ^break_activity
+          Complexity of ^break_activity: 1
+    macro: 202  ^wayhome_peop
+          Complexity of ^wayhome_peop: 1
+    macro: 207  ^hobby_o
+          Complexity of ^hobby_o: 1
+    macro: 211  ^hobby_loc
+          Complexity of ^hobby_loc: 1
+    macro: 215  ^hobby_since
+          Complexity of ^hobby_since: 1
+    macro: 219  ^hobby_peop
+          Complexity of ^hobby_peop: 1
+    macro: 223  ^hobby_time
+          Complexity of ^hobby_time: 1
+    macro: 227  ^hobby_dur
+          Complexity of ^hobby_dur: 1
+    macro: 231  ^hobby_activity
+          Complexity of ^hobby_activity: 1
+    macro: 236  ^freetime_loc
+          Complexity of ^freetime_loc: 1
+    macro: 240  ^freetime_peop
+          Complexity of ^freetime_peop: 1
+    macro: 244  ^freetime_activity
+          Complexity of ^freetime_activity: 1
+    macro: 249  ^home_o
+          Complexity of ^home_o: 1
+    macro: 253  ^home_peop
+          Complexity of ^home_peop: 1
+    macro: 257  ^home_activity
+          Complexity of ^home_activity: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_concepts.top
     topic: 1  ~own_concepts~1
     concept: 3  ~action

@@ -35,7 +35,7 @@
 ^example p 0 0 A( ) [ ( noch ) ( ausserdem ) ] `
 ^explanation p 0 0 A( ) [ ( << was_für_ein >> ) ( << an_was >> ) ( woran ) ( << [ welcher welche ] situation >> ) ( << was meinst du >> ) ] `
 ^follow_up p 0 0 A( ) [ ( << was [ passiert macht gemacht machst machen getan sagt gesagt ] >> ) ] `
-^names p 0 0 A( ) [ ( << wie [ heisst heißt ] >> ) ( << wie name >> ) ] `
+^names p 0 0 A( ) [ ( << wie [ heisst heißt heissen heißen ] >> ) ( << wie name >> ) ] `
 ^age p 0 0 A( ) [ ( << wie alt >> ) ] `
 ^mood p 0 0 A( ) [ ( wie geht es ) ( wie gehts ) ( << wie_ist so drauf >> ) ] `
 ^activity p 0 0 A( ) [ ( << was [ machen macht ] >> ) ] `
@@ -45,3 +45,26 @@
 ^activity_together p 0 0 A( ) [ ( << was [ macht unternehmt ] ihr >> ) ( << was [ machst unternimmst ] du mit >> ) ] `
 ^places_together p 0 0 A( ) [ ( << wo ihr >> ) ( << wo mit >> ) ] `
 ^time_together p 0 0 A( ) [ ( << [ wann wie_oft wie_häufig wie_viel ] [ siehst seht ] [ du ihr ] >> ) ( << [ wann wie_oft wie_häufig wie_viel ] zusammen >> ) ( << [ wann wie_oft wie_häufig wie_viel ] zeit mit >> ) ] `
+^school_o p 0 0 A( ) [ ] `
+^classmates_p p 0 0 A( ) [ ] `
+^classmates_n p 0 0 A( ) [ ] `
+^teacher_p p 0 0 A( ) [ ] `
+^teacher_n p 0 0 A( ) [ ] `
+^subject_p p 0 0 A( ) [ ] `
+^subject_n p 0 0 A( ) [ ] `
+^class_activity p 0 0 A( ) [ ] `
+^break_activity p 0 0 A( ) [ ] `
+^wayhome_peop p 0 0 A( ) [ ] `
+^hobby_o p 0 0 A( ) [ ] `
+^hobby_loc p 0 0 A( ) [ ] `
+^hobby_since p 0 0 A( ) [ ] `
+^hobby_peop p 0 0 A( ) [ ] `
+^hobby_time p 0 0 A( ) [ ] `
+^hobby_dur p 0 0 A( ) [ ] `
+^hobby_activity p 0 0 A( ) [ ] `
+^freetime_loc p 0 0 A( ) [ ] `
+^freetime_peop p 0 0 A( ) [ ] `
+^freetime_activity p 0 0 A( ) [ ] `
+^home_o p 0 0 A( ) [ ] `
+^home_peop p 0 0 A( ) [ ] `
+^home_activity p 0 0 A( ) [ ] `
