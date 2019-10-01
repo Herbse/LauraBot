@@ -319,7 +319,7 @@ $noncritTopic += 1
 $$probFormat = option_chosen-80_notAnswering-10_ignorance-10
 $$randNum = %rand 
 if ($$randNum < 80){$$answerCategory = options ^respond(~options)} 
-else if ($$randNum < 90){$$$answerCategory = notAnswering ^respond(~notAnswering)} 
+else if ($$randNum < 90){$$answerCategory = notAnswering ^respond(~notAnswering)} 
 else {$$answerCategory = ignorance ^respond(~ignorance)} 
 
 
@@ -331,7 +331,7 @@ else if ('_2==transparency){$rapportCounter += 1}
 $noncritTopic += 1
 $$probFormat = affirmation-50_negation-30_ignorance-20
 $$randNum = %rand
-if (%$$randNum < 50){$$answerCategory = affirmation ^respond(~affirmation)} 
+if ($$randNum < 50){$$answerCategory = affirmation ^respond(~affirmation)} 
 else if ($$randNum < 80){$$answerCategory = negation $$answer = ^respond(~negat)} 
 else {$$answerCategory = ignorance ^respond(~ignorance)} 
 
