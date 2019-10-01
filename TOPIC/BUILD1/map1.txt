@@ -1905,7 +1905,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           line: 44 0  # $$intent = time_relationship $
           Complexity of rule ~event_t~1.1.8- a: 1
         rule: 46  ~event_t~1.1.9 a: 
-          line: 46 0  # $$intent = activity_together ^
+          line: 46 0  # $$intent = activity_together 
           Complexity of rule ~event_t~1.1.9- a: 1
         rule: 48  ~event_t~1.1.10 a: 
           line: 48 0  # $$intent = activity $$sound_fi
@@ -1941,7 +1941,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           line: 69 0  # $$intent = time_relationship 
           Complexity of rule ~event_t~1.2.8- a: 1
         rule: 71  ~event_t~1.2.9 a: 
-          line: 71 0  # $$intent = activity_together ^
+          line: 71 0  # $$intent = activity_together 
           Complexity of rule ~event_t~1.2.9- a: 1
         rule: 73  ~event_t~1.2.10 a: 
           line: 73 0  # $$intent = activity 
@@ -11501,7 +11501,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           line: 11 0  # [ ^respond ( ~school_t ) ] [ ^
           Complexity of rule ~specific~8.0.7- a: 1
         rule: 12  ~specific~8.0.8 a: 
-          line: 12 0  # $$intent = changeTopic ( [ ^re
+          line: 12 0  # $$intent = changeTopic [ ^resp
           Complexity of rule ~specific~8.0.8- a: 1
         rule: 13  ~specific~8.0.9 a: 
           line: 13 0  # $$intent = intro_question ^ref
@@ -11565,7 +11565,7 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/S
           line: 11 0  # [ ^respond ( ~school_t ) ] [ ^
           Complexity of rule ~narrative~8.0.7- a: 1
         rule: 12  ~narrative~8.0.8 a: 
-          line: 12 0  # $$intent = changeTopic ( [ ^re
+          line: 12 0  # $$intent = changeTopic [ ^resp
           Complexity of rule ~narrative~8.0.8- a: 1
         rule: 13  ~narrative~8.0.9 a: 
           line: 13 0  # $$intent = intro_question ^ref
@@ -13080,93 +13080,93 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONCEPT
           Complexity of ^change_topic: 1
     macro: 15  ^general_question
           Complexity of ^general_question: 1
-    macro: 25  ^general_prompt
+    macro: 26  ^general_prompt
           Complexity of ^general_prompt: 1
-    macro: 32  ^strict_prompt
+    macro: 33  ^strict_prompt
           Complexity of ^strict_prompt: 1
-    macro: 36  ^personal_opinion
+    macro: 37  ^personal_opinion
           Complexity of ^personal_opinion: 1
-    macro: 44  ^other_opinion
+    macro: 45  ^other_opinion
           Complexity of ^other_opinion: 1
-    macro: 52  ^time
+    macro: 53  ^time
           Complexity of ^time: 1
-    macro: 59  ^place
+    macro: 60  ^place
           Complexity of ^place: 1
-    macro: 64  ^individual
+    macro: 65  ^individual
           Complexity of ^individual: 1
-    macro: 70  ^reason
+    macro: 71  ^reason
           Complexity of ^reason: 1
-    macro: 77  ^example
+    macro: 78  ^example
           Complexity of ^example: 1
-    macro: 82  ^explanation
+    macro: 83  ^explanation
           Complexity of ^explanation: 1
-    macro: 90  ^follow_up
+    macro: 91  ^follow_up
           Complexity of ^follow_up: 1
-    macro: 98  ^names
+    macro: 99  ^names
           Complexity of ^names: 1
-    macro: 103  ^age
+    macro: 104  ^age
           Complexity of ^age: 1
-    macro: 107  ^mood
+    macro: 108  ^mood
           Complexity of ^mood: 1
-    macro: 114  ^activity
+    macro: 115  ^activity
           Complexity of ^activity: 1
-    macro: 121  ^job
+    macro: 122  ^job
           Complexity of ^job: 1
-    macro: 128  ^relationship_f
+    macro: 129  ^relationship_f
           Complexity of ^relationship_f: 1
-    macro: 134  ^relationship_o
+    macro: 135  ^relationship_o
           Complexity of ^relationship_o: 1
-    macro: 144  ^activity_together
+    macro: 145  ^activity_together
           Complexity of ^activity_together: 1
-    macro: 150  ^places_together
+    macro: 151  ^places_together
           Complexity of ^places_together: 1
-    macro: 156  ^time_together
+    macro: 157  ^time_together
           Complexity of ^time_together: 1
-    macro: 166  ^school_o
+    macro: 167  ^school_o
           Complexity of ^school_o: 1
-    macro: 170  ^classmates_p
+    macro: 171  ^classmates_p
           Complexity of ^classmates_p: 1
-    macro: 174  ^classmates_n
+    macro: 175  ^classmates_n
           Complexity of ^classmates_n: 1
-    macro: 178  ^teacher_p
+    macro: 179  ^teacher_p
           Complexity of ^teacher_p: 1
-    macro: 182  ^teacher_n
+    macro: 183  ^teacher_n
           Complexity of ^teacher_n: 1
-    macro: 186  ^subject_p
+    macro: 187  ^subject_p
           Complexity of ^subject_p: 1
-    macro: 190  ^subject_n
+    macro: 192  ^subject_n
           Complexity of ^subject_n: 1
-    macro: 194  ^class_activity
+    macro: 196  ^class_activity
           Complexity of ^class_activity: 1
-    macro: 198  ^break_activity
+    macro: 200  ^break_activity
           Complexity of ^break_activity: 1
-    macro: 202  ^wayhome_peop
+    macro: 204  ^wayhome_peop
           Complexity of ^wayhome_peop: 1
-    macro: 207  ^hobby_o
+    macro: 209  ^hobby_o
           Complexity of ^hobby_o: 1
-    macro: 211  ^hobby_loc
+    macro: 213  ^hobby_loc
           Complexity of ^hobby_loc: 1
-    macro: 215  ^hobby_since
+    macro: 217  ^hobby_since
           Complexity of ^hobby_since: 1
-    macro: 219  ^hobby_peop
+    macro: 221  ^hobby_peop
           Complexity of ^hobby_peop: 1
-    macro: 223  ^hobby_time
+    macro: 225  ^hobby_time
           Complexity of ^hobby_time: 1
-    macro: 227  ^hobby_dur
+    macro: 229  ^hobby_dur
           Complexity of ^hobby_dur: 1
-    macro: 231  ^hobby_activity
+    macro: 233  ^hobby_activity
           Complexity of ^hobby_activity: 1
-    macro: 236  ^freetime_loc
+    macro: 238  ^freetime_loc
           Complexity of ^freetime_loc: 1
-    macro: 240  ^freetime_peop
+    macro: 242  ^freetime_peop
           Complexity of ^freetime_peop: 1
-    macro: 244  ^freetime_activity
+    macro: 246  ^freetime_activity
           Complexity of ^freetime_activity: 1
-    macro: 249  ^home_o
+    macro: 251  ^home_o
           Complexity of ^home_o: 1
-    macro: 253  ^home_peop
+    macro: 255  ^home_peop
           Complexity of ^home_peop: 1
-    macro: 257  ^home_activity
+    macro: 259  ^home_activity
           Complexity of ^home_activity: 1
 file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_concepts.top
     topic: 1  ~own_concepts~1

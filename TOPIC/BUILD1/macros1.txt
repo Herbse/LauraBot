@@ -23,7 +23,7 @@
 ^sound o 0 0 A( )  `
 ^cluehandler o 0 0 A( ) ^if 00q( $goodquestion == 5 ) 018{ ^postprintafter ( ^reuse ( ~event_t.event_1 ) ) ^gambit ( ~addposthoc ) } 004 ^if 00N( $goodquestion == 10 and $eventcounter < 2 ) 01l{ $showclue2 = 1 ^postprintafter ( ^reuse ( ~event_t.clue2 ) ) ^gambit ( ~addposthoc ) } 004 `
 ^change_topic p 0 0 A( ) [ ( << anderes ~narrate >> ) ( << weiteres ~narrate >> ) ( << sonst ~narrate >> ) ] `
-^general_question p 0 0 A( ) [ ( warum bist du hier ) ( [ was worüber ] [ möchtest willst magst ] du *~3 ~narrate ) ( was liegt dir auf der seele ) ( was ist los ) ( was beschäftigt ) ( << wie [ läuft läufts ] >> ) ] `
+^general_question p 0 0 A( ) [ ( warum bist du hier ) ( [ was worüber ] [ möchtest willst magst ] du *~3 ~narrate ) ( was liegt dir auf der seele ) ( was ist los ) ( was beschäftigt ) ( << wie [ läuft läufts ] >> ) ( worum ) ] `
 ^general_prompt p 0 0 A( ) [ ( << [ erzähl erzähle berichte sage sag beschreib beschreibe ] [ mir mal ] >> ) ( << fang an >> ) ] `
 ^strict_prompt p 0 0 A( ) `
 ^personal_opinion p 0 0 A( ) [ ( << wie findest du das >> ) ( << wie ist das für dich >> ) ( << wie war das für dich >> ) ( << wie fühlst du dich >> ) ] `
@@ -45,12 +45,12 @@
 ^activity_together p 0 0 A( ) [ ( << was [ macht unternehmt ] ihr >> ) ( << was [ machst unternimmst ] du mit >> ) ] `
 ^places_together p 0 0 A( ) [ ( << wo ihr >> ) ( << wo mit >> ) ] `
 ^time_together p 0 0 A( ) [ ( << [ wann wie_oft wie_häufig wie_viel ] [ siehst seht ] [ du ihr ] >> ) ( << [ wann wie_oft wie_häufig wie_viel ] zusammen >> ) ( << [ wann wie_oft wie_häufig wie_viel ] zeit mit >> ) ] `
-^school_o p 0 0 A( ) [ ] `
-^classmates_p p 0 0 A( ) [ ] `
-^classmates_n p 0 0 A( ) [ ] `
-^teacher_p p 0 0 A( ) [ ] `
-^teacher_n p 0 0 A( ) [ ] `
-^subject_p p 0 0 A( ) [ ] `
+^school_o p 0 0 A( ) [ ( << wie [ gefällt findest läuft zurecht zu_recht ] [ schule mathe deutsch matheunterricht unterricht ] >> ) ] `
+^classmates_p p 0 0 A( ) [ ( << [ mit_wem mit_welchem mit_welcher ] [ verbringst spielst bist ] >> ) ] `
+^classmates_n p 0 0 A( ) [ ( << wen [ magst findest ] nicht [ klasse schüler mitschüler ] >> ) ] `
+^teacher_p p 0 0 A( ) [ ( << [ welchen welche ] [ lehrer lehrerrin ] [ magst kommst ] >> ) ] `
+^teacher_n p 0 0 A( ) [ ( << [ welchen welche ] [ lehrer lehrerrin ] [ magst kommst ] nicht >> ) ] `
+^subject_p p 0 0 A( ) [ ( << [ schulfach fach schulfächer fächer ] [ magst spass spaß ] >> ) ] `
 ^subject_n p 0 0 A( ) [ ] `
 ^class_activity p 0 0 A( ) [ ] `
 ^break_activity p 0 0 A( ) [ ] `

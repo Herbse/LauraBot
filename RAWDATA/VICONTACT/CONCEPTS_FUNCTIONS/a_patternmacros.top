@@ -186,7 +186,7 @@ patternmacro: ^teacher_n()
 ]
 patternmacro: ^subject_p()
 [
-    (<< [schulfach fach schulfächer fächer] [magst spass spaß] >>
+    (<< [schulfach fach schulfächer fächer] [magst spass spaß] >>)
 
 ]
 patternmacro: ^subject_n()
