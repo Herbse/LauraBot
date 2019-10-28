@@ -60,7 +60,7 @@ u: () ^keep() ^refine()
     # example
      a: (^example()) ^refine()
         b: ($brotherCounter==4) ^respond(~ignorance)
-        b: () ^respond(~)
+        b: () 
     # explanation
     a: (^explanation()) ^refine()
         b: ($brotherCounter==1) Ein Spiel auf der Playstation.

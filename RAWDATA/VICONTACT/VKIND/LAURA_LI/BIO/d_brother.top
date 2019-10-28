@@ -60,7 +60,7 @@ u: () ^keep() ^refine()
     # example
      a: (^example()) $$intent=example ^refine()
         b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-        b: () ^respond(~)
+        b: () 
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
         b: ($brotherCounter==1) $$sound_file = brother13 Ein Spiel auf der Playstation.

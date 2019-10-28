@@ -153,3 +153,7 @@ Respond: user:w bot:laura_li ip: (~introduction~3) 1   [greeting] ==> [topic:~in
 Command: :build vicontact
 Start: user:w bot:laura_li ip: rand:1566 (~introduction~3) 1 ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:wasmeinensiedamit.wav | sumCorrect: ]`Was meinen sie damit?  When:Sep11'19-13:39:37 Why:~addposthoc.4.0 ~incomprehension.0.0.~introduction~3.1.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Sep11'19-13:39:30 0:Sep11'19-13:38:42 F:0 P:Sep11'19-13:38:52
 Respond: user:w bot:laura_li ip: (~introduction~3) 2   [greeting] ==> [topic:~introduction~3 | answerCategory:greetings | probFormat:greetings-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:hallo.wav | sumCorrect: ]`Hallo  When:Sep11'19-13:39:40 Why:~addposthoc.4.0 ~prob_answer.20.0.~control.1.0   F:1 
+Start: user:w bot:rand ip: rand:1565 (~introduction) 0 ==> Hallo! Wieviele loops sollen durchgeführt werden?  When:Oct08'19-11:56:21 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Oct02'19-20:39:21 0:Oct08'19-11:56:21 F:0 P:0
+Out of stack space stringSpace:43845444 ReleaseStackspace:56069668 
+1 Tue Oct 08 12:09:35 2019 in sentence: 500000 
+    

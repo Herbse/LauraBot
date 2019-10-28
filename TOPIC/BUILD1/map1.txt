@@ -4327,7 +4327,6 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 62 0  # $$answercategory = ignorance ^
           Complexity of rule ~brother_t.1.23- b: 1
         rule: 63  ~brother_t.1.24 b: 
-          line: 63 0  # ^respond ( ~ ) 
           Complexity of rule ~brother_t.1.24- b: 1
         rule: 65  ~brother_t.1.25 a: 
           line: 65 0  # $$intent = explanation ^refine
@@ -5631,7 +5630,6 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/VKIND/L
           line: 62 0  # $$answercategory = ignorance ^
           Complexity of rule ~brother_t~1.1.23- b: 1
         rule: 63  ~brother_t~1.1.24 b: 
-          line: 63 0  # ^respond ( ~ ) 
           Complexity of rule ~brother_t~1.1.24- b: 1
         rule: 65  ~brother_t~1.1.25 a: 
           line: 65 0  # $$intent = explanation ^refine
@@ -12820,10 +12818,10 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_
           if 321 282  
           line: 321 278  # ^if 00m( $$randnum < 80 ) 00Y{
           elseif 322 369  
-          line: 322 364  # else 00m( $$randnum < 90 ) 00?
-          else 323 467  
-          ifend 323 537  
-          line: 323 462  # else ( 1 ) 00@ { $$answercateg
+          line: 322 364  # else 00m( $$randnum < 90 ) 00*
+          else 323 466  
+          ifend 323 536  
+          line: 323 461  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.7.0- u: 6
         rule: 327  ~prob_answer.8.0 u: 
           if 328 4  
@@ -12837,12 +12835,12 @@ file: 0  /Users/hermannbarbe/Documents/GitHub/LauraBot/RAWDATA/VICONTACT/SHARED_
           line: 332 199  # $$probformat = affirmation-50_
           line: 333 254  # $$randnum = %rand 
           if 334 276  
-          line: 334 272  # ^if 00n( %$$randnum < 50 ) 00^
-          elseif 335 372  
-          line: 335 367  # else 00m( $$randnum < 80 ) 00*
-          else 336 469  
-          ifend 336 539  
-          line: 336 464  # else ( 1 ) 00@ { $$answercateg
+          line: 334 272  # ^if 00m( $$randnum < 50 ) 00^{
+          elseif 335 371  
+          line: 335 366  # else 00m( $$randnum < 80 ) 00*
+          else 336 468  
+          ifend 336 538  
+          line: 336 463  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.8.0- u: 6
         rule: 340  ~prob_answer.9.0 u: 
           if 341 4  
