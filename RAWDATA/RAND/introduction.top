@@ -46,9 +46,11 @@ $endcount=0
 loop($_loopcount)
 {
 $$randNum = %rand
+$$randcsv = ^join($$randnum \n) 
 $$position = $$randnum - 1
 $distributiondata[$$position].frequency += 1
-if      ($$randnum < 10){$distributiondata[100].frequency += 1}
+^log(OPEN verteilung.csv $$randcsv)
+##<<if      ($$randnum < 10){$distributiondata[100].frequency += 1}
 else if ($$randnum < 21){$distributiondata[101].frequency += 1}
 else if ($$randnum < 31){$distributiondata[102].frequency += 1}
 else if ($$randnum < 41){$distributiondata[103].frequency += 1}
@@ -58,7 +60,7 @@ else if ($$randnum < 71){$distributiondata[106].frequency += 1}
 else if ($$randnum < 81){$distributiondata[107].frequency += 1}
 else if ($$randnum < 91){$distributiondata[108].frequency += 1}
 else if ($$randnum < 101){$distributiondata[109].frequency += 1}
-# $distributiondata[$$randnum].randnum = $$randnum
+##>> $distributiondata[$$randnum].randnum = $$randnum
 # $distributiondata[$$randnum].percentage = $distributiondata[$$randnum].frequency / $loopCount * 100
 # $distributiondata[$$randnum].percentage += 1
 $endcount += 1 
@@ -74,4 +76,5 @@ $_p += 1
 
 outputmacro: ^showResults()
 ^jsontree($distributiondata)
+^log(CLOSE verteilung.csv)
 $endcount

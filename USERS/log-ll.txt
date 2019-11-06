@@ -9028,3 +9028,610 @@ Allocated extra buffer 19
 
  3 Wed Oct 09 15:03:22 2019 in sentence: [invitation_to_tell] erzähl mir dann noch ein bisschen von zu hause 
     ....,....,.....................................................................................................................................................................................................................~brother_t rule a:1.22 ( ^example ( ) )  $$intent = example ^refine ( ) `01b b: ( =h$brothe
+uservar: $cs_trace=-268435457
+uservar: $cs_time=0
+user load completed normally
+
+
+Input: 2 to laura_li:  
+
+
+Input: 
+TokenControl: DO_NUMBER_MERGE DO_PROPERNAME_MERGE DO_DATE_MERGE 
+
+
+Original User Input: 
+Tokenized into: 
+Actual used input: 
+
+After parse TokenFlags: USERINPUT 
+
+
+Reply input: 
+  Pending topics: ~brother_t ~introduction~3 ~introduction 
+.Pushing Topic ~control
+.Enter Topic:
+
+
+.Topic: ~control linear Statements: 
+..try u:0.0 @0:        pattern: ( %input<%userfirstline ) 
+..( %input(2)<%userfirstline(3)+ )+
+..  **  Match: u:  ( %input<%userfirstline ) ^gambit ( ~introduction ) 
+..~control rule u:0.0 ( %input<%userfirstline )  ^gambit ( ~introduction ) `00@ u: ( \[ * \] ) ^res
+..System call ^gambit(`~introduction`)
+Gambit trying ~introduction
+....Pushing Topic ~introduction~3
+....Enter Topic:
+
+
+....Topic: ~introduction~3 linear Gambits: 
+....try t0.0: linear used up  
+....Result: NOPROBLEM Topic: ~introduction~3 
+....Popping Topic ~introduction~3
+...NOPROBLEM ^gambit(~introduction) => ``
+..try u:1.0 @0:   sample: #! [ question: open]       pattern: ( \[ * \] ) 
+..( \[-         Remaining pattern: * \] )
+..try u:2.0 @0:        pattern: ( ) 
+..( )+
+..  **  Match: u:  ( ) $$currenttopic = %topic $_responsecount = %response ^if 00n( $singleresponse ) 00v{ $_...   
+..~control rule u:2.0 ( )  $$currenttopic = %topic $_responsecount = %respons
+..$$currenttopic = %topic(~brother_t)
+..$_responsecount = %response(0)
+...If $singleresponse (1) PASS-if
+...$_responsecount = 0(0)
+...End If
+...If %response(0) ==  $_responsecount(0) PASS-if
+...System call ^nofail(`topic ^rejoinder ( )`)
+....System call ^rejoinder()
+  rejoinder not set
+....,NOPROBLEM ^rejoinder() => ``
+....NOPROBLEM ^nofail(topic ^rejoinder ( )) => ``
+...End If
+...If %length(0) ==  0  AND %response(0) ==  $_responsecount(0) PASS-if
+...System call ^nofail(`TOPIC ^gambit ( $$currenttopic )`)
+....System call ^gambit(`~brother_t`)
+Gambit trying ~brother_t
+....,.Pushing Topic ~brother_t
+....,.Enter Topic:
+
+
+....,.Topic: ~brother_t linear Gambits: 
+....,.Result: NOPROBLEM Topic: ~brother_t 
+....,.Popping Topic ~brother_t
+....,NOPROBLEM ^gambit(~brother_t) => ``
+....NOPROBLEM ^nofail(TOPIC ^gambit ( $$currenttopic )) => ``
+...End If
+...If %response(0) ==  $_responsecount(0) PASS-if
+...System call ^nofail(`TOPIC ^respond ( $$currenttopic )`)
+....System call ^respond(`~brother_t`)
+....,Respond trying ~brother_t
+....,.Pushing Topic ~brother_t
+....,.Enter Topic:
+
+
+....,.Topic: ~brother_t linear Statements: 
+....,..try u:0.0 @0:        pattern: ( ) 
+....,..( )+
+....,..  **  Match: u:  ( ) ^keep ( ) ^refine ( ) 
+....,..~brother_t rule u:0.0 ( )  ^keep ( ) ^refine ( ) `00& a: ( ^names ( ) ) $$int
+....,..System call ^keep()
+....,...NOPROBLEM ^keep() => ``
+....,..System call ^refine()
+....,...try  try a:0.1 @0:        pattern: ( ^names ( ) ) 
+....,....( ()
+^names=> 
+....,....[ 
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.2 @0:        pattern: ( ^age ( ) ) 
+....,....( ()
+^age=> 
+....,....[ 
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.3 @0:        pattern: ( ^mood ( ) ) 
+....,....( ()
+^mood=> 
+....,....[ 
+....,....( wie- ...)-
+....,....( wie- ...)-
+....,....( 
+....,....<< wie_ist- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.4 @0:        pattern: ( ^job ( ) ) 
+....,....( ()
+^job=> 
+....,....[ 
+....,....( 
+....,....<< 
+....,....[ arbeitet- gearbeitet- ]-
+....,....>>-
+....,....)-
+....,....( beruf- )-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.5 @0:        pattern: ( ^relationship_f ( ) ) 
+....,....( ()
+^relationship_f=> 
+....,....[ 
+....,....( wer_ist- )-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.6 @0:        pattern: ( ^relationship_o ( ) ) 
+....,....( ()
+^relationship_o=> 
+....,....[ 
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.7 @0:        pattern: ( ^time_together ( ) ) 
+....,....( ()
+^time_together=> 
+....,....[ 
+....,....( 
+....,....<< 
+....,....[ wann- wie_oft- wie_häufig- wie_viel- ]-
+....,.......>>-
+....,....)-
+....,....( 
+....,....<< 
+....,....[ wann- wie_oft- wie_häufig- wie_viel- ]-
+....,.......>>-
+....,....)-
+....,....( 
+....,....<< 
+....,....[ wann- wie_oft- wie_häufig- wie_viel- ]-
+....,.......>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.8 @0:        pattern: ( ^time ( ) ) 
+....,....( ()
+^time=> 
+....,....[ 
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( wann- )-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.9 @0:        pattern: ( ^activity_together ( ) ) 
+....,....( ()
+^activity_together=> 
+....,....[ 
+....,....( 
+....,....<< was- ...>>-
+....,....)-
+....,....( 
+....,....<< was- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.10 @0:        pattern: ( ^activity ( ) ) 
+....,....( ()
+^activity=> 
+....,....[ 
+....,....( 
+....,....<< was- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:0.11 @0:        pattern: ( ^places_together ( ) ) 
+....,....( ()
+^places_together=> 
+....,....[ 
+....,....( 
+....,....<< wo- ...>>-
+....,....)-
+....,....( 
+....,....<< wo- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...NOPROBLEM ^refine() => ``
+....,..try u:1.0 @0:        pattern: ( ) 
+....,..( )+
+....,..  **  Match: u:  ( ) ^keep ( ) ^refine ( ) 
+....,..~brother_t rule u:1.0 ( )  ^keep ( ) ^refine ( ) `00= a: ( ^personal_opinion 
+....,..System call ^keep()
+....,...NOPROBLEM ^keep() => ``
+....,..System call ^refine()
+....,...try  try a:1.1 @0:        pattern: ( ^personal_opinion ( ) ) 
+....,....( ()
+^personal_opinion=> 
+....,....[ 
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:1.6 @0:        pattern: ( ^other_opinion ( ) ) 
+....,....( ()
+^other_opinion=> 
+....,....[ 
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:1.7 @0:        pattern: ( ^place ( ) ) 
+....,....( ()
+^place=> 
+....,....[ 
+....,....( wo- )-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:1.12 @0:        pattern: ( ^individual ( ) ) 
+....,....( ()
+^individual=> 
+....,....[ 
+....,....( wer- )-
+....,....( mit_wem- )-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:1.17 @0:        pattern: ( ^reason ( ) ) 
+....,....( ()
+^reason=> 
+....,....[ 
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( 
+....,....<< wie- ...>>-
+....,....)-
+....,....( wieso- )-
+....,....( warum- )-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:1.22 @0:        pattern: ( ^example ( ) ) 
+....,....( ()
+^example=> 
+....,....[ 
+....,....( noch- )-
+....,....( ausserdem- )-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:1.25 @0:        pattern: ( ^explanation ( ) ) 
+....,....( ()
+^explanation=> 
+....,....[ 
+....,....( 
+....,....<< was_für_ein- >>-
+....,....)-
+....,....( 
+....,....<< an_was- >>-
+....,....)-
+....,....( woran- )-
+....,....( 
+....,....<< 
+....,....[ welcher- welche- ]-
+....,.......>>-
+....,....)-
+....,....( 
+....,....<< was- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:1.30 @0:        pattern: ( ^follow_up ( ) ) 
+....,....( ()
+^follow_up=> 
+....,....[ 
+....,....( 
+....,....<< was- ...>>-
+....,....)-
+....,....]-
+....,....        Remaining pattern: `
+....,...try  try a:1.33 @0:        pattern: ( $$answercategory==specific _* ) 
+....,....( $$answercategory==specific-         Remaining pattern: _* )
+....,...NOPROBLEM ^refine() => ``
+....,..try u:2.0 BROTHER_1 @0:   sample: #! Erzähl mal was dein Bruder währenddessen tut.        pattern: ( [ $$answercategory==narrative $$answercategory==specific $$answercategory==facilitator ] ) 
+....,..( 
+....,..[ $$answercategory==narrative- $$answercategory==specific- $$answercategory==facilitator- ]-
+....,..        Remaining pattern: )
+....,..try u:3.0 BROTHER_2 @0:   sample: #! Erzähl mir doch mehr über Leon.       pattern: ( [ $$answercategory==narrative $$answercategory==specific $$answercategory==facilitator ] ) 
+....,..( 
+....,..[ $$answercategory==narrative- $$answercategory==specific- $$answercategory==facilitator- ]-
+....,..        Remaining pattern: )
+....,..try u:4.0 BROTHER_3 @0:   sample: #! Erzähl mir doch mehr über Leon.       pattern: ( [ $$answercategory==narrative $$answercategory==specific $$answercategory==facilitator ] ) 
+....,..( 
+....,..[ $$answercategory==narrative- $$answercategory==specific- $$answercategory==facilitator- ]-
+....,..        Remaining pattern: )
+....,..try u:5.0 BROTHER_4 @0:   sample: #! Erzähl mir doch mehr über Leon.       pattern: ( [ $$answercategory==narrative $$answercategory==specific $$answercategory==facilitator ] ) 
+....,..( 
+....,..[ $$answercategory==narrative- $$answercategory==specific- $$answercategory==facilitator- ]-
+....,..        Remaining pattern: )
+....,..try u:6.0 @0:        pattern: ( ) 
+....,..( )+
+....,..  **  Match: u:  ( ) ^emptytopic ( ) 
+....,..~brother_t rule u:6.0 ( )  ^emptytopic ( ) `000 
+....,..User call ^emptytopic():()
+....,...$$intent = emptyTopic(emptyTopic)
+....,....If $disclosurestate(0) ==  1 FAIL-if
+....,....If $disclosurestate(0) ==  0 PASS-if
+....,....$$randnum = %rand(43)
+....,....,If $$randnum(43) <  50 PASS-if
+....,....,$$answercategory = ignorance(ignorance)
+....,....,System call ^respond(`~ignorance`)
+....,....,.Respond trying ~ignorance
+....,....,..Pushing Topic ~ignorance
+....,....,..Enter Topic:
+
+
+....,....,..Topic: ~ignorance linear Statements: 
+....,....,...try u:0.0 @0:        pattern: ( $$answercategory==ignorance ) 
+....,....,...( $$answercategory(ignorance)==ignorance()+ )+
+....,....,...  **  Match: u:  ( $$answercategory==ignorance ) [ Ich weiß nicht. ] [ Ich erinnere mich nicht. ] [ Kein...   
+....,....,...~ignorance rule u:0.0 ( $$answercategory==ignorance  [ Ich weiß nicht. ] [ Ich erinnere mich nicht. ] 
+....,....,...System call ^keep()
+....,....,....NOPROBLEM ^keep() => ``
+....,....,...System call ^repeat()
+....,....,....NOPROBLEM ^repeat() => ``
+....,....,...Message: Keine Ahnung.
+....,....,..Result: NOPROBLEM Topic: ~ignorance 
+....,....,.Popping Topic ~brother_t
+....,....,.NOPROBLEM ^respond(~ignorance) => ``
+....,....,End If
+....,....End If
+....,...System call ^poptopic()
+....,....ENDTOPIC ^poptopic() => ``
+....,...ENDTOPIC ^emptytopic() => ``
+....,.Result: NOPROBLEM Topic: ~brother_t 
+....,Popping Topic ~control
+....,NOPROBLEM ^respond(~brother_t) => ``
+....NOPROBLEM ^nofail(TOPIC ^respond ( $$currenttopic )) => ``
+...End If
+...If %response(1) ==  $_responsecount(0) FAIL-if
+...If %response(1) ==  $_responsecount(0) FAIL-if
+...If %outputrejoinder (null)  OR %lastquestion (null) FAIL-if
+...If %response(1) ==  $_responsecount(0)  ... FAIL-if
+...If %response(1) ==  $_responsecount(0) FAIL-if
+...If %response(1) ==  $_responsecount(0) FAIL-if
+...If %response(1) ==  $_responsecount(0) FAIL-if
+...If %response(1) ==  $_responsecount(0) FAIL-if
+.Result: NOPROBLEM Topic: ~control 
+.Popping Topic ~control
+create ( `Keine Ahnung.` chatoutput ~ignorance..0.0.39.6.0 x1000000 ) Created 42916
+.Pushing Topic ~addposthoc
+
+
+PostPass
+Pending topics: ~introduction~3 ~introduction 
+.Enter Topic:
+
+
+.Topic: ~addposthoc linear Gambits: 
+..try t:0.0 @0:        pattern: ( ) 
+..( )+
+..  **  Match: t:  ( ) ^emohandler ( ) 
+..~addposthoc rule t:0.0 ( )  ^emohandler ( ) `01D t: ( [ =9$cs_bot=laura_li =9$
+..User call ^emohandler():()
+....If $cs_bot(Laura_li) =  laura_si  OR $cs_bot(Laura_li) =  constantin_si  OR $cs_bot(Laura_li) =  luisa_si  OR $cs_bot(Laura_li) =  natalia_si  OR $cs_bot(Laura_li) =  simon_si FAIL-if
+....If $cs_bot(Laura_li) =  laura_li  ... PASS-if
+....,If $chatphase(start) ==  start PASS-if
+....,.If $noncrittopic(2) <  3  AND $$critasked(null) ==  1 FAIL-if
+....,.If $noncrittopic(2) <  3 PASS-if
+....,.$$emotype = serious(serious)
+....,.End If
+....,End If
+....End If
+...NOPROBLEM ^emohandler() => ``
+..try t:1.0 @0:        pattern: ( [ $cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li ] ) 
+..( 
+..[ $cs_bot(Laura_li)=laura_li()+ ...]+
+..)+
+..  **  Match: t:  ( [ $cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li ] ) ^disclo...   
+..~addposthoc rule t:1.0 ( [ $cs_bot=laura_li $cs_bot=a ^disclosurehandler ( ) `00G t: ( ) $lastoutput = ^
+..User call ^disclosurehandler():()
+....If $goodquestion(2) >  1  AND $noncrittopic(2) >  3 FAIL-if
+...NOPROBLEM ^disclosurehandler() => ``
+..try t:2.0 @0:        pattern: ( ) 
+..( )+
+..  **  Match: t:  ( ) $lastoutput = ^response ( 1 ) 
+..~addposthoc rule t:2.0 ( )  $lastoutput = ^response ( 1 ) `00D t: ( ) ^soundfi
+..System call ^response(`1`)
+...NOPROBLEM ^response(1) => `Keine Ahnung.`
+..$lastoutput = ^response(Keine Ahnung.)
+..try t:3.0 @0:        pattern: ( ) 
+..( )+
+..  **  Match: t:  ( ) ^soundfile ( $lastoutput ) 
+..~addposthoc rule t:3.0 ( )  ^soundfile ( $lastoutput ) `01x t: ( [ =9$cs_bot=l
+..User call ^soundfile($lastoutput ):(`Keine Ahnung.`)
+...System call ^substitute(`character`,`Keine Ahnung.`,`" "`,`""`)
+....NOPROBLEM ^substitute(character) => `KeineAhnung.`
+...$_soundfile = ^substitute(KeineAhnung.)
+...System call ^substitute(`character`,`KeineAhnung.`,`"."`,`""`)
+....NOPROBLEM ^substitute(character) => `KeineAhnung`
+...$_soundfile = ^substitute(KeineAhnung)
+...System call ^substitute(`character`,`KeineAhnung`,`","`,`""`)
+....NOPROBLEM ^substitute(character) => `KeineAhnung`
+...$_soundfile = ^substitute(KeineAhnung)
+...System call ^substitute(`character`,`KeineAhnung`,`"!"`,`""`)
+....NOPROBLEM ^substitute(character) => `KeineAhnung`
+...$_soundfile = ^substitute(KeineAhnung)
+...System call ^substitute(`character`,`KeineAhnung`,`"?"`,`""`)
+....NOPROBLEM ^substitute(character) => `KeineAhnung`
+...$_soundfile = ^substitute(KeineAhnung)
+...System call ^pos(`lowercase`,`KeineAhnung`)
+....NOPROBLEM ^pos(lowercase) => `keineahnung`
+...$_soundfile = ^pos(keineahnung)
+....If $giveclue(null) ==  1 FAIL-if
+....If else PASS-if
+....$$sound_file = $_soundfile(keineahnung)
+....End If
+....If !$$sound_file (keineahnung) FAIL-if
+...NOPROBLEM ^soundfile(Keine Ahnung.) => ``
+..try t:4.0 @0:        pattern: ( [ $cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li ] ) 
+..( 
+..[ $cs_bot(Laura_li)=laura_li()+ ...]+
+..)+
+..  **  Match: t:  ( [ $cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li ] ) ^clueha...   
+..~addposthoc rule t:4.0 ( [ $cs_bot=laura_li $cs_bot=a ^cluehandler ( ) `01Y t: ( ) ^if 00n( ^response ( 
+..User call ^cluehandler():()
+....If $goodquestion(2) ==  5 FAIL-if
+....If $goodquestion(2) ==  10  ... FAIL-if
+...NOPROBLEM ^cluehandler() => ``
+..try t:5.0 @0:        pattern: ( ) 
+..( )+
+..  **  Match: t:  ( ) ^if 00n( ^response ( 2 ) ) 01l{ $clueoutput = ^response ( 2 ) $giveclue = 1 ^soundfile...   
+..~addposthoc rule t:5.0 ( )  ^if 00n( ^response ( 2 ) ) 01l{ $clueoutput = ^res
+...If 
+...System call ^response(`2`)
+....FAILRULE ^response(2) => ``
+... ^response FAIL-if
+..try t:6.0 @0:        pattern: ( ! $cs_bot=tutorial ) 
+..( !$cs_bot(Laura_li)=tutorial()+ )+
+..  **  Match: t:  ( ! $cs_bot=tutorial ) ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = null 
+..~addposthoc rule t:6.0 ( ! $cs_bot=tutorial )  ^oob ( ) ^postprintbefore ( \[ $$oob \] ) $$oob = 
+..User call ^oob():()
+....If $rapportcounter(0) >  5 FAIL-if
+....If $rapportcounter(0) ==  -6 FAIL-if
+...$_topic = %topic(~introduction~3)
+...$_disclosurestate = $disclosurestate(0)
+...$_rapportcounter = $rapportcounter(0)
+...$_goodquestion = $goodquestion(2)
+...$_probformat = $$probformat()
+...$_answercategory = $$answercategory(ignorance)
+...$_actiontype = $$actiontype()
+...$_emotype = $$emotype(serious)
+...$_topicswitch = $$topicswitch()
+...$_randomnumber = $$randnum(43)
+...$_chatphase = $chatphase(start)
+...$_critrevealed = $$critrevealed()
+...$_noncrittopic = $noncrittopic(2)
+...$_intent = $$intent(emptyTopic)
+...$_soundfile = $$sound_file(keineahnung)
+...$_sumcorrect = $sumcorrect()
+...$_item1name = topic(topic)
+...$_item1value = $_topic(~introduction~3)
+...$_item2name = answerCategory(answerCategory)
+...$_item2value = $_answercategory(ignorance)
+...$_item3name = probFormat(probFormat)
+...$_item3value = $_probformat()
+...$_item4name = goodQuestion(goodQuestion)
+...$_item4value = $_goodquestion(2)
+...$_item5name = emoType(emoType)
+...$_item5value = $_emotype(serious)
+...$_item6name = rapportCounter(rapportCounter)
+...$_item6value = $_rapportcounter(0)
+...$_item7name = disclosureState(disclosureState)
+...$_item7value = $_disclosurestate(0)
+...$_item8name = chatPhase(chatPhase)
+...$_item8value = $_chatphase(start)
+...$_item9name = randomNumber(randomNumber)
+...$_item9value = $_randomnumber(43)
+...$_item10name = topicSwitch(topicSwitch)
+...$_item10value = $_topicswitch()
+...$_item11name = critRevealed(critRevealed)
+...$_item11value = $_critrevealed()
+...$_item12name = noncritTopic(noncritTopic)
+...$_item12value = $_noncrittopic(2)
+...$_item13name = intent(intent)
+...$_item13value = $_intent(emptyTopic)
+...$_item14name = soundFile(soundFile)
+...$_item14value = $_soundfile(keineahnung)
+...$_item15name = sumCorrect(sumCorrect)
+...$_item15value = $_sumcorrect()
+...System call ^join(`$_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value " " \| " " $_item`)
+....NOPROBLEM ^join() => `topic:~introduction~3 | answerCategory:ignorance | probFormat: | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:43 | topicSwitch: | critRevealed: | noncritTopic:2 | intent:emptyTopic | soundFile:keineahnung | sumCorrect:`
+...$$oob = ^join(topic:~introduction~3 | answerCategory:ignorance | probFormat: | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:43 | topicSwitch: | critRevealed: | noncritTopic:2 | intent:emptyTopic | soundFile:keineahnung | sumCorrect:)
+...NOPROBLEM ^oob() => ``
+..System call ^postprintbefore(`\[ $$oob \]`)
+...Message: [topic:~introduction~3 | answerCategory:ignorance | probFormat: | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:43 | topicSwitch: | critRevealed: | noncritTopic:2 | intent:emptyTopic | soundFile:keineahnung | sumCorrect: ]
+...NOPROBLEM ^postprintbefore(\[ $$oob \]) => ``
+..$$oob = null()
+.Result: NOPROBLEM Topic: ~addposthoc 
+Popping Topic 
+Start: user:ll bot:laura_li ip: rand:2209 (~introduction~3) 2 ==> [topic:~introduction~3 | answerCategory:ignorance | probFormat: | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:43 | topicSwitch: | critRevealed: | noncritTopic:2 | intent:emptyTopic | soundFile:keineahnung | sumCorrect: ]`Keine Ahnung.  When:Nov05'19-13:02:20 Why:~addposthoc.6.0 ~ignorance.0.0.~brother_t.6.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Oct28'19-11:13:44 0:Jul16'19-15:44:59 F:0 P:Oct09'19-15:03:15
+write out cache (0)
+Incoming data- ll | laura_li | :trace none
+read in USERS/topic_ll_laura_li_GERMAN.txt cache (0)
+
+Loading user ll bot laura_li
+No rejoinder pending
+uservar: $disclosurestate=0
+uservar: $lastoutput=Keine Ahnung.
+uservar: $chatphase=start
+uservar: $revelationstate=0
+uservar: $noncrittopic=2
+uservar: $goodquestion=2
+uservar: $rapportcounter=0
+uservar: $cs_token=132608
+uservar: $singleresponse=1
+uservar: $botprompt=Laura_li: 
+uservar: $userprompt=ll: >
+uservar: $cs_externaltag=~xpostagsentence
+uservar: $cs_language=german
+uservar: $cs_control_post=~addposthoc
+uservar: $cs_control_main=~control
+uservar: $cs_login=ll
+uservar: $cs_bot=Laura_li
+uservar: $cs_randindex=2205
+uservar: $brothercounter=1
+uservar: $cs_trace=-268435457
+uservar: $cs_time=0
+user load completed normally
+Command: :trace none
+ trace = 0 (0x0)
+Command: :bot rand
+Start: user:ll bot: ip: rand:2205 () 0 ==>   When:Nov05'19-13:02:31  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Oct28'19-11:13:44 0:Jul16'19-15:44:59 F:0 P:Oct09'19-15:03:15
+Respond: user:ll bot:laura_li ip: (~introduction~3) 3   , ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:2 | intent: | soundFile:wasmeinensiedamit | sumCorrect: ]`Was meinen sie damit?  When:Nov05'19-13:02:38 Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0   F:189 
+Command: :bot rand
+Start: user:ll bot: ip: rand:2205 () 0 ==>   When:Nov05'19-13:02:50  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Oct28'19-11:13:44 0:Jul16'19-15:44:59 F:0 P:Nov05'19-13:02:38
+Command: :bot rand
+Start: user:ll bot: ip: rand:2205 () 0 ==>   When:Nov05'19-13:02:55  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Oct28'19-11:13:44 0:Jul16'19-15:44:59 F:0 P:Nov05'19-13:02:38
+Command: :bot hh
+Start: user:ll bot: ip: rand:2205 () 0 ==>   When:Nov05'19-13:02:58  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Oct28'19-11:13:44 0:Jul16'19-15:44:59 F:0 P:Nov05'19-13:02:38
+Command: :build rand
+Start: user:ll bot:rand ip: rand:2206 (~introduction) 0 ==> Hey! Wieviele loops sollen durchgeführt werden?  When:Nov05'19-13:03:08 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov05'19-13:03:01 0:Nov05'19-13:03:08 F:0 P:0
+Respond: user:ll bot:rand ip: (~introduction) 1   100 ==> JSON=>   [    # ja-t0    {    # jo-t1      "value": 1,      "frequency": 2,      "percentage": 2    },    {    # jo-t2      "value": 2,      "frequency": 2,      "percentage": 2    },    {    # jo-t3      "value": 3,      "frequency": 3,      "percentage": 3    },    {    # jo-t4      "value": 4,      "frequency": 1,      "percentage": 1    },    {    # jo-t5      "value": 5,      "frequency": 2,      "percentage": 2    },    {    # jo-t6      "value": 6,      "frequency": 0,      "percentage": 0    },    {    # jo-t7      "value": 7,      "frequency": 1,      "percentage": 1    },    {    # jo-t8      "value": 8,      "frequency": 0,      "percentage": 0    },    {    # jo-t9      "value": 9,      "frequency": 1,      "percentage": 1    },    {    # jo-t10      "value": 10,      "frequency": 1,      "percentage": 1    },    {    # jo-t11      "value": 11,      "frequency": 0,      "percentage": 0    },    {    # jo-t12      "value": 12,      "frequency": 1,      "percentage": 1    },    {    # jo-t13      "value": 13,      "frequency": 0,      "percentage": 0    },    {    # jo-t14      "value": 14,      "frequency": 2,      "percentage": 2    },    {    # jo-t15      "value": 15,      "frequency": 0,      "percentage": 0    },    {    # jo-t16      "value": 16,      "frequency": 0,      "percentage": 0    },    {    # jo-t17      "value": 17,      "frequency": 0,      "percentage": 0    },    {    # jo-t18      "value": 18,      "frequency": 0,      "percentage": 0    },    {    # jo-t19      "value": 19,      "frequency": 2,      "percentage": 2    },    {    # jo-t20      "value": 20,      "frequency": 1,      "percentage": 1    },    {    # jo-t21      "value": 21,      "frequency": 0,      "percentage": 0    },    {    # jo-t22      "value": 22,      "frequency": 0,      "percentage": 0    },    {    # jo-t23      "value": 23,      "frequency": 1,      "percentage": 1    },    {    # jo-t24      "value": 24,      "frequency": 5,      "percentage": 5    },    {    # jo-t25      "value": 25,      "frequency": 2,      "percentage": 2    },    {    # jo-t26      "value": 26,      "frequency": 1,      "percentage": 1    },    {    # jo-t27      "value": 27,      "frequency": 0,      "percentage": 0    },    {    # jo-t28      "value": 28,      "frequency": 1,      "percentage": 1    },    {    # jo-t29      "value": 29,      "frequency": 1,      "percentage": 1    },    {    # jo-t30      "value": 30,      "frequency": 2,      "percentage": 2    },    {    # jo-t31      "value": 31,      "frequency": 0,      "percentage": 0    },    {    # jo-t32      "value": 32,      "frequency": 2,      "percentage": 2    },    {    # jo-t33      "value": 33,      "frequency": 1,      "percentage": 1    },    {    # jo-t34      "value": 34,      "frequency": 1,      "percentage": 1    },    {    # jo-t35      "value": 35,      "frequency": 0,      "percentage": 0    },    {    # jo-t36      "value": 36,      "frequency": 1,      "percentage": 1    },    {    # jo-t37      "value": 37,      "frequency": 2,      "percentage": 2    },    {    # jo-t38      "value": 38,      "frequency": 1,      "percentage": 1    },    {    # jo-t39      "value": 39,      "frequency": 0,      "percentage": 0    },    {    # jo-t40      "value": 40,      "frequency": 0,      "percentage": 0    },    {    # jo-t41      "value": 41,      "frequency": 1,      "percentage": 1    },    {    # jo-t42      "value": 42,      "frequency": 2,      "percentage": 2    },    {    # jo-t43      "value": 43,      "frequency": 3,      "percentage": 3    },    {    # jo-t44      "value": 44,      "frequency": 1,      "percentage": 1    },    {    # jo-t45      "value": 45,      "frequency": 0,      "percentage": 0    },    {    # jo-t46      "value": 46,      "frequency": 0,      "percentage": 0    },    {    # jo-t47      "value": 47,      "frequency": 1,      "percentage": 1    },    {    # jo-t48      "value": 48,      "frequency": 1,      "percentage": 1    },    {    # jo-t49      "value": 49,      "frequency": 0,      "percentage": 0    },    {    # jo-t50      "value": 50,      "frequency": 2,      "percentage": 2    },    {    # jo-t51      "value": 51,      "frequency": 1,      "percentage": 1    },    {    # jo-t52      "value": 52,      "frequency": 1,      "percentage": 1    },    {    # jo-t53      "value": 53,      "frequency": 0,      "percentage": 0    },    {    # jo-t54      "value": 54,      "frequency": 0,      "percentage": 0    },    {    # jo-t55      "value": 55,      "frequency": 0,      "percentage": 0    },    {    # jo-t56      "value": 56,      "frequency": 1,      "percentage": 1    },    {    # jo-t57      "value": 57,      "frequency": 0,      "percentage": 0    },    {    # jo-t58      "value": 58,      "frequency": 2,      "percentage": 2    },    {    # jo-t59      "value": 59,      "frequency": 2,      "percentage": 2    },    {    # jo-t60      "value": 60,      "frequency": 0,      "percentage": 0    },    {    # jo-t61      "value": 61,      "frequency": 1,      "percentage": 1    },    {    # jo-t62      "value": 62,      "frequency": 0,      "percentage": 0    },    {    # jo-t63      "value": 63,      "frequency": 0,      "percentage": 0    },    {    # jo-t64      "value": 64,      "frequency": 0,      "percentage": 0    },    {    # jo-t65      "value": 65,      "frequency": 1,      "percentage": 1    },    {    # jo-t66      "value": 66,      "frequency": 0,      "percentage": 0    },    {    # jo-t67      "value": 67,      "frequency": 1,      "percentage": 1    },    {    # jo-t68      "value": 68,      "frequency": 1,      "percentage": 1    },    {    # jo-t69      "value": 69,      "frequency": 1,      "percentage": 1    },    {    # jo-t70      "value": 70,      "frequency": 2,      "percentage": 2    },    {    # jo-t71      "value": 71,      "frequency": 1,      "percentage": 1    },    {    # jo-t72      "value": 72,      "frequency": 2,      "percentage": 2    },    {    # jo-t73      "value": 73,      "frequency": 0,      "percentage": 0    },    {    # jo-t74      "value": 74,      "frequency": 0,      "percentage": 0    },    {    # jo-t75      "value": 75,      "frequency": 4,      "percentage": 4    },    {    # jo-t76      "value": 76,      "frequency": 0,      "percentage": 0    },    {    # jo-t77      "value": 77,      "frequency": 1,      "percentage": 1    },    {    # jo-t78      "value": 78,      "frequency": 1,      "percentage": 1    },    {    # jo-t79      "value": 79,      "frequency": 0,      "percentage": 0    },    {    # jo-t80      "value": 80,      "frequency": 3,      "percentage": 3    },    {    # jo-t81      "value": 81,      "frequency": 1,      "percentage": 1    },    {    # jo-t82      "value": 82,      "frequency": 0,      "percentage": 0    },    {    # jo-t83      "value": 83,      "frequency": 2,      "percentage": 2    },    {    # jo-t84      "value": 84,      "frequency": 0,      "percentage": 0    },    {    # jo-t85      "value": 85,      "frequency": 1,      "percentage": 1    },    {    # jo-t86      "value": 86,      "frequency": 2,      "percentage": 2    },    {    # jo-t87      "value": 87,      "frequency": 1,      "percentage": 1    },    {    # jo-t88      "value": 88,      "frequency": 0,      "percentage": 0    },    {    # jo-t89      "value": 89,      "frequency": 2,      "percentage": 2    },    {    # jo-t90      "value": 90,      "frequency": 2,      "percentage": 2    },    {    # jo-t91      "value": 91,      "frequency": 2,      "percentage": 2    },    {    # jo-t92      "value": 92,      "frequency": 1,      "percentage": 1    },    {    # jo-t93      "value": 93,      "frequency": 3,      "percentage": 3    },    {    # jo-t94      "value": 94,      "frequency": 2,      "percentage": 2    },    {    # jo-t95      "value": 95,      "frequency": 0,      "percentage": 0    },    {    # jo-t96      "value": 96,      "frequency": 1,      "percentage": 1    },    {    # jo-t97      "value": 97,      "frequency": 3,      "percentage": 3    },    {    # jo-t98      "value": 98,      "frequency": 0,      "percentage": 0    },    {    # jo-t99      "value": 99,      "frequency": 0,      "percentage": 0    },    {    # jo-t100      "value": 100,      "frequency": 0,      "percentage": 0    },    {    # jo-t101      "value": "1-10",      "frequency": 12,      "percentage": 12    },    {    # jo-t102      "value": "11-20",      "frequency": 7,      "percentage": 7.0000000000000008881784197001252323389053344726562    },    {    # jo-t103      "value": "21-30",      "frequency": 13,      "percentage": 13    },    {    # jo-t104      "value": "31-40",      "frequency": 8,      "percentage": 8    },    {    # jo-t105      "value": "41-50",      "frequency": 11,      "percentage": 11    },    {    # jo-t106      "value": "51-60",      "frequency": 7,      "percentage": 7.0000000000000008881784197001252323389053344726562    },    {    # jo-t107      "value": "61-70",      "frequency": 7,      "percentage": 7.0000000000000008881784197001252323389053344726562    },    {    # jo-t108      "value": "71-80",      "frequency": 12,      "percentage": 12    },    {    # jo-t109      "value": "81-90",      "frequency": 11,      "percentage": 11    },    {    # jo-t110      "value": "91-100",      "frequency": 12,      "percentage": 12    }  ]  <=JSON   100  When:Nov05'19-13:03:12 Why:~introduction.0.1=LOOP_COUNT   F:20 
+Command: :build rand
+Start: user:ll bot:rand ip: rand:2206 (~introduction) 1 ==> Das habe ich leider nicht erkannt.  When:Nov05'19-13:17:12 Why:~keywordless.0.0.~control.2.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov05'19-13:17:06 0:Nov05'19-13:03:08 F:0 P:Nov05'19-13:03:12
+Command: :reset
+Start: user:ll bot:rand ip: rand:2206 (~introduction) 0 ==> Hey! Wieviele loops sollen durchgeführt werden?  When:Nov05'19-13:17:14 Why:~introduction.0.0.~control.0.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov05'19-13:17:06 0:Nov05'19-13:03:08 F:0 P:Nov05'19-13:03:12
+Respond: user:ll bot:rand ip: (~introduction) 1   100 ==> JSON=>   [    # ja-t0    {    # jo-t1      "value": 1,      "frequency": 2,      "percentage": 2    },    {    # jo-t2      "value": 2,      "frequency": 2,      "percentage": 2    },    {    # jo-t3      "value": 3,      "frequency": 3,      "percentage": 3    },    {    # jo-t4      "value": 4,      "frequency": 1,      "percentage": 1    },    {    # jo-t5      "value": 5,      "frequency": 2,      "percentage": 2    },    {    # jo-t6      "value": 6,      "frequency": 0,      "percentage": 0    },    {    # jo-t7      "value": 7,      "frequency": 1,      "percentage": 1    },    {    # jo-t8      "value": 8,      "frequency": 0,      "percentage": 0    },    {    # jo-t9      "value": 9,      "frequency": 1,      "percentage": 1    },    {    # jo-t10      "value": 10,      "frequency": 1,      "percentage": 1    },    {    # jo-t11      "value": 11,      "frequency": 0,      "percentage": 0    },    {    # jo-t12      "value": 12,      "frequency": 1,      "percentage": 1    },    {    # jo-t13      "value": 13,      "frequency": 0,      "percentage": 0    },    {    # jo-t14      "value": 14,      "frequency": 2,      "percentage": 2    },    {    # jo-t15      "value": 15,      "frequency": 0,      "percentage": 0    },    {    # jo-t16      "value": 16,      "frequency": 0,      "percentage": 0    },    {    # jo-t17      "value": 17,      "frequency": 0,      "percentage": 0    },    {    # jo-t18      "value": 18,      "frequency": 0,      "percentage": 0    },    {    # jo-t19      "value": 19,      "frequency": 2,      "percentage": 2    },    {    # jo-t20      "value": 20,      "frequency": 1,      "percentage": 1    },    {    # jo-t21      "value": 21,      "frequency": 0,      "percentage": 0    },    {    # jo-t22      "value": 22,      "frequency": 0,      "percentage": 0    },    {    # jo-t23      "value": 23,      "frequency": 1,      "percentage": 1    },    {    # jo-t24      "value": 24,      "frequency": 5,      "percentage": 5    },    {    # jo-t25      "value": 25,      "frequency": 2,      "percentage": 2    },    {    # jo-t26      "value": 26,      "frequency": 1,      "percentage": 1    },    {    # jo-t27      "value": 27,      "frequency": 0,      "percentage": 0    },    {    # jo-t28      "value": 28,      "frequency": 1,      "percentage": 1    },    {    # jo-t29      "value": 29,      "frequency": 1,      "percentage": 1    },    {    # jo-t30      "value": 30,      "frequency": 2,      "percentage": 2    },    {    # jo-t31      "value": 31,      "frequency": 0,      "percentage": 0    },    {    # jo-t32      "value": 32,      "frequency": 2,      "percentage": 2    },    {    # jo-t33      "value": 33,      "frequency": 1,      "percentage": 1    },    {    # jo-t34      "value": 34,      "frequency": 1,      "percentage": 1    },    {    # jo-t35      "value": 35,      "frequency": 0,      "percentage": 0    },    {    # jo-t36      "value": 36,      "frequency": 1,      "percentage": 1    },    {    # jo-t37      "value": 37,      "frequency": 2,      "percentage": 2    },    {    # jo-t38      "value": 38,      "frequency": 1,      "percentage": 1    },    {    # jo-t39      "value": 39,      "frequency": 0,      "percentage": 0    },    {    # jo-t40      "value": 40,      "frequency": 0,      "percentage": 0    },    {    # jo-t41      "value": 41,      "frequency": 1,      "percentage": 1    },    {    # jo-t42      "value": 42,      "frequency": 2,      "percentage": 2    },    {    # jo-t43      "value": 43,      "frequency": 3,      "percentage": 3    },    {    # jo-t44      "value": 44,      "frequency": 1,      "percentage": 1    },    {    # jo-t45      "value": 45,      "frequency": 0,      "percentage": 0    },    {    # jo-t46      "value": 46,      "frequency": 0,      "percentage": 0    },    {    # jo-t47      "value": 47,      "frequency": 1,      "percentage": 1    },    {    # jo-t48      "value": 48,      "frequency": 1,      "percentage": 1    },    {    # jo-t49      "value": 49,      "frequency": 0,      "percentage": 0    },    {    # jo-t50      "value": 50,      "frequency": 2,      "percentage": 2    },    {    # jo-t51      "value": 51,      "frequency": 1,      "percentage": 1    },    {    # jo-t52      "value": 52,      "frequency": 1,      "percentage": 1    },    {    # jo-t53      "value": 53,      "frequency": 0,      "percentage": 0    },    {    # jo-t54      "value": 54,      "frequency": 0,      "percentage": 0    },    {    # jo-t55      "value": 55,      "frequency": 0,      "percentage": 0    },    {    # jo-t56      "value": 56,      "frequency": 1,      "percentage": 1    },    {    # jo-t57      "value": 57,      "frequency": 0,      "percentage": 0    },    {    # jo-t58      "value": 58,      "frequency": 2,      "percentage": 2    },    {    # jo-t59      "value": 59,      "frequency": 2,      "percentage": 2    },    {    # jo-t60      "value": 60,      "frequency": 0,      "percentage": 0    },    {    # jo-t61      "value": 61,      "frequency": 1,      "percentage": 1    },    {    # jo-t62      "value": 62,      "frequency": 0,      "percentage": 0    },    {    # jo-t63      "value": 63,      "frequency": 0,      "percentage": 0    },    {    # jo-t64      "value": 64,      "frequency": 0,      "percentage": 0    },    {    # jo-t65      "value": 65,      "frequency": 1,      "percentage": 1    },    {    # jo-t66      "value": 66,      "frequency": 0,      "percentage": 0    },    {    # jo-t67      "value": 67,      "frequency": 1,      "percentage": 1    },    {    # jo-t68      "value": 68,      "frequency": 1,      "percentage": 1    },    {    # jo-t69      "value": 69,      "frequency": 1,      "percentage": 1    },    {    # jo-t70      "value": 70,      "frequency": 2,      "percentage": 2    },    {    # jo-t71      "value": 71,      "frequency": 1,      "percentage": 1    },    {    # jo-t72      "value": 72,      "frequency": 2,      "percentage": 2    },    {    # jo-t73      "value": 73,      "frequency": 0,      "percentage": 0    },    {    # jo-t74      "value": 74,      "frequency": 0,      "percentage": 0    },    {    # jo-t75      "value": 75,      "frequency": 4,      "percentage": 4    },    {    # jo-t76      "value": 76,      "frequency": 0,      "percentage": 0    },    {    # jo-t77      "value": 77,      "frequency": 1,      "percentage": 1    },    {    # jo-t78      "value": 78,      "frequency": 1,      "percentage": 1    },    {    # jo-t79      "value": 79,      "frequency": 0,      "percentage": 0    },    {    # jo-t80      "value": 80,      "frequency": 3,      "percentage": 3    },    {    # jo-t81      "value": 81,      "frequency": 1,      "percentage": 1    },    {    # jo-t82      "value": 82,      "frequency": 0,      "percentage": 0    },    {    # jo-t83      "value": 83,      "frequency": 2,      "percentage": 2    },    {    # jo-t84      "value": 84,      "frequency": 0,      "percentage": 0    },    {    # jo-t85      "value": 85,      "frequency": 1,      "percentage": 1    },    {    # jo-t86      "value": 86,      "frequency": 2,      "percentage": 2    },    {    # jo-t87      "value": 87,      "frequency": 1,      "percentage": 1    },    {    # jo-t88      "value": 88,      "frequency": 0,      "percentage": 0    },    {    # jo-t89      "value": 89,      "frequency": 2,      "percentage": 2    },    {    # jo-t90      "value": 90,      "frequency": 2,      "percentage": 2    },    {    # jo-t91      "value": 91,      "frequency": 2,      "percentage": 2    },    {    # jo-t92      "value": 92,      "frequency": 1,      "percentage": 1    },    {    # jo-t93      "value": 93,      "frequency": 3,      "percentage": 3    },    {    # jo-t94      "value": 94,      "frequency": 2,      "percentage": 2    },    {    # jo-t95      "value": 95,      "frequency": 0,      "percentage": 0    },    {    # jo-t96      "value": 96,      "frequency": 1,      "percentage": 1    },    {    # jo-t97      "value": 97,      "frequency": 3,      "percentage": 3    },    {    # jo-t98      "value": 98,      "frequency": 0,      "percentage": 0    },    {    # jo-t99      "value": 99,      "frequency": 0,      "percentage": 0    },    {    # jo-t100      "value": 100,      "frequency": 0,      "percentage": 0    },    {    # jo-t101      "value": "1-10",      "frequency": 12,      "percentage": 12    },    {    # jo-t102      "value": "11-20",      "frequency": 7,      "percentage": 7.0000000000000008881784197001252323389053344726562    },    {    # jo-t103      "value": "21-30",      "frequency": 13,      "percentage": 13    },    {    # jo-t104      "value": "31-40",      "frequency": 8,      "percentage": 8    },    {    # jo-t105      "value": "41-50",      "frequency": 11,      "percentage": 11    },    {    # jo-t106      "value": "51-60",      "frequency": 7,      "percentage": 7.0000000000000008881784197001252323389053344726562    },    {    # jo-t107      "value": "61-70",      "frequency": 7,      "percentage": 7.0000000000000008881784197001252323389053344726562    },    {    # jo-t108      "value": "71-80",      "frequency": 12,      "percentage": 12    },    {    # jo-t109      "value": "81-90",      "frequency": 11,      "percentage": 11    },    {    # jo-t110      "value": "91-100",      "frequency": 12,      "percentage": 12    }  ]  <=JSON   100  When:Nov05'19-13:18:04 Why:~introduction.0.1=LOOP_COUNT   F:19 
