@@ -6,6 +6,7 @@ if ($chatPhase==main) {
 	if ($eventCounter < 7) {$$emoType = serious}
 	else if ($eventCounter < 10) {$$emoType = sad}
 	else if ($eventCounter==10) {$$emoType = relieved}}
+	# korrigieren!!!
 else if ($chatPhase==end){
 	if ($eventCounter < 7) {$$emoType = disappointed}
 	else if ($eventCounter < 10) {$$emoType = sad}

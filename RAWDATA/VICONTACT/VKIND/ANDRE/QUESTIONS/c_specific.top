@@ -17,7 +17,7 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
         b: ($chatPhase==main) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
         b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
     a: (^general_prompt()) $$intent=intro_prompt ^refine()
-    b: ($chatPhase==main [~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)]
+    a: ($chatPhase==main [~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)]
         b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] 
         b: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
         b: (%topic!=~introduction) ^respond(%topic)

@@ -9750,3 +9750,88 @@ System startup createsystem Fri Jul 26 09:22:14 2019
 Server ChatScript EVSERVER Version 8.8 pid: 82868 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
 Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
           buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+evserver child fork requests: 0
+  evserver: running pid: 42478
+System startup createsystem Tue Nov 26 10:40:49 2019
+Server ChatScript EVSERVER Version 8.8 pid: 42478 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=582  fact=366  heap=378876 Compiled:Nov11'19-12:38:10 by version 8.8 "vicontact"
+Used 59MB: dict 420,038 (36963kb) hashdepths 37536.59580.51943.33427.17718.8503.3740.1609.680.233.112.30.12.2.1.2. words 420038 unusedbuckets 37536 fact 42,915 (2059kb) heap 9056kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,112 fact 757,085 stack/heap 90,943KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 42478 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Tue Nov 26 10:40:51 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 42478), fork=0
+evserver child fork requests: 0
+  evserver: running pid: 45975
+System startup createsystem Tue Nov 26 15:10:56 2019
+Server ChatScript EVSERVER Version 8.8 pid: 45975 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=582  fact=366  heap=378876 Compiled:Nov11'19-12:38:10 by version 8.8 "vicontact"
+Used 59MB: dict 420,038 (36963kb) hashdepths 37536.59580.51943.33427.17718.8503.3740.1609.680.233.112.30.12.2.1.2. words 420038 unusedbuckets 37536 fact 42,915 (2059kb) heap 9056kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,112 fact 757,085 stack/heap 90,943KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 45975 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Tue Nov 26 15:10:58 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 45975), fork=0
+evserver child fork requests: 0
+  evserver: running pid: 2374
+System startup createsystem Fri Nov 29 17:20:43 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2374 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=582  fact=366  heap=379692 Compiled:Nov26'19-15:12:33 by version 8.8 "vicontact"
+Used 59MB: dict 420,038 (36963kb) hashdepths 37536.59580.51943.33427.17718.8503.3740.1609.680.233.112.30.12.2.1.2. words 420038 unusedbuckets 37536 fact 42,915 (2059kb) heap 9057kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,112 fact 757,085 stack/heap 90,942KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 2374 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Fri Nov 29 17:20:44 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 2374), fork=0
+evserver child fork requests: 0
+  evserver: running pid: 2382
+System startup createsystem Fri Nov 29 17:25:18 2019
+Server ChatScript EVSERVER Version 8.8 pid: 2382 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=582  fact=366  heap=379692 Compiled:Nov26'19-15:12:33 by version 8.8 "vicontact"
+Used 59MB: dict 420,038 (36963kb) hashdepths 37536.59580.51943.33427.17718.8503.3740.1609.680.233.112.30.12.2.1.2. words 420038 unusedbuckets 37536 fact 42,915 (2059kb) heap 9057kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,112 fact 757,085 stack/heap 90,942KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 2382 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Fri Nov 29 17:25:19 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 2382), fork=0
+evserver child fork requests: 0
+  evserver: running pid: 7971
+System startup createsystem Thu Dec 19 20:43:02 2019
+Server ChatScript EVSERVER Version 8.8 pid: 7971 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=582  fact=366  heap=379692 Compiled:Nov26'19-15:12:33 by version 8.8 "vicontact"
+Used 59MB: dict 420,038 (36963kb) hashdepths 37536.59580.51943.33427.17718.8503.3740.1609.680.233.112.30.12.2.1.2. words 420038 unusedbuckets 37536 fact 42,915 (2059kb) heap 9057kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,112 fact 757,085 stack/heap 90,942KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 7971 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Thu Dec 19 20:43:07 2019 serverlog:1 userlog: 1
+evserver: parent ready (pid = 7971), fork=0

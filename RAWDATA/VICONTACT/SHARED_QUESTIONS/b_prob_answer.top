@@ -462,7 +462,7 @@ else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = affirmation-100
 $$answerCategory = affirmation ^respond(~affirmation)
 
-u: ({_rapport} {_demand} {_transparency} greeting)
+u: ({_rapport} {_demand} {_transparency} greeting) 
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}

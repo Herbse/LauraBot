@@ -2,8 +2,25 @@ topic: ~introduction  keep repeat ()
 
 # t: ^countTest()
 
-t: [Hallo!][Hey!][Grüß Gott!] Wieviele loops sollen durchgeführt werden?
-    a: LOOP_COUNT(_*1) $loopCount= '_0 ^generateDistribution($loopCount) ^showResults()
+t: Sage go!
+    a: (go)  $z=0 loop(1000000) { 
+        $$randNum = ^generateNumber()
+        #$$randcsv = ^join($$randnum \n)
+        ^log(OPEN verteilung.csv $$randNum)
+        ^log(OPEN verteilung.csv \n)   
+        $z += 1} ^log(CLOSE verteilung.csv) 
+        $z
+##>>
+#t: ^generateNumber() keep repeat
+
+outputmacro: ^generateNumber()
+^popen("python /Users/hermannbarbe/Documents/GitHub/LauraBot/randPy.py" '^pythonrand)
+
+outputmacro: ^pythonrand(^number)
+^number
+
+#t: [Hallo!][Hey!][Grüß Gott!] Wieviele loops sollen durchgeführt werden?
+#    a: LOOP_COUNT(_*1) $loopCount= '_0 ^generateDistribution($loopCount) ^showResults()
 
 
 outputmacro: ^countTest()
@@ -49,7 +66,7 @@ $$randNum = %rand
 $$randcsv = ^join($$randnum \n) 
 $$position = $$randnum - 1
 $distributiondata[$$position].frequency += 1
-^log(OPEN verteilung.csv $$randcsv)
+#^log(OPEN verteilung.csv $$randcsv)
 ##<<if      ($$randnum < 10){$distributiondata[100].frequency += 1}
 else if ($$randnum < 21){$distributiondata[101].frequency += 1}
 else if ($$randnum < 31){$distributiondata[102].frequency += 1}
@@ -76,5 +93,5 @@ $_p += 1
 
 outputmacro: ^showResults()
 ^jsontree($distributiondata)
-^log(CLOSE verteilung.csv)
+#^log(CLOSE verteilung.csv)
 $endcount
