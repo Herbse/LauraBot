@@ -2,6 +2,10 @@ topic: ~introduction  keep repeat ()
 
 # t: ^countTest()
 
+t: RAND() Sage t! 
+    a: (t) ^generateNumber() ^reuse(RAND)
+
+
 t: Sage go!
     a: (go)  $z=0 loop(1000000) { 
         $$randNum = ^generateNumber()

@@ -1,4 +1,4 @@
 outputmacro: ^disclosureHandler()
 
 
-if ($goodQuestion > 1 AND $noncritTopic > 3) {$chatPhase = main $disclosureState = 1}
+if ($goodQuestion > 1 AND $noncritTopic > 3 AND $chatPhase==start) {$chatPhase = main $disclosureState = 1}

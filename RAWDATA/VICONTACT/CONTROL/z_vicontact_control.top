@@ -3,6 +3,7 @@ rename: @chatoutput @9
 
 outputmacro: laura_li() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -14,6 +15,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: laura_si() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -25,6 +27,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: andre_li() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -36,6 +39,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: sara_li() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -47,6 +51,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: jason_li() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -58,6 +63,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: constantin_si() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -69,6 +75,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: luisa_si() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -80,6 +87,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: natalia_si() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -91,6 +99,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: simon_si() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -102,6 +111,7 @@ $cs_token =  #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE
 
 outputmacro: tutorial() 
 ^addtopic(~introduction)
+$cs_control_pre = ~timer
 $cs_control_main = ~control
 $cs_control_post = ~addposthoc # test post-processing 
 $cs_language = german
@@ -122,6 +132,20 @@ u: () nofail(topic rejoinder())
  ^createfact(^name defaultbot defaultbot)
 DATA:
 laura_li
+
+# check the duration before each volley
+topic: ~timer system()
+
+t: ()
+# calculate duration only, if there is already a starTime define = no calculation for the first volley
+if  ($startTime){
+$$duration = %fulltime - $startTime
+}
+# if duration exceeds 8 minutes, put chatPhase into "end"
+if ($$duration>=480){
+	$chatPhase=end
+}
+
 
 topic: ~control system ()
 # on startup, do introduction

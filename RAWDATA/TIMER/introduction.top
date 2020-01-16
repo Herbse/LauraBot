@@ -1,0 +1,10 @@
+topic: ~introduction  keep repeat ()
+
+t: INIT() $startTime=%fulltime
+
+u: TIMERTEST()  
+$$duration= %fulltime - $startTime
+
+Unixzeit/Startzeit \= $startTime \n
+Zeit seit Volleystart \= $$duration
+
