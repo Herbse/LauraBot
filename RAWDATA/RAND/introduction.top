@@ -18,7 +18,7 @@ t: Sage go!
 #t: ^generateNumber() keep repeat
 
 outputmacro: ^generateNumber()
-^popen("python /Users/hermannbarbe/Documents/GitHub/LauraBot/randPy.py" '^pythonrand)
+^popen("python ./randPy.py" '^pythonrand)
 
 outputmacro: ^pythonrand(^number)
 ^number
