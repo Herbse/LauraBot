@@ -408,6 +408,7 @@ u: ({_rapport} {_demand} {_transparency} frequency)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
+^refine()
 $$probFormat = specific-100
 #a   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Das war nur einmal.
 #b   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Wenn er sauer ist halt. Schon ein paar mal.
@@ -452,8 +453,8 @@ u: ({_rapport} {_demand} {_transparency} availability)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
-$$probFormat = greetings-100
-$$answerCategory = greetings Hm. 
+$$probFormat = okay-100
+$$answerCategory = okay Okay. 
 
 u: ({_rapport} {_demand} {_transparency} introduction)
 if ('_0==rapport){$rapportCounter += 1}
@@ -472,12 +473,12 @@ Hallo.
 
 
 
-u: ({_rapport} {_demand} {_transparency} support finish)
+u: ({_rapport} {_demand} {_transparency} support)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = negation-100
-$$answerCategory = negation ^respond(~negat)
+$$answerCategory = negation Im Moment ist alles in Ordnung.
 
 u: ({_rapport} {_demand} {_transparency} finish)
 if ('_0==rapport){$rapportCounter += 1}

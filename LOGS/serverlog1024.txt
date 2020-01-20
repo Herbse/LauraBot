@@ -9835,3 +9835,425 @@ Free 127MB: dict 1,677,112 fact 757,085 stack/heap 90,942KB
 
 ======== Began EV server pid 7971 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Thu Dec 19 20:43:07 2019 serverlog:1 userlog: 1
 evserver: parent ready (pid = 7971), fork=0
+System startup createsystem Mon Jan 20 16:34:55 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=213  fact=264  heap=108948 Compiled:Jan16'20-13:15:18 by version 8.8 "rand"
+Used 55MB: dict 419,686 (33574kb) hashdepths 37599.59605.51929.33403.17707.8483.3736.1596.679.232.113.29.12.2.1.2. words 419686 unusedbuckets 37599 fact 42,813 (2055kb) heap 8786kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,464 fact 757,187 stack/heap 91,213KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began server 9.6 compiled Jul 14 2019 12:55:46 on host 0.0.0.0 port 1024 at Mon Jan 20 16:34:59 2020 serverlog:1 userlog: 1
+Server ready - logfile:LOGS/serverlog1024.txt serverLog:1 userLog:1 crashpath: 
+
+System startup createsystem Mon Jan 20 16:41:14 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=213  fact=264  heap=108940 Compiled:Jan16'20-13:15:18 by version 8.8 "rand"
+Used 55MB: dict 419,686 (33574kb) hashdepths 37599.59605.51929.33403.17707.8483.3736.1596.679.232.113.29.12.2.1.2. words 419686 unusedbuckets 37599 fact 42,813 (2055kb) heap 8786kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,464 fact 757,187 stack/heap 91,213KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began server 9.6 compiled Jul 14 2019 12:55:46 on host 0.0.0.0 port 1024 at Mon Jan 20 16:41:18 2020 serverlog:1 userlog: 1
+Server ready - logfile:LOGS/serverlog1024.txt serverLog:1 userLog:1 crashpath: 
+
+ServerPre: pid: x Franz ( ) size:19  Jan 20 16:41:26 2020
+System startup vicontact #a Mon Jan 20 16:41:26 2020
+System startup createsystem Mon Jan 20 16:41:27 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=477600 Compiled:Jan20'20-16:41:26 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:Franz bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 16:41:26 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 16:41:27 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=477600 Compiled:Jan20'20-16:41:26 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 16:41:31 7291ms 
+ServerPre: pid: x Franz ( ) size:13 :build vicontact #a Jan 20 16:41:42 2020
+Respond: user:Franz bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 16:41:42 12ms Why:~addposthoc.6.0 
+ServerPre: pid: x Franz (Andre_li) size:19  Jan 20 16:41:58 2020
+Respond: user:Franz bot:Andre_li ip:127.0.0.1 (~introduction) 1 [availability] hert  ==> [topic:~introduction | answerCategory:greetings | probFormat:greetings-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:hm | sumCorrect: | duration:16 ] Hm.  When:Jan20 16:41:58 26ms Why:~addposthoc.6.0 ~prob_answer.18.0.~control.1.0 
+ServerPre: pid: x Franz (Andre_li) size:13 [availability] hert Jan 20 16:43:16 2020
+Respond: user:Franz bot:Andre_li ip:127.0.0.1 (~introduction) 2 [support] www  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:hä | sumCorrect: | duration:94 ] Hä?  When:Jan20 16:43:16 13ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: x null ( ) size:19 [support] www Jan 20 16:52:33 2020
+System startup vicontact #a Mon Jan 20 16:52:33 2020
+System startup createsystem Mon Jan 20 16:52:34 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=477600 Compiled:Jan20'20-16:52:33 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 16:52:33 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 16:52:34 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=477600 Compiled:Jan20'20-16:52:33 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 16:52:38 8020ms 
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 16:52:40 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 16:52:40 13ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Andre_li) size:15  Jan 20 16:55:37 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 1 [greeting] wwww  ==> [topic:~introduction | answerCategory:greetings | probFormat:greetings-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:hallo | sumCorrect: | duration:177 ] Hallo.  When:Jan20 16:55:37 13ms Why:~addposthoc.6.0 ~prob_answer.20.0.~control.1.0 
+ServerPre: pid: x null (Andre_li) size:12 [greeting] wwww Jan 20 17:00:46 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 2 [finish] sss  ==> [topic:~introduction | answerCategory:affirmation | probFormat:affirmation-100 | goodQuestion:0 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:ja | sumCorrect: | duration:486 ] Ja.  When:Jan20 17:00:46 13ms Why:~addposthoc.6.0 ~affirmation.0.0.~prob_answer.22.0 
+ServerPre: pid: x null (Andre_li) size:16 [finish] sss Jan 20 17:00:59 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 3 [discharge] zzzz  ==> [topic:~introduction | answerCategory:discharge | probFormat:discharge-100 | goodQuestion:0 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:tschüs | sumCorrect: | duration:499 ] Tschüs.  When:Jan20 17:00:59 12ms Why:~addposthoc.6.0 ~prob_answer.23.0.~control.1.0 
+TCP 127.0.0.1 closed connection prematurely
+ServerPre: pid: x null ( ) size:19 [discharge] zzzz Jan 20 17:02:47 2020
+System startup vicontact #b Mon Jan 20 17:02:47 2020
+System startup createsystem Mon Jan 20 17:02:48 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=476784 Compiled:Jan20'20-17:02:47 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9154kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,845KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #b  ==> System startup vicontact #b Mon Jan 20 17:02:47 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 17:02:48 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=476784 Compiled:Jan20'20-17:02:47 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9154kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,845KB         *** Server WIDE OPEN to :command use.    When:Jan20 17:02:52 6363ms 
+ServerPre: pid: x null ( ) size:13 :build vicontact #b Jan 20 17:04:13 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 17:04:13 12ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Andre_li) size:15  Jan 20 17:04:31 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 1 [frequency] aaa  ==> [topic:~introduction | answerCategory: | probFormat:specific-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:18 ] Was meinen sie damit?  When:Jan20 17:04:31 13ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: x null (Andre_li) size:15 [frequency] aaa Jan 20 17:05:07 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 2 [relevance] www  ==> [topic:~introduction | answerCategory:specific | probFormat:specific-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:letzteswochenende | sumCorrect: | duration:54 ] Letztes Wochenende.  When:Jan20 17:05:07 14ms Why:~addposthoc.6.0 ~prob_answer.14.2.~control.1.0 
+TCP 127.0.0.1 closed connection prematurely
+ServerPre: pid: x null ( ) size:19 [relevance] www Jan 20 17:07:19 2020
+System startup vicontact #a Mon Jan 20 17:07:19 2020
+System startup createsystem Mon Jan 20 17:07:20 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=477612 Compiled:Jan20'20-17:07:19 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 17:07:19 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 17:07:20 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=477612 Compiled:Jan20'20-17:07:19 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 17:07:25 16121ms 
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 17:07:33 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 17:07:33 12ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Andre_li) size:16  Jan 20 17:07:40 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 1 [frequency] aaaa  ==> [topic:~introduction | answerCategory:specific | probFormat:specific-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:einmalwardas | sumCorrect: | duration:7 ] Einmal war das.  When:Jan20 17:07:40 16ms Why:~addposthoc.6.0 ~prob_answer.15.2.~control.1.0 
+ServerPre: pid: x null (Andre_li) size:15 [frequency] aaaa Jan 20 17:07:57 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 2 [frequency] qqq  ==> [topic:~introduction | answerCategory:specific | probFormat:specific-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:einmalwardas | sumCorrect: | duration:24 ] Einmal war das.  When:Jan20 17:07:57 12ms Why:~addposthoc.6.0 ~prob_answer.15.2.~control.1.0 
+ServerPre: pid: x null (Andre_li) size:19 [frequency] qqq Jan 20 17:09:29 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 3 [availability] wqww  ==> [topic:~introduction | answerCategory:greetings | probFormat:greetings-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:hm | sumCorrect: | duration:116 ] Hm.  When:Jan20 17:09:29 13ms Why:~addposthoc.6.0 ~prob_answer.18.0.~control.1.0 
+TCP 127.0.0.1 closed connection prematurely
+ServerPre: pid: x null ( ) size:19 [availability] wqww Jan 20 17:10:56 2020
+System startup vicontact #a Mon Jan 20 17:10:56 2020
+System startup createsystem Mon Jan 20 17:10:58 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=477604 Compiled:Jan20'20-17:10:56 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 17:10:56 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 17:10:58 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=477604 Compiled:Jan20'20-17:10:56 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 17:11:02 10138ms 
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 17:11:05 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 17:11:05 13ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Andre_li) size:19  Jan 20 17:11:14 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 1 [availability] qqqq  ==> [topic:~introduction | answerCategory:okay | probFormat:okay-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:okay | sumCorrect: | duration:9 ] Okay.  When:Jan20 17:11:14 13ms Why:~addposthoc.6.0 ~prob_answer.18.0.~control.1.0 
+ServerPre: pid: x null (Andre_li) size:13 [availability] qqqq Jan 20 17:13:28 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 2 [support] aaa  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:wiebitte | sumCorrect: | duration:143 ] Wie bitte?  When:Jan20 17:13:28 13ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+TCP 127.0.0.1 closed connection prematurely
+ServerPre: pid: x null ( ) size:19 [support] aaa Jan 20 17:18:15 2020
+System startup vicontact #a Mon Jan 20 17:18:15 2020
+System startup createsystem Mon Jan 20 17:18:17 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=477608 Compiled:Jan20'20-17:18:16 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 17:18:15 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 17:18:17 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=477608 Compiled:Jan20'20-17:18:16 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 17:18:21 15386ms 
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 17:18:29 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 17:18:29 12ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Andre_li) size:13  Jan 20 17:18:49 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 1 [support] aaa  ==> [topic:~introduction | answerCategory:negation | probFormat:negation-100 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:immomentistallesinordnung | sumCorrect: | duration:20 ] Im Moment ist alles in Ordnung.  When:Jan20 17:18:49 13ms Why:~addposthoc.6.0 ~prob_answer.21.0.~control.1.0 
+ServerPre: pid: x null (Andre_li) size:21 [support] aaa Jan 20 17:19:18 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 2 [rapport support] fff  ==> [topic:~introduction | answerCategory:negation | probFormat:negation-100 | goodQuestion:0 | emoType:serious | rapportCounter:1 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:immomentistallesinordnung | sumCorrect: | duration:49 ] Im Moment ist alles in Ordnung.  When:Jan20 17:19:18 12ms Why:~addposthoc.6.0 ~prob_answer.21.0.~control.1.0 
+ServerPre: pid: x null (Andre_li) size:26 [rapport support] fff Jan 20 17:20:22 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 3 [invitation_to_tell] vater  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-64_notAnswering-18_ignorance-9_reactance-9 | goodQuestion:1 | emoType:serious | rapportCounter:1 | disclosureState:0 | chatPhase:start | randomNumber:50 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: | soundFile:papaistvielarbeitenerputztbürosundkommtimmerspätnachhause | sumCorrect: | duration:113 ] Papa ist viel arbeiten. Er putzt Büros und kommt immer spät nach Hause.  When:Jan20 17:20:22 13ms Why:~addposthoc.6.0 ~father_t.2.0=PAPA_1.~narrative.0.2 
+ServerPre: pid: x null (Andre_li) size:26 [invitation_to_tell] vater Jan 20 17:20:32 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 4 [invitation_to_tell] vater  ==> [topic:~father_t | answerCategory:reactance | probFormat:narrative-64_notAnswering-18_ignorance-9_reactance-9 | goodQuestion:2 | emoType:serious | rapportCounter:1 | disclosureState:0 | chatPhase:start | randomNumber:95 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: | soundFile:kannichjetztgehen | sumCorrect: | duration:123 ] Kann ich jetzt gehen?  When:Jan20 17:20:32 12ms Why:~addposthoc.6.0 ~reactance.0.0.~prob_answer.0.7 
+ServerPre: pid: x null (Andre_li) size:26 [invitation_to_tell] vater Jan 20 17:20:39 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 5 [invitation_to_tell] vater  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-64_notAnswering-18_ignorance-9_reactance-9 | goodQuestion:3 | emoType:neutral | rapportCounter:1 | disclosureState:0 | chatPhase:start | randomNumber:25 | topicSwitch: | critRevealed: | noncritTopic:3 | intent: | soundFile:amwochenendeschauenwirunsmanchmalunserenlieblingsfilmandergrinch | sumCorrect: | duration:130 ] Am Wochenende schauen wir uns manchmal unseren Lieblingsfilm an, der Grinch.  When:Jan20 17:20:39 12ms Why:~addposthoc.6.0 ~father_t.3.0=PAPA_2.~narrative.0.2 
+ServerPre: pid: x null (Andre_li) size:26 [invitation_to_tell] vater Jan 20 17:20:47 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 6 [invitation_to_tell] vater  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-64_notAnswering-18_ignorance-9_reactance-9 | goodQuestion:4 | emoType:neutral | rapportCounter:1 | disclosureState:1 | chatPhase:main | randomNumber:44 | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:einmalalsmamanochbeiunswarsindwirdrachensteigengegangendasistlangeher | sumCorrect: | duration:138 ] Einmal, als Mama noch bei uns war, sind wir Drachensteigen gegangen. Das ist lange her.  When:Jan20 17:20:47 15ms Why:~addposthoc.6.0 ~father_t.4.0=PAPA_3.~narrative.0.2 
+ServerPre: pid: x null (Andre_li) size:26 [invitation_to_tell] vater Jan 20 17:20:54 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 7 [invitation_to_tell] vater  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative-64_notAnswering-18_ignorance-9_reactance-9 | goodQuestion:5 | emoType:serious | rapportCounter:1 | disclosureState:1 | chatPhase:main | randomNumber:3 | topicSwitch: | critRevealed: | noncritTopic:5 | intent: | soundFile:ichwürdegernemehrmitpapaunternehmen-mitmeinengeschwisternspieleichnie | sumCorrect: | duration:145 ] Ich würde gerne mehr mit Papa unternehmen. Mit meinen Geschwistern spiele ich nie.  When:Jan20 17:20:54 12ms Why:~addposthoc.6.0.~addposthoc.4.0 ~father_t.5.0=PAPA_4.~narrative.0.2 ~event_t.4.0=EVENT_1.~addposthoc.4.0 
+ServerPre: pid: x null (Andre_li) size:26 [invitation_to_tell] vater Jan 20 17:21:53 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 8 [invitation_to_tell] vater  ==> [topic:~event_t | answerCategory:ignorance | probFormat:narrative-64_notAnswering-18_ignorance-9_reactance-9 | goodQuestion:6 | emoType:serious | rapportCounter:1 | disclosureState:1 | chatPhase:main | randomNumber:58 | topicSwitch: | critRevealed: | noncritTopic:6 | intent:emptyTopic | soundFile:ichweißnicht | sumCorrect: | duration:204 ] Ich weiß nicht.  When:Jan20 17:21:53 12ms Why:~addposthoc.6.0 ~ignorance.0.0.~father_t.6.0 
+ServerPre: pid: x null (Andre_li) size:26 [invitation_to_tell] vater Jan 20 17:23:05 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 9 [invitation_to_tell] vater  ==> [topic:~event_t | answerCategory:ignorance | probFormat:narrative-64_notAnswering-18_ignorance-9_reactance-9 | goodQuestion:7 | emoType:serious | rapportCounter:1 | disclosureState:1 | chatPhase:main | randomNumber:67 | topicSwitch: | critRevealed: | noncritTopic:7 | intent:emptyTopic | soundFile:ichweißnicht | sumCorrect: | duration:276 ] Ich weiß nicht.  When:Jan20 17:23:05 13ms Why:~addposthoc.6.0 ~ignorance.0.0.~father_t.6.0 
+ServerPre: pid: x null ( ) size:19 [invitation_to_tell] vater Jan 20 17:35:59 2020
+System startup vicontact #a Mon Jan 20 17:35:59 2020
+System startup createsystem Mon Jan 20 17:36:00 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=477608 Compiled:Jan20'20-17:35:59 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 17:35:59 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 17:36:00 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=477608 Compiled:Jan20'20-17:35:59 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 17:36:05 38921ms 
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 17:36:09 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 17:36:09 16ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Andre_li) size:26  Jan 20 17:36:21 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 1 [invitation_to_tell] vater  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:28 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: | soundFile:papaistvielarbeitenerputztbürosundkommtimmerspätnachhause | sumCorrect: | duration:12 ] Papa ist viel arbeiten. Er putzt Büros und kommt immer spät nach Hause.  When:Jan20 17:36:21 13ms Why:~addposthoc.6.0 ~father_t.2.0=PAPA_1.~narrative.0.2 
+ServerPre: pid: x null (Andre_li) size:24 [invitation_to_tell] vater Jan 20 17:36:31 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 2 [invitation_to_tell] bla  ==> [topic:~father_t | answerCategory:notAnswering | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:73 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: | soundFile:hm | sumCorrect: | duration:22 ] Hm.  When:Jan20 17:36:31 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Andre_li) size:24 [invitation_to_tell] bla Jan 20 17:36:39 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 3 [invitation_to_tell] bla  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:3 | emoType:neutral | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:50 | topicSwitch: | critRevealed: | noncritTopic:3 | intent: | soundFile:amwochenendeschauenwirunsmanchmalunserenlieblingsfilmandergrinch | sumCorrect: | duration:30 ] Am Wochenende schauen wir uns manchmal unseren Lieblingsfilm an, der Grinch.  When:Jan20 17:36:39 13ms Why:~addposthoc.6.0 ~father_t.3.0=PAPA_2.~narrative.0.23 
+ServerPre: pid: x null (Andre_li) size:24 [invitation_to_tell] bla Jan 20 17:36:44 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 4 [invitation_to_tell] bla  ==> [topic:~father_t | answerCategory:reactance | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:4 | emoType:neutral | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:95 | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:kannichjetztgehen | sumCorrect: | duration:35 ] Kann ich jetzt gehen?  When:Jan20 17:36:44 13ms Why:~addposthoc.6.0 ~reactance.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Andre_li) size:24 [invitation_to_tell] bla Jan 20 17:36:49 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 5 [invitation_to_tell] bla  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:5 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:25 | topicSwitch: | critRevealed: | noncritTopic:5 | intent: | soundFile:einmalalsmamanochbeiunswarsindwirdrachensteigengegangendasistlangeher-mitmeinengeschwisternspieleichnie | sumCorrect: | duration:40 ] Einmal, als Mama noch bei uns war, sind wir Drachensteigen gegangen. Das ist lange her. Mit meinen Geschwistern spiele ich nie.  When:Jan20 17:36:49 13ms Why:~addposthoc.6.0.~addposthoc.4.0 ~father_t.4.0=PAPA_3.~narrative.0.23 ~event_t.4.0=EVENT_1.~addposthoc.4.0 
+ServerPre: pid: x null (Andre_li) size:26 [invitation_to_tell] bla Jan 20 17:37:19 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 6 [invitation_to_tell] vater  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:6 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:44 | topicSwitch: | critRevealed: | noncritTopic:6 | intent: | soundFile:ichwürdegernemehrmitpapaunternehmen | sumCorrect: | duration:70 ] Ich würde gerne mehr mit Papa unternehmen.  When:Jan20 17:37:19 12ms Why:~addposthoc.6.0 ~father_t.5.0=PAPA_4.~narrative.0.2 
+ServerPre: pid: x null (Andre_li) size:24 [invitation_to_tell] vater Jan 20 17:37:41 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 7 [invitation_to_tell] bla  ==> [topic:~event_t | answerCategory:ignorance | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:7 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:26 | topicSwitch: | critRevealed: | noncritTopic:7 | intent:emptyTopic | soundFile:keineahnung | sumCorrect: | duration:92 ] Keine Ahnung.  When:Jan20 17:37:41 14ms Why:~addposthoc.6.0 ~ignorance.0.0.~father_t.6.0 
+ServerPre: pid: x null (Andre_li) size:24 [invitation_to_tell] bla Jan 20 17:37:53 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 8 [invitation_to_tell] bla  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:8 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:26 | topicSwitch: | critRevealed: | noncritTopic:8 | intent: | soundFile:diemögenmichnicht | sumCorrect: | duration:104 ] Die mögen mich nicht.  When:Jan20 17:37:53 12ms Why:~addposthoc.6.0 ~event_t.5.0=EVENT_2.~narrative.0.23 
+ServerPre: pid: x null (Andre_li) size:14 [invitation_to_tell] bla Jan 20 17:38:10 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 9 [specific] wer  ==> [topic:~event_t | answerCategory:specific | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:9 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:58 | topicSwitch: | critRevealed: | noncritTopic:9 | intent:individual | soundFile:seitdemmeinegeschwisterdasindistallesanders | sumCorrect: | duration:121 ] Seitdem meine Geschwister da sind, ist alles anders.  When:Jan20 17:38:10 12ms Why:~addposthoc.6.0 ~event_t.6.0=EVENT_3.~event_t.3.30 
+ServerPre: pid: x null (Andre_li) size:14 [specific] wer Jan 20 17:39:07 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 10 [specific] wer  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:10 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:67 | topicSwitch: | critRevealed: | noncritTopic:10 | intent: | soundFile:hm | sumCorrect: | duration:178 ] Hm.  When:Jan20 17:39:07 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.5.6 
+ServerPre: pid: x null (Andre_li) size:14 [specific] wer Jan 20 17:39:21 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 11 [specific] wer  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:11 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:64 | topicSwitch: | critRevealed: | noncritTopic:11 | intent: | soundFile:hm | sumCorrect: | duration:192 ] Hm.  When:Jan20 17:39:21 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.5.6 
+ServerPre: pid: x null (Andre_li) size:14 [specific] wer Jan 20 17:39:42 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 12 [specific] wer  ==> [topic:~event_t | answerCategory:reactance | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:12 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:97 | topicSwitch: | critRevealed: | noncritTopic:12 | intent: | soundFile:ichwilldarübernichtsprechen | sumCorrect: | duration:213 ] Ich will darüber nicht sprechen.  When:Jan20 17:39:42 13ms Why:~addposthoc.6.0 ~reactance.0.0.~prob_answer.5.6 
+ServerPre: pid: x null (Andre_li) size:14 [specific] wer Jan 20 17:39:51 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 13 [specific] wer  ==> [topic:~event_t | answerCategory:ignorance | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:13 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:23 | topicSwitch: | critRevealed: | noncritTopic:13 | intent:individual | soundFile:keineahnung | sumCorrect: | duration:222 ] Keine Ahnung.  When:Jan20 17:39:51 13ms Why:~addposthoc.6.0 ~ignorance.0.0.~event_t.3.31 
+ServerPre: pid: x null (Andre_li) size:22 [specific] wer Jan 20 17:40:13 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 14 [facilitator] und dann  ==> [topic:~event_t | answerCategory:affirmation | probFormat:narrative-40_affirmation-25_notAnswering-25_reactance-10 | goodQuestion:14 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:62 | topicSwitch: | critRevealed: | noncritTopic:14 | intent: | soundFile:ja | sumCorrect: | duration:244 ] Ja.  When:Jan20 17:40:13 12ms Why:~addposthoc.6.0 ~affirmation.0.0.~prob_answer.2.6 
+ServerPre: pid: x null (Andre_li) size:22 [facilitator] und dann Jan 20 17:40:28 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 15 [facilitator] und dann  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:narrative-40_affirmation-25_notAnswering-25_reactance-10 | goodQuestion:15 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:89 | topicSwitch: | critRevealed: | noncritTopic:15 | intent: | soundFile:hm | sumCorrect: | duration:259 ] Hm.  When:Jan20 17:40:28 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.2.6 
+ServerPre: pid: x null (Andre_li) size:22 [facilitator] und dann Jan 20 17:40:34 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 16 [facilitator] und dann  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:narrative-40_affirmation-25_notAnswering-25_reactance-10 | goodQuestion:16 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:72 | topicSwitch: | critRevealed: | noncritTopic:16 | intent: | soundFile:hm | sumCorrect: | duration:265 ] Hm.  When:Jan20 17:40:34 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.2.6 
+ServerPre: pid: x null (Andre_li) size:22 [facilitator] und dann Jan 20 17:40:41 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 17 [facilitator] und dann  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative-40_affirmation-25_notAnswering-25_reactance-10 | goodQuestion:17 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:5 | topicSwitch: | critRevealed: | noncritTopic:17 | intent: | soundFile:siesindvollfieszumirundärgernmichimmer | sumCorrect: | duration:272 ] Sie sind voll fies zu mir und ärgern mich immer.  When:Jan20 17:40:41 13ms Why:~addposthoc.6.0 ~event_t.7.0=EVENT_4.~narrative.0.23 
+ServerPre: pid: x null (Andre_li) size:14 [facilitator] und dann Jan 20 17:40:54 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 18 [specific] wer  ==> [topic:~event_t | answerCategory:specific | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:18 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:44 | topicSwitch: | critRevealed: | noncritTopic:18 | intent:individual | soundFile:carlaunddavid | sumCorrect: | duration:285 ] Carla und David.  When:Jan20 17:40:54 15ms Why:~addposthoc.6.0 ~event_t.3.32.~specific.0.23 
+TCP 127.0.0.1 closed connection prematurely
+ServerPre: pid: x null ( ) size:19 [specific] wer Jan 20 17:46:06 2020
+System startup vicontact #a Mon Jan 20 17:46:06 2020
+System startup createsystem Mon Jan 20 17:46:07 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=477608 Compiled:Jan20'20-17:46:06 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 17:46:06 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 17:46:07 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=477608 Compiled:Jan20'20-17:46:06 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 17:46:11 6137ms 
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 17:46:27 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 17:46:27 14ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Andre_li) size:41  Jan 20 17:46:42 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~introduction) 1 [invitation_to_tell] erzähl doch mal was  ==> [topic:~introduction | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:28 | topicSwitch: | critRevealed: | noncritTopic:1 | intent:intro_prompt | soundFile:NaN | sumCorrect: | duration:15 ]  When:Jan20 17:46:42 12ms Why:~addposthoc.6.0 
+ServerPre: pid: x null ( ) size:19 [invitation_to_tell] erzähl doch mal was Jan 20 18:10:39 2020
+System startup vicontact #a Mon Jan 20 18:10:39 2020
+System startup createsystem Mon Jan 20 18:10:40 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=0  fact=0  heap=102116 Compiled: by version  ""
+Used 55MB: dict 419,473 (33557kb) hashdepths 37621.59619.51947.33395.17688.8472.3724.1597.676.230.113.30.11.2.1.2. words 419473 unusedbuckets 37621 fact 42,549 (2042kb) heap 8779kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,677 fact 757,451 stack/heap 91,220KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 18:10:39 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46     ERROR SUMMARY:     PATTERN-69 Failed to close ( started at line 23 : ( ! =8%topic=~introduction~3 ^respond ( %topic ) b: ( =c$chatphase==main ) [ ^respond ( ~event_t ) ] [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] [ ^respond ( ~brother_t ) ] [ ^respond ( ~friends_t ) ] [ ^respond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] b: ( ) [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] [ ^respond ( ~brother_t ) ] [ ^respond ( ~friends_t ) ] [ ^respond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] a: ( ^general_prompt ( ) ) =a$$intent=intro_prompt ^refine ( ) b: ( [ ~home bei_euch Familie familie ] ) [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] [ ^respond ( ~brother_t ) ] b: ( ~parents ) [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] b: ( ! =8%topic=~introduction~3 ^respond ( %topic ) b: ( =c$chatphase==main ) [ ^respond ( ~event_t ) ] [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] [ ^respond ( ~brother_t ) ] [ ^respond ( ~friends_t ) ] [ ^respond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] b: ( ) [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] [ ^respond ( ~brother_t ) ] [ ^respond ( ~friends_t ) ] [ ^respond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] a: ( ) ^respond ( %topic )  - line 29 column 26 of c_narrative.top  laura_li       1 errors - press Enter to quit. Then fix and try again.      Finished compile    System startup createsystem Mon Jan 20 18:10:40 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=0  fact=0  heap=102116 Compiled: by version  ""  Used 55MB: dict 419,473 (33557kb) hashdepths 37621.59619.51947.33395.17688.8472.3724.1597.676.230.113.30.11.2.1.2. words 419473 unusedbuckets 37621 fact 42,549 (2042kb) heap 8779kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,677 fact 757,451 stack/heap 91,220KB         *** Server WIDE OPEN to :command use.    When:Jan20 18:10:44 6575ms 
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 18:14:56 2020
+Respond: user:null bot:  ip:127.0.0.1 () 0 :bot Andre_li  ==>   When:Jan20 18:14:56 15ms 
+TCP 127.0.0.1 closed connection prematurely
+ServerPre: pid: x null ( ) size:19  Jan 20 18:15:44 2020
+System startup vicontact #a Mon Jan 20 18:15:44 2020
+System startup createsystem Mon Jan 20 18:15:45 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=478052 Compiled:Jan20'20-18:15:44 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 18:15:44 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 256 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 18:15:45 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=478052 Compiled:Jan20'20-18:15:44 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 18:15:49 7496ms pond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] b: ( ) [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] [ ^respond ( ~brother_t ) ] [ ^respond ( ~friends_t ) ] [ ^respond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] a: ( ) ^respond ( %topic )  - line 29 column 26 of c_narrative.top  laura_li 
+
+
+1 errors - press Enter to quit. Then fix and try again.
+
+
+Finished compile
+
+System startup createsystem Mon Jan 20 18:10:40 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=0  fact=0  heap=102116 Compiled: by version  ""
+Used 55MB: dict 419,473 (33557kb) hashdepths 37621.59619.51947.33395.17688.8472.3724.1597.676.230.113.30.11.2.1.2. words 419473 unusedbuckets 37621 fact 42,549 (2042kb) heap 8779kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,677 fact 757,451 stack/heap 91,220KB 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 18:15:52 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction) 0 :bot Andre_li  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 18:15:52 13ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Andre_li) size:38  Jan 20 18:16:04 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 1 [invitation_to_tell] erzähl mal vater  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:28 | topicSwitch: | critRevealed: | noncritTopic:1 | intent: | soundFile:papaistvielarbeitenerputztbürosundkommtimmerspätnachhause | sumCorrect: | duration:12 ] Papa ist viel arbeiten. Er putzt Büros und kommt immer spät nach Hause.  When:Jan20 18:16:04 12ms Why:~addposthoc.6.0 ~father_t.2.0=PAPA_1.~narrative.0.2 
+ServerPre: pid: x null (Andre_li) size:39 [invitation_to_tell] erzähl mal vater Jan 20 18:16:14 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 2 [invitation_to_tell] erzähl mal weiter  ==> [topic:~father_t | answerCategory:notAnswering | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:73 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: | soundFile:hm | sumCorrect: | duration:22 ] Hm.  When:Jan20 18:16:14 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Andre_li) size:39 [invitation_to_tell] erzähl mal weiter Jan 20 18:16:23 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 3 [invitation_to_tell] erzähl mal weiter  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:3 | emoType:neutral | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:50 | topicSwitch: | critRevealed: | noncritTopic:3 | intent:intro_prompt | soundFile:amwochenendeschauenwirunsmanchmalunserenlieblingsfilmandergrinch | sumCorrect: | duration:31 ] Am Wochenende schauen wir uns manchmal unseren Lieblingsfilm an, der Grinch.  When:Jan20 18:16:23 14ms Why:~addposthoc.6.0 ~father_t.3.0=PAPA_2.~narrative.0.20 
+ServerPre: pid: x null (Andre_li) size:39 [invitation_to_tell] erzähl mal weiter Jan 20 18:16:38 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 4 [invitation_to_tell] erzähl mal weiter  ==> [topic:~father_t | answerCategory:reactance | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:4 | emoType:neutral | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:95 | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:kannichjetztgehen | sumCorrect: | duration:46 ] Kann ich jetzt gehen?  When:Jan20 18:16:38 13ms Why:~addposthoc.6.0 ~reactance.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Andre_li) size:39 [invitation_to_tell] erzähl mal weiter Jan 20 18:16:46 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 5 [invitation_to_tell] erzähl mal weiter  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:5 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:25 | topicSwitch: | critRevealed: | noncritTopic:5 | intent:intro_prompt | soundFile:einmalalsmamanochbeiunswarsindwirdrachensteigengegangendasistlangeher-mitmeinengeschwisternspieleichnie | sumCorrect: | duration:54 ] Einmal, als Mama noch bei uns war, sind wir Drachensteigen gegangen. Das ist lange her. Mit meinen Geschwistern spiele ich nie.  When:Jan20 18:16:46 13ms Why:~addposthoc.6.0.~addposthoc.4.0 ~father_t.4.0=PAPA_3.~narrative.0.20 ~event_t.4.0=EVENT_1.~addposthoc.4.0 
+ServerPre: pid: x null (Andre_li) size:38 [invitation_to_tell] erzähl mal weiter Jan 20 18:17:04 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~father_t) 6 [invitation_to_tell] erzähl mal vater  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:6 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:44 | topicSwitch: | critRevealed: | noncritTopic:6 | intent: | soundFile:ichwürdegernemehrmitpapaunternehmen | sumCorrect: | duration:72 ] Ich würde gerne mehr mit Papa unternehmen.  When:Jan20 18:17:04 16ms Why:~addposthoc.6.0 ~father_t.5.0=PAPA_4.~narrative.0.2 
+ServerPre: pid: x null (Andre_li) size:38 [invitation_to_tell] erzähl mal vater Jan 20 18:17:17 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 7 [invitation_to_tell] erzähl mal vater  ==> [topic:~event_t | answerCategory:ignorance | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:7 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:26 | topicSwitch: | critRevealed: | noncritTopic:7 | intent:emptyTopic | soundFile:keineahnung | sumCorrect: | duration:85 ] Keine Ahnung.  When:Jan20 18:17:17 12ms Why:~addposthoc.6.0 ~ignorance.0.0.~father_t.6.0 
+ServerPre: pid: x null (Andre_li) size:39 [invitation_to_tell] erzähl mal vater Jan 20 18:17:27 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~mother_t) 8 [invitation_to_tell] erzähl mal mutter  ==> [topic:~mother_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:8 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:26 | topicSwitch: | critRevealed: | noncritTopic:8 | intent: | soundFile:carmenistvollstrengzumirunderlaubtmirfastnichts | sumCorrect: | duration:95 ] Carmen ist voll streng zu mir und erlaubt mir fast nichts.  When:Jan20 18:17:27 12ms Why:~addposthoc.6.0 ~mother_t.2.0=MAMA_1.~narrative.0.1 
+ServerPre: pid: x null (Andre_li) size:32 [invitation_to_tell] erzähl mal mutter Jan 20 18:17:36 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~mother_t) 9 [invitation_to_tell] erzähl mal  ==> [topic:~mother_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:9 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:58 | topicSwitch: | critRevealed: | noncritTopic:9 | intent:intro_prompt | soundFile:wennichsienachsüßigkeitenfragesagtsieimmernein | sumCorrect: | duration:104 ] Wenn ich sie nach Süßigkeiten frage, sagt sie immer nein.  When:Jan20 18:17:36 12ms Why:~addposthoc.6.0 ~mother_t.3.0=MAMA_2.~narrative.0.20 
+ServerPre: pid: x null (Andre_li) size:32 [invitation_to_tell] erzähl mal Jan 20 18:18:27 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 10 [invitation_to_tell] erzähl mal  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:10 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:67 | topicSwitch: | critRevealed: | noncritTopic:10 | intent: | soundFile:hm-zuhauseinteressiertsichkeinerfürmich | sumCorrect: | duration:155 ] Hm. Zu Hause interessiert sich keiner für mich.  When:Jan20 18:18:27 12ms Why:~addposthoc.6.0.~addposthoc.4.0 ~notanswering.0.0.~prob_answer.0.6 ~event_t.15.0=CLUE2.~addposthoc.4.0 
+ServerPre: pid: x null (Andre_li) size:32 [invitation_to_tell] erzähl mal Jan 20 18:18:52 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 11 [invitation_to_tell] erzähl mal  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:11 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:64 | topicSwitch: | critRevealed: | noncritTopic:11 | intent: | soundFile:hm | sumCorrect: | duration:180 ] Hm.  When:Jan20 18:18:52 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Andre_li) size:32 [invitation_to_tell] erzähl mal Jan 20 18:19:03 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 12 [invitation_to_tell] erzähl mal  ==> [topic:~event_t | answerCategory:reactance | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:12 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:97 | topicSwitch: | critRevealed: | noncritTopic:12 | intent: | soundFile:ichwilldarübernichtsprechen | sumCorrect: | duration:191 ] Ich will darüber nicht sprechen.  When:Jan20 18:19:03 13ms Why:~addposthoc.6.0 ~reactance.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Andre_li) size:37 [invitation_to_tell] erzähl mal Jan 20 18:19:13 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 13 [invitation_to_tell] erzähl doch mal  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:13 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:23 | topicSwitch: | critRevealed: | noncritTopic:13 | intent:intro_prompt | soundFile:diemögenmichnicht | sumCorrect: | duration:201 ] Die mögen mich nicht.  When:Jan20 18:19:13 15ms Why:~addposthoc.6.0 ~event_t.5.0=EVENT_2.~narrative.0.20 
+ServerPre: pid: x null (Andre_li) size:29 [invitation_to_tell] erzähl doch mal Jan 20 18:19:31 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 14 [specific] wer mag dich nicht  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:14 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:62 | topicSwitch: | critRevealed: | noncritTopic:14 | intent: | soundFile:hm | sumCorrect: | duration:219 ] Hm.  When:Jan20 18:19:31 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.5.6 
+ServerPre: pid: x null (Andre_li) size:29 [specific] wer mag dich nicht Jan 20 18:19:38 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 15 [specific] wer mag dich nicht  ==> [topic:~event_t | answerCategory:ignorance | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:15 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:89 | topicSwitch: | critRevealed: | noncritTopic:15 | intent: | soundFile:icherinneremichnicht | sumCorrect: | duration:226 ] Ich erinnere mich nicht.  When:Jan20 18:19:38 13ms Why:~addposthoc.6.0 ~ignorance.0.0.~prob_answer.5.6 
+ServerPre: pid: x null (Andre_li) size:29 [specific] wer mag dich nicht Jan 20 18:19:48 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 16 [specific] wer mag dich nicht  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:16 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:72 | topicSwitch: | critRevealed: | noncritTopic:16 | intent: | soundFile:hm | sumCorrect: | duration:236 ] Hm.  When:Jan20 18:19:48 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.5.6 
+ServerPre: pid: x null (Andre_li) size:29 [specific] wer mag dich nicht Jan 20 18:19:55 2020
+Respond: user:null bot:Andre_li ip:127.0.0.1 (~event_t) 17 [specific] wer mag dich nicht  ==> [topic:~event_t | answerCategory:specific | probFormat:specific-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:17 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:5 | topicSwitch: | critRevealed: | noncritTopic:17 | intent:individual | soundFile:seitdemmeinegeschwisterdasindistallesanders | sumCorrect: | duration:243 ] Seitdem meine Geschwister da sind, ist alles anders.  When:Jan20 18:19:55 13ms Why:~addposthoc.6.0 ~event_t.6.0=EVENT_3.~event_t.3.30 
+ServerPre: pid: x null ( ) size:19 [specific] wer mag dich nicht Jan 20 18:27:31 2020
+System startup vicontact #a Mon Jan 20 18:27:31 2020
+System startup createsystem Mon Jan 20 18:27:32 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=478052 Compiled:Jan20'20-18:27:31 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 18:27:31 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 18:27:32 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=478052 Compiled:Jan20'20-18:27:31 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 18:27:36 8101ms pond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] b: ( ) [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] [ ^respond ( ~brother_t ) ] [ ^respond ( ~friends_t ) ] [ ^respond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] a: ( ) ^respond ( %topic )  - line 29 column 26 of c_narrative.top  laura_li 
+
+
+1 errors - press Enter to quit. Then fix and try again.
+
+
+Finished compile
+
+System startup createsystem Mon Jan 20 18:10:40 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=0  fact=0  heap=102116 Compiled: by version  ""
+Used 55MB: dict 419,473 (33557kb) hashdepths 37621.59619.51947.33395.17688.8472.3724.1597.676.230.113.30.11.2.1.2. words 419473 unusedbuckets 37621 fact 42,549 (2042kb) heap 8779kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,677 fact 757,451 stack/heap 91,220KB 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 18:27:37 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction~3) 0 :bot Laura_li  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 18:27:37 12ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Laura_li) size:37  Jan 20 18:28:14 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~hobbies_t~2) 1 [invitation_to_tell] erzähl doch mal  ==> [topic:~hobbies_t~2 | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:28 | topicSwitch: | critRevealed: | noncritTopic:1 | intent:intro_prompt | soundFile:ichgeheimmeramdienstagindenclubhiphoptanzen | sumCorrect: | duration:37 ] Ich gehe immer am Dienstag in den Club, Hiphop tanzen.  When:Jan20 18:28:14 14ms Why:~addposthoc.6.0 ~hobbies_t~2.1.0=HOBBIES_1.~narrative~3.0.20 
+ServerPre: pid: x null (Laura_li) size:23 [invitation_to_tell] erzähl doch mal Jan 20 18:28:23 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~hobbies_t~2) 2 [invitation_to_tell] ee  ==> [topic:~hobbies_t~2 | answerCategory:notAnswering | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:73 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: | soundFile:hm | sumCorrect: | duration:46 ] Hm.  When:Jan20 18:28:23 12ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Laura_li) size:23 [invitation_to_tell] ee Jan 20 18:28:29 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~hobbies_t~2) 3 [invitation_to_tell] ee  ==> [topic:~hobbies_t~2 | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:3 | emoType:neutral | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:50 | topicSwitch: | critRevealed: | noncritTopic:3 | intent: | soundFile:wirtanzenwastollesvonbeyonceichkanndasschonvollgut | sumCorrect: | duration:52 ] Wir tanzen was tolles von Beyonce. Ich kann das schon voll gut.  When:Jan20 18:28:29 14ms Why:~addposthoc.6.0 ~hobbies_t~2.2.0=HOBBIES_2.~narrative~3.0.21 
+ServerPre: pid: x null (Laura_li) size:23 [invitation_to_tell] ee Jan 20 18:28:44 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~hobbies_t~2) 4 [invitation_to_tell] ee  ==> [topic:~hobbies_t~2 | answerCategory:reactance | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:4 | emoType:neutral | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:95 | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:kannichjetztgehen | sumCorrect: | duration:67 ] Kann ich jetzt gehen?  When:Jan20 18:28:44 13ms Why:~addposthoc.6.0 ~reactance.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Laura_li) size:38 [invitation_to_tell] ee Jan 20 18:29:08 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~event_t~3) 5 [invitation_to_tell] erzähl mal onkel  ==> [topic:~event_t~3 | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:5 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:25 | topicSwitch: | critRevealed: | noncritTopic:5 | intent: | soundFile:meinonkelschläftjetztimmerbeiuns-meinonkelschläftjetztimmerbeiuns | sumCorrect: | duration:91 ] Mein Onkel schläft jetzt immer bei uns. Mein Onkel schläft jetzt immer bei uns.  When:Jan20 18:29:08 13ms Why:~addposthoc.6.0.~addposthoc.4.0 ~event_t~3.2.0=EVENT_1.~narrative~3.0.4 ~event_t~3.2.0=EVENT_1.~addposthoc.4.0 
+TCP 127.0.0.1 closed connection prematurely
+ServerPre: pid: x null ( ) size:19 [invitation_to_tell] erzähl mal onkel Jan 20 18:31:45 2020
+System startup vicontact #a Mon Jan 20 18:31:45 2020
+System startup createsystem Mon Jan 20 18:31:46 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=583  fact=366  heap=478072 Compiled:Jan20'20-18:31:45 by version 9.6 "vicontact"
+Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:null bot:  ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Jan 20 18:31:45 2020  ChatScript Version 9.6  compiled Jul 14 2019 12:55:46    WARNING SUMMARY:   4 serious warnings, 0 function warnings, 0 spelling warnings, 254 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Jan 20 18:31:46 2020  Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=583  fact=366  heap=478072 Compiled:Jan20'20-18:31:45 by version 9.6 "vicontact"  Used 56MB: dict 420,056 (33604kb) hashdepths 37534.59576.51940.33436.17718.8503.3739.1610.680.233.112.30.12.2.1.2. words 420056 unusedbuckets 37534 fact 42,915 (2059kb) heap 9155kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,094 fact 757,085 stack/heap 90,844KB         *** Server WIDE OPEN to :command use.    When:Jan20 18:31:50 7353ms pond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] b: ( ) [ ^respond ( ~mother_t ) ] [ ^respond ( ~father_t ) ] [ ^respond ( ~brother_t ) ] [ ^respond ( ~friends_t ) ] [ ^respond ( ~hobbies_t ) ] [ ^respond ( ~school_t ) ] a: ( ) ^respond ( %topic )  - line 29 column 26 of c_narrative.top  laura_li 
+
+
+1 errors - press Enter to quit. Then fix and try again.
+
+
+Finished compile
+
+System startup createsystem Mon Jan 20 18:10:40 2020
+Server ChatScript Release Version 9.6 pid: 0 32 bit Windows compiled Jul 14 2019 12:55:46 host=0.0.0.0
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340852 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=0  fact=0  heap=102116 Compiled: by version  ""
+Used 55MB: dict 419,473 (33557kb) hashdepths 37621.59619.51947.33395.17688.8472.3724.1597.676.230.113.30.11.2.1.2. words 419473 unusedbuckets 37621 fact 42,549 (2042kb) heap 8779kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,677 fact 757,451 stack/heap 91,220KB 
+
+    *** Server WIDE OPEN to :command use.
+
+ServerPre: pid: x null ( ) size:13 :build vicontact #a Jan 20 18:31:53 2020
+Respond: user:null bot:  ip:127.0.0.1 (~introduction~3) 0 :bot Laura_li  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Jan20 18:31:53 12ms Why:~addposthoc.6.0 
+ServerPre: pid: x null (Laura_li) size:32  Jan 20 18:32:03 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~hobbies_t~2) 1 [invitation_to_tell] erzähl mal  ==> [topic:~hobbies_t~2 | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:28 | topicSwitch: | critRevealed: | noncritTopic:1 | intent:intro_prompt | soundFile:ichgeheimmeramdienstagindenclubhiphoptanzen | sumCorrect: | duration:10 ] Ich gehe immer am Dienstag in den Club, Hiphop tanzen.  When:Jan20 18:32:03 12ms Why:~addposthoc.6.0 ~hobbies_t~2.1.0=HOBBIES_1.~narrative~3.0.20 
+ServerPre: pid: x null (Laura_li) size:32 [invitation_to_tell] erzähl mal Jan 20 18:32:11 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~hobbies_t~2) 2 [invitation_to_tell] erzähl mal  ==> [topic:~hobbies_t~2 | answerCategory:notAnswering | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:2 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:73 | topicSwitch: | critRevealed: | noncritTopic:2 | intent: | soundFile:hm | sumCorrect: | duration:18 ] Hm.  When:Jan20 18:32:11 13ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Laura_li) size:24 [invitation_to_tell] erzähl mal Jan 20 18:32:16 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~hobbies_t~2) 3 [invitation_to_tell] sss  ==> [topic:~hobbies_t~2 | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:3 | emoType:neutral | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:50 | topicSwitch: | critRevealed: | noncritTopic:3 | intent: | soundFile:wirtanzenwastollesvonbeyonceichkanndasschonvollgut | sumCorrect: | duration:23 ] Wir tanzen was tolles von Beyonce. Ich kann das schon voll gut.  When:Jan20 18:32:16 13ms Why:~addposthoc.6.0 ~hobbies_t~2.2.0=HOBBIES_2.~narrative~3.0.21 
+ServerPre: pid: x null (Laura_li) size:24 [invitation_to_tell] sss Jan 20 18:32:22 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~hobbies_t~2) 4 [invitation_to_tell] sss  ==> [topic:~hobbies_t~2 | answerCategory:reactance | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:4 | emoType:neutral | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:95 | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:kannichjetztgehen | sumCorrect: | duration:29 ] Kann ich jetzt gehen?  When:Jan20 18:32:22 13ms Why:~addposthoc.6.0 ~reactance.0.0.~prob_answer.0.6 
+ServerPre: pid: x null (Laura_li) size:38 [invitation_to_tell] sss Jan 20 18:32:40 2020
+Respond: user:null bot:Laura_li ip:127.0.0.1 (~event_t~3) 5 [invitation_to_tell] erzähl mal onkel  ==> [topic:~event_t~3 | answerCategory:narrative | probFormat:narrative-60_notAnswering-20_ignorance-10_reactance-10 | goodQuestion:5 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:25 | topicSwitch: | critRevealed: | noncritTopic:5 | intent: | soundFile:meinonkelschläftjetztimmerbeiuns | sumCorrect: | duration:47 ] Mein Onkel schläft jetzt immer bei uns.  When:Jan20 18:32:40 12ms Why:~addposthoc.6.0 ~event_t~3.2.0=EVENT_1.~narrative~3.0.4 
