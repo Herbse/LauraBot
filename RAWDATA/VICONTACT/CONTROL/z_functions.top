@@ -94,17 +94,25 @@ outputmacro: ^emptyTopic()
 $$intent=emptyTopic
 
 if ($disclosureState==1)) {
-$$randNum = %rand
+$$randNum = ^generateNumber()
 if ($$randNum < 75) {$$answerCategory = ignorance ^respond(~ignorance)}
 else {$$answerCategory = notAnswering ^respond(~notAnswering)}}
 
 else if ($disclosureState==0) {
-$$randNum = %rand
+$$randNum = ^generateNumber()
 if ($$randNum < 50) {$$answerCategory = ignorance ^respond(~ignorance)}
 else if ($$randNum < 75) {$$answerCategory = notAnswering ^respond(~notAnswering)}
 else {$$answerCategory = reactance ^respond(~reactance)}}
 
 ^poptopic()
+
+
+
+outputmacro: ^generateNumber()
+^popen("python ./randPy.py" '^pythonrand)
+
+outputmacro: ^pythonrand(^number)
+^number
 
 
 
