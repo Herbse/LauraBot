@@ -5,52 +5,62 @@ topic: ~sister_t ()
 #specific questions/answers depending on general context
 u: () ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = 1 Greta.
+    a: (^names()) $$intent=names $$sound_file = s_jason_sister1 
+    Greta.
     # age
-    a: (^age()) $$intent=age $$sound_file = 2 Die ist 25 Jahre alt.
+    a: (^age()) $$intent=age $$sound_file = s_jason_sister2 
+    Die ist 25 Jahre alt.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_jason_gut 
+    Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = 4 Weiß nicht.
+    a: (^job()) $$intent=job $$sound_file = g_jason_weißnicht 
+    Weiß nicht.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Das ist meine Stiefschwester.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_jason_sister3 
+    Das ist meine Stiefschwester.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Sie ist nicht meine richtige Schwester.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_jason_sister4 
+    Sie ist nicht meine richtige Schwester.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = 7 In meiner Freizeit und am Wochenende.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_jason_sister5 
+    In meiner Freizeit und am Wochenende.
     # time relationship
-    a: (^time()) $$intent=time_relationship Seit ich Papa kenne.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_jason_aunt11
+    Seit ich Papa kenne.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^reuse(SISTER_1)
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = 8 Weiß nicht.
+    a: (^activity()) $$intent=activity $$sound_file = g_jason_weißnicht 
+    Weiß nicht.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = 9 Zuhause oder auf dem Spielplatz. 
+    a: (^places_together()) $$intent=places_together $$sound_file = s_jason_sister6 
+    Zuhause oder auf dem Spielplatz. 
     
 
 #specific questions/answers depending on what narrative answer was given before
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($sisterCounter==1) $$sound_file = 10 Keine Ahnung.
-        b: ($sisterCounter==2) $$sound_file = 10 Keine Ahnung.
-        b: ($sisterCounter==3) $$sound_file = 10 Voll doof.
-        b: ($sisterCounter==4) $$sound_file = 10 Voll doof.
+        b: ($sisterCounter==1) $$sound_file = g_jason_keinahnung Keine Ahnung.
+        b: ($sisterCounter==2) $$sound_file = g_jason_keinahnung Keine Ahnung.
+        b: ($sisterCounter==3) $$sound_file = g_jason_volldoof Voll doof.
+        b: ($sisterCounter==4) $$sound_file = g_jason_volldoof Voll doof.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($sisterCounter==1) Auf den Spielplatz bei uns zu Hause.
+        b: ($sisterCounter==1) $$sound_file = s_jason_sister7 Auf den Spielplatz bei uns zu Hause.
         b: ($sisterCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($sisterCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($sisterCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($sisterCounter==1) ^reuse(SISTER_2)
-        b: ($sisterCounter==2) Greta.
-        b: ($sisterCounter==3) Greta.
-        b: ($sisterCounter==4) Greta.
+        b: ($sisterCounter==2) $$sound_file = s_jason_sister1 Greta.
+        b: ($sisterCounter==3) $$sound_file = s_jason_sister1 Greta.
+        b: ($sisterCounter==4) $$sound_file = s_jason_sister1 Greta.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($sisterCounter==1) ^reuse(SISTER_2)
@@ -76,16 +86,20 @@ u: () ^keep() ^refine()
 
 
 #! Erzähl mal was dein Bruder währenddessen tut. 
-u: SISTER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 1 $$sound_file = 14  Greta geht manchmal mit mir auf den Spielplatz aber ich mag sie nicht.
+u: SISTER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 1 $$sound_file = n_jason_sister1  
+Greta geht manchmal mit mir auf den Spielplatz aber ich mag sie nicht.
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 2 $$sound_file = 15  Sie ist ja gar nicht meine richtige Schwester!
+u: SISTER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 2 $$sound_file = n_jason_sister2  
+Sie ist ja gar nicht meine richtige Schwester!
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 3 $$sound_file = 16 Sie meckert mich immer an, wenn ich was falsch mache.
+u: SISTER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 3 $$sound_file = n_jason_sister3 
+Sie meckert mich immer an, wenn ich was falsch mache.
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 4 $$sound_file = 17 Nur, weil Papa mich mehr mag als sie.
+u: SISTER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 4 $$sound_file = n_jason_sister4 
+Nur, weil Papa mich mehr mag als sie.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

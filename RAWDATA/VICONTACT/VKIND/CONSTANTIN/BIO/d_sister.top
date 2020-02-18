@@ -5,54 +5,63 @@ topic: ~sister_t ()
 #specific questions/answers depending on general context
 u: () ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = 1 Clara.
+    a: (^names()) $$intent=names $$sound_file = s_constantin_sister1
+    Clara.
     # age
-    a: (^age()) $$intent=age $$sound_file = 2 Clara ist fünf Jahre alt.
+    a: (^age()) $$intent=age $$sound_file = s_constantin_sister2 
+    Clara ist fünf Jahre alt.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_constantin_gut 
+    Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = 4 
+    a: (^job()) $$intent=job  
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Die ist meine Schwester.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_constantin_sister3 
+    Die ist meine Schwester.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Ich liebe meine Schwester.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_constantin_sister4 
+    Ich liebe meine Schwester.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = 7 In meiner Freizeit und am Wochenende.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_constantin_sister5
+    In meiner Freizeit und am Wochenende.
     # time relationship
-    a: (^time()) $$intent=time_relationship Seit Clara geboren wurde.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_constantin_sister6
+    Seit Clara geboren wurde.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^refine()
       b: ($sisterCounter==2) ^reuse(SISTER_3)
       b: () ^reuse(SISTER_2)
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = 8 Clara geht in den Kindergarten.
+    a: (^activity()) $$intent=activity $$sound_file = s_constantin_sister7 
+    Clara geht in den Kindergarten.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = 9 Zuhause oder auf dem Spielplatz. 
+    a: (^places_together()) $$intent=places_together $$sound_file = s_constantin_sister8 
+    Zuhause oder auf dem Spielplatz. 
     
 
 #specific questions/answers depending on what narrative answer was given before
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($sisterCounter==1) $$sound_file = 10 Voll cool.
-        b: ($sisterCounter==2) $$sound_file = 10 Das macht Spaß!
-        b: ($sisterCounter==3) $$sound_file = 10 Das macht Spaß!
-        b: ($sisterCounter==4) $$sound_file = 10 Voll cool.
+        b: ($sisterCounter==1) $$sound_file = g_constantin_vollcool Voll cool.
+        b: ($sisterCounter==2) $$sound_file = g_constantin_dasmachtspaß Das macht Spaß!
+        b: ($sisterCounter==3) $$sound_file = g_constantin_dasmachtspaß Das macht Spaß!
+        b: ($sisterCounter==4) $$sound_file = g_constantin_vollcool Voll cool.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($sisterCounter==1) Zuhause. 
-        b: ($sisterCounter==2) Zuhause. 
-        b: ($sisterCounter==3) Im Hof. 
-        b: ($sisterCounter==4) Im Hof. 
+        b: ($sisterCounter==1) $$sound_file = g_constantin_zuhause Zuhause. 
+        b: ($sisterCounter==2) $$sound_file = g_constantin_zuhause Zuhause. 
+        b: ($sisterCounter==3) $$sound_file = g_constantin_imhof Im Hof. 
+        b: ($sisterCounter==4) $$sound_file = g_constantin_imhof Im Hof. 
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($sisterCounter==1) Clara und ich.
-        b: ($sisterCounter==2) Clara und ich.
-        b: ($sisterCounter==3) Clara und ich.
-        b: ($sisterCounter==4) Clara, ich und die Kinder aus der Nachbarschaft.
+        b: ($sisterCounter==1) $$sound_file = s_constantin_sister9 Clara und ich.
+        b: ($sisterCounter==2) $$sound_file = s_constantin_sister9 Clara und ich.
+        b: ($sisterCounter==3) $$sound_file = s_constantin_sister9 Clara und ich.
+        b: ($sisterCounter==4) $$sound_file = s_constantin_sister10 Clara, ich und die Kinder aus der Nachbarschaft.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($sisterCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
@@ -76,16 +85,20 @@ u: () ^keep() ^refine()
 
 
 #! Erzähl mal was dein Bruder währenddessen tut. 
-u: SISTER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 1 $$sound_file = 14  Clara ist so lieb und will immer mit mir spielen.
+u: SISTER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 1 $$sound_file = n_constantin_sister1  
+Clara ist so lieb und will immer mit mir spielen.
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 2 $$sound_file = 15  Meistens spielen wir, ich bin der Papa und sie ist das Kind.
+u: SISTER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 2 $$sound_file = n_constantin_sister2 
+Meistens spielen wir, ich bin der Papa und sie ist das Kind.
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 3 $$sound_file = 16 Wir gehen auch auf den Spielplatz rutschen.
+u: SISTER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 3 $$sound_file = n_constantin_sister3
+Wir gehen auch auf den Spielplatz rutschen.
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 4 $$sound_file = 17 Wenn die anderen Kinder sie ärgern, dann beschütze ich sie.
+u: SISTER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 4 $$sound_file = n_constantin_sister4
+Wenn die anderen Kinder sie ärgern, dann beschütze ich sie.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

@@ -6,10 +6,10 @@ topic: ~school_t ()
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($schoolCounter==1) Das macht Spaß.
-        b: ($schoolCounter==2) Ganz ok.
-        b: ($schoolCounter==3) Ganz ok.
-        b: ($schoolCounter==4) Ganz cool.
+        b: ($schoolCounter==1) $$sound_file = g_constantin_dasmachtspaß Das macht Spaß.
+        b: ($schoolCounter==2) $$sound_file = g_constantin_ganzok Ganz ok.
+        b: ($schoolCounter==3) $$sound_file = g_constantin_ganzok Ganz ok.
+        b: ($schoolCounter==4) $$sound_file = g_constantin_ganzcool Ganz cool.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
@@ -27,7 +27,7 @@ u: () ^keep() ^refine()
         b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($schoolCounter==1) Das macht Spaß.
+        b: ($schoolCounter==1) $$sound_file = g_constantin_dasmachtspaß Das macht Spaß.
         b: () $$answerCategory=ignorance ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
@@ -45,16 +45,20 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! 
-u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  Ich mag gerade Deutsch am liebsten. Zum Beispiel Geschichten schreiben.
+u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  $$sound_file = n_constantin_school1
+Ich mag gerade Deutsch am liebsten. Zum Beispiel Geschichten schreiben.
    
 #! 
-u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  Wenn ich an die Tafel muss, zum Diktat schreiben, bin ich aufgeregt.
+u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  $$sound_file = n_constantin_school2
+Wenn ich an die Tafel muss, zum Diktat schreiben, bin ich aufgeregt.
 
 #! 
-u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  Naja, eigentlich hab ich nie einen Fehler.
+u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  $$sound_file = n_constantin_school3
+Naja, eigentlich hab ich nie einen Fehler.
 
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
-u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Wir kriegen nie Hausaufgaben.
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  $$sound_file = n_constantin_school4
+Wir kriegen nie Hausaufgaben.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

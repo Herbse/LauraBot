@@ -6,10 +6,10 @@ topic: ~school_t ()
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($schoolCounter==1) Voll doof
-        b: ($schoolCounter==2) Voll doof
-        b: ($schoolCounter==3) Voll doof
-        b: ($schoolCounter==4) Voll doof
+        b: ($schoolCounter==1) $$sound_file = g_jason_volldoof Voll doof
+        b: ($schoolCounter==2) $$sound_file = g_jason_volldoof Voll doof
+        b: ($schoolCounter==3) $$sound_file = g_jason_volldoof Voll doof
+        b: ($schoolCounter==4) $$sound_file = g_jason_volldoof Voll doof
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
@@ -17,13 +17,13 @@ u: () ^keep() ^refine()
     a: (^place()) $$intent=place ^refine()
         b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($schoolCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==3) In der Schule.
-        b: ($schoolCounter==4) In Englisch.
+        b: ($schoolCounter==3) $$sound_file = s_jason_school1 In der Schule.
+        b: ($schoolCounter==4) $$sound_file = s_jason_school2 In Englisch.
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($schoolCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==3) Ein paar andere Kinder und ich.
+        b: ($schoolCounter==3) $$sound_file = s_jason_school3 Ein paar andere Kinder und ich.
         b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
@@ -45,16 +45,20 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! 
-u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  Schule macht mir keinen Spaß.
+u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  $$sound_file = n_jason_school1
+Schule macht mir keinen Spaß.
    
 #! 
-u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  Mathe ist am schwersten. Das kann ich einfach nicht.
+u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  $$sound_file = n_jason_school2
+Mathe ist am schwersten. Das kann ich einfach nicht.
 
 #! 
-u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  Ich habe auch Matheförder. Da lerne ich gerade Mal rechnen mit Aufschreiben.
+u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  $$sound_file = n_jason_school3
+Ich habe auch Matheförder. Da lerne ich gerade Mal rechnen mit Aufschreiben.
 
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
-u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Deutsch ist genauso blöd, weil ich mache da immer Fehler. Ich will lieber draußen spielen.
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  $$sound_file = n_jason_school4
+Deutsch ist genauso blöd, weil ich mache da immer Fehler. Ich will lieber draußen spielen.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

@@ -136,7 +136,7 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 #a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()
-#a        b: ($clue==1) Keiner.
+#a        b: ($clue==1) $$sound_file = g_andre_keiner Keiner.
 #a        b: ($eventCounter==1) $$sound_file = s_andre_event22 Mit Carla und David.
 #a        b: ($eventCounter==2) ^reuse(EVENT_3)
 #a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
@@ -214,7 +214,7 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 #b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
 #b    # individual
 #b    a: (^individual()) $$intent=individual ^refine()
-#b        b: ($clue==1) Keiner.
+#b        b: ($clue==1) $$sound_file = g_andre_keiner Keiner.
 #b        b: ($eventCounter==1) $$sound_file = s_andre_event22 Mit Carla und David.
 #b        b: ($eventCounter==2) ^reuse(EVENT_3)
 #b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
@@ -291,7 +291,7 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 #c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
 #c    # individual
 #c    a: (^individual()) $$intent=individual ^refine()
-#c        b: ($clue==1) Keiner.
+#c        b: ($clue==1) $$sound_file = g_andre_keiner Keiner.
 #c        b: ($eventCounter==1) $$sound_file = s_andre_event22 Mit Carla und David.
 #c        b: ($eventCounter==2) ^reuse(EVENT_3)
 #c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
