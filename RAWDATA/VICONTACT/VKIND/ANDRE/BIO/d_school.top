@@ -6,10 +6,10 @@ topic: ~school_t ()
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($schoolCounter==1) Ganz ok.
-        b: ($schoolCounter==2) Ganz ok.
-        b: ($schoolCounter==3) Ganz ok.
-        b: ($schoolCounter==4) Ganz ok.
+        b: ($schoolCounter==1) $$sound_file = g_andre_ganzok Ganz ok.
+        b: ($schoolCounter==2) $$sound_file = g_andre_ganzok Ganz ok.
+        b: ($schoolCounter==3) $$sound_file = g_andre_ganzok Ganz ok.
+        b: ($schoolCounter==4) $$sound_file = g_andre_ganzok Ganz ok.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
@@ -45,16 +45,20 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! 
-u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  Schule ist ganz okay.
+u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  $$sound_file = n_andre_school1
+Schule ist ganz okay.
    
 #! 
-u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  Im Deutschunterricht schreiben wir jede Woche Diktate.
+u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  $$sound_file = n_andre_school2
+Im Deutschunterricht schreiben wir jede Woche Diktate.
 
 #! 
-u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  Da ist eine Frau, die hilft mir bei Mathe und Deutsch.
+u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  $$sound_file = n_andre_school3
+Da ist eine Frau, die hilft mir bei Mathe und Deutsch.
 
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
-u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Mathe und Deutsch verstehe ich manchmal nicht.
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  $$sound_file = n_andre_school4
+Mathe und Deutsch verstehe ich manchmal nicht.
 
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.

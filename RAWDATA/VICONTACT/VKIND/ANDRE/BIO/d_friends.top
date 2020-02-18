@@ -6,25 +6,33 @@ topic: ~friends_t ()
 #specific questions/answers depending on general context
 u: () ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names Tommy.
+    a: (^names()) $$intent=names $$sound_file = s_andre_friends1 
+    Tommy.
     # age
-    a: (^age()) $$intent=age Tommy ist zehn. Wie ich.
+    a: (^age()) $$intent=age $$sound_file = s_andre_friends2
+    Tommy ist zehn. Wie ich.
     # mood
-    a: (^mood()) $$intent=mood Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_andre_gut
+    Gut.
     # job
-    a: (^job()) $$intent=job Der geht auch in die Schule.
+    a: (^job()) $$intent=job $$sound_file = s_andre_event12
+    Der geht auch in die Schule.
     # relationship_f
     a: (^relationship_f()) $$intent=relationship_f ^reuse(FRIENDS_1)
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Der ist mein allerbester Freund.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_andre_friends3
+    Der ist mein allerbester Freund.
     # time together
-    a: (^time_together()) $$intent=time_together In der Schule und danach.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_andre_friends4
+    In der Schule und danach.
     # time relationship
-    a: (^time()) $$intent=time_relationship Seit wir erste Klasse waren.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_andre_friends5
+    Seit wir erste Klasse waren.
     # activity together
     a: (^activity_together()) $$intent=activity_together  ^reuse(FRIENDS_3)
     # activity
-    a: (^activity()) $$intent=activity Der geht auch in die Schule.
+    a: (^activity()) $$intent=activity $$sound_file = s_andre_event12
+    Der geht auch in die Schule.
     # places together
     a: (^places_together()) $$intent=places_together ^reuse(FRIENDS_2)
 
@@ -33,25 +41,25 @@ u: () ^keep() ^refine()
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($friendCounter==1) Voll cool.
-        b: ($friendCounter==2) Voll cool.
-        b: ($friendCounter==3) Voll cool.
-        b: ($friendCounter==4) Voll cool.
+        b: ($friendCounter==1) $$sound_file = g_andre_vollcool Voll cool.
+        b: ($friendCounter==2) $$sound_file = g_andre_vollcool Voll cool.
+        b: ($friendCounter==3) $$sound_file = g_andre_vollcool Voll cool.
+        b: ($friendCounter==4) $$sound_file = g_andre_vollcool Voll cool.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==2) Hier bei der Schule.
+        b: ($friendCounter==2) $$sound_file = s_andre_friends6 Hier bei der Schule.
         b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==2) Tommy und ich.
+        b: ($friendCounter==2) $$sound_file = s_andre_friends7 Tommy und ich.
         b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==4) Tommy.
+        b: ($friendCounter==4) $$sound_file = s_andre_friends1 Tommy.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
@@ -74,21 +82,25 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mal von deinen Hobbies.
-u: FRIENDS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 Tommy ist mein allerbester Freund. Er ist auch im Handballverein.
+u: FRIENDS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 $$sound_file = n_andre_friends1
+Tommy ist mein allerbester Freund. Er ist auch im Handballverein.
  
 
   
 #! Erzähl mal mehr.
-u: FRIENDS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 Wir spielen nach der Schule auf dem Spielplatz.
+u: FRIENDS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 $$sound_file = n_andre_friends2
+Wir spielen nach der Schule auf dem Spielplatz.
    
  
 
 #! Erzähl mir mehr 
-u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 Tommys Eltern kommen aus Bulgarien.
+u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 $$sound_file = n_andre_friends3
+Tommys Eltern kommen aus Bulgarien.
   
 
 #!  Erzähl mir mehr.
-u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Manchmal bringt er mir was zu essen mit, wenn wir uns auf dem Spielplatz verabreden. Seine Mama kann so gut kochen.
+u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 $$sound_file = n_andre_friends4
+Manchmal bringt er mir was zu essen mit, wenn wir uns auf dem Spielplatz verabreden. Seine Mama kann so gut kochen.
    
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()
