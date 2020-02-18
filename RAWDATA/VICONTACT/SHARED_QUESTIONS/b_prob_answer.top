@@ -435,19 +435,37 @@ $$probFormat = specific-100
 #b   a: ($cs_bot=simon_si) $$answerCategory = specific Das war nur einmal.
 #c   a: ($cs_bot=simon_si) $$answerCategory = specific Immer passiert mir das.
 
+
+
+
+u: (<< {_rapport} {_demand} {_transparency} information support >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+u: (<< {_rapport} {_demand} {_transparency} availability support >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+
 u: ({_rapport} {_demand} {_transparency} information)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = affirmation-100
-$$answerCategory = affirmation 2
+$$answerCategory = affirmation Okay.
 
 u: ({_rapport} {_demand} {_transparency} disclosure)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = specific-100
-$$answerCategory = specific Nein, noch niemand.
+$$answerCategory = specific Das hab ich bis jetzt noch niemandem erzählt.
 
 u: ({_rapport} {_demand} {_transparency} availability)
 if ('_0==rapport){$rapportCounter += 1}
@@ -461,7 +479,7 @@ if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = affirmation-100
-$$answerCategory = affirmation ^respond(~affirmation)
+$$answerCategory = affirmation Okay.
 
 u: ({_rapport} {_demand} {_transparency} greeting) 
 if ('_0==rapport){$rapportCounter += 1}
@@ -485,7 +503,7 @@ if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = affirmation-100
-$$answerCategory = affirmation ^respond(~affirmation)
+$$answerCategory = affirmation Okay.
 
 u: ({_rapport} {_demand} {_transparency} discharge)
 if ('_0==rapport){$rapportCounter += 1}
