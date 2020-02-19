@@ -5,9 +5,9 @@ topic: ~brother_t ()
 #specific questions/answers depending on general context
 u: () ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = 1 Clemens und Johannes.
+    a: (^names()) $$intent=names $$sound_file = s_luisa_brother1 Clemens und Johannes.
     # age
-    a: (^age()) $$intent=age $$sound_file = 2 ^reuse(BROTHER_1)
+    a: (^age()) $$intent=age ^reuse(BROTHER_1)
     # mood
     a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
     # job
