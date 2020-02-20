@@ -245,7 +245,7 @@ t: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li]) ^discl
 t: ()  $lastOutput = ^response(1)
 # t: ^callstack()
 # t: () popen(^"afplay soundfiles/Laura/$$sound_file\.mp3" '^sound) 
-t: () ^soundFile($lastOutput)
+# t: () ^soundFile($lastOutput)
 t: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li]) ^clueHandler()
 # check if there is a second response: if yes, than it means that there is a clue given and soundfile process should be repeated with this second output
 t: () if (^response(2)) {$clueOutput = ^response(2) $giveClue = 1 ^soundFile($clueOutput) $giveClue = 0}
