@@ -28,6 +28,7 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
     a: ($chatPhase==main [~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)]
     a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] 
     a: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
+    a: (%topic!=~introduction) ^respond(%topic)
     a: ($chatPhase==main) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
     a: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
     a: () ^respond(%topic)
