@@ -3,27 +3,27 @@ topic: ~mother_t repeat ()
 #specific questions/answers depending on general context
 u: () ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names Christina.
+    a: (^names()) $$intent=names $$sound_file = s_luisa_mother1 Christina.
     # age
-    a: (^age()) $$intent=age Die ist 50 Jahre alt.
+    a: (^age()) $$intent=age $$sound_file = s_luisa_mother2 Die ist 50 Jahre alt.
     # mood
-    a: (^mood()) $$intent=mood Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_luisa_gut Gut.
     # job
-    a: (^job()) $$intent=job Weiß nicht.
+    a: (^job()) $$intent=job $$sound_file = g_luisa_weißnicht Weiß nicht.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Die ist meine Mama.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_luisa_mother3 Die ist meine Mama.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Mama ist so streng.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_luisa_mother4 Mama ist so streng.
     # time together
-    a: (^time_together()) $$intent=time_together Immer wenn ich nach Hause komme.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_luisa_mother5 Immer wenn ich nach Hause komme.
     # time relationship
     a: (^time()) $$intent=time_relationship 
     # activity together
     a: (^activity_together()) $$intent=activity_together ^reuse(MAMA_3)
     # activity
-    a: (^activity()) $$intent=activity Weiß nicht.
+    a: (^activity()) $$intent=activity $$sound_file = g_luisa_weißnicht Weiß nicht.
     # places together
-    a: (^places_together()) $$intent=places_together Wir gehen zusammen in die Kirche.
+    a: (^places_together()) $$intent=places_together $$sound_file = s_luisa_mother6 Wir gehen zusammen in die Kirche.
 
 
 
@@ -33,23 +33,23 @@ u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($motherCounter==1) ^reuse(MAMA_2)
-        b: ($motherCounter==2) Voll komisch.
-        b: ($motherCounter==3) Langweilig.
-        b: ($motherCounter==4) Voll doof.
+        b: ($motherCounter==2) $$sound_file = g_luisa_vollkomisch Voll komisch.
+        b: ($motherCounter==3) $$sound_file = g_luisa_langweilig Langweilig.
+        b: ($motherCounter==4) $$sound_file = g_luisa_volldoof Voll doof.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($motherCounter==1) Zu Hause.
+        b: ($motherCounter==1) $$sound_file = g_luisa_zuhause Zu Hause.
         b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==3) Bei uns im Viertel.
+        b: ($motherCounter==3) $$sound_file = s_luisa_brother6 Bei uns im Viertel.
         b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual $$intent=individual ^refine()
-        b: ($motherCounter==1) Mama und ich.
+        b: ($motherCounter==1) $$sound_file = s_luisa_mother7 Mama und ich.
         b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==3) Mama, meine Brüder und ich.
+        b: ($motherCounter==3) $$sound_file = s_luisa_brother7 Mama, meine Brüder und ich.
         b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
@@ -71,15 +71,19 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 Mama ist sehr streng. Jeden Morgen und jeden Abend muss ich mit ihr beten.
+u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 $$sound_file = n_luisa_brother1
+Mama ist sehr streng. Jeden Morgen und jeden Abend muss ich mit ihr beten.
 
 #! Erzähl mir mehr über deine Mama!
-u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 Ich mag das aber nicht. Das ist so, als würde ich mit mir selbst reden.
+u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 $$sound_file = n_luisa_brother2
+Ich mag das aber nicht. Das ist so, als würde ich mit mir selbst reden.
 #! Und was machst du gerne mit deiner Mama?
-u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 Jeden Sonntag gehen wir in die Kirche. Da ist es so langweilig.
+u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 $$sound_file = n_luisa_brother3
+Jeden Sonntag gehen wir in die Kirche. Da ist es so langweilig.
 
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
-u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Wenn ich Mama erzähle, dass ich später mal Künstlerin sein will, dann sagt sie, dass man damit kein Geld verdienen kann.
+u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 $$sound_file = n_luisa_brother4
+Wenn ich Mama erzähle, dass ich später mal Künstlerin sein will, dann sagt sie, dass man damit kein Geld verdienen kann.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

@@ -1,7 +1,6 @@
 topic: ~specific keep repeat nostay ()
 
 # Topicwechsel bei bestimmten Stichworten bzw. letztes Topic wenn kein bestimmtes Stichwort
-# Topicwechsel bei bestimmten Stichworten bzw. letztes Topic wenn kein bestimmtes Stichwort
 u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat() 
     a: (~mother) ^respond(~mother_t)
     a: ([oma grossmutter großmutter ute]) ^respond(~grandmother_t)
@@ -10,6 +9,7 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
     a: ([marco marko stefan club klub schülerclub]) ^respond(~friends_t)
     a: ([nachbarschaft nachbarn hof]) ^respond(~neighbourhood_t)
     a: (~school) ^respond(~school_t)
+    a: (^change_topic()) $$intent=changeTopic [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~friends_t)][^respond(~neighbourhood_t)][^respond(~school_t)][^respond(~sister_t)][^respond(~event_t)]
     a: (^general_question()) $$intent=intro_question ^refine()
         b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~sister_t)] [^respond(~neighbourhood_t)]
         b: (~parents) [^respond(~mother_t)]
@@ -21,6 +21,9 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
         b: (%topic!=~introduction~5) ^respond(%topic)
         b: () [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~friends_t)][^respond(~neighbourhood_t)][^respond(~school_t)][^respond(~sister_t)]
     a: (~bot {denn} >) ^respond(~personal_t)
+    a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~sister_t)][^respond(~neighbourhood_t)]
+    a: (~parents) [^respond(~mother_t)]
+    a: (%topic!=~introduction~5) ^respond(%topic)
     a: () ^respond(~event_t)
     a: () [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~friends_t)][^respond(~neighbourhood_t)][^respond(~school_t)][^respond(~sister_t)][^respond(~event_t)]
     # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus

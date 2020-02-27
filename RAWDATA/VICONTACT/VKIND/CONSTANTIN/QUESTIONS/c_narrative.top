@@ -20,6 +20,8 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
         b: (~parents) [^respond(~mother_t)]
         b: (%topic!=~introduction~5) ^respond(%topic)
         b: () [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~friends_t)][^respond(~neighbourhood_t)][^respond(~school_t)][^respond(~sister_t)][^respond(~event_t)]
+    a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~sister_t)][^respond(~neighbourhood_t)]
+    a: (~parents) [^respond(~mother_t)]
     a: (%topic!=~introduction~5) ^respond(%topic)
     a: () ^respond(~event_t)
     a: () [^respond(~mother_t)] [^respond(~grandmother_t)] [^respond(~friends_t)][^respond(~neighbourhood_t)][^respond(~school_t)][^respond(~sister_t)][^respond(~event_t)]

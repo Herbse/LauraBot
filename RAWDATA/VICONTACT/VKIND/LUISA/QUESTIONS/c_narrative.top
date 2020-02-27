@@ -20,5 +20,11 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
         b: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
         b: (%topic!=~introduction~6) ^respond(%topic)
         b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~brother_t)][^respond(~event_t)]
+    a: (%topic!=~introduction~6) ^respond(%topic)
+    a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)] 
+    a: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
+    a: (%topic!=~introduction~6) ^respond(%topic)
+    a: () ^respond(~event_t)
+    a: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~brother_t)][^respond(~event_t)]
     # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus
     a: () ^respond(%topic)

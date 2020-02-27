@@ -6,8 +6,8 @@ topic: ~school_t ()
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($schoolCounter==1) Voll doof. 
-        b: ($schoolCounter==2) Das ist so gemein!
+        b: ($schoolCounter==1) $$sound_file = g_natalia_volldoof Voll doof. 
+        b: ($schoolCounter==2) $$sound_file = g_natalia_dasistsogemein Das ist so gemein!
         b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
        
@@ -16,13 +16,13 @@ u: () ^keep() ^refine()
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==2) In der Schule.
+        b: ($schoolCounter==2) $$sound_file = g_natalia_inderschule In der Schule.
         b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==2) Alleine.
+        b: ($schoolCounter==2) $$sound_file = s_natalia_school1 Alleine.
         b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
         b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
     # reason
@@ -45,16 +45,20 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! 
-u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  Die Mädchen aus meiner Klasse sind blöd.
+u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1 $$sound_file = n_natalia_school1
+Die Mädchen aus meiner Klasse sind blöd.
    
 #! 
-u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  Die spielen nie mit mir auf dem Hof.
+u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2 $$sound_file = n_natalia_school2
+Die spielen nie mit mir auf dem Hof.
 
 #! 
-u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  Mein Lieblingsfach ist Deutsch. Kunst und Sport mag ich nicht.
+u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3 $$sound_file = n_natalia_school3
+Mein Lieblingsfach ist Deutsch. Kunst und Sport mag ich nicht.
 
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
-u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Ich will später Lehrerin werden.
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4 $$sound_file = n_natalia_school4 
+Ich will später Lehrerin werden.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()
