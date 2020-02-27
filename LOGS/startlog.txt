@@ -3414,6 +3414,10 @@ System startup vicontact #a Thu Feb 20 18:37:10 2020
 System startup createsystem Thu Feb 20 18:37:11 2020
 System startup vicontact #a Thu Feb 20 18:38:58 2020
 System startup createsystem Thu Feb 20 18:38:58 2020
+<<<<<<< HEAD
 System startup createsystem Thu Feb 27 11:54:26 2020
 System startup vicontact #a Thu Feb 27 11:54:35 2020
 System startup createsystem Thu Feb 27 11:54:36 2020
+=======
+System startup createsystem Thu Feb 20 19:08:20 2020
+>>>>>>> 1499a570d179f794af385abf92d34c90aa96d92f
