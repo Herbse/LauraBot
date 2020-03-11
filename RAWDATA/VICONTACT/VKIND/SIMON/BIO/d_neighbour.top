@@ -46,19 +46,19 @@ u: () ^keep() ^refine()
         b: ($neighbourCounter==1) Bei Heinz zu Hause.
         b: ($neighbourCounter==2) Bei Heinz zu Hause.
         b: ($neighbourCounter==3) Bei Heinz zu Hause.
-        b: ($neighbourCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighbourCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($neighbourCounter==1) Heinz und ich. 
         b: ($neighbourCounter==2) Heinz.
         b: ($neighbourCounter==3) Heinz.
-        b: ($neighbourCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighbourCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($neighbourCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($neighbourCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($neighbourCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($neighbourCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighbourCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($neighbourCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($neighbourCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($neighbourCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

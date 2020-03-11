@@ -39,17 +39,17 @@ u: () ^keep() ^refine()
         b: ($friendCounter==4) $$sound_file = g_luisa_volldoof Voll doof. 
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
-    a: (^place()) $$intent=place $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^place()) $$intent=place $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($friendCounter==2) $$sound_file = s_luisa_friends9 Kathi, Michelle und ich.
         b: ($friendCounter==3) $$sound_file = s_luisa_friends9 Kathi, Michelle und ich.
-        b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
-    a: (^reason()) $$intent=reason $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^reason()) $$intent=reason $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

@@ -12,24 +12,24 @@ u: () ^keep() ^refine()
         b: ($schoolCounter==4) Ganz ok.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($schoolCounter==4) Bei Jacky zu Hause. 
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($schoolCounter==2) Meine Klasse.
-        b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($schoolCounter==3) Wir sind beste Freunde. 
         b: ($schoolCounter==4) Mathe ist mein Lieblingsfach. 
-        b: () $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

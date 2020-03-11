@@ -13,25 +13,25 @@ u: () ^keep() ^refine()
         b: ($hobbiesCounter==4) $$sound_file = g_andre_nichtsogut Nicht so gut.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

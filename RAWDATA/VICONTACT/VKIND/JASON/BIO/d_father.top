@@ -51,22 +51,22 @@ u: () ^keep() ^refine()
     a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==2) $$sound_file = g_jason_zuhause Zuhause.
-        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==4) In der Nachbarschaft.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==2) $$sound_file = s_jason_father9 Papa und ich.
-        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==4) $$sound_file = s_jason_father9 Papa und ich.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($fatherCounter==1) ^reuse(PAPA_3)
-        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

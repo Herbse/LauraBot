@@ -49,7 +49,7 @@ u: () ^keep() ^refine()
         b: ($sisterCounter==4) $$sound_file = g_constantin_vollcool Voll cool.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($sisterCounter==1) $$sound_file = g_constantin_zuhause Zuhause. 
@@ -64,10 +64,10 @@ u: () ^keep() ^refine()
         b: ($sisterCounter==4) $$sound_file = s_constantin_sister10 Clara, ich und die Kinder aus der Nachbarschaft.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($sisterCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($sisterCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($sisterCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($sisterCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($sisterCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($sisterCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($sisterCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
         b: () 

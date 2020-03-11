@@ -7,39 +7,39 @@ topic: ~hobbies_t ()
 t: ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($hobbiesCounter==1) Voll doof.
-        b: ($hobbiesCounter==2) Voll doof.
-        b: ($hobbiesCounter==3) Voll nervig.
-        b: ($hobbiesCounter==4) Handball ist toll.
+        b: ($hobbiesCounter==1) $$sound_file = g_sara_volldoof Voll doof.
+        b: ($hobbiesCounter==2) $$sound_file = g_sara_volldoof  Voll doof.
+        b: ($hobbiesCounter==3) $$sound_file = g_sara_vollnervig Voll nervig.
+        b: ($hobbiesCounter==4) $$sound_file = s_sara_hobbies1 Handball ist toll.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion 
         b: ($hobbiesCounter==1) ^reuse(HOBBIES_2)
-        b: () $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==3) Zu Hause.
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$sound_file = g_sara_zuhause Zu Hause.
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) Papa.
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$sound_file = s_sara_father8 Papa.
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($hobbiesCounter==1) ^reuse(HOBBIES_2)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($hobbiesCounter==3) ^reuse(HOBBIES_4)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
-        b: ($hobbiesCounter==3) Na Klavier üben.
+        b: ($hobbiesCounter==3) $$sound_file = s_sara_hobbies2 Na Klavier üben.
         b: () $$nextAnswer = yes
     
     # follow-up
@@ -51,19 +51,23 @@ t: ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1 Papa sagt, dass ich Klavier spielen muss.
+u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1 $$sound_file = n_sara_hobbies1
+Papa sagt, dass ich Klavier spielen muss.
   
 
 #! 
-u: HOBBIES_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2 Er hört gerne Klavier. Deshalb soll ich das lernen.
+u: HOBBIES_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2 $$sound_file = n_sara_hobbies2
+Er hört gerne Klavier. Deshalb soll ich das lernen.
 
 
 #! 
-u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 3 Jeden Tag muss ich üben. Das ist soo nervig.
+u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 3 $$sound_file = n_sara_hobbies3
+Jeden Tag muss ich üben. Das ist soo nervig.
 
 
 #! 
-u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 Ich würde viel lieber Handball spielen.
+u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 $$sound_file = n_sara_hobbies4
+Ich würde viel lieber Handball spielen.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

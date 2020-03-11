@@ -43,25 +43,25 @@ u: () ^keep() ^refine()
         b: ($motherCounter==4) $$sound_file = g_constantin_vollblöd Voll blöd.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($motherCounter==1) ^reuse(MAMA_2)
         b: ($motherCounter==2) $$sound_file = s_constantin_mother5 Im Supermarkt.
-        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual $$intent=individual ^refine()
-        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($motherCounter==3) $$sound_file = s_constantin_mother6 Mama, Clara und ich.
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($motherCounter==1) ^reuse(MAMA_2)
-        b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes 

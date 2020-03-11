@@ -8,27 +8,27 @@ u: () ^keep() ^refine()
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($schoolCounter==1) $$sound_file = g_natalia_volldoof Voll doof. 
         b: ($schoolCounter==2) $$sound_file = g_natalia_dasistsogemein Das ist so gemein!
-        b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($schoolCounter==2) $$sound_file = g_natalia_inderschule In der Schule.
-        b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($schoolCounter==2) $$sound_file = s_natalia_school1 Alleine.
-        b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($schoolCounter==1) ^reuse(SCHOOL_2)
-        b: ()$$answerCategory=ignorance ^respond(~ignorance)
+        b: ()$$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

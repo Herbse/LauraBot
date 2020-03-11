@@ -5,19 +5,25 @@ topic: ~father_t ()
 #specific questions/answers depending on general context
 u: () ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names Tschan.
+    a: (^names()) $$intent=names $$sound_file = s_sara_father1
+    Tschan.
     # age
-    a: (^age()) $$intent=age Der Papa ist 37.
+    a: (^age()) $$intent=age $$sound_file = s_sara_father2
+    Der Papa ist 37.
     # mood
-    a: (^mood()) $$intent=mood Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_sara_gut
+    Gut.
     # job
     a: (^job()) $$intent=job ^reuse(PAPA_1)
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Der ist mein Papa.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_sara_father3
+    Der ist mein Papa.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Ich hab meinen Papa lieb. 
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_sara_father4
+    Ich hab meinen Papa lieb. 
     # time together
-    a: (^time_together()) $$intent=time_together Wenn Papa Feierabend hat.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_sara_father5
+    Wenn Papa Feierabend hat.
     # time relationship
     a: (^time()) $$intent=time_relationship 
     # activity together
@@ -25,43 +31,44 @@ u: () ^keep() ^refine()
     # activity
     a: (^activity()) $$intent=activity ^reuse(PAPA_3)
     # places together
-    a: (^places_together()) $$intent=places_together Zuhause oder im Laden.
+    a: (^places_together()) $$intent=places_together $$sound_file = s_sara_father6
+    Zuhause oder im Laden.
 
 #specific questions/answers depending on what narrative answer was given before
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($fatherCounter==1) Gut.
-        b: ($fatherCounter==2) Gut.
-        b: ($fatherCounter==3) Gut.
-        b: ($fatherCounter==4) Gut.
+        b: ($fatherCounter==1) $$sound_file = g_sara_gut Gut.
+        b: ($fatherCounter==2) $$sound_file = g_sara_gut Gut.
+        b: ($fatherCounter==3) $$sound_file = g_sara_gut Gut.
+        b: ($fatherCounter==4) $$sound_file = g_sara_gut Gut.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($fatherCounter==1) Bei Edeka so vorne drin.
-        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==3) Bei uns Zuhause.
-        b: ($fatherCounter==4) Bei uns Zuhause.
+        b: ($fatherCounter==1) $$sound_file = s_sara_father6 Bei Edeka so vorne drin.
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause.
+        b: ($fatherCounter==4) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==3) Papa und ich.
-        b: ($fatherCounter==4) Papa.
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$sound_file = s_sara_father7 Papa und ich.
+        b: ($fatherCounter==4) $$sound_file = s_sara_father8 Papa.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
-        b: ($fatherCounter==3) Unterschiedliche Geschichten.
+        b: ($fatherCounter==3) $$sound_file = s_sara_father9 Unterschiedliche Geschichten.
         b: () $$nextAnswer = yes
     
     # follow-up
@@ -72,18 +79,22 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 Mein Papa verkauft Essen in seinem Laden.
+u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 $$sound_file = n_sara_father1
+Mein Papa verkauft Essen in seinem Laden.
  
 
 #! Erzähl mal wie er ihr hilft?
-u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 Das Essen aus dem Laden schmeckt sehr lecker, ist aber teuer.
+u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 $$sound_file = n_sara_father2
+Das Essen aus dem Laden schmeckt sehr lecker, ist aber teuer.
 
 #! Erzähl mir mehr über deinen Papa!
-u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 3 Papa liest mir jeden Abend eine Geschichte vor.
+u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 3 $$sound_file = n_sara_father3
+Papa liest mir jeden Abend eine Geschichte vor.
  
 #! Was machst du denn gern mit deinem Papa?
 
-u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 Er kann gut vorlesen.
+u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 $$sound_file = n_sara_father4
+Er kann gut vorlesen.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

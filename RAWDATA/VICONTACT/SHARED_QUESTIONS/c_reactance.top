@@ -1,3 +1,3 @@
 topic: ~reactance keep repeat nostay ()
 
-u: ($$answerCategory==reactance) [$$sound_file = b_reactance1 Kann ich jetzt gehen?][$$sound_file = b_reactance2 Sind wir fertig?][ $$sound_file = b_reactance3 Ich will darüber nicht sprechen.][$$sound_file = b_reactance4 Lassen sie mich damit in Ruhe.] ^keep() ^repeat()
+u: ([$$answerCategory==reactance $$answerCategory==emptyTopic]) [$$sound_file = b_reactance1 Kann ich jetzt gehen?][$$sound_file = b_reactance2 Sind wir fertig?][ $$sound_file = b_reactance3 Ich will darüber nicht sprechen.][$$sound_file = b_reactance4 Lassen sie mich damit in Ruhe.] ^keep() ^repeat()

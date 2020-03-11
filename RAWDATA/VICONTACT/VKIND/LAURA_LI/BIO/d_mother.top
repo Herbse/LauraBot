@@ -40,37 +40,37 @@ u: () ^keep() ^refine()
         b: ($motherCounter==4) Ganz ok.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($motherCounter==2) Zu Hause in Mamas Zimmer.
         b: ($motherCounter==3) In Mamas Zimmer.
         b: ($motherCounter==4) In Mamas Zimmer.
     # individual
     a: (^individual()) $$intent=individual $$intent=individual ^refine()
-        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($motherCounter==2) Meine Mama
-        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($motherCounter==1) $$nextAnswer = yes
-        b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes 
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     
     # follow-up
     a: (^follow_up()) $$intent=follow_up ^refine()
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     # log questions that were not catched by macros
     a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)

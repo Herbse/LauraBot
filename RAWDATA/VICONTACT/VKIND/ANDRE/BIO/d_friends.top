@@ -50,22 +50,22 @@ u: () ^keep() ^refine()
     a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($friendCounter==2) $$sound_file = s_andre_friends6 Hier bei der Schule.
-        b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($friendCounter==2) $$sound_file = s_andre_friends7 Tommy und ich.
-        b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($friendCounter==4) $$sound_file = s_andre_friends1 Tommy.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

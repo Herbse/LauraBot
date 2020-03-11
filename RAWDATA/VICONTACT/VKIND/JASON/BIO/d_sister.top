@@ -48,13 +48,13 @@ u: () ^keep() ^refine()
         b: ($sisterCounter==4) $$sound_file = g_jason_volldoof Voll doof.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($sisterCounter==1) $$sound_file = s_jason_sister7 Auf den Spielplatz bei uns zu Hause.
-        b: ($sisterCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($sisterCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($sisterCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($sisterCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($sisterCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($sisterCounter==1) ^reuse(SISTER_2)
@@ -64,9 +64,9 @@ u: () ^keep() ^refine()
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($sisterCounter==1) ^reuse(SISTER_2)
-        b: ($sisterCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($sisterCounter==3) ^reuse(SISTER_4)
-        b: ($sisterCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
         b: () 

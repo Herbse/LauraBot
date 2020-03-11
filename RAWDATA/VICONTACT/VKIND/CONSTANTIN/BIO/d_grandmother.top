@@ -79,25 +79,25 @@ u: () ^keep() ^refine()
         b: ($grandmotherCounter==4) $$sound_file = s_constantin_grandmother13 Langweilig.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($grandmotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($grandmotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($grandmotherCounter==4) $$sound_file = s_constantin_grandmother14 Oma, Mama, Clara und ich.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($grandmotherCounter==1) ^reuse(OMA_2)
         b: ($grandmotherCounter==2) ^reuse(OMA_3)
-        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

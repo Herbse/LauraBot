@@ -13,7 +13,7 @@ u: () ^keep() ^refine()
         b: ($hobbiesCounter==4) Voll doof.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($hobbiesCounter==1) Im Wald bei der Schule.
@@ -24,14 +24,14 @@ u: () ^keep() ^refine()
     a: (^individual()) $$intent=individual ^refine()
         b: ($hobbiesCounter==1) Mit den Pfadies.
         b: ($hobbiesCounter==2) Bei den Pfadis.
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($hobbiesCounter==4) Bei den Pfadis.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($hobbiesCounter==1) ^reuse(HOBBIES_2)
         b: ($hobbiesCounter==2) ^reuse(HOBBIES_3)
         b: ($hobbiesCounter==3) ^reuse(HOBBIES_4)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

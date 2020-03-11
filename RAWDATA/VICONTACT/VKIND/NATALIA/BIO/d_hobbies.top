@@ -14,7 +14,7 @@ u: () ^keep() ^refine()
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion 
-        b: () $$answerCategory=ignorance $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($hobbiesCounter==1)$$sound_file = g_natalia_inderschule In der Schule.
@@ -23,16 +23,16 @@ u: () ^keep() ^refine()
         b: ($hobbiesCounter==4)$$sound_file = s_natalia_school1 In der Theatergruppe in der Schule.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($hobbiesCounter==3)$$sound_file = s_natalia_school2 Mit der Theatergruppe.
         b: ($hobbiesCounter==4)$$sound_file = s_natalia_school2 Mit der Theatergruppe.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($hobbiesCounter==1) ^reuse(HOBBIES_2)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
@@ -51,22 +51,22 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1$$sound_file = n_natalia_school1
+u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1 $$sound_file = n_natalia_school1
 Die Theatergruppe ist echt cool.
   
 
 #! 
-u: HOBBIES_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2$$sound_file = n_natalia_school2
+u: HOBBIES_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2 $$sound_file = n_natalia_school2
 Da sind auch die Kinder aus der 4b dabei. Die sind nett zu mir.
 
 
 #! 
-u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 3$$sound_file = n_natalia_school3
+u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 3 $$sound_file = n_natalia_school3
 Letzte Woche haben wir Dornröschen gespielt.
 
 
 #! 
-u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4$$sound_file = n_natalia_school4
+u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 $$sound_file = n_natalia_school4
 Nächstes Jahr sollen wir etwas in unserer Schule aufführen. Ich spiele dann Dornröschen.
 
 

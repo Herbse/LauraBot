@@ -24,26 +24,26 @@ u: () ^keep() ^refine()
     a: (^individual()) $$intent=individual ^refine()
         b: ($hobbiesCounter==1) Mira und ich und die anderen Mädchen.
         b: ($hobbiesCounter==2) Mira und ich und die anderen Mädchen.
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     
     # follow-up
     a: (^follow_up()) $$intent=follow_up ^refine()
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     # log questions that were not catched by macros
     a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)

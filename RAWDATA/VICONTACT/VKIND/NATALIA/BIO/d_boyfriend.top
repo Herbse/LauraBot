@@ -47,25 +47,25 @@ u: () ^keep() ^refine()
         b: ($boyfriendCounter==4) $$sound_file = g_natalia_weißnicht Weiß nicht.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($boyfriendCounter==1) $$sound_file = s_natalia_boyfriend9 Im Internet.
         b: ($boyfriendCounter==2) $$sound_file = s_natalia_boyfriend10 Bei Knuddels.
-        b: ($boyfriendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($boyfriendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($boyfriendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($boyfriendCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($boyfriendCounter==1) $$sound_file = s_natalia_boyfriend11 Jeremy und ich. 
         b: ($boyfriendCounter==2) $$sound_file = s_natalia_boyfriend11 Jeremy und ich. 
         b: ($boyfriendCounter==3) $$sound_file = s_natalia_boyfriend1 Jeremy.
-        b: ($boyfriendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($boyfriendCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($boyfriendCounter==1) ^reuse(BOYFRIEND_2)
-        b: ($boyfriendCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($boyfriendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($boyfriendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($boyfriendCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($boyfriendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($boyfriendCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
         b: () 

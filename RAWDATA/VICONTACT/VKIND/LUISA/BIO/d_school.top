@@ -6,27 +6,27 @@ topic: ~school_t ()
 u: () ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($schoolCounter==2)$$sound_file = g_luisa_volldoof  Voll doof.
         b: ($schoolCounter==3)$$sound_file = g_luisa_ganzok Ganz ok.
         b: ($schoolCounter==4)$$sound_file = g_luisa_ganzok Ganz ok.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($schoolCounter==3)$$sound_file = s_luisa_school1 Ich alleine.
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
-    a: (^reason()) $$intent=reason $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^reason()) $$intent=reason $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
@@ -43,19 +43,19 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! 
-u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1$$sound_file = n_luisa_school1
+u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1 $$sound_file = n_luisa_school1
 Ich mag Mathe und Deutsch.
    
 #! 
-u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2$$sound_file = n_luisa_school2 
+u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2 $$sound_file = n_luisa_school2 
 Nur in Sport bin ich nicht so gut.
 
 #! 
-u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3$$sound_file = n_luisa_school3 
+u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3 $$sound_file = n_luisa_school3 
 Ich brauche nur fünf Minuten zur Schule.
 
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
-u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4$$sound_file = n_luisa_school4 
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4 $$sound_file = n_luisa_school4 
 Steve und Dominik waren auch auf meiner Schule, als sie so alt waren wie ich.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.

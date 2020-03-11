@@ -188,8 +188,8 @@ $goodQuestion += 1 $noncritTopic += 1
         $$randNum = ^generateNumber()
         if ($$randNum < 60) {$$answerCategory = narrative ^respond(~narrative)}
         else if ($$randNum < 80) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 100) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else {$$answerCategory = reactance ^respond(~reactance)}
+        else {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        
 
 u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency}  facilitator) 
 $goodQuestion += 1 $noncritTopic += 1
