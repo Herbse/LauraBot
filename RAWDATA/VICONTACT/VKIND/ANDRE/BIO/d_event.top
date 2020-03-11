@@ -1,7 +1,7 @@
 topic: ~event_t repeat ()
 
 #specific questions/answers depending on general context
-u: ([geschwister die sind_sie haben_sie]) ^keep() ^refine()
+u: ($$answerCategory==specific [geschwister die sind_sie haben_sie]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_andre_event1 
     Carla und David.
@@ -35,7 +35,7 @@ u: ([geschwister die sind_sie haben_sie]) ^keep() ^refine()
     a: (^places_together()) $$intent=places_together $$sound_file = g_andre_zuhause 
     Zu Hause.
 
-u: ([bruder david er]) ^keep() ^refine()
+u: ($$answerCategory==specific [bruder david er]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_andre_event10 
     David.
@@ -69,7 +69,7 @@ u: ([bruder david er]) ^keep() ^refine()
     a: (^places_together()) $$intent=places_together $$sound_file = g_andre_zuhause
     Zu Hause.
 
-u: ([schwester carla karla sie]) ^keep() ^refine()
+u: ($$answerCategory==specific [schwester carla karla sie]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_andre_event15 
     Carla
@@ -104,7 +104,7 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
     Zu Hause.
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #a        b: ($eventCounter==1) $$sound_file = g_andre_volldoof Voll doof.
@@ -182,7 +182,7 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #b        b: ($eventCounter==1) $$sound_file = g_andre_volldoof Voll doof.
@@ -259,7 +259,7 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #c        b: ($eventCounter==1) $$sound_file = g_andre_volldoof Voll doof.

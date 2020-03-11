@@ -1,7 +1,7 @@
 topic: ~event_t repeat ()
 
 #specific questions/answers depending on general context
-u: ([er kaja kaya]) ^keep() ^refine()
+u: ($$answerCategory==specific [er kaja kaya]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_sara_event1 Kaya.
     # age
@@ -25,7 +25,7 @@ u: ([er kaja kaya]) ^keep() ^refine()
     # places together
     a: (^places_together()) $$intent=places_together 
 
-u: ([sie tante selma]) ^keep() ^refine()
+u: ($$answerCategory==specific [sie tante selma]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_sara_event8 Selma.
     # age
@@ -50,7 +50,7 @@ u: ([sie tante selma]) ^keep() ^refine()
     a: (^places_together()) $$intent=places_together $$sound_file = g_sara_zuhause Zu Hause.
 
 
-u: ([familie Familie]) ^keep() ^refine()
+u: ($$answerCategory==specific [familie Familie]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names 
     # age
@@ -76,7 +76,7 @@ u: ([familie Familie]) ^keep() ^refine()
 
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #a        b: ($eventCounter==1) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
@@ -154,7 +154,7 @@ u: ([familie Familie]) ^keep() ^refine()
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #b        b: ($eventCounter==1) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
@@ -232,7 +232,7 @@ u: ([familie Familie]) ^keep() ^refine()
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #c        b: ($eventCounter==1) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.

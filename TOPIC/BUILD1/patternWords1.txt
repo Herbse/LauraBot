@@ -39,6 +39,10 @@ leon
 dirk
 mira
 Mira
+león
+leòn
+léon
+lèon
 freunde
 oma
 grossmutter
@@ -70,6 +74,7 @@ kati
 michelle
 michele
 kunst
+malen
 hunde
 hund
 bella

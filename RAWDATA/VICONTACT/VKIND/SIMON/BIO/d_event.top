@@ -1,7 +1,7 @@
 topic: ~event_t repeat ()
 
 #specific questions/answers depending on general context
-u: ([neuer moritz Moritz er ihm ihn]) ^keep() ^refine()
+u: ($$answerCategory==specific [neuer moritz Moritz er ihm ihn]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = event1 Herr Moritz. 
     # age
@@ -29,7 +29,7 @@ u: ([neuer moritz Moritz er ihm ihn]) ^keep() ^refine()
     # places together
     a: (^places_together()) $$intent=places_together $$sound_file = event10 In der Schule. 
 
-u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
+u: ($$answerCategory==specific [alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = event1 Herr Schaller.
     # age
@@ -59,7 +59,7 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #a        b: ($eventCounter==1) $$sound_file = event11a Voll doof.
@@ -134,7 +134,7 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #b        b: ($eventCounter==1) $$sound_file = event11b Voll doof.
@@ -197,7 +197,7 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #c        b: ($eventCounter==1) $$sound_file = event11c Voll doof.

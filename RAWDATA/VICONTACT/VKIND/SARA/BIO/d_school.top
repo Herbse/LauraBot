@@ -3,7 +3,7 @@ topic: ~school_t ()
 #t: specific test to school topic ^keep() ^repeat() 
 
 #specific questions/answers depending on what narrative answer was given before
-t: ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($schoolCounter==1) $sound_file = g_sara_vollcool Voll cool.

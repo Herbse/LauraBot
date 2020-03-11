@@ -1,6 +1,6 @@
 topic: ~personal_t keep repeat nostay() 
 
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names Laura.
     # age

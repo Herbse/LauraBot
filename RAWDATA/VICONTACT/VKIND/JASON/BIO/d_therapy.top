@@ -2,7 +2,7 @@ topic: ~therapy_t ()
 # Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_jason_therapy1 
     Claudia.
@@ -39,7 +39,7 @@ u: () ^keep() ^refine()
 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($therapyCounter==1) $$sound_file = g_jason_ganzok Ganz ok.

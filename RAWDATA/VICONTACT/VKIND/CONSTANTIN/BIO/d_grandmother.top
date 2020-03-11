@@ -2,7 +2,7 @@ topic: ~grandmother_t ()
 
 
 #specific questions/answers depending on general context
-u: (familie) ^keep() ^refine()
+u: ($$answerCategory==specific familie) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_constantin_grandmother1
     Sabine, Clara und Oma Ute.
@@ -36,7 +36,7 @@ u: (familie) ^keep() ^refine()
 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_constantin_grandmother6
     Ute.
@@ -70,7 +70,7 @@ u: () ^keep() ^refine()
     Bei Oma.
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($grandmotherCounter==1) $$sound_file = g_constantin_volldoof Voll doof. 

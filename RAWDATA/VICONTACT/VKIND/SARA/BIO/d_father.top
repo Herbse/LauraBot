@@ -35,7 +35,7 @@ u: () ^keep() ^refine()
     Zuhause oder im Laden.
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($fatherCounter==1) $$sound_file = g_sara_gut Gut.

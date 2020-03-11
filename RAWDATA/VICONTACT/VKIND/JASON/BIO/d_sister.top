@@ -3,7 +3,7 @@ topic: ~sister_t ()
 #t: specific test to  topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_jason_sister1 
     Greta.
@@ -39,7 +39,7 @@ u: () ^keep() ^refine()
     
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($sisterCounter==1) $$sound_file = g_jason_keinahnung Keine Ahnung.

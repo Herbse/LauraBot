@@ -4,7 +4,7 @@ topic: ~neighbour_t ()
 #t: specific test to neighbour topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names Heinz. 
     # age
@@ -29,7 +29,7 @@ u: () ^keep() ^refine()
     a: (^places_together()) $$intent=places_together Bei Heinz zu Hause. 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($neighbourCounter==1) Voll cool.
