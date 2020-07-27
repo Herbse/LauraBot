@@ -136,9 +136,9 @@ crit_asked
 suggestive_unspecific
 relevance
 frequency
+availability
 information
 support
-availability
 disclosure
 introduction
 greeting

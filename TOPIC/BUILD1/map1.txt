@@ -13007,18 +13007,21 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_vicontact
         rule: 245  ~addposthoc.2.0 t: 
           line: 245 0  # $lastoutput = ^response ( 1 ) 
           Complexity of rule ~addposthoc.2.0- t: 1
-        rule: 249  ~addposthoc.3.0 t: 
-          line: 249 0  # ^cluehandler ( ) 
+        rule: 248  ~addposthoc.3.0 t: 
+          line: 248 0  # ^soundfile ( $lastoutput ) 
           Complexity of rule ~addposthoc.3.0- t: 1
-        rule: 251  ~addposthoc.4.0 t: 
+        rule: 249  ~addposthoc.4.0 t: 
+          line: 249 0  # ^cluehandler ( ) 
+          Complexity of rule ~addposthoc.4.0- t: 1
+        rule: 251  ~addposthoc.5.0 t: 
           if 251 4  
           ifend 251 122  
           line: 251 0  # ^if 00n( ^response ( 2 ) ) 01l
-          Complexity of rule ~addposthoc.4.0- t: 2
-        rule: 252  ~addposthoc.5.0 t: 
+          Complexity of rule ~addposthoc.5.0- t: 2
+        rule: 252  ~addposthoc.6.0 t: 
           line: 252 0  # ^oob ( ) 
           line: 253 9  # ^postprintbefore ( \[ $$oob \]
-          Complexity of rule ~addposthoc.5.0- t: 1
+          Complexity of rule ~addposthoc.6.0- t: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_clueHandler.top
     macro: 1  ^cluehandler
           if 4 4  
@@ -13764,83 +13767,83 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/b_
           line: 452 180  # $$probformat = affirmation-100
           line: 453 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.17.0- u: 4
-        rule: 456  ~prob_answer.18.0 u: 
-          if 457 4  
-          line: 457 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 458 63  
-          line: 458 58  # else 00l( '_1 == demand ) 00w{
-          elseif 459 121  
-          ifend 459 179  
-          line: 459 116  # else 00r( '_2 == transparency 
-          line: 460 180  # $$probformat = affirmation-100
-          line: 461 211  # $$answercategory = affirmation
+        rule: 455  ~prob_answer.18.0 u: 
+          if 456 4  
+          line: 456 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 457 63  
+          line: 457 58  # else 00l( '_1 == demand ) 00w{
+          elseif 458 121  
+          ifend 458 179  
+          line: 458 116  # else 00r( '_2 == transparency 
+          line: 459 180  # $$probformat = affirmation-100
+          line: 460 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.18.0- u: 4
-        rule: 463  ~prob_answer.19.0 u: 
-          if 464 4  
-          line: 464 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 465 63  
-          line: 465 58  # else 00l( '_1 == demand ) 00w{
-          elseif 466 121  
-          ifend 466 179  
-          line: 466 116  # else 00r( '_2 == transparency 
-          line: 467 180  # $$probformat = specific-100 
-          line: 468 208  # $$answercategory = specific Da
+        rule: 462  ~prob_answer.19.0 u: 
+          if 463 4  
+          line: 463 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 464 63  
+          line: 464 58  # else 00l( '_1 == demand ) 00w{
+          elseif 465 121  
+          ifend 465 179  
+          line: 465 116  # else 00r( '_2 == transparency 
+          line: 466 180  # $$probformat = affirmation-100
+          line: 467 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.19.0- u: 4
-        rule: 470  ~prob_answer.20.0 u: 
-          if 471 4  
-          line: 471 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 472 63  
-          line: 472 58  # else 00l( '_1 == demand ) 00w{
-          elseif 473 121  
-          ifend 473 179  
-          line: 473 116  # else 00r( '_2 == transparency 
-          line: 474 180  # $$probformat = okay-100 
-          line: 475 204  # $$answercategory = okay Okay. 
+        rule: 471  ~prob_answer.20.0 u: 
+          if 472 4  
+          line: 472 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 473 63  
+          line: 473 58  # else 00l( '_1 == demand ) 00w{
+          elseif 474 121  
+          ifend 474 179  
+          line: 474 116  # else 00r( '_2 == transparency 
+          line: 475 180  # $$probformat = affirmation-100
+          line: 476 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.20.0- u: 4
-        rule: 477  ~prob_answer.21.0 u: 
-          if 478 4  
-          line: 478 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 479 63  
-          line: 479 58  # else 00l( '_1 == demand ) 00w{
-          elseif 480 121  
-          ifend 480 179  
-          line: 480 116  # else 00r( '_2 == transparency 
-          line: 481 180  # $$probformat = affirmation-100
-          line: 482 211  # $$answercategory = affirmation
+        rule: 478  ~prob_answer.21.0 u: 
+          if 479 4  
+          line: 479 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 480 63  
+          line: 480 58  # else 00l( '_1 == demand ) 00w{
+          elseif 481 121  
+          ifend 481 179  
+          line: 481 116  # else 00r( '_2 == transparency 
+          line: 482 180  # $$probformat = specific-100 
+          line: 483 208  # $$answercategory = specific Da
           Complexity of rule ~prob_answer.21.0- u: 4
-        rule: 484  ~prob_answer.22.0 u: 
-          if 485 4  
-          line: 485 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 486 63  
-          line: 486 58  # else 00l( '_1 == demand ) 00w{
-          elseif 487 121  
-          ifend 487 179  
-          line: 487 116  # else 00r( '_2 == transparency 
-          line: 488 180  # $$probformat = greetings-100 
-          line: 489 209  # $$answercategory = greetings 
-          line: 490 238  # Hallo. 
+        rule: 485  ~prob_answer.22.0 u: 
+          if 486 4  
+          line: 486 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 487 63  
+          line: 487 58  # else 00l( '_1 == demand ) 00w{
+          elseif 488 121  
+          ifend 488 179  
+          line: 488 116  # else 00r( '_2 == transparency 
+          line: 489 180  # $$probformat = affirmation-100
+          line: 490 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.22.0- u: 4
-        rule: 494  ~prob_answer.23.0 u: 
-          if 495 4  
-          line: 495 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 496 63  
-          line: 496 58  # else 00l( '_1 == demand ) 00w{
-          elseif 497 121  
-          ifend 497 179  
-          line: 497 116  # else 00r( '_2 == transparency 
-          line: 498 180  # $$probformat = negation-100 
-          line: 499 208  # $$answercategory = negation Im
+        rule: 492  ~prob_answer.23.0 u: 
+          if 493 4  
+          line: 493 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 494 63  
+          line: 494 58  # else 00l( '_1 == demand ) 00w{
+          elseif 495 121  
+          ifend 495 179  
+          line: 495 116  # else 00r( '_2 == transparency 
+          line: 496 180  # $$probformat = affirmation-100
+          line: 497 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.23.0- u: 4
-        rule: 501  ~prob_answer.24.0 u: 
-          if 502 4  
-          line: 502 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 503 63  
-          line: 503 58  # else 00l( '_1 == demand ) 00w{
-          elseif 504 121  
-          ifend 504 179  
-          line: 504 116  # else 00r( '_2 == transparency 
-          line: 505 180  # $$probformat = affirmation-100
-          line: 506 211  # $$answercategory = affirmation
+        rule: 499  ~prob_answer.24.0 u: 
+          if 500 4  
+          line: 500 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 501 63  
+          line: 501 58  # else 00l( '_1 == demand ) 00w{
+          elseif 502 121  
+          ifend 502 179  
+          line: 502 116  # else 00r( '_2 == transparency 
+          line: 503 180  # $$probformat = greetings-100 
+          line: 504 209  # $$answercategory = greetings 
+          line: 505 238  # Hallo. 
           Complexity of rule ~prob_answer.24.0- u: 4
         rule: 508  ~prob_answer.25.0 u: 
           if 509 4  
@@ -13850,9 +13853,31 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/b_
           elseif 511 121  
           ifend 511 179  
           line: 511 116  # else 00r( '_2 == transparency 
-          line: 512 180  # $$probformat = discharge-100 
-          line: 513 209  # $$answercategory = discharge 
+          line: 512 180  # $$probformat = negation-100 
+          line: 513 208  # $$answercategory = negation Im
           Complexity of rule ~prob_answer.25.0- u: 4
+        rule: 515  ~prob_answer.26.0 u: 
+          if 516 4  
+          line: 516 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 517 63  
+          line: 517 58  # else 00l( '_1 == demand ) 00w{
+          elseif 518 121  
+          ifend 518 179  
+          line: 518 116  # else 00r( '_2 == transparency 
+          line: 519 180  # $$probformat = affirmation-100
+          line: 520 211  # $$answercategory = affirmation
+          Complexity of rule ~prob_answer.26.0- u: 4
+        rule: 522  ~prob_answer.27.0 u: 
+          if 523 4  
+          line: 523 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 524 63  
+          line: 524 58  # else 00l( '_1 == demand ) 00w{
+          elseif 525 121  
+          ifend 525 179  
+          line: 525 116  # else 00r( '_2 == transparency 
+          line: 526 180  # $$probformat = discharge-100 
+          line: 527 209  # $$answercategory = discharge 
+          Complexity of rule ~prob_answer.27.0- u: 4
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_incomprehension.top
     topic: 1  ~incomprehension
         rule: 3  ~incomprehension.0.0 u: 

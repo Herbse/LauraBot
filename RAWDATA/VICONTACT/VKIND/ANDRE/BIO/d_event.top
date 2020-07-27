@@ -385,7 +385,7 @@ Papa sagt, dass meine Geschwister mich lieb haben und ich soll mich nicht so hab
 #! Erzähl noch mehr.
 #a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_andre_event7a David hat mich gefilmt, wie ich nackig aus der Dusche gekommen bin.
 #b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_andre_event7b Ich muss für David manchmal Sachen klauen bei dm.
-#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_andre_event7c David war mit Carla auf dem Rummel Breakdancer fahren.
+#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_andre_event7c David und Carla durften auf dem Rummel Breakdancer fahren und ich nicht. Das ist ungerecht!
 
 #---------------------------------------------------------------------------------------------
 

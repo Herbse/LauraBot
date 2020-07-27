@@ -438,7 +438,7 @@ $$probFormat = specific-100
 
 
 
-u: (<< {_rapport} {_demand} {_transparency} information support >>)
+u: (<< {_rapport} {_demand} {_transparency} availability information support >>)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
@@ -451,6 +451,21 @@ else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = affirmation-100
 $$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+u: (<< {_rapport} {_demand} {_transparency} information support >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+u: (<< {_rapport} {_demand} {_transparency} information availability >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. 
+
 
 
 u: ({_rapport} {_demand} {_transparency} information)
@@ -471,8 +486,8 @@ u: ({_rapport} {_demand} {_transparency} availability)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
-$$probFormat = okay-100
-$$answerCategory = okay Okay. 
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. 
 
 u: ({_rapport} {_demand} {_transparency} introduction)
 if ('_0==rapport){$rapportCounter += 1}
@@ -488,7 +503,6 @@ else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = greetings-100
 $$answerCategory = greetings 
 Hallo. 
-
 
 
 u: ({_rapport} {_demand} {_transparency} support)

@@ -23,7 +23,7 @@ audio_config = texttospeech.types.AudioConfig(
     speaking_rate=1.23,
     audio_encoding=texttospeech.enums.AudioEncoding.LINEAR16)
 
-with open("outputjason.txt") as f:
+with open("updatejason.txt") as f:
     for line in f:
         # Set the text input to be synthesized
         transcribe = line

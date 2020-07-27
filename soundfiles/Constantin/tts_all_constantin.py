@@ -23,7 +23,7 @@ audio_config = texttospeech.types.AudioConfig(
     speaking_rate=1.19,
     audio_encoding=texttospeech.enums.AudioEncoding.LINEAR16)
 
-with open("outputconstantin.txt") as f:
+with open("updateconstantin.txt") as f:
     for line in f:
         # Set the text input to be synthesized
         transcribe = line

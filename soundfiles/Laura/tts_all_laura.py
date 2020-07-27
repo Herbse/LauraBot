@@ -23,7 +23,7 @@ audio_config = texttospeech.types.AudioConfig(
     speaking_rate=0.96,
     audio_encoding=texttospeech.enums.AudioEncoding.LINEAR16)
 
-with open("outputlaura.txt") as f:
+with open("updatelaura.txt") as f:
     for line in f:
         # Set the text input to be synthesized
         transcribe = line
