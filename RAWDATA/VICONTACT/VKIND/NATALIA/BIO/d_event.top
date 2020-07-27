@@ -1,91 +1,100 @@
 topic: ~event_t repeat ()
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = event1 Oleg.
+    a: (^names()) $$intent=names $$sound_file = s_natalia_event1 
+    Oleg.
     # age
-    a: (^age()) $$intent=age $$sound_file = event2 Der ist 42 Jahre alt.
+    a: (^age()) $$intent=age $$sound_file = s_natalia_event2 
+    Der ist 42 Jahre alt.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = event3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_natalia_gut 
+    Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = event4 Der arbeitet auf der Baustelle.
+    a: (^job()) $$intent=job $$sound_file = s_natalia_event3 
+    Der arbeitet auf der Baustelle.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Der ist der Freund von Mama.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_natalia_event4
+    Der ist der Freund von Mama.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Oleg ist doof.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_natalia_event5 
+    Oleg ist doof.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = event6 ^reuse(EVENT_2)
+    a: (^time_together()) $$intent=time_together  ^reuse(EVENT_2)
     # time relationship
-    a: (^time()) $$intent=time_relationship $$sound_file = event7 Schon ganz lange.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_natalia_event6 
+    Schon ganz lange.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^refine()
         b: ($eventCounter==5) ^reuse(EVENT_6)
         b: () ^reuse(EVENT_6)
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = event9 Der arbeitet auf der Baustelle.
+    a: (^activity()) $$intent=activity $$sound_file = s_natalia_event3 
+    Der arbeitet auf der Baustelle.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = event10 Zu Hause.
+    a: (^places_together()) $$intent=places_together $$sound_file = g_natalia_zuhause 
+    Zu Hause.
 
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#a        b: ($clue==1) Ich weiß nicht.
-#a        b: ($eventCounter==1) $$sound_file = event11a Voll doof.
-#a        b: ($eventCounter==2) $$sound_file = event11a Keine Ahnung. 
-#a        b: ($eventCounter==3) $$sound_file = event11a Voll doof. 
-#a        b: ($eventCounter==4) $$sound_file = event11a Voll doof. 
-#a        b: ($eventCounter==5) $$sound_file = event11a Ganz ok.
-#a        b: ($eventCounter==6) $$sound_file = event11a Ganz ok.
-#a        b: ($eventCounter==7) $$sound_file = event12a Das war komisch. 
-#a        b: ($eventCounter==8) $$sound_file = event12a Das war komisch.
-#a        b: ($eventCounter==9) $$sound_file = event12a Das war komisch.
-#a        b: ($eventCounter==10) $$sound_file = event12a Ich weiß nicht.
+#a        b: ($clue==1) $$sound_file = g_natalia_ichweißnicht Ich weiß nicht.
+#a        b: ($eventCounter==1) $$sound_file = g_natalia_volldoof Voll doof.
+#a        b: ($eventCounter==2) $$sound_file = g_natalia_keineahnung Keine Ahnung. 
+#a        b: ($eventCounter==3) $$sound_file = g_natalia_volldoof Voll doof. 
+#a        b: ($eventCounter==4) $$sound_file = g_natalia_volldoof Voll doof. 
+#a        b: ($eventCounter==5) $$sound_file = g_natalia_ganzok Ganz ok.
+#a        b: ($eventCounter==6) $$sound_file = g_natalia_ganzok Ganz ok.
+#a        b: ($eventCounter==7) $$sound_file = g_natalia_daswarkomisch Das war komisch. 
+#a        b: ($eventCounter==8) $$sound_file = g_natalia_daswarkomisch Das war komisch.
+#a        b: ($eventCounter==9) $$sound_file = g_natalia_daswarkomisch Das war komisch.
+#a        b: ($eventCounter==10) $$sound_file = g_natalia_ichweißnicht Ich weiß nicht.
 #a    # other_opinion
 #a    a: (^other_opinion()) $$intent=other_opinion ^refine() 
 #a        b: ($eventCounter==9) ^reuse(EVENT_10)
-#a        b: () $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: () $$answerCategory=missing ^respond(~ignorance)
 #a    # place
 #a    a: (^place()) $$intent=place ^refine()
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==4) In mein Zimmer.
-#a        b: ($eventCounter==5) In meinem Zimmer.
-#a        b: ($eventCounter==6) In meinem Zimmer.
-#a        b: ($eventCounter==7) In meinem Zimmer.
-#a        b: ($eventCounter==8) In meinem Zimmer.
-#a        b: ($eventCounter==9) In meinem Zimmer.
-#a        b: ($eventCounter==10) In meinem Zimmer.
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$sound_file = s_natalia_event4 In mein Zimmer.
+#a        b: ($eventCounter==5) $$sound_file = s_natalia_event5 In meinem Zimmer.
+#a        b: ($eventCounter==6) $$sound_file = s_natalia_event5 In meinem Zimmer.
+#a        b: ($eventCounter==7) $$sound_file = s_natalia_event5 In meinem Zimmer.
+#a        b: ($eventCounter==8) $$sound_file = s_natalia_event5 In meinem Zimmer.
+#a        b: ($eventCounter==9) $$sound_file = s_natalia_event5 In meinem Zimmer.
+#a        b: ($eventCounter==10) $$sound_file = s_natalia_event5 In meinem Zimmer.
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==1) Oleg.
-#a        b: ($eventCounter==2) Oleg.
-#a        b: ($eventCounter==3) Oleg.
-#a        b: ($eventCounter==4) Oleg.
-#a        b: ($eventCounter==5) Oleg und ich.
-#a        b: ($eventCounter==6) Oleg und ich.
-#a        b: ($eventCounter==7) Oleg.
-#a        b: ($eventCounter==8) Oleg.
-#a        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$sound_file = s_natalia_event1 Oleg.
+#a        b: ($eventCounter==2) $$sound_file = s_natalia_event1 Oleg.
+#a        b: ($eventCounter==3) $$sound_file = s_natalia_event1 Oleg.
+#a        b: ($eventCounter==4) $$sound_file = s_natalia_event1 Oleg.
+#a        b: ($eventCounter==5) $$sound_file = s_natalia_event6 Oleg und ich.
+#a        b: ($eventCounter==6) $$sound_file = s_natalia_event6 Oleg und ich.
+#a        b: ($eventCounter==7) $$sound_file = s_natalia_event1 Oleg.
+#a        b: ($eventCounter==8) $$sound_file = s_natalia_event1 Oleg.
+#a        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # reason
 #a    a: (^reason()) $$intent=reason ^refine()
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==4) ^reuse(EVENT_5)
-#a        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==7) ^reuse(EVENT_8)
-#a        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # example
 #a    a: (^example()) $$intent=example ^refine()
 #a        b: () $$nextAnswer = yes
@@ -96,7 +105,7 @@ u: () ^keep() ^refine()
 #a        b: ($eventCounter==3) $$nextAnswer = yes
 #a        b: ($eventCounter==4) $$nextAnswer = yes
 #a        b: ($eventCounter==5) $$nextAnswer = yes
-#a        b: ($eventCounter==6) Das ist ein Zeichentrickfilm.
+#a        b: ($eventCounter==6) $$sound_file = s_natalia_event7 Das ist ein Zeichentrickfilm.
 #a        b: ($eventCounter==7) $$nextAnswer = yes
 #a        b: ($eventCounter==8) $$nextAnswer = yes
 #a        b: ($eventCounter==9) $$nextAnswer = yes
@@ -107,61 +116,61 @@ u: () ^keep() ^refine()
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#b        b: ($clue==1) Ich weiß nicht.
-#b        b: ($eventCounter==1) $$sound_file = event11a Voll doof.
-#b        b: ($eventCounter==2) $$sound_file = event11a Keine Ahnung. 
-#b        b: ($eventCounter==3) $$sound_file = event11a Voll doof.
-#b        b: ($eventCounter==4) $$sound_file = event11a Voll doof.
-#b        b: ($eventCounter==5) $$sound_file = event11a Ganz ok.
-#b        b: ($eventCounter==6) $$sound_file = event11a Ganz ok.
-#b        b: ($eventCounter==7) $$sound_file = event12b Das ist so gemein!
-#b        b: ($eventCounter==8) $$sound_file = event12b Das ist so gemein!
-#b        b: ($eventCounter==9) $$sound_file = event12b Das ist so gemein!
-#b        b: ($eventCounter==10) $$sound_file = event12b Das ist so gemein!
+#b        b: ($clue==1) $$sound_file = g_natalia_ichweißnicht Ich weiß nicht.
+#b        b: ($eventCounter==1) $$sound_file = g_natalia_volldoof Voll doof.
+#b        b: ($eventCounter==2) $$sound_file = g_natalia_keineahnung Keine Ahnung. 
+#b        b: ($eventCounter==3) $$sound_file = g_natalia_volldoof Voll doof.
+#b        b: ($eventCounter==4) $$sound_file = g_natalia_volldoof Voll doof.
+#b        b: ($eventCounter==5) $$sound_file = g_natalia_ganzok Ganz ok.
+#b        b: ($eventCounter==6) $$sound_file = g_natalia_ganzok Ganz ok.
+#b        b: ($eventCounter==7) $$sound_file = g_natalia_dasistsogemein Das ist so gemein!
+#b        b: ($eventCounter==8) $$sound_file = g_natalia_dasistsogemein Das ist so gemein!
+#b        b: ($eventCounter==9) $$sound_file = g_natalia_dasistsogemein Das ist so gemein!
+#b        b: ($eventCounter==10) $$sound_file = g_natalia_dasistsogemein Das ist so gemein!
 #b    # other_opinion
-#b    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+#b    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
 #b    # place
 #b    a: (^place()) $$intent=place ^refine()
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==4) In mein Zimmer.
-#b        b: ($eventCounter==5) In meinem Zimmer.
-#b        b: ($eventCounter==6) In meinem Zimmer.
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==8) Zu Hause.
-#b        b: ($eventCounter==9) Zu Hause.
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$sound_file = s_natalia_event4 In mein Zimmer.
+#b        b: ($eventCounter==5) $$sound_file = s_natalia_event5 In meinem Zimmer.
+#b        b: ($eventCounter==6) $$sound_file = s_natalia_event5 In meinem Zimmer.
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$sound_file = g_natalia_zuhause Zu Hause.
+#b        b: ($eventCounter==9) $$sound_file = g_natalia_zuhause Zu Hause.
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # individual
 #b    a: (^individual()) $$intent=individual ^refine()
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==1) Oleg.
-#b        b: ($eventCounter==2) Oleg.
-#b        b: ($eventCounter==3) Oleg.
-#b        b: ($eventCounter==4) Oleg.
-#b        b: ($eventCounter==5) Oleg und ich.
-#b        b: ($eventCounter==6) Oleg und ich.
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==8) Oleg.
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$sound_file = s_natalia_event1 Oleg.
+#b        b: ($eventCounter==2) $$sound_file = s_natalia_event1 Oleg.
+#b        b: ($eventCounter==3) $$sound_file = s_natalia_event1 Oleg.
+#b        b: ($eventCounter==4) $$sound_file = s_natalia_event1 Oleg.
+#b        b: ($eventCounter==5) $$sound_file = s_natalia_event6 Oleg und ich.
+#b        b: ($eventCounter==6) $$sound_file = s_natalia_event6 Oleg und ich.
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$sound_file = s_natalia_event1 Oleg.
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # reason
 #b    a: (^reason()) $$intent=reason ^refine()
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # example
 #b    a: (^example()) $$intent=example ^refine()
 #b        b: () $$nextAnswer = yes
@@ -172,7 +181,7 @@ u: () ^keep() ^refine()
 #b        b: ($eventCounter==3) $$nextAnswer = yes
 #b        b: ($eventCounter==4) $$nextAnswer = yes
 #b        b: ($eventCounter==5) $$nextAnswer = yes
-#b        b: ($eventCounter==6) Das ist ein Zeichentrickfilm.
+#b        b: ($eventCounter==6) $$sound_file = s_natalia_event7 Das ist ein Zeichentrickfilm.
 #b        b: ($eventCounter==7) $$nextAnswer = yes
 #b        b: ($eventCounter==8) $$nextAnswer = yes
 #b        b: ($eventCounter==9) $$nextAnswer = yes
@@ -183,61 +192,61 @@ u: () ^keep() ^refine()
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#c        b: ($clue==1) Ich weiß nicht.
-#c        b: ($eventCounter==1) $$sound_file = event11a Voll doof.
-#c        b: ($eventCounter==2) $$sound_file = event11a Keine Ahnung. 
-#c        b: ($eventCounter==3) $$sound_file = event11a Voll doof. 
-#c        b: ($eventCounter==4) $$sound_file = event11a Voll doof. 
-#c        b: ($eventCounter==5) $$sound_file = event11a Ganz ok.
-#c        b: ($eventCounter==6) $$sound_file = event11a Ganz ok.
-#c        b: ($eventCounter==7) $$sound_file = event11c Ich hatte so Angst.
-#c        b: ($eventCounter==8) $$sound_file = event11c Ich hatte so Angst.
-#c        b: ($eventCounter==9) $$sound_file = event11c Ich hatte so Angst.
-#c        b: ($eventCounter==10) $$sound_file = event11c Ich hatte so Angst.
+#c        b: ($clue==1) $$sound_file = g_natalia_ichweißnicht Ich weiß nicht.
+#c        b: ($eventCounter==1) $$sound_file = g_natalia_volldoof Voll doof.
+#c        b: ($eventCounter==2) $$sound_file = g_natalia_keineahnung Keine Ahnung. 
+#c        b: ($eventCounter==3) $$sound_file = g_natalia_volldoof Voll doof. 
+#c        b: ($eventCounter==4) $$sound_file = g_natalia_volldoof Voll doof. 
+#c        b: ($eventCounter==5) $$sound_file = g_natalia_ganzok Ganz ok.
+#c        b: ($eventCounter==6) $$sound_file = g_natalia_ganzok Ganz ok.
+#c        b: ($eventCounter==7) $$sound_file = g_natalia_ichhattesoangst Ich hatte so Angst.
+#c        b: ($eventCounter==8) $$sound_file = g_natalia_ichhattesoangst Ich hatte so Angst.
+#c        b: ($eventCounter==9) $$sound_file = g_natalia_ichhattesoangst Ich hatte so Angst.
+#c        b: ($eventCounter==10) $$sound_file = g_natalia_ichhattesoangst Ich hatte so Angst.
 #c    # other_opinion
-#c    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+#c    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
 #c    # place
 #c    a: (^place()) $$intent=place ^refine()
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==4) In mein Zimmer.
-#c        b: ($eventCounter==5) In meinem Zimmer.
-#c        b: ($eventCounter==6) In meinem Zimmer.
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$sound_file = s_natalia_event4 In mein Zimmer.
+#c        b: ($eventCounter==5) $$sound_file = s_natalia_event5 In meinem Zimmer.
+#c        b: ($eventCounter==6) $$sound_file = s_natalia_event5 In meinem Zimmer.
 #c        b: ($eventCounter==7) Die waren bei uns zuhause.
 #c        b: ($eventCounter==8) Bei uns zuhause. 
 #c        b: ($eventCounter==9) Bei uns zuhause. 
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # individual
 #c    a: (^individual()) $$intent=individual ^refine()
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==1) Oleg.
-#c        b: ($eventCounter==2) Oleg.
-#c        b: ($eventCounter==3) Oleg.
-#c        b: ($eventCounter==4) Oleg.
-#c        b: ($eventCounter==5) Oleg und ich.
-#c        b: ($eventCounter==6) Oleg und ich.
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$sound_file = s_natalia_event1 Oleg.
+#c        b: ($eventCounter==2) $$sound_file = s_natalia_event1 Oleg.
+#c        b: ($eventCounter==3) $$sound_file = s_natalia_event1 Oleg.
+#c        b: ($eventCounter==4) $$sound_file = s_natalia_event1 Oleg.
+#c        b: ($eventCounter==5) $$sound_file = s_natalia_event6 Oleg und ich.
+#c        b: ($eventCounter==6) $$sound_file = s_natalia_event6 Oleg und ich.
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # reason
 #c    a: (^reason()) $$intent=reason ^refine()
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # example
 #c    a: (^example()) $$intent=example ^refine()
 #c        b: () $$nextAnswer = yes
@@ -248,7 +257,7 @@ u: () ^keep() ^refine()
 #c        b: ($eventCounter==3) $$nextAnswer = yes
 #c        b: ($eventCounter==4) $$nextAnswer = yes
 #c        b: ($eventCounter==5) $$nextAnswer = yes
-#c        b: ($eventCounter==6) Das ist ein Zeichentrickfilm.
+#c        b: ($eventCounter==6) $$sound_file = s_natalia_event7 Das ist ein Zeichentrickfilm.
 #c        b: ($eventCounter==7) $$nextAnswer = yes
 #c        b: ($eventCounter==8) $$nextAnswer = yes
 #c        b: ($eventCounter==9) $$nextAnswer = yes
@@ -266,67 +275,74 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mir von deinem Onkel 
-u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0 $$sound_file = event16 Oleg ist manchmal seltsam.
+u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0 $$sound_file = n_natalia_event1
+Oleg ist manchmal seltsam.
     
 
 
 
 #---------------------------------------------------------------------------------------------
 #! Erzähl mir mal von deinem Onkel
-u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0 $$sound_file = event17 Er arbeitet viel. Auf Baustellen und so. 
+u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0 $$sound_file = n_natalia_event2
+Er arbeitet viel. Auf Baustellen und so. 
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?
-u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 3 $clue = 0 $$sound_file = event18 Nach der Schule holt er mich ab, aber dann geht er gleich wieder los mit seinen Kumpels.
+u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 3 $clue = 0 $$sound_file = n_natalia_event3
+Nach der Schule holt er mich ab, aber dann geht er gleich wieder los mit seinen Kumpels.
     
 #---------------------------------------------------------------------------------------------    
 
 #! Warum willst du denn nicht, dass er in dein Zimmer kommt?
 #! Und was macht
-u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 4 $clue = 0 $$sound_file = event19 Wenn Mama in der Küche ist oder wenn sie schläft, kommt Oleg manchmal zu mir.
+u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 4 $clue = 0 $$sound_file = n_natalia_event4
+Wenn Mama in der Küche ist oder wenn sie schläft, kommt Oleg manchmal zu mir.
     
 #---------------------------------------------------------------------------------------------
 
 #! Was hat dein Onkel denn gemacht?
-u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 5 $clue = 0 $$sound_file = event20 Dann schauen wir Filme zusammen. Am liebsten Zeichentrickfilme.
+u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 5 $clue = 0 $$sound_file = n_natalia_event5
+Dann schauen wir Filme zusammen. Am liebsten Zeichentrickfilme.
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 6 $clue = 0 $$sound_file = event21 Letzte Woche haben wir meinen Lieblingsfilm angeguckt. Anastasia! 
+u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 6 $clue = 0 $$sound_file = n_natalia_event6
+Letzte Woche haben wir meinen Lieblingsfilm angeguckt. Anastasia! 
 
 #---------------------------------------------------------------------------------------------
 # Ab hier sind die Ereignisse zum A: sexuellen Übergriff, B: nicht-sexuellen Übergriff, C: andere Belastung
 #---------------------------------------------------------------------------------------------
 
 #! Erzähl noch mehr.
-#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22a Als wir den Film angeguckt haben, lag er neben mir im Bett und hat meine Unterhose ausgezogen.
-#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22b Wenn Oleg nach Hause kommt, dann ist er oft richtig besoffen und haut meine Mama.
-#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22c Letzte Woche kam die Polizei und hat Oleg gesucht. Er ist immer noch illegal in Deutschland.
+#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_natalia_event7a Als wir den Film angeguckt haben, lag er neben mir im Bett und hat meine Unterhose ausgezogen.
+#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_natalia_event7b Wenn Oleg nach Hause kommt, dann ist er oft richtig besoffen und haut meine Mama.
+#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_natalia_event7c Letzte Woche kam die Polizei und hat Oleg gesucht. Er ist immer noch illegal in Deutschland.
 #---------------------------------------------------------------------------------------------
 
 #! wie ist das passiert?
-#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event23a Da hat er mich angefasst, da so zwischen den Beinen.
-#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event24b Er schreit laut rum und Mama weint dann immer.
-#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event25c Die Polizei kam spät am Abend zu uns. Ich war schon im Bett.
+#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_natalia_event8a Da hat er mich angefasst, da so zwischen den Beinen.
+#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_natalia_event8b Er schreit laut rum und Mama weint dann immer.
+#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_natalia_event8c Die Polizei kam spät am Abend zu uns. Ich war schon im Bett.
 
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Ich fand das eklig, aber ich hab nichts gesagt.
-#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Ich wache auf davon und dann lauf ich zu Mama, damit der Oleg aufhört.
-#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Ich wache auf davon und dann lauf ich zu Mama, damit der Oleg aufhört.
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_natalia_event9a Ich fand das eklig, aber ich hab nichts gesagt.
+#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_natalia_event9b Ich wache auf davon und dann lauf ich zu Mama, damit der Oleg aufhört.
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_natalia_event9c Ich hab so fremde Stimmen gehört und wie meine Mama angefangen hat zu weinen.
 
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?
-#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Mama kam später ins Zimmer. Aber sie hat nichts gemerkt.
-#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Einmal musste Mama auch ins Krankenhaus deswegen.
-#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Oleg kam erst nach zwei Tagen wieder nach Hause.
+#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_natalia_event10a Mama kam später ins Zimmer. Aber sie hat nichts gemerkt.
+#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_natalia_event10b Einmal musste Mama auch ins Krankenhaus deswegen.
+#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_natalia_event10c Oleg kam erst nach zwei Tagen wieder nach Hause.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()
 
 # Clue 2
-u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = event28 Meine Mama soll mich von der Schule abholen, nicht Oleg.
+u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = clue_natalia
+Meine Mama soll mich von der Schule abholen, nicht Oleg.
 

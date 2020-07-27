@@ -3,7 +3,7 @@ topic: ~brother_t ()
 #t: specific test to brother topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = brother1 Leon 
     # age
@@ -29,7 +29,7 @@ u: () ^keep() ^refine()
     
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($brotherCounter==1) $$sound_file = brother10 Ganz ok.
@@ -38,39 +38,39 @@ u: () ^keep() ^refine()
         b: ($brotherCounter==4) $$sound_file = brother10 Ganz ok.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($brotherCounter==1) $$sound_file = brother9 In Leons Zimmer.
-        b: ($brotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($brotherCounter==3) $$sound_file = brother9 In Leons Zimmer.
         b: ($brotherCounter==4) $$sound_file = brother11 Das ist gar nicht weit von zu Hause.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($brotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($brotherCounter==3) $$sound_file = brother12 Leon und seine Freunde.
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($brotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($brotherCounter==2) $$nextAnswer = yes
-        b: ($brotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () 
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
         b: ($brotherCounter==1) $$sound_file = brother13 Ein Spiel auf der Playstation.
         b: ($brotherCounter==2) $$nextAnswer = yes
         b: ($brotherCounter==3) $$nextAnswer = yes
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     
     # follow-up
     a: (^follow_up()) $$intent=follow_up ^refine()
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     # log questions that were not catched by macros
     a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/brotherspecific.txt $$question \n) 

@@ -4,99 +4,117 @@ topic: ~friends_t ()
 #t: specific test to hobbies topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: ([freunde die sie]) ^keep() ^refine()
+u: ($$answerCategory==specific [freunde die sie]) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names Stefan und Marco.
+    a: (^names()) $$intent=names $$sound_file = s_constantin_friends1
+    Stefan und Marco.
     # age
-    a: (^age()) $$intent=age Die sind beide neun, wie ich.
+    a: (^age()) $$intent=age $$sound_file = s_constantin_friends2
+    Die sind beide neun, wie ich.
     # mood
-    a: (^mood()) $$intent=mood Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_constantin_gut
+    Gut.
     # job
     a: (^job()) $$intent=job 
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das sind meine besten Freunde.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_constantin_friends3
+    Das sind meine besten Freunde.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Die sind beide voll cool.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_constantin_friends4
+    Die sind beide voll cool.
     # time together
-    a: (^time_together()) $$intent=time_together In meiner Freizeit oder am Wochenende.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_constantin_friends5
+    In meiner Freizeit oder am Wochenende.
     # time relationship
-    a: (^time()) $$intent=time_relationship Ich kenne die seit dem Kindergarten.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_constantin_friends6
+    Ich kenne die seit dem Kindergarten.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^refine()
         b: ($friendCounter==3) ^reuse(FRIENDS_4)
         b: () ^reuse(FRIENDS_2)
     # activity
-    a: (^activity()) $$intent=activity Die gehen beide in die Schule, aber in eine andere Schule als ich.
+    a: (^activity()) $$intent=activity 
+    Die gehen beide in die Schule, aber in eine andere Schule als ich. $$sound_file = s_constantin_friends7
     # places together
-    a: (^places_together()) $$intent=places_together Wir gehen zusammen in den Schülerclub oder auf den Spielplatz.
+    a: (^places_together()) $$intent=places_together $$sound_file = s_constantin_friends8
+    Wir gehen zusammen in den Schülerclub oder auf den Spielplatz.
 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names [Marco.][Stefan]
+    a: (^names()) $$intent=names 
+    [$$sound_file = s_constantin_friends9 Marco.][ $$sound_file = s_constantin_friends10 Stefan]
     # age
-    a: (^age()) $$intent=age Der ist so alt wie ich.
+    a: (^age()) $$intent=age $$sound_file = s_constantin_friends11
+    Der ist so alt wie ich.
     # mood
-    a: (^mood()) $$intent=mood Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_constantin_gut
+    Gut.
     # job
     a: (^job()) $$intent=job 
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Der ist mein bester Freund. 
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_constantin_friends12
+     Der ist mein bester Freund. 
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Der ist echt cool!
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_constantin_friends13
+    Der ist echt cool!
     # time together
-    a: (^time_together()) $$intent=time_together Nach der Schule. Oder am Wochenende.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_constantin_friends14
+    Nach der Schule. Oder am Wochenende.
     # time relationship
-    a: (^time()) $$intent=time_relationship Seit dem Kindergarten.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_constantin_friends15
+    Seit dem Kindergarten.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^refine()
         b: ($friendCounter==3) ^reuse(FRIENDS_4)
         b: () ^reuse(FRIENDS_2)
     # activity
-    a: (^activity()) $$intent=activity Der geht auch in die Schule, aber in eine andere Schule.
+    a: (^activity()) $$intent=activity $$sound_file = s_constantin_friends16
+    Der geht auch in die Schule, aber in eine andere Schule.
     # places together
-    a: (^places_together()) $$intent=places_together Wir gehen zusammen in der Schülerclub oder auf den Spielplatz.
+    a: (^places_together()) $$intent=places_together $$sound_file = s_constantin_friends8
+    Wir gehen zusammen in den Schülerclub oder auf den Spielplatz.
 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($friendCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==2) Das macht Spaß!
-        b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==4) Das macht Spaß!
+        b: ($friendCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==2) $$sound_file = g_constantin_dasmachtspaß Das macht Spaß!
+        b: ($friendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==4) $$sound_file = g_constantin_dasmachtspaß Das macht Spaß!
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion ^refine()
         b: ($friendCounter==1) ^reuse(FRIENDS_3)
         b: ($friendCounter==2) ^reuse(FRIENDS_3)
-        b: () $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($friendCounter==1) In der Nachbarschaft.
-        b: ($friendCounter==2) Im Schülerclub.
-        b: ($friendCounter==3) Im Schülerclub.
-        b: ($friendCounter==4) Im Schülerclub.
+        b: ($friendCounter==1) $$sound_file = s_constantin_friends17 In der Nachbarschaft.
+        b: ($friendCounter==2) $$sound_file = s_constantin_friends18 Im Schülerclub.
+        b: ($friendCounter==3) $$sound_file = s_constantin_friends18 Im Schülerclub.
+        b: ($friendCounter==4) $$sound_file = s_constantin_friends18 Im Schülerclub.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($friendCounter==1) Marco, Stefan und die anderen Kinder.
-        b: ($friendCounter==2) Marco, Stefan und die anderen Kinder.
-        b: ($friendCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($friendCounter==4) Marco, Stefan und ich.
+        b: ($friendCounter==1) $$sound_file = s_constantin_friends19 Marco, Stefan und die anderen Kinder.
+        b: ($friendCounter==2) $$sound_file = s_constantin_friends19 Marco, Stefan und die anderen Kinder.
+        b: ($friendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==4) $$sound_file = s_constantin_friends20 Marco, Stefan und ich.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($friendCounter==1) ^reuse(FRIENDS_2)
-        b: ($friendCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($friendCounter==3) ^reuse(FRIENDS_4)
-        b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
-        b: ($friendCounter==1) Ein Club für Kinder zum Spielen.
+        b: ($friendCounter==1) $$sound_file = s_constantin_friends21 Ein Club für Kinder zum Spielen.
         b: () $$nextAnswer = yes
     
     # follow-up
@@ -108,21 +126,25 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mal von deinen Hobbies.
-u: FRIENDS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 Der Schülerclub ist so cool.
+u: FRIENDS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 $$sound_file = n_constantin_friends1
+Der Schülerclub ist so cool.
  
 
   
 #! Erzähl mal mehr.
-u: FRIENDS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 Wir spielen Fußball und basteln im Schülerclub.
+u: FRIENDS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 $$sound_file = n_constantin_friends2
+Wir spielen Fußball und basteln im Schülerclub.
    
  
 
 #! Erzähl mir mehr 
-u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 Marco und Stefan finden es auch cool.
+u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 $$sound_file = n_constantin_friends3
+Marco und Stefan finden es auch cool.
   
 
 #!  Erzähl mir mehr.
-u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Wir spielen den anderen Streiche.
+u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 $$sound_file = n_constantin_friends4
+Wir spielen den anderen Streiche.
    
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.

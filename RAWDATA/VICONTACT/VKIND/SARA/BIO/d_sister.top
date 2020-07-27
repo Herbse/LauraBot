@@ -3,60 +3,60 @@ topic: ~sister_t ()
 #t: specific test to  topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = 1 Amina.
+    a: (^names()) $$intent=names $sound_file = s_sara_sister1 Amina.
     # age
-    a: (^age()) $$intent=age $$sound_file = 2 Die ist fünf Jahre alt.
+    a: (^age()) $$intent=age $$sound_file = s_sara_sister2 Die ist fünf Jahre alt.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_sara_gut Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = 4 Die geht noch in den Kindergarten.
+    a: (^job()) $$intent=job $$sound_file = s_sara_sister3 Die geht noch in den Kindergarten.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Das ist meine Schwester.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_sara_sister4 Das ist meine Schwester.
     # relationship_o
     a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 ^reuse(SISTER_1)
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = 7 Nach der Schule und am Wochenende.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_sara_sister5 Nach der Schule und am Wochenende.
     # time relationship
     a: (^time()) $$intent=time_relationship 
     # activity together
     a: (^activity_together()) $$intent=activity_together ^reuse(SISTER_2)
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = 8 Die geht noch in den Kindergarten.
+    a: (^activity()) $$intent=activity $$sound_file = s_sara_sister3 Die geht noch in den Kindergarten.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = 9 Zuhause.
+    a: (^places_together()) $$intent=places_together $$sound_file = g_sara_zuhause Zuhause.
     
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($sisterCounter==1) $$sound_file = 10 Voll nervig.
-        b: ($sisterCounter==2) $$sound_file = 10 Voll nervig.
-        b: ($sisterCounter==3) $$sound_file = 10 Voll nervig.
-        b: ($sisterCounter==4) $$sound_file = 10 Voll nervig.
+        b: ($sisterCounter==1) $$sound_file = g_sara_vollnervig Voll nervig.
+        b: ($sisterCounter==2) $$sound_file = g_sara_vollnervig Voll nervig.
+        b: ($sisterCounter==3) $$sound_file = g_sara_vollnervig Voll nervig.
+        b: ($sisterCounter==4) $$sound_file = g_sara_vollnervig Voll nervig.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($sisterCounter==1) $$answerCategory=ignorance $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($sisterCounter==2) Zuhause. Oder draußen.
-        b: ($sisterCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($sisterCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==1) $$answerCategory=missing $$answerCategory=missing ^respond(~ignorance)
+        b: ($sisterCounter==2) $$sound_file = s_sara_sister6 Zuhause. Oder draußen.
+        b: ($sisterCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($sisterCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($sisterCounter==1) Meine Schwester Amina.
-        b: ($sisterCounter==2) Amina.
-        b: ($sisterCounter==3) Amina.
-        b: ($sisterCounter==4) Amina.
+        b: ($sisterCounter==1) $$sound_file = s_sara_sister7 Meine Schwester Amina.
+        b: ($sisterCounter==2) $$sound_file = s_sara_sister1 Amina.
+        b: ($sisterCounter==3) $$sound_file = s_sara_sister1 Amina.
+        b: ($sisterCounter==4) $$sound_file = s_sara_sister1 Amina.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($sisterCounter==1) ^reuse(SISTER_2)
         b: ($sisterCounter==2) ^reuse(SISTER_3)
-        b: ($sisterCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($sisterCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($sisterCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($sisterCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
         b: () 
@@ -76,16 +76,20 @@ u: () ^keep() ^refine()
 
 
 #! Erzähl mal was dein Bruder währenddessen tut. 
-u: SISTER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 1 $$sound_file = 14  Meine Schwester nervt mich voll.
+u: SISTER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 1 $$sound_file = 14  $$sound_file = n_sara_sister1
+Meine Schwester nervt mich voll.
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 2 $$sound_file = 15  Sie will immer mit mir spielen. Verstecken oder Fangen, aber darauf hab ich keine Lust.
+u: SISTER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 2 $$sound_file = 15 $sound_file = n_sara_sister2 
+Sie will immer mit mir spielen. Verstecken oder Fangen, aber darauf hab ich keine Lust.
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 3 $$sound_file = 16 Sie macht auch immer meine Sachen kaputt. Wie einmal meine Barbie. Der hat sie den Kopf abgerissen.
+u: SISTER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 3 $$sound_file = 16 $sound_file = n_sara_sister3
+Sie macht auch immer meine Sachen kaputt. Wie einmal meine Barbie. Der hat sie den Kopf abgerissen.
 
 #! Erzähl mir doch mehr über Leon.
-u: SISTER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 4 $$sound_file = 17 Nie kann ich was alleine spielen. Sie lässt mich nicht in Ruhe.
+u: SISTER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $sisterCounter = 4 $$sound_file = 17 $sound_file = n_sara_sister4
+Nie kann ich was alleine spielen. Sie lässt mich nicht in Ruhe.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

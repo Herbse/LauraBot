@@ -3,7 +3,7 @@ topic: ~cat_t ()
 #t: specific test to  topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = 1 Minka. 
     # age
@@ -29,7 +29,7 @@ u: () ^keep() ^refine()
     
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($catCounter==1) $$sound_file = 10 Ganz ok.
@@ -38,21 +38,21 @@ u: () ^keep() ^refine()
         b: ($catCounter==4) $$sound_file = 10 Ganz ok.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
-    a: (^place()) $$intent=place  $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^place()) $$intent=place  $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($catCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($catCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($catCounter==2) Minka.
         b: ($catCounter==3) Minka.
         b: ($catCounter==4) Minka.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($catCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($catCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($catCounter==2) ^reuse(CAT_3)
-        b: ($catCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($catCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($catCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($catCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
         b: () 

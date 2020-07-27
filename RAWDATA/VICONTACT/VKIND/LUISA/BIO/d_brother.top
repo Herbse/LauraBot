@@ -3,60 +3,67 @@ topic: ~brother_t ()
 #t: specific test to  topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = 1 Clemens und Johannes.
+    a: (^names()) $$intent=names $$sound_file = s_luisa_brother1 
+    Clemens und Johannes.
     # age
-    a: (^age()) $$intent=age $$sound_file = 2 ^reuse(BROTHER_1)
+    a: (^age()) $$intent=age ^reuse(BROTHER_1)
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_luisa_gut 
+    Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = 4 Weiß nicht.
+    a: (^job()) $$intent=job $$sound_file = g_luisa_weißnicht 
+    Weiß nicht.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Das sind meine Brüder.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_luisa_brother2 
+    Das sind meine Brüder.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Denen bin ich egal.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_luisa_brother3
+    Denen bin ich egal.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = 7 In meiner Freizeit und am Wochenende.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_luisa_brother4
+    In meiner Freizeit und am Wochenende.
     # time relationship
     a: (^time()) $$intent=time_relationship 
     # activity together
     a: (^activity_together()) $$intent=activity_together ^reuse(BROTHER_4)
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = 8 ^reuse(BROTHER_2)
+    a: (^activity()) $$intent=activity  ^reuse(BROTHER_2)
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = 9 Zu Hause oder in der Kirche.
+    a: (^places_together()) $$intent=places_together $$sound_file = s_luisa_brother5
+    Zu Hause oder in der Kirche.
     
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($brotherCounter==1) $$sound_file = 10 Ganz ok.
-        b: ($brotherCounter==2) $$sound_file = 10 Ganz ok.
-        b: ($brotherCounter==3) $$sound_file = 10 Ganz ok.
-        b: ($brotherCounter==4) $$sound_file = 10 Ganz ok.
+        b: ($brotherCounter==1) $$sound_file = g_luisa_ganzok Ganz ok.
+        b: ($brotherCounter==2) $$sound_file = g_luisa_ganzok Ganz ok.
+        b: ($brotherCounter==3) $$sound_file = g_luisa_ganzok Ganz ok.
+        b: ($brotherCounter==4) $$sound_file = g_luisa_ganzok Ganz ok.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($brotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==3) Bei uns im Viertel.
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==3) $$sound_file = s_luisa_brother6 Bei uns im Viertel.
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($brotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==3) Mama, meine Brüder und ich.
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==3) $$sound_file = s_luisa_brother7 Mama, meine Brüder und ich.
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($brotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
         b: () 
@@ -74,16 +81,20 @@ u: () ^keep() ^refine()
 
 
 #! Erzähl mal was dein Bruder währenddessen tut. 
-u: BROTHER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 1 $$sound_file = 14  Steve und Dominik sind viel älter als ich.
+u: BROTHER_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 1 $$sound_file = n_luisa_brother1  
+Steve und Dominik sind viel älter als ich.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 2 $$sound_file = 15  Sie arbeiten schon.
+u: BROTHER_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 2 $$sound_file = n_luisa_brother2  
+Sie arbeiten schon.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 3 $$sound_file = 16 Sie gehen gerne mit Mama in die Kirche.
+u: BROTHER_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 3 $$sound_file = n_luisa_brother3
+Sie gehen gerne mit Mama in die Kirche.
 
 #! Erzähl mir doch mehr über Leon.
-u: BROTHER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 4 $$sound_file = 17 Mit mir gehen sie nie raus.
+u: BROTHER_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $brotherCounter = 4 $$sound_file = n_luisa_brother4 
+Mit mir gehen sie nie raus.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

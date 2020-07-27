@@ -4,7 +4,7 @@ topic: ~narrative keep repeat nostay ()
 u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat() 
     a: (~mother) ^respond(~mother_t)
     a: (~father) ^respond(~father_t)
-    a: ([~brother Leon leon]) ^respond(~brother_t)
+    a: ([~brother Leon leon león leòn léon lèon]) ^respond(~brother_t)
     a: ($chatPhase==main [onkel Onkel Dirk dirk]) ^respond(~event_t)
     a: ([~friend mira Mira]) ^respond(~friends_t)
     a: (~hobby) ^respond(~hobbies_t)
@@ -13,14 +13,21 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
     a: (^general_question()) $$intent=intro_question ^refine()
         b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)]
         b: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
-        b: (%topic=~introduction~3) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
-        b: () ^respond(%topic):
+        b: (%topic!=~introduction~3) ^respond(%topic) 
+        b: ($chatPhase==main) [^respond(~event_t)] [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
+        b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
         # hier eventuell die Bedingung einfügen, was passiert wenn nur das Intro aktiv ist.
     a: (^general_prompt()) $$intent=intro_prompt ^refine()
         b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)]
         b: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
-        b: (%topic=~introduction~3) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
-        b: () ^respond(%topic)
+        b: (%topic!=~introduction~3) ^respond(%topic) 
+        b: ($chatPhase==main) [^respond(~event_t)] [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
+        b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
+    a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)]
+    a: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
+    a: (%topic!=~introduction~3) ^respond(%topic) 
+    a: ($chatPhase==main) [^respond(~event_t)] [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
+    a: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
     # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus
     a: () ^respond(%topic)
  

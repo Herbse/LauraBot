@@ -1,70 +1,70 @@
 topic: ~event_t repeat ()
 
 #specific questions/answers depending on general context
-u: ([er kaja kaya]) ^keep() ^refine()
+u: ($$answerCategory==specific [er kaja kaya]) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = event1 Kaya.
+    a: (^names()) $$intent=names $$sound_file = s_sara_event1 Kaya.
     # age
-    a: (^age()) $$intent=age $$sound_file = event2 Der ist sechzehn.
+    a: (^age()) $$intent=age $$sound_file = s_sara_event2 Der ist sechzehn.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = event3 Weiß ich doch nicht.
+    a: (^mood()) $$intent=mood $$sound_file = s_sara_event3 Weiß ich doch nicht.
     # job
-    a: (^job()) $$intent=job $$sound_file = event4 Keine Ahnung.
+    a: (^job()) $$intent=job $$sound_file = g_sara_keineahnung Keine Ahnung.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Er ist mein Cousin oder so.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_sara_event4 Er ist mein Cousin oder so.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Der ist hässlich.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_sara_event5 Der ist hässlich.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = event6 Bei der Hochzeit zum ersten Mal.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_sara_event6 Bei der Hochzeit zum ersten Mal.
     # time relationship
-    a: (^time()) $$intent=time_relationship $$sound_file = event7 Ich hab nur das Foto gesehen.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_sara_event7 Ich hab nur das Foto gesehen.
     # activity together
     a: (^activity_together()) $$intent=activity_together 
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = event9 Keine Ahnung.
+    a: (^activity()) $$intent=activity $$sound_file = g_sara_keineahnung Keine Ahnung.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = event10 
+    a: (^places_together()) $$intent=places_together 
 
-u: ([sie tante selma]) ^keep() ^refine()
+u: ($$answerCategory==specific [sie tante selma]) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = event1 Selma.
+    a: (^names()) $$intent=names $$sound_file = s_sara_event8 Selma.
     # age
-    a: (^age()) $$intent=age $$sound_file = event2 Die ist glaube ich 30 Jahre alt. 
+    a: (^age()) $$intent=age $$sound_file = s_sara_event9 Die ist glaube ich 30 Jahre alt. 
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = event3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_sara_gut Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = event4 Sie arbeitet in einem Büro.
+    a: (^job()) $$intent=job $$sound_file = s_sara_event10 Sie arbeitet in einem Büro.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das ist meine Tante. 
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_sara_event11 Das ist meine Tante. 
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Ich mag sie nicht. 
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_sara_event12 Ich mag sie nicht. 
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = event6 Nach der Schule und am Wochenende.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_sara_event13 Nach der Schule und am Wochenende.
     # time relationship
-    a: (^time()) $$intent=time_relationship $$sound_file = event7 Schon immer.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_sara_event14 Schon immer.
     # activity together
     a: (^activity_together()) $$intent=activity_together 
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = event9 Sie arbeitet in einem Büro.
+    a: (^activity()) $$intent=activity $$sound_file = s_sara_event10 Sie arbeitet in einem Büro.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = event10 Zu Hause.
+    a: (^places_together()) $$intent=places_together $$sound_file = g_sara_zuhause Zu Hause.
 
 
-u: ([familie Familie]) ^keep() ^refine()
+u: ($$answerCategory==specific [familie Familie]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names 
     # age
     a: (^age()) $$intent=age 
     # mood
-    a: (^mood()) $$intent=mood Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_sara_gut Gut.
     # job
     a: (^job()) $$intent=job 
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das ist meine Familie.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_sara_event15 Das ist meine Familie.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Ich liebe meine Familie ganz doll.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_sara_event16 Ich liebe meine Familie ganz doll.
     # time together
-    a: (^time_together()) $$intent=time_together Am Wochenende wenn alle zu Besuch kommen.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_sara_event17 Am Wochenende wenn alle zu Besuch kommen.
     # time relationship
     a: (^time()) $$intent=time_relationship 
     # activity together
@@ -72,67 +72,67 @@ u: ([familie Familie]) ^keep() ^refine()
     # activity
     a: (^activity()) $$intent=activity 
     # places together
-    a: (^places_together()) $$intent=places_together Zu hause.
+    a: (^places_together()) $$intent=places_together $$sound_file = g_sara_zuhause Zu hause.
 
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#a        b: ($eventCounter==1) $$sound_file = event11a Ich weiß nicht.
-#a        b: ($eventCounter==2) $$sound_file = event11a Ich weiß nicht.
-#a        b: ($eventCounter==3) $$sound_file = event11a Ich weiß nicht.
-#a        b: ($eventCounter==4) $$sound_file = event11a Ich weiß nicht.
-#a        b: ($eventCounter==5) $$sound_file = event11a Ich weiß nicht.
-#a        b: ($eventCounter==6) $$sound_file = event11a Ich weiß nicht.
-#a        b: ($eventCounter==7) $$sound_file = event12a Voll eklig.
-#a        b: ($eventCounter==8) $$sound_file = event12a Voll eklig.
-#a        b: ($eventCounter==9) $$sound_file = event12a Voll eklig.
-#a        b: ($eventCounter==10) $$sound_file = event12a Dann hatte ich Angst.
+#a        b: ($eventCounter==1) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#a        b: ($eventCounter==2) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#a        b: ($eventCounter==3) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#a        b: ($eventCounter==4) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#a        b: ($eventCounter==5) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#a        b: ($eventCounter==6) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#a        b: ($eventCounter==7) $$sound_file = g_sara_volleklig Voll eklig.
+#a        b: ($eventCounter==8) $$sound_file = g_sara_volleklig Voll eklig.
+#a        b: ($eventCounter==9) $$sound_file = g_sara_volleklig Voll eklig.
+#a        b: ($eventCounter==10) $$sound_file = s_sara_event18 Dann hatte ich Angst.
 #a    # other_opinion
 #a    a: (^other_opinion()) $$intent=other_opinion ^refine()
 #a        b: ($eventCounter==5) ^reuse(EVENT_6)
 #a        b: ($eventCounter==9) ^reuse(EVENT_10)
-#a        b: () $$answerCategory=ignorance  ^respond(~ignorance)
+#a        b: () $$answerCategory=missing  ^respond(~ignorance)
 #a    # place
 #a    a: (^place()) $$intent=place ^refine()
-#a        b: ($eventCounter==1) Bei uns Zuhause. 
-#a        b: ($clue==1) Bei uns Zuhause. 
-#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==3) Bei uns Zuhause. 
-#a        b: ($eventCounter==4) Bei uns Zuhause. 
-#a        b: ($eventCounter==5) Bei uns Zuhause. 
-#a        b: ($eventCounter==6) Bei uns Zuhause. 
-#a        b: ($eventCounter==7) Bei uns Zuhause. 
+#a        b: ($eventCounter==1) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#a        b: ($clue==1) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#a        b: ($eventCounter==4) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#a        b: ($eventCounter==5) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#a        b: ($eventCounter==6) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#a        b: ($eventCounter==7) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
 #a        b: ($eventCounter==8) ^reuse(EVENT_9)
-#a        b: ($eventCounter==9) Bei uns Zuhause. 
-#a        b: ($eventCounter==10) In meinem Zimmer. 
+#a        b: ($eventCounter==9) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#a        b: ($eventCounter==10) $$sound_file = g_sara_inmeinemzimmer In meinem Zimmer. 
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()
-#a        b: ($clue==1) Tante Selma.
-#a        b: ($eventCounter==1) Tante Selma.
-#a        b: ($eventCounter==2) Tante Selma.
-#a        b: ($eventCounter==3) Tante Selma.
-#a        b: ($eventCounter==4) Tante Selma.
-#a        b: ($eventCounter==5) Tante Selma.
-#a        b: ($eventCounter==6) Tante Selma.
-#a        b: ($eventCounter==7) Tante Selma.
-#a        b: ($eventCounter==8) Tante Selma.
-#a        b: ($eventCounter==9) Tante Selma.
-#a        b: ($eventCounter==10) Tante Selma.
+#a        b: ($clue==1) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==1) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==2) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==3) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==4) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==5) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==6) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==7) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==8) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==9) $$sound_file = s_sara_event19 Tante Selma.
+#a        b: ($eventCounter==10) $$sound_file = s_sara_event19 Tante Selma.
 #a    # reason
 #a    a: (^reason()) $$intent=reason ^refine()
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==1) ^reuse(EVENT_2)
 #a        b: ($eventCounter==2) ^reuse(EVENT_3)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==5) ^reuse(EVENT_6)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==9) ^reuse(EVENT_9)
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # example
 #a    a: (^example()) $$intent=example ^refine()
 #a        b: () $$nextAnswer = yes
@@ -154,63 +154,63 @@ u: ([familie Familie]) ^keep() ^refine()
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#b        b: ($eventCounter==1) $$sound_file = event11b Ich weiß nicht.
-#b        b: ($eventCounter==2) $$sound_file = event11b Ich weiß nicht.
-#b        b: ($eventCounter==3) $$sound_file = event11b Ich weiß nicht.
-#b        b: ($eventCounter==4) $$sound_file = event11b Ich weiß nicht.
-#b        b: ($eventCounter==5) $$sound_file = event11b Ich weiß nicht.
-#b        b: ($eventCounter==6) $$sound_file = event11b Ich weiß nicht.
-#b        b: ($eventCounter==7) $$sound_file = event12b Ich will das nicht.
-#b        b: ($eventCounter==8) $$sound_file = event12b Ich will das nicht.
-#b        b: ($eventCounter==9) $$sound_file = event12b Ich will das nicht.
-#b        b: ($eventCounter==10) $$sound_file = event12b Ich will das nicht.
+#b        b: ($eventCounter==1) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#b        b: ($eventCounter==2) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#b        b: ($eventCounter==3) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#b        b: ($eventCounter==4) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#b        b: ($eventCounter==5) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#b        b: ($eventCounter==6) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#b        b: ($eventCounter==7) $$sound_file = g_sara_ichwilldasnicht Ich will das nicht.
+#b        b: ($eventCounter==8) $$sound_file = g_sara_ichwilldasnicht Ich will das nicht.
+#b        b: ($eventCounter==9) $$sound_file = g_sara_ichwilldasnicht Ich will das nicht.
+#b        b: ($eventCounter==10) $$sound_file = g_sara_ichwilldasnicht Ich will das nicht.
 #b    # other_opinion
 #b    a: (^other_opinion()) $$intent=other_opinion ^refine()
 #b        b: ($eventCounter==5) ^reuse(EVENT_6)
 #b        b: ($eventCounter==9) ^reuse(EVENT_10)
-#b        b: () $$answerCategory=ignorance  ^respond(~ignorance)
+#b        b: () $$answerCategory=missing  ^respond(~ignorance)
 #b    # place
 #b    a: (^place()) $$intent=place ^refine()
-#b        b: ($eventCounter==1) Bei uns Zuhause. 
-#b        b: ($clue==1) Bei uns Zuhause. 
-#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==3) Bei uns Zuhause. 
-#b        b: ($eventCounter==4) Bei uns Zuhause. 
-#b        b: ($eventCounter==5) Bei uns Zuhause. 
-#b        b: ($eventCounter==6) Bei uns Zuhause.
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#b        b: ($clue==1) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#b        b: ($eventCounter==4) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#b        b: ($eventCounter==5) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#b        b: ($eventCounter==6) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause.
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # individual
 #b    a: (^individual()) $$intent=individual ^refine()
-#b        b: ($clue==1) Tante Selma.
-#b        b: ($eventCounter==1) Tante Selma.
-#b        b: ($eventCounter==2) Tante Selma.
-#b        b: ($eventCounter==3) Tante Selma.
-#b        b: ($eventCounter==4) Tante Selma.
-#b        b: ($eventCounter==5) Tante Selma.
-#b        b: ($eventCounter==6) Tante Selma.
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==8) Tante Selma.
-#b        b: ($eventCounter==9) Tante Selma.
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==1) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==2) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==3) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==4) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==5) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==6) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==9) $$sound_file = s_sara_event19 Tante Selma.
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # reason
 #b    a: (^reason()) $$intent=reason ^refine()
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==1) ^reuse(EVENT_2)
 #b        b: ($eventCounter==2) ^reuse(EVENT_3)
-#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==5) ^reuse(EVENT_6)
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==7) Weil das meine Familie will.
-#b        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$sound_file = s_sara_event20 Weil das meine Familie will.
+#b        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # example
 #b    a: (^example()) $$intent=example ^refine()
 #b        b: () $$nextAnswer = yes
@@ -232,62 +232,62 @@ u: ([familie Familie]) ^keep() ^refine()
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#c        b: ($eventCounter==1) $$sound_file = event11c Ich weiß nicht.
-#c        b: ($eventCounter==2) $$sound_file = event11c Ich weiß nicht.
-#c        b: ($eventCounter==3) $$sound_file = event11c Ich weiß nicht.
-#c        b: ($eventCounter==4) $$sound_file = event11c Ich weiß nicht.
-#c        b: ($eventCounter==5) $$sound_file = event11c Ich weiß nicht.
-#c        b: ($eventCounter==6) $$sound_file = event11c Ich weiß nicht.
-#c        b: ($eventCounter==7) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==8) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==9) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==10) $$sound_file = event11c Voll doof.
+#c        b: ($eventCounter==1) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#c        b: ($eventCounter==2) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#c        b: ($eventCounter==3) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#c        b: ($eventCounter==4) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#c        b: ($eventCounter==5) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#c        b: ($eventCounter==6) $$sound_file = g_sara_ichweißnicht Ich weiß nicht.
+#c        b: ($eventCounter==7) $$sound_file = g_sara_volldoof Voll doof.
+#c        b: ($eventCounter==8) $$sound_file = g_sara_volldoof Voll doof.
+#c        b: ($eventCounter==9) $$sound_file = g_sara_volldoof Voll doof.
+#c        b: ($eventCounter==10) $$sound_file = g_sara_volldoof Voll doof.
 #c    # other_opinion
 #c    a: (^other_opinion()) $$intent=other_opinion ^refine()
 #c        b: ($eventCounter==5) ^reuse(EVENT_6)
-#c        b: () $$answerCategory=ignorance  ^respond(~ignorance)
+#c        b: () $$answerCategory=missing  ^respond(~ignorance)
 #c    # place
 #c    a: (^place()) $$intent=place ^refine()
-#c        b: ($eventCounter==1) Bei uns Zuhause. 
-#c        b: ($clue==1) Bei uns Zuhause. 
-#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==3) Bei uns Zuhause. 
-#c        b: ($eventCounter==4) Bei uns Zuhause. 
-#c        b: ($eventCounter==5) Bei uns Zuhause. 
-#c        b: ($eventCounter==6) Bei uns Zuhause.
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) In meinem Zimmer.
+#c        b: ($eventCounter==1) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#c        b: ($clue==1) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#c        b: ($eventCounter==4) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#c        b: ($eventCounter==5) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause. 
+#c        b: ($eventCounter==6) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause.
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$sound_file = g_sara_inmeinemzimmer In meinem Zimmer.
 #c    # individual
 #c    a: (^individual()) $$intent=individual ^refine()
-#c        b: ($clue==1) Tante Selma.
-#c        b: ($eventCounter==1) Tante Selma.
-#c        b: ($eventCounter==2) Tante Selma.
-#c        b: ($eventCounter==3) Tante Selma.
-#c        b: ($eventCounter==4) Tante Selma.
-#c        b: ($eventCounter==5) Tante Selma.
-#c        b: ($eventCounter==6) Tante Selma.
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) Tante Selma.
-#c        b: ($eventCounter==9) Tante Selma.
-#c        b: ($eventCounter==10) Tante Selma.
+#c        b: ($clue==1) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==1) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==2) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==3) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==4) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==5) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==6) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==9) $$sound_file = s_sara_event19 Tante Selma.
+#c        b: ($eventCounter==10) $$sound_file = s_sara_event19 Tante Selma.
 #c    # reason
 #c    a: (^reason()) $$intent=reason ^refine()
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==1) ^reuse(EVENT_2)
 #c        b: ($eventCounter==2) ^reuse(EVENT_3)
-#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==5) ^reuse(EVENT_6)
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==7) ^reuse(EVENT_8)
 #c        b: ($eventCounter==8) ^reuse(EVENT_9)
 #c        b: ($eventCounter==9) ^reuse(EVENT_10)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # example
 #c    a: (^example()) $$intent=example ^refine()
 #c        b: () $$nextAnswer = yes
@@ -316,67 +316,73 @@ u: ([familie Familie]) ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mir von deinem Onkel 
-u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0 $$sound_file = event16   Meine Tante ist sehr oft bei uns.
+u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0 $$sound_file = n_sara_event1  
+Meine Tante ist sehr oft bei uns.
     
 
 
 
 #---------------------------------------------------------------------------------------------
 #! Erzähl mir mal von deinem Onkel
-u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0 $$sound_file = event17 Sie ist Mamas Schwester. Die beiden machen alles zusammen.
+u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0 $$sound_file = n_sara_event2 
+Sie ist Mamas Schwester. Die beiden machen alles zusammen.
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?
-u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 3 $clue = 0 $$sound_file = event18 Tante Selma wohnt bei uns um die Ecke und besucht uns ganz oft.
+u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 3 $clue = 0 $$sound_file = n_sara_event3 
+Tante Selma wohnt bei uns um die Ecke und besucht uns ganz oft.
     
 #---------------------------------------------------------------------------------------------    
 
 #! Warum willst du denn nicht, dass er in dein Zimmer kommt?
 #! Und was macht
-u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 4 $clue = 0 $$sound_file = event19 Sie umarmt mich immer ganz doll.
+u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 4 $clue = 0 $$sound_file = n_sara_event4  
+Sie umarmt mich immer ganz doll.
     
 #---------------------------------------------------------------------------------------------
 
 #! Was hat dein Onkel denn gemacht?
-u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 5 $clue = 0 $$sound_file = event20 Wenn ich sie wegdrücke, hält sie mich noch mehr fest.  
+u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 5 $clue = 0 $$sound_file = n_sara_event5 
+Wenn ich sie wegdrücke, hält sie mich noch mehr fest.  
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 6 $clue = 0 $$sound_file = event21 Mein Papa sagt immer, sie macht das, weil sie mich sehr lieb hat.
+u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 6 $clue = 0 $$$sound_file = n_sara_event6 
+Mein Papa sagt immer, sie macht das, weil sie mich sehr lieb hat.
 
 #---------------------------------------------------------------------------------------------
 # Ab hier sind die Ereignisse zum A: sexuellen Übergriff, B: nicht-sexuellen Übergriff, C: andere Belastung
 #---------------------------------------------------------------------------------------------
 
 #! Erzähl noch mehr.
-#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22a Meine Tante hat mich mal auf den Mund geküsst und dann hat sie einfach die Zunge in meinen Mund gesteckt.
-#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22b Mama sagt, dass ich heiraten soll und Tante Selma schon einen Mann ausgesucht hat. Nächste Woche fahren wir zu ihm. In die Türkei!
-#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22c Meine Mama ist ganz traurig, weil meine Tante weggeht.
+#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_sara_event7a Meine Tante hat mich mal auf den Mund geküsst und dann hat sie einfach die Zunge in meinen Mund gesteckt.
+#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_sara_event7b Mama sagt, dass ich heiraten soll und Tante Selma schon einen Mann ausgesucht hat. Nächste Woche fahren wir zu ihm. In die Türkei!
+#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_sara_event7c Meine Mama ist ganz traurig, weil meine Tante weggeht.
 
 #---------------------------------------------------------------------------------------------
 
 #! wie ist das passiert?
-#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event23a Sie hat die Tür zugemacht und wollte, dass ich mich auf ihren Schoß setze.
-#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event24b Auf dem Geburtstag von Amina hat sie von ihm erzählt. Der heißt Kaya.   
-#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event25c Als sie uns das erzählt hat, hat Mama ganz doll geweint.
+#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_sara_event8a Sie hat die Tür zugemacht und wollte, dass ich mich auf ihren Schoß setze.
+#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_sara_event8b Auf dem Geburtstag von Amina hat sie von ihm erzählt. Der heißt Kaya.   
+#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_sara_event8c Als sie uns das erzählt hat, hat Mama ganz doll geweint.
 
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Das war in meinem Zimmer. Tante Selma saß auf meinem Bett.
-#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Sie hat mir auch ein Foto von ihm gezeigt. Der ist voll hässlich.
-#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Sie wird wegen der Arbeit wegziehen. Nach Hamburg. Das ist schon weit weg.
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_sara_event9a Das war in meinem Zimmer. Tante Selma saß auf meinem Bett.
+#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_sara_event9b Sie hat mir auch ein Foto von ihm gezeigt. Der ist voll hässlich.
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_sara_event9c Sie wird wegen der Arbeit wegziehen. Nach Hamburg. Das ist schon weit weg.
 
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?
-#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Ich wollte nach Papa rufen, aber sie hat mir den Mund zugehalten. 
-#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Mama sagt, sie hat sich Papa auch nicht selbst ausgesucht.
-#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Tante Selma will auch gar nicht weggehen. Das hat sie aber nur mir gesagt!
+#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_sara_event10a Ich wollte nach Papa rufen, aber sie hat mir den Mund zugehalten. 
+#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_sara_event10b Mama sagt, sie hat sich Papa auch nicht selbst ausgesucht.
+#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_sara_event10c Tante Selma will auch gar nicht weggehen. Das hat sie aber nur mir gesagt!
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()
 
 # Clue 2
-u: CLUE2 ()  Tante Selma will immer, dass ich sie umarme, wenn sie bei uns ist.
+u: CLUE2 ()  $$sound_file = clue_sara Tante Selma will immer, dass ich sie umarme, wenn sie bei uns ist.

@@ -2,62 +2,72 @@ topic: ~therapy_t ()
 # Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = 1 Claudia.
+    a: (^names()) $$intent=names $$sound_file = s_jason_therapy1 
+    Claudia.
     # age
-    a: (^age()) $$intent=age $$sound_file = 2 Weiß ich nicht.
+    a: (^age()) $$intent=age $$sound_file = g_jason_weißichnicht
+    Weiß ich nicht.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_jason_gut
+    Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = 4 In einer Praxis.
+    a: (^job()) $$intent=job $$sound_file = s_jason_therapy2
+    In einer Praxis.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Die macht unsere Gruppe.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_jason_therapy3 
+    Die macht unsere Gruppe.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Die ist voll witzig.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_jason_therapy4 
+    Die ist voll witzig.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = 7 Bei der Gruppe
+    a: (^time_together()) $$intent=time_together $$sound_file = g_jason_beidergruppe 
+    Bei der Gruppe
     # time relationship
-    a: (^time()) $$intent=time_relationship Seit ich zur Gruppe gehe.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_jason_therapy5
+    Seit ich zur Gruppe gehe.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^reuse(THERAPY_1)
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = 8 Die macht unsere Gruppe.
+    a: (^activity()) $$intent=activity $$sound_file = s_jason_therapy3 
+    Die macht unsere Gruppe.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = 9 Bei der Gruppe
+    a: (^places_together()) $$intent=places_together $$sound_file = g_jason_beidergruppe 
+    Bei der Gruppe
     
 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($therapyCounter==1) Ganz ok.
-        b: ($therapyCounter==2) Ganz ok.
-        b: ($therapyCounter==3) Ganz ok.
-        b: ($therapyCounter==4) Ganz ok.
+        b: ($therapyCounter==1) $$sound_file = g_jason_ganzok Ganz ok.
+        b: ($therapyCounter==2) $$sound_file = g_jason_ganzok Ganz ok.
+        b: ($therapyCounter==3) $$sound_file = g_jason_ganzok Ganz ok.
+        b: ($therapyCounter==4) $$sound_file = g_jason_ganzok Ganz ok.
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion 
-        b: () $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($therapyCounter==1) Bei der Gruppe.
-        b: ($therapyCounter==2) Bei der Gruppe.
-        b: ($therapyCounter==3) Bei der Gruppe.
-        b: ($therapyCounter==4) Bei der Gruppe.
+        b: ($therapyCounter==1) $$sound_file = g_jason_beidergruppe Bei der Gruppe.
+        b: ($therapyCounter==2) $$sound_file = g_jason_beidergruppe Bei der Gruppe.
+        b: ($therapyCounter==3) $$sound_file = g_jason_beidergruppe Bei der Gruppe.
+        b: ($therapyCounter==4) $$sound_file = g_jason_beidergruppe Bei der Gruppe.
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($therapyCounter==1) ^reuse(THERAPY_2)
-        b: ($therapyCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($therapyCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($therapyCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($therapyCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
@@ -74,19 +84,23 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: THERAPY_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 1 Bei der Gruppe spielen wir oft Memory oder Puzzeln zusammen. Manchmal basteln wir auch was mit der Schere.
+u: THERAPY_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 1 $$sound_file = n_jason_therapy1
+Bei der Gruppe spielen wir oft Memory oder Puzzeln zusammen. Manchmal basteln wir auch was mit der Schere.
   
 
 #! 
-u: THERAPY_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 2 Es sind noch fünf andere Kinder in der Gruppe. Drei Jungs und zwei Mädchen.
+u: THERAPY_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 2 $$sound_file = n_jason_therapy2
+Es sind noch fünf andere Kinder in der Gruppe. Drei Jungs und zwei Mädchen.
 
 
 #! 
-u: THERAPY_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 3 Aber Mädchen find ich doof. Deshalb spiele ich nicht mit denen.
+u: THERAPY_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 3 $$sound_file = n_jason_therapy3
+Aber Mädchen find ich doof. Deshalb spiele ich nicht mit denen.
 
 
 #! 
-u: THERAPY_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 4 Claudia ist die Therapeutin. Die ist voll witzig.
+u: THERAPY_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $therapyCounter = 4 $$sound_file = n_jason_therapy4
+Claudia ist die Therapeutin. Die ist voll witzig.
 
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.

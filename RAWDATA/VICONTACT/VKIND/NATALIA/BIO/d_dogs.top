@@ -2,21 +2,27 @@ topic: ~dogs_t ()
 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names Lola und Bella.
+    a: (^names()) $$intent=names $$sound_file = s_natalia_dogs1
+    Lola und Bella.
     # age
-    a: (^age()) $$intent=age Weiß nicht. 
+    a: (^age()) $$intent=age $$sound_file = g_natalia_weißnicht
+    Weiß nicht. 
     # mood
-    a: (^mood()) $$intent=mood Die sind immer krank.
+    a: (^mood()) $$intent=mood $$sound_file = s_natalia_dogs2
+    Die sind immer krank.
     # job
     a: (^job()) $$intent=job 
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das sind unsere Hunde.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_natalia_dogs3
+    Das sind unsere Hunde.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Die nerven mich manchmal.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_natalia_dogs4
+    Die nerven mich manchmal.
     # time together
-    a: (^time_together()) $$intent=time_together Nach der Schule und am Wochenende. 
+    a: (^time_together()) $$intent=time_together $$sound_file = s_natalia_dogs5
+    Nach der Schule und am Wochenende. 
     # time relationship
     a: (^time()) $$intent=time_relationship ^reuse(DOGS_2)
     # activity together
@@ -26,36 +32,37 @@ u: () ^keep() ^refine()
     # activity
     a: (^activity()) $$intent=activity 
     # places together
-    a: (^places_together()) $$intent=places_together Zu Hause oder wir sind beim Tierarzt. 
+    a: (^places_together()) $$intent=places_together $$sound_file = s_natalia_dogs6
+    Zu Hause oder wir sind beim Tierarzt. 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($dogsCounter==1) ^reuse(DOGS_3)
         b: ($dogsCounter==2) ^reuse(DOGS_4)
-        b: ($dogsCounter==3) Voll cool.
-        b: ($dogsCounter==4) Voll doof.
+        b: ($dogsCounter==3) $$sound_file = g_natalia_vollcool Voll cool.
+        b: ($dogsCounter==4) $$sound_file = g_natalia_volldoof Voll doof.
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($dogsCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($dogsCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($dogsCounter==3) In der Nachbarschaft.
-        b: ($dogsCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($dogsCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($dogsCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($dogsCounter==3) $$sound_file = s_natalia_dogs7 In der Nachbarschaft.
+        b: ($dogsCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($dogsCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($dogsCounter==2) Mama und ich. 
-        b: ($dogsCounter==3) Ich alleine oder mit Charlotte. 
-        b: ($dogsCounter==4) Mama und ich. 
+        b: ($dogsCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($dogsCounter==2) $$sound_file = s_natalia_dogs8 Mama und ich. 
+        b: ($dogsCounter==3) $$sound_file = s_natalia_dogs9 Ich alleine oder mit Charlotte. 
+        b: ($dogsCounter==4) $$sound_file = s_natalia_dogs8 Mama und ich. 
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($dogsCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($dogsCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($dogsCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($dogsCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($dogsCounter==3) ^reuse(DOGS_4)
-        b: ($dogsCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($dogsCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
@@ -70,18 +77,22 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: DOGS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 1 Meine Hunde heißen Bella und Lola. Bella ist ein Chihuahua und Lola ein Beagle.
+u: DOGS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 1 $$sound_file = n_natalia_dogs1
+Meine Hunde heißen Bella und Lola. Bella ist ein Chihuahua und Lola ein Beagle.
  
 
 #! Erzähl mal wie er ihr hilft?
-u: DOGS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 2 Wir haben sie vor drei Jahren aus dem Tierheim geholt.
+u: DOGS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 2 $$sound_file = n_natalia_dogs2
+Wir haben sie vor drei Jahren aus dem Tierheim geholt.
 
 #! Erzähl mir mehr über deinen PAPA!
-u: DOGS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 3 Ich muss immer mit ihnen Gassi gehen. Manchmal nervt das voll.
+u: DOGS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 3 $$sound_file = n_natalia_dogs3
+Ich muss immer mit ihnen Gassi gehen. Manchmal nervt das voll.
  
 #! Was machst du denn gern mit deinem PAPA?
 
-u: DOGS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 4 Bella ist immer krank und dann müssen wir sie zum Tierarzt bringen. Das ist so teuer.
+u: DOGS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 4 $$sound_file = n_natalia_dogs4
+Bella ist immer krank und dann müssen wir sie zum Tierarzt bringen. Das ist so teuer.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
 u: () ^emptyTopic()

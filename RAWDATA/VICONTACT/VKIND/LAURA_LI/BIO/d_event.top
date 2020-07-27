@@ -1,7 +1,7 @@
 topic: ~event_t repeat  ()
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = event1 Dirk
     # age
@@ -31,7 +31,7 @@ u: () ^keep() ^refine()
 
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #a        b: ($eventCounter==1) $$sound_file = event11a Voll doof.
@@ -45,24 +45,24 @@ u: () ^keep() ^refine()
 #a        b: ($eventCounter==9) $$sound_file = event12a Total eklig.
 #a        b: ($eventCounter==10) $$sound_file = event12a Total eklig.
 #a    # other_opinion
-#a    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance  ^respond(~ignorance)
+#a    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing  ^respond(~ignorance)
 #a    # place
 #a    a: (^place()) $$intent=place ^refine()
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==1) $$sound_file = event13a Im Wohnzimmer
-#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==7) $$nextAnswer = yes
 #a        b: ($eventCounter==8) $$sound_file = event14a In der Umkleide beim Schwimmen.
 #a        b: ($eventCounter==9) $$sound_file = event14a In der Umkleide beim Schwimmen.
 #a        b: ($eventCounter==10) $$sound_file = event14a In der Umkleide beim Schwimmen.
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()
-#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==3) $$sound_file = event15a Mein Onkel.
 #a        b: ($eventCounter==4) $$sound_file = event15a Mein Onkel.
 #a        b: ($eventCounter==5) $$sound_file = event15a Mein Onkel.
@@ -70,23 +70,23 @@ u: () ^keep() ^refine()
 #a        b: ($eventCounter==7) $$sound_file = event15a Mein Onkel.
 #a        b: ($eventCounter==8) $$sound_file = event15a Mein Onkel.
 #a        b: ($eventCounter==9) $$sound_file = event15a Mein Onkel.
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # reason
 #a    a: (^reason()) $$intent=reason ^refine()
 #a        b: ($clue==1) $$nextAnswer = yes
-#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==3) $$nextAnswer = yes
-#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==5) $$nextAnswer = yes
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # example
 #a    a: (^example()) $$intent=example ^refine()
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a        b: () $$nextAnswer = yes
 #a    # explanation
 #a    a: (^explanation()) $$intent=explanation ^refine()
@@ -99,15 +99,15 @@ u: () ^keep() ^refine()
 #a        b: ($eventCounter==7) $$sound_file = event16a Sein Penis.
 #a        b: ($eventCounter==8) $$nextAnswer = yes
 #a        b: ($eventCounter==9) $$nextAnswer = yes
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # follow-up
 #a    a: (^follow_up()) $$intent=follow_up ^refine()
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a        b: () $$nextAnswer = yes
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #b        b: ($eventCounter==1) $$sound_file = event11b Voll doof.
@@ -121,48 +121,48 @@ u: () ^keep() ^refine()
 #b        b: ($eventCounter==9) $$sound_file = event12b Das ist so gemein!
 #b        b: ($eventCounter==10) $$sound_file = event12b Das ist so gemein!
 #b    # other_opinion
-#b    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+#b    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
 #b    # place
 #b    a: (^place()) $$intent=place ^refine()
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==1) $$sound_file = event13b Im Wohnzimmer
-#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==7) $$sound_file = event10 Zu Hause.
 #b        b: ($eventCounter==8) $$sound_file = event10 Zu Hause.
 #b        b: ($eventCounter==9) $$sound_file = event10 Zu Hause.
 #b        b: ($eventCounter==10) $$sound_file = event10 Zu Hause.
 #b    # individual
 #b    a: (^individual()) $$intent=individual ^refine()
-#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==3) $$sound_file = event13b Mein Onkel.
 #b        b: ($eventCounter==4) $$sound_file = event13b Mein Onkel.
 #b        b: ($eventCounter==5) $$sound_file = event13b Mein Onkel.
 #b        b: ($eventCounter==6) $$sound_file = event13b Mein Onkel.
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # reason
 #b    a: (^reason()) $$intent=reason ^refine()
 #b        b: ($clue==1) $$nextAnswer = yes
-#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==3) $$nextAnswer = yes
-#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==5) $$nextAnswer = yes
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==8) ^reuse(EVENT_9)
 #b        b: ($eventCounter==9) ^reuse(EVENT_10)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # example
 #b    a: (^example()) $$intent=example ^refine()
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b        b: () $$nextAnswer = yes
 #b    # explanation
 #b    a: (^explanation()) $$intent=explanation ^refine()
@@ -175,15 +175,15 @@ u: () ^keep() ^refine()
 #b        b: ($eventCounter==7) $$nextAnswer = yes
 #b        b: ($eventCounter==8) $$nextAnswer = yes
 #b        b: ($eventCounter==9) $$nextAnswer = yes
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # follow-up
 #b    a: (^follow_up()) $$intent=follow_up ^refine()
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b        b: () $$nextAnswer = yes
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #c        b: ($eventCounter==1) $$sound_file = event11c Voll doof.
@@ -192,53 +192,53 @@ u: () ^keep() ^refine()
 #c        b: ($eventCounter==4) $$sound_file = event11c Voll doof.
 #c        b: ($eventCounter==5) $$sound_file = event11c Voll doof.
 #c        b: ($eventCounter==6) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # other_opinion
-#c    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+#c    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
 #c    # place
 #c    a: (^place()) $$intent=place ^refine()
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==1) $$sound_file = event12c Im Wohnzimmer
-#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==7) $$sound_file = event13c In Mamas Zimmer.
-#c        b: ($eventCounter==8) $sound_file = event13c In Mamas Zimmer.
-#c        b: ($eventCounter==9) $sound_file = event13c In Mamas Zimmer.
-#c        b: ($eventCounter==10) $sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==8)$$sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==9)$$sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==10)$$sound_file = event13c In Mamas Zimmer.
 #c    # individual
 #c    a: (^individual()) $$intent=individual ^refine()
-#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==3) $sound_file = event14c Mein Onkel.
-#c        b: ($eventCounter==4) $sound_file = event14c Mein Onkel.
-#c        b: ($eventCounter==5) $sound_file = event14c Mein Onkel.
-#c        b: ($eventCounter==6) $sound_file = event14c Mein Onkel.
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==4)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==5)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==6)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # reason
 #c    a: (^reason()) $$intent=reason ^refine()
 #c        b: ($clue==1) $$nextAnswer = yes
-#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==3) $$nextAnswer = yes
-#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==5) $$nextAnswer = yes
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # example
 #c    a: (^example()) $$intent=example ^refine()
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c        b: () $$nextAnswer = yes
 #c    # explanation
 #c    a: (^explanation()) $$intent=example ^refine()
@@ -251,10 +251,10 @@ u: () ^keep() ^refine()
 #c        b: ($eventCounter==7) $$nextAnswer = yes
 #c        b: ($eventCounter==8) $$nextAnswer = yes
 #c        b: ($eventCounter==9) $$nextAnswer = yes
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # follow-up
 #c    a: (^follow_up()) $$intent=follow_up ^refine()
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c        b: () $$nextAnswer = yes
 #c    # log questions that were not catched by macros
 #c    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)

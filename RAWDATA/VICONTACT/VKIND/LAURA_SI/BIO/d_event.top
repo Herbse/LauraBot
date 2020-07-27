@@ -208,15 +208,15 @@ u: () ^keep() ^refine()
 #c        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
 #c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
 #c        b: ($eventCounter==7) $$sound_file = event13c In Mamas Zimmer.
-#c        b: ($eventCounter==8) $sound_file = event13c In Mamas Zimmer.
-#c        b: ($eventCounter==9) $sound_file = event13c In Mamas Zimmer.
-#c        b: ($eventCounter==10) $sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==8)$$sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==9)$$sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==10)$$sound_file = event13c In Mamas Zimmer.
 #c    # individual
 #c    a: (^individual()) $$intent=individual ^refine()
 #c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
 #c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==3) $sound_file = event14c Mein Onkel.
-#c        b: ($eventCounter==4) $sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==3)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==4)$$sound_file = event14c Mein Onkel.
 #c        b: ($eventCounter==5) sound_file = event14c Mein Onkel.
 #c        b: ($eventCounter==6) sound_file = event14c Mein Onkel.
 #c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)

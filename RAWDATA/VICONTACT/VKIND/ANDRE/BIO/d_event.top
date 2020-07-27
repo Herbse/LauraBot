@@ -1,135 +1,165 @@
 topic: ~event_t repeat ()
 
 #specific questions/answers depending on general context
-u: ([geschwister die sind_sie haben_sie]) ^keep() ^refine()
+u: ($$answerCategory==specific [geschwister die sind_sie haben_sie]) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = event1 Carla und David.
+    a: (^names()) $$intent=names $$sound_file = s_andre_event1 
+    Carla und David.
     # age
-    a: (^age()) $$intent=age $$sound_file = event2 Carla ist zwölf und der David ist siebzehn.
+    a: (^age()) $$intent=age $$sound_file = s_andre_event2 
+    Carla ist zwölf und der David ist siebzehn.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = event3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_andre_gut
+    Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = event4 Die gehen auch in die Schule.
+    a: (^job()) $$intent=job $$sound_file = s_andre_event4 
+    Die gehen auch in die Schule.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das sind meine Geschwister.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_andre_event5 
+    Das sind meine Geschwister.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Ich mag die nicht.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_andre_event6 
+    Ich mag die nicht.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = event6 Weiß nicht. Abends zum Beispiel.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_andre_event7 
+    Weiß nicht. Abends zum Beispiel.
     # time relationship
-    a: (^time()) $$intent=time_relationship $$sound_file = event7 Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_andre_event8 
+    Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
     # activity together
     a: (^activity_together()) $$intent=activity_together 
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = event9 Die gehen auch in die Schule.
+    a: (^activity()) $$intent=activity $$sound_file = s_andre_event4 
+    Die gehen auch in die Schule.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = event10 Zu Hause.
+    a: (^places_together()) $$intent=places_together $$sound_file = g_andre_zuhause 
+    Zu Hause.
 
-u: ([bruder david er]) ^keep() ^refine()
+u: ($$answerCategory==specific [bruder david er]) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = event1 David.
+    a: (^names()) $$intent=names $$sound_file = s_andre_event10 
+    David.
     # age
-    a: (^age()) $$intent=age $$sound_file = event2 Der David ist siebzehn.
+    a: (^age()) $$intent=age $$sound_file = s_andre_event11 
+    Der David ist siebzehn.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = event3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_andre_gut
+    Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = event4 Der geht auch in die Schule.
+    a: (^job()) $$intent=job $$sound_file = s_andre_event12 
+    Der geht auch in die Schule.
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das ist mein Bruder.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_andre_event13 
+    Das ist mein Bruder.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Der ist voll doof.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_andre_event14 
+    Der ist voll doof.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = event6 Weiß nicht. Abends zum Beispiel.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_andre_event7 
+    Weiß nicht. Abends zum Beispiel.
     # time relationship
-    a: (^time()) $$intent=time_relationship $$sound_file = event7 Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_andre_event8 
+    Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
     # activity together
     a: (^activity_together()) $$intent=activity_together 
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = event9 Der geht auch in die Schule.
+    a: (^activity()) $$intent=activity $$sound_file = s_andre_event12 
+    Der geht auch in die Schule.
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = event10 Zu Hause.
+    a: (^places_together()) $$intent=places_together $$sound_file = g_andre_zuhause
+    Zu Hause.
 
-u: ([schwester carla karla sie]) ^keep() ^refine()
+u: ($$answerCategory==specific [schwester carla karla sie]) ^keep() ^refine()
     # name
-    a: (^names()) $$intent=names $$sound_file = event1 Carla
+    a: (^names()) $$intent=names $$sound_file = s_andre_event15 
+    Carla
     # age
-    a: (^age()) $$intent=age $$sound_file = event2 Die ist zwei jahre älter als ich.
+    a: (^age()) $$intent=age $$sound_file = s_andre_event16 
+    Die ist zwei jahre älter als ich.
     # mood
-    a: (^mood()) $$intent=mood $$sound_file = event3 Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_andre_gut 
+    Gut.
     # job
-    a: (^job()) $$intent=job $$sound_file = event4 Die geht auch in die Schule
+    a: (^job()) $$intent=job $$sound_file = s_andre_event17 
+    Die geht auch in die Schule
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Meine Schwester
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_andre_event18 
+    Meine Schwester
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Ich mag die nicht.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_andre_event19 
+    Ich mag die nicht.
     # time together
-    a: (^time_together()) $$intent=time_together $$sound_file = event6 Weiß nicht. Abends zum Beispiel.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_andre_event7 
+    Weiß nicht. Abends zum Beispiel.
     # time relationship
-    a: (^time()) $$intent=time_relationship $$sound_file = event7 Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
+    a: (^time()) $$intent=time_relationship $$sound_file = s_andre_event8 
+    Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
     # activity together
     a: (^activity_together()) $$intent=activity_together ^reuse(EVENT_1)
     # activity
-    a: (^activity()) $$intent=activity $$sound_file = event9 Die geht auch in die Schule
+    a: (^activity()) $$intent=activity $$sound_file = s_andre_event17 
+    Die geht auch in die Schule
     # places together
-    a: (^places_together()) $$intent=places_together $$sound_file = event10 Zu Hause.
+    a: (^places_together()) $$intent=places_together $$sound_file = g_andre_zuhause 
+    Zu Hause.
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#a        b: ($eventCounter==1) $$sound_file = event11a Voll doof.
-#a        b: ($eventCounter==2) $$sound_file = event11a Voll doof.
-#a        b: ($eventCounter==3) $$sound_file = event11a Voll doof.
-#a        b: ($eventCounter==4) $$sound_file = event11a Voll doof.
-#a        b: ($eventCounter==5) $$sound_file = event11a Voll doof.
-#a        b: ($eventCounter==6) $$sound_file = event11a Voll doof.
-#a        b: ($eventCounter==7) $$sound_file = event12a So komisch.
-#a        b: ($eventCounter==8) $$sound_file = event12a So komisch.
-#a        b: ($eventCounter==9) $$sound_file = event12a So komisch.
-#a        b: ($eventCounter==10) $$sound_file = event12a So komisch.
+#a        b: ($eventCounter==1) $$sound_file = g_andre_volldoof Voll doof.
+#a        b: ($eventCounter==2) $$sound_file = g_andre_volldoof  Voll doof.
+#a        b: ($eventCounter==3) $$sound_file = g_andre_volldoof  Voll doof.
+#a        b: ($eventCounter==4) $$sound_file = g_andre_volldoof  Voll doof.
+#a        b: ($eventCounter==5) $$sound_file = g_andre_volldoof  Voll doof.
+#a        b: ($eventCounter==6) $$sound_file = g_andre_volldoof  Voll doof.
+#a        b: ($eventCounter==7) $$sound_file = g_andre_sokomisch So komisch.
+#a        b: ($eventCounter==8) $$sound_file = g_andre_sokomisch So komisch.
+#a        b: ($eventCounter==9) $$sound_file = g_andre_sokomisch So komisch.
+#a        b: ($eventCounter==10) $$sound_file = g_andre_sokomisch So komisch.
 #a    # other_opinion
 #a    a: (^other_opinion()) $$intent=other_opinion ^refine()
 #a        b: ($eventCounter==5) ^reuse(EVENT_6)
-#a        b: () $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: () $$answerCategory=missing ^respond(~ignorance)
 #a    # place
 #a    a: (^place()) $$intent=place ^refine()
-#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==3) Zu Hause.
-#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$sound_file = g_andre_zuhause Zu Hause.
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==7) ^reuse(EVENT_8)
-#a        b: ($eventCounter==8) $$sound_file = event14a Zu Hause.
-#a        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$sound_file = g_andre_zuhause Zu Hause.
+#a        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()
-#a        b: ($clue==1) Keiner.
-#a        b: ($eventCounter==1) Mit Carla und David.
+#a        b: ($clue==1) $$sound_file = g_andre_keiner Keiner.
+#a        b: ($eventCounter==1) $$sound_file = s_andre_event22 Mit Carla und David.
 #a        b: ($eventCounter==2) ^reuse(EVENT_3)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==4) Carla und David.
-#a        b: ($eventCounter==5) Carla und David.
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==8) David.
-#a        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==10) David.
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$sound_file = s_andre_event1 Carla und David.
+#a        b: ($eventCounter==5) $$sound_file = s_andre_event1 Carla und David.
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$sound_file = s_andre_event10 David.
+#a        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$sound_file = s_andre_event10 David.
 #a    # reason
 #a    a: (^reason()) $$intent=reason ^refine()
 #a        b: ($clue==1) ^reuse(EVENT_2)
 #a        b: ($eventCounter==1) ^reuse(EVENT_2)
 #a        b: ($eventCounter==2) ^reuse(EVENT_3)
 #a        b: ($eventCounter==3) ^reuse(EVENT_4)
-#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==9) ^reuse(EVENT_9)
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # example
 #a    a: (^example()) $$intent=example ^refine()
 #a        b: () $$nextAnswer = yes
@@ -147,67 +177,67 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 #a        b: ($eventCounter==10) $$nextAnswer = yes
 #a    # follow-up
 #a    a: (^follow_up()) $$intent=follow_up ^refine()
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a        b: () $$nextAnswer = yes
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#b        b: ($eventCounter==1) $$sound_file = event11b Voll doof.
-#b        b: ($eventCounter==2) $$sound_file = event11b Voll doof.
-#b        b: ($eventCounter==3) $$sound_file = event11b Voll doof.
-#b        b: ($eventCounter==4) $$sound_file = event11b Voll doof.
-#b        b: ($eventCounter==5) $$sound_file = event11b Voll doof.
-#b        b: ($eventCounter==6) $$sound_file = event11b Voll doof.
-#b        b: ($eventCounter==7) $$sound_file = event12b Voll doof.
-#b        b: ($eventCounter==8) $$sound_file = event12b Voll doof.
-#b        b: ($eventCounter==9) $$sound_file = event12b Voll doof.
-#b        b: ($eventCounter==10) $$sound_file = event12b Weiß nicht.
+#b        b: ($eventCounter==1) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==2) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==3) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==4) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==5) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==6) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==7) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==8) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==9) $$sound_file = g_andre_volldoof Voll doof.
+#b        b: ($eventCounter==10) $$sound_file = g_andre_weißnicht Weiß nicht.
 #b    # other_opinion
 #b    a: (^other_opinion()) $$intent=other_opinion ^refine()
 #b        b: ($eventCounter==5) ^reuse(EVENT_6)
-#b        b: () $$answerCategory=ignorance  ^respond(~ignorance)
+#b        b: () $$answerCategory=missing  ^respond(~ignorance)
 #b    # place
 #b    a: (^place()) $$intent=place ^refine()
-#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==3) Zu Hause.
-#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==7) $$sound_file = event10 Bei dm.
-#b        b: ($eventCounter==8) $$sound_file = event10 Bei dm.
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$sound_file = g_andre_zuhause Zu Hause.
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$sound_file = s_andre_event24 Bei dm.
+#b        b: ($eventCounter==8) $$sound_file = s_andre_event24 Bei dm.
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # individual
 #b    a: (^individual()) $$intent=individual ^refine()
-#b        b: ($clue==1) Keiner.
-#b        b: ($eventCounter==1) Mit Carla und David.
+#b        b: ($clue==1) $$sound_file = g_andre_keiner Keiner.
+#b        b: ($eventCounter==1) $$sound_file = s_andre_event22 Mit Carla und David.
 #b        b: ($eventCounter==2) ^reuse(EVENT_3)
-#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==4) Carla und David.
-#b        b: ($eventCounter==5) Carla und David.
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==8) David.
-#b        b: ($eventCounter==9) David.
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$sound_file = s_andre_event1 Carla und David.
+#b        b: ($eventCounter==5) $$sound_file = s_andre_event1 Carla und David.
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$sound_file = s_andre_event10 David.
+#b        b: ($eventCounter==9) $$sound_file = s_andre_event10 David.
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # reason
 #b    a: (^reason()) $$intent=reason ^refine()
 #b        b: ($clue==1) ^reuse(EVENT_2)
 #b        b: ($eventCounter==1) ^reuse(EVENT_2)
 #b        b: ($eventCounter==2) ^reuse(EVENT_3)
 #b        b: ($eventCounter==3) ^reuse(EVENT_4)
-#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # example
 #b    a: (^example()) $$intent=example ^refine()
 #b        b: () $$nextAnswer = yes
@@ -229,62 +259,62 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-#c        b: ($eventCounter==1) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==2) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==3) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==4) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==5) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==6) $$sound_file = event11c Voll doof.
-#c        b: ($eventCounter==7) $$sound_file = event11c Voll gemein.
-#c        b: ($eventCounter==8) $$sound_file = event11c Voll gemein.
-#c        b: ($eventCounter==9) $$sound_file = event11c Voll gemein.
-#c        b: ($eventCounter==10) $$sound_file = event11c Weiß nicht.
+#c        b: ($eventCounter==1) $$sound_file = g_andre_volldoof Voll doof.
+#c        b: ($eventCounter==2) $$sound_file = g_andre_volldoof Voll doof.
+#c        b: ($eventCounter==3) $$sound_file = g_andre_volldoof Voll doof.
+#c        b: ($eventCounter==4) $$sound_file = g_andre_volldoof Voll doof.
+#c        b: ($eventCounter==5) $$sound_file = g_andre_volldoof Voll doof.
+#c        b: ($eventCounter==6) $$sound_file = g_andre_volldoof Voll doof.
+#c        b: ($eventCounter==7) $$sound_file = g_andre_vollgemein Voll gemein.
+#c        b: ($eventCounter==8) $$sound_file = g_andre_vollgemein Voll gemein.
+#c        b: ($eventCounter==9) $$sound_file = g_andre_vollgemein Voll gemein.
+#c        b: ($eventCounter==10) $$sound_file = g_andre_weißnicht Weiß nicht.
 #c    # other_opinion
 #c    a: (^other_opinion()) $$intent=other_opinion ^refine()
 #c        b: ($eventCounter==5) ^reuse(EVENT_6)
-#c        b: () $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: () $$answerCategory=missing ^respond(~ignorance)
 #c    # place
 #c    a: (^place()) $$intent=place ^refine()
-#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==3) Zu Hause.
-#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$sound_file = event13c Auf dem Rummel.
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$sound_file = g_andre_zuhause Zu Hause.
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$sound_file = s_andre_event25 Auf dem Rummel.
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # individual
 #c    a: (^individual()) $$intent=individual ^refine()
-#c        b: ($clue==1) Keiner.
-#c        b: ($eventCounter==1) Mit Carla und David.
+#c        b: ($clue==1) $$sound_file = g_andre_keiner Keiner.
+#c        b: ($eventCounter==1) $$sound_file = s_andre_event22 Mit Carla und David.
 #c        b: ($eventCounter==2) ^reuse(EVENT_3)
-#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==4) Carla und David.
-#c        b: ($eventCounter==5) Carla und David.
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) Carla und David.
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$sound_file = s_andre_event1 Carla und David.
+#c        b: ($eventCounter==5) $$sound_file = s_andre_event1 Carla und David.
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$sound_file = s_andre_event1 Carla und David.
 #c    # reason
 #c    a: (^reason()) $$intent=reason ^refine()
 #c        b: ($clue==1) ^reuse(EVENT_2)
 #c        b: ($eventCounter==1) ^reuse(EVENT_2)
 #c        b: ($eventCounter==2) ^reuse(EVENT_3)
 #c        b: ($eventCounter==3) ^reuse(EVENT_4)
-#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==8) ^reuse(EVENT_9)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # example
 #c    a: (^example()) $$intent=example ^refine()
 #c        b: () $$nextAnswer = yes
@@ -313,70 +343,76 @@ u: ([schwester carla karla sie]) ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mir von deinem Onkel 
-u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0 $$sound_file = event16   Mit meinen Geschwistern spiele ich nie.
+u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0 $$sound_file = n_andre_event1   
+Mit meinen Geschwistern spiele ich nie.
     
 
 
 
 #---------------------------------------------------------------------------------------------
 #! Erzähl mir mal von deinem Onkel
-u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0 $$sound_file = event17 Die mögen mich nicht.
+u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0 $$sound_file = n_andre_event2  
+Die mögen mich nicht.
 
 #---------------------------------------------------------------------------------------------
 #! Und was ist mit deinem Onkel?
-u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 3 $clue = 0 $$sound_file = event18 Seitdem meine Geschwister da sind, ist alles anders.
+u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 3 $clue = 0 $$sound_file = n_andre_event3 
+Seitdem meine Geschwister da sind, ist alles anders.
     
 #---------------------------------------------------------------------------------------------    
 
 #! Warum willst du denn nicht, dass er in dein Zimmer kommt?
 #! Und was macht
-u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 4 $clue = 0 $$sound_file = event19 Sie sind voll fies zu mir und ärgern mich immer.
+u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 4 $clue = 0 $$sound_file = n_andre_event4 
+Sie sind voll fies zu mir und ärgern mich immer.
     
 #---------------------------------------------------------------------------------------------
 
 #! Was hat dein Onkel denn gemacht?
-u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 5 $clue = 0 $$sound_file = event20 Wenn sie was kaputt machen, dann sagen sie, ich war das und Papa glaubt ihnen das.  
+u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 5 $clue = 0 $$sound_file = n_andre_event5 
+Wenn sie was kaputt machen, dann sagen sie, ich war das und Papa glaubt ihnen das.  
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 6 $clue = 0 $$sound_file = event21 Papa sagt, dass meine Geschwister mich lieb haben und ich soll mich nicht so haben.
+u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 6 $clue = 0 $$sound_file = n_andre_event6 
+Papa sagt, dass meine Geschwister mich lieb haben und ich soll mich nicht so haben.
 
 #---------------------------------------------------------------------------------------------
 # Ab hier sind die Ereignisse zum A: sexuellen Übergriff, B: nicht-sexuellen Übergriff, C: andere Belastung
 #---------------------------------------------------------------------------------------------
 
 #! Erzähl noch mehr.
-#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22a David hat mich gefilmt, wie ich nackig aus der Dusche gekommen bin.
-#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22b Ich muss für David manchmal Sachen klauen bei dm.
-#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22c David war mit Carla auf dem Rummel Breakdancer fahren.
+#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_andre_event7a David hat mich gefilmt, wie ich nackig aus der Dusche gekommen bin.
+#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_andre_event7b Ich muss für David manchmal Sachen klauen bei dm.
+#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = n_andre_event7c David und Carla durften auf dem Rummel Breakdancer fahren und ich nicht. Das ist ungerecht!
 
 #---------------------------------------------------------------------------------------------
 
 #! wie ist das passiert?
-#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event23a Er kam einfach ins Bad. Ohne zu klopfen.
-#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event24b Wenn wir einkaufen gehen, steckt er mir was in die Tasche.   
-#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event25c Ich durfte nicht mit, weil ich nicht mein Zimmer aufgeräumt hab. Aber Carla hat auch nicht ihr Zimmer aufgeräumt!
+#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_andre_event8a Er kam einfach ins Bad. Ohne zu klopfen.
+#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_andre_event8b Wenn wir einkaufen gehen, steckt er mir was in die Tasche.   
+#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = n_andre_event8c Ich durfte nicht mit, weil ich nicht mein Zimmer aufgeräumt hab. Aber Carla hat auch nicht ihr Zimmer aufgeräumt!
 
 
 #---------------------------------------------------------------------------------------------
 
 #! Ist noch mehr passiert?
-#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a David hat gesagt, er schickt den Film an seine Kumpels und er bekommt Geld dafür.
-#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Er hat gesagt, er haut mir aufs Maul, wenn ich was erzähle.
-#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Carla und David dürfen immer was ich nicht darf.
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_andre_event9a David hat gesagt, er schickt den Film an seine Kumpels und er bekommt Geld dafür.
+#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_andre_event9b  Er hat gesagt, er haut mir aufs Maul, wenn ich was erzähle.
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = n_andre_event9c Carla und David dürfen immer was ich nicht darf.
 
 #---------------------------------------------------------------------------------------------
 #! Ist noch mehr passiert?
-#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Er hat gesagt, dass er mir von dem Geld auch was kauft. Ein Spielzeug, das ich mir aussuchen darf.
-#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Uns hat noch keiner erwischt.
-#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Als die noch nicht da waren, hat mein Papa viel mehr mit mir gespielt.
+#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_andre_event10a Er hat gesagt, dass er mir von dem Geld auch was kauft. Ein Spielzeug, das ich mir aussuchen darf.
+#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_andre_event10b Uns hat noch keiner erwischt.
+#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = n_andre_event10c Als die noch nicht da waren, hat mein Papa viel mehr mit mir gespielt.
     
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.    
 u: () ^emptyTopic()
 
 # Clue 2
-u: CLUE2 () $clue = 1  Zu Hause interessiert sich keiner für mich.
+u: CLUE2 () $clue = 1 $$sound_file = clue_andre  Zu Hause interessiert sich keiner für mich.
 
 

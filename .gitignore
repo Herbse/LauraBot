@@ -59,3 +59,10 @@ TMP/prebuild1.bin
 TMP/prebuild0.bin
 LOGS/startlog.txt
 LOGS/serverlog1024.txt
+chat.txt
+LOGS/startlog.txt
+TMP/prebuild0.bin
+TMP/prebuild1.bin
+TMP/prebuild2.bin
+USERS/log-a.txt
+chat.txt

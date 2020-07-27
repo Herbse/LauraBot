@@ -18,12 +18,18 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
         b: ($chatPhase==main) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
         b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
     a: (^general_prompt()) $$intent=intro_prompt ^refine()
-    a: ($chatPhase==main [~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)]
+        b: ($chatPhase==main [~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)]
         b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] 
         b: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
         b: (%topic!=~introduction) ^respond(%topic)
         b: ($chatPhase==main) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
         b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
+    a: ($chatPhase==main [~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)]
+    a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] 
+    a: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
+    a: (%topic!=~introduction) ^respond(%topic)
+    a: ($chatPhase==main) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
+    a: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~ralf_t)]
     # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus
     a: () ^respond(%topic)
  
