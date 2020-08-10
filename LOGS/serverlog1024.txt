@@ -940,3 +940,91 @@ Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,900KB
 
 ======== Began EV server pid 11685 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Fri Jul 03 16:06:48 2020 serverlog:1 userlog: 1
 evserver: parent ready (pid = 11685), fork=0
+evserver child fork requests: 0
+  evserver: running pid: 15691
+System startup createsystem Wed Jul 29 11:41:11 2020
+Server ChatScript EVSERVER Version 8.8 pid: 15691 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=423428 Compiled:Jul27'20-14:51:51 by version 8.8 "vicontact"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9100kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,899KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 15691 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Wed Jul 29 11:41:12 2020 serverlog:1 userlog: 1
+evserver: parent ready (pid = 15691), fork=0
+ServerPre: pid: 15691 bobo () testo Jul 29 11:48:50 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 8 testo  ==> [topic:~introduction~3 | answerCategory:emptyTopic | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber:88  | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:ichwilldarübernichtsprechen | sumCorrect: | duration:2570716 ] Ich will darüber nicht sprechen.  When:Jul29 11:48:50 171ms Why:~addposthoc.6.0 ~reactance.0.0.~mother_t~2.6.0 
+ServerPre: pid: 15691 bobo () testo Jul 29 11:52:55 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 9 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:2570961 ] Hä?  When:Jul29 11:52:55 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 15691 bobo () testo Jul 29 11:59:24 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 10 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:2571350 ] Wie bitte?  When:Jul29 11:59:24 9ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 15691 bobo () testo Jul 29 12:05:52 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 11 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:2571738 ] Hä?  When:Jul29 12:05:52 8ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 15691 bobo () testo Jul 29 12:17:30 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 12 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:2572436 ] Wie bitte?  When:Jul29 12:17:30 10ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 15691 bobo () testo Jul 29 12:26:28 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 13 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:2572974 ] Hä?  When:Jul29 12:26:28 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+evserver child fork requests: 0
+  evserver: running pid: 1662
+System startup createsystem Tue Aug 04 10:57:09 2020
+Server ChatScript EVSERVER Version 8.8 pid: 1662 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=423428 Compiled:Jul27'20-14:51:51 by version 8.8 "vicontact"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9100kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,899KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 1662 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Tue Aug 04 10:57:12 2020 serverlog:1 userlog: 1
+evserver: parent ready (pid = 1662), fork=0
+ServerPre: pid: 1662 bobo () testo Aug 04 10:57:44 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 14 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3086050 ] Wie bitte?  When:Aug04 10:57:44 52ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 11:38:59 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 15 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:3088525 ] Hä?  When:Aug04 11:38:59 29ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 11:39:28 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 16 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:3088554 ] Hä?  When:Aug04 11:39:28 3ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 11:43:04 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 17 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:3088770 ] Was meinen sie damit?  When:Aug04 11:43:04 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 11:49:48 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 18 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3089174 ] Wie bitte?  When:Aug04 11:49:48 2ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 11:51:55 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 19 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3089301 ] Wie bitte?  When:Aug04 11:51:55 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 11:53:47 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 20 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:3089413 ] Hä?  When:Aug04 11:53:47 3ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 12:01:04 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 21 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:3089850 ] Hä?  When:Aug04 12:01:04 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 15:34:13 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 22 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3102639 ] Wie bitte?  When:Aug04 15:34:13 28ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 15:35:15 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 23 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3102701 ] Wie bitte?  When:Aug04 15:35:15 3ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 15:36:31 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 24 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3102777 ] Wie bitte?  When:Aug04 15:36:31 3ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 16:07:26 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 25 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:3104632 ] Was meinen sie damit?  When:Aug04 16:07:26 26ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 17:18:47 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 26 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:3108913 ] Hä?  When:Aug04 17:18:47 11ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 18:27:10 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 27 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3113016 ] Wie bitte?  When:Aug04 18:27:10 8ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 18:28:43 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 28 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3113109 ] Wie bitte?  When:Aug04 18:28:43 2ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 18:33:08 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 29 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:3113374 ] Was meinen sie damit?  When:Aug04 18:33:08 8ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 18:34:03 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 30 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:3113429 ] Was meinen sie damit?  When:Aug04 18:34:03 10ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 18:36:38 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 31 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:3113584 ] Was meinen sie damit?  When:Aug04 18:36:38 2ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 18:40:42 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 32 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:3113828 ] Hä?  When:Aug04 18:40:42 9ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 04 18:44:04 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 33 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:hä | sumCorrect: | duration:3114030 ] Hä?  When:Aug04 18:44:04 3ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 
+ServerPre: pid: 1662 bobo () testo Aug 06 17:59:09 2020
+Respond: user:bobo bot: ip:127.0.0.1 (~introduction~3) 34 testo  ==> [topic:~introduction~3 | answerCategory: | probFormat: | goodQuestion:4 | emoType: | rapportCounter:0 | disclosureState:0 | chatPhase:end | randomNumber: | topicSwitch: | critRevealed: | noncritTopic:4 | intent: | soundFile:wiebitte | sumCorrect: | duration:3284135 ] Wie bitte?  When:Aug06 17:59:09 31ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction~3.1.0 

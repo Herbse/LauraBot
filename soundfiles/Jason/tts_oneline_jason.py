@@ -13,7 +13,7 @@ from google.cloud import texttospeech
 client = texttospeech.TextToSpeechClient()
 
 # Set the text input to be synthesized
-transcribe = "wir sind team blau bei pokemon. kevin hat die besten pokemon!"
+transcribe = "tschüs"
 synthesis_input = texttospeech.types.SynthesisInput(text=transcribe)
 
 # Build the voice request, select the language code ("en-US") and the ssml
