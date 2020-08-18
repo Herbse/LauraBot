@@ -1,0 +1,28 @@
+topic: ~introduction  keep repeat ()
+
+# t: ^countTest()
+
+t: RAND() sage t
+    a: (t)
+          $$randNum = ^generateNumber() * 10
+          $$randnum 
+        if ($$randNum < 100) {ist kleiner als 10}
+        else if ($$randNum < 200) {ist kleiner als 200}
+        else if ($$randNum < 300) {ist kleiner als 300}
+        else if ($$randNum < 400) {ist kleiner als 400}
+        else if ($$randNum < 500) {ist kleiner als 500}
+        else if ($$randNum < 600) {ist kleiner als 600}
+        else if ($$randNum < 700) {ist kleiner als 700}
+        else if ($$randNum < 800) {ist kleiner als 800}
+        else if ($$randNum < 900) {ist kleiner als 900}
+        else {ist kleiner als 1000}
+        ^reuse(RAND)
+
+
+
+outputmacro: ^generateNumber()
+^popen("python ./randPy.py" '^pythonrand)
+
+outputmacro: ^pythonrand(^number)
+^number
+
