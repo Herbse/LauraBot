@@ -25,7 +25,7 @@ if ($rapportCounter == -6) {$rapportCounter = -5}
  $_actionType = $$actionType
  $_emoType = $$emoType 
  $_topicSwitch = $$topicSwitch
- $_randomNumber = $$randNum
+ $_randomNumber = $$randNum / 10
  $_chatPhase = $chatPhase
  $_critRevealed = $$critRevealed
  $_noncritTopic = $noncritTopic
@@ -91,18 +91,17 @@ else {$$sound_file = $_soundfile}
 if (!$$sound_file){$$sound_file = NaN}
 
 outputmacro: ^emptyTopic()
-$$intent=emptyTopic
 
 if ($disclosureState==1)) {
-$$randNum = ^generateNumber()
-if ($$randNum < 75) {$$answerCategory = ignorance ^respond(~ignorance)}
-else {$$answerCategory = notAnswering ^respond(~notAnswering)}}
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 750) {$$answerCategory = emptyTopic ^respond(~ignorance)}
+else {$$answerCategory = emptyTopic ^respond(~notAnswering)}}
 
 else if ($disclosureState==0) {
-$$randNum = ^generateNumber()
-if ($$randNum < 50) {$$answerCategory = ignorance ^respond(~ignorance)}
-else if ($$randNum < 75) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-else {$$answerCategory = reactance ^respond(~reactance)}}
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 500) {$$answerCategory = emptyTopic ^respond(~ignorance)}
+else if ($$randNum < 750) {$$answerCategory = emptyTopic ^respond(~notAnswering)}
+else {$$answerCategory = emptyTopic ^respond(~reactance)}}
 
 ^poptopic()
 

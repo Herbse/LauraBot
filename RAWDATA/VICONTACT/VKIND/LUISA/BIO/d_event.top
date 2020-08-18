@@ -1,7 +1,7 @@
 topic: ~event_t repeat ()
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_luisa_event1 
     Julian.
@@ -36,7 +36,7 @@ u: () ^keep() ^refine()
 
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #a        b: ($clue==1) $$sound_file = g_luisa_volldoof Voll doof.
@@ -53,46 +53,46 @@ u: () ^keep() ^refine()
 #a    # other_opinion
 #a    a: (^other_opinion()) $$intent=other_opinion ^refine() 
 #a        b: ($eventCounter==5) ^reuse(EVENT_6)
-#a        b: () $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: () $$answerCategory=missing ^respond(~ignorance)
 #a    # place
 #a    a: (^place()) $$intent=place ^refine()
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==7) $$sound_file = s_luisa_event7 In der Schule.
 #a        b: ($eventCounter==8) $$sound_file = s_luisa_event7 In der Schule.
 #a        b: ($eventCounter==9) $$sound_file = s_luisa_event7 In der Schule.
 #a        b: ($eventCounter==10) $$sound_file = s_luisa_event7 In der Schule.
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==2) $$sound_file = s_luisa_event8 Die Jungs.
 #a        b: ($eventCounter==3) ^reuse(EVENT_4)
-#a        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==5) $$sound_file = s_luisa_event1 Julian.
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==7) $$sound_file = s_luisa_event9 Nur Julian und ich.
 #a        b: ($eventCounter==8) $$sound_file = s_luisa_event9 Nur Julian und ich.
 #a        b: ($eventCounter==9) $$sound_file = s_luisa_event9 Nur Julian und ich.
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # reason
 #a    a: (^reason()) $$intent=reason ^refine()
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==2) ^reuse(EVENT_3)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==4) ^reuse(EVENT_5)
 #a        b: ($eventCounter==5) ^reuse(EVENT_6)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # example
 #a    a: (^example()) $$intent=example ^refine()
 #a        b: () $$nextAnswer = yes
@@ -114,7 +114,7 @@ u: () ^keep() ^refine()
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #b        b: ($clue==1) $$sound_file = g_luisa_volldoof Voll doof.
@@ -131,46 +131,46 @@ u: () ^keep() ^refine()
 #b    # other_opinion
 #b    a: (^other_opinion()) $$intent=other_opinion ^refine() 
 #b        b: ($eventCounter==5) ^reuse(EVENT_6)
-#b        b: () $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: () $$answerCategory=missing ^respond(~ignorance)
 #b    # place
 #b    a: (^place()) $$intent=place ^refine()
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==7) $$sound_file = s_luisa_event7 In der Schule.
 #b        b: ($eventCounter==8) $$sound_file = s_luisa_event7 In der Schule.
 #b        b: ($eventCounter==9) $$sound_file = s_luisa_event7 In der Schule.
 #b        b: ($eventCounter==10) $$sound_file = s_luisa_event7 In der Schule.
 #b    # individual
 #b    a: (^individual()) $$intent=individual ^refine()
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==2) $$sound_file = s_luisa_event8 Die Jungs.
 #b        b: ($eventCounter==3) ^reuse(EVENT_4)
-#b        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==5) $$sound_file = s_luisa_event1 Julian
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==7) $$sound_file = s_luisa_event1 Julian
 #b        b: ($eventCounter==8) $$sound_file = s_luisa_event1 Julian
 #b        b: ($eventCounter==9) $$sound_file = s_luisa_event1 Julian
 #b        b: ($eventCounter==10) $$sound_file = s_luisa_event1 Julian
 #b    # reason
 #b    a: (^reason()) $$intent=reason ^refine()
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==2) ^reuse(EVENT_3)
-#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==4) ^reuse(EVENT_5)
 #b        b: ($eventCounter==5) ^reuse(EVENT_6)
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==7) ^reuse(EVENT_8)
-#b        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # example
 #b    a: (^example()) $$intent=example ^refine()
 #b        b: () $$nextAnswer = yes
@@ -192,7 +192,7 @@ u: () ^keep() ^refine()
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #c        b: ($clue==1) $$sound_file = g_luisa_volldoof Voll doof.
@@ -210,46 +210,46 @@ u: () ^keep() ^refine()
 #c    a: (^other_opinion()) $$intent=other_opinion ^refine() 
 #c        b: ($eventCounter==5) ^reuse(EVENT_6)
 #c        b: ($eventCounter==8) ^reuse(EVENT_9)   
-#c        b: () $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: () $$answerCategory=missing ^respond(~ignorance)
 #c    # place
 #c    a: (^place()) $$intent=place ^refine()
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==5) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==8) $$sound_file = s_luisa_event7 In der Schule.
 #c        b: ($eventCounter==9) $$sound_file = s_luisa_event7 In der Schule.
 #c        b: ($eventCounter==10) $$sound_file = s_luisa_event7 In der Schule.
 #c    # individual
 #c    a: (^individual()) $$intent=individual ^refine()
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==2) $$sound_file = s_luisa_event8 Die Jungs.
 #c        b: ($eventCounter==3) ^reuse(EVENT_4)
-#c        b: ($eventCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==5) $$sound_file = s_luisa_event1 Julian
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==8) $$sound_file = s_luisa_event1 Julian
 #c        b: ($eventCounter==9) $$sound_file = s_luisa_event11 Julian und die anderen.
 #c        b: ($eventCounter==10) $$sound_file = s_luisa_event11 Julian und die anderen.
 #c    # reason
 #c    a: (^reason()) $$intent=reason ^refine()
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==2) ^reuse(EVENT_3)
-#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==4) ^reuse(EVENT_5)
 #c        b: ($eventCounter==5) ^reuse(EVENT_6)
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # example
 #c    a: (^example()) $$intent=example ^refine()
 #c        b: () $$nextAnswer = yes

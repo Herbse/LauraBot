@@ -1,7 +1,7 @@
 topic: ~mother_t repeat ()
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_natalia_mother1
     Oksana.
@@ -37,7 +37,7 @@ u: () ^keep() ^refine()
 
     
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($motherCounter==1) $$sound_file = g_natalia_vollcool Voll cool.
@@ -46,25 +46,25 @@ u: () ^keep() ^refine()
         b: ($motherCounter==4) $$sound_file = g_natalia_vollcool Voll cool.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($motherCounter==2) $$sound_file = s_natalia_mother7 Im Park
         b: ($motherCounter==3) $$sound_file = s_natalia_mother7 Im Park
         b: ($motherCounter==4) $$sound_file = s_natalia_mother8 Im Supermarkt.
     # individual
     a: (^individual()) $$intent=individual $$intent=individual ^refine()
-        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($motherCounter==2) $$sound_file = s_natalia_dogs8 Mama und ich. 
         b: ($motherCounter==3) $$sound_file = s_natalia_dogs8 Mama und ich. 
         b: ($motherCounter==4) $$sound_file = s_natalia_mother9 Ich alleine.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes 

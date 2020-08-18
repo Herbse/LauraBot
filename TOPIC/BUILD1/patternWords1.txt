@@ -39,6 +39,10 @@ leon
 dirk
 mira
 Mira
+león
+leòn
+léon
+lèon
 freunde
 oma
 grossmutter
@@ -70,6 +74,7 @@ kati
 michelle
 michele
 kunst
+malen
 hunde
 hund
 bella
@@ -131,9 +136,9 @@ crit_asked
 suggestive_unspecific
 relevance
 frequency
+availability
 information
 support
-availability
 disclosure
 introduction
 greeting

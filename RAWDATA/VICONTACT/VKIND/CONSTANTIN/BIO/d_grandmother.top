@@ -2,7 +2,7 @@ topic: ~grandmother_t ()
 
 
 #specific questions/answers depending on general context
-u: (familie) ^keep() ^refine()
+u: ($$answerCategory==specific familie) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_constantin_grandmother1
     Sabine, Clara und Oma Ute.
@@ -36,7 +36,7 @@ u: (familie) ^keep() ^refine()
 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_constantin_grandmother6
     Ute.
@@ -70,7 +70,7 @@ u: () ^keep() ^refine()
     Bei Oma.
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($grandmotherCounter==1) $$sound_file = g_constantin_volldoof Voll doof. 
@@ -79,25 +79,25 @@ u: () ^keep() ^refine()
         b: ($grandmotherCounter==4) $$sound_file = s_constantin_grandmother13 Langweilig.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($grandmotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($grandmotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($grandmotherCounter==4) $$sound_file = s_constantin_grandmother14 Oma, Mama, Clara und ich.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($grandmotherCounter==1) ^reuse(OMA_2)
         b: ($grandmotherCounter==2) ^reuse(OMA_3)
-        b: ($grandmotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($grandmotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

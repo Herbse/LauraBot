@@ -3,7 +3,7 @@ topic: ~neighbourhood_t ()
 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($neighboursCounter==1) $$sound_file = g_constantin_ganzok Ganz ok.
@@ -13,25 +13,25 @@ u: () ^keep() ^refine()
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion 
-        b: () $$answerCategory=ignorance $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($neighboursCounter==1) $$sound_file = s_constantin_neighbourhood1 Im Hof von unserm Haus.
         b: ($neighboursCounter==2) $$sound_file = s_constantin_neighbourhood1 Im Hof von unserm Haus.
         b: ($neighboursCounter==3) $$sound_file = s_constantin_friends17 In der Nachbarschaft.
-        b: ($neighboursCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighboursCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($neighboursCounter==1) $$sound_file = s_constantin_neighbourhood2 Die Kinder aus der Nachbarschaft.
-        b: ($neighboursCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($neighboursCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighboursCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($neighboursCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($neighboursCounter==4) $$sound_file = s_constantin_neighbourhood2 Die Kinder aus der Nachbarschaft.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($neighboursCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($neighboursCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($neighboursCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($neighboursCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($neighboursCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($neighboursCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($neighboursCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($neighboursCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

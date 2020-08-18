@@ -2,7 +2,7 @@ topic: ~dogs_t ()
 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_natalia_dogs1
     Lola und Bella.
@@ -36,7 +36,7 @@ u: () ^keep() ^refine()
     Zu Hause oder wir sind beim Tierarzt. 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($dogsCounter==1) ^reuse(DOGS_3)
@@ -44,25 +44,25 @@ u: () ^keep() ^refine()
         b: ($dogsCounter==3) $$sound_file = g_natalia_vollcool Voll cool.
         b: ($dogsCounter==4) $$sound_file = g_natalia_volldoof Voll doof.
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($dogsCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($dogsCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($dogsCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($dogsCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($dogsCounter==3) $$sound_file = s_natalia_dogs7 In der Nachbarschaft.
-        b: ($dogsCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($dogsCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($dogsCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($dogsCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($dogsCounter==2) $$sound_file = s_natalia_dogs8 Mama und ich. 
         b: ($dogsCounter==3) $$sound_file = s_natalia_dogs9 Ich alleine oder mit Charlotte. 
         b: ($dogsCounter==4) $$sound_file = s_natalia_dogs8 Mama und ich. 
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($dogsCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($dogsCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($dogsCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($dogsCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($dogsCounter==3) ^reuse(DOGS_4)
-        b: ($dogsCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($dogsCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
@@ -82,16 +82,16 @@ Meine Hunde heißen Bella und Lola. Bella ist ein Chihuahua und Lola ein Beagle.
  
 
 #! Erzähl mal wie er ihr hilft?
-u: DOGS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 2$$sound_file = n_natalia_dogs2
+u: DOGS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 2 $$sound_file = n_natalia_dogs2
 Wir haben sie vor drei Jahren aus dem Tierheim geholt.
 
 #! Erzähl mir mehr über deinen PAPA!
-u: DOGS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 3$$sound_file = n_natalia_dogs3
+u: DOGS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 3 $$sound_file = n_natalia_dogs3
 Ich muss immer mit ihnen Gassi gehen. Manchmal nervt das voll.
  
 #! Was machst du denn gern mit deinem PAPA?
 
-u: DOGS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 4$$sound_file = n_natalia_dogs4
+u: DOGS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $dogsCounter = 4 $$sound_file = n_natalia_dogs4
 Bella ist immer krank und dann müssen wir sie zum Tierarzt bringen. Das ist so teuer.
 
 # Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.

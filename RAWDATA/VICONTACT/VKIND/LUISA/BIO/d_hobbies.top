@@ -13,25 +13,25 @@ u: () ^keep() ^refine()
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion 
-        b: () $$answerCategory=ignorance $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($hobbiesCounter==1) $$sound_file = s_luisa_event7 In der Schule.
         b: ($hobbiesCounter==2) $$sound_file = s_luisa_hobbies1 In der Kunstwerkstatt.
         b: ($hobbiesCounter==3) $$sound_file = s_luisa_hobbies1 In der Kunstwerkstatt.
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($hobbiesCounter==1) $$sound_file = s_luisa_hobbies2 Ich und die anderen Kinder.
         b: ($hobbiesCounter==2) $$sound_file = s_luisa_hobbies2 Ich und die anderen Kinder.
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($hobbiesCounter==4) $$sound_file = s_luisa_hobbies2 Ich und die anderen Kinder.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($hobbiesCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($hobbiesCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

@@ -2,7 +2,7 @@ topic: ~therapy_t ()
 # Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_jason_therapy1 
     Claudia.
@@ -39,7 +39,7 @@ u: () ^keep() ^refine()
 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($therapyCounter==1) $$sound_file = g_jason_ganzok Ganz ok.
@@ -49,7 +49,7 @@ u: () ^keep() ^refine()
        
     # other_opinion
     a: (^other_opinion()) $$intent=other_opinion 
-        b: () $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($therapyCounter==1) $$sound_file = g_jason_beidergruppe Bei der Gruppe.
@@ -59,15 +59,15 @@ u: () ^keep() ^refine()
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($therapyCounter==1) ^reuse(THERAPY_2)
-        b: ($therapyCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($therapyCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($therapyCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($therapyCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($therapyCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($therapyCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

@@ -4,7 +4,7 @@ topic: ~friends_t ()
 #t: specific test to hobbies topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: ([freunde die sie]) ^keep() ^refine()
+u: ($$answerCategory==specific [freunde die sie]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names$$sound_file = s_natalia_friends1
     Charlotte.
@@ -39,7 +39,7 @@ u: ([freunde die sie]) ^keep() ^refine()
 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($friendCounter==1)$$sound_file = g_natalia_ganzok Ganz ok.
@@ -48,20 +48,20 @@ u: () ^keep() ^refine()
         b: ($friendCounter==4)$$sound_file = g_natalia_ganzok Ganz ok.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($friendCounter==1)$$sound_file = s_natalia_dogs7 In der Nachbarschaft.
         b: ($friendCounter==2)$$sound_file = s_natalia_friends9 In unserem Haus.
-        b: () $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
         b: ($friendCounter==1)$$sound_file = s_natalia_friends10 Charlotte und ich. 
         b: ($friendCounter==2)$$sound_file = s_natalia_friends1 Charlotte.
         b: ($friendCounter==3)$$sound_file = s_natalia_friends1 Charlotte.
-        b: ($friendCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
-    a: (^reason()) $$intent=reason $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^reason()) $$intent=reason $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
@@ -77,24 +77,24 @@ u: () ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! Erzähl mal von deinen Hobbies.
-u: FRIENDS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1$$sound_file = n_natalia_friends1
+u: FRIENDS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 $$sound_file = n_natalia_friends1
 Charlotte und ich sind oft mit den Hunden draußen. Wir gehen Gassi.
  
 
   
 #! Erzähl mal mehr.
-u: FRIENDS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2$$sound_file = n_natalia_friends2
+u: FRIENDS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 $$sound_file = n_natalia_friends2
 Sie wohnt nur drei Etagen unter mir.
    
  
 
 #! Erzähl mir mehr 
-u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3$$sound_file = n_natalia_friends3
+u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 $$sound_file = n_natalia_friends3
 Sie hat schon einen festen Freund.
   
 
 #!  Erzähl mir mehr.
-u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4$$sound_file = n_natalia_friends4
+u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 $$sound_file = n_natalia_friends4
 Charlotte hat noch zwei Brüder. Die sind beide jünger als sie.
    
 

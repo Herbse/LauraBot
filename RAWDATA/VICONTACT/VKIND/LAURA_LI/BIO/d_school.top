@@ -3,7 +3,7 @@ topic: ~school_t ()
 #t: specific test to school topic ^keep() ^repeat() 
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($schoolCounter==1) Nicht so gut.
@@ -12,7 +12,7 @@ u: () ^keep() ^refine()
         b: ($schoolCounter==4) Nicht so gut.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($schoolCounter==1) In Mathe.
@@ -21,7 +21,7 @@ u: () ^keep() ^refine()
         b: ($schoolCounter==4) In der Schule.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($schoolCounter==2) Alle aus der Klasse.
         b: ($schoolCounter==3) Die Mädchen aus meiner Klasse.
         b: ($schoolCounter==4) Alle aus der Klasse.
@@ -30,19 +30,19 @@ u: () ^keep() ^refine()
         b: ($schoolCounter==1) $$nextAnswer = yes
         b: ($schoolCounter==2) $$nextAnswer = yes
         b: ($schoolCounter==3) $$nextAnswer = yes
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     # explanation
     a: (^explanation()) $$intent=explanation ^refine()
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     
     # follow-up
     a: (^follow_up()) $$intent=follow_up ^refine()
-        b: ($schoolCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($schoolCounter==4) $$answerCategory=missing ^respond(~ignorance)
         b: () $$nextAnswer = yes
     # log questions that were not catched by macros
     a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)

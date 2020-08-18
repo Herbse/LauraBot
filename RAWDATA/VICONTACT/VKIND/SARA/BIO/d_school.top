@@ -3,31 +3,31 @@ topic: ~school_t ()
 #t: specific test to school topic ^keep() ^repeat() 
 
 #specific questions/answers depending on what narrative answer was given before
-t: ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($schoolCounter==1) Voll cool.
-        b: ($schoolCounter==2) Ein bisschen peinlich.
-        b: ($schoolCounter==3) Voll cool.
-        b: ($schoolCounter==4) Voll cool.
+        b: ($schoolCounter==1) $sound_file = g_sara_vollcool Voll cool.
+        b: ($schoolCounter==2) $sound_file = s_sara_school1 Ein bisschen peinlich.
+        b: ($schoolCounter==3) $sound_file = g_sara_vollcool Voll cool.
+        b: ($schoolCounter==4) $sound_file = g_sara_vollcool Voll cool.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($schoolCounter==1) Zu Hause.
-        b: ($schoolCounter==2) In Englisch.
-        b: ($schoolCounter==3) In Englisch.
-        b: ($schoolCounter==4) In Englisch.
+        b: ($schoolCounter==1) $sound_file = g_sara_zuhause Zu Hause.
+        b: ($schoolCounter==2) $sound_file = s_sara_school2 In Englisch.
+        b: ($schoolCounter==3) $sound_file = s_sara_school2 In Englisch.
+        b: ($schoolCounter==4) $sound_file = s_sara_school2 In Englisch.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($schoolCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($schoolCounter==3) Meine Englischlehrerin.
-        b: ($schoolCounter==4) Meine Klasse.
+        b: ($schoolCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($schoolCounter==3) $sound_file = s_sara_school3 Meine Englischlehrerin.
+        b: ($schoolCounter==4) $sound_file = s_sara_friends12 Meine Klasse.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: () $$answerCategory=ignorance ^respond(~ignorance)
+        b: () $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes
@@ -44,16 +44,20 @@ t: ^keep() ^refine()
 # Narrative Antworten----------------------------------------------------------------------------------------
 
 #! 
-u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1  In der Schule mag ich Englisch am meisten. Papa liest mir auch auf Englisch vor!
+u: SCHOOL_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 1 $sound_file = n_sara_school1
+In der Schule mag ich Englisch am meisten. Papa liest mir auch auf Englisch vor!
    
 #! 
-u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  Heute haben wir einen Vokabeltest geschrieben, der war so schwer. Mir sind drei Wörter nicht eingefallen.
+u: SCHOOL_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 2  $sound_file = n_sara_school2
+Heute haben wir einen Vokabeltest geschrieben, der war so schwer. Mir sind drei Wörter nicht eingefallen.
 
 #! 
-u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  Ich habe schon so viel gelernt. Ich kann schon auf Englisch bis 100 zählen und die Tiere auf Englisch kennen wir auch schon.
+u: SCHOOL_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 3  $sound_file = n_sara_school3
+Ich habe schon so viel gelernt. Ich kann schon auf Englisch bis 100 zählen und die Tiere auf Englisch kennen wir auch schon.
 
 #! Hast du Lust, mir was zu deinem Mathelehrer zu erzählen?                  
-u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  Manchmal zeigt uns Frau Friedrich am Anfang der Stunde eine Karte mit einem Obst drauf und wir sollen die Farbe sagen. Da bin ich die Beste!
+u: SCHOOL_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $schoolCounter = 4  $sound_file = n_sara_school4
+Manchmal zeigt uns Frau Friedrich am Anfang der Stunde eine Karte mit einem Obst drauf und wir sollen die Farbe sagen. Da bin ich die Beste!
 
 # Spezifische Antworten----------------------------------------------------------------------------------
 

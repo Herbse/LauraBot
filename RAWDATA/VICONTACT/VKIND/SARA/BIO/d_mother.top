@@ -1,46 +1,20 @@
 topic: ~mother_t repeat ()
 
-#specific questions/answers depending on general context
-u: () ^keep() ^refine()
-    # name
-    a: (^names()) $$intent=names Yasemin.
-    # age
-    a: (^age()) $$intent=age Meine Mama ist 36 Jahre alt.
-    # mood
-    a: (^mood()) $$intent=mood Gut.
-    # job
-    a: (^job()) $$intent=job Die Mama arbeitet im Laden.
-    # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Meine Mama.
-    # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Ich liebe meine Mama.
-    # time together
-    a: (^time_together()) $$intent=time_together ^reuse(MAMA_3)
-    # time relationship
-    a: (^time()) $$intent=time_relationship 
-    # activity together
-    a: (^activity_together()) $$intent=activity_together ^reuse(MAMA_2)
-    # activity
-    a: (^activity()) $$intent=activity Die Mama arbeitet im Laden.
-    # places together
-    a: (^places_together()) $$intent=places_together Zu Hause oder im Laden.
-
-
-u: ([familie Familie]) ^keep() ^refine()
+u: ($$answerCategory==specific [familie Familie]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names 
     # age
     a: (^age()) $$intent=age 
     # mood
-    a: (^mood()) $$intent=mood Gut.
+    a: (^mood()) $$intent=mood $$sound_file = g_sara_gut Gut.
     # job
     a: (^job()) $$intent=job 
     # relationship_f
-    a: (^relationship_f()) $$intent=relationship_f Das ist meine Familie.
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_sara_event15 Das ist meine Familie.
     # relationship_o
-    a: (^relationship_o()) $$intent=relationship_o Ich liebe meine Familie ganz doll.
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_sara_event16 Ich liebe meine Familie ganz doll.
     # time together
-    a: (^time_together()) $$intent=time_together Am Wochenende wenn alle zu Besuch kommen.
+    a: (^time_together()) $$intent=time_together $$sound_file = s_sara_event17 Am Wochenende wenn alle zu Besuch kommen.
     # time relationship
     a: (^time()) $$intent=time_relationship 
     # activity together
@@ -48,37 +22,63 @@ u: ([familie Familie]) ^keep() ^refine()
     # activity
     a: (^activity()) $$intent=activity 
     # places together
-    a: (^places_together()) $$intent=places_together Zu hause.
-    
+    a: (^places_together()) $$intent=places_together $$sound_file = g_sara_zuhause Zu hause.
+   
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_sara_mother1 Yasemin.
+    # age
+    a: (^age()) $$intent=age $$sound_file = s_sara_mother1 Meine Mama ist 36 Jahre alt.
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_sara_gut Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = s_sara_mother3 Die Mama arbeitet im Laden.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_sara_mother4 Meine Mama.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_sara_mother5 Ich liebe meine Mama.
+    # time together
+    a: (^time_together()) $$intent=time_together ^reuse(MAMA_3)
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(MAMA_2)
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = s_sara_mother3 Die Mama arbeitet im Laden.
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = s_sara_father6 Zu Hause oder im Laden.
+
+ 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
-        b: ($motherCounter==1) Normal.
-        b: ($motherCounter==2) Normal.
-        b: ($motherCounter==3) Normal.
-        b: ($motherCounter==4) Normal.
+        b: ($motherCounter==1) $$sound_file = g_sara_normal Normal.
+        b: ($motherCounter==2) $$sound_file = g_sara_normal Normal.
+        b: ($motherCounter==3) $$sound_file = g_sara_normal Normal.
+        b: ($motherCounter==4) $$sound_file = g_sara_normal Normal.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($motherCounter==1) Im Laden.
-        b: ($motherCounter==2) Bei uns Zuhause. Im Wohnzimmer.
-        b: ($motherCounter==3) Bei uns Zuhause.
-        b: ($motherCounter==4) Bei uns Zuhause.
+        b: ($motherCounter==1) $$sound_file = s_sara_mother6 Im Laden.
+        b: ($motherCounter==2) $$sound_file = s_sara_mother7 Bei uns Zuhause. Im Wohnzimmer.
+        b: ($motherCounter==3) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause.
+        b: ($motherCounter==4) $$sound_file = g_sara_beiunszuhause Bei uns Zuhause.
     # individual
     a: (^individual()) $$intent=individual $$intent=individual ^refine()
-        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==2) Mama, Papa, Amina und ich.
-        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==2) $$sound_file = s_sara_mother8 Mama, Papa, Amina und ich.
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($motherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($motherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes 
@@ -94,15 +94,19 @@ u: () ^keep() ^refine()
 
 # Narrative Antworten----------------------------------------------------------------------------------------
 
-u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 Meine Mama ist viel arbeiten, genau wie Papa.
+u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 $$sound_file = n_sara_mother1
+Meine Mama ist viel arbeiten, genau wie Papa.
 
 #! Erzähl mir mehr über deine Mama!
-u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 Abends essen wir alle zusammen.
+u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 $$sound_file = n_sara_mother2
+Abends essen wir alle zusammen.
 #! Und was machst du gerne mit deiner Mama?
-u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 Beim Tischdecken helfe ich Mama immer.
+u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 $$sound_file = n_sara_mother3
+Beim Tischdecken helfe ich Mama immer.
 
 #! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
-u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 Mama hat eine sehr große Familie. Die besuchen uns immer am Wochenende.
+u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 $$sound_file = n_sara_mother4
+Mama hat eine sehr große Familie. Die besuchen uns immer am Wochenende.
 
 # Spezifische Antworten------------------------------------------------------------------------------
 

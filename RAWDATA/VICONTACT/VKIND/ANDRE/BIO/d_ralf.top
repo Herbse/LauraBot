@@ -3,7 +3,7 @@ topic: ~ralf_t ()
 #t: specific test to  topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_andre_ralf1 
     Ralf.
@@ -37,7 +37,7 @@ u: () ^keep() ^refine()
     
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($ralfCounter==1) $$sound_file = g_andre_vollcool Voll cool.
@@ -46,25 +46,25 @@ u: () ^keep() ^refine()
         b: ($ralfCounter==4) $$sound_file = g_andre_egal Egal.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($ralfCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($ralfCounter==2) $$sound_file = s_andre_ralf8 Bei uns in der Siedlung.
         b: ($ralfCounter==3) $$sound_file = g_andre_inderstadt  In der Stadt.
-        b: ($ralfCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($ralfCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($ralfCounter==2) $$sound_file = s_andre_ralf9  Onkel Ralf.
         b: ($ralfCounter==3) $$sound_file = s_andre_ralf10  Ich und Onkel Ralf.
-        b: ($ralfCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($ralfCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($ralfCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($ralfCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($ralfCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($ralfCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($ralfCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($ralfCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($ralfCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
         b: () 

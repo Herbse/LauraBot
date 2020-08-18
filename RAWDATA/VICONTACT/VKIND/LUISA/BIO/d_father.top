@@ -1,7 +1,7 @@
 topic: ~father_t ()
 
 #specific questions/answers depending on general context
-u: (familie) ^keep() ^refine()
+u: ($$answerCategory==specific familie) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_luisa_father1 Christina, Konrad, Clemens und Johannes.
     # age
@@ -26,7 +26,7 @@ u: (familie) ^keep() ^refine()
     a: (^places_together()) $$intent=places_together $$sound_file = s_luisa_brother5 Zu Hause oder in der Kirche.
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_luisa_father4 Konrad.
     # age
@@ -51,7 +51,7 @@ u: () ^keep() ^refine()
     a: (^places_together()) $$intent=places_together $$sound_file = s_luisa_father6 Der ist mein Papa.
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($fatherCounter==1) $$sound_file = g_luisa_weißnicht Weiß nicht.
@@ -59,25 +59,25 @@ u: () ^keep() ^refine()
         b: ($fatherCounter==3) $$sound_file = g_luisa_vollcool Voll cool.
         b: ($fatherCounter==4) $$sound_file = g_luisa_vollcool Voll cool.
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==3) In der Stadt.
         b: ($fatherCounter==4) Im Kino.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==2) $$sound_file = s_luisa_father9 Papa.
         b: ($fatherCounter==3) $$sound_file = s_luisa_father10 Papa und ich.
         b: ($fatherCounter==4) $$sound_file = s_luisa_father11 Papa und ich.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($fatherCounter==1) ^reuse(PAPA_2)
-        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

@@ -1,7 +1,7 @@
 topic: ~aunt_t repeat ()
 
 #specific questions/answers depending on general context
-u: ([familie Familie]) ^keep() ^refine()
+u: ($$answerCategory==specific [familie Familie]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_jason_aunt1
     Frank, Greta und Conny. 
@@ -32,7 +32,7 @@ u: ([familie Familie]) ^keep() ^refine()
     a: (^places_together()) $$intent=places_together $$sound_file = s_jason_aunt6
     Zuhause oder draußen.
 
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_jason_aunt7
     Conny.
@@ -72,7 +72,7 @@ u: () ^keep() ^refine()
 
     
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($auntCounter==1) $$sound_file = g_jason_ganzcool Ganz cool.
@@ -81,25 +81,25 @@ u: () ^keep() ^refine()
         b: ($auntCounter==4) $$sound_file = g_jason_ganzcool Ganz cool.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
         b: ($auntCounter==1) $$sound_file = g_jason_zuhause Zuhause.
-        b: ($auntCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($auntCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($auntCounter==3) $$sound_file = g_jason_zuhause Zuhause.
         b: ($auntCounter==4) $$sound_file = g_jason_inderstadt In der Stadt.
     # individual
     a: (^individual()) $$intent=individual $$intent=individual ^refine()
         b: ($auntCounter==1) $$sound_file = s_jason_aunt13 Conny und ich.
-        b: ($auntCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($auntCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($auntCounter==3) $$sound_file = s_jason_aunt14 Ich und meine Familie.
         b: ($auntCounter==4) $$sound_file = s_jason_aunt14 Ich und meine Familie.
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($auntCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($auntCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($auntCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($auntCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($auntCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($auntCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($auntCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($auntCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes 

@@ -3,7 +3,7 @@ topic: ~brother_t ()
 #t: specific test to  topic ^keep() ^repeat() 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_luisa_brother1 
     Clemens und Johannes.
@@ -36,7 +36,7 @@ u: () ^keep() ^refine()
     
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($brotherCounter==1) $$sound_file = g_luisa_ganzok Ganz ok.
@@ -45,25 +45,25 @@ u: () ^keep() ^refine()
         b: ($brotherCounter==4) $$sound_file = g_luisa_ganzok Ganz ok.
        
     # other_opinion
-    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($brotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($brotherCounter==3) $$sound_file = s_luisa_brother6 Bei uns im Viertel.
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($brotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
         b: ($brotherCounter==3) $$sound_file = s_luisa_brother7 Mama, meine Brüder und ich.
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # reason
     a: (^reason()) $$intent=reason ^refine()
-        b: ($brotherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($brotherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($brotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($brotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
      a: (^example()) $$intent=example ^refine()
         b: () 

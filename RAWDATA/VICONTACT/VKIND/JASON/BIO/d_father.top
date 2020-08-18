@@ -3,7 +3,7 @@ topic: ~father_t ()
 
 
 #specific questions/answers depending on general context
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = s_jason_father1 
     Frank.
@@ -39,7 +39,7 @@ u: () ^keep() ^refine()
     Zuhause oder draussen.
 
 #specific questions/answers depending on what narrative answer was given before
-u: () ^keep() ^refine()
+u: ($$answerCategory==specific) ^keep() ^refine()
     # personal_opinion
     a: (^personal_opinion()) $$intent=personal_opinion ^refine()
         b: ($fatherCounter==1) $$sound_file = g_jason_vollcool Voll cool.
@@ -51,22 +51,22 @@ u: () ^keep() ^refine()
     a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
     # place
     a: (^place()) $$intent=place ^refine()
-        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==2) $$sound_file = g_jason_zuhause Zuhause.
-        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==4) In der Nachbarschaft.
     # individual
     a: (^individual()) $$intent=individual ^refine()
-        b: ($fatherCounter==1) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==2) $$sound_file = s_jason_father9 Papa und ich.
-        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
         b: ($fatherCounter==4) $$sound_file = s_jason_father9 Papa und ich.
     # reason
     a: (^reason()) $$intent=reason ^refine()
         b: ($fatherCounter==1) ^reuse(PAPA_3)
-        b: ($fatherCounter==2) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-        b: ($fatherCounter==4) $$answerCategory=ignorance ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
     # example
     a: (^example()) $$intent=example ^refine()
         b: () $$nextAnswer = yes

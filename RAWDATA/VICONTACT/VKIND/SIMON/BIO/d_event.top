@@ -1,7 +1,7 @@
 topic: ~event_t repeat ()
 
 #specific questions/answers depending on general context
-u: ([neuer moritz Moritz er ihm ihn]) ^keep() ^refine()
+u: ($$answerCategory==specific [neuer moritz Moritz er ihm ihn]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = event1 Herr Moritz. 
     # age
@@ -29,7 +29,7 @@ u: ([neuer moritz Moritz er ihm ihn]) ^keep() ^refine()
     # places together
     a: (^places_together()) $$intent=places_together $$sound_file = event10 In der Schule. 
 
-u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
+u: ($$answerCategory==specific [alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
     # name
     a: (^names()) $$intent=names $$sound_file = event1 Herr Schaller.
     # age
@@ -59,7 +59,7 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 
 
 # specific questions/answers depending on what narrative answer was given before
-#a u: () ^keep() ^refine() 
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
     # personal_opinion
 #a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #a        b: ($eventCounter==1) $$sound_file = event11a Voll doof.
@@ -73,11 +73,11 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #a        b: ($eventCounter==9) $$sound_file = event12a Voll eklig.
 #a        b: ($eventCounter==10) $$sound_file = event12a Voll doof.
 #a    # other_opinion
-#a    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+#a    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
 #a    # place
 #a    a: (^place()) $$intent=place ^refine()
 #a        b: ($eventCounter==1) In Sport.
-#a        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==2) In Sport.
 #a        b: ($eventCounter==3) In Sport.
 #a        b: ($eventCounter==4) In Sport.
@@ -86,16 +86,16 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #a        b: ($eventCounter==7) ^reuse(EVENT_8)
 #a        b: ($eventCounter==8) In der Sporthalle.
 #a        b: ($eventCounter==9) In der Umkleide.
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # individual
 #a    a: (^individual()) $$intent=individual ^refine()
-#a        b: ($clue==1) $answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==1) $answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==2) $answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==4) $answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==5) $answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($clue==1) $answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==1) $answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==4) $answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==5) $answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==7) Herr Moritz
 #a        b: ($eventCounter==8) Herr Moritz
 #a        b: ($eventCounter==9) Herr Moritz
@@ -105,14 +105,14 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #a        b: ($clue==1) ^reuse(EVENT_2)
 #a        b: ($eventCounter==1) ^reuse(EVENT_2)
 #a        b: ($eventCounter==2) ^reuse(EVENT_3)
-#a        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
 #a        b: ($eventCounter==4) ^reuse(EVENT_5)
 #a        b: ($eventCounter==5) ^reuse(EVENT_6)
-#a        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#a        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #a    # example
 #a    a: (^example()) $$intent=example ^refine()
 #a        b: () $$nextAnswer = yes
@@ -134,7 +134,7 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #a    # log questions that were not catched by macros
 #a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#b u: () ^keep() ^refine() 
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
 #b    # personal_opinion
 #b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #b        b: ($eventCounter==1) $$sound_file = event11b Voll doof.
@@ -148,11 +148,11 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #b        b: ($eventCounter==9) $$sound_file = event12b Naja, nicht ok.
 #b        b: ($eventCounter==10) $$sound_file = event12b Das ist so gemein!
 #b    # other_opinion
-#b    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance  ^respond(~ignorance)
+#b    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing  ^respond(~ignorance)
 #b    # place
 #b    a: (^place()) $$intent=place ^refine()
 #b        b: ($eventCounter==1) In Sport.
-#b        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==2) In Sport.
 #b        b: ($eventCounter==3) In Sport.
 #b        b: ($eventCounter==4) In Sport.
@@ -162,20 +162,20 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #b        b: ($eventCounter==8) In Sport.
 #b        b: ($eventCounter==9) In Sport.
 #b        b: ($eventCounter==10) In Sport.
-#b    a: (^individual()) $$intent=individual  $$answerCategory=ignorance ^respond(~ignorance)
+#b    a: (^individual()) $$intent=individual  $$answerCategory=missing ^respond(~ignorance)
 #b    # reason
 #b    a: (^reason()) $$intent=reason ^refine()
 #b        b: ($clue==1) ^reuse(EVENT_2)
 #b        b: ($eventCounter==1) ^reuse(EVENT_2)
 #b        b: ($eventCounter==2) ^reuse(EVENT_3)
-#b        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==4) ^reuse(EVENT_5)
 #b        b: ($eventCounter==5) ^reuse(EVENT_6)
-#b        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
 #b        b: ($eventCounter==7) ^reuse(EVENT_8)
 #b        b: ($eventCounter==8) ^reuse(EVENT_9)
-#b        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#b        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #b    # example
 #b    a: (^example()) $$intent=example ^refine()
 #b        b: () $$nextAnswer = yes
@@ -197,7 +197,7 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #b    # log questions that were not catched by macros
 #b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
 
-#c u: () ^keep() ^refine() 
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
 #c    # personal_opinion
 #c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
 #c        b: ($eventCounter==1) $$sound_file = event11c Voll doof.
@@ -211,11 +211,11 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #c        b: ($eventCounter==9) $$sound_file = event11c Voll doof.
 #c        b: ($eventCounter==10) 
 #c    # other_opinion
-#c    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=ignorance ^respond(~ignorance)
+#c    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
 #c    # place
 #c    a: (^place()) $$intent=place ^refine()
 #c        b: ($eventCounter==1) In Sport.
-#c        b: ($clue==1) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==2) In Sport.
 #c        b: ($eventCounter==3) In Sport.
 #c        b: ($eventCounter==4) In Sport.
@@ -226,20 +226,20 @@ u: ([alter schaller vorheriger er ihm ihn]) ^keep() ^refine()
 #c        b: ($eventCounter==9) In Sport.
 #c        b: ($eventCounter==10) In Sport.
 #c    # individual
-#c    a: (^individual()) $$intent=individual $$answerCategory=ignorance ^respond(~ignorance)
+#c    a: (^individual()) $$intent=individual $$answerCategory=missing ^respond(~ignorance)
 #c    # reason
 #c    a: (^reason()) $$intent=reason ^refine()
 #c        b: ($clue==1) ^reuse(EVENT_2)
 #c        b: ($eventCounter==1) ^reuse(EVENT_2)
 #c        b: ($eventCounter==2) ^reuse(EVENT_3)
-#c        b: ($eventCounter==3) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
 #c        b: ($eventCounter==4) ^reuse(EVENT_5)
 #c        b: ($eventCounter==5) ^reuse(EVENT_6)
-#c        b: ($eventCounter==6) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==7) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==8) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==9) $$answerCategory=ignorance ^respond(~ignorance)
-#c        b: ($eventCounter==10) $$answerCategory=ignorance ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
 #c    # example
 #c    a: (^example()) $$intent=example ^refine()
 #c        b: () $$nextAnswer = yes

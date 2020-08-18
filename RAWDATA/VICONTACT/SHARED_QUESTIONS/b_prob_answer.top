@@ -13,80 +13,80 @@ $goodQuestion += 1 $noncritTopic += 1
 ^refine()
     a: ($rapportCounter==-5)
         $$probFormat = narrative-40_notAnswering-30_ignorance-15_reactance-15
-        $$randNum = ^generateNumber()
-        if ($$randNum < 40) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 70) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 85) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 400) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 700) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 850) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-4)
         $$probFormat = narrative-44_notAnswering-28_ignorance-14_reactance-14
-        $$randNum = ^generateNumber()
-        if ($$randNum < 44) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 72) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 86) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 440) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 720) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 860) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-3)
         $$probFormat = narrative-48_notAnswering-26_ignorance-13_reactance-13
-        $$randNum = ^generateNumber()
-        if ($$randNum < 48) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 74) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 87) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 480) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 740) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 870) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-2)
         $$probFormat = narrative-52_notAnswering-24_ignorance-12_reactance-12
-        $$randNum = ^generateNumber()
-        if ($$randNum < 52) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 76) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 88) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 520) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 760) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 880) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-1)
         $$probFormat = narrative-56_notAnswering-22_ignorance-11_reactance-11
-        $$randNum = ^generateNumber()
-        if ($$randNum < 56) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 78) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 89) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 560) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 780) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 890) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==0)
         $$probFormat = narrative-60_notAnswering-20_ignorance-10_reactance-10
-        $$randNum = ^generateNumber()
-        if ($$randNum < 60) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 80) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 90) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 600) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 800) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 900) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==1)
         $$probFormat = narrative-64_notAnswering-18_ignorance-9_reactance-9
-        $$randNum = ^generateNumber()
-        if ($$randNum < 64) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 82) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 91) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 640) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 820) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 910) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==2)
         $$probFormat = narrative-68_notAnswering-16_ignorance-8_reactance-8
-        $$randNum = ^generateNumber()
-        if ($$randNum < 68) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 84) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 92) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 680) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 840) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 920) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==3)
         $$probFormat = narrative-72_notAnswering-14_ignorance-7_reactance-7
-        $$randNum = ^generateNumber()
-        if ($$randNum < 72) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 86) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 93) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 720) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 860) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 930) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==4)
         $$probFormat = narrative-76_notAnswering-12_ignorance-6_reactance-6
-        $$randNum = ^generateNumber()
-        if ($$randNum < 76) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 88) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 94) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 760) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 880) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 940) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==5)
         $$probFormat = narrative-80_notAnswering-10_ignorance-5_reactance-5
-        $$randNum = ^generateNumber()
-        if ($$randNum < 80) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 95) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 800) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 900) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 950) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
 
 
@@ -97,9 +97,9 @@ if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = narrative-80_notAnswering-10_ignorance-10
-$$randNum = ^generateNumber()
-if ($$randNum < 80) {$$answerCategory = narrative ^respond(~narrative)}
-else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 800) {$$answerCategory = narrative ^respond(~narrative)}
+else if ($$randNum < 900) {$$answerCategory = notAnswering ^respond(~notAnswering)}
 else {$$answerCategory = ignorance ^respond(~ignorance)}
 
 
@@ -115,81 +115,81 @@ $goodQuestion += 1 $noncritTopic += 1
 ^refine()
     a: ($rapportCounter==-5)
         $$probFormat = narrative-20_affirmation-30_notAnswering-30_reactance-20
-        $$randNum = ^generateNumber()
-        if ($$randNum < 20) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 50) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 80) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 200) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 500) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 800) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-4)
         $$probFormat = narrative-24_affirmation-29_notAnswering-29_reactance-18
-        $$randNum = ^generateNumber()
-        if ($$randNum < 24) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 53) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 82) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 240) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 530) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 820) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-3)
         $$probFormat = narrative-28_affirmation-28_notAnswering-28_reactance-16
-        $$randNum = ^generateNumber()
-        if ($$randNum < 28) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 56) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 84) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 280) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 560) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 840) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-2)
         $$probFormat = narrative-32_affirmation-27_notAnswering-27_reactance-14
-        $$randNum = ^generateNumber()
-        if ($$randNum < 32) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 59) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 86) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 320) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 590) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 860) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-1)
         $$probFormat = narrative-36_affirmation-26_notAnswering-26_reactance-12
-        $$randNum = ^generateNumber()
-        if ($$randNum < 36) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 62) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 88) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 360) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 620) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 880) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==0)
         $$probFormat = narrative-40_affirmation-25_notAnswering-25_reactance-10
-        $$randNum = ^generateNumber()
-        if ($$randNum < 40) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 65) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 400) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 650) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 900) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==1)
         $$probFormat = narrative-44_affirmation-24_notAnswering-24_reactance-8
-        $$randNum = ^generateNumber()
-        if ($$randNum < 44) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 68) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 92) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 440) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 680) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 920) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==2)
         $$probFormat = narrative-48_affirmation-23_notAnswering-23_reactance-6
-        $$randNum = ^generateNumber()
-        if ($$randNum < 48) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 71) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 94) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 480) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 710) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 940) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==3)
         $$probFormat = narrative-52_affirmation-22_notAnswering-22_reactance-4
-        $$randNum = ^generateNumber()
-        if ($$randNum < 52) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 74) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 96) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 520) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 740) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 960) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==4)
         $$probFormat = narrative-56_affirmation-21_notAnswering-21_reactance-2
-        $$randNum = ^generateNumber()
-        if ($$randNum < 56) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 77) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 98) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 560) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 770) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else if ($$randNum < 980) {$$answerCategory = notAnswering ^respond(~notAnswering)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==5)
         $$probFormat = narrative-60_affirmation-20_notAnswering-20_reactance-0
-        $$randNum = ^generateNumber()
-        if ($$randNum < 60) {$$answerCategory = narrative ^respond(~narrative)}
-        else if ($$randNum < 80) {$$answerCategory = affirmation ^respond(~affirmation)}
-        else if ($$randNum < 100) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else {$$answerCategory = reactance ^respond(~reactance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 600) {$$answerCategory = narrative ^respond(~narrative)}
+        else if ($$randNum < 800) {$$answerCategory = affirmation ^respond(~affirmation)}
+        else {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        
 
 u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency}  facilitator) 
 $goodQuestion += 1 $noncritTopic += 1
@@ -197,18 +197,18 @@ if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = narrative-60_affirmation-20_notAnswering-20
-$$randNum = ^generateNumber()
-if ($$randNum < 60) {$$answerCategory = narrative ^respond(~narrative)}
-else if ($$randNum < 80) {$$answerCategory = affirmation ^respond(~affirmation)}
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 600) {$$answerCategory = narrative ^respond(~narrative)}
+else if ($$randNum < 800) {$$answerCategory = affirmation ^respond(~affirmation)}
 else {$$answerCategory = notAnswering ^respond(~notAnswering)}
 
 # 70% affirmation | 20% negation | 5% ignorance | 5% non-answer
 u: (suggestive_specific)
 $$probFormat = affirmation-70_negation-20_ignorance-5_notAnswering-5
-$$randNum = ^generateNumber()
-if ($$randNum < 70){$$answerCategory = affirmation ^respond(~affirmation)} 
-else if ($$randNum < 90){$$answerCategory = negation ^respond(~negat)} 
-else if ($$randNum < 95){$$answerCategory = ignorance ^respond(~ignorance)} 
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 700){$$answerCategory = affirmation ^respond(~affirmation)} 
+else if ($$randNum < 900){$$answerCategory = negation ^respond(~negat)} 
+else if ($$randNum < 950){$$answerCategory = ignorance ^respond(~ignorance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
 
@@ -222,80 +222,80 @@ if ($rapportCounter == -6) {$rapportCounter = -5}
 ^refine() 
     a: ($rapportCounter==-5)
         $$probFormat = specific-40_notAnswering-30_ignorance-15_reactance-15
-        $$randNum = ^generateNumber()
-        if ($$randNum < 40) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 70) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 85) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 400) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 700) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 850) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-4)
         $$probFormat = specific-44_notAnswering-28_ignorance-14_reactance-14
-        $$randNum = ^generateNumber()
-        if ($$randNum < 44) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 72) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 86) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 440) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 720) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 860) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-3)
         $$probFormat = specific-48_notAnswering-26_ignorance-13_reactance-13
-        $$randNum = ^generateNumber()
-        if ($$randNum < 48) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 74) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 87) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 480) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 740) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 870) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-2)
         $$probFormat = specific-52_notAnswering-24_ignorance-12_reactance-12
-        $$randNum = ^generateNumber()
-        if ($$randNum < 52) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 76) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 88) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 520) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 760) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 880) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==-1)
         $$probFormat = specific-56_notAnswering-22_ignorance-11_reactance-11
-        $$randNum = ^generateNumber()
-        if ($$randNum < 56) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 78) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 89) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 560) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 780) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 890) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==0)
         $$probFormat = specific-60_notAnswering-20_ignorance-10_reactance-10
-        $$randNum = ^generateNumber()
-        if ($$randNum < 60) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 80) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 90) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 600) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 800) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 900) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==1)
         $$probFormat = specific-64_notAnswering-18_ignorance-9_reactance-9
-        $$randNum = ^generateNumber()
-        if ($$randNum < 64) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 82) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 91) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 640) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 820) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 910) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==2)
         $$probFormat = specific-68_notAnswering-16_ignorance-8_reactance-8
-        $$randNum = ^generateNumber()
-        if ($$randNum < 68) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 84) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 92) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 680) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 840) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 920) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==3)
         $$probFormat = specific-72_notAnswering-14_ignorance-7_reactance-7
-        $$randNum = ^generateNumber()
-        if ($$randNum < 72) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 86) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 93) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 720) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 860) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 930) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==4)
         $$probFormat = specific-76_notAnswering-12_ignorance-6_reactance-6
-        $$randNum = ^generateNumber()
-        if ($$randNum < 76) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 88) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 94) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 760) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 880) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 940) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
     a: ($rapportCounter==5)
         $$probFormat = specific-80_notAnswering-10_ignorance-5_reactance-5
-        $$randNum = ^generateNumber()
-        if ($$randNum < 80) {$$answerCategory = specific ^respond(~specific)}
-        else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
-        else if ($$randNum < 95) {$$answerCategory = ignorance ^respond(~ignorance)}
+        $$randNum = ^generateNumber() * 10
+        if ($$randNum < 800) {$$answerCategory = specific ^respond(~specific)}
+        else if ($$randNum < 900) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+        else if ($$randNum < 950) {$$answerCategory = ignorance ^respond(~ignorance)}
         else {$$answerCategory = reactance ^respond(~reactance)}
 
 u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency} specific)
@@ -303,9 +303,9 @@ if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = specific-80_notAnswering-10_ignorance-10
-$$randNum = ^generateNumber()
-if ($$randNum < 80) {$$answerCategory = specific ^respond(~specific)}
-else if ($$randNum < 90) {$$answerCategory = notAnswering ^respond(~notAnswering)}
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 800) {$$answerCategory = specific ^respond(~specific)}
+else if ($$randNum < 900) {$$answerCategory = notAnswering ^respond(~notAnswering)}
 else {$$answerCategory = ignorance ^respond(~ignorance))
 
 
@@ -317,9 +317,9 @@ else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $noncritTopic += 1
 $$probFormat = option_chosen-80_notAnswering-10_ignorance-10
-$$randNum = ^generateNumber() 
-if ($$randNum < 80){$$answerCategory = options ^respond(~options)} 
-else if ($$randNum < 90){$$answerCategory = notAnswering ^respond(~notAnswering)} 
+$$randNum = ^generateNumber() * 10 
+if ($$randNum < 800){$$answerCategory = options ^respond(~options)} 
+else if ($$randNum < 900){$$answerCategory = notAnswering ^respond(~notAnswering)} 
 else {$$answerCategory = ignorance ^respond(~ignorance)} 
 
 
@@ -330,9 +330,9 @@ else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $noncritTopic += 1
 $$probFormat = affirmation-50_negation-30_ignorance-20
-$$randNum = ^generateNumber()
-if ($$randNum < 50){$$answerCategory = affirmation ^respond(~affirmation)} 
-else if ($$randNum < 80){$$answerCategory = negation $$answer = ^respond(~negat)} 
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 500){$$answerCategory = affirmation ^respond(~affirmation)} 
+else if ($$randNum < 800){$$answerCategory = negation $$answer = ^respond(~negat)} 
 else {$$answerCategory = ignorance ^respond(~ignorance)} 
 
 
@@ -342,8 +342,8 @@ if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = incomprehension-90_reactance-10
-$$randNum = ^generateNumber()
-if ($$randNum < 90){$$answerCategory = incomprehension ^respond(~incomprehension)} 
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 900){$$answerCategory = incomprehension ^respond(~incomprehension)} 
 else {$$answerCategory = reactance ^respond(~reactance)} 
 
 # 100% repetition of given answer (how many volleys back?)
@@ -357,9 +357,9 @@ if ($disclosureState==0) {$rapportCounter -= 1 $$answerCategory = reactance ^res
 # 40% ignorance | 30% reactance | 30% sobbing
 u: (suggestive_unspecific) 
 $$probFormat = ignorance-40_reactance-30_notAnswering-30
-$$randNum = ^generateNumber()
-if ($$randNum < 40){$$answerCategory = ignorance ^respond(~ignorance)} 
-else if ($$randNum < 70){$$answerCategory = reactance ^respond(~reactance)} 
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 400){$$answerCategory = ignorance ^respond(~ignorance)} 
+else if ($$randNum < 700){$$answerCategory = reactance ^respond(~reactance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
 
@@ -367,10 +367,10 @@ else {$$answerCategory = notAnswering ^respond(~notAnswering)}
 # 70% affirmation | 20% negation | 5% ignorance | 5% non-answer
 u: (suggestive_specific)
 $$probFormat = affirmation-70_negation-20_ignorance-5_notAnswering-5
-$$randNum = ^generateNumber()
-if ($$randNum < 70){$$answerCategory = affirmation ^respond(~affirmation)} 
-else if ($$randNum < 90){$$answerCategory = negation ^respond(~negat)} 
-else if ($$randNum < 95){$$answerCategory = ignorance ^respond(~ignorance)} 
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 700){$$answerCategory = affirmation ^respond(~affirmation)} 
+else if ($$randNum < 900){$$answerCategory = negation ^respond(~negat)} 
+else if ($$randNum < 950){$$answerCategory = ignorance ^respond(~ignorance)} 
 else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
 
 u: ({_rapport} {_demand} {_transparency} relevance) 
@@ -438,7 +438,7 @@ $$probFormat = specific-100
 
 
 
-u: (<< {_rapport} {_demand} {_transparency} information support >>)
+u: (<< {_rapport} {_demand} {_transparency} availability information support >>)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
@@ -451,6 +451,21 @@ else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = affirmation-100
 $$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+u: (<< {_rapport} {_demand} {_transparency} information support >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+u: (<< {_rapport} {_demand} {_transparency} information availability >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. 
+
 
 
 u: ({_rapport} {_demand} {_transparency} information)
@@ -471,8 +486,8 @@ u: ({_rapport} {_demand} {_transparency} availability)
 if ('_0==rapport){$rapportCounter += 1}
 else if ('_1==demand){$rapportCounter += 1}
 else if ('_2==transparency){$rapportCounter += 1}
-$$probFormat = okay-100
-$$answerCategory = okay Okay. 
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. 
 
 u: ({_rapport} {_demand} {_transparency} introduction)
 if ('_0==rapport){$rapportCounter += 1}
@@ -488,7 +503,6 @@ else if ('_2==transparency){$rapportCounter += 1}
 $$probFormat = greetings-100
 $$answerCategory = greetings 
 Hallo. 
-
 
 
 u: ({_rapport} {_demand} {_transparency} support)
