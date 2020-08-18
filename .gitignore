@@ -66,3 +66,14 @@ TMP/prebuild1.bin
 TMP/prebuild2.bin
 USERS/log-a.txt
 chat.txt
+LOGS/serverlog1024.txt
+LOGS/startlog.txt
+TMP/prebuild0.bin
+TMP/prebuild1.bin
+TMP/prebuild2.bin
+TOPIC/BUILD1/dict1.txt
+TOPIC/BUILD1/keywords1.txt
+TOPIC/BUILD1/macros1.txt
+TOPIC/BUILD1/map1.txt
+TOPIC/BUILD1/patternWords1.txt
+TOPIC/BUILD1/script1.txt
