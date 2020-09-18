@@ -27,7 +27,7 @@ if ($rapportCounter == -6) {$rapportCounter = -5}
  $_topicSwitch = $$topicSwitch
  $_randomNumber = $$randNum / 10
  $_chatPhase = $chatPhase
- $_critRevealed = $$critRevealed
+ $_critRevealed = $critRevealed
  $_noncritTopic = $noncritTopic
  $_intent = $$intent
  $_soundFile = $$sound_file
