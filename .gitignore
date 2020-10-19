@@ -66,3 +66,7 @@ TMP/prebuild1.bin
 TMP/prebuild2.bin
 USERS/log-a.txt
 chat.txt
+chat.txt
+LOGS/serverlog1024.txt
+LOGS/startlog.txt
+USERS/log-test.txt
