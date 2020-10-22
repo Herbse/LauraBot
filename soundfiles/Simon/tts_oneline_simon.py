@@ -13,7 +13,7 @@ from google.cloud import texttospeech
 client = texttospeech.TextToSpeechClient()
 
 # Set the text input to be synthesized
-transcribe = "ich würde viel lieber wieder zu herrn schaller gehen. Er ist der beste lehrer."
+transcribe = "immer passiert mir das"
 synthesis_input = texttospeech.types.SynthesisInput(text=transcribe)
 
 # Build the voice request, select the language code ("en-US") and the ssml

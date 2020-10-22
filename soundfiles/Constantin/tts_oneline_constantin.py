@@ -13,7 +13,7 @@ from google.cloud import texttospeech
 client = texttospeech.TextToSpeechClient()
 
 # Set the text input to be synthesized
-transcribe = "lassen sie mich damit in ruhe!"
+transcribe = "ich will darüber nicht sprechen"
 synthesis_input = texttospeech.types.SynthesisInput(text=transcribe)
 
 # Build the voice request, select the language code ("en-US") and the ssml
