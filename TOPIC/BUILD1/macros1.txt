@@ -23,7 +23,7 @@
 ^simon_si o 0 0 A( ) ^addtopic ( ~introduction ) $cs_control_pre = ~timer $cs_control_main = ~control $cs_control_post = ~addposthoc $cs_language = german $cs_externaltag = ~xpostagsentence $userprompt = ^"%user: >" $botprompt = ^"Simon: " $singleresponse = 1 $cs_token = 512 | 131072 | 1024 `
 ^tutorial o 0 0 A( ) ^addtopic ( ~introduction ) $cs_control_pre = ~timer $cs_control_main = ~control $cs_control_post = ~addposthoc $cs_language = german $cs_externaltag = ~xpostagsentence $userprompt = ^"%user: >" $botprompt = ^"Tutorial-Bot: " $singleresponse = 1 $cs_token = 512 | 131072 `
 ^sound o 0 0 A( )  `
-^cluehandler o 0 0 A( ) ^if 00N( $goodquestion == 5 and $eventcounter != 1 ) 018{ ^postprintafter ( ^reuse ( ~event_t.event_1 ) ) ^gambit ( ~addposthoc ) } 004 ^if 00N( $goodquestion == 10 and $eventcounter < 2 ) 01l{ $showclue2 = 1 ^postprintafter ( ^reuse ( ~event_t.clue2 ) ) ^gambit ( ~addposthoc ) } 004 `
+^cluehandler o 0 0 A( ) ^if 00N( $goodquestion == 5 and $eventcounter != 1 ) 018{ ^postprintafter ( ^reuse ( ~event_t.event_1 ) ) ^gambit ( ~addposthoc ) } 004 ^if 00&( $goodquestion == 10 and $eventcounter < 2 and $showclue2 != 1 ) 01l{ $showclue2 = 1 ^postprintafter ( ^reuse ( ~event_t.clue2 ) ) ^gambit ( ~addposthoc ) } 004 `
 ^change_topic p 0 0 A( ) [ ( << anderes ~narrate >> ) ( << weiteres ~narrate >> ) ( << sonst ~narrate >> ) ] `
 ^general_question p 0 0 A( ) [ ( warum bist du hier ) ( [ was worüber ] [ möchtest willst magst ] du *~3 ~narrate ) ( was liegt dir auf der seele ) ( was ist los ) ( was beschäftigt ) ( << wie [ läuft läufts ] >> ) ( worum ) ] `
 ^general_prompt p 0 0 A( ) [ ( << [ erzähl erzähle berichte sage sag beschreib beschreibe ] [ mir mal ] >> ) ( << fang an >> ) ] `

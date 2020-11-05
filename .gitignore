@@ -70,3 +70,12 @@ chat.txt
 LOGS/serverlog1024.txt
 LOGS/startlog.txt
 USERS/log-test.txt
+chat.txt
+LOGS/serverlog1024.txt
+LOGS/startlog.txt
+TMP/prebuild2.bin
+TOPIC/BUILD1/dict1.txt
+TOPIC/BUILD1/macros1.txt
+TOPIC/BUILD1/map1.txt
+TOPIC/BUILD1/patternWords1.txt
+TOPIC/BUILD1/script1.txt

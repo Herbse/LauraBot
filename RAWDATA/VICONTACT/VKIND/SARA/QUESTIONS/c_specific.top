@@ -24,7 +24,8 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
         b: (%topic!=~introduction~1) ^respond(%topic)
         b: ($chatPhase==main) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~sister_t)]
         b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~sister_t)]
-    a: (~bot >) ^respond(~personal_t)
+    a: (^mood()) ^refine()
+        b: (~bot) $$sound_file = g_sara_gut Geht so.
     a: ($chatPhase==main [~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~sister_t)]
     a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~sister_t)]
     a: (~parents) [^respond(~mother_t)] [^respond(~father_t)]

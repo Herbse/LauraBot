@@ -1346,11 +1346,11 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIO
           line: 26 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.22- b: 1
         rule: 27  ~specific.0.23 a: 
-          line: 27 0  # ^respond ( ~personal_t ) 
+          line: 27 0  # ^refine ( ) 
           Complexity of rule ~specific.0.23- a: 1
-        rule: 28  ~specific.0.24 a: 
-          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
-          Complexity of rule ~specific.0.24- a: 1
+        rule: 28  ~specific.0.24 b: 
+          line: 28 0  # $$sound_file = g_andre_gut Gut
+          Complexity of rule ~specific.0.24- b: 1
         rule: 29  ~specific.0.25 a: 
           line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.25- a: 1
@@ -1358,16 +1358,19 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIO
           line: 30 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.26- a: 1
         rule: 31  ~specific.0.27 a: 
-          line: 31 0  # ^respond ( %topic ) 
+          line: 31 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.27- a: 1
         rule: 32  ~specific.0.28 a: 
-          line: 32 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 32 0  # ^respond ( %topic ) 
           Complexity of rule ~specific.0.28- a: 1
         rule: 33  ~specific.0.29 a: 
           line: 33 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.29- a: 1
-        rule: 35  ~specific.0.30 a: 
+        rule: 34  ~specific.0.30 a: 
+          line: 34 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.30- a: 1
+        rule: 36  ~specific.0.31 a: 
+          Complexity of rule ~specific.0.31- a: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIONS/c_narrative.top
     topic: 1  ~narrative
         rule: 4  ~narrative.0.0 u: 
@@ -13031,8 +13034,8 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_clueHandl
           ifend 4 135  
           line: 4 0  # ^if 00N( $goodquestion == 5 an
           if 5 140  
-          line: 5 136  # ^if 00N( $goodquestion == 10 a
-          ifend 7 284  
+          line: 5 136  # ^if 00&( $goodquestion == 10 a
+          ifend 7 304  
           Complexity of ^cluehandler: 3
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_reactance.top
     topic: 1  ~reactance

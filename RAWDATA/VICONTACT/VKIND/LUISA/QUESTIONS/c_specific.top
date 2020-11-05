@@ -20,7 +20,8 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
         b: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
         b: (%topic!=~introduction~6) ^respond(%topic)
         b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~brother_t)]
-    a: (~bot {denn} >) ^respond(~personal_t)
+    a: (^mood()) ^refine()
+        b: (~bot) $$sound_file = g_luisa_gut Geht so.
     a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)] 
     a: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
     a: (%topic!=~introduction~6) ^respond(%topic)
