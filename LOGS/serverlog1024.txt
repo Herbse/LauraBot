@@ -2205,3 +2205,34 @@ ServerPre: pid: 39510 asd (andre_li) [facilitator] Nov 05 12:01:27 2020
 Respond: user:asd bot:andre_li ip:127.0.0.1 (~event_t) 15 [facilitator]  ==> [topic:~event_t | answerCategory:notAnswering | probFormat:narrative-40_affirmation-25_notAnswering-25_reactance-10 | goodQuestion:11 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:81 | topicSwitch: | critRevealed:0 | noncritTopic:15 | intent: | soundFile:hm | sumCorrect: | duration:137 ] Hm.  When:Nov05 12:01:28 37ms Why:~addposthoc.6.0 ~notanswering.0.0.~prob_answer.2.6 
 ServerPre: pid: 39510 asd (andre_li) [facilitator] Nov 05 12:01:39 2020
 Respond: user:asd bot:andre_li ip:127.0.0.1 (~event_t) 16 [facilitator]  ==> [topic:~event_t | answerCategory:narrative | probFormat:narrative-40_affirmation-25_notAnswering-25_reactance-10 | goodQuestion:12 | emoType:serious | rapportCounter:0 | disclosureState:1 | chatPhase:main | randomNumber:10 | topicSwitch: | critRevealed:0 | noncritTopic:16 | intent: | soundFile:hm | sumCorrect: | duration:149 ]  When:Nov05 12:01:39 36ms Why:~addposthoc.6.0 
+evserver child fork requests: 0
+  evserver: running pid: 81642
+System startup createsystem Mon Nov 09 13:20:26 2020
+Server ChatScript EVSERVER Version 8.8 pid: 81642 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=423924 Compiled:Nov05'20-12:39:09 by version 8.8 "vicontact"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9101kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,898KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 81642 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Mon Nov 09 13:20:27 2020 serverlog:1 userlog: 1
+evserver: parent ready (pid = 81642), fork=0
+ServerPre: pid: 81642 asd (andre_li) :build vicontact #a Nov 09 13:22:13 2020
+System startup vicontact #a Mon Nov 09 13:22:13 2020
+System startup createsystem Mon Nov 09 13:22:14 2020
+Server ChatScript EVSERVER Version 8.8 pid: 81642 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=424208 Compiled:Nov09'20-13:22:13 by version 8.8 "vicontact"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9101kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,898KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:asd bot:andre_li ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Nov 09 13:22:13 2020  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:   1 serious warnings, 0 function warnings, 0 spelling warnings, 250 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Nov 09 13:22:14 2020  Server ChatScript EVSERVER Version 8.8 pid: 81642 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=589  fact=366  heap=424208 Compiled:Nov09'20-13:22:13 by version 8.8 "vicontact"  Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9101kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,898KB         *** Server WIDE OPEN to :command use.    When:Nov09 13:22:15 1731ms 

@@ -2790,11 +2790,11 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/QUESTION
           line: 26 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.22- b: 1
         rule: 27  ~specific~1.0.23 a: 
-          line: 27 0  # ^respond ( ~personal_t ) 
+          line: 27 0  # ^refine ( ) 
           Complexity of rule ~specific~1.0.23- a: 1
-        rule: 28  ~specific~1.0.24 a: 
-          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
-          Complexity of rule ~specific~1.0.24- a: 1
+        rule: 28  ~specific~1.0.24 b: 
+          line: 28 0  # $$sound_file = g_sara_gut Geht
+          Complexity of rule ~specific~1.0.24- b: 1
         rule: 29  ~specific~1.0.25 a: 
           line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.25- a: 1
@@ -2802,16 +2802,19 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/QUESTION
           line: 30 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.26- a: 1
         rule: 31  ~specific~1.0.27 a: 
-          line: 31 0  # ^respond ( %topic ) 
+          line: 31 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.27- a: 1
         rule: 32  ~specific~1.0.28 a: 
-          line: 32 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 32 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~1.0.28- a: 1
         rule: 33  ~specific~1.0.29 a: 
           line: 33 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.29- a: 1
-        rule: 35  ~specific~1.0.30 a: 
+        rule: 34  ~specific~1.0.30 a: 
+          line: 34 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.30- a: 1
+        rule: 36  ~specific~1.0.31 a: 
+          Complexity of rule ~specific~1.0.31- a: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~1
         rule: 4  ~narrative~1.0.0 u: 
@@ -4250,25 +4253,28 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/QUESTIO
           line: 24 0  # [ ^respond ( ~aunt_t ) ] [ ^re
           Complexity of rule ~specific~2.0.20- b: 1
         rule: 25  ~specific~2.0.21 a: 
-          line: 25 0  # ^respond ( ~personal_t ) 
+          line: 25 0  # ^refine ( ) 
           Complexity of rule ~specific~2.0.21- a: 1
-        rule: 26  ~specific~2.0.22 a: 
-          line: 26 0  # [ ^respond ( ~aunt_t ) ] [ ^re
-          Complexity of rule ~specific~2.0.22- a: 1
+        rule: 26  ~specific~2.0.22 b: 
+          line: 26 0  # $$sound_file = g_jason_gut Geh
+          Complexity of rule ~specific~2.0.22- b: 1
         rule: 27  ~specific~2.0.23 a: 
-          line: 27 0  # [ ^respond ( ~father_t ) ] 
+          line: 27 0  # [ ^respond ( ~aunt_t ) ] [ ^re
           Complexity of rule ~specific~2.0.23- a: 1
         rule: 28  ~specific~2.0.24 a: 
-          line: 28 0  # ^respond ( %topic ) 
+          line: 28 0  # [ ^respond ( ~father_t ) ] 
           Complexity of rule ~specific~2.0.24- a: 1
         rule: 29  ~specific~2.0.25 a: 
-          line: 29 0  # [ ^respond ( ~aunt_t ) ] [ ^re
+          line: 29 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~2.0.25- a: 1
         rule: 30  ~specific~2.0.26 a: 
           line: 30 0  # [ ^respond ( ~aunt_t ) ] [ ^re
           Complexity of rule ~specific~2.0.26- a: 1
-        rule: 32  ~specific~2.0.27 a: 
+        rule: 31  ~specific~2.0.27 a: 
+          line: 31 0  # [ ^respond ( ~aunt_t ) ] [ ^re
           Complexity of rule ~specific~2.0.27- a: 1
+        rule: 33  ~specific~2.0.28 a: 
+          Complexity of rule ~specific~2.0.28- a: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~2
         rule: 4  ~narrative~2.0.0 u: 
@@ -5598,25 +5604,28 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUES
           line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~3.0.20- b: 1
         rule: 25  ~specific~3.0.21 a: 
-          line: 25 0  # ^respond ( ~personal_t ) 
+          line: 25 0  # ^refine ( ) 
           Complexity of rule ~specific~3.0.21- a: 1
-        rule: 26  ~specific~3.0.22 a: 
-          line: 26 0  # [ ^respond ( ~mother_t ) ] [ ^
-          Complexity of rule ~specific~3.0.22- a: 1
+        rule: 26  ~specific~3.0.22 b: 
+          line: 26 0  # $$sound_file = g_laura_gut Gut
+          Complexity of rule ~specific~3.0.22- b: 1
         rule: 27  ~specific~3.0.23 a: 
           line: 27 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~3.0.23- a: 1
         rule: 28  ~specific~3.0.24 a: 
-          line: 28 0  # ^respond ( %topic ) 
+          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~3.0.24- a: 1
         rule: 29  ~specific~3.0.25 a: 
-          line: 29 0  # [ ^respond ( ~event_t ) ] [ ^r
+          line: 29 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~3.0.25- a: 1
         rule: 30  ~specific~3.0.26 a: 
-          line: 30 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 30 0  # [ ^respond ( ~event_t ) ] [ ^r
           Complexity of rule ~specific~3.0.26- a: 1
-        rule: 33  ~specific~3.0.27 a: 
+        rule: 31  ~specific~3.0.27 a: 
+          line: 31 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~3.0.27- a: 1
+        rule: 34  ~specific~3.0.28 a: 
+          Complexity of rule ~specific~3.0.28- a: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~3
         rule: 4  ~narrative~3.0.0 u: 
@@ -6937,10 +6946,13 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUES
           line: 21 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~4.0.17- b: 1
         rule: 22  ~specific~4.0.18 a: 
-          line: 22 0  # ^respond ( ~personal_t ) 
+          line: 22 0  # ^refine ( ) 
           Complexity of rule ~specific~4.0.18- a: 1
-        rule: 24  ~specific~4.0.19 a: 
-          Complexity of rule ~specific~4.0.19- a: 1
+        rule: 23  ~specific~4.0.19 b: 
+          line: 23 0  # $$sound_file = g_laura_gut Gut
+          Complexity of rule ~specific~4.0.19- b: 1
+        rule: 25  ~specific~4.0.20 a: 
+          Complexity of rule ~specific~4.0.20- a: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~4
         rule: 4  ~narrative~4.0.0 u: 
@@ -8341,25 +8353,28 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/QU
           line: 22 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~5.0.18- b: 1
         rule: 23  ~specific~5.0.19 a: 
-          line: 23 0  # ^respond ( ~personal_t ) 
+          line: 23 0  # ^refine ( ) 
           Complexity of rule ~specific~5.0.19- a: 1
-        rule: 24  ~specific~5.0.20 a: 
-          line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
-          Complexity of rule ~specific~5.0.20- a: 1
+        rule: 24  ~specific~5.0.20 b: 
+          line: 24 0  # $$sound_file = g_constantin_gu
+          Complexity of rule ~specific~5.0.20- b: 1
         rule: 25  ~specific~5.0.21 a: 
-          line: 25 0  # [ ^respond ( ~mother_t ) ] 
+          line: 25 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~5.0.21- a: 1
         rule: 26  ~specific~5.0.22 a: 
-          line: 26 0  # ^respond ( %topic ) 
+          line: 26 0  # [ ^respond ( ~mother_t ) ] 
           Complexity of rule ~specific~5.0.22- a: 1
         rule: 27  ~specific~5.0.23 a: 
-          line: 27 0  # ^respond ( ~event_t ) 
+          line: 27 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~5.0.23- a: 1
         rule: 28  ~specific~5.0.24 a: 
-          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 28 0  # ^respond ( ~event_t ) 
           Complexity of rule ~specific~5.0.24- a: 1
-        rule: 30  ~specific~5.0.25 a: 
+        rule: 29  ~specific~5.0.25 a: 
+          line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~5.0.25- a: 1
+        rule: 31  ~specific~5.0.26 a: 
+          Complexity of rule ~specific~5.0.26- a: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~5
         rule: 4  ~narrative~5.0.0 u: 
@@ -9640,7 +9655,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/QUESTIO
           line: 22 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~6.0.18- b: 1
         rule: 23  ~specific~6.0.19 a: 
-          line: 23 0  # ^respond ( ~personal_t ) 
+          line: 23 0  # $$sound_file = g_luisa_gut Geh
           Complexity of rule ~specific~6.0.19- a: 1
         rule: 24  ~specific~6.0.20 a: 
           line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
@@ -10960,25 +10975,28 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/QUEST
           line: 22 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~7.0.18- b: 1
         rule: 23  ~specific~7.0.19 a: 
-          line: 23 0  # ^respond ( ~personal_t ) 
+          line: 23 0  # ^refine ( ) 
           Complexity of rule ~specific~7.0.19- a: 1
-        rule: 24  ~specific~7.0.20 a: 
-          line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
-          Complexity of rule ~specific~7.0.20- a: 1
+        rule: 24  ~specific~7.0.20 b: 
+          line: 24 0  # $$sound_file = g_natalia_gut G
+          Complexity of rule ~specific~7.0.20- b: 1
         rule: 25  ~specific~7.0.21 a: 
-          line: 25 0  # [ ^respond ( ~mother_t ) ] 
+          line: 25 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~7.0.21- a: 1
         rule: 26  ~specific~7.0.22 a: 
-          line: 26 0  # ^respond ( %topic ) 
+          line: 26 0  # [ ^respond ( ~mother_t ) ] 
           Complexity of rule ~specific~7.0.22- a: 1
         rule: 27  ~specific~7.0.23 a: 
-          line: 27 0  # ^respond ( ~event_t ) 
+          line: 27 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~7.0.23- a: 1
         rule: 28  ~specific~7.0.24 a: 
-          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 28 0  # ^respond ( ~event_t ) 
           Complexity of rule ~specific~7.0.24- a: 1
-        rule: 30  ~specific~7.0.25 a: 
+        rule: 29  ~specific~7.0.25 a: 
+          line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~7.0.25- a: 1
+        rule: 31  ~specific~7.0.26 a: 
+          Complexity of rule ~specific~7.0.26- a: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~7
         rule: 4  ~narrative~7.0.0 u: 
@@ -12260,25 +12278,28 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/QUESTIO
           line: 22 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~8.0.18- b: 1
         rule: 23  ~specific~8.0.19 a: 
-          line: 23 0  # ^respond ( ~personal_t ) 
+          line: 23 0  # ^refine ( ) 
           Complexity of rule ~specific~8.0.19- a: 1
-        rule: 24  ~specific~8.0.20 a: 
-          line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
-          Complexity of rule ~specific~8.0.20- a: 1
+        rule: 24  ~specific~8.0.20 b: 
+          line: 24 0  # $$sound_file = g_simon_gut Geh
+          Complexity of rule ~specific~8.0.20- b: 1
         rule: 25  ~specific~8.0.21 a: 
-          line: 25 0  # [ ^respond ( ~mother_t ) ] 
+          line: 25 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~8.0.21- a: 1
         rule: 26  ~specific~8.0.22 a: 
-          line: 26 0  # ^respond ( %topic ) 
+          line: 26 0  # [ ^respond ( ~mother_t ) ] 
           Complexity of rule ~specific~8.0.22- a: 1
         rule: 27  ~specific~8.0.23 a: 
-          line: 27 0  # ^respond ( ~event_t ) 
+          line: 27 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~8.0.23- a: 1
         rule: 28  ~specific~8.0.24 a: 
-          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 28 0  # ^respond ( ~event_t ) 
           Complexity of rule ~specific~8.0.24- a: 1
-        rule: 30  ~specific~8.0.25 a: 
+        rule: 29  ~specific~8.0.25 a: 
+          line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~8.0.25- a: 1
+        rule: 31  ~specific~8.0.26 a: 
+          Complexity of rule ~specific~8.0.26- a: 1
 file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~8
         rule: 4  ~narrative~8.0.0 u: 

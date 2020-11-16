@@ -19,8 +19,7 @@ u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat()
         b: (~parents) [^respond(~mother_t)] [^respond(~father_t)]
         b: (%topic!=~introduction~4) ^respond(%topic)
         b: () [^respond(~mother_t)] [^respond(~father_t)] [^respond(~brother_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)]
-    a: (^mood()) ^refine()
-        b: (~bot) $$sound_file = g_laura_gut Gut.
+    a: (<< ^mood() ~bot >>) $$sound_file = g_laura_gut Gut.
     # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus
     a: () ^respond(%topic)
    
