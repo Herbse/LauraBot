@@ -1,0 +1,32 @@
+topic: ~specific keep repeat nostay ()
+
+# Topicwechsel bei bestimmten Stichworten bzw. letztes Topic wenn kein bestimmtes Stichwort
+u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat() 
+    a: (~mother) ^respond(~mother_t)
+    a: ([katze minka]) ^respond(~cat_t)
+    a: ([nachbar heinz heintz]) ^respond(~neighbour_t)
+    a: ([moritz schaller schaler turnen]) ^respond(~event_t)
+    a: ([~friend jacky jacki jäki]) ^respond(~friends_t)
+    a: ([~hobby wald pilze pilz]) ^respond(~hobbies_t)
+    a: (~school) [^respond(~school_t)][^respond(~event_t)]
+    a: (^change_topic()) $$intent=changeTopic [^respond(~mother_t)] [^respond(~neighbour_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~cat_t)]
+    a: (^general_question()) $$intent=intro_question ^refine()
+        b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~cat_t)] [^respond(~neighbour_t)]
+        b: (~parents) [^respond(~mother_t)]
+        b: (%topic!=~introduction~8) ^respond(%topic)
+        b: () [^respond(~mother_t)] [^respond(~neighbour_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~cat_t)]
+    a: (^general_prompt()) $$intent=intro_prompt ^refine()
+        b: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~cat_t)] [^respond(~neighbour_t)]
+        b: (~parents) [^respond(~mother_t)]
+        b: (%topic!=~introduction~8) ^respond(%topic)
+        b: () [^respond(~mother_t)] [^respond(~neighbour_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~cat_t)]
+    a: (<< ^mood() ~bot >>) $$sound_file = g_simon_gut Geht so.
+    a: ([~home bei_euch Familie familie]) [^respond(~mother_t)] [^respond(~cat_t)] [^respond(~neighbour_t)]
+    a: (~parents) [^respond(~mother_t)]
+    a: (%topic!=~introduction~8) ^respond(%topic)
+    a: () ^respond(~event_t)
+    a: () [^respond(~mother_t)] [^respond(~neighbour_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~hobbies_t)][^respond(~school_t)][^respond(~cat_t)]
+   # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus
+    a: () ^respond(%topic)
+   
+  

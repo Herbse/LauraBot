@@ -1,0 +1,4 @@
+topic: ~negat keep repeat nostay()
+
+# [Mh-Mh.] ist auskommentiert wegen Problemen beim TTS.
+u: ($$answerCategory==negation) $$actionType = shake [Nein.][Nee.][Nö.] ^keep() ^repeat()

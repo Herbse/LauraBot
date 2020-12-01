@@ -1,0 +1,68 @@
+topic: ~hobbies_t ()
+# Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
+
+
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($hobbiesCounter==1) Ganz ok.
+        b: ($hobbiesCounter==2) Voll doof.
+        b: ($hobbiesCounter==3) Voll doof.
+        b: ($hobbiesCounter==4) Voll doof.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($hobbiesCounter==1) Im Wald bei der Schule.
+        b: ($hobbiesCounter==2) Im Wald bei der Schule.
+        b: ($hobbiesCounter==3) Im Wald bei der Schule.
+        b: ($hobbiesCounter==4) Im Wald bei der Schule.
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($hobbiesCounter==1) Mit den Pfadies.
+        b: ($hobbiesCounter==2) Bei den Pfadis.
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) Bei den Pfadis.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($hobbiesCounter==1) ^reuse(HOBBIES_2)
+        b: ($hobbiesCounter==2) ^reuse(HOBBIES_3)
+        b: ($hobbiesCounter==3) ^reuse(HOBBIES_4)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1 Wir gehen manchmal in den Wald, Pilze sammeln. Da muss man ganz doll aufpassen.
+  
+
+#! 
+u: HOBBIES_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2 Ich hab letztes Mal einen giftigen Pilz angefasst und richtig Ärger bekommen.
+
+
+#! 
+u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 3 Das war echt blöd! Ich wusste nicht, dass der giftig ist.
+
+
+#! 
+u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 Wir sehen uns nur alle zwei Wochen. Da hab ich vergessen welche Pilze giftig sind und welche nicht.
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
+
+

@@ -1,0 +1,332 @@
+topic: ~event_t repeat  ()
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = event1 Dirk
+    # age
+    a: (^age()) $$intent=age $$sound_file = event2 Der ist so alt wie Papa.
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = event3 Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = event4 Kein Ahnung
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f ^reuse(EVENT_2)
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = event5 Der ist voll blöd.
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = event6 Nach der Schule.
+    # time relationship
+    a: (^time()) $$intent=time_relationship $$sound_file = event7 Weiß ich nicht, schon lange.
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^refine()
+        b: ($eventCounter>2 $eventCounter<5 )^reuse(EVENT_5)
+        b: ($eventCounter>1 $eventCounter<3 )^reuse(EVENT_3)
+        b: ($eventCounter>5) $$sound_file = event8 Sonst eigentlich nix mehr.
+        b: () ^reuse(EVENT_1)
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = event9 Weiß ich nicht.
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = event10 Zu Hause.
+
+
+# specific questions/answers depending on what narrative answer was given before
+#a u: ($$answerCategory==specific) ^keep() ^refine() 
+    # personal_opinion
+#a    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+#a        b: ($eventCounter==1) $$sound_file = event11a Voll doof.
+#a        b: ($eventCounter==2) $$sound_file = event11a Voll doof.
+#a        b: ($eventCounter==3) $$sound_file = event11a Voll doof.
+#a        b: ($eventCounter==4) $$sound_file = event11a Voll doof.
+#a        b: ($eventCounter==5) $$sound_file = event11a Voll doof.
+#a        b: ($eventCounter==6) $$sound_file = event11a Voll doof.
+#a        b: ($eventCounter==7) $$sound_file = event12a Total eklig.
+#a        b: ($eventCounter==8) $$sound_file = event12a Total eklig.
+#a        b: ($eventCounter==9) $$sound_file = event12a Total eklig.
+#a        b: ($eventCounter==10) $$sound_file = event12a Total eklig.
+#a    # other_opinion
+#a    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing  ^respond(~ignorance)
+#a    # place
+#a    a: (^place()) $$intent=place ^refine()
+#a        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==1) $$sound_file = event13a Im Wohnzimmer
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$nextAnswer = yes
+#a        b: ($eventCounter==8) $$sound_file = event14a In der Umkleide beim Schwimmen.
+#a        b: ($eventCounter==9) $$sound_file = event14a In der Umkleide beim Schwimmen.
+#a        b: ($eventCounter==10) $$sound_file = event14a In der Umkleide beim Schwimmen.
+#a    # individual
+#a    a: (^individual()) $$intent=individual ^refine()
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$sound_file = event15a Mein Onkel.
+#a        b: ($eventCounter==4) $$sound_file = event15a Mein Onkel.
+#a        b: ($eventCounter==5) $$sound_file = event15a Mein Onkel.
+#a        b: ($eventCounter==6) $$sound_file = event15a Mein Onkel.
+#a        b: ($eventCounter==7) $$sound_file = event15a Mein Onkel.
+#a        b: ($eventCounter==8) $$sound_file = event15a Mein Onkel.
+#a        b: ($eventCounter==9) $$sound_file = event15a Mein Onkel.
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#a    # reason
+#a    a: (^reason()) $$intent=reason ^refine()
+#a        b: ($clue==1) $$nextAnswer = yes
+#a        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==3) $$nextAnswer = yes
+#a        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==5) $$nextAnswer = yes
+#a        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#a    # example
+#a    a: (^example()) $$intent=example ^refine()
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#a        b: () $$nextAnswer = yes
+#a    # explanation
+#a    a: (^explanation()) $$intent=explanation ^refine()
+#a        b: ($eventCounter==1) $$nextAnswer = yes
+#a        b: ($eventCounter==2) $$nextAnswer = yes
+#a        b: ($eventCounter==3) $$nextAnswer = yes
+#a        b: ($eventCounter==4) $$nextAnswer = yes
+#a        b: ($eventCounter==5) $$nextAnswer = yes
+#a        b: ($eventCounter==6) $$nextAnswer = yes
+#a        b: ($eventCounter==7) $$sound_file = event16a Sein Penis.
+#a        b: ($eventCounter==8) $$nextAnswer = yes
+#a        b: ($eventCounter==9) $$nextAnswer = yes
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#a    # follow-up
+#a    a: (^follow_up()) $$intent=follow_up ^refine()
+#a        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#a        b: () $$nextAnswer = yes
+#a    # log questions that were not catched by macros
+#a    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+#b u: ($$answerCategory==specific) ^keep() ^refine() 
+#b    # personal_opinion
+#b    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+#b        b: ($eventCounter==1) $$sound_file = event11b Voll doof.
+#b        b: ($eventCounter==2) $$sound_file = event11b Voll doof.
+#b        b: ($eventCounter==3) $$sound_file = event11b Voll doof.
+#b        b: ($eventCounter==4) $$sound_file = event11b Voll doof.
+#b        b: ($eventCounter==5) $$sound_file = event11b Voll doof.
+#b        b: ($eventCounter==6) $$sound_file = event11b Voll doof.
+#b        b: ($eventCounter==7) $$sound_file = event12b Das ist so gemein!
+#b        b: ($eventCounter==8) $$sound_file = event12b Das ist so gemein!
+#b        b: ($eventCounter==9) $$sound_file = event12b Das ist so gemein!
+#b        b: ($eventCounter==10) $$sound_file = event12b Das ist so gemein!
+#b    # other_opinion
+#b    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+#b    # place
+#b    a: (^place()) $$intent=place ^refine()
+#b        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==1) $$sound_file = event13b Im Wohnzimmer
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$sound_file = event10 Zu Hause.
+#b        b: ($eventCounter==8) $$sound_file = event10 Zu Hause.
+#b        b: ($eventCounter==9) $$sound_file = event10 Zu Hause.
+#b        b: ($eventCounter==10) $$sound_file = event10 Zu Hause.
+#b    # individual
+#b    a: (^individual()) $$intent=individual ^refine()
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$sound_file = event13b Mein Onkel.
+#b        b: ($eventCounter==4) $$sound_file = event13b Mein Onkel.
+#b        b: ($eventCounter==5) $$sound_file = event13b Mein Onkel.
+#b        b: ($eventCounter==6) $$sound_file = event13b Mein Onkel.
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#b    # reason
+#b    a: (^reason()) $$intent=reason ^refine()
+#b        b: ($clue==1) $$nextAnswer = yes
+#b        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==3) $$nextAnswer = yes
+#b        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==5) $$nextAnswer = yes
+#b        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#b        b: ($eventCounter==8) ^reuse(EVENT_9)
+#b        b: ($eventCounter==9) ^reuse(EVENT_10)
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#b    # example
+#b    a: (^example()) $$intent=example ^refine()
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#b        b: () $$nextAnswer = yes
+#b    # explanation
+#b    a: (^explanation()) $$intent=explanation ^refine()
+#b        b: ($eventCounter==1) $$nextAnswer = yes
+#b        b: ($eventCounter==2) $$nextAnswer = yes
+#b        b: ($eventCounter==3) $$nextAnswer = yes
+#b        b: ($eventCounter==4) $$nextAnswer = yes
+#b        b: ($eventCounter==5) $$nextAnswer = yes
+#b        b: ($eventCounter==6) $$nextAnswer = yes
+#b        b: ($eventCounter==7) $$nextAnswer = yes
+#b        b: ($eventCounter==8) $$nextAnswer = yes
+#b        b: ($eventCounter==9) $$nextAnswer = yes
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#b    # follow-up
+#b    a: (^follow_up()) $$intent=follow_up ^refine()
+#b        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#b        b: () $$nextAnswer = yes
+#b    # log questions that were not catched by macros
+#b    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+#c u: ($$answerCategory==specific) ^keep() ^refine() 
+#c    # personal_opinion
+#c    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+#c        b: ($eventCounter==1) $$sound_file = event11c Voll doof.
+#c        b: ($eventCounter==2) $$sound_file = event11c Voll doof.
+#c        b: ($eventCounter==3) $$sound_file = event11c Voll doof.
+#c        b: ($eventCounter==4) $$sound_file = event11c Voll doof.
+#c        b: ($eventCounter==5) $$sound_file = event11c Voll doof.
+#c        b: ($eventCounter==6) $$sound_file = event11c Voll doof.
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#c    # other_opinion
+#c    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+#c    # place
+#c    a: (^place()) $$intent=place ^refine()
+#c        b: ($clue==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==1) $$sound_file = event12c Im Wohnzimmer
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==8)$$sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==9)$$sound_file = event13c In Mamas Zimmer.
+#c        b: ($eventCounter==10)$$sound_file = event13c In Mamas Zimmer.
+#c    # individual
+#c    a: (^individual()) $$intent=individual ^refine()
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==4)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==5)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==6)$$sound_file = event14c Mein Onkel.
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#c    # reason
+#c    a: (^reason()) $$intent=reason ^refine()
+#c        b: ($clue==1) $$nextAnswer = yes
+#c        b: ($eventCounter==1) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==2) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==3) $$nextAnswer = yes
+#c        b: ($eventCounter==4) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==5) $$nextAnswer = yes
+#c        b: ($eventCounter==6) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==7) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==8) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==9) $$answerCategory=missing ^respond(~ignorance)
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#c    # example
+#c    a: (^example()) $$intent=example ^refine()
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#c        b: () $$nextAnswer = yes
+#c    # explanation
+#c    a: (^explanation()) $$intent=example ^refine()
+#c        b: ($eventCounter==1) $$nextAnswer = yes
+#c        b: ($eventCounter==2) $$nextAnswer = yes
+#c        b: ($eventCounter==3) $$nextAnswer = yes
+#c        b: ($eventCounter==4) $$nextAnswer = yes
+#c        b: ($eventCounter==5) $$nextAnswer = yes
+#c        b: ($eventCounter==6) $$nextAnswer = yes
+#c        b: ($eventCounter==7) $$nextAnswer = yes
+#c        b: ($eventCounter==8) $$nextAnswer = yes
+#c        b: ($eventCounter==9) $$nextAnswer = yes
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#c    # follow-up
+#c    a: (^follow_up()) $$intent=follow_up ^refine()
+#c        b: ($eventCounter==10) $$answerCategory=missing ^respond(~ignorance)
+#c        b: () $$nextAnswer = yes
+#c    # log questions that were not catched by macros
+#c    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+#---------------------------------------------------------------------------------------------
+
+
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+#! Erzähl mir von deinem Onkel 
+u: EVENT_1 ([$$intro==1 $$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 1 $clue = 0  Mein Onkel schläft jetzt immer bei uns.
+    
+
+
+
+#---------------------------------------------------------------------------------------------
+#! Erzähl mir mal von deinem Onkel
+u: EVENT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 2 $clue = 0  Also, das ist nicht mein richtiger Onkel. Der ist ein Freund von Papa.
+
+#---------------------------------------------------------------------------------------------
+#! Und was ist mit deinem Onkel?
+u: EVENT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 3 $clue = 0 $$sound_file = event18 Der kommt einfach in mein Zimmer, obwohl ich das nicht will.
+    
+#---------------------------------------------------------------------------------------------    
+
+#! Warum willst du denn nicht, dass er in dein Zimmer kommt?
+#! Und was macht
+u: EVENT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 4 $clue = 0 $$sound_file = event19 Der nervt mich und sagt ich soll aufräumen.
+    
+#---------------------------------------------------------------------------------------------
+
+#! Was hat dein Onkel denn gemacht?
+u: EVENT_5 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 5 $clue = 0 $$sound_file = event20 Er schreit mich immer an. Das ist voll gemein!  
+
+#---------------------------------------------------------------------------------------------
+
+#! Ist noch mehr passiert?
+u: EVENT_6 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 6 $clue = 0 $$sound_file = event21 Meine Mama sagt, der schimpft mit mir, weil ich immer frech zu ihm bin.
+
+#---------------------------------------------------------------------------------------------
+# Ab hier sind die Ereignisse zum A: sexuellen Übergriff, B: nicht-sexuellen Übergriff, C: andere Belastung
+#---------------------------------------------------------------------------------------------
+
+#! Erzähl noch mehr.
+#a u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22a Neulich waren wir schwimmen, da sollte ich sein Ding in den Mund nehmen.
+#b u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22b Manchmal haut mich der Onkel auch. Einmal hat er mir eine Backpfeife gegeben. 
+#c u: EVENT_7  ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 7 $clue = 0 $$sound_file = event22c Der Onkel knutscht mit meiner Mama.  
+
+#---------------------------------------------------------------------------------------------
+
+#! wie ist das passiert?
+#a u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event23a Er ist in meine Kabine gekommen und hat gesagt, er hilft mir beim umziehen.
+#b u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event24b Mein Gesicht hat richtig wehgetan.    
+#c u: EVENT_8 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 8 $clue = 0 $$sound_file = event25c Ich wollte Mama meine Hausaufgaben zeigen und da bin ich in ihr Zimmer und habs gesehen.
+
+
+#---------------------------------------------------------------------------------------------
+
+#! Ist noch mehr passiert?
+#a u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26a Dann hat er seine Hose runtergezogen.
+#b u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26b Nur weil ich kurz laut war, hat er mich gehauen. 
+#c u: EVENT_9 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 9 $clue = 0 $$sound_file = event26c Mama hat so getan, als wenn sie mich nicht gesehen hat.
+
+#---------------------------------------------------------------------------------------------
+#! Ist noch mehr passiert?
+#a u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27a Das war voll eklig. Ich will den nicht mehr sehen.
+#b u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27b Ich hab mich mit Leon gestritten. Und da ist mein Onkel voll sauer geworden.
+#c u: EVENT_10 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $eventCounter = 10 $clue = 0 $$sound_file = event27c Ich glaube, Papa hat das auch gesehen. Er hat sich neulich ganz doll mit Mama gestritten!
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic() 
+
+# Clue 2
+u: CLUE2 ($showClue2==1) $clue = 1 $$sound_file = event28 Ich will nicht, dass der Onkel mich abholen darf von der Schule.

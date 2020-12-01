@@ -1,0 +1,97 @@
+topic: ~friends_t ()
+# Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Mira.
+    # age
+    a: (^age()) $$intent=age Die ist 12, zwei Jahre älter als ich.
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job Nix wirklich.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Wir sind beste Freundinnnen.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Mira ist so supercool.
+    # time together
+    a: (^time_together()) $$intent=time_together Beim Tanzen oder nach der Schule.
+    # time relationship
+    a: (^time()) $$intent=time_relationship Seit ich im Jugendclub tanze.
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^refine()
+        b: ($friendCounter==1) ^reuse(FRIENDS_2)
+        b: ($friendCounter==2) ^reuse(FRIENDS_3)
+        b: () Sonst eigentlich nix.
+    # activity
+    a: (^activity()) $$intent=activity Die geht zur Schule
+    # places together
+    a: (^places_together()) $$intent=places_together ^reuse(FRIENDS_2)
+
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($friendCounter==1) Voll cool.
+        b: ($friendCounter==2) Voll cool.
+        b: ($friendCounter==3) Voll cool.
+        b: ($friendCounter==4) Voll cool.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($friendCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==2) Im Jugendclub.
+        b: ($friendCounter==3) Bei Mira.
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($friendCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==2) Mira und ich und die anderen Mädchen.
+        b: ($friendCounter==3) Mira und ich.
+        b: ($friendCounter==4) Miras Hund.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($friendCounter==1) $$nextAnswer = yes
+        b: ($friendCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: FRIENDS_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 Mira und ich sind beste Freundinnen.
+  
+
+#! Was macht ihr so zusammen?
+u: FRIENDS_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 Wir tanzen zusammen im Club.
+
+
+#! Erzähl mir ruhig von Miras zu Hause.
+u: FRIENDS_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 Bei Mira zu Hause spielen wir Let´s Dance.
+
+
+#! Erzähl mir mehr über Mira!
+u: FRIENDS_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 Mira hat einen Hund. der ist soo süß, der will mich immer ablecken.
+
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

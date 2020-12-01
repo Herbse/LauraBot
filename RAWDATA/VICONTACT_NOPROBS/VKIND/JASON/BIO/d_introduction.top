@@ -1,0 +1,6 @@
+topic: ~introduction keep repeat ()
+
+t: ($cs_bot=jason_li) $startTime = %fulltime $rapportCounter = 0 $goodQuestion = 0 $noncritTopic = 0 $disclosureState = 0 $chatPhase = start ^end(INPUT)
+
+
+u: () ^respond(~incomprehension)

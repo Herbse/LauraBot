@@ -1,0 +1,103 @@
+topic: ~ralf_t ()
+
+#t: specific test to  topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_andre_ralf1 
+    Ralf.
+    # age
+    a: (^age()) $$intent=age $$sound_file = s_andre_ralf2 
+    31 oder so.
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_andre_gut
+    Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = s_andre_ralf3 
+    Weiß nicht, Ralf ist immer zu Hause.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_andre_ralf4 
+    Der ist mein Onkel.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_andre_ralf5 
+    Onkel Ralf ist der Beste!
+    # time together
+    a: (^time_together()) $$intent=time_together ^reuse(RALF_2)
+    # time relationship
+    a: (^time()) $$intent=time_relationship $$sound_file = s_andre_ralf6
+    Schon ganz lange!
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(RALF_3)
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = s_andre_ralf7 
+    Weiß nicht, Ralf ist immer zu Hause.
+    # places together
+    a: (^places_together()) $$intent=places_together ^reuse(RALF_3)
+    
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($ralfCounter==1) $$sound_file = g_andre_vollcool Voll cool.
+        b: ($ralfCounter==2) $$sound_file = g_andre_vollcool Voll cool.
+        b: ($ralfCounter==3) $$sound_file = g_andre_vollcool Voll cool.
+        b: ($ralfCounter==4) $$sound_file = g_andre_egal Egal.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($ralfCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($ralfCounter==2) $$sound_file = s_andre_ralf8 Bei uns in der Siedlung.
+        b: ($ralfCounter==3) $$sound_file = g_andre_inderstadt  In der Stadt.
+        b: ($ralfCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($ralfCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($ralfCounter==2) $$sound_file = s_andre_ralf9  Onkel Ralf.
+        b: ($ralfCounter==3) $$sound_file = s_andre_ralf10  Ich und Onkel Ralf.
+        b: ($ralfCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($ralfCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($ralfCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($ralfCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($ralfCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+     a: (^example()) $$intent=example ^refine()
+        b: () 
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () 
+      
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () 
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/specific.txt $$question \n) 
+
+
+# Narrative Antworten---------------------------------------------------------------------------------------
+
+
+#! Erzähl mal was dein Bruder währenddessen tut. 
+u: RALF_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 1 $$sound_file = n_andre_ralf1
+Ich mag Onkel Ralf. Er ist immer so lieb zu mir.
+
+#! Erzähl mir doch mehr über Leon.
+u: RALF_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 2 $$sound_file = n_andre_ralf2  
+Nach der Schule gehe ich oft zu ihm nach Hause.
+
+#! Erzähl mir doch mehr über Leon.
+u: RALF_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 3 $$sound_file = n_andre_ralf3
+Wir spielen auf dem Spielplatz oder gehen spazieren. Manchmal kauft er mir dann auch ein Eis.
+
+#! Erzähl mir doch mehr über Leon.
+u: RALF_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $ralfCounter = 4 $$sound_file = n_andre_ralf4
+Onkel Ralf hat nicht viel Geld, deshalb können wir nicht in den Zoo oder so. Aber das macht gar nichts.
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

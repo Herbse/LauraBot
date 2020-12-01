@@ -1,0 +1,35 @@
+topic: ~specific keep repeat nostay ()
+
+# Topicwechsel bei bestimmten Stichworten bzw. letztes Topic wenn kein bestimmtes Stichwort
+u:  (%more) ^next(INPUT) ^refine() ^keep() ^repeat() 
+    a: ([tante conny conni konny konni]) ^respond(~aunt_t)
+    a: (~father) ^respond(~father_t)
+    a: ([schwester greta]) ^respond(~sister_t)
+    a: ($chatPhase==main [gerd trainer judotrainer]) ^respond(~event_t)
+    a: ([~friend kevin]) ^respond(~friends_t)
+    a: ([therapie therapy gruppe]) ^respond(~therapy_t)
+    a: (~school) ^respond(~school_t)
+    a: (^change_topic()) $$intent=changeTopic [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
+    a: (^general_question()) $$intent=intro_question ^refine()
+        b: ([~home bei_euch Familie familie]) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~sister_t)]
+        b: (~parents) [^respond(~father_t)]
+        b: (%topic!=~introduction~2) ^respond(%topic)
+        b: ($chatPhase==main) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
+        b: () [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
+    a: (^general_prompt()) $$intent=intro_prompt ^refine()
+        b: ([~home bei_euch Familie familie]) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~sister_t)]
+        b: (~parents) [^respond(~father_t)]
+        b: (%topic!=~introduction~2) ^respond(%topic)
+        b: ($chatPhase==main) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
+        b: () [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
+    a: (<< ^mood() ~bot >>) $$sound_file = g_jason_gut Geht so.
+    a: ([~home bei_euch Familie familie]) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~sister_t)]
+    a: (~parents) [^respond(~father_t)]
+    a: (%topic!=~introduction~2) ^respond(%topic)
+    a: ($chatPhase==main) [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~event_t)][^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
+    a: () [^respond(~aunt_t)] [^respond(~father_t)] [^respond(~friends_t)][^respond(~therapy_t)][^respond(~school_t)][^respond(~sister_t)]
+    # wenn es ein letztes Topic überhaupt gibt, gehe dahin, wenn nicht dann gebe eine unverständliche Antwort aus
+    a: () ^respond(%topic)
+ 
+   
+  

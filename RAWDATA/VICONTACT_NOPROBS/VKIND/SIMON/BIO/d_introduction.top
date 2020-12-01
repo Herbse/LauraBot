@@ -1,0 +1,6 @@
+topic: ~introduction keep repeat ()
+
+t: ($cs_bot=simon_si) $startTime = %fulltime $rapportCounter = 0 $goodQuestion = 0 $noncritTopic = 0 $disclosureState = 1 $chatPhase = main Haben Sie noch kurz Zeit? Ich möchte Ihnen was erzählen. Aber Sie dürfen es nicht weitersagen.
+
+
+u: () ^respond(~incomprehension)

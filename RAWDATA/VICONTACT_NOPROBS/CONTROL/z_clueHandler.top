@@ -1,0 +1,5 @@
+outputmacro: ^clueHandler()
+
+
+if ($goodQuestion == 5 AND $eventCounter != 1) { ^postprintafter(^reuse(~event_t.EVENT_1)) ^gambit(~addposthoc)}
+if ($goodQuestion == 10 AND $eventCounter < 2 AND $showClue2 != 1)  {$showClue2=1 ^postprintafter(^reuse(~event_t.CLUE2)) ^gambit(~addposthoc)}

@@ -1,0 +1,5 @@
+outputmacro: ^disclosureHandler()
+
+
+if ($goodQuestion > 1 AND $noncritTopic > 3 AND $chatPhase==start) {$chatPhase = main $disclosureState = 1}
+if ($eventCounter > 6) {$critRevealed = 1} else { $critRevealed = 0}

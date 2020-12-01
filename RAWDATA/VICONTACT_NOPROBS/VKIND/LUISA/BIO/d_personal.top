@@ -1,0 +1,36 @@
+topic: ~personal_t keep repeat nostay () 
+
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_luisa_personal1 
+    Luisa.
+    # age
+    a: (^age()) $$intent=age$$sound_file = s_luisa_personal2 
+    Ich bin zehn Jahre alt.
+    # mood
+    a: (^mood()) $$intent=mood$$sound_file = g_luisa_gehtso 
+    Geht so.
+    # job
+    a: (^job()) $$intent=job$$sound_file = s_luisa_personal3 
+    Ich gehe zur Schule.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f 
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o
+    # time together
+    a: (^time_together()) $$intent=time_together 
+    # time relationship
+    a: (^time()) $$intent=time_relationship
+    # activity together
+    a: (^activity_together()) $$intent=activity_together [^respond(~father_t) ^respond(~hobbies_t)]
+    # activity
+    a: (^activity()) $$intent=activity$$sound_file = s_luisa_personal3 
+    Ich gehe zur Schule.
+    # places together
+    a: (^places_together()) $$intent=places_together [^respond(~father_t) ^respond(~hobbies_t)]
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+topic: ~father_t ()
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific familie) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_luisa_father1 Christina, Konrad, Clemens und Johannes.
+    # age
+    a: (^age()) $$intent=age 
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_luisa_gut Gut.
+    # job
+    a: (^job()) $$intent=job 
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_luisa_father2 Das ist meine Familie.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_luisa_father3 Mama ist so streng, Papa ist der Beste und meinen Brüdern bin ich egal.
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = s_luisa_brother4 In meiner Freizeit und am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(~mother_t.MAMA_3)
+    # activity
+    a: (^activity()) $$intent=activity 
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = s_luisa_brother5 Zu Hause oder in der Kirche.
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_luisa_father4 Konrad.
+    # age
+    a: (^age()) $$intent=age $$sound_file = s_luisa_father5 Papa ist 51 Jahre alt.
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_luisa_gut Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = g_luisa_weißnicht Weiß nicht.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_luisa_father6 Der ist mein Papa.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_luisa_father7 Papa ist der Beste.
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = s_luisa_father8 In meiner Freizeit.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(PAPA_3)
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = g_luisa_weißnicht Weiß nicht.
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = s_luisa_father6 Der ist mein Papa.
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($fatherCounter==1) $$sound_file = g_luisa_weißnicht Weiß nicht.
+        b: ($fatherCounter==2) $$sound_file = g_luisa_weißnicht Weiß nicht.
+        b: ($fatherCounter==3) $$sound_file = g_luisa_vollcool Voll cool.
+        b: ($fatherCounter==4) $$sound_file = g_luisa_vollcool Voll cool.
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) In der Stadt.
+        b: ($fatherCounter==4) Im Kino.
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$sound_file = s_luisa_father9 Papa.
+        b: ($fatherCounter==3) $$sound_file = s_luisa_father10 Papa und ich.
+        b: ($fatherCounter==4) $$sound_file = s_luisa_father11 Papa und ich.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($fatherCounter==1) ^reuse(PAPA_2)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($fatherCounter==4) Das ist ein Film.
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 $$sound_file = n_luisa_father1
+Papa ist viel cooler als Mama.
+ 
+
+#! Erzähl mal wie er ihr hilft?
+u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 $$sound_file = n_luisa_father2
+Der geht nicht in die Kirche. Wegen der Kirche hat er sich immer mit Mama gestritten.
+
+#! Erzähl mir mehr über deinen PAPA!
+u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 3 $$sound_file = n_luisa_father3
+Am liebsten geh ich mit Papa ins Kino.
+ 
+#! Was machst du denn gern mit deinem PAPA?
+
+u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 $$sound_file = n_luisa_father4
+Letztens haben wir Hotel Transilvanien 3 geguckt.
+
+  
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

@@ -1,0 +1,112 @@
+topic: ~friends_t ()
+# Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach dem Tanzen  unterschiedliche Antworten generiert
+
+#t: specific test to hobbies topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_sara_friends1
+    Florian. 
+    # age
+    a: (^age()) $$intent=age $$sound_file = s_sara_friends2
+    Florian ist neun, wie ich. 
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_sara_gut
+    Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = s_sara_friends3
+    Der geht auch in die Schule.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_sara_friends4
+    Der ist mein bester Freund. 
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_sara_friends5
+    Florian ist voll cool!
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = s_sara_friends6
+    Immer in der Schule und im Hort. 
+    # time relationship
+    a: (^time()) $$intent=time_relationship $$sound_file = s_sara_friends7
+    Seit ich zur Schule gehe. 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together  
+        b: ($friendCounter==1) ^reuse(FRIENDS_2)
+        b: () ^reuse(FRIENDS_1) 
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = s_sara_friends3
+    Der geht auch in die Schule.
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = s_sara_friends8
+    In der Schule und im Hort. 
+
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($friendCounter==1) $$sound_file = g_sara_vollcool Voll cool.
+        b: ($friendCounter==2) ^reuse(FRIENDS_3)
+        b: ($friendCounter==3) $$sound_file = g_sara_vollcool Voll cool.
+        b: ($friendCounter==4) $$sound_file = g_sara_dasistwitzig Das ist witzig.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($friendCounter==1) $$sound_file = s_sara_friends9 Auf dem Schulhof.
+        b: ($friendCounter==2) $$sound_file = s_sara_friends10 Im Hort.
+        b: ($friendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==4) $$sound_file = s_sara_friends11 Auf dem Schulweg.
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($friendCounter==1) $$sound_file = s_sara_friends12 Meine Klasse.
+        b: ($friendCounter==2) $$sound_file = s_sara_friends1 Florian.
+        b: ($friendCounter==3) $$sound_file = s_sara_friends13 Florian und ich.
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($friendCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==2) $$sound_file = s_sara_friends14 Weil er mein bester Freund ist.
+        b: ($friendCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($friendCounter==4) $$sound_file = s_sara_friends15 Das macht Spaß.
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($friendCounter==3) $$sound_file = s_sara_friends16 Das Krokodil, was Florian mir gebastelt hat.
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+#! Erzähl mal von deinen Hobbies.
+u: FRIENDS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 $$sound_file = n_sara_friends1
+Im Hort spielen wir oft Fußball.
+ 
+
+  
+#! Erzähl mal mehr.
+u: FRIENDS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 $$sound_file = n_sara_friends2
+Letzte Woche haben wir Perlentiere gebastelt und Florian hat mir ein Krokodil gemacht.
+   
+ 
+
+#! Erzähl mir mehr 
+u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 $$sound_file = n_sara_friends3
+Das war so süß. Das ist jetzt mein Schlüsselanhänger.
+  
+
+#!  Erzähl mir mehr.
+u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 $$sound_file = n_sara_friends4
+Wenn Florian und ich nach dem Hort nach Hause gehen, macht er Klingelstreiche. Er klingelt und dann rennen wir beide schnell weg.
+   
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

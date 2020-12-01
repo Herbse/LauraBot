@@ -1,0 +1,3 @@
+topic: ~sobbing keep repeat nostay ()
+
+u: ($$actionType==sobbing) Damit soll eine Schluchzanimation ausgelöst werden. ^keep() ^repeat()

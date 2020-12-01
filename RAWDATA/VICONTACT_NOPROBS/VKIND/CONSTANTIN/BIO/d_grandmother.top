@@ -1,0 +1,136 @@
+topic: ~grandmother_t ()
+
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific familie) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_constantin_grandmother1
+    Sabine, Clara und Oma Ute.
+    # age
+    a: (^age()) $$intent=age 
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_constantin_gut
+    Gut.
+    # job
+    a: (^job()) $$intent=job 
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_constantin_grandmother2
+    Das ist meine Familie.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_constantin_grandmother3
+    Mama arbeitet bei Penny, Oma ist immer zu Hause und Clara geht in den Kindergarten.
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = s_constantin_grandmother4
+    In meiner Freizeit oder am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together $$sound_file = s_constantin_grandmother5
+    Zu Hause oder bei Oma.
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = s_constantin_grandmother3
+    Mama arbeitet bei Penny, Oma ist immer zu Hause und Clara geht in den Kindergarten.
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = s_constantin_grandmother5
+    Zu Hause oder bei Oma.
+
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_constantin_grandmother6
+    Ute.
+    # age
+    a: (^age()) $$intent=age $$sound_file = s_constantin_grandmother7
+    Die ist 67 Jahre alt.
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_constantin_gehtso
+    Geht so.
+    # job
+    a: (^job()) $$intent=job $$sound_file = g_constantin_garnichts
+    Gar nichts.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_constantin_grandmother8
+    Das ist meine Oma.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_constantin_grandmother9
+    Meine Oma ist langweilig. 
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = s_constantin_grandmother10
+    Am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(OMA_4)
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = s_constantin_grandmother11
+    Weiß ich nicht, Oma ist immer zu Hause.
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = s_constantin_grandmother12
+    Bei Oma.
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($grandmotherCounter==1) $$sound_file = g_constantin_volldoof Voll doof. 
+        b: ($grandmotherCounter==2) $$sound_file = g_constantin_volldoof Voll doof. 
+        b: ($grandmotherCounter==3) $$sound_file = g_constantin_volldoof Voll doof. 
+        b: ($grandmotherCounter==4) $$sound_file = s_constantin_grandmother13 Langweilig.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($grandmotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($grandmotherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$sound_file = s_constantin_grandmother14 Oma, Mama, Clara und ich.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($grandmotherCounter==1) ^reuse(OMA_2)
+        b: ($grandmotherCounter==2) ^reuse(OMA_3)
+        b: ($grandmotherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($grandmotherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: OMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $grandmotherCounter = 1 $$sound_file = n_constantin_grandmother1
+Oma kann nicht mehr so viel laufen.
+ 
+
+#! Erzähl mal wie er ihr hilft?
+u: OMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $grandmotherCounter = 2 $$sound_file = n_constantin_grandmother2
+Sie ist immer so langsam. Das macht gar keinen Spaß mit ihr.
+
+#! Erzähl mir mehr über deinen OMA!
+u: OMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $grandmotherCounter = 3 $$sound_file = n_constantin_grandmother3
+Sie erzählt immer nur, was ihr alles weh tut.
+ 
+#! Was machst du denn gern mit deinem OMA?
+
+u: OMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $grandmotherCounter = 4 $$sound_file = n_constantin_grandmother4
+Bei ihr zu Hause sitzen wir auf dem Sofa und es gibt Tee und Kekse.
+
+  
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

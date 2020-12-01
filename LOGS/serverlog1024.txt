@@ -2236,3 +2236,159 @@ Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,898KB
 
     *** Server WIDE OPEN to :command use.
 Respond: user:asd bot:andre_li ip:127.0.0.1 () 0 :build vicontact #a  ==> System startup vicontact #a Mon Nov 09 13:22:13 2020  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:   1 serious warnings, 0 function warnings, 0 spelling warnings, 250 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Mon Nov 09 13:22:14 2020  Server ChatScript EVSERVER Version 8.8 pid: 81642 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=589  fact=366  heap=424208 Compiled:Nov09'20-13:22:13 by version 8.8 "vicontact"  Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9101kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,898KB         *** Server WIDE OPEN to :command use.    When:Nov09 13:22:15 1731ms 
+evserver child fork requests: 0
+  evserver: running pid: 34710
+System startup createsystem Mon Nov 23 16:36:03 2020
+Server ChatScript EVSERVER Version 8.8 pid: 34710 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=424188 Compiled:Nov16'20-17:09:46 by version 8.8 "vicontact"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9101kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,898KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 34710 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Mon Nov 23 16:36:04 2020 serverlog:1 userlog: 1
+evserver: parent ready (pid = 34710), fork=0
+evserver child fork requests: 0
+  evserver: running pid: 3953
+System startup createsystem Fri Nov 27 10:44:20 2020
+Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=405692 Compiled:Nov26'20-18:23:20 by version 8.8 "vicontact_noprobs"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9083kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,916KB 
+
+    *** Server WIDE OPEN to :command use.
+
+
+======== Began EV server pid 3953 8.8 compiled Nov 29 2018 14:35:45 on host local port 1024 at Fri Nov 27 10:44:21 2020 serverlog:1 userlog: 1
+evserver: parent ready (pid = 3953), fork=0
+ServerPre: pid: 3953 qq (andre_li) :build vicontact_noprobs #a Nov 27 10:45:12 2020
+System startup vicontact_noprobs #a Fri Nov 27 10:45:12 2020
+System startup createsystem Fri Nov 27 10:45:13 2020
+Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-10:45:12 by version 8.8 "vicontact_noprobs"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:qq bot:andre_li ip:127.0.0.1 () 0 :build vicontact_noprobs #a  ==> System startup vicontact_noprobs #a Fri Nov 27 10:45:12 2020  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:   1 serious warnings, 0 function warnings, 0 spelling warnings, 250 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Fri Nov 27 10:45:13 2020  Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-10:45:12 by version 8.8 "vicontact_noprobs"  Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB         *** Server WIDE OPEN to :command use.    When:Nov27 10:45:14 1549ms 
+ServerPre: pid: 3953 qq (andre_li) :bot andre_li Nov 27 10:45:17 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Nov27 10:45:17 5ms Why:~addposthoc.6.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-10:45:12 Why:~addposthoc.6.0 
+ServerPre: pid: 3953 qq (andre_li) [invitation_to_tell]erzähl doch mal von zu Hause Nov 27 10:45:37 2020
+Respond: user:qq bot:andre_li ip:127.0.0.1 (~father_t) 1 [invitation_to_tell]erzähl doch mal von zu Hause  ==> [topic:~father_t | answerCategory:narrative | probFormat:narrative-100 | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:1 | intent:intro_prompt | soundFile:papaistvielarbeitenerputztbürosundkommtimmerspätnachhause | sumCorrect: | duration:20 ] Papa ist viel arbeiten. Er putzt Büros und kommt immer spät nach Hause.  When:Nov27 10:45:37 54ms Why:~addposthoc.6.0 ~father_t.2.0=PAPA_1.~narrative.0.18 
+ServerPre: pid: 3953 qq (andre_li)  Nov 27 10:47:05 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 1 ==> [topic:~introduction | answerCategory:emptyTopic | probFormat: | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:18 | topicSwitch: | critRevealed:0 | noncritTopic:1 | intent: | soundFile:keineahnung | sumCorrect: | duration:108 ] Keine Ahnung.  When:Nov27 10:47:05 137ms Why:~addposthoc.6.0 ~ignorance.0.0.~father_t.6.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-10:45:12 Why:~addposthoc.6.0 ~ignorance.0.0.~father_t.6.0 
+ServerPre: pid: 3953 qq (andre_li)  Nov 27 10:47:30 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 1 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:1 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:133 ] Was meinen sie damit?  When:Nov27 10:47:30 3ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-10:45:12 Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 qq (andre_li)  Nov 27 10:47:59 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 1 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:1 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:1 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:162 ] Was meinen sie damit?  When:Nov27 10:47:59 2ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-10:45:12 Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 qq (andre_li) :build vicontact_noprobs #a Nov 27 11:23:47 2020
+System startup vicontact_noprobs #a Fri Nov 27 11:23:47 2020
+System startup createsystem Fri Nov 27 11:23:47 2020
+Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-11:23:47 by version 8.8 "vicontact_noprobs"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:qq bot:andre_li ip:127.0.0.1 () 0 :build vicontact_noprobs #a  ==> System startup vicontact_noprobs #a Fri Nov 27 11:23:47 2020  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:   1 serious warnings, 0 function warnings, 0 spelling warnings, 250 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Fri Nov 27 11:23:47 2020  Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-11:23:47 by version 8.8 "vicontact_noprobs"  Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB         *** Server WIDE OPEN to :command use.    When:Nov27 11:23:48 1479ms 
+ServerPre: pid: 3953 qq (andre_li) :bot andre_li Nov 27 11:23:52 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Nov27 11:23:52 5ms Why:~addposthoc.6.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-11:23:47 Why:~addposthoc.6.0 
+ServerPre: pid: 3953 qq (andre_li)  Nov 27 11:23:59 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:wiebitte | sumCorrect: | duration:7 ] Wie bitte?  When:Nov27 11:23:59 3ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-11:23:47 Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 qq (andre_li) /list Nov 27 11:24:47 2020
+Respond: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 1 /list  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:wiebitte | sumCorrect: | duration:55 ] Wie bitte?  When:Nov27 11:24:47 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 qq (andre_li)  Nov 27 11:25:02 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 1 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:70 ] Was meinen sie damit?  When:Nov27 11:25:02 2ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-11:23:47 Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 qq (andre_li) /nick test Nov 27 11:25:08 2020
+Respond: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 2 /nick test  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:wasmeinensiedamit | sumCorrect: | duration:76 ] Was meinen sie damit?  When:Nov27 11:25:08 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 qq (andre_li)  Nov 27 11:29:01 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 2 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:hä | sumCorrect: | duration:309 ] Hä?  When:Nov27 11:29:01 2ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-11:23:47 Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 qq (andre_li) :build vicontact_noprobs #a Nov 27 11:30:37 2020
+System startup vicontact_noprobs #a Fri Nov 27 11:30:37 2020
+System startup createsystem Fri Nov 27 11:30:38 2020
+Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-11:30:37 by version 8.8 "vicontact_noprobs"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:qq bot:andre_li ip:127.0.0.1 () 0 :build vicontact_noprobs #a  ==> System startup vicontact_noprobs #a Fri Nov 27 11:30:37 2020  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:   1 serious warnings, 0 function warnings, 0 spelling warnings, 250 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Fri Nov 27 11:30:38 2020  Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-11:30:37 by version 8.8 "vicontact_noprobs"  Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB         *** Server WIDE OPEN to :command use.    When:Nov27 11:30:39 1468ms 
+ServerPre: pid: 3953 qq (andre_li) :bot andre_li Nov 27 11:30:41 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Nov27 11:30:41 3ms Why:~addposthoc.6.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-11:30:37 Why:~addposthoc.6.0 
+ServerPre: pid: 3953 qq (andre_li)  Nov 27 11:30:50 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:wiebitte | sumCorrect: | duration:9 ] Wie bitte?  When:Nov27 11:30:50 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-11:30:37 Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 qq (andre_li) :build vicontact_noprobs #a Nov 27 11:31:34 2020
+System startup vicontact_noprobs #a Fri Nov 27 11:31:34 2020
+System startup createsystem Fri Nov 27 11:31:34 2020
+Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-11:31:34 by version 8.8 "vicontact_noprobs"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:qq bot:andre_li ip:127.0.0.1 () 0 :build vicontact_noprobs #a  ==> System startup vicontact_noprobs #a Fri Nov 27 11:31:34 2020  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:   1 serious warnings, 0 function warnings, 0 spelling warnings, 250 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Fri Nov 27 11:31:34 2020  Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-11:31:34 by version 8.8 "vicontact_noprobs"  Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB         *** Server WIDE OPEN to :command use.    When:Nov27 11:31:35 1452ms 
+ServerPre: pid: 3953 qq (andre_li) :bot andre_li Nov 27 11:31:38 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Nov27 11:31:38 2ms Why:~addposthoc.6.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-11:31:34 Why:~addposthoc.6.0 
+ServerPre: pid: 3953 qq (andre_li)  Nov 27 11:31:42 2020
+Start: user:qq bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:wiebitte | sumCorrect: | duration:4 ] Wie bitte?  When:Nov27 11:31:42 3ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-11:31:34 Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 
+ServerPre: pid: 3953 ss (andre_li) :build vicontact_noprobs #a Nov 27 12:49:20 2020
+System startup vicontact_noprobs #a Fri Nov 27 12:49:20 2020
+System startup createsystem Fri Nov 27 12:49:20 2020
+Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-12:49:20 by version 8.8 "vicontact_noprobs"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:ss bot:andre_li ip:127.0.0.1 () 0 :build vicontact_noprobs #a  ==> System startup vicontact_noprobs #a Fri Nov 27 12:49:20 2020  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:   1 serious warnings, 0 function warnings, 0 spelling warnings, 250 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Fri Nov 27 12:49:20 2020  Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-12:49:20 by version 8.8 "vicontact_noprobs"  Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB         *** Server WIDE OPEN to :command use.    When:Nov27 12:49:21 1527ms 
+ServerPre: pid: 3953 ss (andre_li) :bot andre_li Nov 27 12:49:23 2020
+Start: user:ss bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Nov27 12:49:23 4ms Why:~addposthoc.6.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-12:49:20 Why:~addposthoc.6.0 
+ServerPre: pid: 3953 ss (andre_li) [choice_question]wie gehts Nov 27 12:49:38 2020
+Respond: user:ss bot:andre_li ip:127.0.0.1 (~introduction) 1 [choice_question]wie gehts  ==> [topic:~introduction | answerCategory:options | probFormat:option_chosen-80_notAnswering-10_ignorance-10 | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:48 | topicSwitch: | critRevealed:0 | noncritTopic:1 | intent: | soundFile:daserste | sumCorrect: | duration:15 ] Das erste.  When:Nov27 12:49:38 140ms Why:~addposthoc.6.0 ~options.0.0.~prob_answer.7.0 
+ServerPre: pid: 3953 ss (andre_li) :build vicontact_noprobs #a Nov 27 12:50:20 2020
+System startup vicontact_noprobs #a Fri Nov 27 12:50:20 2020
+System startup createsystem Fri Nov 27 12:50:20 2020
+Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local
+Params:   dict:2097151 fact:800000 text:100000kb hash:215127 
+          buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000
+Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"
+Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-12:50:20 by version 8.8 "vicontact_noprobs"
+Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb
+           buffer (6400kb) cache (5000kb)
+Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB 
+
+    *** Server WIDE OPEN to :command use.
+Respond: user:ss bot:andre_li ip:127.0.0.1 () 0 :build vicontact_noprobs #a  ==> System startup vicontact_noprobs #a Fri Nov 27 12:50:20 2020  ChatScript Version 8.8  compiled Nov 29 2018 14:35:45    WARNING SUMMARY:   1 serious warnings, 0 function warnings, 0 spelling warnings, 250 case warnings, 0 substitution warnings          Finished compile    System startup createsystem Fri Nov 27 12:50:20 2020  Server ChatScript EVSERVER Version 8.8 pid: 3953 64 bit MACH compiled Nov 29 2018 14:35:45 host=local  Params:   dict:2097151 fact:800000 text:100000kb hash:215127             buffer:80x80kb cache:1x5000kb userfacts:100 outputlimit:80000 loglimit:80000  Build0:  dict=25392  fact=41218  heap=340892 Compiled:Jul26'19-13:17:13 by version 8.8 "0"  Build1:  dict=589  fact=366  heap=406700 Compiled:Nov27'20-12:50:20 by version 8.8 "vicontact_noprobs"  Used 59MB: dict 420,045 (36964kb) hashdepths 37534.59581.51942.33429.17716.8505.3740.1609.680.233.112.30.12.2.1.2. words 420045 unusedbuckets 37534 fact 42,915 (2059kb) heap 9084kb             buffer (6400kb) cache (5000kb)  Free 127MB: dict 1,677,105 fact 757,085 stack/heap 90,915KB         *** Server WIDE OPEN to :command use.    When:Nov27 12:50:21 1423ms 
+ServerPre: pid: 3953 ss (andre_li) :bot andre_li Nov 27 12:50:22 2020
+Start: user:ss bot:andre_li ip:127.0.0.1 (~introduction) 0 ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:NaN | sumCorrect: | duration: ]  When:Nov27 12:50:22 2ms Why:~addposthoc.6.0  Version:8.8 Build0:Jul26'19-13:17:13 Build1:Nov27'20-12:50:20 Why:~addposthoc.6.0 
+ServerPre: pid: 3953 ss (andre_li) test Nov 27 12:50:26 2020
+Respond: user:ss bot:andre_li ip:127.0.0.1 (~introduction) 1 test  ==> [topic:~introduction | answerCategory: | probFormat: | goodQuestion:0 | emoType:serious | rapportCounter:0 | disclosureState:0 | chatPhase:start | randomNumber:0 | topicSwitch: | critRevealed:0 | noncritTopic:0 | intent: | soundFile:wiebitte | sumCorrect: | duration:4 ] Wie bitte?  When:Nov27 12:50:26 4ms Why:~addposthoc.6.0 ~incomprehension.0.0.~introduction.1.0 

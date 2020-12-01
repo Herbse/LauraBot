@@ -1,0 +1,95 @@
+topic: ~father_t ()
+
+
+#t: specific test to father topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names Stefan.
+    # age
+    a: (^age()) $$intent=age Der ist 45.
+    # mood
+    a: (^mood()) $$intent=mood Gut.
+    # job
+    a: (^job()) $$intent=job Papa macht Büros sauber in der Stadt.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f Der ist mein Papa.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o Der ist so lieb.
+    # time together
+    a: (^time_together()) $$intent=time_together Abends oder am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship Komische Frage
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(PAPA_4)
+    # activity
+    a: (^activity()) $$intent=activity ^reuse(PAPA_2)
+    # places together
+    a: (^places_together()) $$intent=places_together ^reuse(PAPA_4)
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($fatherCounter==1) Ganz ok.
+        b: ($fatherCounter==2) Ganz ok.
+        b: ($fatherCounter==3) Ganz ok.
+        b: ($fatherCounter==4) Ganz ok.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) Im Hof von unserm Haus
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) Nur Papa und ich.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($fatherCounter==1) ^respond(~mother_t.MAMA_1)
+        b: ($fatherCounter==2) ^respond(~mother_t.MAMA_2)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($fatherCounter==1) $$nextAnswer = yes
+        b: ($fatherCounter==2) $$nextAnswer = yes
+        b: ($fatherCounter==3) $$nextAnswer = yes
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 Mein Papa hilft meiner Mama zu Hause.
+ 
+
+#! Erzähl mal wie er ihr hilft?
+u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 Früher hat Papa als Hausmeister gearbeitet. Aber jetzt ist er immer zu Hause und kocht was zu essen für Mama.
+
+#! Erzähl mir mehr über deinen Papa!
+u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 3 Am liebsten kocht Papa seine Soljanka. Das ist eine Suppe.
+ 
+#! Was machst du denn gern mit deinem Papa?
+
+u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 Am Wochenende darf ich manchmal mitkommen und Papa in der Garage helfen, ihm das Werkzeug geben und so.
+
+  
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

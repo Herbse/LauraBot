@@ -1,0 +1,103 @@
+topic: ~friends_t ()
+# Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach dem Tanzen  unterschiedliche Antworten generiert
+
+#t: specific test to hobbies topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific [freunde die sie]) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names$$sound_file = s_natalia_friends1
+    Charlotte.
+    # age
+    a: (^age()) $$intent=age$$sound_file = s_natalia_friends2
+    Die ist so alt wie ich.
+    # mood
+    a: (^mood()) $$intent=mood$$sound_file = g_natalia_gut
+    Gut.
+    # job
+    a: (^job()) $$intent=job 
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f$$sound_file = s_natalia_friends3
+    Die ist meine beste Freundin.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o$$sound_file = s_natalia_friends4
+    Die ist voll cool.
+    # time together
+    a: (^time_together()) $$intent=time_together$$sound_file = s_natalia_friends5
+    In meiner Freizeit.
+    # time relationship
+    a: (^time()) $$intent=time_relationship$$sound_file = s_natalia_friends6
+    So seit einem Jahr.
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(FRIENDS_1)
+    # activity
+    a: (^activity()) $$intent=activity$$sound_file = s_natalia_friends7
+    Die geht auch in die Schule.
+    # places together
+    a: (^places_together()) $$intent=places_together$$sound_file = s_natalia_friends8
+    Wir gehen mit den Hunden spazieren oder spielen zu Hause.
+
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($friendCounter==1)$$sound_file = g_natalia_ganzok Ganz ok.
+        b: ($friendCounter==2)$$sound_file = g_natalia_ganzok Ganz ok.
+        b: ($friendCounter==3)$$sound_file = g_natalia_ganzok Ganz ok.
+        b: ($friendCounter==4)$$sound_file = g_natalia_ganzok Ganz ok.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($friendCounter==1)$$sound_file = s_natalia_dogs7 In der Nachbarschaft.
+        b: ($friendCounter==2)$$sound_file = s_natalia_friends9 In unserem Haus.
+        b: () $$answerCategory=missing ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($friendCounter==1)$$sound_file = s_natalia_friends10 Charlotte und ich. 
+        b: ($friendCounter==2)$$sound_file = s_natalia_friends1 Charlotte.
+        b: ($friendCounter==3)$$sound_file = s_natalia_friends1 Charlotte.
+        b: ($friendCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+#! Erzähl mal von deinen Hobbies.
+u: FRIENDS_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 1 $$sound_file = n_natalia_friends1
+Charlotte und ich sind oft mit den Hunden draußen. Wir gehen Gassi.
+ 
+
+  
+#! Erzähl mal mehr.
+u: FRIENDS_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 2 $$sound_file = n_natalia_friends2
+Sie wohnt nur drei Etagen unter mir.
+   
+ 
+
+#! Erzähl mir mehr 
+u: FRIENDS_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 3 $$sound_file = n_natalia_friends3
+Sie hat schon einen festen Freund.
+  
+
+#!  Erzähl mir mehr.
+u: FRIENDS_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $friendCounter = 4 $$sound_file = n_natalia_friends4
+Charlotte hat noch zwei Brüder. Die sind beide jünger als sie.
+   
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
+

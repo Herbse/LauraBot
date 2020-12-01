@@ -9,7 +9,7 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_hobbies.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_hobbies.top
     topic: 1  ~hobbies_t
         rule: 7  ~hobbies_t.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -116,7 +116,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_h
           Complexity of rule ~hobbies_t.4.0-HOBBIES_4 u: 1
         rule: 71  ~hobbies_t.5.0 u: 
           Complexity of rule ~hobbies_t.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_school.top
     topic: 1  ~school_t
         rule: 6  ~school_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -217,7 +217,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_s
           Complexity of rule ~school_t.4.0-SCHOOL_4 u: 1
         rule: 65  ~school_t.5.0 u: 
           Complexity of rule ~school_t.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_mother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_mother.top
     topic: 1  ~mother_t
         rule: 4  ~mother_t.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -381,7 +381,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_m
           Complexity of rule ~mother_t.5.0-MAMA_4 u: 1
         rule: 102  ~mother_t.6.0 u: 
           Complexity of rule ~mother_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_event.top
     topic: 1  ~event_t
         rule: 4  ~event_t.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -767,14 +767,14 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_e
         rule: 416  ~event_t.15.0-CLUE2 u: 
           line: 416 0  # $clue = 1 $$sound_file = clue_
           Complexity of rule ~event_t.15.0-CLUE2 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_introduction.top
     topic: 1  ~introduction
         rule: 3  ~introduction.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
           Complexity of rule ~introduction.0.0- t: 1
         rule: 6  ~introduction.1.0 u: 
           Complexity of rule ~introduction.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_friends.top
     topic: 1  ~friends_t
         rule: 7  ~friends_t.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -925,7 +925,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_f
           Complexity of rule ~friends_t.5.0-FRIENDS_4 u: 1
         rule: 106  ~friends_t.6.0 u: 
           Complexity of rule ~friends_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_father.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_father.top
     topic: 1  ~father_t
         rule: 7  ~father_t.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -1076,7 +1076,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_f
           Complexity of rule ~father_t.5.0-PAPA_4 u: 1
         rule: 101  ~father_t.6.0 u: 
           Complexity of rule ~father_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_personal.top
     topic: 1  ~personal_t
         rule: 3  ~personal_t.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -1118,7 +1118,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_p
           Complexity of rule ~personal_t.0.10- a: 1
         rule: 30  ~personal_t.0.11 a: 
           Complexity of rule ~personal_t.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_ralf.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_ralf.top
     topic: 1  ~ralf_t
         rule: 6  ~ralf_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -1266,7 +1266,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_r
           Complexity of rule ~ralf_t.5.0-RALF_4 u: 1
         rule: 103  ~ralf_t.6.0 u: 
           Complexity of rule ~ralf_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/BIO/d_quibble.top
     topic: 1  ~quibble
         rule: 4  ~quibble.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -1274,7 +1274,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/BIO/d_q
         rule: 6  ~quibble.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/QUESTIONS/c_specific.top
     topic: 1  ~specific
         rule: 4  ~specific.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -1346,11 +1346,11 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIO
           line: 26 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.22- b: 1
         rule: 27  ~specific.0.23 a: 
-          line: 27 0  # ^refine ( ) 
+          line: 27 0  # $$sound_file = g_andre_gut Gut
           Complexity of rule ~specific.0.23- a: 1
-        rule: 28  ~specific.0.24 b: 
-          line: 28 0  # $$sound_file = g_andre_gut Gut
-          Complexity of rule ~specific.0.24- b: 1
+        rule: 28  ~specific.0.24 a: 
+          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
+          Complexity of rule ~specific.0.24- a: 1
         rule: 29  ~specific.0.25 a: 
           line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.25- a: 1
@@ -1358,20 +1358,17 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIO
           line: 30 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.26- a: 1
         rule: 31  ~specific.0.27 a: 
-          line: 31 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 31 0  # ^respond ( %topic ) 
           Complexity of rule ~specific.0.27- a: 1
         rule: 32  ~specific.0.28 a: 
-          line: 32 0  # ^respond ( %topic ) 
+          line: 32 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.28- a: 1
         rule: 33  ~specific.0.29 a: 
           line: 33 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific.0.29- a: 1
-        rule: 34  ~specific.0.30 a: 
-          line: 34 0  # [ ^respond ( ~mother_t ) ] [ ^
+        rule: 35  ~specific.0.30 a: 
           Complexity of rule ~specific.0.30- a: 1
-        rule: 36  ~specific.0.31 a: 
-          Complexity of rule ~specific.0.31- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIONS/c_narrative.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/ANDRE/QUESTIONS/c_narrative.top
     topic: 1  ~narrative
         rule: 4  ~narrative.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -1462,7 +1459,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/ANDRE/QUESTIO
           Complexity of rule ~narrative.0.28- a: 1
         rule: 34  ~narrative.0.29 a: 
           Complexity of rule ~narrative.0.29- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_hobbies.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~1
         rule: 7  ~hobbies_t~1.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -1578,7 +1575,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_ho
           Complexity of rule ~hobbies_t~1.4.0-HOBBIES_4 u: 1
         rule: 73  ~hobbies_t~1.5.0 u: 
           Complexity of rule ~hobbies_t~1.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_school.top
     topic: 1  ~school_t~1
         rule: 6  ~school_t~1.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -1676,7 +1673,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_sc
           Complexity of rule ~school_t~1.4.0-SCHOOL_4 u: 1
         rule: 65  ~school_t~1.5.0 u: 
           Complexity of rule ~school_t~1.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_mother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_mother.top
     topic: 1  ~mother_t~1
         rule: 3  ~mother_t~1.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -1855,7 +1852,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_mo
           Complexity of rule ~mother_t~1.6.0-MAMA_4 u: 1
         rule: 114  ~mother_t~1.7.0 u: 
           Complexity of rule ~mother_t~1.7.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_sister.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_sister.top
     topic: 1  ~sister_t
         rule: 6  ~sister_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -1995,7 +1992,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_si
           Complexity of rule ~sister_t.5.0-SISTER_4 u: 1
         rule: 95  ~sister_t.6.0 u: 
           Complexity of rule ~sister_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_event.top
     topic: 1  ~event_t~1
         rule: 4  ~event_t~1.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -2351,14 +2348,14 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_ev
         rule: 388  ~event_t~1.15.0-CLUE2 u: 
           line: 388 0  # $$sound_file = clue_sara Tante
           Complexity of rule ~event_t~1.15.0-CLUE2 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_introduction.top
     topic: 1  ~introduction~1
         rule: 3  ~introduction~1.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
           Complexity of rule ~introduction~1.0.0- t: 1
         rule: 6  ~introduction~1.1.0 u: 
           Complexity of rule ~introduction~1.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_friends.top
     topic: 1  ~friends_t~1
         rule: 7  ~friends_t~1.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -2520,7 +2517,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_fr
           Complexity of rule ~friends_t~1.5.0-FRIENDS_4 u: 1
         rule: 112  ~friends_t~1.6.0 u: 
           Complexity of rule ~friends_t~1.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_father.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_father.top
     topic: 1  ~father_t~1
         rule: 6  ~father_t~1.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -2673,7 +2670,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_fa
           Complexity of rule ~father_t~1.5.0-PAPA_4 u: 1
         rule: 100  ~father_t~1.6.0 u: 
           Complexity of rule ~father_t~1.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_personal.top
     topic: 1  ~personal_t~1
         rule: 3  ~personal_t~1.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -2710,7 +2707,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_pe
           Complexity of rule ~personal_t~1.0.10- a: 1
         rule: 25  ~personal_t~1.0.11 a: 
           Complexity of rule ~personal_t~1.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/BIO/d_quibble.top
     topic: 1  ~quibble~1
         rule: 4  ~quibble~1.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -2718,7 +2715,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/BIO/d_qu
         rule: 6  ~quibble~1.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~1.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/QUESTIONS/c_specific.top
     topic: 1  ~specific~1
         rule: 4  ~specific~1.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -2790,11 +2787,11 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/QUESTION
           line: 26 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.22- b: 1
         rule: 27  ~specific~1.0.23 a: 
-          line: 27 0  # ^refine ( ) 
+          line: 27 0  # $$sound_file = g_sara_gut Geht
           Complexity of rule ~specific~1.0.23- a: 1
-        rule: 28  ~specific~1.0.24 b: 
-          line: 28 0  # $$sound_file = g_sara_gut Geht
-          Complexity of rule ~specific~1.0.24- b: 1
+        rule: 28  ~specific~1.0.24 a: 
+          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
+          Complexity of rule ~specific~1.0.24- a: 1
         rule: 29  ~specific~1.0.25 a: 
           line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.25- a: 1
@@ -2802,20 +2799,17 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/QUESTION
           line: 30 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.26- a: 1
         rule: 31  ~specific~1.0.27 a: 
-          line: 31 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 31 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~1.0.27- a: 1
         rule: 32  ~specific~1.0.28 a: 
-          line: 32 0  # ^respond ( %topic ) 
+          line: 32 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.28- a: 1
         rule: 33  ~specific~1.0.29 a: 
           line: 33 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~1.0.29- a: 1
-        rule: 34  ~specific~1.0.30 a: 
-          line: 34 0  # [ ^respond ( ~mother_t ) ] [ ^
+        rule: 35  ~specific~1.0.30 a: 
           Complexity of rule ~specific~1.0.30- a: 1
-        rule: 36  ~specific~1.0.31 a: 
-          Complexity of rule ~specific~1.0.31- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/QUESTIONS/c_narrative.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SARA/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~1
         rule: 4  ~narrative~1.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -2906,7 +2900,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SARA/QUESTION
           Complexity of rule ~narrative~1.0.28- a: 1
         rule: 34  ~narrative~1.0.29 a: 
           Complexity of rule ~narrative~1.0.29- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_school.top
     topic: 1  ~school_t~2
         rule: 6  ~school_t~2.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -3007,7 +3001,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_s
           Complexity of rule ~school_t~2.4.0-SCHOOL_4 u: 1
         rule: 64  ~school_t~2.5.0 u: 
           Complexity of rule ~school_t~2.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_therapy.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_therapy.top
     topic: 1  ~therapy_t
         rule: 5  ~therapy_t.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -3163,7 +3157,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_t
           Complexity of rule ~therapy_t.5.0-THERAPY_4 u: 1
         rule: 107  ~therapy_t.6.0 u: 
           Complexity of rule ~therapy_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_aunt.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_aunt.top
     topic: 1  ~aunt_t
         rule: 4  ~aunt_t.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -3365,7 +3359,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_a
           Complexity of rule ~aunt_t.6.0-AUNT_4 u: 1
         rule: 133  ~aunt_t.7.0 u: 
           Complexity of rule ~aunt_t.7.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_sister.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_sister.top
     topic: 1  ~sister_t~1
         rule: 6  ~sister_t~1.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -3515,7 +3509,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_s
           Complexity of rule ~sister_t~1.5.0-SISTER_4 u: 1
         rule: 105  ~sister_t~1.6.0 u: 
           Complexity of rule ~sister_t~1.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_event.top
     topic: 1  ~event_t~2
         rule: 4  ~event_t~2.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -3810,14 +3804,14 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_e
           Complexity of rule ~event_t~2.13.0-CLUE2 u: 1
         rule: 352  ~event_t~2.14.0 u: 
           Complexity of rule ~event_t~2.14.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_introduction.top
     topic: 1  ~introduction~2
         rule: 3  ~introduction~2.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
           Complexity of rule ~introduction~2.0.0- t: 1
         rule: 6  ~introduction~2.1.0 u: 
           Complexity of rule ~introduction~2.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_friends.top
     topic: 1  ~friends_t~2
         rule: 7  ~friends_t~2.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -3976,7 +3970,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_f
           Complexity of rule ~friends_t~2.5.0-FRIENDS_4 u: 1
         rule: 111  ~friends_t~2.6.0 u: 
           Complexity of rule ~friends_t~2.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_father.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_father.top
     topic: 1  ~father_t~2
         rule: 6  ~father_t~2.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -4137,7 +4131,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_f
           Complexity of rule ~father_t~2.5.0-PAPA_4 u: 1
         rule: 106  ~father_t~2.6.0 u: 
           Complexity of rule ~father_t~2.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_personal.top
     topic: 1  ~personal_t~2
         rule: 3  ~personal_t~2.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -4179,7 +4173,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_p
           Complexity of rule ~personal_t~2.0.10- a: 1
         rule: 30  ~personal_t~2.0.11 a: 
           Complexity of rule ~personal_t~2.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/BIO/d_quibble.top
     topic: 1  ~quibble~2
         rule: 4  ~quibble~2.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -4187,7 +4181,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/BIO/d_q
         rule: 6  ~quibble~2.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~2.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/QUESTIONS/c_specific.top
     topic: 1  ~specific~2
         rule: 4  ~specific~2.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -4253,29 +4247,26 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/QUESTIO
           line: 24 0  # [ ^respond ( ~aunt_t ) ] [ ^re
           Complexity of rule ~specific~2.0.20- b: 1
         rule: 25  ~specific~2.0.21 a: 
-          line: 25 0  # ^refine ( ) 
+          line: 25 0  # $$sound_file = g_jason_gut Geh
           Complexity of rule ~specific~2.0.21- a: 1
-        rule: 26  ~specific~2.0.22 b: 
-          line: 26 0  # $$sound_file = g_jason_gut Geh
-          Complexity of rule ~specific~2.0.22- b: 1
+        rule: 26  ~specific~2.0.22 a: 
+          line: 26 0  # [ ^respond ( ~aunt_t ) ] [ ^re
+          Complexity of rule ~specific~2.0.22- a: 1
         rule: 27  ~specific~2.0.23 a: 
-          line: 27 0  # [ ^respond ( ~aunt_t ) ] [ ^re
+          line: 27 0  # [ ^respond ( ~father_t ) ] 
           Complexity of rule ~specific~2.0.23- a: 1
         rule: 28  ~specific~2.0.24 a: 
-          line: 28 0  # [ ^respond ( ~father_t ) ] 
+          line: 28 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~2.0.24- a: 1
         rule: 29  ~specific~2.0.25 a: 
-          line: 29 0  # ^respond ( %topic ) 
+          line: 29 0  # [ ^respond ( ~aunt_t ) ] [ ^re
           Complexity of rule ~specific~2.0.25- a: 1
         rule: 30  ~specific~2.0.26 a: 
           line: 30 0  # [ ^respond ( ~aunt_t ) ] [ ^re
           Complexity of rule ~specific~2.0.26- a: 1
-        rule: 31  ~specific~2.0.27 a: 
-          line: 31 0  # [ ^respond ( ~aunt_t ) ] [ ^re
+        rule: 32  ~specific~2.0.27 a: 
           Complexity of rule ~specific~2.0.27- a: 1
-        rule: 33  ~specific~2.0.28 a: 
-          Complexity of rule ~specific~2.0.28- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/QUESTIONS/c_narrative.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/JASON/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~2
         rule: 4  ~narrative~2.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -4357,7 +4348,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/JASON/QUESTIO
           Complexity of rule ~narrative~2.0.25- a: 1
         rule: 31  ~narrative~2.0.26 a: 
           Complexity of rule ~narrative~2.0.26- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_hobbies.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~2
         rule: 7  ~hobbies_t~2.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -4469,7 +4460,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
           Complexity of rule ~hobbies_t~2.4.0-HOBBIES_4 u: 1
         rule: 72  ~hobbies_t~2.5.0 u: 
           Complexity of rule ~hobbies_t~2.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_school.top
     topic: 1  ~school_t~3
         rule: 6  ~school_t~3.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -4581,7 +4572,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
           Complexity of rule ~school_t~3.4.0-SCHOOL_4 u: 1
         rule: 65  ~school_t~3.5.0 u: 
           Complexity of rule ~school_t~3.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_brother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_brother.top
     topic: 1  ~brother_t
         rule: 6  ~brother_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -4734,7 +4725,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
           Complexity of rule ~brother_t.5.0-BROTHER_4 u: 1
         rule: 95  ~brother_t.6.0 u: 
           Complexity of rule ~brother_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_mother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_mother.top
     topic: 1  ~mother_t~2
         rule: 4  ~mother_t~2.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -4891,7 +4882,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
           Complexity of rule ~mother_t~2.5.0-MAMA_4 u: 1
         rule: 92  ~mother_t~2.6.0 u: 
           Complexity of rule ~mother_t~2.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_event.top
     topic: 1  ~event_t~3
         rule: 4  ~event_t~3.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -5175,14 +5166,14 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
         rule: 332  ~event_t~3.13.0-CLUE2 u: 
           line: 332 0  # $clue = 1 $$sound_file = event
           Complexity of rule ~event_t~3.13.0-CLUE2 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_introduction.top
     topic: 1  ~introduction~3
         rule: 3  ~introduction~3.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
           Complexity of rule ~introduction~3.0.0- t: 1
         rule: 6  ~introduction~3.1.0 u: 
           Complexity of rule ~introduction~3.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_friends.top
     topic: 1  ~friends_t~3
         rule: 5  ~friends_t~3.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -5339,7 +5330,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
           Complexity of rule ~friends_t~3.5.0-FRIENDS_4 u: 1
         rule: 97  ~friends_t~3.6.0 u: 
           Complexity of rule ~friends_t~3.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_father.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_father.top
     topic: 1  ~father_t~3
         rule: 7  ~father_t~3.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -5493,7 +5484,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
           Complexity of rule ~father_t~3.5.0-PAPA_4 u: 1
         rule: 95  ~father_t~3.6.0 u: 
           Complexity of rule ~father_t~3.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_personal.top
     topic: 1  ~personal_t~3
         rule: 3  ~personal_t~3.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -5530,7 +5521,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
           Complexity of rule ~personal_t~3.0.10- a: 1
         rule: 25  ~personal_t~3.0.11 a: 
           Complexity of rule ~personal_t~3.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/BIO/d_quibble.top
     topic: 1  ~quibble~3
         rule: 4  ~quibble~3.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -5538,7 +5529,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/BIO/
         rule: 6  ~quibble~3.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~3.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/QUESTIONS/c_specific.top
     topic: 1  ~specific~3
         rule: 4  ~specific~3.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -5604,29 +5595,26 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUES
           line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~3.0.20- b: 1
         rule: 25  ~specific~3.0.21 a: 
-          line: 25 0  # ^refine ( ) 
+          line: 25 0  # $$sound_file = g_laura_gut Gut
           Complexity of rule ~specific~3.0.21- a: 1
-        rule: 26  ~specific~3.0.22 b: 
-          line: 26 0  # $$sound_file = g_laura_gut Gut
-          Complexity of rule ~specific~3.0.22- b: 1
+        rule: 26  ~specific~3.0.22 a: 
+          line: 26 0  # [ ^respond ( ~mother_t ) ] [ ^
+          Complexity of rule ~specific~3.0.22- a: 1
         rule: 27  ~specific~3.0.23 a: 
           line: 27 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~3.0.23- a: 1
         rule: 28  ~specific~3.0.24 a: 
-          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 28 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~3.0.24- a: 1
         rule: 29  ~specific~3.0.25 a: 
-          line: 29 0  # ^respond ( %topic ) 
+          line: 29 0  # [ ^respond ( ~event_t ) ] [ ^r
           Complexity of rule ~specific~3.0.25- a: 1
         rule: 30  ~specific~3.0.26 a: 
-          line: 30 0  # [ ^respond ( ~event_t ) ] [ ^r
+          line: 30 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~3.0.26- a: 1
-        rule: 31  ~specific~3.0.27 a: 
-          line: 31 0  # [ ^respond ( ~mother_t ) ] [ ^
+        rule: 33  ~specific~3.0.27 a: 
           Complexity of rule ~specific~3.0.27- a: 1
-        rule: 34  ~specific~3.0.28 a: 
-          Complexity of rule ~specific~3.0.28- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUESTIONS/c_narrative.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_LI/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~3
         rule: 4  ~narrative~3.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -5708,7 +5696,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_LI/QUES
           Complexity of rule ~narrative~3.0.25- a: 1
         rule: 32  ~narrative~3.0.26 a: 
           Complexity of rule ~narrative~3.0.26- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_hobbies.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~3
         rule: 7  ~hobbies_t~3.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -5820,7 +5808,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
           Complexity of rule ~hobbies_t~3.4.0-HOBBIES_4 u: 1
         rule: 72  ~hobbies_t~3.5.0 u: 
           Complexity of rule ~hobbies_t~3.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_school.top
     topic: 1  ~school_t~4
         rule: 6  ~school_t~4.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -5932,7 +5920,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
           Complexity of rule ~school_t~4.4.0-SCHOOL_4 u: 1
         rule: 65  ~school_t~4.5.0 u: 
           Complexity of rule ~school_t~4.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_brother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_brother.top
     topic: 1  ~brother_t~1
         rule: 6  ~brother_t~1.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -6085,7 +6073,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
           Complexity of rule ~brother_t~1.5.0-BROTHER_4 u: 1
         rule: 95  ~brother_t~1.6.0 u: 
           Complexity of rule ~brother_t~1.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_mother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_mother.top
     topic: 1  ~mother_t~3
         rule: 4  ~mother_t~3.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -6242,7 +6230,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
           Complexity of rule ~mother_t~3.5.0-MAMA_4 u: 1
         rule: 92  ~mother_t~3.6.0 u: 
           Complexity of rule ~mother_t~3.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_event.top
     topic: 1  ~event_t~4
         rule: 4  ~event_t~4.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -6526,14 +6514,14 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
         rule: 332  ~event_t~4.13.0-CLUE2 u: 
           line: 332 0  # $clue = 1 $$sound_file = event
           Complexity of rule ~event_t~4.13.0-CLUE2 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_introduction.top
     topic: 1  ~introduction~4
         rule: 3  ~introduction~4.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
           Complexity of rule ~introduction~4.0.0- t: 1
         rule: 5  ~introduction~4.1.0 u: 
           Complexity of rule ~introduction~4.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_friends.top
     topic: 1  ~friends_t~4
         rule: 5  ~friends_t~4.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -6690,7 +6678,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
           Complexity of rule ~friends_t~4.5.0-FRIENDS_4 u: 1
         rule: 97  ~friends_t~4.6.0 u: 
           Complexity of rule ~friends_t~4.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_father.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_father.top
     topic: 1  ~father_t~4
         rule: 7  ~father_t~4.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -6844,7 +6832,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
           Complexity of rule ~father_t~4.5.0-PAPA_4 u: 1
         rule: 96  ~father_t~4.6.0 u: 
           Complexity of rule ~father_t~4.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_personal.top
     topic: 1  ~personal_t~4
         rule: 3  ~personal_t~4.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -6881,7 +6869,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
           Complexity of rule ~personal_t~4.0.10- a: 1
         rule: 25  ~personal_t~4.0.11 a: 
           Complexity of rule ~personal_t~4.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/BIO/d_quibble.top
     topic: 1  ~quibble~4
         rule: 4  ~quibble~4.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -6889,7 +6877,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/BIO/
         rule: 6  ~quibble~4.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~4.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/QUESTIONS/c_specific.top
     topic: 1  ~specific~4
         rule: 4  ~specific~4.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -6946,14 +6934,11 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUES
           line: 21 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~4.0.17- b: 1
         rule: 22  ~specific~4.0.18 a: 
-          line: 22 0  # ^refine ( ) 
+          line: 22 0  # $$sound_file = g_laura_gut Gut
           Complexity of rule ~specific~4.0.18- a: 1
-        rule: 23  ~specific~4.0.19 b: 
-          line: 23 0  # $$sound_file = g_laura_gut Gut
-          Complexity of rule ~specific~4.0.19- b: 1
-        rule: 25  ~specific~4.0.20 a: 
-          Complexity of rule ~specific~4.0.20- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUESTIONS/c_narrative.top
+        rule: 24  ~specific~4.0.19 a: 
+          Complexity of rule ~specific~4.0.19- a: 1
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LAURA_SI/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~4
         rule: 4  ~narrative~4.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -7014,7 +6999,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LAURA_SI/QUES
           Complexity of rule ~narrative~4.0.18- b: 1
         rule: 24  ~narrative~4.0.19 a: 
           Complexity of rule ~narrative~4.0.19- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_school.top
     topic: 1  ~school_t~5
         rule: 6  ~school_t~5.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -7115,7 +7100,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
           Complexity of rule ~school_t~5.4.0-SCHOOL_4 u: 1
         rule: 64  ~school_t~5.5.0 u: 
           Complexity of rule ~school_t~5.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_grandmother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_grandmother.top
     topic: 1  ~grandmother_t
         rule: 5  ~grandmother_t.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -7311,7 +7296,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
           Complexity of rule ~grandmother_t.6.0-OMA_4 u: 1
         rule: 136  ~grandmother_t.7.0 u: 
           Complexity of rule ~grandmother_t.7.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_neighbourhood.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_neighbourhood.top
     topic: 1  ~neighbourhood_t
         rule: 6  ~neighbourhood_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -7421,7 +7406,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
           Complexity of rule ~neighbourhood_t.4.0-NEIGHBOURS_4 u: 1
         rule: 71  ~neighbourhood_t.5.0 u: 
           Complexity of rule ~neighbourhood_t.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_mother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_mother.top
     topic: 1  ~mother_t~4
         rule: 4  ~mother_t~4.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -7572,7 +7557,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
           Complexity of rule ~mother_t~4.5.0-MAMA_4 u: 1
         rule: 96  ~mother_t~4.6.0 u: 
           Complexity of rule ~mother_t~4.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_sister.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_sister.top
     topic: 1  ~sister_t~2
         rule: 6  ~sister_t~2.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -7727,7 +7712,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
           Complexity of rule ~sister_t~2.5.0-SISTER_4 u: 1
         rule: 104  ~sister_t~2.6.0 u: 
           Complexity of rule ~sister_t~2.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_event.top
     topic: 1  ~event_t~5
         rule: 4  ~event_t~5.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -8014,7 +7999,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
         rule: 343  ~event_t~5.13.0-CLUE2 u: 
           line: 343 0  # $clue = 1 $$sound_file = clue_
           Complexity of rule ~event_t~5.13.0-CLUE2 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_introduction.top
     topic: 1  ~introduction~5
         rule: 3  ~introduction~5.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
@@ -8022,7 +8007,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
           Complexity of rule ~introduction~5.0.0- t: 1
         rule: 7  ~introduction~5.1.0 u: 
           Complexity of rule ~introduction~5.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_friends.top
     topic: 1  ~friends_t~5
         rule: 7  ~friends_t~5.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -8243,7 +8228,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
           Complexity of rule ~friends_t~5.6.0-FRIENDS_4 u: 1
         rule: 151  ~friends_t~5.7.0 u: 
           Complexity of rule ~friends_t~5.7.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_personal.top
     topic: 1  ~personal_t~5
         rule: 3  ~personal_t~5.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -8285,7 +8270,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
           Complexity of rule ~personal_t~5.0.10- a: 1
         rule: 30  ~personal_t~5.0.11 a: 
           Complexity of rule ~personal_t~5.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/BIO/d_quibble.top
     topic: 1  ~quibble~5
         rule: 4  ~quibble~5.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -8293,7 +8278,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/BI
         rule: 6  ~quibble~5.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~5.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/QUESTIONS/c_specific.top
     topic: 1  ~specific~5
         rule: 4  ~specific~5.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -8353,29 +8338,26 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/QU
           line: 22 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~5.0.18- b: 1
         rule: 23  ~specific~5.0.19 a: 
-          line: 23 0  # ^refine ( ) 
+          line: 23 0  # $$sound_file = g_constantin_gu
           Complexity of rule ~specific~5.0.19- a: 1
-        rule: 24  ~specific~5.0.20 b: 
-          line: 24 0  # $$sound_file = g_constantin_gu
-          Complexity of rule ~specific~5.0.20- b: 1
+        rule: 24  ~specific~5.0.20 a: 
+          line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
+          Complexity of rule ~specific~5.0.20- a: 1
         rule: 25  ~specific~5.0.21 a: 
-          line: 25 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 25 0  # [ ^respond ( ~mother_t ) ] 
           Complexity of rule ~specific~5.0.21- a: 1
         rule: 26  ~specific~5.0.22 a: 
-          line: 26 0  # [ ^respond ( ~mother_t ) ] 
+          line: 26 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~5.0.22- a: 1
         rule: 27  ~specific~5.0.23 a: 
-          line: 27 0  # ^respond ( %topic ) 
+          line: 27 0  # ^respond ( ~event_t ) 
           Complexity of rule ~specific~5.0.23- a: 1
         rule: 28  ~specific~5.0.24 a: 
-          line: 28 0  # ^respond ( ~event_t ) 
+          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~5.0.24- a: 1
-        rule: 29  ~specific~5.0.25 a: 
-          line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
+        rule: 30  ~specific~5.0.25 a: 
           Complexity of rule ~specific~5.0.25- a: 1
-        rule: 31  ~specific~5.0.26 a: 
-          Complexity of rule ~specific~5.0.26- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/QUESTIONS/c_narrative.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/CONSTANTIN/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~5
         rule: 4  ~narrative~5.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -8451,7 +8433,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/CONSTANTIN/QU
           Complexity of rule ~narrative~5.0.23- a: 1
         rule: 29  ~narrative~5.0.24 a: 
           Complexity of rule ~narrative~5.0.24- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_hobbies.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~4
         rule: 6  ~hobbies_t~4.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -8564,7 +8546,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_h
           Complexity of rule ~hobbies_t~4.4.0-HOBBIES_4 u: 1
         rule: 71  ~hobbies_t~4.5.0 u: 
           Complexity of rule ~hobbies_t~4.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_school.top
     topic: 1  ~school_t~6
         rule: 6  ~school_t~6.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -8659,7 +8641,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_s
           Complexity of rule ~school_t~6.4.0-SCHOOL_4 u: 1
         rule: 62  ~school_t~6.5.0 u: 
           Complexity of rule ~school_t~6.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_brother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_brother.top
     topic: 1  ~brother_t~2
         rule: 6  ~brother_t~2.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -8806,7 +8788,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_b
           Complexity of rule ~brother_t~2.5.0-BROTHER_4 u: 1
         rule: 100  ~brother_t~2.6.0 u: 
           Complexity of rule ~brother_t~2.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_mother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_mother.top
     topic: 1  ~mother_t~5
         rule: 4  ~mother_t~5.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -8946,7 +8928,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_m
           Complexity of rule ~mother_t~5.5.0-MAMA_4 u: 1
         rule: 89  ~mother_t~5.6.0 u: 
           Complexity of rule ~mother_t~5.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_event.top
     topic: 1  ~event_t~6
         rule: 4  ~event_t~6.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -9239,7 +9221,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_e
         rule: 349  ~event_t~6.13.0-CLUE2 u: 
           line: 349 0  # $clue = 1 $$sound_file = clue_
           Complexity of rule ~event_t~6.13.0-CLUE2 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_introduction.top
     topic: 1  ~introduction~6
         rule: 3  ~introduction~6.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
@@ -9247,7 +9229,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_i
           Complexity of rule ~introduction~6.0.0- t: 1
         rule: 7  ~introduction~6.1.0 u: 
           Complexity of rule ~introduction~6.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_friends.top
     topic: 1  ~friends_t~6
         rule: 7  ~friends_t~6.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -9363,7 +9345,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_f
           Complexity of rule ~friends_t~6.5.0-FRIENDS_4 u: 1
         rule: 90  ~friends_t~6.6.0 u: 
           Complexity of rule ~friends_t~6.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_father.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_father.top
     topic: 1  ~father_t~5
         rule: 4  ~father_t~5.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -9545,7 +9527,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_f
           Complexity of rule ~father_t~5.6.0-PAPA_4 u: 1
         rule: 116  ~father_t~5.7.0 u: 
           Complexity of rule ~father_t~5.7.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_personal.top
     topic: 1  ~personal_t~6
         rule: 3  ~personal_t~6.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -9587,7 +9569,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_p
           Complexity of rule ~personal_t~6.0.10- a: 1
         rule: 30  ~personal_t~6.0.11 a: 
           Complexity of rule ~personal_t~6.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/BIO/d_quibble.top
     topic: 1  ~quibble~6
         rule: 4  ~quibble~6.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -9595,7 +9577,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/BIO/d_q
         rule: 6  ~quibble~6.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~6.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/QUESTIONS/c_specific.top
     topic: 1  ~specific~6
         rule: 4  ~specific~6.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -9674,7 +9656,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/QUESTIO
           Complexity of rule ~specific~6.0.24- a: 1
         rule: 30  ~specific~6.0.25 a: 
           Complexity of rule ~specific~6.0.25- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/QUESTIONS/c_narrative.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/LUISA/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~6
         rule: 4  ~narrative~6.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -9753,7 +9735,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/LUISA/QUESTIO
           Complexity of rule ~narrative~6.0.24- a: 1
         rule: 30  ~narrative~6.0.25 a: 
           Complexity of rule ~narrative~6.0.25- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_hobbies.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~5
         rule: 7  ~hobbies_t~5.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -9869,7 +9851,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           Complexity of rule ~hobbies_t~5.4.0-HOBBIES_4 u: 1
         rule: 74  ~hobbies_t~5.5.0 u: 
           Complexity of rule ~hobbies_t~5.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_school.top
     topic: 1  ~school_t~7
         rule: 6  ~school_t~7.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -9970,7 +9952,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           Complexity of rule ~school_t~7.4.0-SCHOOL_4 u: 1
         rule: 64  ~school_t~7.5.0 u: 
           Complexity of rule ~school_t~7.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_mother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_mother.top
     topic: 1  ~mother_t~6
         rule: 4  ~mother_t~6.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -10118,7 +10100,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           Complexity of rule ~mother_t~6.5.0-MAMA_4 u: 1
         rule: 97  ~mother_t~6.6.0 u: 
           Complexity of rule ~mother_t~6.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_dogs.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_dogs.top
     topic: 1  ~dogs_t
         rule: 5  ~dogs_t.0.0 u: 
           line: 5 0  # ^keep ( ) ^refine ( ) 
@@ -10271,7 +10253,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           Complexity of rule ~dogs_t.5.0-DOGS_4 u: 1
         rule: 98  ~dogs_t.6.0 u: 
           Complexity of rule ~dogs_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_event.top
     topic: 1  ~event_t~7
         rule: 4  ~event_t~7.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -10571,7 +10553,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           line: 346 0  # $clue = 1 $$sound_file = clue_
           line: 347 38  # Meine Mama soll mich von der S
           Complexity of rule ~event_t~7.13.0-CLUE2 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_introduction.top
     topic: 1  ~introduction~7
         rule: 3  ~introduction~7.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
@@ -10579,7 +10561,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           Complexity of rule ~introduction~7.0.0- t: 1
         rule: 7  ~introduction~7.1.0 u: 
           Complexity of rule ~introduction~7.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_boyfriend.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_boyfriend.top
     topic: 1  ~boyfriend_t
         rule: 6  ~boyfriend_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -10731,7 +10713,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           Complexity of rule ~boyfriend_t.5.0-BOYFRIEND_4 u: 1
         rule: 103  ~boyfriend_t.6.0 u: 
           Complexity of rule ~boyfriend_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_friends.top
     topic: 1  ~friends_t~7
         rule: 7  ~friends_t~7.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -10865,7 +10847,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           Complexity of rule ~friends_t~7.5.0-FRIENDS_4 u: 1
         rule: 102  ~friends_t~7.6.0 u: 
           Complexity of rule ~friends_t~7.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_personal.top
     topic: 1  ~personal_t~7
         rule: 3  ~personal_t~7.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -10907,7 +10889,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
           Complexity of rule ~personal_t~7.0.10- a: 1
         rule: 30  ~personal_t~7.0.11 a: 
           Complexity of rule ~personal_t~7.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/BIO/d_quibble.top
     topic: 1  ~quibble~7
         rule: 4  ~quibble~7.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -10915,7 +10897,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/BIO/d
         rule: 6  ~quibble~7.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~7.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/QUESTIONS/c_specific.top
     topic: 1  ~specific~7
         rule: 4  ~specific~7.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -10975,29 +10957,26 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/QUEST
           line: 22 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~7.0.18- b: 1
         rule: 23  ~specific~7.0.19 a: 
-          line: 23 0  # ^refine ( ) 
+          line: 23 0  # $$sound_file = g_natalia_gut G
           Complexity of rule ~specific~7.0.19- a: 1
-        rule: 24  ~specific~7.0.20 b: 
-          line: 24 0  # $$sound_file = g_natalia_gut G
-          Complexity of rule ~specific~7.0.20- b: 1
+        rule: 24  ~specific~7.0.20 a: 
+          line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
+          Complexity of rule ~specific~7.0.20- a: 1
         rule: 25  ~specific~7.0.21 a: 
-          line: 25 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 25 0  # [ ^respond ( ~mother_t ) ] 
           Complexity of rule ~specific~7.0.21- a: 1
         rule: 26  ~specific~7.0.22 a: 
-          line: 26 0  # [ ^respond ( ~mother_t ) ] 
+          line: 26 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~7.0.22- a: 1
         rule: 27  ~specific~7.0.23 a: 
-          line: 27 0  # ^respond ( %topic ) 
+          line: 27 0  # ^respond ( ~event_t ) 
           Complexity of rule ~specific~7.0.23- a: 1
         rule: 28  ~specific~7.0.24 a: 
-          line: 28 0  # ^respond ( ~event_t ) 
+          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~7.0.24- a: 1
-        rule: 29  ~specific~7.0.25 a: 
-          line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
+        rule: 30  ~specific~7.0.25 a: 
           Complexity of rule ~specific~7.0.25- a: 1
-        rule: 31  ~specific~7.0.26 a: 
-          Complexity of rule ~specific~7.0.26- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/QUESTIONS/c_narrative.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/NATALIA/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~7
         rule: 4  ~narrative~7.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -11073,7 +11052,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/NATALIA/QUEST
           Complexity of rule ~narrative~7.0.23- a: 1
         rule: 29  ~narrative~7.0.24 a: 
           Complexity of rule ~narrative~7.0.24- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_cat.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_cat.top
     topic: 1  ~cat_t
         rule: 6  ~cat_t.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -11197,7 +11176,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_c
           Complexity of rule ~cat_t.5.0-CAT_4 u: 1
         rule: 87  ~cat_t.6.0 u: 
           Complexity of rule ~cat_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_hobbies.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_hobbies.top
     topic: 1  ~hobbies_t~6
         rule: 7  ~hobbies_t~6.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -11300,7 +11279,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_h
           Complexity of rule ~hobbies_t~6.4.0-HOBBIES_4 u: 1
         rule: 66  ~hobbies_t~6.5.0 u: 
           Complexity of rule ~hobbies_t~6.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_school.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_school.top
     topic: 1  ~school_t~8
         rule: 6  ~school_t~8.0.0 u: 
           line: 6 0  # ^keep ( ) ^refine ( ) 
@@ -11400,7 +11379,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_s
           Complexity of rule ~school_t~8.4.0-SCHOOL_4 u: 1
         rule: 63  ~school_t~8.5.0 u: 
           Complexity of rule ~school_t~8.5.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_mother.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_mother.top
     topic: 1  ~mother_t~7
         rule: 4  ~mother_t~7.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -11551,7 +11530,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_m
           Complexity of rule ~mother_t~7.5.0-MAMA_4 u: 1
         rule: 88  ~mother_t~7.6.0 u: 
           Complexity of rule ~mother_t~7.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_neighbour.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_neighbour.top
     topic: 1  ~neighbour_t
         rule: 7  ~neighbour_t.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -11699,7 +11678,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_n
           Complexity of rule ~neighbour_t.5.0-NEIGHBOUR_4 u: 1
         rule: 94  ~neighbour_t.6.0 u: 
           Complexity of rule ~neighbour_t.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_event.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_event.top
     topic: 1  ~event_t~8
         rule: 4  ~event_t~8.0.0 u: 
           line: 4 0  # ^keep ( ) ^refine ( ) 
@@ -12027,14 +12006,14 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_e
         rule: 334  ~event_t~8.14.0-CLUE2 u: 
           line: 334 0  # Ich möchte nicht mehr zum Spo
           Complexity of rule ~event_t~8.14.0-CLUE2 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_introduction.top
     topic: 1  ~introduction~8
         rule: 3  ~introduction~8.0.0 t: 
           line: 3 0  # $starttime = %fulltime $rappor
           Complexity of rule ~introduction~8.0.0- t: 1
         rule: 6  ~introduction~8.1.0 u: 
           Complexity of rule ~introduction~8.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_friends.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_friends.top
     topic: 1  ~friends_t~8
         rule: 7  ~friends_t~8.0.0 u: 
           line: 7 0  # ^keep ( ) ^refine ( ) 
@@ -12173,7 +12152,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_f
           Complexity of rule ~friends_t~8.5.0-FRIENDS_4 u: 1
         rule: 95  ~friends_t~8.6.0 u: 
           Complexity of rule ~friends_t~8.6.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_personal.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_personal.top
     topic: 1  ~personal_t~8
         rule: 3  ~personal_t~8.0.0 u: 
           line: 3 0  # ^keep ( ) ^refine ( ) 
@@ -12210,7 +12189,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_p
           Complexity of rule ~personal_t~8.0.10- a: 1
         rule: 25  ~personal_t~8.0.11 a: 
           Complexity of rule ~personal_t~8.0.11- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_quibble.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/BIO/d_quibble.top
     topic: 1  ~quibble~8
         rule: 4  ~quibble~8.0.0 u: 
           line: 4 0  # Ich bin 10 Jahre alt. 
@@ -12218,7 +12197,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/BIO/d_q
         rule: 6  ~quibble~8.1.0 u: 
           line: 6 0  # Naja, es geht 
           Complexity of rule ~quibble~8.1.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/QUESTIONS/c_specific.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/QUESTIONS/c_specific.top
     topic: 1  ~specific~8
         rule: 4  ~specific~8.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -12278,29 +12257,26 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/QUESTIO
           line: 22 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~8.0.18- b: 1
         rule: 23  ~specific~8.0.19 a: 
-          line: 23 0  # ^refine ( ) 
+          line: 23 0  # $$sound_file = g_simon_gut Geh
           Complexity of rule ~specific~8.0.19- a: 1
-        rule: 24  ~specific~8.0.20 b: 
-          line: 24 0  # $$sound_file = g_simon_gut Geh
-          Complexity of rule ~specific~8.0.20- b: 1
+        rule: 24  ~specific~8.0.20 a: 
+          line: 24 0  # [ ^respond ( ~mother_t ) ] [ ^
+          Complexity of rule ~specific~8.0.20- a: 1
         rule: 25  ~specific~8.0.21 a: 
-          line: 25 0  # [ ^respond ( ~mother_t ) ] [ ^
+          line: 25 0  # [ ^respond ( ~mother_t ) ] 
           Complexity of rule ~specific~8.0.21- a: 1
         rule: 26  ~specific~8.0.22 a: 
-          line: 26 0  # [ ^respond ( ~mother_t ) ] 
+          line: 26 0  # ^respond ( %topic ) 
           Complexity of rule ~specific~8.0.22- a: 1
         rule: 27  ~specific~8.0.23 a: 
-          line: 27 0  # ^respond ( %topic ) 
+          line: 27 0  # ^respond ( ~event_t ) 
           Complexity of rule ~specific~8.0.23- a: 1
         rule: 28  ~specific~8.0.24 a: 
-          line: 28 0  # ^respond ( ~event_t ) 
+          line: 28 0  # [ ^respond ( ~mother_t ) ] [ ^
           Complexity of rule ~specific~8.0.24- a: 1
-        rule: 29  ~specific~8.0.25 a: 
-          line: 29 0  # [ ^respond ( ~mother_t ) ] [ ^
+        rule: 30  ~specific~8.0.25 a: 
           Complexity of rule ~specific~8.0.25- a: 1
-        rule: 31  ~specific~8.0.26 a: 
-          Complexity of rule ~specific~8.0.26- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/QUESTIONS/c_narrative.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/VKIND/SIMON/QUESTIONS/c_narrative.top
     topic: 1  ~narrative~8
         rule: 4  ~narrative~8.0.0 u: 
           line: 4 0  # ^next ( INPUT ) ^refine ( ) ^k
@@ -12376,7 +12352,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/VKIND/SIMON/QUESTIO
           Complexity of rule ~narrative~8.0.23- a: 1
         rule: 29  ~narrative~8.0.24 a: 
           Complexity of rule ~narrative~8.0.24- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorial.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/TUTORIAL/tutorial.top
     topic: 1  ~tutorial
         rule: 4  ~tutorial.0.0-TRIALX t: 
           line: 4 0  # Schluss 
@@ -12387,7 +12363,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorial.t
         rule: 6  ~tutorial.0.2 a: 
           line: 6 0  # $$correct = 0 Das war falsch. 
           Complexity of rule ~tutorial.0.2- a: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorialconcepts.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/TUTORIAL/tutorialconcepts.top
     topic: 1  ~own_concepts
     concept: 3  ~trial0
     concept: 4  ~buzz0
@@ -12411,7 +12387,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorialco
     concept: 22  ~buzz9
     concept: 23  ~trial10
     concept: 24  ~buzz10
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/TUTORIAL/d_introduction.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/TUTORIAL/d_introduction.top
     topic: 1  ~introduction~9
         rule: 4  ~introduction~9.0.0- t: 
           line: 4 0  # $trialnr = 0 
@@ -12448,7 +12424,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/TUTORIAL/d_introduc
           Complexity of rule ~introduction~9.9.0-TRIAL9 u: 1
         rule: 33  ~introduction~9.10.0-TRIAL10 u: 
           Complexity of rule ~introduction~9.10.0-TRIAL10 u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorialmacros.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/TUTORIAL/tutorialmacros.top
     macro: 1  ^tutorialstart
           line: 3 0  # $counter = 0 
           line: 4 13  # $count = 0 
@@ -12591,7 +12567,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/TUTORIAL/tutorialma
           line: 130 79  # ^nexttrial ( ) 
           line: 131 94  # $trialnr += 1 
           Complexity of ^jsonresults: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_functions.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/CONTROL/z_functions.top
     macro: 1  ^myfunc
           line: 2 0  # $$wordindex += 1 
           line: 3 17  # _0 = ^burst ( ^0 "^\t" ) 
@@ -12708,7 +12684,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_functions
           line: 121 0  # $$wordindex = 0 
           line: 122 16  # ^log ( FILE chat.txt NEW '_0 )
           Complexity of rule ~xpostagsentence.1.0- t: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_emohandler.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/CONTROL/z_emohandler.top
     macro: 2  ^emohandler
           if 4 4  
           line: 4 0  # ^if 01K( $cs_bot = laura_si or
@@ -12766,7 +12742,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_emohandle
           line: 30 1384  # } aaa 
           ifend 32 1389  
           Complexity of ^emohandler: 23
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_disclosureHandler.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/CONTROL/z_disclosureHandler.top
     macro: 1  ^disclosurehandler
           if 4 4  
           ifend 4 124  
@@ -12775,7 +12751,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_disclosur
           else 5 188  
           ifend 6 223  
           Complexity of ^disclosurehandler: 3
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_vicontact_control.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/CONTROL/z_vicontact_control.top
     macro: 4  ^laura_li
           line: 5 0  # ^addtopic ( ~introduction ) 
           line: 6 28  # $cs_control_pre = ~timer 
@@ -13049,7 +13025,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_vicontact
           line: 252 0  # ^oob ( ) 
           line: 253 9  # ^postprintbefore ( \[ $$oob \]
           Complexity of rule ~addposthoc.6.0- t: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_clueHandler.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/CONTROL/z_clueHandler.top
     macro: 1  ^cluehandler
           if 4 4  
           ifend 4 135  
@@ -13058,15 +13034,15 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONTROL/z_clueHandl
           line: 5 136  # ^if 00&( $goodquestion == 10 a
           ifend 7 304  
           Complexity of ^cluehandler: 3
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_reactance.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/c_reactance.top
     topic: 1  ~reactance
         rule: 3  ~reactance.0.0 u: 
           Complexity of rule ~reactance.0.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_notAnswering.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/c_notAnswering.top
     topic: 1  ~notanswering
         rule: 3  ~notanswering.0.0 u: 
           Complexity of rule ~notanswering.0.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/b_prob_answer.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/b_prob_answer.top
     topic: 1  ~prob_answer
         rule: 6  ~prob_answer.0.0 u: 
           if 7 4  
@@ -13076,860 +13052,397 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/b_
           elseif 9 121  
           ifend 9 179  
           line: 9 116  # else 00r( '_2 == transparency 
-          if 10 184  
-          ifend 10 241  
-          line: 10 180  # ^if 00r( $rapportcounter > 5 )
-          if 11 246  
-          ifend 11 306  
-          line: 11 242  # ^if 00t( $rapportcounter == -6
-          line: 12 307  # $goodquestion += 1 $noncrittop
-          line: 13 345  # ^refine ( ) 
-          Complexity of rule ~prob_answer.0.0- u: 6
-        rule: 14  ~prob_answer.0.1 a: 
-          line: 15 0  # $$probformat = narrative-40_no
-          line: 16 70  # $$randnum = ^generatenumber ( 
-          if 17 111  
-          line: 17 107  # ^if 00n( $$randnum < 400 ) 00@
-          elseif 18 203  
-          line: 18 198  # else 00n( $$randnum < 700 ) 00
-          elseif 19 301  
-          line: 19 296  # else 00n( $$randnum < 850 ) 00
-          else 20 393  
-          ifend 20 463  
-          line: 20 388  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.1- a: 4
-        rule: 21  ~prob_answer.0.2 a: 
-          line: 22 0  # $$probformat = narrative-44_no
-          line: 23 70  # $$randnum = ^generatenumber ( 
-          if 24 111  
-          line: 24 107  # ^if 00n( $$randnum < 440 ) 00@
-          elseif 25 203  
-          line: 25 198  # else 00n( $$randnum < 720 ) 00
-          elseif 26 301  
-          line: 26 296  # else 00n( $$randnum < 860 ) 00
-          else 27 393  
-          ifend 27 463  
-          line: 27 388  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.2- a: 4
-        rule: 28  ~prob_answer.0.3 a: 
-          line: 29 0  # $$probformat = narrative-48_no
-          line: 30 70  # $$randnum = ^generatenumber ( 
-          if 31 111  
-          line: 31 107  # ^if 00n( $$randnum < 480 ) 00@
-          elseif 32 203  
-          line: 32 198  # else 00n( $$randnum < 740 ) 00
-          elseif 33 301  
-          line: 33 296  # else 00n( $$randnum < 870 ) 00
-          else 34 393  
-          ifend 34 463  
-          line: 34 388  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.3- a: 4
-        rule: 35  ~prob_answer.0.4 a: 
-          line: 36 0  # $$probformat = narrative-52_no
-          line: 37 70  # $$randnum = ^generatenumber ( 
-          if 38 111  
-          line: 38 107  # ^if 00n( $$randnum < 520 ) 00@
-          elseif 39 203  
-          line: 39 198  # else 00n( $$randnum < 760 ) 00
-          elseif 40 301  
-          line: 40 296  # else 00n( $$randnum < 880 ) 00
-          else 41 393  
-          ifend 41 463  
-          line: 41 388  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.4- a: 4
-        rule: 42  ~prob_answer.0.5 a: 
-          line: 43 0  # $$probformat = narrative-56_no
-          line: 44 70  # $$randnum = ^generatenumber ( 
-          if 45 111  
-          line: 45 107  # ^if 00n( $$randnum < 560 ) 00@
-          elseif 46 203  
-          line: 46 198  # else 00n( $$randnum < 780 ) 00
-          elseif 47 301  
-          line: 47 296  # else 00n( $$randnum < 890 ) 00
-          else 48 393  
-          ifend 48 463  
-          line: 48 388  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.5- a: 4
-        rule: 49  ~prob_answer.0.6 a: 
-          line: 50 0  # $$probformat = narrative-60_no
-          line: 51 70  # $$randnum = ^generatenumber ( 
-          if 52 111  
-          line: 52 107  # ^if 00n( $$randnum < 600 ) 00@
-          elseif 53 203  
-          line: 53 198  # else 00n( $$randnum < 800 ) 00
-          elseif 54 301  
-          line: 54 296  # else 00n( $$randnum < 900 ) 00
-          else 55 393  
-          ifend 55 463  
-          line: 55 388  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.6- a: 4
-        rule: 56  ~prob_answer.0.7 a: 
-          line: 57 0  # $$probformat = narrative-64_no
-          line: 58 68  # $$randnum = ^generatenumber ( 
-          if 59 109  
-          line: 59 105  # ^if 00n( $$randnum < 640 ) 00@
-          elseif 60 201  
-          line: 60 196  # else 00n( $$randnum < 820 ) 00
-          elseif 61 299  
-          line: 61 294  # else 00n( $$randnum < 910 ) 00
-          else 62 391  
-          ifend 62 461  
-          line: 62 386  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.7- a: 4
-        rule: 63  ~prob_answer.0.8 a: 
-          line: 64 0  # $$probformat = narrative-68_no
-          line: 65 68  # $$randnum = ^generatenumber ( 
-          if 66 109  
-          line: 66 105  # ^if 00n( $$randnum < 680 ) 00@
-          elseif 67 201  
-          line: 67 196  # else 00n( $$randnum < 840 ) 00
-          elseif 68 299  
-          line: 68 294  # else 00n( $$randnum < 920 ) 00
-          else 69 391  
-          ifend 69 461  
-          line: 69 386  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.8- a: 4
-        rule: 70  ~prob_answer.0.9 a: 
-          line: 71 0  # $$probformat = narrative-72_no
-          line: 72 68  # $$randnum = ^generatenumber ( 
-          if 73 109  
-          line: 73 105  # ^if 00n( $$randnum < 720 ) 00@
-          elseif 74 201  
-          line: 74 196  # else 00n( $$randnum < 860 ) 00
-          elseif 75 299  
-          line: 75 294  # else 00n( $$randnum < 930 ) 00
-          else 76 391  
-          ifend 76 461  
-          line: 76 386  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.9- a: 4
-        rule: 77  ~prob_answer.0.10 a: 
-          line: 78 0  # $$probformat = narrative-76_no
-          line: 79 68  # $$randnum = ^generatenumber ( 
-          if 80 109  
-          line: 80 105  # ^if 00n( $$randnum < 760 ) 00@
-          elseif 81 201  
-          line: 81 196  # else 00n( $$randnum < 880 ) 00
-          elseif 82 299  
-          line: 82 294  # else 00n( $$randnum < 940 ) 00
-          else 83 391  
-          ifend 83 461  
-          line: 83 386  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.10- a: 4
-        rule: 84  ~prob_answer.0.11 a: 
-          line: 85 0  # $$probformat = narrative-80_no
-          line: 86 68  # $$randnum = ^generatenumber ( 
-          if 87 109  
-          line: 87 105  # ^if 00n( $$randnum < 800 ) 00@
-          elseif 88 201  
-          line: 88 196  # else 00n( $$randnum < 900 ) 00
-          elseif 89 299  
-          line: 89 294  # else 00n( $$randnum < 950 ) 00
-          else 90 391  
-          ifend 90 461  
-          line: 90 386  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.0.11- a: 4
-        rule: 94  ~prob_answer.1.0 u: 
-          line: 95 0  # $goodquestion += 1 $noncrittop
-          if 96 42  
-          line: 96 38  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 97 101  
-          line: 97 96  # else 00l( '_1 == demand ) 00w{
-          elseif 98 159  
-          ifend 98 217  
-          line: 98 154  # else 00r( '_2 == transparency 
-          line: 99 218  # $$probformat = narrative-80_no
-          line: 100 275  # $$randnum = ^generatenumber ( 
-          if 101 316  
-          line: 101 312  # ^if 00n( $$randnum < 800 ) 00@
-          elseif 102 408  
-          line: 102 403  # else 00n( $$randnum < 900 ) 00
-          else 103 506  
-          ifend 103 576  
-          line: 103 501  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.1.0- u: 6
-        rule: 108  ~prob_answer.2.0 u: 
-          if 109 4  
-          line: 109 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 110 63  
-          line: 110 58  # else 00l( '_1 == demand ) 00w{
-          elseif 111 121  
-          ifend 111 179  
-          line: 111 116  # else 00r( '_2 == transparency 
-          if 112 184  
-          ifend 112 241  
-          line: 112 180  # ^if 00r( $rapportcounter > 5 )
-          if 113 246  
-          ifend 113 306  
-          line: 113 242  # ^if 00t( $rapportcounter == -6
-          line: 114 307  # $goodquestion += 1 $noncrittop
-          line: 115 345  # ^refine ( ) 
-          Complexity of rule ~prob_answer.2.0- u: 6
-        rule: 116  ~prob_answer.2.1 a: 
-          line: 117 0  # $$probformat = narrative-20_af
-          line: 118 72  # $$randnum = ^generatenumber ( 
-          if 119 113  
-          line: 119 109  # ^if 00n( $$randnum < 200 ) 00@
-          elseif 120 205  
-          line: 120 200  # else 00n( $$randnum < 500 ) 00
-          elseif 121 301  
-          line: 121 296  # else 00n( $$randnum < 800 ) 00
-          else 122 399  
-          ifend 122 469  
-          line: 122 394  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.1- a: 4
-        rule: 123  ~prob_answer.2.2 a: 
-          line: 124 0  # $$probformat = narrative-24_af
-          line: 125 72  # $$randnum = ^generatenumber ( 
-          if 126 113  
-          line: 126 109  # ^if 00n( $$randnum < 240 ) 00@
-          elseif 127 205  
-          line: 127 200  # else 00n( $$randnum < 530 ) 00
-          elseif 128 301  
-          line: 128 296  # else 00n( $$randnum < 820 ) 00
-          else 129 399  
-          ifend 129 469  
-          line: 129 394  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.2- a: 4
-        rule: 130  ~prob_answer.2.3 a: 
-          line: 131 0  # $$probformat = narrative-28_af
-          line: 132 72  # $$randnum = ^generatenumber ( 
-          if 133 113  
-          line: 133 109  # ^if 00n( $$randnum < 280 ) 00@
-          elseif 134 205  
-          line: 134 200  # else 00n( $$randnum < 560 ) 00
-          elseif 135 301  
-          line: 135 296  # else 00n( $$randnum < 840 ) 00
-          else 136 399  
-          ifend 136 469  
-          line: 136 394  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.3- a: 4
-        rule: 137  ~prob_answer.2.4 a: 
-          line: 138 0  # $$probformat = narrative-32_af
-          line: 139 72  # $$randnum = ^generatenumber ( 
-          if 140 113  
-          line: 140 109  # ^if 00n( $$randnum < 320 ) 00@
-          elseif 141 205  
-          line: 141 200  # else 00n( $$randnum < 590 ) 00
-          elseif 142 301  
-          line: 142 296  # else 00n( $$randnum < 860 ) 00
-          else 143 399  
-          ifend 143 469  
-          line: 143 394  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.4- a: 4
-        rule: 144  ~prob_answer.2.5 a: 
-          line: 145 0  # $$probformat = narrative-36_af
-          line: 146 72  # $$randnum = ^generatenumber ( 
-          if 147 113  
-          line: 147 109  # ^if 00n( $$randnum < 360 ) 00@
-          elseif 148 205  
-          line: 148 200  # else 00n( $$randnum < 620 ) 00
-          elseif 149 301  
-          line: 149 296  # else 00n( $$randnum < 880 ) 00
-          else 150 399  
-          ifend 150 469  
-          line: 150 394  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.5- a: 4
-        rule: 151  ~prob_answer.2.6 a: 
-          line: 152 0  # $$probformat = narrative-40_af
-          line: 153 72  # $$randnum = ^generatenumber ( 
-          if 154 113  
-          line: 154 109  # ^if 00n( $$randnum < 400 ) 00@
-          elseif 155 205  
-          line: 155 200  # else 00n( $$randnum < 650 ) 00
-          elseif 156 301  
-          line: 156 296  # else 00n( $$randnum < 900 ) 00
-          else 157 399  
-          ifend 157 469  
-          line: 157 394  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.6- a: 4
-        rule: 158  ~prob_answer.2.7 a: 
-          line: 159 0  # $$probformat = narrative-44_af
-          line: 160 71  # $$randnum = ^generatenumber ( 
-          if 161 112  
-          line: 161 108  # ^if 00n( $$randnum < 440 ) 00@
-          elseif 162 204  
-          line: 162 199  # else 00n( $$randnum < 680 ) 00
-          elseif 163 300  
-          line: 163 295  # else 00n( $$randnum < 920 ) 00
-          else 164 398  
-          ifend 164 468  
-          line: 164 393  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.7- a: 4
-        rule: 165  ~prob_answer.2.8 a: 
-          line: 166 0  # $$probformat = narrative-48_af
-          line: 167 71  # $$randnum = ^generatenumber ( 
-          if 168 112  
-          line: 168 108  # ^if 00n( $$randnum < 480 ) 00@
-          elseif 169 204  
-          line: 169 199  # else 00n( $$randnum < 710 ) 00
-          elseif 170 300  
-          line: 170 295  # else 00n( $$randnum < 940 ) 00
-          else 171 398  
-          ifend 171 468  
-          line: 171 393  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.8- a: 4
-        rule: 172  ~prob_answer.2.9 a: 
-          line: 173 0  # $$probformat = narrative-52_af
-          line: 174 71  # $$randnum = ^generatenumber ( 
-          if 175 112  
-          line: 175 108  # ^if 00n( $$randnum < 520 ) 00@
-          elseif 176 204  
-          line: 176 199  # else 00n( $$randnum < 740 ) 00
-          elseif 177 300  
-          line: 177 295  # else 00n( $$randnum < 960 ) 00
-          else 178 398  
-          ifend 178 468  
-          line: 178 393  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.9- a: 4
-        rule: 179  ~prob_answer.2.10 a: 
-          line: 180 0  # $$probformat = narrative-56_af
-          line: 181 71  # $$randnum = ^generatenumber ( 
-          if 182 112  
-          line: 182 108  # ^if 00n( $$randnum < 560 ) 00@
-          elseif 183 204  
-          line: 183 199  # else 00n( $$randnum < 770 ) 00
-          elseif 184 300  
-          line: 184 295  # else 00n( $$randnum < 980 ) 00
-          else 185 398  
-          ifend 185 468  
-          line: 185 393  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.2.10- a: 4
-        rule: 186  ~prob_answer.2.11 a: 
-          line: 187 0  # $$probformat = narrative-60_af
-          line: 188 71  # $$randnum = ^generatenumber ( 
-          if 189 112  
-          line: 189 108  # ^if 00n( $$randnum < 600 ) 00@
-          elseif 190 204  
-          line: 190 199  # else 00n( $$randnum < 800 ) 00
-          else 191 300  
-          ifend 191 376  
-          line: 191 295  # else ( 1 ) 00* { $$answercateg
-          Complexity of rule ~prob_answer.2.11- a: 3
-        rule: 194  ~prob_answer.3.0 u: 
-          line: 195 0  # $goodquestion += 1 $noncrittop
-          if 196 42  
-          line: 196 38  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 197 101  
-          line: 197 96  # else 00l( '_1 == demand ) 00w{
-          elseif 198 159  
-          ifend 198 217  
-          line: 198 154  # else 00r( '_2 == transparency 
-          line: 199 218  # $$probformat = narrative-60_af
-          line: 200 277  # $$randnum = ^generatenumber ( 
-          if 201 318  
-          line: 201 314  # ^if 00n( $$randnum < 600 ) 00@
-          elseif 202 410  
-          line: 202 405  # else 00n( $$randnum < 800 ) 00
-          else 203 506  
-          ifend 203 582  
-          line: 203 501  # else ( 1 ) 00* { $$answercateg
-          Complexity of rule ~prob_answer.3.0- u: 6
-        rule: 206  ~prob_answer.4.0 u: 
-          line: 207 0  # $$probformat = affirmation-70_
-          line: 208 69  # $$randnum = ^generatenumber ( 
-          if 209 110  
-          line: 209 106  # ^if 00n( $$randnum < 700 ) 00^
-          elseif 210 206  
-          line: 210 201  # else 00n( $$randnum < 900 ) 00
-          elseif 211 293  
-          line: 211 288  # else 00n( $$randnum < 950 ) 00
-          else 212 385  
-          ifend 212 461  
-          line: 212 380  # else ( 1 ) 00* { $$answercateg
+          line: 10 180  # $goodquestion += 1 $noncrittop
+          line: 11 218  # $$probformat = narrative-100 
+          line: 12 247  # $$answercategory = narrative ^
+          Complexity of rule ~prob_answer.0.0- u: 4
+        rule: 16  ~prob_answer.1.0 u: 
+          line: 17 0  # $goodquestion += 1 $noncrittop
+          if 18 42  
+          line: 18 38  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 19 101  
+          line: 19 96  # else 00l( '_1 == demand ) 00w{
+          elseif 20 159  
+          ifend 20 217  
+          line: 20 154  # else 00r( '_2 == transparency 
+          line: 21 218  # $$probformat = narrative-100 
+          line: 22 247  # $$answercategory = narrative ^
+          Complexity of rule ~prob_answer.1.0- u: 4
+        rule: 28  ~prob_answer.2.0 u: 
+          if 29 4  
+          line: 29 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 30 63  
+          line: 30 58  # else 00l( '_1 == demand ) 00w{
+          elseif 31 121  
+          ifend 31 179  
+          line: 31 116  # else 00r( '_2 == transparency 
+          line: 32 180  # $goodquestion += 1 $noncrittop
+          line: 33 218  # $$probformat = narrative-100 
+          line: 34 247  # $$answercategory = narrative ^
+          Complexity of rule ~prob_answer.2.0- u: 4
+        rule: 37  ~prob_answer.3.0 u: 
+          line: 38 0  # $goodquestion += 1 $noncrittop
+          if 39 42  
+          line: 39 38  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 40 101  
+          line: 40 96  # else 00l( '_1 == demand ) 00w{
+          elseif 41 159  
+          ifend 41 217  
+          line: 41 154  # else 00r( '_2 == transparency 
+          line: 42 218  # $$probformat = narrative-100 
+          line: 43 247  # $$answercategory = narrative ^
+          Complexity of rule ~prob_answer.3.0- u: 4
+        rule: 46  ~prob_answer.4.0 u: 
+          line: 47 0  # $$probformat = affirmation-70_
+          line: 48 69  # $$randnum = ^generatenumber ( 
+          if 49 110  
+          line: 49 106  # ^if 00n( $$randnum < 700 ) 00^
+          elseif 50 206  
+          line: 50 201  # else 00n( $$randnum < 900 ) 00
+          elseif 51 293  
+          line: 51 288  # else 00n( $$randnum < 950 ) 00
+          else 52 385  
+          ifend 52 461  
+          line: 52 380  # else ( 1 ) 00* { $$answercateg
           Complexity of rule ~prob_answer.4.0- u: 4
-        rule: 216  ~prob_answer.5.0 u: 
-          line: 216 0  # $goodquestion += 1 $noncrittop
-          if 217 42  
-          line: 217 38  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 218 101  
-          line: 218 96  # else 00l( '_1 == demand ) 00w{
-          elseif 219 159  
-          ifend 219 217  
-          line: 219 154  # else 00r( '_2 == transparency 
-          if 220 222  
-          ifend 220 279  
-          line: 220 218  # ^if 00r( $rapportcounter > 5 )
-          if 221 284  
-          ifend 221 344  
-          line: 221 280  # ^if 00t( $rapportcounter == -6
-          line: 222 345  # ^refine ( ) 
-          Complexity of rule ~prob_answer.5.0- u: 6
-        rule: 223  ~prob_answer.5.1 a: 
-          line: 224 0  # $$probformat = specific-40_not
-          line: 225 69  # $$randnum = ^generatenumber ( 
-          if 226 110  
-          line: 226 106  # ^if 00n( $$randnum < 400 ) 00~
-          elseif 227 200  
-          line: 227 195  # else 00n( $$randnum < 700 ) 00
-          elseif 228 298  
-          line: 228 293  # else 00n( $$randnum < 850 ) 00
-          else 229 390  
-          ifend 229 460  
-          line: 229 385  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.1- a: 4
-        rule: 230  ~prob_answer.5.2 a: 
-          line: 231 0  # $$probformat = specific-44_not
-          line: 232 69  # $$randnum = ^generatenumber ( 
-          if 233 110  
-          line: 233 106  # ^if 00n( $$randnum < 440 ) 00~
-          elseif 234 200  
-          line: 234 195  # else 00n( $$randnum < 720 ) 00
-          elseif 235 298  
-          line: 235 293  # else 00n( $$randnum < 860 ) 00
-          else 236 390  
-          ifend 236 460  
-          line: 236 385  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.2- a: 4
-        rule: 237  ~prob_answer.5.3 a: 
-          line: 238 0  # $$probformat = specific-48_not
-          line: 239 69  # $$randnum = ^generatenumber ( 
-          if 240 110  
-          line: 240 106  # ^if 00n( $$randnum < 480 ) 00~
-          elseif 241 200  
-          line: 241 195  # else 00n( $$randnum < 740 ) 00
-          elseif 242 298  
-          line: 242 293  # else 00n( $$randnum < 870 ) 00
-          else 243 390  
-          ifend 243 460  
-          line: 243 385  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.3- a: 4
-        rule: 244  ~prob_answer.5.4 a: 
-          line: 245 0  # $$probformat = specific-52_not
-          line: 246 69  # $$randnum = ^generatenumber ( 
-          if 247 110  
-          line: 247 106  # ^if 00n( $$randnum < 520 ) 00~
-          elseif 248 200  
-          line: 248 195  # else 00n( $$randnum < 760 ) 00
-          elseif 249 298  
-          line: 249 293  # else 00n( $$randnum < 880 ) 00
-          else 250 390  
-          ifend 250 460  
-          line: 250 385  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.4- a: 4
-        rule: 251  ~prob_answer.5.5 a: 
-          line: 252 0  # $$probformat = specific-56_not
-          line: 253 69  # $$randnum = ^generatenumber ( 
-          if 254 110  
-          line: 254 106  # ^if 00n( $$randnum < 560 ) 00~
-          elseif 255 200  
-          line: 255 195  # else 00n( $$randnum < 780 ) 00
-          elseif 256 298  
-          line: 256 293  # else 00n( $$randnum < 890 ) 00
-          else 257 390  
-          ifend 257 460  
-          line: 257 385  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.5- a: 4
-        rule: 258  ~prob_answer.5.6 a: 
-          line: 259 0  # $$probformat = specific-60_not
-          line: 260 69  # $$randnum = ^generatenumber ( 
-          if 261 110  
-          line: 261 106  # ^if 00n( $$randnum < 600 ) 00~
-          elseif 262 200  
-          line: 262 195  # else 00n( $$randnum < 800 ) 00
-          elseif 263 298  
-          line: 263 293  # else 00n( $$randnum < 900 ) 00
-          else 264 390  
-          ifend 264 460  
-          line: 264 385  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.6- a: 4
-        rule: 265  ~prob_answer.5.7 a: 
-          line: 266 0  # $$probformat = specific-64_not
-          line: 267 67  # $$randnum = ^generatenumber ( 
-          if 268 108  
-          line: 268 104  # ^if 00n( $$randnum < 640 ) 00~
-          elseif 269 198  
-          line: 269 193  # else 00n( $$randnum < 820 ) 00
-          elseif 270 296  
-          line: 270 291  # else 00n( $$randnum < 910 ) 00
-          else 271 388  
-          ifend 271 458  
-          line: 271 383  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.7- a: 4
-        rule: 272  ~prob_answer.5.8 a: 
-          line: 273 0  # $$probformat = specific-68_not
-          line: 274 67  # $$randnum = ^generatenumber ( 
-          if 275 108  
-          line: 275 104  # ^if 00n( $$randnum < 680 ) 00~
-          elseif 276 198  
-          line: 276 193  # else 00n( $$randnum < 840 ) 00
-          elseif 277 296  
-          line: 277 291  # else 00n( $$randnum < 920 ) 00
-          else 278 388  
-          ifend 278 458  
-          line: 278 383  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.8- a: 4
-        rule: 279  ~prob_answer.5.9 a: 
-          line: 280 0  # $$probformat = specific-72_not
-          line: 281 67  # $$randnum = ^generatenumber ( 
-          if 282 108  
-          line: 282 104  # ^if 00n( $$randnum < 720 ) 00~
-          elseif 283 198  
-          line: 283 193  # else 00n( $$randnum < 860 ) 00
-          elseif 284 296  
-          line: 284 291  # else 00n( $$randnum < 930 ) 00
-          else 285 388  
-          ifend 285 458  
-          line: 285 383  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.9- a: 4
-        rule: 286  ~prob_answer.5.10 a: 
-          line: 287 0  # $$probformat = specific-76_not
-          line: 288 67  # $$randnum = ^generatenumber ( 
-          if 289 108  
-          line: 289 104  # ^if 00n( $$randnum < 760 ) 00~
-          elseif 290 198  
-          line: 290 193  # else 00n( $$randnum < 880 ) 00
-          elseif 291 296  
-          line: 291 291  # else 00n( $$randnum < 940 ) 00
-          else 292 388  
-          ifend 292 458  
-          line: 292 383  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.10- a: 4
-        rule: 293  ~prob_answer.5.11 a: 
-          line: 294 0  # $$probformat = specific-80_not
-          line: 295 67  # $$randnum = ^generatenumber ( 
-          if 296 108  
-          line: 296 104  # ^if 00n( $$randnum < 800 ) 00~
-          elseif 297 198  
-          line: 297 193  # else 00n( $$randnum < 900 ) 00
-          elseif 298 296  
-          line: 298 291  # else 00n( $$randnum < 950 ) 00
-          else 299 388  
-          ifend 299 458  
-          line: 299 383  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.5.11- a: 4
-        rule: 301  ~prob_answer.6.0 u: 
-          if 302 4  
-          line: 302 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 303 63  
-          line: 303 58  # else 00l( '_1 == demand ) 00w{
-          elseif 304 121  
-          ifend 304 179  
-          line: 304 116  # else 00r( '_2 == transparency 
-          line: 305 180  # $$probformat = specific-80_not
-          line: 306 236  # $$randnum = ^generatenumber ( 
-          if 307 277  
-          line: 307 273  # ^if 00n( $$randnum < 800 ) 00~
-          elseif 308 367  
-          line: 308 362  # else 00n( $$randnum < 900 ) 00
-          else 309 465  
-          ifend 309 535  
-          line: 309 460  # else ( 1 ) 00@ { $$answercateg
-          Complexity of rule ~prob_answer.6.0- u: 6
-        rule: 314  ~prob_answer.7.0 u: 
-          if 315 4  
-          line: 315 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 316 63  
-          line: 316 58  # else 00l( '_1 == demand ) 00w{
-          elseif 317 121  
-          ifend 317 179  
-          line: 317 116  # else 00r( '_2 == transparency 
-          line: 318 180  # $noncrittopic += 1 
-          line: 319 199  # $$probformat = option_chosen-8
-          line: 320 260  # $$randnum = ^generatenumber ( 
-          if 321 301  
-          line: 321 297  # ^if 00n( $$randnum < 800 ) 00Y
-          elseif 322 389  
-          line: 322 384  # else 00n( $$randnum < 900 ) 00
-          else 323 487  
-          ifend 323 557  
-          line: 323 482  # else ( 1 ) 00@ { $$answercateg
+        rule: 56  ~prob_answer.5.0 u: 
+          line: 56 0  # $goodquestion += 1 $noncrittop
+          if 57 42  
+          line: 57 38  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 58 101  
+          line: 58 96  # else 00l( '_1 == demand ) 00w{
+          elseif 59 159  
+          ifend 59 217  
+          line: 59 154  # else 00r( '_2 == transparency 
+          line: 60 218  # $$probformat = specific-100 
+          line: 61 246  # $$answercategory = specific ^r
+          Complexity of rule ~prob_answer.5.0- u: 4
+        rule: 64  ~prob_answer.6.0 u: 
+          if 65 4  
+          line: 65 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 66 63  
+          line: 66 58  # else 00l( '_1 == demand ) 00w{
+          elseif 67 121  
+          ifend 67 179  
+          line: 67 116  # else 00r( '_2 == transparency 
+          line: 68 180  # $$probformat = specific-100 
+          line: 69 208  # $$answercategory = specific ^r
+          Complexity of rule ~prob_answer.6.0- u: 4
+        rule: 73  ~prob_answer.7.0 u: 
+          if 74 4  
+          line: 74 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 75 63  
+          line: 75 58  # else 00l( '_1 == demand ) 00w{
+          elseif 76 121  
+          ifend 76 179  
+          line: 76 116  # else 00r( '_2 == transparency 
+          line: 77 180  # $noncrittopic += 1 
+          line: 78 199  # $$probformat = option_chosen-8
+          line: 79 260  # $$randnum = ^generatenumber ( 
+          if 80 301  
+          line: 80 297  # ^if 00n( $$randnum < 800 ) 00Y
+          elseif 81 389  
+          line: 81 384  # else 00n( $$randnum < 900 ) 00
+          else 82 487  
+          ifend 82 557  
+          line: 82 482  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.7.0- u: 6
-        rule: 327  ~prob_answer.8.0 u: 
-          if 328 4  
-          line: 328 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 329 63  
-          line: 329 58  # else 00l( '_1 == demand ) 00w{
-          elseif 330 121  
-          ifend 330 179  
-          line: 330 116  # else 00r( '_2 == transparency 
-          line: 331 180  # $noncrittopic += 1 
-          line: 332 199  # $$probformat = affirmation-50_
-          line: 333 254  # $$randnum = ^generatenumber ( 
-          if 334 295  
-          line: 334 291  # ^if 00n( $$randnum < 500 ) 00^
-          elseif 335 391  
-          line: 335 386  # else 00n( $$randnum < 800 ) 00
-          else 336 489  
-          ifend 336 559  
-          line: 336 484  # else ( 1 ) 00@ { $$answercateg
+        rule: 86  ~prob_answer.8.0 u: 
+          if 87 4  
+          line: 87 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 88 63  
+          line: 88 58  # else 00l( '_1 == demand ) 00w{
+          elseif 89 121  
+          ifend 89 179  
+          line: 89 116  # else 00r( '_2 == transparency 
+          line: 90 180  # $noncrittopic += 1 
+          line: 91 199  # $$probformat = affirmation-50_
+          line: 92 254  # $$randnum = ^generatenumber ( 
+          if 93 295  
+          line: 93 291  # ^if 00n( $$randnum < 500 ) 00^
+          elseif 94 391  
+          line: 94 386  # else 00n( $$randnum < 800 ) 00
+          else 95 489  
+          ifend 95 559  
+          line: 95 484  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.8.0- u: 6
-        rule: 340  ~prob_answer.9.0 u: 
-          if 341 4  
-          line: 341 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 342 63  
-          line: 342 58  # else 00l( '_1 == demand ) 00w{
-          elseif 343 121  
-          ifend 343 179  
-          line: 343 116  # else 00r( '_2 == transparency 
-          line: 344 180  # $$probformat = incomprehension
-          line: 345 227  # $$randnum = ^generatenumber ( 
-          if 346 268  
-          line: 346 264  # ^if 00n( $$randnum < 900 ) 011
-          else 347 372  
-          ifend 347 442  
-          line: 347 367  # else ( 1 ) 00@ { $$answercateg
+        rule: 99  ~prob_answer.9.0 u: 
+          if 100 4  
+          line: 100 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 101 63  
+          line: 101 58  # else 00l( '_1 == demand ) 00w{
+          elseif 102 121  
+          ifend 102 179  
+          line: 102 116  # else 00r( '_2 == transparency 
+          line: 103 180  # $$probformat = incomprehension
+          line: 104 227  # $$randnum = ^generatenumber ( 
+          if 105 268  
+          line: 105 264  # ^if 00n( $$randnum < 900 ) 011
+          else 106 372  
+          ifend 106 442  
+          line: 106 367  # else ( 1 ) 00@ { $$answercateg
           Complexity of rule ~prob_answer.9.0- u: 5
-        rule: 350  ~prob_answer.10.0 u: 
-          line: 350 0  # $lastoutput 
+        rule: 109  ~prob_answer.10.0 u: 
+          line: 109 0  # $lastoutput 
           Complexity of rule ~prob_answer.10.0- u: 1
-        rule: 353  ~prob_answer.11.0 u: 
-          line: 354 0  # $critasked = 1 
-          if 355 19  
-          ifend 355 132  
-          line: 355 15  # ^if 00t( $disclosurestate == 0
+        rule: 112  ~prob_answer.11.0 u: 
+          line: 113 0  # $critasked = 1 
+          if 114 19  
+          ifend 114 132  
+          line: 114 15  # ^if 00t( $disclosurestate == 0
           Complexity of rule ~prob_answer.11.0- u: 2
-        rule: 358  ~prob_answer.12.0 u: 
-          line: 359 0  # $$probformat = ignorance-40_re
-          line: 360 57  # $$randnum = ^generatenumber ( 
-          if 361 98  
-          line: 361 94  # ^if 00n( $$randnum < 400 ) 00@
-          elseif 362 190  
-          line: 362 185  # else 00n( $$randnum < 700 ) 00
-          else 363 282  
-          ifend 363 358  
-          line: 363 277  # else ( 1 ) 00* { $$answercateg
+        rule: 117  ~prob_answer.12.0 u: 
+          line: 118 0  # $$probformat = ignorance-40_re
+          line: 119 57  # $$randnum = ^generatenumber ( 
+          if 120 98  
+          line: 120 94  # ^if 00n( $$randnum < 400 ) 00@
+          elseif 121 190  
+          line: 121 185  # else 00n( $$randnum < 700 ) 00
+          else 122 282  
+          ifend 122 358  
+          line: 122 277  # else ( 1 ) 00* { $$answercateg
           Complexity of rule ~prob_answer.12.0- u: 3
-        rule: 368  ~prob_answer.13.0 u: 
-          line: 369 0  # $$probformat = affirmation-70_
-          line: 370 69  # $$randnum = ^generatenumber ( 
-          if 371 110  
-          line: 371 106  # ^if 00n( $$randnum < 700 ) 00^
-          elseif 372 206  
-          line: 372 201  # else 00n( $$randnum < 900 ) 00
-          elseif 373 293  
-          line: 373 288  # else 00n( $$randnum < 950 ) 00
-          else 374 385  
-          ifend 374 461  
-          line: 374 380  # else ( 1 ) 00* { $$answercateg
+        rule: 127  ~prob_answer.13.0 u: 
+          line: 128 0  # $$probformat = affirmation-70_
+          line: 129 69  # $$randnum = ^generatenumber ( 
+          if 130 110  
+          line: 130 106  # ^if 00n( $$randnum < 700 ) 00^
+          elseif 131 206  
+          line: 131 201  # else 00n( $$randnum < 900 ) 00
+          elseif 132 293  
+          line: 132 288  # else 00n( $$randnum < 950 ) 00
+          else 133 385  
+          ifend 133 461  
+          line: 133 380  # else ( 1 ) 00* { $$answercateg
           Complexity of rule ~prob_answer.13.0- u: 4
-        rule: 376  ~prob_answer.14.0 u: 
-          if 377 4  
-          line: 377 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 378 63  
-          line: 378 58  # else 00l( '_1 == demand ) 00w{
-          elseif 379 121  
-          ifend 379 179  
-          line: 379 116  # else 00r( '_2 == transparency 
-          line: 380 180  # ^refine ( ) 
-          line: 381 192  # $$probformat = specific-100 
+        rule: 135  ~prob_answer.14.0 u: 
+          if 136 4  
+          line: 136 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 137 63  
+          line: 137 58  # else 00l( '_1 == demand ) 00w{
+          elseif 138 121  
+          ifend 138 179  
+          line: 138 116  # else 00r( '_2 == transparency 
+          line: 139 180  # ^refine ( ) 
+          line: 140 192  # $$probformat = specific-100 
           Complexity of rule ~prob_answer.14.0- u: 4
-        rule: 382  ~prob_answer.14.1 a: 
-          line: 382 0  # $$answercategory = specific Al
+        rule: 141  ~prob_answer.14.1 a: 
+          line: 141 0  # $$answercategory = specific Al
           Complexity of rule ~prob_answer.14.1- a: 1
-        rule: 385  ~prob_answer.14.2 a: 
-          line: 385 0  # $$answercategory = specific We
+        rule: 144  ~prob_answer.14.2 a: 
+          line: 144 0  # $$answercategory = specific We
           Complexity of rule ~prob_answer.14.2- a: 1
-        rule: 388  ~prob_answer.14.3 a: 
-          line: 388 0  # $$answercategory = specific Vo
+        rule: 147  ~prob_answer.14.3 a: 
+          line: 147 0  # $$answercategory = specific Vo
           Complexity of rule ~prob_answer.14.3- a: 1
-        rule: 391  ~prob_answer.14.4 a: 
-          line: 391 0  # $$answercategory = specific Vo
+        rule: 150  ~prob_answer.14.4 a: 
+          line: 150 0  # $$answercategory = specific Vo
           Complexity of rule ~prob_answer.14.4- a: 1
-        rule: 394  ~prob_answer.14.5 a: 
-          line: 394 0  # $$answercategory = specific Da
+        rule: 153  ~prob_answer.14.5 a: 
+          line: 153 0  # $$answercategory = specific Da
           Complexity of rule ~prob_answer.14.5- a: 1
-        rule: 397  ~prob_answer.14.6 a: 
-          line: 397 0  # $$answercategory = specific De
+        rule: 156  ~prob_answer.14.6 a: 
+          line: 156 0  # $$answercategory = specific De
           Complexity of rule ~prob_answer.14.6- a: 1
-        rule: 400  ~prob_answer.14.7 a: 
-          line: 400 0  # $$answercategory = specific Da
+        rule: 159  ~prob_answer.14.7 a: 
+          line: 159 0  # $$answercategory = specific Da
           Complexity of rule ~prob_answer.14.7- a: 1
-        rule: 403  ~prob_answer.14.8 a: 
-          line: 403 0  # $$answercategory = specific Le
+        rule: 162  ~prob_answer.14.8 a: 
+          line: 162 0  # $$answercategory = specific Le
           Complexity of rule ~prob_answer.14.8- a: 1
-        rule: 407  ~prob_answer.15.0 u: 
-          if 408 4  
-          line: 408 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 409 63  
-          line: 409 58  # else 00l( '_1 == demand ) 00w{
-          elseif 410 121  
-          ifend 410 179  
-          line: 410 116  # else 00r( '_2 == transparency 
-          line: 411 180  # ^refine ( ) 
-          line: 412 192  # $$probformat = specific-100 
+        rule: 166  ~prob_answer.15.0 u: 
+          if 167 4  
+          line: 167 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 168 63  
+          line: 168 58  # else 00l( '_1 == demand ) 00w{
+          elseif 169 121  
+          ifend 169 179  
+          line: 169 116  # else 00r( '_2 == transparency 
+          line: 170 180  # ^refine ( ) 
+          line: 171 192  # $$probformat = specific-100 
           Complexity of rule ~prob_answer.15.0- u: 4
-        rule: 413  ~prob_answer.15.1 a: 
-          line: 413 0  # $$answercategory = specific Da
+        rule: 172  ~prob_answer.15.1 a: 
+          line: 172 0  # $$answercategory = specific Da
           Complexity of rule ~prob_answer.15.1- a: 1
-        rule: 416  ~prob_answer.15.2 a: 
-          line: 416 0  # $$answercategory = specific Ei
+        rule: 175  ~prob_answer.15.2 a: 
+          line: 175 0  # $$answercategory = specific Ei
           Complexity of rule ~prob_answer.15.2- a: 1
-        rule: 419  ~prob_answer.15.3 a: 
-          line: 419 0  # $$answercategory = specific Ta
+        rule: 178  ~prob_answer.15.3 a: 
+          line: 178 0  # $$answercategory = specific Ta
           Complexity of rule ~prob_answer.15.3- a: 1
-        rule: 422  ~prob_answer.15.4 a: 
-          line: 422 0  # $$answercategory = specific Da
+        rule: 181  ~prob_answer.15.4 a: 
+          line: 181 0  # $$answercategory = specific Da
           Complexity of rule ~prob_answer.15.4- a: 1
-        rule: 425  ~prob_answer.15.5 a: 
-          line: 425 0  # $$answercategory = specific Na
+        rule: 184  ~prob_answer.15.5 a: 
+          line: 184 0  # $$answercategory = specific Na
           Complexity of rule ~prob_answer.15.5- a: 1
-        rule: 428  ~prob_answer.15.6 a: 
-          line: 428 0  # $$answercategory = specific Er
+        rule: 187  ~prob_answer.15.6 a: 
+          line: 187 0  # $$answercategory = specific Er
           Complexity of rule ~prob_answer.15.6- a: 1
-        rule: 431  ~prob_answer.15.7 a: 
-          line: 431 0  # $$answercategory = specific Ja
+        rule: 190  ~prob_answer.15.7 a: 
+          line: 190 0  # $$answercategory = specific Ja
           Complexity of rule ~prob_answer.15.7- a: 1
-        rule: 434  ~prob_answer.15.8 a: 
-          line: 434 0  # $$answercategory = specific Da
+        rule: 193  ~prob_answer.15.8 a: 
+          line: 193 0  # $$answercategory = specific Da
           Complexity of rule ~prob_answer.15.8- a: 1
-        rule: 441  ~prob_answer.16.0 u: 
-          if 442 4  
-          line: 442 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 443 63  
-          line: 443 58  # else 00l( '_1 == demand ) 00w{
-          elseif 444 121  
-          ifend 444 179  
-          line: 444 116  # else 00r( '_2 == transparency 
-          line: 445 180  # $$probformat = affirmation-100
-          line: 446 211  # $$answercategory = affirmation
+        rule: 200  ~prob_answer.16.0 u: 
+          if 201 4  
+          line: 201 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 202 63  
+          line: 202 58  # else 00l( '_1 == demand ) 00w{
+          elseif 203 121  
+          ifend 203 179  
+          line: 203 116  # else 00r( '_2 == transparency 
+          line: 204 180  # $$probformat = affirmation-100
+          line: 205 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.16.0- u: 4
-        rule: 448  ~prob_answer.17.0 u: 
-          if 449 4  
-          line: 449 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 450 63  
-          line: 450 58  # else 00l( '_1 == demand ) 00w{
-          elseif 451 121  
-          ifend 451 179  
-          line: 451 116  # else 00r( '_2 == transparency 
-          line: 452 180  # $$probformat = affirmation-100
-          line: 453 211  # $$answercategory = affirmation
+        rule: 207  ~prob_answer.17.0 u: 
+          if 208 4  
+          line: 208 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 209 63  
+          line: 209 58  # else 00l( '_1 == demand ) 00w{
+          elseif 210 121  
+          ifend 210 179  
+          line: 210 116  # else 00r( '_2 == transparency 
+          line: 211 180  # $$probformat = affirmation-100
+          line: 212 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.17.0- u: 4
-        rule: 455  ~prob_answer.18.0 u: 
-          if 456 4  
-          line: 456 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 457 63  
-          line: 457 58  # else 00l( '_1 == demand ) 00w{
-          elseif 458 121  
-          ifend 458 179  
-          line: 458 116  # else 00r( '_2 == transparency 
-          line: 459 180  # $$probformat = affirmation-100
-          line: 460 211  # $$answercategory = affirmation
+        rule: 214  ~prob_answer.18.0 u: 
+          if 215 4  
+          line: 215 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 216 63  
+          line: 216 58  # else 00l( '_1 == demand ) 00w{
+          elseif 217 121  
+          ifend 217 179  
+          line: 217 116  # else 00r( '_2 == transparency 
+          line: 218 180  # $$probformat = affirmation-100
+          line: 219 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.18.0- u: 4
-        rule: 462  ~prob_answer.19.0 u: 
-          if 463 4  
-          line: 463 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 464 63  
-          line: 464 58  # else 00l( '_1 == demand ) 00w{
-          elseif 465 121  
-          ifend 465 179  
-          line: 465 116  # else 00r( '_2 == transparency 
-          line: 466 180  # $$probformat = affirmation-100
-          line: 467 211  # $$answercategory = affirmation
+        rule: 221  ~prob_answer.19.0 u: 
+          if 222 4  
+          line: 222 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 223 63  
+          line: 223 58  # else 00l( '_1 == demand ) 00w{
+          elseif 224 121  
+          ifend 224 179  
+          line: 224 116  # else 00r( '_2 == transparency 
+          line: 225 180  # $$probformat = affirmation-100
+          line: 226 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.19.0- u: 4
-        rule: 471  ~prob_answer.20.0 u: 
-          if 472 4  
-          line: 472 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 473 63  
-          line: 473 58  # else 00l( '_1 == demand ) 00w{
-          elseif 474 121  
-          ifend 474 179  
-          line: 474 116  # else 00r( '_2 == transparency 
-          line: 475 180  # $$probformat = affirmation-100
-          line: 476 211  # $$answercategory = affirmation
+        rule: 230  ~prob_answer.20.0 u: 
+          if 231 4  
+          line: 231 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 232 63  
+          line: 232 58  # else 00l( '_1 == demand ) 00w{
+          elseif 233 121  
+          ifend 233 179  
+          line: 233 116  # else 00r( '_2 == transparency 
+          line: 234 180  # $$probformat = affirmation-100
+          line: 235 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.20.0- u: 4
-        rule: 478  ~prob_answer.21.0 u: 
-          if 479 4  
-          line: 479 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 480 63  
-          line: 480 58  # else 00l( '_1 == demand ) 00w{
-          elseif 481 121  
-          ifend 481 179  
-          line: 481 116  # else 00r( '_2 == transparency 
-          line: 482 180  # $$probformat = specific-100 
-          line: 483 208  # $$answercategory = specific Da
+        rule: 237  ~prob_answer.21.0 u: 
+          if 238 4  
+          line: 238 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 239 63  
+          line: 239 58  # else 00l( '_1 == demand ) 00w{
+          elseif 240 121  
+          ifend 240 179  
+          line: 240 116  # else 00r( '_2 == transparency 
+          line: 241 180  # $$probformat = specific-100 
+          line: 242 208  # $$answercategory = specific Da
           Complexity of rule ~prob_answer.21.0- u: 4
-        rule: 485  ~prob_answer.22.0 u: 
-          if 486 4  
-          line: 486 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 487 63  
-          line: 487 58  # else 00l( '_1 == demand ) 00w{
-          elseif 488 121  
-          ifend 488 179  
-          line: 488 116  # else 00r( '_2 == transparency 
-          line: 489 180  # $$probformat = affirmation-100
-          line: 490 211  # $$answercategory = affirmation
+        rule: 244  ~prob_answer.22.0 u: 
+          if 245 4  
+          line: 245 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 246 63  
+          line: 246 58  # else 00l( '_1 == demand ) 00w{
+          elseif 247 121  
+          ifend 247 179  
+          line: 247 116  # else 00r( '_2 == transparency 
+          line: 248 180  # $$probformat = affirmation-100
+          line: 249 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.22.0- u: 4
-        rule: 492  ~prob_answer.23.0 u: 
-          if 493 4  
-          line: 493 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 494 63  
-          line: 494 58  # else 00l( '_1 == demand ) 00w{
-          elseif 495 121  
-          ifend 495 179  
-          line: 495 116  # else 00r( '_2 == transparency 
-          line: 496 180  # $$probformat = affirmation-100
-          line: 497 211  # $$answercategory = affirmation
+        rule: 251  ~prob_answer.23.0 u: 
+          if 252 4  
+          line: 252 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 253 63  
+          line: 253 58  # else 00l( '_1 == demand ) 00w{
+          elseif 254 121  
+          ifend 254 179  
+          line: 254 116  # else 00r( '_2 == transparency 
+          line: 255 180  # $$probformat = affirmation-100
+          line: 256 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.23.0- u: 4
-        rule: 499  ~prob_answer.24.0 u: 
-          if 500 4  
-          line: 500 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 501 63  
-          line: 501 58  # else 00l( '_1 == demand ) 00w{
-          elseif 502 121  
-          ifend 502 179  
-          line: 502 116  # else 00r( '_2 == transparency 
-          line: 503 180  # $$probformat = greetings-100 
-          line: 504 209  # $$answercategory = greetings 
-          line: 505 238  # Hallo. 
+        rule: 258  ~prob_answer.24.0 u: 
+          if 259 4  
+          line: 259 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 260 63  
+          line: 260 58  # else 00l( '_1 == demand ) 00w{
+          elseif 261 121  
+          ifend 261 179  
+          line: 261 116  # else 00r( '_2 == transparency 
+          line: 262 180  # $$probformat = greetings-100 
+          line: 263 209  # $$answercategory = greetings 
+          line: 264 238  # Hallo. 
           Complexity of rule ~prob_answer.24.0- u: 4
-        rule: 508  ~prob_answer.25.0 u: 
-          if 509 4  
-          line: 509 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 510 63  
-          line: 510 58  # else 00l( '_1 == demand ) 00w{
-          elseif 511 121  
-          ifend 511 179  
-          line: 511 116  # else 00r( '_2 == transparency 
-          line: 512 180  # $$probformat = negation-100 
-          line: 513 208  # $$answercategory = negation Im
+        rule: 267  ~prob_answer.25.0 u: 
+          if 268 4  
+          line: 268 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 269 63  
+          line: 269 58  # else 00l( '_1 == demand ) 00w{
+          elseif 270 121  
+          ifend 270 179  
+          line: 270 116  # else 00r( '_2 == transparency 
+          line: 271 180  # $$probformat = negation-100 
+          line: 272 208  # $$answercategory = negation Im
           Complexity of rule ~prob_answer.25.0- u: 4
-        rule: 515  ~prob_answer.26.0 u: 
-          if 516 4  
-          line: 516 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 517 63  
-          line: 517 58  # else 00l( '_1 == demand ) 00w{
-          elseif 518 121  
-          ifend 518 179  
-          line: 518 116  # else 00r( '_2 == transparency 
-          line: 519 180  # $$probformat = affirmation-100
-          line: 520 211  # $$answercategory = affirmation
+        rule: 274  ~prob_answer.26.0 u: 
+          if 275 4  
+          line: 275 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 276 63  
+          line: 276 58  # else 00l( '_1 == demand ) 00w{
+          elseif 277 121  
+          ifend 277 179  
+          line: 277 116  # else 00r( '_2 == transparency 
+          line: 278 180  # $$probformat = affirmation-100
+          line: 279 211  # $$answercategory = affirmation
           Complexity of rule ~prob_answer.26.0- u: 4
-        rule: 522  ~prob_answer.27.0 u: 
-          if 523 4  
-          line: 523 0  # ^if 00m( '_0 == rapport ) 00w{
-          elseif 524 63  
-          line: 524 58  # else 00l( '_1 == demand ) 00w{
-          elseif 525 121  
-          ifend 525 179  
-          line: 525 116  # else 00r( '_2 == transparency 
-          line: 526 180  # $$probformat = discharge-100 
-          line: 527 209  # $$answercategory = discharge 
+        rule: 281  ~prob_answer.27.0 u: 
+          if 282 4  
+          line: 282 0  # ^if 00m( '_0 == rapport ) 00w{
+          elseif 283 63  
+          line: 283 58  # else 00l( '_1 == demand ) 00w{
+          elseif 284 121  
+          ifend 284 179  
+          line: 284 116  # else 00r( '_2 == transparency 
+          line: 285 180  # $$probformat = discharge-100 
+          line: 286 209  # $$answercategory = discharge 
           Complexity of rule ~prob_answer.27.0- u: 4
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_incomprehension.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/c_incomprehension.top
     topic: 1  ~incomprehension
         rule: 3  ~incomprehension.0.0 u: 
           Complexity of rule ~incomprehension.0.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_options.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/c_options.top
     topic: 1  ~options
         rule: 3  ~options.0.0 u: 
           Complexity of rule ~options.0.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_ignorance.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/c_ignorance.top
     topic: 1  ~ignorance
         rule: 3  ~ignorance.0.0 u: 
           Complexity of rule ~ignorance.0.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_keywordless.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/c_keywordless.top
     topic: 1  ~keywordless
         rule: 3  ~keywordless.0.0- r: 
           Complexity of rule ~keywordless.0.0- r: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_affirmation.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/c_affirmation.top
     topic: 1  ~affirmation
         rule: 4  ~affirmation.0.0 u: 
           Complexity of rule ~affirmation.0.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/SHARED_QUESTIONS/c_negat.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/SHARED_QUESTIONS/c_negat.top
     topic: 1  ~negat
         rule: 4  ~negat.0.0 u: 
           Complexity of rule ~negat.0.0- u: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_patternmacros.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/CONCEPTS_FUNCTIONS/a_patternmacros.top
     macro: 4  ^change_topic
           Complexity of ^change_topic: 1
     macro: 15  ^general_question
@@ -14022,7 +13535,7 @@ file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/
           Complexity of ^home_peop: 1
     macro: 259  ^home_activity
           Complexity of ^home_activity: 1
-file: 0  /Users/hermann/Vicontact/LauraBot/RAWDATA/VICONTACT/CONCEPTS_FUNCTIONS/a_concepts.top
+file: 0  /Users/hermann/GitHub/LauraBot/RAWDATA/VICONTACT_NOPROBS/CONCEPTS_FUNCTIONS/a_concepts.top
     topic: 1  ~own_concepts~1
     concept: 3  ~action
     concept: 4  ~activity

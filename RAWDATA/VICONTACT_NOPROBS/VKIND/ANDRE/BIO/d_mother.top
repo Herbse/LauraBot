@@ -1,0 +1,102 @@
+topic: ~mother_t repeat ()
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_andre_mother1
+    Carmen.
+    # age
+    a: (^age()) $$intent=age $$sound_file = g_andre_keineahnung
+    Keine Ahnung.
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_andre_gut
+    Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = s_andre_mother2
+    Die ist Verkäuferin.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_andre_mother3
+    Das ist Papas neue Frau.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_andre_event6
+    Ich mag die nicht.
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = s_andre_event7 
+    Weiß nicht. Abends zum Beispiel.
+    # time relationship
+    a: (^time()) $$intent=time_relationship $$sound_file = s_andre_event8 
+    Als ich zweite Klasse war sind wir in die neue Wohnung gezogen mit denen.
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^refine()
+        b: () ^reuse(MAMA_3)
+    # activity
+    a: (^activity()) $$intent=activity ^reuse(MAMA_4)
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = g_andre_zuhause
+    Zu Hause.
+
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($motherCounter==1) $$sound_file = g_andre_sogemein So gemein.
+        b: ($motherCounter==2) $$sound_file = g_andre_sogemein So gemein.
+        b: ($motherCounter==3) $$sound_file = g_andre_doof Doof.
+        b: ($motherCounter==4) $$sound_file = g_andre_ichweißnicht Ich weiß nicht.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$sound_file = g_andre_inderstadt In der Stadt.
+    # individual
+    a: (^individual()) $$intent=individual $$intent=individual ^refine()
+        b: ($motherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==2) $$sound_file = s_andre_mother5 Die Carmen.
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$sound_file = s_andre_mother5 Die Carmen.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($motherCounter==1) ^reuse(MAMA_2)
+        b: ($motherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+        b: () $$nextAnswer = yes 
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: ($motherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: MAMA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 1 $$sound_file = n_andre_mother1
+Carmen ist voll streng zu mir und erlaubt mir fast nichts.
+
+#! Erzähl mir mehr über deine Mama!
+u: MAMA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 2 $$sound_file = n_andre_mother2
+Wenn ich sie nach Süßigkeiten frage, sagt sie immer nein.
+#! Und was machst du gerne mit deiner Mama?
+u: MAMA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 3 $$sound_file = n_andre_mother3
+Ich mag Carmen nicht. Sie unternimmt nie was mit mir.
+
+#! Erzähl mal, wie das dann ist, wenn du dort deine Hausaufgaben machst. 
+u: MAMA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $motherCounter = 4 $$sound_file = n_andre_mother4
+Sie arbeitet auch am Wochenende. In einem Kosmetikladen.
+
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

@@ -1,0 +1,87 @@
+topic: ~cat_t ()
+
+#t: specific test to  topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = 1 Minka. 
+    # age
+    a: (^age()) $$intent=age $$sound_file = 2 Die ist drei Jahre alt. 
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = 3 Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = 4 
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = 5 Das ist meine Katze.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = 6 Ich kuschel gerne mit Minka. 
+    # time together
+    a: (^time_together()) $$intent=time_together $$sound_file = 7 Nach der Schule und am Wochenende.
+    # time relationship
+    a: (^time()) $$intent=time_relationship Ich habe sie bekommen als sie ein Baby war. 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(CAT_2)
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = 8 
+    # places together
+    a: (^places_together()) $$intent=places_together $$sound_file = 9 Zuhause. 
+    
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($catCounter==1) $$sound_file = 10 Ganz ok.
+        b: ($catCounter==2) $$sound_file = 10 Ganz ok.
+        b: ($catCounter==3) $$sound_file = 10 Ganz ok.
+        b: ($catCounter==4) $$sound_file = 10 Ganz ok.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place  $$answerCategory=missing ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($catCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($catCounter==2) Minka.
+        b: ($catCounter==3) Minka.
+        b: ($catCounter==4) Minka.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($catCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($catCounter==2) ^reuse(CAT_3)
+        b: ($catCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($catCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+     a: (^example()) $$intent=example ^refine()
+        b: () 
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () 
+      
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () 
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/specific.txt $$question \n) 
+
+
+# Narrative Antworten---------------------------------------------------------------------------------------
+
+
+#! Erzähl mal was dein Bruder währenddessen tut. 
+u: CAT_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 1 $$sound_file = 14  Meine Katze heißt Minka.
+
+#! Erzähl mir doch mehr über Leon.
+u: CAT_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 2 $$sound_file = 15  Sie will immer kuscheln.
+
+#! Erzähl mir doch mehr über Leon.
+u: CAT_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 3 $$sound_file = 16 Ich habe sie bekommen, als sie ein Baby war.
+
+#! Erzähl mir doch mehr über Leon.
+u: CAT_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $catCounter = 4 $$sound_file = 17 Jetzt ist sie schon drei Jahre alt.
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()

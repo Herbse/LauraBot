@@ -1,0 +1,3 @@
+topic: ~notAnswering keep repeat nostay ()
+
+u: ([$$answerCategory==notAnswering $$answerCategory==emptyTopic]) $$actionType = shrug [Hm.] ^keep() ^repeat()

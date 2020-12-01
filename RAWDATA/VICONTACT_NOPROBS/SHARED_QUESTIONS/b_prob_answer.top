@@ -1,0 +1,288 @@
+topic: ~prob_answer keep repeat nostay()
+
+
+# LI: BASIS | 60% narrative | 20% non-answer | 10% ignorance | 10% reactance
+# LI: MAX   | 80% narrative | 10% non-answer |  5% ignorance |  5% reactance
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} invitation_to_tell)     
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$goodQuestion += 1 $noncritTopic += 1 
+$$probFormat = narrative-100
+$$answerCategory = narrative ^respond(~narrative)
+
+
+# SI: 80% narrative | 10% non-answer | 10 % ignorance
+u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency} invitation_to_tell) 
+$goodQuestion += 1 $noncritTopic += 1
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = narrative-100
+$$answerCategory = narrative ^respond(~narrative)
+
+
+
+# LI: 40% narrative(same topic) | 25% affirmation? | 25% non-answer | 10% reactance ->WENN ERSCHÖPFT 50% ignorance | 25% non-answer | 25% reactance
+# HIER NOCH DIE KODIERUNG FÜR SAME UND DIFFERENT TOPIC EINBAUEN
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} facilitator) 
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$goodQuestion += 1 $noncritTopic += 1
+$$probFormat = narrative-100
+$$answerCategory = narrative ^respond(~narrative)
+
+
+u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency}  facilitator) 
+$goodQuestion += 1 $noncritTopic += 1
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = narrative-100
+$$answerCategory = narrative ^respond(~narrative)
+
+# 70% affirmation | 20% negation | 5% ignorance | 5% non-answer
+u: (suggestive_specific)
+$$probFormat = affirmation-70_negation-20_ignorance-5_notAnswering-5
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 700){$$answerCategory = affirmation ^respond(~affirmation)} 
+else if ($$randNum < 900){$$answerCategory = negation ^respond(~negat)} 
+else if ($$randNum < 950){$$answerCategory = ignorance ^respond(~ignorance)} 
+else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
+
+
+# LI: 60% specific answer | 20% non-answer | 10% ignorance | 10% reactance
+u: ([$cs_bot=laura_li $cs_bot=andre_li $cs_bot=sara_li $cs_bot=jason_li] {_rapport} {_demand} {_transparency} specific) $goodQuestion += 1 $noncritTopic += 1
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = specific-100
+$$answerCategory = specific ^respond(~specific)
+
+
+u: ([$cs_bot=laura_si $cs_bot=constantin_si $cs_bot=luisa_si $cs_bot=natalia_si $cs_bot=simon_si] {_rapport} {_demand} {_transparency} specific)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = specific-100
+$$answerCategory = specific ^respond(~specific)
+
+
+# 80% option-choosen | 10% non-answer | 10% ignorance
+u: ({_rapport} {_demand} {_transparency} choice_question)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$noncritTopic += 1
+$$probFormat = option_chosen-80_notAnswering-10_ignorance-10
+$$randNum = ^generateNumber() * 10 
+if ($$randNum < 800){$$answerCategory = options ^respond(~options)} 
+else if ($$randNum < 900){$$answerCategory = notAnswering ^respond(~notAnswering)} 
+else {$$answerCategory = ignorance ^respond(~ignorance)} 
+
+
+# 50% affirmation | 30% negation | 20% ignorance
+u: ({_rapport} {_demand} {_transparency} yes_no_question) 
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$noncritTopic += 1
+$$probFormat = affirmation-50_negation-30_ignorance-20
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 500){$$answerCategory = affirmation ^respond(~affirmation)} 
+else if ($$randNum < 800){$$answerCategory = negation $$answer = ^respond(~negat)} 
+else {$$answerCategory = ignorance ^respond(~ignorance)} 
+
+
+# 90% incomprehension | 10% reactance 
+u: ({_rapport} {_demand} {_transparency} unknowable_question) 
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = incomprehension-90_reactance-10
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 900){$$answerCategory = incomprehension ^respond(~incomprehension)} 
+else {$$answerCategory = reactance ^respond(~reactance)} 
+
+# 100% repetition of given answer (how many volleys back?)
+u: (request) $lastOutput
+
+# Nachfrage zum kritischen Ereignis bei noch nicht vorhandener Offenbarungsbereitschaft
+u: (crit_asked)
+$critAsked = 1
+if ($disclosureState==0) {$rapportCounter -= 1 $$answerCategory = reactance ^respond(~reactance)}
+
+# 40% ignorance | 30% reactance | 30% sobbing
+u: (suggestive_unspecific) 
+$$probFormat = ignorance-40_reactance-30_notAnswering-30
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 400){$$answerCategory = ignorance ^respond(~ignorance)} 
+else if ($$randNum < 700){$$answerCategory = reactance ^respond(~reactance)} 
+else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
+
+
+
+# 70% affirmation | 20% negation | 5% ignorance | 5% non-answer
+u: (suggestive_specific)
+$$probFormat = affirmation-70_negation-20_ignorance-5_notAnswering-5
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 700){$$answerCategory = affirmation ^respond(~affirmation)} 
+else if ($$randNum < 900){$$answerCategory = negation ^respond(~negat)} 
+else if ($$randNum < 950){$$answerCategory = ignorance ^respond(~ignorance)} 
+else {$$answerCategory = notAnswering ^respond(~notAnswering)} 
+
+u: ({_rapport} {_demand} {_transparency} relevance) 
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+^refine()
+$$probFormat = specific-100 
+#a   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Als wir neulich im Schwimmbad waren.
+#b   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Letztes Mal war an Mamas Geburtstag.
+#c   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Na das war letztes Wochenende.
+#a   a: ($cs_bot=andre_li) $$answerCategory = specific Weiß nicht. Vor den Ferien.
+#b   a: ($cs_bot=andre_li) $$answerCategory = specific Letztes Wochenende.
+#c   a: ($cs_bot=andre_li) $$answerCategory = specific Immer ist das so.
+#a   a: ($cs_bot=sara_li) $$answerCategory = specific Vor zwei Wochen.
+#b   a: ($cs_bot=sara_li) $$answerCategory = specific Auf dem Geburtstag von Amina, vor ein paar Wochen.
+#c   a: ($cs_bot=sara_li) $$answerCategory = specific Letztes Wochenende hat Tante Selma das erzählt.
+#a   a: ($cs_bot=jason_li) $$answerCategory = specific Vor zwei Wochen. Am Dienstag.
+#b   a: ($cs_bot=jason_li) $$answerCategory = specific Na letzte Woche.
+#c   a: ($cs_bot=jason_li) $$answerCategory = specific Beim letzten Training hat er das erzählt.
+#a   a: ($cs_bot=constantin_si) $$answerCategory = specific Das letzte Mal war das letzte Woche.
+#b   a: ($cs_bot=constantin_si) $$answerCategory = specific Letzte Woche war das.
+#c   a: ($cs_bot=constantin_si) $$answerCategory = specific Das war vor zwei Wochen oder so.
+#a   a: ($cs_bot=luisa_si) $$answerCategory = specific Den Tag vor dem Sportfest.
+#b   a: ($cs_bot=luisa_si) $$answerCategory = specific Den Tag vor dem Sportfest.
+#c   a: ($cs_bot=luisa_si) $$answerCategory = specific Letzte Woche nach der Mathearbeit war das.
+#a   a: ($cs_bot=natalia_si) $$answerCategory = specific Das letzte Mal war letzte Woche.
+#b   a: ($cs_bot=natalia_si) $$answerCategory = specific Letztes Mal war vor einer Woche.
+#c   a: ($cs_bot=natalia_si) $$answerCategory = specific Ich glaube Mittwochabend.
+#a   a: ($cs_bot=simon_si) $$answerCategory = specific Letzte Woche nach dem Sport.
+#b   a: ($cs_bot=simon_si) $$answerCategory = specific Vor drei Wochen oder so.
+#c   a: ($cs_bot=simon_si) $$answerCategory = specific Am Montag.
+
+u: ({_rapport} {_demand} {_transparency} frequency)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+^refine()
+$$probFormat = specific-100
+#a   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Das war nur einmal.
+#b   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Wenn er sauer ist halt. Schon ein paar mal.
+#c   a: ([$cs_bot=laura_si $cs_bot=laura_li]) $$answerCategory = specific Ich hab das nur einmal gesehen.
+#a   a: ($cs_bot=andre_li) $$answerCategory = specific Einmal war das.
+#b   a: ($cs_bot=andre_li) $$answerCategory = specific Na schon ein paar mal.
+#c   a: ($cs_bot=andre_li) $$answerCategory = specific Immer ist das so.
+#a   a: ($cs_bot=sara_li) $$answerCategory = specific Tante Selma gibt mir immer ein Küsschen. Aber das eine Mal war anders.
+#b   a: ($cs_bot=sara_li) $$answerCategory = specific Meine Eltern reden jeden Tag davon.
+#c   a: ($cs_bot=sara_li) $$answerCategory = specific Meine Mama ist eigentlich nie traurig.
+#a   a: ($cs_bot=jason_li) $$answerCategory = specific Das war nur einmal. Danach war ich nicht mehr beim Judo.
+#b   a: ($cs_bot=jason_li) $$answerCategory = specific Das war letzte Woche, aber die Jungs beim Training reden immer vom Saufen.
+#c   a: ($cs_bot=jason_li) $$answerCategory = specific Er sagt immer solche Sachen.
+#a   a: ($cs_bot=constantin_si) $$answerCategory = specific Na manchmal macht er das.
+#b   a: ($cs_bot=constantin_si) $$answerCategory = specific Er ist oft sauer, weil ich nicht so schnell bin. Aber er hat nur einmal so geschubst.
+#c   a: ($cs_bot=constantin_si) $$answerCategory = specific Die ärgern mich immer weil ich vorn sitze.
+#a   a: ($cs_bot=luisa_si) $$answerCategory = specific Er ärgert mich immer. Aber das auf der Toilette war nur einmal.
+#b   a: ($cs_bot=luisa_si) $$answerCategory = specific Er ärgert mich immer, aber das mit dem Messer war nur einmal.
+#c   a: ($cs_bot=luisa_si) $$answerCategory = specific Weiß nicht, ja, oft.
+#a   a: ($cs_bot=natalia_si) $$answerCategory = specific Ja das war schon ein paar mal so. 
+#b   a: ($cs_bot=natalia_si) $$answerCategory = specific Ja das war schon ein paar mal so. 
+#c   a: ($cs_bot=natalia_si) $$answerCategory = specific Vorher war noch nie die Polizei bei uns.
+#a   a: ($cs_bot=simon_si) $$answerCategory = specific Das war nur einmal.
+#b   a: ($cs_bot=simon_si) $$answerCategory = specific Das war nur einmal.
+#c   a: ($cs_bot=simon_si) $$answerCategory = specific Immer passiert mir das.
+
+
+
+
+u: (<< {_rapport} {_demand} {_transparency} availability information support >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+u: (<< {_rapport} {_demand} {_transparency} availability support >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+u: (<< {_rapport} {_demand} {_transparency} information support >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. Aber im Moment ist alles in Ordnung.
+
+u: (<< {_rapport} {_demand} {_transparency} information availability >>)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. 
+
+
+
+u: ({_rapport} {_demand} {_transparency} information)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay.
+
+u: ({_rapport} {_demand} {_transparency} disclosure)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = specific-100
+$$answerCategory = specific Das hab ich bis jetzt noch niemandem erzählt.
+
+u: ({_rapport} {_demand} {_transparency} availability)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay. 
+
+u: ({_rapport} {_demand} {_transparency} introduction)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay.
+
+u: ({_rapport} {_demand} {_transparency} greeting) 
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = greetings-100
+$$answerCategory = greetings 
+Hallo. 
+
+
+u: ({_rapport} {_demand} {_transparency} support)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = negation-100
+$$answerCategory = negation Im Moment ist alles in Ordnung.
+
+u: ({_rapport} {_demand} {_transparency} finish)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = affirmation-100
+$$answerCategory = affirmation Okay.
+
+u: ({_rapport} {_demand} {_transparency} discharge)
+if ('_0==rapport){$rapportCounter += 1}
+else if ('_1==demand){$rapportCounter += 1}
+else if ('_2==transparency){$rapportCounter += 1}
+$$probFormat = discharge-100
+$$answerCategory = discharge Tschüs.
+
+

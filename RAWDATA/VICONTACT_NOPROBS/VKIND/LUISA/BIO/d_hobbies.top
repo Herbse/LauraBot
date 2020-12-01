@@ -1,0 +1,73 @@
+topic: ~hobbies_t ()
+# Hier wurde keep und repeat herausgenommen, damit das mehrmalige (offene) Fragen hintereinander nach "was ist los mit Mira" unterschiedliche Antworten generiert
+
+
+#specific questions/answers depending on what narrative answer was given before
+u: () ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($hobbiesCounter==1) $$sound_file = g_luisa_dasmachtspaß Das macht Spaß!
+        b: ($hobbiesCounter==2) $$sound_file = g_luisa_dasmachtspaß Das macht Spaß!
+        b: ($hobbiesCounter==3) $$sound_file = g_luisa_vollcool Voll cool.
+        b: ($hobbiesCounter==4) $$sound_file = g_luisa_vollcool Voll cool.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion 
+        b: () $$answerCategory=missing $$answerCategory=missing ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($hobbiesCounter==1) $$sound_file = s_luisa_event7 In der Schule.
+        b: ($hobbiesCounter==2) $$sound_file = s_luisa_hobbies1 In der Kunstwerkstatt.
+        b: ($hobbiesCounter==3) $$sound_file = s_luisa_hobbies1 In der Kunstwerkstatt.
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($hobbiesCounter==1) $$sound_file = s_luisa_hobbies2 Ich und die anderen Kinder.
+        b: ($hobbiesCounter==2) $$sound_file = s_luisa_hobbies2 Ich und die anderen Kinder.
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$sound_file = s_luisa_hobbies2 Ich und die anderen Kinder.
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($hobbiesCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($hobbiesCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: ($hobbiesCounter==1) $$sound_file = s_luisa_hobbies3 Das ist eine Werkstatt in der Schule wo wir malen.
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: HOBBIES_1([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 1 $$sound_file = n_luisa_hobbies1 
+Bei der Kunst AG malen wir Bilder. Mit Tusche. Das kann ich voll gut.
+  
+
+#! 
+u: HOBBIES_2([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 2 $$sound_file = n_luisa_hobbies2
+Am liebsten male ich Blumen.
+
+
+#! 
+u: HOBBIES_3([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 3 $$sound_file = n_luisa_hobbies3
+Frau Schulze ist so nett. Sie lobt mich immer für meine Bilder.
+
+
+#! 
+u: HOBBIES_4([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $hobbiesCounter = 4 $$sound_file = n_luisa_hobbies4
+Einmal waren wir mit Frau Schulze in einem Kunstmuseum. Da will ich öfter hin!
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.
+u: () ^emptyTopic()
+
+

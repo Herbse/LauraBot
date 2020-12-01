@@ -1,0 +1,125 @@
+outputmacro: ^myfunc(^data) ($$concept)
+	$$wordindex += 1			# count words in each sentence
+	_0 = ^burst(^data ^"\t")	# Treetagger returns a tabbed triple of original word, tag, lemma
+	$$concept = ^join(~ _1)		# we turn tag into a concept
+	^settag($$wordindex $$concept )	# set the tag concept
+	^setcanon($$wordindex _2 )	# set the canonical form to ChatScript
+
+#outputmacro: ^oob(^value)
+	#$$oob = ^join($$oob " " ^value)
+
+
+
+outputmacro: ^oob()
+
+if ($rapportCounter > 5) {$rapportCounter = 5}
+if ($rapportCounter == -6) {$rapportCounter = -5}
+ 
+
+ $_topic = %topic
+ $_disclosureState = $disclosureState
+ $_rapportCounter = $rapportCounter
+ $_goodQuestion = $goodQuestion
+ $_probFormat= $$probFormat
+ $_answerCategory= $$answerCategory
+ $_actionType = $$actionType
+ $_emoType = $$emoType 
+ $_topicSwitch = $$topicSwitch
+ $_randomNumber = $$randNum / 10
+ $_chatPhase = $chatPhase
+ $_critRevealed = $critRevealed
+ $_noncritTopic = $noncritTopic
+ $_intent = $$intent
+ $_soundFile = $$sound_file
+ $_sumCorrect = $sumcorrect
+ $_duration = $$duration
+
+
+ $_item1name = topic
+ $_item1value = $_topic
+ $_item2name = answerCategory
+ $_item2value = $_answerCategory
+ $_item3name = probFormat
+ $_item3value = $_probFormat
+ $_item4name = goodQuestion
+ $_item4value = $_goodQuestion
+ $_item5name = emoType
+ $_item5value = $_emoType
+ $_item6name = rapportCounter        
+ $_item6value = $_rapportCounter
+ $_item7name = disclosureState
+ $_item7value = $_disclosureState
+ $_item8name = chatPhase
+ $_item8value = $_chatPhase
+ $_item9name = randomNumber
+ $_item9value = $_randomNumber
+ $_item10name = topicSwitch
+ $_item10value = $_topicSwitch
+ $_item11name = critRevealed
+ $_item11value = $_critRevealed
+ $_item12name = noncritTopic
+ $_item12value = $_noncritTopic
+ $_item13name = intent
+ $_item13value = $_intent
+ $_item14name = soundFile
+ $_item14value = $_soundFile
+ $_item15name = sumCorrect
+ $_item15value = $_sumCorrect
+ $_item16name = duration
+ $_item16value = $_duration
+
+
+
+
+ # join it all together for a string output using pipe '|' between items and using ':' between item name and value
+ $$oob = ^join( $_item1name : $_item1value " " \| " " $_item2name : $_item2value " " \| " " $_item3name : $_item3value " " \| " " $_item4name : $_item4value " " \| " " $_item5name : $_item5value " " \| " " $_item6name : $_item6value " " \| " " $_item7name : $_item7value " " \| " " $_item8name : $_item8value " " \|  " " $_item9name : $_item9value " " \| " " $_item10name : $_item10value " " \| " " $_item11name : $_item11value " " \| " " $_item12name : $_item12value " " \| " " $_item13name : $_item13value " " \| " " $_item14name : $_item14value " " \| " " $_item15name : $_item15value " " \| " " $_item16name : $_item16value)
+
+
+
+
+outputmacro: ^soundFile($_output)
+$_soundfile = ^substitute(character $_output " " "")
+$_soundfile = ^substitute(character $_soundfile "." "")
+$_soundfile = ^substitute(character $_soundfile "," "")
+$_soundfile = ^substitute(character $_soundfile "!" "")
+$_soundfile = ^substitute(character $_soundfile "?" "")
+$_soundfile = ^pos(lowercase $_soundfile)
+# $$sound_file = ^join($_soundfile .wav)
+# check if clue is given and if yes, join clue-filename with original soundfile-name
+if ($giveClue==1) {$$sound_file_c = $_soundfile $$sound_file = ^join($$sound_file - $$sound_file_c)}
+else {$$sound_file = $_soundfile}
+if (!$$sound_file){$$sound_file = NaN}
+
+outputmacro: ^emptyTopic()
+
+if ($disclosureState==1)) {
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 750) {$$answerCategory = emptyTopic ^respond(~ignorance)}
+else {$$answerCategory = emptyTopic ^respond(~notAnswering)}}
+
+else if ($disclosureState==0) {
+$$randNum = ^generateNumber() * 10
+if ($$randNum < 500) {$$answerCategory = emptyTopic ^respond(~ignorance)}
+else if ($$randNum < 750) {$$answerCategory = emptyTopic ^respond(~notAnswering)}
+else {$$answerCategory = emptyTopic ^respond(~reactance)}}
+
+^poptopic()
+
+
+
+outputmacro: ^generateNumber()
+^popen("python ./randPy.py" '^pythonrand)
+
+outputmacro: ^pythonrand(^number)
+^number
+
+
+
+topic: ~xPOSTAGSENTENCE system()
+t: (_* )  # memorize sentence to pass to tagger
+t: ( ) 
+	$$wordindex = 0					# need to start over for each sentence, used to locate word in sentence
+	^log(FILE  chat.txt NEW '_0 )	# non-commercial version reads a file, so write our sentence to a file
+#	^popen("tag-english chat.txt" '^myfunc)
+	^popen("tree-tagger-german chat.txt" '^myfunc) # invoke local copy of TreeTagger german
+

@@ -1,0 +1,101 @@
+topic: ~father_t ()
+
+
+#t: specific test to father topic ^keep() ^repeat() 
+
+#specific questions/answers depending on general context
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # name
+    a: (^names()) $$intent=names $$sound_file = s_andre_father1
+    Olaf.
+    # age
+    a: (^age()) $$intent=age $$sound_file = s_andre_father2
+    Der Papa ist 37.
+    # mood
+    a: (^mood()) $$intent=mood $$sound_file = g_andre_gut
+    Gut.
+    # job
+    a: (^job()) $$intent=job $$sound_file = s_andre_father3
+    Er ist Putzmann.
+    # relationship_f
+    a: (^relationship_f()) $$intent=relationship_f $$sound_file = s_andre_father4
+    Der ist mein Papa.
+    # relationship_o
+    a: (^relationship_o()) $$intent=relationship_o $$sound_file = s_andre_father5
+    Ich mag meinen Papa.
+    # time together
+    a: (^time_together()) $$intent=time_together ^reuse(PAPA_1)
+    # time relationship
+    a: (^time()) $$intent=time_relationship 
+    # activity together
+    a: (^activity_together()) $$intent=activity_together ^reuse(PAPA_2)
+    # activity
+    a: (^activity()) $$intent=activity $$sound_file = s_andre_father3
+    Er ist Putzmann.
+    # places together
+    a: (^places_together()) $$intent=places_together  $$sound_file = s_andre_father6
+    Wir sind immer nur zu Hause.
+
+#specific questions/answers depending on what narrative answer was given before
+u: ($$answerCategory==specific) ^keep() ^refine()
+    # personal_opinion
+    a: (^personal_opinion()) $$intent=personal_opinion ^refine()
+        b: ($fatherCounter==1) g_andre_ganzok Ganz ok.
+        b: ($fatherCounter==2) g_andre_ganzok Ganz ok.
+        b: ($fatherCounter==3) g_andre_ganzok Ganz ok.
+        b: ($fatherCounter==4) g_andre_ganzok Ganz ok.
+       
+    # other_opinion
+    a: (^other_opinion()) $$intent=other_opinion ^respond(~ignorance)
+    # place
+    a: (^place()) $$intent=place ^refine()
+        b: ($fatherCounter==1) $$sound_file = g_andre_inderstadt In der Stadt.
+        b: ($fatherCounter==2) $$sound_file = s_andre_father8 Zu Hause auf der Couch.
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # individual
+    a: (^individual()) $$intent=individual ^refine()
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$sound_file = s_andre_father9 Papa und ich.
+        b: ($fatherCounter==3) $$sound_file = s_andre_father10 Papa und Mama und ich.
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # reason
+    a: (^reason()) $$intent=reason ^refine()
+        b: ($fatherCounter==1) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==2) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==3) $$answerCategory=missing ^respond(~ignorance)
+        b: ($fatherCounter==4) $$answerCategory=missing ^respond(~ignorance)
+    # example
+    a: (^example()) $$intent=example ^refine()
+        b: () $$nextAnswer = yes
+    # explanation
+    a: (^explanation()) $$intent=explanation ^refine()
+        b: () $$nextAnswer = yes
+    
+    # follow-up
+    a: (^follow_up()) $$intent=follow_up ^refine()
+        b: () $$nextAnswer = yes
+    # log questions that were not catched by macros
+    a: ($$answerCategory==specific _*) $$question = '_0 ^log(FILE USERS/lostspecificlog.txt $$question \n)
+
+# Narrative Antworten----------------------------------------------------------------------------------------
+
+u: PAPA_1 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 1 $$sound_file = n_andre_father1 
+Papa ist viel arbeiten. Er putzt Büros und kommt immer spät nach Hause.
+ 
+
+#! Erzähl mal wie er ihr hilft?
+u: PAPA_2 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 2 $$sound_file = n_andre_father2 
+Am Wochenende schauen wir uns manchmal unseren Lieblingsfilm an, der Grinch.
+
+#! Erzähl mir mehr über deinen Papa!
+u: PAPA_3 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 3 $$sound_file = n_andre_father3 
+Einmal, als Mama noch bei uns war, sind wir Drachensteigen gegangen. Das ist lange her.
+ 
+#! Was machst du denn gern mit deinem Papa?
+
+u: PAPA_4 ([$$answerCategory==narrative $$answerCategory==specific $$answerCategory==facilitator]) $fatherCounter = 4 $$sound_file = n_andre_father4 
+Ich würde gerne mehr mit Papa unternehmen.
+
+# Gebe eine ausweichende Antwort, wenn Topic erschöpft ist.  
+u: () ^emptyTopic()
